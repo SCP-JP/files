@@ -1,0 +1,94 @@
+@import url(http://scp-jp-storage.wdfiles.com/local--code/component:theme);
+
+#page-title,
+#page-options-container,
+.action-area-close,
+#show-upload-button,
+#breadcrumbs {
+    display: none;
+}
+
+#page-content > :not(#u-file-control-page-alert) {
+    display: none;
+}
+
+#u-file-control-page-alert {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#action-area {
+    position: absolute;
+    top: 5em;
+    left: 0;
+}
+
+#action-area h1 {
+    font-size: 0px;
+}
+
+#action-area h1::after {
+    font-size: 1.5rem;
+    content: "アップロード済のファイル";
+}
+
+.page-files thead th {
+    font-size: 0px;
+}
+
+.page-files thead th:nth-of-type(1)::after {
+    font-size: 0.8rem;
+    content: "ファイル名";
+}
+
+.page-files thead th:nth-of-type(2)::after {
+    font-size: 0.8rem;
+    content: "ファイル種別";
+}
+
+.page-files thead th:nth-of-type(3)::after {
+    font-size: 0.8rem;
+    content: "サイズ";
+}
+
+a[onclick^="WIKIDOT.modules.PageFilesModule.listeners.fileMoreInfo"] {
+    font-size: 0px;
+}
+
+a[onclick^="WIKIDOT.modules.PageFilesModule.listeners.fileMoreInfo"]::after {
+    font-size: 0.8rem;
+    content: "詳細情報";
+}
+
+a[onclick^="toggleFileOptions"] {
+    font-size: 0px;
+}
+
+a[onclick^="toggleFileOptions"]::after {
+    font-size: 0.8rem;
+    content: "操作";
+}
+
+a[onclick="WIKIDOT.modules.PageFilesModule.listeners.renameFile(event)"] {
+    font-size: 0px;
+}
+
+a[onclick="WIKIDOT.modules.PageFilesModule.listeners.renameFile(event)"]::after {
+    font-size: 0.8rem;
+    content: "ファイル名変更";
+}
+
+a[onclick="WIKIDOT.modules.PageFilesModule.listeners.moveFile(event)"] {
+    font-size: 0px;
+}
+
+a[onclick="WIKIDOT.modules.PageFilesModule.listeners.deleteFile(event)"] {
+    font-size: 0px;
+}
+
+a[onclick="WIKIDOT.modules.PageFilesModule.listeners.deleteFile(event)"]::after {
+    font-size: 0.8rem;
+    content: "ファイル削除";
+}

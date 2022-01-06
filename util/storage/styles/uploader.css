@@ -1,0 +1,60 @@
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+/*必要な部分以外削除*/
+#header,
+#footer,
+#license-area,
+#side-bar,
+#main-content > :not(#action-area),
+.action-area-close,
+h1,
+#action-area p:nth-of-type(1),
+.page-files {
+    display: none;
+}
+
+#footer {
+    opacity: 0;
+    height: 1px;
+}
+
+#action-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*アップロードボタンのスタイルを他と合わせる*/
+#show-upload-button {
+    font-size: 0px;
+    text-decoration: none !important;
+    display: block;
+    color: black;
+    border: solid 1px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    transition: .25s;
+    text-align: center;
+    transform: scale(1);
+    padding: 0.48rem 0.96rem;
+    margin: 0 0.96rem;
+    border-radius: 0.96rem;
+}
+
+#show-upload-button::before {
+    font-size: 0.96rem;
+    content: "ファイルをアップロードする";
+}
+
+#show-upload-button:hover {
+    transform: scale(1.025);
+    text-decoration: none;
+}
+
+#action-area::after {
+    content: "\A「Upload」をクリックしたあと、暗転が解除されたらアップロードは完了です\A完了したら、ページを更新してください\A";
+    display: block;
+    text-align: center;
+    font-size: 115%;
+    font-weight: bold;
+    white-space: pre-wrap;
+}

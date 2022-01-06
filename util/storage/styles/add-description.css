@@ -1,0 +1,10 @@
+@import url(http://scp-jp-storage.wdfiles.com/local--code/component:theme);
+
+.form-table tr {
+    display: none;
+}
+
+.form-table tr.row-10,
+.form-table tr.row-11 {
+    display: unset;
+}

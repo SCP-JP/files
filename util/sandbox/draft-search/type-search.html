@@ -1,0 +1,120 @@
+<html>
+
+<head>
+
+    <style>
+        /*
+        * CSS-Author: ukwhatn
+        *
+        */
+        .selector-wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 26em;
+            max-width: 100%;
+            height: 61px;
+            margin: 0 auto;
+        }
+
+        .selector-wrapper > a {
+            box-sizing: border-box;
+            display: inline-block;
+            flex: 0 0 12.5em;
+            max-width: 45%;
+            line-height: 2.25em;
+            margin: 0 .25em;
+            text-align: center;
+            background-color: rgba(50, 141, 162, .75);
+            border: rgba(50, 141, 162, 1) 1px solid;
+            border-radius: .75em;
+            text-decoration: none !important;
+            font-weight: bold;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .selector-wrapper > a:hover {
+            background: rgba(50, 141, 162, 1);
+            border: rgba(50, 141, 162, 1) 1px solid;
+            color: white;
+        }
+
+        .selector-wrapper > a.selected {
+            background: rgba(0, 91, 110, 1);
+            border: rgba(50, 141, 162, 1) 1px solid;
+            color: white;
+            pointer-events: none;
+        }
+
+        #selector-reset {
+            display: none;
+            flex: 0 0 20em;
+            max-width: 90%;
+            margin-top: 0.25em;
+            line-height: 1.2em;
+            text-align: center;
+            background-color: rgba(0, 0, 0, .2);
+            border: none;
+            border-radius: .5em;
+        }
+
+        #selector-reset:hover {
+            background-color: rgba(0, 0, 0, .35);
+        }
+
+        .selector-wrapper a.selected ~ #selector-reset {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+<div class="selector-wrapper">
+    <a id="selector-jp"
+       href="http://scp-jp-sandbox3.wikidot.com/draft-list/tag/%2b_criticism-in,-_en,-_ru,-_ko,-_cn,-_fr,-_pl,-_es,-_th,-_de,-_it,-_ua,-_pt-br,-_cz,-_otherlang,-_others,-_null"
+       target="_top" class="">JP記事のみ</a>
+    <a id="selector-translation"
+       href="http://scp-jp-sandbox3.wikidot.com/draft-list/tag/%2b_criticism-in,-_scp-jp,-_tale-jp,-_goi-format-jp,-_others,-_null"
+       target="_top">翻訳記事のみ</a>
+    <a id="selector-reset" href="http://scp-jp-sandbox3.wikidot.com/draft-list" target="_top" style="">リセット</a>
+</div>
+</body>
+<script>
+    /*
+     * script-Autohr: C-take
+     *
+     */
+
+    // 先にボタンを表示させたいのでスクリプトを後ろに回す
+    document.addEventListener('DOMContentLoaded', event => {
+        let ref = document.referrer;
+        ref = ref.match(/\/tag\/[^\/]*\/|\/tag\/[^\/]*$/);
+        // タグがない
+        if (undefined === ref || null === ref || 0 == ref.length)
+            return;
+        // 余計な文字を消す
+        ref = ref[0].replace(/^\/tag\//, '');
+        ref = ref.replace(/\/$/, '');
+        let target = null;
+        switch (ref) {
+            case '%2b_criticism-in,-_en,-_ru,-_ko,-_cn,-_fr,-_pl,-_es,-_th,-_de,-_it,-_ua,-_pt-br,-_cz,-_otherlang,-_others,-_null':
+                // JP記事のみ
+                target = document.querySelector('#selector-jp');
+                break;
+            case '%2b_criticism-in,-_scp-jp,-_tale-jp,-_goi-format-jp,-_others,-_null':
+                // 翻訳のみ
+                target = document.querySelector('#selector-translation');
+                break;
+
+        }
+        // 選択リストに該当しない
+        if (null == target)
+            return;
+        // 選択済み
+        target.classList.add('selected');
+
+    });
+</script>
+</html>

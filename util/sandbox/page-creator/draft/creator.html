@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+    <title>Auto Numbering Draft Creater</title>
+</head>
+<style>
+    @import url(http://scp-jp.wdfiles.com/local--files/japanese-syntax/scp-WikidotCss.css);
+
+    body {
+        padding: 0;
+        background-color: transparent !important;
+    }
+
+    .fake-link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    #LinkSentence {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 580px) {
+        #LinkSentence {
+            font-size: 0.7em;
+        }
+    }
+
+    @media (min-width: 581px) {
+        #LinkSentence {
+            font-size: 27px;
+        }
+    }
+
+</style>
+<script type="text/javascript" src="http://scp-jp-sandbox3.wikidot.com/component:user-page-manager/code/6"></script>
+<script type="text/javascript" src="http://ja.scp-wiki.net/scpmetatitlesearch/code/4"></script>
+<script type="text/javascript">
+
+    var mySite = "http://scp-jp-sandbox3.wikidot.com/"
+    var userName = "";
+    window.onload = function () {
+        var showLinkArea = document.getElementById("link");
+        var checkWidthElm = document.getElementById("LinkSentence");
+        var ElmLen = checkWidthElm.innerHTML.length;
+        if (userTerminalData.Os == "iOS") {
+            ElmLen++;
+        }
+        var defaultFontSize = Math.floor(getSentenceWidth() / ElmLen);
+        showLinkArea.style.fontSize = defaultFontSize + "px";
+        resizeLinkSentence();
+        var myURL = location.href;
+        var settingParamName = {
+            name: "name=",
+            createdBy: "createdBy=",
+            currentdraft: "currentdraft=",
+            accountname: "accountname="
+        }
+        var settingParam = {
+            name: "",
+            createdBy: "",
+            currentdraft: "",
+            accountname: ""
+        }
+
+        if (myURL.indexOf("#") > 0) {
+            var tmpURLArray = ((myURL.split("#"))[1]).split(",");
+            for (var i = 0; i < tmpURLArray.length; i++) {
+                for (var j in settingParam) {
+                    if (tmpURLArray[i].indexOf(settingParamName[j]) == 0) {
+                        settingParam[j] = decodeURIExtension(tmpURLArray[i].split(settingParamName[j]).join(""));
+                        delete settingParamName[j];
+                        break;
+                    }
+                }
+            }
+        }
+        var pageName = settingParam.name;
+        pageName = pageName.toLowerCase();
+        var baseName = settingParam.currentdraft;
+        baseName = baseName.toLowerCase();
+        var testRegex = new RegExp("^" + settingParam.createdBy);
+        if (baseName.match(testRegex)) {
+            baseName = baseName.replace(testRegex, "");
+        } else {
+            testRegex = new RegExp("^" + setEscapeCode(settingParam.accountname));
+            if (baseName.match(testRegex)) {
+                baseName = baseName.replace(testRegex, "");
+            }
+        }
+        testRegex = null;
+        if (baseName.match(/^\-/g)) {
+            baseName = baseName.replace(/^\-/g, "");
+        }
+        baseName = baseName.replace(/[^a-z0-9:\]\[]/g, "-");
+        while (baseName.indexOf("--") >= 0) {
+            baseName = baseName.replace(/--/g, "-");
+        }
+        userName = settingParam.createdBy;
+        baseName = baseName + "-";
+        var nowNo = baseName;
+        if (nowNo.indexOf("-") >= 0) {
+            nowNo = (nowNo.split("-"))[0];
+        } else {
+            nowNo = "1";
+        }
+        nowNo = parseInt(nowNo);
+        if (isNaN(nowNo)) {
+            nowNo = "";
+        } else {
+            nowNo++;
+            nowNo += "-";
+        }
+        var unique = "";
+        var digit = 0;
+        for (var i = 0; i < 4; i++) {
+            digit = Math.floor(Math.random() * 16);
+            unique += digit.toString(16);
+        }
+        var Links = document.createElement("span");
+        Links.setAttribute("onclick", "GoToLink('" + mySite + "draft:" + settingParam.createdBy + "-" + nowNo + unique + "/title/" + settingParam.name + "-" + nowNo + "-" + unique + "/parentPage/portal:" + settingParam.createdBy + "/#_editpage');");
+        Links.setAttribute("class", "fake-link");
+        Links.setAttribute("id", checkWidthElm.getAttribute("id"));
+        Links.innerHTML = checkWidthElm.innerHTML;
+        showLinkArea.replaceChild(Links, checkWidthElm);
+        checkWidthElm = Links;
+        window.addEventListener('resize', function (event) {
+            resizeLinkSentence();
+        });
+
+        function getSentenceWidth() {
+            var left = checkWidthElm.getBoundingClientRect().left;
+            var right = checkWidthElm.getBoundingClientRect().right;
+            return (right - left);
+        }
+
+        function resizeLinkSentence() {
+
+            var pageWidth = window.innerWidth;
+
+            var fontSize = 0;
+            fontSize = Math.floor(pageWidth / ElmLen);
+            if (fontSize > defaultFontSize) {
+                fontSize = defaultFontSize;
+            }
+            showLinkArea.style.fontSize = fontSize + "px";
+            var fontHeight = fontSize;
+            if (userTerminalData.Os == "iOS") {
+                fontHeight = Math.floor(pageWidth / (ElmLen - 1));
+                if (fontHeight > defaultFontSize) {
+                    fontHeight = defaultFontSize;
+                }
+                fontHeight += 5;
+            }
+            var inHeight = window.innerHeight;
+            inHeight -= (fontHeight + 5);
+
+        }
+
+    }
+
+    function GoToLink(url) {
+        var userNameL;
+        try {
+            userNameL = window.parent.getName.UserName;
+        } catch (e) {
+            alert("サインイン未取得");
+            return;
+        }
+        if (userName == userNameL) {
+            window.parent.location.href = url;
+        } else {
+            alert("自分のポータルからページを作成してください");
+            console.log("pageCreate:" + userName + " , RequestUser:" + userNameL);
+        }
+    }
+
+</script>
+<body>
+<div id="link" style='font-size:200%; text-align: center;'>
+    <span id="LinkSentence">新しい下書きを作成する</span>
+</div>
+<div style="width:100%;height;1px"></div>
+</body>
+</html>
