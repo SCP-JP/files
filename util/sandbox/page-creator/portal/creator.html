@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+<head>
+    <title>PortalCreator</title>
+    <style>
+        @import url(http://scp-jp.wdfiles.com/local--files/japanese-syntax/scp-WikidotCss.css);
+
+        body {
+            background-color: transparent;
+        }
+    </style>
+    <script type="text/javascript" src="http://ja.scp-wiki.net/scpmetatitlesearch/code/4"></script>
+    <script type="text/javascript">
+
+        var ctrlShowLink = {
+            value: "",
+            overrangeValue: "あなた",
+            suffix: "のポータル作成",
+            showValue: "",
+            baseFontSize: 0,
+            translateSize: 150,
+            targetFontSize: 0,
+            href: ""
+        }
+
+        document.addEventListener("DOMContentLoaded", function (event) {
+            //リンクのフォントサイズを設定（%)
+            var showFontSizeP = 150;
+            var URL = location.href;
+            var baseURL = (function () {
+                var tmpH = document.location.href;
+                return (tmpH.split("#")[0] + "#")
+            })();
+            var name = URL.replace(baseURL, "");
+            name = name.split(';');
+            var nameAN = name[1];
+            var nameO = name[0];
+            name = nameAN.toLowerCase()
+            var firstC = name.substring(0, 1);
+            if (firstC.match(/[^0-9a-zA-Z]/)) {
+                firstC = "null";
+            }
+            var showName = nameAN;
+            if (showName.length > 0) {
+                showName = decodeURIExtension(showName);
+            }
+
+            ctrlShowLink.value = showName;
+
+            //標準のフォントサイズを取得する
+            ctrlShowLink.baseFontSize = (16 * 0.8);//Number(window.getComputedStyle(document.body,null).fontSize.replace(/[^\d]/g, ''));
+
+            //リンクの文字の大きさをピクセルで取得する
+            ctrlShowLink.targetFontSize = Math.floor(ctrlShowLink.baseFontSize * (ctrlShowLink.translateSize / 100));
+            var dHeight = window.innerHeight;
+            if (dHeight < ctrlShowLink.targetFontSize) {
+                ctrlShowLink.targetFontSize = dHeight;
+            }
+            ctrlShowLink.href = "http://scp-jp-sandbox3.wikidot.com/portal:" + nameO + "/edit/true/parentPage/start/title/" + nameAN + "のサンドボックスポータル";
+            createLinkMessage();
+            window.addEventListener('resize', function (event) {
+                createLinkMessage();
+            });
+        });
+
+        function createLinkMessage() {
+            var targetElm = document.getElementById("createLink");
+            var pageWidth = window.innerWidth;
+            ctrlShowLink.showValue = ctrlShowLink.value + ctrlShowLink.suffix;
+            var showLinkLength = ctrlShowLink.showValue.length;
+            var actualFontSize = ctrlShowLink.targetFontSize;
+            var LinkWidth = showLinkLength * ctrlShowLink.targetFontSize;
+            if (pageWidth < LinkWidth) {
+                ctrlShowLink.showValue = ctrlShowLink.overrangeValue + ctrlShowLink.suffix;
+                showLinkLength = ctrlShowLink.showValue.length;
+                LinkWidth = showLinkLength * ctrlShowLink.targetFontSize;
+                if (pageWidth < LinkWidth) {
+                    actualFontSize = Math.floor(pageWidth / showLinkLength);
+                }
+            }
+            var LinkElm = document.createElement("span");
+            LinkElm.setAttribute("onclick", "GoToLink()");
+            LinkElm.setAttribute("style", "font-size:" + actualFontSize + "px;");
+            LinkElm.setAttribute("id", "createLink");
+            LinkElm.setAttribute("class", "fake-link");
+            LinkElm.innerHTML = ctrlShowLink.showValue;
+
+            targetElm.parentNode.replaceChild(LinkElm, targetElm);
+
+        }
+
+        function GoToLink() {
+            window.parent.location.href = ctrlShowLink.href;
+        }
+
+    </script>
+</head>
+<body>
+<div id="link" style='text-align: center;'><a id="createLink"></a></div>
+</body>
+</html>
