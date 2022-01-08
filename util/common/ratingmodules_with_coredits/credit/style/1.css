@@ -1,0 +1,461 @@
+@import url("http://cdnjs.cloudflare.com/ajax/libs/cc-icons/1.2.1/css/cc-icons.min.css");
+
+#u-credit-view,
+#u-credit-otherwise {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    z-index: 10;
+}
+#u-credit-view:not(:target),
+#u-credit-otherwise:not(:target) {
+    opacity: 0;
+    display: none;
+}
+#u-credit-view:target,
+#u-credit-otherwise:target {
+    opacity: 1;
+    display: block;
+    animation-duration: 0.5s;
+    animation-name: fade-in;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-name: fade-in;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: fade-in;
+}
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fader {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.fader iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.modalcontainer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 400px;
+    height: 200px;
+    margin: auto;
+}
+.modalbox {
+    position: relative;
+    min-width: 400px;
+    min-height: 200px;
+    padding-bottom: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(102, 0, 0, 0.5);
+}
+#u-credit-otherwise .modalbox {
+    background-color: #fff;
+}
+#u-credit-view .modalbox:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+.modalbox .modalbox-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    background: #ccc;
+    margin-bottom: 14px;
+    border-radius: 5px 5px 0 0;
+}
+
+.modalbox .modalbox-title.heritage h2 {
+    display: flex;
+    align-items: center;
+}
+
+.modalbox .modalbox-title.heritage h2:before {
+    content: "";
+    background: url("http://scp-jp.wdfiles.com/local--files/heritage-collection-jp/heritage-emblem.png") no-repeat;
+    background-size: 40px, 40px;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    margin-right: 0.3em;
+}
+
+.modalbox .credit {
+    margin: 2em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.modalbox .credit:not(:first-child) {
+    margin-top: 0;
+}
+.modalbox .credit:not(:last-child) {
+    margin-bottom: 0;
+}
+.modalbox .credit + .credit {
+    margin-bottom: 0.5em;
+}
+.modalbox .credit.otherwise {
+    overflow-y: scroll;
+    height: 150px;
+}
+#u-credit-view .credit-back {
+    display: none;
+}
+#u-credit-otherwise .creditBottomRate {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    #u-credit-view {
+        height: 100%;
+        top: 0;
+    }
+    .modalcontainer {
+        min-width: 300px;
+    }
+    .modalbox {
+        min-width: 300px;
+    }
+}
+#u-credit-view-button {
+    display: block;
+    text-align: right;
+}
+.Dendo {
+    display: none;
+    justify-content: center;
+}
+.Dendo .heritage-rating-module {
+    float: right;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    vertical-align: top;
+    margin: 0;
+}
+.modalbox > .Dendo {
+    padding-bottom: 0.5em;
+}
+
+.modalbox .modalbox-ratemodule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0;
+}
+
+.creditBottomRate,
+.modalbox > .Dendo,
+.modalbox-ratemodule {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 1em;
+}
+
+.modalbox .modalbox-ratemodule .page-rate-widget-box {
+    display: flex;
+}
+
+.modalbox.heritage {
+    background: linear-gradient(to bottom, #fff6f0, #fff);
+    border: #633 solid 7px;
+    box-shadow: 2px 2px 6px rgba(204, 192, 102, 0.8), -2px -2px 6px rgba(204, 192, 102, 0.8);
+}
+
+#u-credit-otherwise .modalbox.heritage {
+    background: linear-gradient(to bottom, #fff6f0, #fff);
+    box-shadow: 2px 2px 6px rgba(204, 192, 102, 0.8), -2px -2px 6px rgba(204, 192, 102, 0.8);
+}
+
+.modalbox.heritage .modalbox-title {
+    background: linear-gradient(to bottom, #633, #966);
+    color: #fff;
+    border-radius: 0;
+}
+
+.creditRate {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 2em;
+}
+
+.creditRate .page-rate-widget-box {
+    display: inline-flex;
+    align-items: center;
+}
+
+.creditRate .heritage-rating-module {
+    float: right;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    vertical-align: top;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 0 5px;
+}
+
+.creditRate .heritage-rating-module .page-rate-widget-box {
+    margin: 0;
+}
+
+.creditRate .audio-img-block {
+    top: 0;
+}
+
+.rate-box-with-credit-button {
+    background-color: transparent !important;
+    border-radius: 5px;
+    box-shadow: none;
+    min-width: 150px;
+    height: 18px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rate-box-with-credit-button .creditButton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 16px;
+    background-color: #633;
+    border: 1px solid #633;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-left: 5px;
+}
+
+.creditRate .rateBox {
+    display: inline-flex;
+}
+
+.creditButton {
+    font-size: 0.8em;
+}
+.creditButton a {
+    width: 24px;
+    margin-left: 0;
+    color: #fff6f0;
+    border-left: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 11px;
+}
+.creditButton a:hover {
+    color: #966;
+}
+
+.heritage-rating-module ~ .creditButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #633;
+    border: solid 1px #ccc066;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 0 5px 0 0;
+    margin-left: 5px;
+}
+
+.heritage-rating-module ~ .creditButton a {
+    margin-left: 0;
+    margin-right: -5px;
+}
+.heritage-rating-module ~ .creditButton a:hover {
+    color: #966;
+}
+
+.heritage-rating-module .heritage-emblem {
+    width: 20px;
+    height: 20px;
+}
+
+.heritage-rating-module .heritage-emblem a {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heritage-rating-module .heritage-emblem img {
+    width: 20px;
+    height: 20px;
+}
+
+.heritage-rating-module .page-rate-widget-box span {
+    box-sizing: content-box;
+}
+
+.modalbox .page-rate-widget-box {
+    margin-right: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credit-back .back a {
+    display: none;
+}
+.credit-back .back a::before {
+    content: "クレジット";
+}
+
+.page-rate-widget-box span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    box-sizing: border-box;
+}
+
+.page-rate-widget-box .rate-points {
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial,
+        helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 11px;
+}
+
+.page-rate-widget-box .cancel {
+    padding: 0 2px 0 3px;
+}
+
+.page-rate-widget-box .cancel a {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    font-size: 0;
+    color: #fff6f0;
+    padding: 3px 5px;
+    height: 12px;
+}
+
+.page-rate-widget-box .cancel a:hover {
+    color: #966;
+}
+
+.page-rate-widget-box .cancel a:before {
+    content: "\f00d";
+    font-size: 10px;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    font-family: "FontAwesome";
+    font-weight: 400;
+    padding: 2px 5px;
+    height: 16px;
+    box-sizing: border-box;
+}
+
+.page-rate-widget-box .rateup a:before {
+    content: "\f067";
+    font-size: 10px;
+}
+
+.page-rate-widget-box .ratedown a:before {
+    content: "\f068";
+    font-size: 10px;
+}
+
+#page-content div.creditRate,
+#page-content div.creditRate div {
+    max-width: none;
+}
+
+.modalbox .heritage-rating-module .page-rate-widget-box .rateup,
+.modalbox .heritage-rating-module .page-rate-widget-box .ratedown {
+    box-sizing: border-box;
+}
+
+.credit-license {
+    width: 100%;
+    height: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.credit-license a.cc {
+    margin-right: 1em;
+    font-size: 30px;
+    color: #444;
+    text-decoration: none;
+}
+
+@media (max-width: 479px) {
+    .creditBottomRate .Dendo {
+        position: absolute;
+        top: 0;
+        left: 2em;
+    }
+    .credit-license {
+        margin-top: 4px;
+        height: 1.5px;
+    }
+    .credit-license a.cc {
+        font-size: 20px;
+    }
+}
+
+.page-rate-widget-box {
+    display: inline-flex;
+    margin: 0;
+}
