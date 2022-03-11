@@ -42,12 +42,14 @@
     }
 
 </style>
-<script type="text/javascript" src="https://scp-jp.github.io/files/util/sandbox/scripts/common/check-terminal.js"></script>
+<script type="text/javascript"
+        src="https://scp-jp.github.io/files/util/sandbox/scripts/common/check-terminal.js"></script>
 <script type="text/javascript" src="https://scp-jp.wdfiles.com/local--code/scpmetatitlesearch/4"></script>
 <script type="text/javascript">
 
     var mySite = "http://scp-jp-sandbox3.wikidot.com/"
     var userName = "";
+    var accountnumber = "";
     window.onload = function () {
         var showLinkArea = document.getElementById("link");
         var checkWidthElm = document.getElementById("LinkSentence");
@@ -64,14 +66,16 @@
             cat: "cat=",
             createdBy: "createdBy=",
             currentdraft: "currentdraft=",
-            accountname: "accountname="
+            accountname: "accountname=",
+            accountnum: "accountnum="
         }
         var settingParam = {
             name: "",
             cat: "",
             createdBy: "",
             currentdraft: "",
-            accountname: ""
+            accountname: "",
+            accountnum: ""
         }
 
         if (myURL.indexOf("#") > 0) {
@@ -87,8 +91,9 @@
             }
         }
         var pageName = settingParam.name;
+        accountnumber = settingParam.accountnum;
         pageName = pageName.toLowerCase();
-        var baseName = settingParam.currentdraft;
+        var baseName = settingParam.currentdraft.replace("sharedpage", "");
         baseName = baseName.toLowerCase();
         var testRegex = new RegExp("^" + settingParam.createdBy);
         if (baseName.match(testRegex)) {
@@ -174,7 +179,7 @@
     function GoToLink(url) {
         var userNameL;
         try {
-            userNameL = window.parent.getName.UserName;
+            userNameL = accountnumber;
         } catch (e) {
             alert("サインイン未取得");
             return;
