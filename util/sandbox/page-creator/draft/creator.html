@@ -42,7 +42,8 @@
     }
 
 </style>
-<script type="text/javascript" src="https://scp-jp.github.io/files/util/sandbox/scripts/common/check-terminal.js"></script>
+<script type="text/javascript"
+        src="https://scp-jp.github.io/files/util/sandbox/scripts/common/check-terminal.js"></script>
 <script type="text/javascript" src="https://scp-jp.wdfiles.com/local--code/scpmetatitlesearch/4"></script>
 <script type="text/javascript">
 
@@ -90,7 +91,7 @@
         var pageName = settingParam.name;
         accountnumber = settingParam.accountnum;
         pageName = pageName.toLowerCase();
-        var baseName = settingParam.currentdraft.replace("draft:","");
+        var baseName = settingParam.currentdraft.replace("draft:", "");
         baseName = baseName.toLowerCase();
         var testRegex = new RegExp("^" + settingParam.createdBy);
         if (baseName.match(testRegex)) {
@@ -193,6 +194,6 @@
 <div id="link" style='font-size:200%; text-align: center;'>
     <span id="LinkSentence">新しい下書きを作成する</span>
 </div>
-<div style="width:100%;height;1px"></div>
+<div style="width:100%;height:1px"></div>
 </body>
 </html>
