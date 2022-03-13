@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>iframe Redirect</title>
+    <!-- © James Kanjo 2009 -->
+</head>
+<body>
+    <script type="text/javascript">
+        strReferrer = document.referrer + "/";
+        if(strReferrer.match(/\/noredirect\/(true|t)\//)) {
+            document.write("This redirect has been disabled by the <b>/noredirect/true/<\/b> code in the URL.<br><br>It would normally redirect to:<br>" + window.location.hash.substring(1));
+        } else {
+            window.parent.location.replace(window.location.hash.substring(1));
+        }
+    </script>
+</body>
+</html>
