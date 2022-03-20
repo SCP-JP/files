@@ -5,22 +5,7 @@
 var PageSetting = new Object();
 PageSetting.getParent = true;
 PageSetting.currentParam = decodeURIExtension(document.referrer);
-if (!PageSetting.currentParam) {
-    PageSetting.currentParam = "http://scp-jp-sandbox3.wikidot.com/draft-list";
-}
-PageSetting.myPage = (function () {
-    var tmpURL = PageSetting.currentParam.split("http://").join("").split("/");
-    return "http://" + tmpURL[0] + "/" + tmpURL[1];
-})();
-PageSetting.currentParam = PageSetting.currentParam.split(PageSetting.myPage).join("");
-PageSetting.OrderParam = "";
-if (PageSetting.currentParam.indexOf("/order/") >= 0) {
-    PageSetting.OrderParam = PageSetting.currentParam.substring(PageSetting.currentParam.indexOf("/order/"), PageSetting.currentParam.length);
-}
-//親ページのURLを解析する
-var PageSetting = new Object();
-PageSetting.currentParam = decodeURIExtension(document.referrer);
-if (!PageSetting.currentParam) {
+if ((!PageSetting.currentParam)||(new URL(PageSetting.currentParam).pathname.length<=1)) {
     PageSetting.currentParam = "http://scp-jp-sandbox3.wikidot.com/draft-list";
     PageSetting.getParent = false;
 }
