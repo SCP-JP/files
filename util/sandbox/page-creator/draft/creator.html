@@ -50,6 +50,7 @@
     var mySite = "http://scp-jp-sandbox3.wikidot.com/"
     var userName = "";
     var accountnumber = "";
+    var totalp = 1;
     window.onload = function () {
         var showLinkArea = document.getElementById("link");
         var checkWidthElm = document.getElementById("LinkSentence");
@@ -90,7 +91,9 @@
         }
         accountnumber = settingParam.accountnum;
         userName = settingParam.createdBy;
-        totalp = parseInt(settingParam.total)+1;
+        if (Number.isInteger(Number(settingParam.total))) {
+            totalp = Number(settingParam.total)+1;
+        }
 
         var unique = "";
         var digit = 0;
