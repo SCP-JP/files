@@ -1714,3 +1714,9 @@ li.folded > .colmod-content {
 .inline-diff del + ins::before {
     color: transparent;
 }
+
+/* printuser avaterhover非選択 */
+.printuser.avatarhover > a > img {
+    -webkit-user-select: none;
+    user-select: none;
+}
