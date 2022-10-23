@@ -115,7 +115,7 @@
 
 .modalbox .modalbox-title.heritage h2:before {
     content: "";
-    background: url("http://scp-jp.wdfiles.com/local--files/heritage-collection-jp/heritage-emblem.png") no-repeat;
+    background: url("https://scp-jp.github.io/files/util/common/media/_default/heritage-collection-jp/heritage-emblem.png") no-repeat;
     background-size: 40px, 40px;
     display: inline-flex;
     width: 40px;
