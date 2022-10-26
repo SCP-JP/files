@@ -4,10 +4,10 @@
 var SearchTags = {
     Category: {
         "SCP-JP": "_scp-jp",
+        "GoIF-JP": "_goi-format-jp",
         "Tale-JP": "_tale-jp",
-        "GOI-JP": "_goi-format-jp",
-        "翻訳（英語）": "_en",
-        "翻訳（その他）": "_ru,_ko,_cn,_fr,_pl,_es,_th,_de,_it,_ua,_pt-br,_cz,_otherlang",
+        "翻訳 (英語)": "_en",
+        "翻訳 (その他)": "_ru,_ko,_cn,_fr,_pl,_es,_th,_de,_it,_ua,_pt-br,_cz,_zh-tr,_vn,_otherlang",
         "その他": "_others",
         "未定義": "_null"
     },
@@ -16,17 +16,17 @@ var SearchTags = {
     Genre: {
         "A類": "_category-a",
         "B類": "_category-b",
-        "Joke": "_joke",
+        "ジョーク": "_joke",
         "ホラー": "_horror",
         "SF": "_sf",
         "オカルト・都市伝説": "_occult",
         "サスペンス": "_suspense",
         "感動系": "_excitement",
         "シュール": "_sur",
-        "メタフィクション": "_metafiction",
         "コミカル": "_comical",
+        "メタフィクション": "_metafiction",
+        "アダルト": "_adult",
         "既存記事改稿": "_reforming-g",
-
         "コンテスト": "_contest",
         "その他": "_others-g"
     },
@@ -39,6 +39,7 @@ var SearchTags = {
         "批評終了": "_criticism-end"
     }
 }
+
 
 /*ジャンル、カテゴリ選択用要素格納*/
 var SettingAreaObj = {
@@ -68,6 +69,8 @@ var SelectedClassNames = {
 }
 
 var searchForm;
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     searchForm = document.getElementById("searchsetting");
@@ -192,6 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
 //カテゴリ及びジャンルを選択した時の表示切替
 function changeState(elm, selectType) {
     //html要素のクラスを切り替える
@@ -209,7 +213,7 @@ function changeState(elm, selectType) {
                 case BaseClass + SelectedClassNames.Category.Selected:
                     elm.setAttribute("class", BaseClass + SelectedClassNames.Category.Default);
                     break;
-                default :
+                default:
                     //万が一のバグ時救済
                     elm.setAttribute("class", BaseClass + SelectedClassNames.Category.Default);
                     break;
@@ -244,7 +248,7 @@ function changeState(elm, selectType) {
                 case BaseClass + SelectedClassNames.State.Selected:
                     elm.setAttribute("class", BaseClass + SelectedClassNames.State.Default);
                     break;
-                default :
+                default:
                     //万が一のバグ時救済
                     elm.setAttribute("class", BaseClass + SelectedClassNames.State.Default);
                     break;
@@ -253,12 +257,16 @@ function changeState(elm, selectType) {
     }
 }
 
+
+
 function search() {
     var StateClass = "";
     var isSelectCategory = false;
     var BaseClass = "";
     var keyName = "";
     var tagParam = "";
+
+
 
     /*ジャンル検索設定*/
     BaseClass = SelectedClassNames.State.Base + " ";
@@ -313,8 +321,8 @@ function search() {
         var MinusValueArray;
         for (var i in CategoryClone) {//categorycloneが大事そう　メモ
             addTagParam(SearchTags.MinusCategory[i]);
-//console.log(SearchTags.MinusCategory[i]);
-//console.log(i);
+            //console.log(SearchTags.MinusCategory[i]);
+            //console.log(i);
             MinusValue = "";
         }
     }
@@ -323,7 +331,6 @@ function search() {
         tagParam = "/tag/" + tagParam;
     }
     window.parent.location = PageSetting.myPage + tagParam + PageSetting.OrderParam;
-
     function addTagParam(addState) {
         if (addState.length <= 0) {
             return;
