@@ -3,7 +3,7 @@
 /* theme */
 @import url(https://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/base/css/style.css);
 @import url(https://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/shiny/css/style.css);
-@import url(https://scp-jp.github.io/files/theme/sigma-9/sigma-9.css);
+@import url(/files/theme/sigma-9/sigma-9.css);
 
 .fake-link {
     color: #b01;

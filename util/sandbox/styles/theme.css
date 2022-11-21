@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://scp-jp.github.io/files/util/common/media/component/theme/font-bauhaus.css');
+@import url('/files/util/common/media/component/theme/font-bauhaus.css');
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('http://cdnjs.cloudflare.com/ajax/libs/cc-icons/1.2.1/css/cc-icons.min.css');
 
@@ -119,7 +119,7 @@ a:hover {
 }
 
 div#container-wrap {
-  background: url(https://scp-jp.github.io/files/util/sandbox/media/component/theme/body_bg.png) top left repeat-x;
+  background: url(/files/util/sandbox/media/component/theme/body_bg.png) top left repeat-x;
 }
 
 /* HEADER */
@@ -129,7 +129,7 @@ div#container-wrap {
   z-index: 10;
   padding-bottom: 22px;
   /* FOR MENU */
-  background: url(https://scp-jp.github.io/files/util/sandbox/media/component/theme/logo.png) 10px 40px no-repeat;
+  background: url(/files/util/sandbox/media/component/theme/logo.png) 10px 40px no-repeat;
 }
 
 #search-top-box {
@@ -428,7 +428,7 @@ div#container-wrap {
 #side-bar div.menu-item.sub-item {}
 
 #side-bar .collapsible-block-folded {
-  background: url(https://scp-jp.github.io/files/util/common/media/nav/side//expand.png) 0 2px no-repeat;
+  background: url(/files/util/common/media/nav/side//expand.png) 0 2px no-repeat;
 }
 
 #side-bar .collapsible-block-link {
@@ -611,7 +611,7 @@ div.sexy-box div.image-container img {
 
 .content-panel .panel-body {
   padding: 5px 10px;
-  background: #fff9f0 url(https://scp-jp.github.io/files/util/common/media/component/theme/panel-bg-gradient-reverse.png) bottom repeat-x;
+  background: #fff9f0 url(/files/util/common/media/component/theme/panel-bg-gradient-reverse.png) bottom repeat-x;
   /* box-shadow: 1px 2px 3px rgba(0,0,0,.2) inset */
 }
 
