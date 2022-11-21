@@ -1,4 +1,4 @@
-@import url(https://scp-jp.github.io/files/theme/sigma-9/sigma-9.css);
+@import url(/files/theme/sigma-9/sigma-9.css);
 /*
   Sigma9 Customizable Header
   --author: ukwhatn
@@ -12,7 +12,7 @@
 }
 
 div#container-wrap {
-    background: url("https://scp-jp.github.io/files/util/storage/media/component/theme/header-bg.png") top left repeat-x, var(--c-header) top left repeat-x;
+    background: url("/files/util/storage/media/component/theme/header-bg.png") top left repeat-x, var(--c-header) top left repeat-x;
     background-size: 100px 141px;
 }
 
