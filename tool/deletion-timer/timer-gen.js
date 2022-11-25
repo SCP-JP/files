@@ -10,7 +10,7 @@ function generateDeletionLink() {
     var code = "";
 
     var url =
-        "/files/tool/deletion-timer/timer.html?timestamp=" +
+        "https://scp-jp.github.io/files/tool/deletion-timer/timer.html?timestamp=" +
         timestamp.getTime() + "&type=" + type;
 
     if ($("#notice").prop("checked")) {
