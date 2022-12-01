@@ -1576,3 +1576,6 @@ li.folded > .colmod-content {
     -webkit-user-select: none;
     user-select: none;
 }
+#avatar-hover-container {
+    display: none;
+}
