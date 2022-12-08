@@ -924,3 +924,37 @@ li.folded>.colmod-content {
   background: #DDD;
   text-decoration: none;
 }
+
+/* Show-Changes Highlights from SCP-CN */
+.inline-diff ins:first-of-type::before,
+.inline-diff del:first-of-type::before,
+.inline-diff br + ins::before,
+.inline-diff br + del::before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f111';
+    position: absolute;
+    left: 0.75em;
+}
+.inline-diff ins::before {
+    color: #DDF;
+}
+.inline-diff del::before {
+    color: #FCC;
+}
+.inline-diff ins + del::before,
+.inline-diff del + ins::before {
+    color: transparent;
+}
+ 
+/* printuser avaterhover非選択 */
+.printuser.avatarhover > a > img {
+    -webkit-user-select: none;
+    user-select: none;
+}
+#avatar-hover-container {
+    display: none;
+}
