@@ -1,0 +1,5 @@
+title: エリアアイコン
+author: Dr Devan
+created_at: 2014-02-25 11:03:55+00:00
+source: http://scp-jp.wikidot.com/component:area
+license: Need to Fix!

@@ -1,0 +1,5 @@
+title: Af2018theme
+author: Nanimono Demonai
+created_at: 2018-04-01 15:45:47+00:00
+source: http://scp-jp.wikidot.com/component:af2018theme
+license: Need to Fix!

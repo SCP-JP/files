@@ -1,0 +1,5 @@
+title: Human Resourcesテーマ
+author: MikuKaneko
+created_at: 2022-09-20 07:59:21+00:00
+source: http://scp-jp.wikidot.com/theme:scp-human-resources
+license: Need to Fix!

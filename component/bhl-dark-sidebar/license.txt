@@ -1,0 +1,5 @@
+title: BHLダークサイドバー
+author: Rokurokubi
+created_at: 2021-09-10 12:43:43+00:00
+source: http://scp-jp.wikidot.com/component:bhl-dark-sidebar
+license: Need to Fix!

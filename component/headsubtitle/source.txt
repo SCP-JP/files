@@ -1,0 +1,11 @@
+[[module css]]
+#html-body #header h2 span {
+  font-size: 0px;
+}
+
+#html-body #header h2 span::before {
+  content: "{$title}";
+  color: #f0f0c0;
+  font-size: 15px;
+}
+[[/module]]

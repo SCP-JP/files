@@ -1,0 +1,443 @@
+[[module CSS]]
+@import url(/theme:mcd/code/1);
+[[/module]]
+
+[[iftags +テーマ]]
+[[>]]
+**評価モジュール:**
+[[module Rate]]
+[[/>]]
+
+[[>]]
+**クレジット付き評価モジュール:**
+[[/>]]
+[[module css]]
+@import url('http://scp-jp.wdfiles.com/local--code_/credit%3Astyle/1');
+[[/module]]
+
+[[div_ class="creditRate creditModule"]]
+[[div_ class="rateBox" ]]
+[[div_ class="rate-box-with-credit-button"]]
+[[module Rate]]
+[[div_ class="creditButton"]]
+[[a href="#u-credit-view" class="fa fa-info" style="position:relative;"]][[image http://scp-jp.wikidot.com/local--files/nav:side/blank.png title="クレジットを表示する" style="position:absolute;height:100%;width:100%;top:0;left:0;"]][[/a]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+[[div_ style="clear:both;"]]
+[[/div]]
+
+[[div_ id="credit-view"]]
+[[div_ class="fader"]]
+[[iframe http://scp-jp.wdfiles.com/local--code/credit%3Abackmodule/1 ]]
+[[/div]]
+
+[[div_ class="modalcontainer"]]
+[[div_ class="modalbox"]]
+[[div_ class="modalbox-title"]]
+++* クレジット
+[[/div]]
+[[div class="credit"]]
+ページ情報です。
+[[div_ class="credit-back" style="text-align: center;"]]
+[[iframe http://scp-jp.wdfiles.com/local--code/credit%3Abackmodule/2 style="height:2em;width: 100%;margin: 0;padding: 0;border: 0;background: transparent;" scrolling="no"]]
+[[/div]]
+[[/div]]
+
+[[div_ class="creditBottomRate" style="height:30px;"]]
+[[div_ class="credit-license"]]
+[[a href="*https://creativecommons.org/licenses/by-sa/3.0/deed.ja" class="cc cc-by-sa"]]@@@@[[/a]]
+[[/div]]
+[[div_ style="text-align: center; top: 0px;"]]
+[[/div]]
+[[module Rate]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+このテーマを使うには、以下の構文をページの最上段に付けてください。
+~~~~
+> @@[[include :scp-jp:theme:mcd]]@@
+
++ タイトル
+
+++ 2番目のタイトル
+
+----
+
+[http://scp-jp.wikidot.com リンク]
+
+[[collapsible show="+ 折り畳み" hide="- 折り畳み"]]
+折り畳みの中の何かです。
+[[/collapsible]]
+@@@@
+[[tabview]]
+[[tab タブ1]]
+第1タブ
+[[/tab]]
+[[tab タブ2]]
+第2タブ
+[[/tab]]
+[[/tabview]]
+----
+
+[[code type="CSS"]]
+/*
+    Marshall, Carter & Dark
+    [2014 Wikidot Theme]
+    Originally created for the SCP Foundation GoI Contest of 2014 (MC&D team and Group of Interest) by Randomini. Thanks to Reach, Aelanna and Crayne for the template.
+    Updated by stormbreath for mobile compatibility.
+    Edited for the SCP財団 by SCP-JP Technical Team(Dr Devan)
+*/
+
+/* タイトル色変更 */
+h1, #page-title {
+    color: #320042;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#page-title {
+    font-weight: lighter;
+    border-color: #320042;
+}
+
+/* リンク色変更 */
+a {
+    color: #6C4279;
+}
+
+a.newpage {
+    color: #4312A5;
+}
+
+#side-bar a:visited{
+    color: #6C4279;
+}
+
+a:visited {
+    color: #6C4279;
+}
+
+/* ヘッダー画像 */
+div#container-wrap {
+    background: url('/local--files/theme:mcd/body_bg_MCD2.png') top left repeat-x;
+}
+
+#header {
+    background: url('/local--files/theme:mcd/MCDLogo2-small.png') 40px 6px no-repeat;
+    background-size: 270px 135px;
+}
+
+/* モバイル用画像調整 */
+@media (max-width: 479px) {
+#header {
+    background-size: 150px 75px;
+    background-position: 1em;
+}
+}
+@media (min-width: 480px) and (max-width: 580px) {
+#header {
+    background-size: 180px 90px;
+    background-position: 1em;
+}
+}
+@media (min-width: 581px) and (max-width: 767px) {
+#header {
+    background-size: 210px 105px;
+    background-position: 1em;
+}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+#header {
+    background-size: 240px 120px;
+    background-position: 1em;
+}
+}
+
+/* ヘッダーテキスト隠し */
+#search-top-box-input {
+    border: solid 1px #3E2646;
+    color: #6E3251;
+    background-color: #603B6C;
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    background-color: #282053;
+}
+
+#search-top-box-form input[type=submit] {
+    border: solid 1px #AF4FCF;
+    border: solid 1px #AF4FCF;
+    background-color: #282053;
+    background: linear-gradient(to bottom, #371F3D,#282053,#8D6BA9);
+}
+
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: solid 1px #fff;
+    background-color: #87a96b;
+    background: linear-gradient(to bottom, #7E608A,#946BA9,#8C3CA6);
+}
+
+/* ログイン */
+#login-status {
+    color: #C5A3C5;
+}
+
+#login-status a {
+    color: #E696E6;
+}
+#login-status ul a {
+    color: #C5A3C5;
+}
+
+#account-topbutton {
+    color: #C5A3C5;
+}
+
+/* 画像ブロック色変更 */
+.scp-image-block {
+  border: solid 1px #6c006c;
+}
+
+.scp-image-block .scp-image-caption {
+  background-color: #f0f8ff;
+  border-top: solid 1px #6c006c;
+}
+
+/* 評価モジュール色変更 */
+div.page-rate-widget-box .rate-points {
+  background-color: #6c006c;
+  border: solid 1px #6c006c;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+  background-color: #f0f8ff;
+  border-top: solid 1px #6c006c;
+  border-bottom: solid 1px #6c006c;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+  background: transparent;
+  color: #6c006c;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+  background: #6c006c;
+  color: #f0ffff;
+}
+
+.page-rate-widget-box .cancel {
+  background: transparent;
+  background-color: #6c006c;
+  border: solid 1px #6c006c;
+}
+.page-rate-widget-box .cancel a {
+  color: #f0ffff;
+}
+
+.page-rate-widget-box .cancel a:hover {
+  background: #cdeadc;
+  color: #f0ffff;
+}
+
+/* クレジット付きモジュール */
+#page-content .rate-box-with-credit-button .page-rate-widget-box,
+#page-content .rate-box-with-credit-button .creditButton {
+    border-color: #6c006c;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+#page-content .creditButton p a {
+    border-left-color: #f0ffff;
+}
+
+#page-content .modalbox {
+    box-shadow: 0 2px 6px rgba(50,0,50,.5);
+}
+
+.close-credits,
+.credit-back {
+    filter: hue-rotate(281deg) saturate(45%);
+}
+
+/* AYERのクレジットモジュール */
+:root {
+     --barColour: #6c006c;
+}
+
+/* タブ色変更 */
+.yui-navset .yui-content{
+    background-color: #f5f5f5;
+}
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-color:#d8d8d8;
+    background-image: url('/common--theme/shiny/images/yuitabs.png');
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+    background:#320082 url('/common--theme/shiny/images/yuitabs.png') repeat-x left -1400px; /* selected tab background */
+    filter: hue-rotate(258deg);
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background:#FCDBFF url('/common--theme/shiny/images/yuitabs.png') repeat-x left -1300px;
+    filter: hue-rotate(290deg);
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: #400040;
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: #6c006c;
+}
+.yui-navset li {
+    line-height: normal;
+}
+
+
+#header h1 a {
+    color: #190022;
+    font-size: 0%;
+}
+
+#header h2 span {
+    color: #190022;
+    font-size: 0%;
+}
+
+/* サイドバー色変更など */
+#side-bar .side-block {
+    border: 1px solid #8B198B;
+}
+
+#side-bar .heading {
+    color: #1E0087;
+    border-bottom: solid 1px #1E0087;
+}
+
+#side-bar .side-block.media {
+     background-color: #e8d2e8;
+}
+
+#side-bar .side-block.resources {
+     background-color: #fff0ff;
+}
+
+#side-bar div.menu-item.inactive a {
+    color: #380A38;
+}
+#side-bar div.menu-item .sub-text {
+    color: #3D1F31;
+}
+
+.side-block .menu-item > .image {
+    filter: hue-rotate(281deg) saturate(45%);
+    -webkit-filter: hue-rotate(281deg) saturate(45%);
+}
+
+/* サイドバー折り畳み */
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #220096;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #220096;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #6C4279;
+}
+
+/* モバイルサイドバー */
+@media (max-width: 767px) {
+div#side-bar {
+    background-color: rgba(108, 0, 108, .9);
+}
+
+div#side-bar:before {
+    border: 0.2em solid #C5A3C5 !important;
+    color: #C5A3C5 !important;
+}
+}
+
+
+/* フッター*/
+#footer {
+    background: #3d2b1f;
+    color: #6C006C;
+}
+
+/* コンテンツパネル */
+.content-panel {
+    border: solid 1px #5d8aa8;
+    background-color: #bcd4e6;
+}
+
+.content-panel .panel-body {
+    background: #f0ffff;
+}
+
+.content-panel .panel-footer {
+    color: #A30053;
+}
+
+.content-panel .content-toc {
+    border: solid 1px #5d8aa8;
+}
+
+/* セクシーボックス */
+div.sexy-box {
+    background: #f0f8ff;
+    border: 1px solid #903C67;
+}
+div.sexy-box div.image-container img {
+    border: 1px solid #9f8170;
+}
+
+/* Forum Customizations */
+.thread-container .post .head {
+    background-color: #f0f8ff;
+    background: linear-gradient(to right, #f0f8ff, #eeecec);
+}
+
+/* webkit scrollbar */
+::-webkit-scrollbar
+{
+    border: solid 1px rgba(108, 0, 108, 0.1);
+}
+ 
+::-webkit-scrollbar-track
+{
+    background: rgba(0, 0, 0, 0.1);
+}
+ 
+::-webkit-scrollbar-thumb
+{
+    background: rgba(108, 0, 108, 0.3);
+}
+
+/* for the Interwiki */
+#side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+    border: 1px solid #8B198B;
+    -webkit-filter: hue-rotate(281deg) saturate(45%);
+    filter: hue-rotate(281deg) saturate(45%);
+}
+[[/code]]
+[[/iftags]]

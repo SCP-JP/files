@@ -1,0 +1,1 @@
+[[include component:image-block-left-base name={$name}|caption={$caption}|width={$width}|width=300px|clear={$clear}|clear=false]]

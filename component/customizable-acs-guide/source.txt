@@ -1,0 +1,1177 @@
+[[include :scp-jp:theme:black-highlighter-theme]]
+
+[[module CSS]]
+#page-title,
+.meta-title {
+     display: initial!important;
+}
+
+.anom-bar-container.clear-6 .anom-bar > .top-box {
+    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr calc(5vw + 8rem);
+    padding-bottom: 1.15em;
+}
+
+.anom-bar-container.clear-6 .anom-bar .top-center-box > div {
+    background-color: rgb(133, 0, 5);
+    background-color: rgb(var(--swatch-primary, 133, 0, 5));
+    background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/galactic.jpg")!important;
+    background-attachment: fixed;
+    background-size: contain;
+    background-blend-mode: overlay!important;
+}
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[include :scp-wiki:component:author-label-source start=--
+|name=Calibold
+|no-right-margin=*]]
+[[=]]
+[[module ListPages range="."]]
+**%%title%%**
+[[/module]]
+
+**[[[Calibri Bold's Mega Cool Author Page|Caliboldの超クールな著者ページ]]]**
+[[/=]]
+[[include :scp-wiki:component:author-label-source end=--]]
+
++ これは何？
+
+これは[[[component:anomaly-class-bar|ACSバー]]]に於いて、著者が通常サポートされている以上のカスタマイズを行うことを可能とするアドオンです。
+
++ 利用方法
+
+実装可能なサブコンポーネントは複数存在し、必要に応じて各々を独立した形で使用することが可能です。
+
+当コンポーネントを動作させるには、先ず[[[component:anomaly-class-bar|ACSバー]]]をあなたのページに導入する必要があります。又、次の手順に進む前にACSヘッダーの関連フィールドを全て埋めてください。特殊オブジェクトクラスをACSバーそのものに実装する場合[[footnote]]**訳注:** "収容クラス"欄に特殊OCを表示する場合。[[/footnote]]も同様です。
+
+次に、以下のサブコンポーネントのリストにあるコンポーネントの内、必要なものを実装してください。青文字は全て該当する要素に置換してください。
+
++++ 色のガイド
+
+デフォルトのACSコンポーネントでは、特定のクラスに対して幾つかの色を使用しています。以下は、ACSで使用されるデフォルトの色のリストとそのRGB値です。
+
+* 黒色(Pending)[[footnote]]Pending, Explainedに使用されています。[[/footnote]] ( [[span style="color:rgb(12,12,12);"]]█[[/span]] ): 12,12,12
+* 灰色(Declassified)[[footnote]]Neutralized, Esotericに使用されています。[[/footnote]] ( [[span style="color:rgb(66,66,72);"]]█[[/span]] ): 66,66,72
+* 緑色(Unrestricted)[[footnote]]Safe, Dark, Noticeに使用されています。[[/footnote]] ( [[span style="color:rgb(0,159,107);"]]█[[/span]] ): 0,159,107
+* 青色(Restricted)[[footnote]]Vlam, Cautionに使用されています。[[/footnote]] ( [[span style="color:rgb(0,135,189);"]]█[[/span]] ): 0,135,189
+* 黄色(Confidential)[[footnote]]Euclid, Keneq, Warningに使用されています。[[/footnote]] ( [[span style="color:rgb(255,211,0);"]]█[[/span]] ): 255,211,0
+* 橙色(Secret)[[footnote]]Ekhi, Dangerに使用されています。[[/footnote]] ( [[span style="color:rgb(255,109,0);"]]█[[/span]] ): 255,109,0
+* 赤色(Top-Secret)[[footnote]]Keter, Amida, Criticalに使用されています。[[/footnote]] ( [[span style="color:rgb(196,2,51);"]]█[[/span]] ): 196,2,51
+
++++ 標準クラスの操作
+
+ACSの仕様上、このコンポーネントで通常のクラスを通常と異なる方法で使用しようとすると特定のバグが発生することがあります。通常と異なる方法で使用する場合、 クラス表記の直後にこの空文字: (　) を配置してください。例えば(何らかの理由で)リスククラス欄に{{keter　}}を挿入したい場合、リスククラス欄を{{|risk-class= keter　}}このように埋めます。
+
++ サブコンポーネントのリスト
+
++++ 収容クラスのカスタム
+
+収容クラスをカスタムするには以下の記述を導入します。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|containment-class= ##blue|収容クラスの名称##}}
+{{|containment-image= ##blue|収容クラスのアイコンURL##}}
+{{|containment-color= ##blue|収容クラスの色(RGBコード)##}}
+{{|inc-containment = @@--@@]]]}}
+
+[[/div]]
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[include :scp-jp:component:customizable-acs
+|containment-class= kušum
+|containment-image= http://scp-jp-storage.wikidot.com/local--files/file:7522555-156-t7my/Ku%C5%A1um.svg
+|containment-color= 88,0,188
+|inc-containment = --]]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 5
+|container-class= kušum
+|secondary-class= none
+|disruption-class= keneq
+|risk-class= critical
+]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|containment-class= kušum}}
+{{|containment-image= http://scp-jp-storage.wikidot.com/local--files/file:7522555-156-t7my/Ku%C5%A1um.svg}}
+{{|containment-color= 88,0,188}}
+{{|inc-containment = @@--@@]]]}}
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 5}}
+{{|container-class= kušum}}
+{{|secondary-class= none}}
+{{|disruption-class= keneq}}
+{{|risk-class= critical}}
+{{]]}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ 撹乱クラスのカスタム
+
+撹乱クラスをカスタムするには以下の記述を導入します。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|disruption-class= ##blue|撹乱クラスの名称##}}
+{{|disruption-image= ##blue|撹乱クラスのアイコンURL##}}
+{{|disruption-color= ##blue|撹乱クラスの色(RGBコード)##}}
+{{|inc-disruption= @@--@@]]]}}
+
+[[/div]]
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[include :scp-jp:component:customizable-acs
+|disruption-class= gevurah
+|disruption-image= http://scp-jp-storage.wikidot.com/local--files/file:7522555-155-4slm/Gevurah.svg
+|disruption-color= 215,6,111
+|inc-disruption= --]]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 3
+|container-class= euclid
+|secondary-class= none
+|disruption-class= gevurah
+|risk-class= notice
+]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|disruption-class= gevurah}}
+{{|disruption-image= http://scp-jp-storage.wikidot.com/local--files/file:7522555-155-4slm/Gevurah.svg}}
+{{|disruption-color= 215,6,111}}
+{{|inc-disruption= @@--@@]]]}}
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 3}}
+{{|container-class= euclid}}
+{{|secondary-class= none}}
+{{|disruption-class= gevurah}}
+{{|risk-class= notice}}
+{{]]}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ リスククラスのカスタム
+
+リスククラスをカスタムするには以下の記述を導入します。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|risk-class= ##blue|リスククラスの名称##}}
+{{|risk-image= ##blue|リスククラスのアイコンURL##}}
+{{|risk-color= ##blue|リスククラスの色(RGBコード)##}}
+{{|inc-risk= @@--@@]]]}}
+
+[[/div]]
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[include :scp-jp:component:customizable-acs
+|risk-class= yggdrasil
+|risk-image= http://scp-jp-storage.wikidot.com/local--files/file:7522555-160-1vm4/Yggdrasil.svg
+|risk-color= 0,0,255
+|inc-risk= --]]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 6
+|container-class= esoteric
+|secondary-class= apollyon
+|secondary-icon= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/apollyon-icon.svg
+|disruption-class= amida
+|risk-class= yggdrasil
+]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|risk-class= yggdrasil}}
+{{|risk-image= http://scp-jp-storage.wikidot.com/local--files/file:7522555-160-1vm4/Yggdrasil.svg}}
+{{|risk-color= 0,0,255}}
+{{|inc-risk= @@--@@]]]}}
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 6}}
+{{|container-class= esoteric}}
+{{|secondary-class= apollyon}}
+{{|secondary-icon= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/apollyon-icon.svg}}
+{{|disruption-class= amida}}
+{{|risk-class= yggdrasil}}
+{{]]}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ 収容クラスのカスタム(Neutralizedクラスのレイアウト)
+
+Neutralizedクラスのレイアウトで収容クラスをカスタムするには以下の記述を導入します。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|containment-class= ##blue|収容クラスの名称##}}
+{{|containment-image= ##blue|収容クラスのアイコンURL##}}
+{{|containment-color= ##blue|収容クラスの色(RGBコード)##}}
+{{|inc-neutralized-layout = @@--@@]]]}}
+
+[[/div]]
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[include :scp-jp:component:customizable-acs
+|containment-class= decommissioned
+|containment-image= http://scp-jp-storage.wikidot.com/local--files/file:7522555-159-44z5/Decommissioned.svg
+|containment-color= 66,66,72
+|inc-neutralized-layout = --]]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 1
+|container-class= decommissioned
+|secondary-class= none
+|disruption-class= none
+|risk-class= none
+]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|containment-class= decommissioned}}
+{{|containment-image= http://scp-jp-storage.wikidot.com/local--files/file:7522555-159-44z5/Decommissioned.svg}}
+{{|containment-color= 66,66,72}}
+{{|inc-neutralized-layout = @@--@@]]]}}
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 1}}
+{{|container-class= decommissioned}}
+{{|secondary-class= none}}
+{{|disruption-class= none}}
+{{|risk-class= none}}
+{{]]}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ 収容クラスのカスタム(特殊クラスのレイアウト)
+
+特殊クラスを利用したレイアウトで収容クラスをカスタムするには以下の記述を導入します。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|containment-class= ##blue|収容クラスの名称##}}
+{{|containment-image= ##blue|収容クラスのアイコンURL##}}
+{{|containment-color= ##blue|収容クラスの色(RGBコード)##}}
+{{|inc-esoteric-layout = @@--@@]]]}}
+
+[[/div]]
+
+これを適用するためには、ACSコンポーネントを{{@@[[div class="anom-bar-esoteric"]]@@}}の記述で囲む必要があります。
+
+[[div class="blockquote"]]
+
+{{@@[[div class="anom-bar-esoteric"]]@@}}
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number=}}
+{{|clearance=}}
+{{|container-class=}}
+{{|secondary-class=}}
+{{|secondary-icon=}}
+{{|disruption-class=}}
+{{|risk-class=}}
+{{]]}}
+
+{{@@[[/div]]@@}}
+
+[[/div]]
+
+これは、同じページにある別の ACS コンポーネントで同じオブジェクトクラスを適用した際に特殊クラスのフォーマットで表示させないようにするための処理です。普通に表示させたいのであればdivで囲まないでください。
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[include :scp-jp:component:customizable-acs
+|containment-class= keter
+|containment-image= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/keter-icon.svg
+|containment-color= 196,2,51
+|inc-esoteric-layout = --]]]
+
+[[div class="anom-bar-esoteric"]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 3
+|container-class= keter
+|secondary-class= cernunnos
+|secondary-icon= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/cernunnos-icon.svg
+|disruption-class= vlam
+|risk-class= danger
+]]
+
+[[/div]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|containment-class= keter}}
+{{|containment-image= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/keter-icon.svg}}
+{{|containment-color= 196,2,51}}
+{{|inc-esoteric-layout = @@--@@]]]}}
+
+{{@@[[div class="anom-bar-esoteric"]]@@}}
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 3}}
+{{|container-class= keter}}
+{{|secondary-class= cernunnos}}
+{{|secondary-icon= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/cernunnos-icon.svg}}
+{{|disruption-class= vlam}}
+{{|risk-class= danger}}
+{{]]}}
+
+{{@@[[/div]]@@}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ クラス色の分割
+
+**注:** 当コンポーネントは、特殊クラスのレイアウトのコンポーネントと同時に使用することを意図しています。
+
+副次クラスに色を割当て、同時に収容クラスの背景に於いて双方の色が分割された状態での表示を可能とします。同様のサブコンポーネントについては、[[[Component:ACS Peppo Split|PepperGhostのACS Splitter]]]を参考にしてください。
+
+使用するには以下の記述を導入します。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|containment-class= ##blue|収容クラスの名称##}}
+{{|containment-color= ##blue|収容クラスの色(RGBコード)##}}
+{{|secondary-class= ##blue|副次クラスの名称##}}
+{{|secondary--color= ##blue|副次クラスの色(RGBコード)##}}
+{{|inc-split-color= @@--@@]]]}}
+
+[[/div]]
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[include :scp-jp:component:customizable-acs
+|containment-class= euclid
+|containment-color= 255,211,0
+|secondary-class= archon
+|secondary-color= 60,179,113
+|inc-split-color= --]]]
+
+[[include :scp-jp:component:customizable-acs
+|containment-class= euclid
+|containment-image= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/euclid-icon.svg
+|containment-color= 255,211,0
+|inc-esoteric-layout = --]]]
+
+[[div class="anom-bar-esoteric"]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 5
+|container-class= euclid
+|secondary-class= archon
+|secondary-icon= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/archon-icon.svg
+|disruption-class= amida
+|risk-class= caution
+]]
+
+[[/div]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|containment-class= euclid}}
+{{|containment-color= 255,211,0}}
+{{|secondary-class= archon}}
+{{|secondary-color= 60,179,113}}
+{{|inc-split-color= @@--@@]]]}}
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|containment-class= euclid}}
+{{|containment-image= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/euclid-icon.svg}}
+{{|containment-color= 255,211,0}}
+{{|inc-esoteric-layout = @@--@@]]]}}
+
+{{@@[[div class="anom-bar-esoteric"]]@@}}
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 5}}
+{{|container-class= euclid}}
+{{|secondary-class= archon}}
+{{|secondary-icon= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/archon-icon.svg}}
+{{|disruption-class= amida}}
+{{|risk-class= caution}}
+{{]]}}
+
+{{@@[[/div]]@@}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ クリアランスバーの色のカスタム
+
+このコンポーネントを利用することで、クリアランスレベルバーの色を変更することが可能です！導入するには以下の記述を導入し、該当するレベルに色をRGBコードで入力してください。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|clearance-six= ##blue|レベル6のクリアランスバーの色(RGBコード)##}}
+{{|clearance-five= ##blue|レベル5のクリアランスバーの色(RGBコード)##}}
+{{|clearance-four= ##blue|レベル4のクリアランスバーの色(RGBコード)##}}
+{{|clearance-three= ##blue|レベル3のクリアランスバーの色(RGBコード)##}}
+{{|clearance-two= ##blue|レベル2のクリアランスバーの色(RGBコード)##}}
+{{|clearance-one= ##blue|レベル1のクリアランスバーの色(RGBコード)##}}
+{{|inc-clearance= @@--@@]]]}}
+
+[[/div]]
+
+全ての項目を記入する必要はなく、該当するクリアランスレベルの項目のみを記入する点に留意してください。
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[include :scp-jp:component:customizable-acs
+|clearance-two= 255,192,203
+|inc-clearance= --]]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 2
+|container-class= safe
+|secondary-class= none
+|disruption-class= ekhi
+|risk-class= caution
+]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|clearance-two= 255,192,203}}
+{{|inc-clearance= @@--@@]]]}}
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 2}}
+{{|container-class= safe}}
+{{|secondary-class= none}}
+{{|disruption-class= ekhi}}
+{{|risk-class= caution}}
+{{]]}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ 画像を利用したクリアランスレベルのカスタム
+
+このサブコンポーネントもクリアランスバーを変更しますが、今回はレベル6のクリアランスのデフォルト設定と同様の方法を利用してバーの背景に画像を表示させられようにします。実装するには以下のコードを入力してください。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|clearance-six-image= ##blue|レベル6のクリアランスバーの画像##}}
+{{|clearance-five-image= ##blue|レベル5のクリアランスバーの画像##}}
+{{|clearance-four-image= ##blue|レベル4のクリアランスバーの画像##}}
+{{|clearance-three-image= ##blue|レベル3のクリアランスバーの画像##}}
+{{|clearance-two-image= ##blue|レベル2のクリアランスバーの画像##}}
+{{|clearance-one-image= ##blue|レベル1のクリアランスバーの画像##}}
+{{|inc-clearance-image= @@--@@]]]}}
+
+[[/div]]
+
+上記と同様に此処では全ての項目を記入する必要はなく、該当するクリアランスレベルの項目のみを記入する点に留意してください。
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[include :scp-jp:component:customizable-acs
+|clearance-four-image= http://scp-jp-storage.wikidot.com/local--files/file:7522555-163-8ww5/I%20ship%20it.jpg
+|clearance-six-image= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/galactic.jpg
+|inc-clearance-image= --]]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 4
+|container-class= keter
+|secondary-class= none
+|disruption-class= dark
+|risk-class= warning
+]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|clearance-four-image= http://scp-jp-storage.wikidot.com/local--files/file:7522555-163-8ww5/I%20ship%20it.jpg}}
+{{|inc-clearance-image= @@--@@]]]}}
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 4}}
+{{|container-class= keter}}
+{{|secondary-class= none}}
+{{|disruption-class= dark}}
+{{|risk-class= warning}}
+{{]]}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ プライド・クリアランスバー
+
+当サブコンポーネントは、以下のコードを適用することでクリアランスバーをプライド色に変更可能です。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|inc-##blue|trans/lgbt/bi/pan/nb##-clearance = @@--@@]]]}}
+
+[[/div]]
+
+上記の青文字のリスト内から変数を1つ正確に選択する必要があります。クリアランスバーに各々のプライドフラッグの色を割当てられます。
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[module CSS]]
+body .pride-clearance-example .anom-bar-container.clear-6 .top-center-box > div {
+    background: linear-gradient(90deg, #fcf431, #fcfcfc, #9d59d2, #282828)!important;
+    background-size: 100%;
+}
+[[/module]]
+
+[[div_ class="pride-clearance-example"]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 6
+|container-class= euclid
+|secondary-class= none
+|disruption-class= vlam
+|risk-class= danger
+]]
+
+[[/div]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|inc-nb-clearance= @@--@@]]]}}
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 6}}
+{{|container-class= euclid}}
+{{|secondary-class= none}}
+{{|disruption-class= vlam}}
+{{|risk-class= danger}}
+{{]]}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ 色のアクセント
+
+当サブコンポーネントは、ACSヘッダーの色々な部分に色付けを行うことが可能です。色が変更される対象はアイコンの縁部分、矢印部分[[footnote]]**訳注:** 原文では"danger diamond"、化学薬品の危険性を表示する規格[https://ja.wikipedia.org/wiki/NFPA_704 "NFPA 704"]の俗称。[[/footnote]]、分割バー[[footnote]]**訳注:** アイテム番号部分と収容・撹乱・リスククラス部分及び撹乱・リスククラス部分と矢印部分の境界線を指す。[[/footnote]]の部分です。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|accent-one= ##blue|分割バーと矢印部分の色(RGBコード)##}}
+{{|accent-two= ##blue|アイコンの縁の色(RGBコード)##}}
+{{|class-number-color= ##blue|リスククラス・撹乱クラス部分の文字色(RGBコード)##}}
+{{|inc-color-accent = @@--@@]]]}}
+
+[[/div]]
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[module CSS]]
+body .accent-example .anom-bar > .bottom-box {
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgb(0,135,189);
+       -moz-box-shadow: 0 -0.5rem 0 0 rgb(0,135,189);
+     box-shadow: 0 -0.5rem 0 0 rgb(0,135,189);
+}
+
+body .accent-example .text-part > .main-class::before {
+    border: 0.25rem solid rgb(80,0,0);
+}
+
+body .accent-example .anom-bar-container.esoteric .text-part > .main-class::before {
+    top: 0.5rem;
+    right: 1.25rem;
+    width: 5rem;
+    -webkit-border-radius: -webkit-calc(3.53125rem / 2);
+       -moz-border-radius: -moz-calc(3.53125rem / 2);
+     border-radius: calc(3.53125rem / 2);
+    background-color: rgb(3, 3, 3);
+    border-color: rgb(80,0,0);
+    -webkit-filter: invert(0);
+     filter: invert(0);
+    background-image: url("https://scp-jp.wdfiles.com/local--files/component%3Acustomizable-acs/esoteric-icon.svg");
+    -webkit-background-size: 75% 75%;
+       -moz-background-size: 75% 75%;
+     -o-background-size: 75% 75%;
+     background-size: 75% 75%;
+    background-repeat: no-repeat;
+    background-position: left -10px center;
+    background-clip: border-box;
+}
+
+body .accent-example .anom-bar-container.esoteric .text-part > .main-class::after {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    right: 0.25rem;
+    width: 3.53125rem;
+    height: 3.53125rem;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+     border-radius: 50%;
+    border: 0.25rem solid rgb(80,0,0);
+    -webkit-background-size: contain;
+       -moz-background-size: contain;
+     -o-background-size: contain;
+     background-size: contain;
+    background-position: center center;
+}
+
+body .accent-example .text-part .disrupt-class::after,
+body .accent-example .text-part .risk-class::after,
+body .accent-example .text-part .disrupt-class::before,
+body .accent-example .text-part .risk-class::before {
+    content: "";
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+     border-radius: 50%;
+    border: 0.25rem solid rgb(80,0,0);
+    width: 2.5rem;
+    height: 2.5rem;
+    top: -webkit-calc(50% - 1.5rem);
+    top: -moz-calc(50% - 1.5rem);
+    top: calc(50% - 1.5rem);
+    font-size: 2em;
+    background-color: rgb(252, 252, 252);
+    background-color: rgb(var(--swatch-background, 252, 252, 252));
+    -webkit-background-size: contain;
+       -moz-background-size: contain;
+     -o-background-size: contain;
+     background-size: contain;
+    background-position: center center;
+}
+
+body .accent-example .text-part .disrupt-class::before,
+body .accent-example .text-part .risk-class::before {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+     -ms-flex-pack: start;
+     justify-content: flex-start;
+    background-color: rgb(80,0,0);
+    width: 3rem;
+    height: 3rem;
+    top: -webkit-calc(50% - 1.5rem);
+    top: -moz-calc(50% - 1.5rem);
+    top: calc(50% - 1.5rem);
+    border: 0;
+    right: 1rem;
+    text-align: left;
+    font-size: 1em;
+    padding-left: 0.5rem;
+    color: rgb(252, 252, 252);
+    color: rgb(var(--swatch-text-secondary-color, 252, 252, 252));
+}
+
+body .accent-example .bottom-box > .diamond-part {
+    -webkit-box-shadow: -0.5rem 0 0 0 rgb(0,135,189);
+       -moz-box-shadow: -0.5rem 0 0 0 rgb(0,135,189);
+     box-shadow: -0.5rem 0 0 0 rgb(0,135,189);
+}
+
+body .accent-example .danger-diamond > .arrows {
+    background-color: rgb(0,135,189);
+}
+
+body .accent-example .danger-diamond > .top-icon,
+body .accent-example .danger-diamond > .right-icon,
+body .accent-example .danger-diamond > .left-icon,
+body .accent-example .danger-diamond > .bottom-icon {
+    border: 0.1875rem solid rgb(80,0,0);
+}
+
+body .accent-example .anom-bar-container .text-part .disrupt-class::before,
+body .accent-example .anom-bar-container .text-part .risk-class::before {
+    color: rgb(212,175,55)!important;
+}
+[[/module]]
+
+[[div_ class="accent-example"]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 1
+|container-class= safe
+|secondary-class= none
+|disruption-class= amida
+|risk-class= caution
+]]
+
+[[/div]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|accent-one= 0,135,189}}
+{{|accent-two= 80,0,0}}
+{{|class-number-color= 212,175,55}}
+{{|inc-color-accent = @@--@@]]]}}
+
+{{[[include :scp-jpi:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 1}}
+{{|container-class= safe}}
+{{|secondary-class= none}}
+{{|disruption-class= amida}}
+{{|risk-class= caution}}
+{{]]}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ プライド・アクセント
+
+当サブコンポーネントは、メインの水平バー[[footnote]]**訳注:** クリアランスレベルを表示するバー。[[/footnote]]をプライド色のグラデーションに変更します！これは水平バー部分//のみ//を変更し、"色のアクセント"と互換性を有します。実装するには以下のコードを入力してください。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|inc-##blue|trans/lgbt/bi/pan/nb##-accent = @@--@@]]]}}
+
+[[/div]]
+
+上記の青文字のリスト内から変数を1つ正確に選択する必要があります。水平バーに各々のプライドフラッグの色が割当てられます。
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[module CSS]]
+body .pride-accent-example .anom-bar > .bottom-box {
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+       -moz-box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+     box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+     background-position: center 0rem;
+     background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787)!important;
+     background-repeat: no-repeat!important;
+     background-size: 100% 0.5rem!important;
+     padding-top: 0.8rem;
+}
+
+body .pride-accent-example .anom-bar > .top-box {
+    padding-bottom: 0.5rem;
+}
+[[/module]]
+
+[[div_ class="pride-accent-example"]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 5
+|container-class= pending
+|secondary-class= none
+|disruption-class= none
+|risk-class= none
+]]
+
+[[/div]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|inc-lgbt-accent= @@--@@]]]}}
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 5}}
+{{|container-class= pending}}
+{{|secondary-class= none}}
+{{|disruption-class= none}}
+{{|risk-class= none}}
+{{]]}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ フォントのカスタマイズ
+
+当サブコンポーネントでは、ACSヘッダーのフォントのカスタマイズが可能です。実装するには以下のコードを入力してください。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|font-import= ##blue|フォントのimportコード##}}
+{{|font-name= ##blue|フォント名##}}
+{{|inc-custom-font= @@--@@]]]}}
+
+[[/div]]
+
+importコードは、フォントをインポートするための完全なコード行です。Google Fontsを筆頭とするフォントを提供するWebサイトは、適切なインポートコード行を提供しています。例えば、以下はRoboto Slabフォントをインポートするために{{font-import}}変数に適用されるものです。
+
+> {{|font-import= @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');}}
+
+{{font-name}}変数は単にフォント名、即ち"Roboto Slab"を指します。使用されるフォントが、当サイトのライセンスであるCC BY-SA 3.0と互換性を有するものであることを確認してください。
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[module CSS]]
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body .font-example .anom-bar-container,
+body .font-example .anom-bar-container * {
+    font-family: 'Josefin Sans'!important;
+}
+[[/module]]
+
+[[div_ class="font-example"]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 3
+|container-class= euclid
+|secondary-class= none
+|disruption-class= vlam
+|risk-class= danger
+]]
+
+[[/div]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|font-import= @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');}}
+{{|font-name= Josefin Sans}}
+{{|inc-custom-font= @@--@@]]]}}
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 3}}
+{{|container-class= euclid}}
+{{|secondary-class= none}}
+{{|disruption-class= vlam}}
+{{|risk-class= danger}}
+{{]]}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ ACSへの新たな項目の追加
+
+当サブコンポーネントを利用すると、ACSヘッダーの下部に追加のクラスを実装することが可能です。実装するには以下のコードを追加のセクションを表示させたい部分に入力してください。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|category-count= ##blue|追加したいカテゴリの数(最小値1、最大値4)##}}
+{{|class-color-1= ##blue|1番目のカテゴリーの色(RGBコード)##}}
+{{|class-category-1= ##blue|1番目のカテゴリーの名称##}}
+{{|class-text-1= ##blue|1番目のカテゴリーの内容##}}
+{{|class-icon-1= ##blue|1番目のカテゴリーの画像URL(オプション)##}}
+{{|class-color-2= ##blue|2番目のカテゴリーの色(RGBコード)##}}
+{{|class-category-2= ##blue|2番目のカテゴリーの名称##}}
+{{|class-text-2= ##blue|2番目のカテゴリーの内容##}}
+{{|class-icon-2= ##blue|2番目のカテゴリーの画像URL(オプション)##}}
+{{|class-color-3= ##blue|3番目のカテゴリーの色(RGBコード)##}}
+{{|class-category-3= ##blue|3番目のカテゴリーの名称##}}
+{{|class-text-3= ##blue|3番目のカテゴリーの内容##}}
+{{|class-icon-3= ##blue|3番目のカテゴリーの画像URL(オプション)##}}
+{{|class-color-4= ##blue|4番目のカテゴリーの色(RGBコード)##}}
+{{|class-category-4= ##blue|4番目のカテゴリーの名称##}}
+{{|class-text-4= ##blue|4番目のカテゴリーの内容##}}
+{{|class-icon-4= ##blue|4番目のカテゴリーの画像URL(オプション)##}}
+{{|inc-extra-categories= @@--@@]]]}}
+
+[[/div]]
+
+追加されるカテゴリーが4つ未満の場合、最小の番号のカテゴリーのみが表示されます。例えば2つのカテゴリーを追加する場合カテゴリー1及び2は表示されますが、3及び4は表示されません。更に、4つ以上の追加カテゴリーが必要な場合、或いは新しいカテゴリーがサイズの異なる範囲を占めるようにしたい場合には当コンポーネントを複数回実装することでそれが実現可能です。
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 0000
+|clearance= 6
+|container-class= esoteric
+|secondary-class= ticonderoga
+|secondary-icon= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/ticonderoga-icon.svg
+|disruption-class= ekhi
+|risk-class= notice
+]]
+
+[[include :scp-jp:component:customizable-acs
+|category-count= 2
+|class-color-1= 0,135,189
+|class-category-1= object type:
+|class-text-1= temporal
+|class-icon-1= http://scp-jp-storage.wikidot.com/local--files/file:7522555-161-ite5/Damnum.png
+|class-color-2= 66,66,72
+|class-category-2= current status:
+|class-text-2= decommissioned
+|class-icon-2= http://scp-jp-storage.wikidot.com/local--files/file:7522555-159-44z5/Decommissioned.svg
+|inc-extra-categories= --]]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:anomaly-class-bar-source}}
+{{|item-number= 0000}}
+{{|clearance= 6}}
+{{|container-class= esoteric}}
+{{|secondary-class= ticonderoga}}
+{{|secondary-icon= http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/ticonderoga-icon.svg}}
+{{|disruption-class= ekhi}}
+{{|risk-class= notice}}
+{{]]}}
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|category-count= 2}}
+{{|class-color-1= 0,135,189}}
+{{|class-category-1= object type:}}
+{{|class-text-1= temporal}}
+{{|class-icon-1= http://scp-jp-storage.wikidot.com/local--files/file:7522555-161-ite5/Damnum.png}}
+{{|class-color-2= 66,66,72}}
+{{|class-category-2= current status:}}
+{{|class-text-2= decommissioned}}
+{{|class-icon-2= http://scp-jp-storage.wikidot.com/local--files/file:7522555-159-44z5/Decommissioned.svg}}
+{{|inc-extra-categories= @@--@@]]]}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
++++ テキストのカスタマイズ
+
+##red|警告:## 当サブコンポーネントと同時に、通常のACSコンポーネントをインクルードしないでください。CSSでテキストの内容を完全に置換できないため、当コンポーネントはACS自体を直接インポートしdivコンテンツの一部を書き換えることで動作しています。
+
+当サブコンポーネントを使用すると、ACSコンポーネントに表示される文章の一部を置換することが可能です(このコンポーネントページでカバーされている部分を除きます)。実装するには以下のコードを入力してください。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|item-number= ##blue|アイテム番号##}}
+{{|clearance= ##blue|クリアランスレベル##}}
+{{|container-class= ##blue|収容クラス##}}
+{{|secondary-class= ##blue|副次クラス(オプション)##}}
+{{|secondary-icon= ##blue|副次クラスのアイコンURL(副次クラスが存在する場合以外オプション)##}}
+{{|disruption-class= ##blue|撹乱クラス##}}
+{{|risk-class= ##blue|リスククラス##}}
+{{|item-text= ##blue|"アイテム番号:"部分を置換する内容##}}
+{{|level-text= ##blue|"レベル"部分を置換する内容##}}
+{{|clearance-number-text= ##blue|レベル部分の数字を置換する内容##}}
+{{|clearance-text= ##blue|クリアランスの名称部分を置換する内容(例: レベル2なら"Unrestricted")##}}
+{{|containment-text= ##blue|"収容クラス:"部分を置換する内容##}}
+{{|secondary-text= ##blue|"副次クラス:"部分を置換する内容##}}
+{{|disruption-text= ##blue|"撹乱クラス:"部分を置換する内容##}}
+{{|risk-text= ##blue|"リスククラス:"部分を置換する内容##}}
+{{|inc-custom-text= @@--@@]]]}}
+
+[[/div]]
+
+コンポーネントの機能のためには、//必ず//上記の全てのパラメータが必要です(オプションと明記されている場合を除く)。
+
+[[collapsible show="+ 実装例を閲覧" hide="- 閲覧を終了"]]
+
+[[module CSS]]
+.custom-text-wrap .anom-bar-container.clear-3 .top-right-box > .clearance::before {
+    content: ""!important;
+}
+[[/module]]
+
+[[div_ class="custom-text-wrap"]]
+[[include :scp-jp:component:customizable-acs
+|item-number= 0000
+|clearance= 3
+|container-class= euclid
+|secondary-class= none
+|disruption-class= keneq
+|risk-class= warning
+|item-text= イエロー番号:
+|level-text= 🍌🍌
+|clearance-number-text= 😂
+|clearance-text= 超イエロー
+|containment-text= 収容イエロー:
+|secondary-text= 副次イエロー:
+|disruption-text= 撹乱イエロー:
+|risk-text= リスクイエロー:
+|inc-custom-text= --]]]
+[[/div]]
+
+**コードの例:**
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|item-number= 0000}}
+{{|clearance= 3}}
+{{|container-class= euclid}}
+{{|secondary-class= none}}
+{{|disruption-class= keneq}}
+{{|risk-class= warning}}
+{{|item-text= イエロー番号:}}
+{{|level-text= 🍌🍌}}
+{{|clearance-number-text= 😂}}
+{{|clearance-text= 超イエロー}}
+{{|containment-text= 収容イエロー:}}
+{{|secondary-text= 副次イエロー:}}
+{{|disruption-text= 撹乱イエロー:}}
+{{|risk-text= リスクイエロー:}}
+{{|inc-custom-text= @@--@@]]]}}
+
+[[/div]]
+
+[[/collapsible]]
+@@ @@
+
+[[module CSS]]
+
+#page-content .secret-collapsible .collapsible-block-folded .collapsible-block-link {
+    opacity: 0;
+}
+
+[[/module]]
+
+[[div class="secret-collapsible"]]
+
+[[collapsible show="+ 秘匿されたコンポーネントを展開しますか？" hide="- 劇的公開！"]]
+
++++* レベル69(AF2021)
+
+貴方のSCPオブジェクトが最高責任者だけのものであることを明確にしたいですか？SCP財団の最もクリアランスの高い職員？それとも秘密の王様？それならば……レベル69を用意しましょう。
+
+ACSをレベル69にグレードアップするには、ACSヘッダーを導入したい場所に以下の記述を導入してください。これは標準のACSヘッダーとは併用されず、単独で動作します。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|item-number=}}
+{{|clearance= 69}}
+{{|container-class=}}
+{{|secondary-class=}}
+{{|disruption-class=}}
+{{|risk-class=}}
+{{|inc-level-sixty-nine= @@--@@]]]}}
+
+[[/div]]
+
+勿論、貴方はこれらの変数が何をするのか知っている必要があります。オブジェクトクラスやその他を入力すればOKです。更に、69の代わりに他のクリアランスレベルを入力することも可能です。(しかし、何故そんなことをするのでしょう？)
+
+もう一つ: クリアランスバーの色を変更したい場合は、以下の記述を挿入してください。
+
+[[div class="blockquote"]]
+
+{{[[include :scp-jp:component:customizable-acs}}
+{{|clearance-sixty-nine= ##blue|クリアランスバーの色(RGBコード)##}}
+{{|inc-clearance= @@--@@]]]}}
+
+[[/div]]
+
+[[/collapsible]]
+
+[[/div]]
+
+[[footnoteblock]]
+
+[[include :scp-wiki:more-by:calibold]]

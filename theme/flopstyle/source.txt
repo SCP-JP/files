@@ -1,0 +1,618 @@
+[[module CSS]]
+@import url(http://scp-jp.wdfiles.com/local--code/theme%3Aflopstyle/1);
+[[/module]]
+
+[[iftags +テーマ]]
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module CSS]]
+ .templateInfo{ margin: 1em 0; padding: 0 1em; border: 1px solid hsl(0, 0%, 87%); }
+ .collapsible-block-link{ font-size: 120%; }
+[[/module]]
+
+[[div class="templateInfo"]]
++ 使用例
+[[/div]]
+
+
+[[div class="centered"]]
+[[collapsible show="▷ 追加の特色を表示 ◁" hide="△ 閉じる △"]]
+[[/div]]
+
+@@ @@
+
+[[tabview]]
+    [[tab Divブロック]]
+
+[[div class="blockquote"]]
+いつもの引用ブロック
+[[/div]]
+
+[[div class="alt-blockquote"]]
+別の引用ブロック
+[[/div]]
+
+[[div class="lightweight"]]
+= 軽めの引用ブロック
+[[/div]]
+
+[[div class="report-box"]]
+レポート用ブロック
+----
+//事件ログ向け//
+[[/div]]
+
+[[div class="raisa-header"]]
+RAISAヘッダ
+[[/div]]
+
+[[div class="pink-header"]]
+かわいいヘッダ
+[[/div]]
+
+[[div class="log-header"]]
+ログヘッダ
+
+//インタビュー・探査ログの上に使う//
+[[/div]]
+
+    [[/tab]]
+    [[tab 特殊フォーマット]]
+
+,,//文書更新テキスト赤//,,
+[[span class="rev-red"]] 予防接種を拡散。 [[/span]]
+
+,,//文書更新テキスト緑//,,
+[[span class="rev-green"]] 古い情報は__緑__で表示されます。 [[/span]]
+
+,,//文書更新テキスト青//,,
+[[span class="rev-blue"]] 接種完了しました！ [[/span]]
+
+,,//ターミナルテキスト//,,
+[[span class="terminal-span"]] [編集済] [削除済] [データ喪失] [[/span]]
+
+[[div class="lite-heading"]]
+,,//特殊な見出しエリア//,,
+----
+++ 見出し
++++ 小見出し
+----
+[[/div]]
+
+[[div class="footing"]]
+,,//文書フッティング//,,
+[[/div]]
+
+@@ @@
+
+    [[/tab]]
+    [[tab 警告ヘッダ]]
+
+[[<]]
+[[div class="orderwrapper"]]
+[[div class="council"]]
+[[/div]]
+[[div class="ordertitle"]]
++ タイトル / 警告
+[[/div]]
+[[div class="orderdescription"]]
+ _
++ サブタイトル / 部外秘 / 文書タイプ
+以下のファイルはレベルX/XXXXに分類されています。
+許可なきアクセスは禁止されています。
+[[/div]]
+[[div class="itemno"]]
++ アイテム番号 / プロジェクト名
+[[/div]]
+[[/div]]
+
+__ソースコード__:
+
+[[div class="code"]]
+@@[[div class="orderwrapper"]]@@
+@@[[div class="council"]]@@
+@@[[/div]]@@
+@@[[div class="ordertitle"]]@@
+@@+ タイトル / 警告@@
+@@[[/div]]@@
+@@[[div class="orderdescription"]]@@
+@@ _@@
+@@+ サブタイトル / 部外秘 / 文書タイプ@@
+@@以下のファイルはレベルX/XXXXに分類されています。@@
+@@許可なきアクセスは禁止されています。@@
+@@[[/div]]@@
+@@[[div class="itemno"]]@@
+@@+ アイテム番号 / プロジェクト名@@
+@@[[/div]]@@
+@@[[/div]]@@
+[[/div]]
+[[/<]]
+
+    [[/tab]]
+[[/tabview]]
+
+[[/collapsible]]
+
+
+[[div class="templateInfo"]]
++ これは何？
+----
+これは[[*user Lt Flops]]が自分の記事で使うテーマです。**Sigma-9**(このwikiのメインテーマ)に対する細かい審美面での改造物であり、使われている記事とは独立して容易に更新できるように作られました。
+
+自分が何をしているか分かっているとき__**だけ**__使ってください。
+
+そう、そして名前がダサい。[[span class="terminal-span"]] あきらめましょう。 [[/span]]
+[[/div]]
+
+[[div class="templateInfo"]]
++ 使い方
+----
+このテーマを使用するには、以下のコードをあなたの記事の一番上にコピーしてください[[footnote]]訳注: 原文ではenにアップロードされたテーマを参照しており、コードは@@[[include :scpwiki:theme:flopstyle]]@@になる[[/footnote]]:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:flopstyle]]@@
+[[/div]]
+
+このテーマは以下のコンポーネントを念頭に置いてデザインされました:
+----
++++ Flops Header
+----
+[[div class="code"]]
+@@[[include :scp-wiki:component:flops-header@@
+@@|item=@@
+@@|containment=@@
+@@|level=@@
+@@|security=@@
+@@|disruption=@@
+@@|disruption-bg-color=@@
+@@]]@@
+[[/div]]
+----
++++ その他の変更可能箇所
+----
+[[div class="code"]]
+@@/* ---- フッタ隠し ---- */@@
+@@ .footnotes-footer{ display: none; }@@
+
+@@/* ---- 軽い見出しの小見出しをいじる ---- */@@
+@@ .lite-heading h3{ color: hsl(360, 100%, 27%); }@@
+
+@@/* ---- 警告ヘッダのロゴを変更 ---- */@@
+@@ .council{ background-image: url(http://scp-wiki.wdfiles.com/local--files/scp-style-resource/scp_trans.png);@@
+[[/div]]
+
+[[/div]]
+
+[[div class="templateInfo"]]
++ ソースコード
+[[/div]]
+
+[[code type="css"]]
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap);
+
+/* --------------------
+ * Flopstyle CSS Theme
+ * [2020 Wikidot Theme]
+ * Created by Lt Flops
+ * -- (CC BY-SA 3.0) --
+**/
+
+/* ---- HEADER CHANGES ---- */
+ span, a{
+     word-break: unset;
+}
+ #header h1 a,
+ #header h1 a::before{
+     position: relative;
+     left: -1.5px;
+
+     color: hsl(0, 0%, 90%);
+     text-shadow:
+        .7px    .7px  0 hsla(0, 0%, 0%, .8),
+       1.4px   1.4px  0 hsla(0, 0%, 0%, .8);
+     letter-spacing: -.02em;
+}
+ #header h1 a{
+     font-family: "Montserrat", "Arial", sans-serif;
+}
+ #header h2 span,
+ #header h2 span::before{
+     color: hsl(0, 0%, 90%);
+     text-shadow: 1px 1px 0 hsla(0, 0%, 0%, .8);
+}
+
+/* ---- MOBILE MEDIA QUERY ---- */
+ @media (max-width: 479px){
+     #header h1 a{
+         font-size: 90%;
+    }
+}
+
+/* ---- NOTE MEDIA QUERY ---- */
+ @media (min-width: 480px) and (max-width: 580px){
+     #header h1 a{
+         font-size: 110%;
+    }
+}
+
+/* ---- MINI TABLET MEDIA QUERY ---- */
+ @media (min-width: 581px) and (max-width: 767px){
+     #header h1 a{
+         font-size: 130%;
+    }
+}
+
+/* ---- TABLET MEDIA QUERY ---- */
+ @media (min-width: 768px) and (max-width: 979px){
+     #header h1 a{
+         font-size: 150%;
+    }
+}
+
+/* ---- SIGMA-9 CHANGES ---- */
+ #search-top-box-form input[type="submit"],
+ #search-top-box-form input[type=submit]:hover,
+ #search-top-box-form input[type=submit]:focus,
+ #top-bar ul li ul,
+ #side-bar .side-block,
+ .page-rate-widget-box,
+ .scp-image-block{
+     box-shadow: none;
+}
+ #top-bar a{
+     color: hsl(0, 0%, 96%);
+}
+ .scp-image-block scp-image-caption{
+      width: 310px;
+}
+ .scp-image-block .scp-image-caption{
+     font-size: unset;
+}
+ @media (max-width: 767px){
+     .open-menu a:hover{
+         box-shadow: none;
+    }
+}
+
+/* ---- GENERAL FORMATTING CHANGES ---- */
+ #page-content h1,
+ #page-content h2,
+ #page-content h3,
+ #page-content h4,
+ #page-content h5,
+ #page-content h6{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: .57em;
+
+     word-break: unset;
+}
+ hr{
+     margin: 1em 0;
+}
+ .collapsible-block-link{
+     font-weight: bold;
+}
+.wiki-content-table{
+    width: 100%;
+}
+
+/* ---- INFO BAR CHANGES ---- */
+ body{
+     --barColour: hsl(0, 89%, 18%);
+     color: hsl(0, 0%, 5%);
+     word-break: unset;
+}
+ .u-faq{
+     display: none;
+}
+
+/* ---- DIV BLOCKS ---- */
+ div.blockquote, /* ---- Regular Block Quote ---- */
+ blockquote{
+     border: 3px double hsl(0, 0%, 60%);
+}
+ .alt-blockquote{ /* ---- Alternative Block Quote ---- */
+     margin: 1em 0;
+     padding: 0 1em;
+
+     background-color: hsl(0, 0%, 96%);
+     border: 1px solid hsl(0, 0%, 60%);
+     border-radius: 1em;
+}
+ .lightweight{ /* ---- Lightweight Block Quote ---- */
+     margin: 1em 3em;
+     padding: 0 1em;
+
+     background-color: hsl(0, 0%, 90%);
+     text-align: left;
+}
+ .report-box{ /* ---- Report Block ---- */
+     margin: 1em 0;
+     padding: 0 1em;
+
+     background-color: hsl(0, 0%, 100%);
+     border: 2px solid hsl(0, 0%, 5%);
+}
+ .report-box hr{
+     background: hsl(0, 0%, 5%);
+}
+ .raisa-header, .pink-header{
+     margin-bottom: 1em;
+     padding: 0 .5em;
+
+     text-align: center;
+}
+ .raisa-header{ /* ---- RAISA Header ---- */
+     background: hsl(60, 65%, 85%);
+     border: 1px solid hsl(0, 0%, 60%);
+}
+ .pink-header{ /* ---- Pretty Header ---- */
+     background: hsl(350, 100%, 85%);
+     border: 1px solid hsl(0, 4%, 36%);
+}
+ .pink-header hr{
+     background: hsl(0, 4%, 36%);
+}
+ .log-header{ /* ---- Interview/Exploration Log Header ---- */
+     margin-bottom: 1em;
+     padding: 0 1em;
+
+     background: hsl(0, 0%, 96%);
+     border: 3px dashed hsl(0, 0%, 60%);
+     border-radius: .75em;
+}
+
+/* ---- SPECIAL FORMATTING ---- */
+ .centered{ /* ---- Center-Aligns Text ---- */
+     text-align: center;
+}
+ .justified{ /* ---- Justify-Aligns Text ---- */
+     text-align: justify;
+}
+ .rev-red{ /* ---- Red Document Revision Text ---- */
+     color: hsl(360, 100%, 27%);
+     font-weight: bold;
+}
+ .rev-green{ /* ---- Green Document Revision Text ---- */
+     color: hsl(120, 100%, 27%);
+     font-weight: bold;
+}
+ .rev-blue{ /* ---- Blue Document Revision Text ---- */
+     color: hsl(240, 100%, 27%);
+     font-weight: bold;
+}
+ .lite-heading{ /* ---- Special Heading Area (Adapted From SCP-4058) ---- */
+     margin: 2.4em auto;
+}
+ .lite-heading h3{
+     color: hsl(360, 100%, 27%);
+}
+ .lite-heading hr{
+     height: 2px;
+     width: 45%;
+     margin: auto;
+}
+ div.blockquote .collapsible-block-folded, blockquote .collapsible-block-folded,
+ .document .collapsible-block-folded,
+ .lightweight .collapsible-block-folded,
+ .report-box .collapsible-block-folded{
+/* ---- For Collapsibles Inside Divs | [CLOSED] ---- */
+     padding: .75em 0;
+/* -------- */
+}
+ div.blockquote .collapsible-block-unfolded,
+ .document .collapsible-block-unfolded,
+ .lightweight .collapsible-block-unfolded,
+ .report-box .collapsible-block-unfolded{
+/* ---- For Collapsibles Inside Divs | [OPEN] ---- */
+     padding-top: .75em;
+/* -------- */
+}
+ .terminal-span{ /* ---- Mimic Terminal Text ---- */
+     font-size: 110%;
+     font-family: Courier, monospace;
+     font-weight: bold;
+}
+ .footing::before{ /* ---- Article Footing ---- */
+     content: " ";
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom: 1px;
+     border-bottom: 2px solid hsl(0, 0%, 47%);
+}
+ .footing{
+     position: relative;
+     border-bottom: 1px solid hsl(0, 0%, 47%);
+}
+
+/*
+ * ---- WARNING HEADER ----
+ * Adapted From SCP-001-JP - indonootoko's Proposal
+ * See the Example at the Top of the Page
+**/
+ .orderwrapper{
+     position: relative;
+     width: auto;
+
+     text-align: center;
+}
+ .council{
+     position: relative;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     width: 295px;
+     height: 295px;
+     margin: auto;
+
+     background-image: url(http://scp-wiki.wdfiles.com/local--files/scp-style-resource/scp_trans.png);
+     background-position: center;
+     background-size: 295px 295px;
+     background-repeat: no-repeat;
+}
+ .ordertitle{
+     position: absolute;
+     top: 27px;
+     left: 0;
+     right: 0;
+}
+ .ordertitle h1{
+     color: hsl(0, 0%, 5%);
+     font-size: 220%;
+     line-height: 90%;
+}
+ .orderdescription{
+     position: absolute;
+     top: 93px;
+     left: 0;
+     right: 0;
+     width: 100%;
+}
+ .orderdescription h1{
+     color: hsl(0, 0%, 5%);
+     font-size: 120%;
+}
+ .orderdescription p{
+     color: hsl(0, 0%, 5%);
+     font-size: 90%;
+}
+ .itemno{
+     position: absolute;
+     bottom: 18px;
+     left: 0;
+     right: 0;
+}
+ .itemno h1{
+     color: hsl(0, 0%, 5%);
+     font-size: 170%;
+}
+
+/* ---- YUI TAB BASE ---- */
+.yui-navset .yui-nav a,.yui-navset .yui-navset-top .yui-nav a{background-color:inherit;background-image:inherit}.yui-navset .yui-nav a:hover,.yui-navset .yui-nav a:focus{background:inherit;text-decoration:inherit}.yui-navset .yui-nav .selected a,.yui-navset .yui-nav .selected a:focus,.yui-navset .yui-nav .selected a:hover{color:inherit;background:inherit}.yui-navset .yui-nav,.yui-navset .yui-navset-top .yui-nav{border-color:inherit}.yui-navset li{line-height:inherit}
+
+/*
+ * ---- YUI TAB CUSTOMIZATION ----
+ * Thanks stormbreath!
+**/
+ .yui-navset *{
+     transition:
+                  color 80ms cubic-bezier(.4, 0, .2, 1),
+       background-color 80ms cubic-bezier(.4, 0, .2, 1);
+}
+ .yui-navset .yui-nav,
+ .yui-navset .yui-navset-top .yui-nav{
+     display: flex;
+     flex-wrap: wrap;
+     width: calc(100% - .125rem);
+     margin: 0 auto;
+
+     border-color: hsl(360, 94%, 20%);
+     box-shadow: 0 calc(.0625rem * 5) 0 0 hsl(360, 94%, 20%);
+}
+ .yui-navset .yui-nav a, /* ---- Link Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav a{
+     color: hsl(0, 0%, 5%);
+/* ---- Tab Background Color | [UNSELECTED] ---- */
+     background-color: hsl(0, 0%, 99%);
+/* -------- */
+     background-image: none;
+     border: unset;
+}
+ .yui-navset .yui-nav a:hover,
+ .yui-navset .yui-nav a:focus{
+     color: hsl(0, 0%, 96%);
+/* ---- Tab Background Color | [HOVER] ---- */
+     background-color: hsl(360, 100%, 27%);
+/* -------- */
+}
+ .yui-navset .yui-nav li, /* ---- Listitem Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav li{
+     position: relative;
+     display: flex;
+     flex-grow: 2;
+     max-width: 100%;
+     margin: 0;
+     padding: 0;
+
+     background-color: hsl(0, 0%, 96%);
+     border-color: transparent;
+     box-shadow: 0 0 0 .0625rem hsl(360, 94%, 20%);
+}
+ .yui-navset .yui-nav li a,
+ .yui-navset-top .yui-nav li a,
+ .yui-navset-bottom .yui-nav li a{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+}
+ .yui-navset .yui-nav li em{
+     border: unset;
+}
+ .yui-navset .yui-nav a em,
+ .yui-navset .yui-navset-top .yui-nav a em{
+     padding: .35em .75em;
+
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+}
+ .yui-navset .yui-nav .selected, /* ---- Selection Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav .selected{
+     flex-grow: 2;
+     margin: 0;
+     padding: 0;
+
+/* ---- Tab Background Color | [SELECTED] ---- */
+     background-color: hsl(360, 94%, 20%);
+/* -------- */
+}
+ .yui-navset .yui-nav .selected a,
+ .yui-navset .yui-nav .selected a em{
+     border: hsl(360, 94%, 20%);
+}
+ .yui-navset .yui-nav .selected a{
+     width: 100%;
+
+     color: hsl(0, 0%, 96%) !important;
+     background-image: none;
+}
+ .yui-navset .yui-nav .selected a:focus,
+ .yui-navset .yui-nav .selected a:active{
+     color: hsl(0, 0%, 96%);
+     background-color: hsl(360, 94%, 20%);
+}
+ .yui-navset .yui-nav .selected a:hover{
+     cursor: default;
+}
+ .yui-navset-left .yui-content{
+ /* ---- Content Background ---- */
+     background-color: hsl(0, 0%, 99%);
+ /* -------- */
+}
+ .yui-navset .yui-content,
+ .yui-navset .yui-navset-top .yui-content{
+     border-color: hsl(0, 0%, 60%);
+}
+
+/*
+ * ---- REDUCED MOTION ACCESSIBILITY ----
+ * Thanks SMLT!
+**/
+ @media (prefers-reduced-motion: reduce){
+     *, *::before, *::after{
+         animation-duration: .001s !important;
+         animation-iteration-count: 1 !important;
+         transition-duration: .001s !important;
+    }
+}
+[[/code]]
+
+[[/iftags]]

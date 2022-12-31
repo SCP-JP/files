@@ -1,0 +1,26 @@
+[[module css]]
+
+.collab-header{
+ display:initial;
+}
+
+.written_by.\{\$written_by\} {display: none;}
+
+.collabnote.\{\$note\} {display: none;}
+
+[[/module]]
+
+[[module Listpages fullname="{$name}" category="*"]]
+[[div class="preview {$background}"]]
+**%%title_linked%%**
+ +**{{%%rating%%}}**@@   @@^^...^^ **{{%%comments%%}}**
+[[span class="written_by {$written_by}"]]//著者:// {$written_by}. [[/span]][[span class="collabnote {$note}"]]{$note}[[/span]]
+//最終コメント投稿者:// **{{%%commented_by%%}}** //at// **{{%%commented_at|%y/%m/%d  %H:%M%%}}**
+//最終編集者:// **{{%%updated_by%%}}** //at// **{{%%updated_at|%y/%m/%d  %H:%M%%}}**
+[[div class="span"]]
+[[image :first class="imagepre {$image}"]]
+%%preview%%
+##000000|//tags://## %%tags%%
+[[/div]]
+[[/div]]
+[[/module]]

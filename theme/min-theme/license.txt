@@ -1,0 +1,5 @@
+title: ミニマリストテーマ
+author: Nanimono Demonai
+created_at: 2018-07-23 07:57:46+00:00
+source: http://scp-jp.wikidot.com/theme:min-theme
+license: Need to Fix!

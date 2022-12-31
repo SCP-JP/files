@@ -1,0 +1,94 @@
+:root {
+    --sidelogo: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-22-kg1l/basalt_logotype_darkmode.png);
+}
+
+#side-bar {
+    background: linear-gradient( 0deg, rgba(20, 20, 20, 1) 87%, rgba(5, 5, 5, 1) 100%);
+    color: #EDEDED;
+}
+
+#side-bar::before {
+    border-color: #EDEDED;
+}
+
+#side-bar a {
+    color: #EDEDED;
+}
+
+#side-bar a:visited {
+    color: #EDEDED;
+}
+
+#side-bar img,
+iframe.scpnet-interwiki-frame {
+    filter: grayscale(100%) saturate(0%) invert(100%);
+    -webkit-filter: grayscale(100%) saturate(0%) invert(100%);
+}
+
+#side-bar .side-block {
+    background: linear-gradient( 180deg, rgba(25, 25, 25, 1) 0%, rgba(10, 10, 10, 1) 100%);
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.7);
+}
+
+#side-bar .side-block.media {
+    background-color: rgb(25, 25, 25) !important;
+    border-bottom: solid 4px rgb(19, 19, 19);
+    border-top: solid 2px rgb(19, 19, 19);
+}
+
+#side-bar .heading {
+    color: #EDEDED;
+    border-bottom: solid 1px #F9F9F9;
+}
+
+#side-bar .collapsible-block-folded {
+    filter: invert(1);
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #EDEDED;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #F9F9F9;
+}
+
+#side-bar .side-block.resources {
+    background: #101010;
+}
+
+#side-bar::-webkit-scrollbar-thumb {
+    background: rgb(40, 40, 40);
+}
+
+#side-bar::-webkit-scrollbar-thumb:hover {
+    background: rgb(55, 55, 55);
+}
+
+#side-bar::-webkit-scrollbar-track {
+    background: rgb(20, 20, 20) !important;
+}
+
+/* FOR JP */
+#side-bar .side-block .menu-item .sub-text {
+    color: #999;
+}
+
+#side-bar .side-block .collapsible-block-folded a.collapsible-block-link {
+    filter: invert(1);
+}
+
+#side-bar .side-block .collapsible-block-unfolded-link a.collapsible-block-link:hover {
+    color: #CECECE;
+}
+
+#side-bar img,
+iframe.scpnet-interwiki-frame {
+    filter: none;
+    -webkit-filter: none;
+}
+#side-bar img:not([src*="twitter" i]):not([src*="discord" i]) {
+    filter: grayscale(100%) saturate(0%) invert(100%);
+    -webkit-filter: grayscale(100%) saturate(0%) invert(100%);
+}

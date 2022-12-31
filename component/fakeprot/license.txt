@@ -1,0 +1,5 @@
+title: Fakeprot
+author: R74
+created_at: 2022-07-22 08:26:30+00:00
+source: http://scp-jp.wikidot.com/component:fakeprot
+license: Need to Fix!

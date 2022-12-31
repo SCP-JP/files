@@ -1,0 +1,31 @@
+.fakeprot .mailform-box .buttons {
+  display: none;
+}
+.collapsiblealt .collapsible-block-link {
+  padding: 0.1em 0.5em;
+  text-decoration: none;
+  background-color: #f4f4f4;
+  border: 1px solid #aaaaaa;
+  color: #000000;
+}
+.collapsiblealt .collapsible-block-link:hover {
+  background-color: #dddddd;
+  color: #000000;
+}
+.collapsiblealt .collapsible-block-link:active {
+  background-color: #dddddd;
+  color: #000000;
+}
+.collapsiblealt .collapsible-block-unfolded-link {
+  margin: 0.5em 0;
+  text-align: center;
+}
+.collapsiblealt .collapsible-block-folded {
+  margin: 0.5em 0;
+  text-align: center;
+}
+.fakeprot .passw input[type=text] {
+          text-security: disc;
+  -webkit-text-security: disc;
+  -mox-text-security: disc;
+}

@@ -1,0 +1,5 @@
+title: Jfdectheme
+author: kihaku
+created_at: 2022-12-15 21:16:22+00:00
+source: http://scp-jp.wikidot.com/theme:jfdectheme
+license: Need to Fix!

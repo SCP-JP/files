@@ -1,0 +1,139 @@
+[!--
+/*
+Draft Markup like GitHub
+by ikr_4185
+thanks Nanimono-Demonai
+http://sugoi-chirimenjako-pain.wikidot.com/component:draft
+*/
+
+// LESS
+// used http://winless.org/online-less-compiler
+
+.mixin_b_a(@content, @color){
+  @darken: darken(@color, 60%);
+  @saturate: saturate(@darken, 10%);
+  &::before {
+    padding-left: 5px;
+    content: @content;
+    color: @saturate;
+    font-weight: bold;
+  }
+  &::after {
+    content: " ";
+    padding-right: 5px;
+  }
+}
+.mixin_n_o(@content, @color){
+  display: inline-block;
+  background: @color;
+  .mixin_b_a(@content,@color);
+}
+#page-content{
+  span{
+    &[style$="new"] {
+      .mixin_n_o("+ ",#eaffea);
+    }
+    &[style$="old"] {
+      .mixin_n_o("- ",#ffecec);
+    }
+  }
+  .new {
+    margin-right: 5px;
+    .mixin_n_o("+ ",#eaffea);
+  }
+  .old {
+    margin-right: 5px;
+    .mixin_n_o("- ",#ffecec);
+  }
+}
+--]
+[[module CSS]]
+#page-content span[style$="new"] {
+  display: inline-block;
+  background: #eaffea;
+}
+#page-content span[style$="new"]::before {
+  padding-left: 5px;
+  content: "+ ";
+  color: #00b700;
+  font-weight: bold;
+}
+#page-content span[style$="new"]::after {
+  content: " ";
+  padding-right: 5px;
+}
+#page-content span[style$="old"] {
+  display: inline-block;
+  background: #ffecec;
+}
+#page-content span[style$="old"]::before {
+  padding-left: 5px;
+  content: "- ";
+  color: #b90000;
+  font-weight: bold;
+}
+#page-content span[style$="old"]::after {
+  content: " ";
+  padding-right: 5px;
+}
+#page-content .new {
+  margin-right: 5px;
+  display: inline-block;
+  background: #eaffea;
+}
+#page-content .new::before {
+  padding-left: 5px;
+  content: "+ ";
+  color: #00b700;
+  font-weight: bold;
+}
+#page-content .new::after {
+  content: " ";
+  padding-right: 5px;
+}
+#page-content .old {
+  margin-right: 5px;
+  display: inline-block;
+  background: #ffecec;
+}
+#page-content .old::before {
+  padding-left: 5px;
+  content: "- ";
+  color: #b90000;
+  font-weight: bold;
+}
+#page-content .old::after {
+  content: " ";
+  padding-right: 5px;
+}
+
+[[/module]]
+
+[!--
+//thank you 遠野司書
+--]
+
+[[module css]]
+
+div.p-tags ul {
+    font-size: 85%;
+    border-top: 1px solid #BBB;
+    display: inline-block;
+    margin: 10px 0 0;
+    padding: 0 2px;
+    list-style: none;
+}
+
+div.p-tags li {
+    color: #b01;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1px;
+    cursor: pointer;
+}
+
+div.p-tags li:hover {
+    text-decoration: underline;
+}
+
+[[/module]]

@@ -1,0 +1,3 @@
+[[include :scp-jp:component:inc-loop-base l={$l}_|e={${$l}_}e}|l=_|
+{$c}={$       |g=*|e=*|p={$p}|c={$c}|
+{$l}_={$|__={$|g=]|e==|p=:scp-jp:component:inc-loop|]]

@@ -1,0 +1,1212 @@
+[[iftags +テーマ]]
+
+[[>]]
+**Rateモジュール:**
+[[module Rate]]
+
+**Creditモジュール:**
+[[/>]]
+[[include :scp-jp:credit:start-preview]]
+
+あなたの記事に関する情報
+
+[[include :scp-jp:credit:end-preview]]
+
+これは、[[[theme:paperstack|Paperstackテーマ]]]をベースに[[*user EstrellaYoshte]]によって作成されたテーマです。
+
+このテーマを使用するには、次のテキストをページ最上部にコピーしてください:
+
+> @@[[include :scp-jp:theme:penumbra]]@@
+
+{{[[include]]}}の後にCSSモジュールを配置することで、タイトル・サブタイトル・ヘッダーロゴ・アクセントカラーを変更することもできます:
+
+[[div class="darkbox" style="font-family:monospace;"]]
+:root {
+@@  --header-title: "サイトタイトル";@@
+@@  --header-subtitle: "サイトタブタイトル";@@
+@@  --lgurl: url("ロゴの画像ファイルのURL");@@
+@@  --accentColor: アクセントカラー;@@
+} 
+[[/div]]
+
+デフォルトでは、アクセントカラーは##1EB5E8|#1EB5E8##です。
+
+------
+
+[[include component:image-block name=http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-44-yz1t/tb.png|caption=画像|width=200px]]
+
+分割線はハイフンを5つ並べることで作成できます。引用ブロックなどの内部になければ、ページの横幅全体に広がります。このページでセクションを区切っているのが分割線です。
+
+見出しは、1つから6つの"+"を行頭に挿入することで表示できます。
+
+@@ @@
+@@ @@
+@@ @@
+@@ @@
+
+[[collapsible show="折りたたみ - ここをクリック" hide="折りたたみ - ここをクリック"]]
+
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブ]]
+これはタブです
+[[/tab]]
+[[tab タブ]]
+ここにもテキストが！
+
+面白いですね。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。たくさんのテキストを書くこともできます。[[footnote]]これは脚注です。[[/footnote]]
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+[[/tab]]
+
+[[tab もっと長いタブ]]
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+
+これは長いタブです。たくさんのテキストを書くこともできます。
+[[/tab]]
+
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+@@ @@
+
+> これは引用ブロックです。"> "を各行の行頭に挿入することで作成できます。
+> 
+> 続きのテキスト
+> -----
+> これは分割線です
+>
+>> ネストされた引用ブロック
+
+@@ @@
+
+||~ これが ||~ テーブルです ||
+|| 使い方は || もう ||
+||||知っているでしょう？ ||
+
+@@ @@
+
+[[div class="darkbox"]]
+{{@@[[div class="darkbox"]]@@}}
+[[/div]]
+
+[[div class="lightbox"]]
+{{@@[[div class="lightbox"]]@@}}
+[[/div]]
+
+------
+
+{{sidebox}}は次のようにセットアップできます:
+[[div class="darkbox"]]
+@@[[div class="limit"]]@@ {{<-- sideboxを表示したいエリアの先頭に配置}}
+@@[[div class="anchor"]]@@ {{<-- sideboxを置きたい場所に配置}}
+@@[[div class="sidebox"]]@@
+sidebox内のテキスト
+@@[[/div]]@@
+@@[[/div]]@@
+
+sideboxの左に表示したいテキスト
+
+@@[[/div]]@@ {{<-- sideboxを表示したいエリアの最後に配置}}
+[[/div]]
+
+
+[[collapsible show="例" hide="例"]]
+
+[[div class="limit"]]
+[[div class="anchor"]]
+[[div class="sidebox"]]
+工夫次第で
+[[/div]]
+[[/div]]
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non molestie nulla. Morbi vitae massa auctor, porta arcu eget, dictum tellus. Etiam scelerisque aliquam ipsum, ac convallis lorem scelerisque eget.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In finibus purus non commodo porttitor. Integer sed felis dui. Nulla nec tincidunt velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+@@ @@
+[[/div]]
+
+[[div class="limit"]]
+[[div class="anchor"]]
+[[div class="sidebox"]]
+複数のsideboxを使うことも
+[[/div]]
+[[/div]]
+
+Vivamus sapien sem, gravida non vulputate eu, vestibulum vel lacus. Nulla massa erat, sodales dignissim vehicula non, fringilla id ante. Morbi eleifend lacus non nisl finibus aliquam. Proin tristique, lacus eu varius porttitor, lorem justo ullamcorper massa, sed ultricies elit dolor vitae nisi. Fusce varius nec sapien malesuada luctus. Pellentesque efficitur porttitor turpis sit amet rhoncus.
+
+Sed non sollicitudin nisl. Suspendisse finibus, est et venenatis placerat, diam lorem porttitor elit, ac sollicitudin arcu erat et orci. Curabitur erat mi, congue quis imperdiet ut, fringilla vitae sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis nec ante pretium est commodo convallis id a sapien. Morbi sit amet ultricies urna.
+
+@@ @@
+[[/div]]
+
+[[div class="limit"]]
+[[div class="anchor"]]
+[[div class="sidebox"]]
+できるというわけです。
+[[/div]]
+[[/div]]
+
+Ut semper, tellus vel tristique convallis, nulla mi laoreet nisi, eu malesuada ipsum magna sed dolor. Pellentesque nec lorem eu ante tristique efficitur. Sed auctor tortor ipsum. Morbi laoreet interdum scelerisque. Vivamus id enim nisl. Donec vitae leo suscipit, venenatis tortor eget, laoreet diam.
+
+Sed sollicitudin, arcu ut condimentum vulputate, dui diam convallis velit, vitae ultricies leo libero non metus. Vestibulum at aliquam nisi. Aenean molestie tortor orci, ac volutpat magna eleifend vitae. Morbi tristique risus tortor, feugiat efficitur augue imperdiet ut. Aliquam nec urna lacinia, pretium ligula ut, gravida ex.
+[[/div]]
+
+[[/collapsible]]
+
+@@ @@
+{{limit}}ブロックがないと、{{anchor}}ブロックが指定した場所を離れてしまった時にページ全体に波及してしまいます。
+
+**{{sidebox}}は幅1290px以下のウィンドウ/スクリーンでは最小化されます。**([[*user woedenaz]]が作ってくれました！)
+
+------
+
+@@ @@
+
+[[=]]
++++ ヘッダーフォントはJosefin Sans
+bodyはRobotoです。
+@@ @@
+{{等幅フォントはFira Codeです。}}
+[[/=]]
+
+@@ @@
+
+[[footnoteblock]]
+
+------
+
+
+
+@@ @@
+++ ソースコード:
+[[/iftags]]
+
+[[div [[iftags -テーマ]]style="display: none"[[/iftags]]]]
+
+[[include :scp-jp:component:toggle-sidebar]]
+
+[[module CSS show="true"]]
+/*
+    Penumbra Theme
+    [2020 Wikidot Theme]
+    By EstrellaYoshte
+    Based on:
+       Paperstack Theme by EstrellaYoshte
+       Ad Astra Theme by NatVoltaic and stormbreath
+       Inkblot Theme by Croquembouche
+       Anderson Robotics Theme by Croquembouche
+       BHL Style Collapsible by Monkatraz
+
+    Edited for SCP-JP by ukwhatn
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code&display=swap);
+
+#page-content { font-size: .9rem; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #EDEDED;
+    background-color: #2F333C;
+    background-image: linear-gradient(
+        to bottom, 
+        #21252E, #21252E 90px, 
+        #21252E 90px, #2F333C 200px, 
+        #2F333C 200px, #2F333C 100%);
+    background-repeat: no-repeat;
+}
+
+#main-content {
+    top: -1.2rem;
+}
+
+
+/* ---- SCROLLBAR ---- */
+
+::-webkit-scrollbar {
+  width: 9px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: #21252E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ededed;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accentColor);
+}
+
+
+/* ---- HEADER ---- */
+
+div#container-wrap {
+     background-image: none;
+}
+div#header {
+    background-image: none;
+}
+
+div#extra-div-1 {
+    height: 164px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background: var(--lgurl);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+#header h1, #header h2 { margin-left: 0; float: none; text-align: center; }
+/* Move the subtitle down a smidge */
+#header h2 { margin-top: 0.45rem; }
+/* Hide the existing text */
+#header h1 span, #header h2 span { font-size: 0; display: none; }
+/* Style the new text */
+#header h1 a::before, #header h2::before {
+  color: var(--accentColor);
+  font-family: 'Josefin Sans', sans-serif;
+  text-shadow: none;
+}
+/* Set the new text's content from variable */
+#header h1 a::before {
+  content: var(--header-title, "SCP FOUNDATION");
+  font-weight: 300;
+  font-size: 1.3em;
+}
+#header h2::before {
+  content: var(--header-subtitle, "SECURE - CONTAIN - PROTECT");
+  font-weight: 600;
+  font-size: 1.22em;
+}
+
+#login-status {
+    color: #ededed;
+}
+#login-status a {
+    color: var(--accentColor);
+}
+#login-status ul a {
+    color: #ededed;
+    background: #21252E;
+}
+#login-status ul a:hover {
+    color: var(--accentColor);
+}
+
+#account-topbutton{
+    border: solid 1px var(--accentColor);
+}
+
+
+#footer, #footer a {
+    background: transparent;
+    color: #ededed;
+}
+#license-area {
+     color: #ededed;
+}
+
+
+#search-top-box {
+    top: 2.2rem!important;
+    right: 8px;
+}
+#search-top-box-form > input[type=submit] {
+    border: solid 1px #ededed;
+    background: #21252E!important;
+    box-shadow: none;
+    border-radius: 0;
+    color: #ededed;
+    transition: color 0.15s linear;
+}
+#search-top-box-form input[type=submit]:hover {
+    border: solid 1px var(--accentColor);
+    box-shadow: none;
+    color: var(--accentColor);
+}
+#search-top-box-form > input[type=text] { display: none; }
+
+
+/* ---- TOP BAR ---- */
+ 
+#top-bar { 
+     top: 8.4rem;
+     display: flex;
+     justify-content: center;
+     right: 0;
+}
+#top-bar, #top-bar a {
+     color: #ededed;
+     transition: color 0s;
+}
+#top-bar ul li ul {
+    border-color: var(--accentColor);
+    overflow: hidden;
+}
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+   border-top-color: #2F333C;
+}
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #21252E;
+    color: #ededed;
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #21252E; /* top bar hover background color */
+    color: var(--accentColor);
+    transition: color 0.1s linear;
+}
+
+
+/* ---- SIDE BAR ---- */
+
+div#side-bar{
+    background: #21252E;
+    clear: both;
+    padding: .8em;
+    border-radius: 0;
+    box-shadow: none;
+    overflow-x: hidden;
+}
+
+#side-bar .heading{
+    color: #ededed;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.94rem;
+    border-bottom: solid 1px #ededed;
+}
+#side-bar .side-block {
+    border: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: #21252E!important;
+}
+#side-bar .side-block.media {
+    background-color:#21252E;
+}
+#side-bar .side-block.media > * {
+    display: flex;
+    justify-content: space-evenly;
+}
+#side-bar .side-block.resources {
+    background-color:#21252E;
+}
+.side-block .menu-item > .image {
+    display: none;
+}
+
+#top-bar div.open-menu a {
+    border-radius: 0;
+    box-shadow: none;
+    color: var(--accentColor)!important;
+    background-color: #21252E!important;
+    border: solid 1px #21252E!important;
+}
+
+@media (max-width: 767px) {
+    #main-content {
+        padding: 0;
+        margin: 0 5%;
+        border-left: none;
+    }
+    #page-title {
+        margin-top: 0.7em;
+    }
+    #side-bar {
+        background-color: #21252E;
+        left: -21em;
+    }
+    #side-bar:target {
+        border: none;
+        box-shadow: none;
+    }
+    #side-bar .close-menu {
+        transition: width 0.5s ease-in-out 0.1s,
+                    opacity 1s ease-in-out 0s;
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: rgba(0,0,0,0.3);
+        background-position: 18.6em 50%;
+        z-index: -1;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #side-bar:target .close-menu {
+        width: calc(100% - 18.6em);
+        right: 0;
+        left: auto;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    #side-bar:target .close-menu:hover {
+        background: unset;
+    }
+    #page-content > hr, #page-content > .list-pages-box > .list-pages-item > hr {
+        margin: 3em -5.5%;
+    }
+    #side-bar {
+        top: 0;
+    }
+    #side-bar .heading {
+        padding-left: 1em;
+        margin-left: -1em;
+    }
+    #search-top-box {
+        top: 107px;
+    }
+}
+
+/* ---- TABS ---- */
+
+/* ---- YUI TAB BASE ---- */
+.yui-navset .yui-nav a,.yui-navset .yui-navset-top .yui-nav a{background-color:inherit;background-image:inherit}.yui-navset .yui-nav a:hover,.yui-navset .yui-nav a:focus{background:inherit;text-decoration:inherit}.yui-navset .yui-nav .selected a,.yui-navset .yui-nav .selected a:focus,.yui-navset .yui-nav .selected a:hover{color:inherit;background:inherit}.yui-navset .yui-nav,.yui-navset .yui-navset-top .yui-nav{border-color:inherit}.yui-navset li{line-height:inherit}
+ 
+/* ---- YUI TAB CUSTOMIZATION ----*/
+ 
+ .yui-navset .yui-nav,
+ .yui-navset .yui-navset-top .yui-nav{
+     display: flex;
+     flex-wrap: wrap;
+     width: calc(100% - .125rem);
+     margin: 0 auto;
+     border-color: var(--accentColor);
+     box-shadow: none;
+}
+ .yui-navset .yui-nav a, /* ---- Link Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav a{
+     color: #ededed;
+     font-weight: bold;
+    /* ---- Tab Background Colour | [UNSELECTED] ---- */
+     background-color: #21252E;
+     border: unset;
+     box-shadow: none;
+     box-shadow: none;
+     transition: background-color 0.15s linear;
+}
+ .yui-navset .yui-nav a:hover,
+ .yui-navset .yui-nav a:focus{
+     color: #ededed;
+    /* ---- Tab Background Colour | [HOVER] ---- */
+     background-color: var(--accentColor);
+}
+ .yui-navset .yui-nav li, /* ---- Listitem Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav li{
+     position: relative;
+     display: flex;
+     flex-grow: 2;
+     max-width: 100%;
+     margin: 0;
+     padding: 0;
+     color: #ededed;
+     background-color: #21252E;
+     border-color: transparent;
+     box-shadow: none;
+}
+ .yui-navset .yui-nav li a,
+ .yui-navset-top .yui-nav li a,
+ .yui-navset-bottom .yui-nav li a{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+}
+ .yui-navset .yui-nav li em{
+     border: unset;
+}
+ .yui-navset .yui-nav a em,
+ .yui-navset .yui-navset-top .yui-nav a em{
+     padding: .35em .75em;
+ 
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+}
+ .yui-navset .yui-nav .selected, /* ---- Selection Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav .selected{
+     flex-grow: 2;
+     margin: 0;
+     padding: 0;
+    /* ---- Tab Background Colour | [SELECTED] ---- */
+     background-color: var(--accentColor);
+}
+ .yui-navset .yui-nav .selected a,
+ .yui-navset .yui-nav .selected a em{
+     border: none;
+}
+ .yui-navset .yui-nav .selected a{
+     width: 100%;
+     color: #21252E;
+     font-weight: bold;
+}
+ .yui-navset .yui-nav .selected a:focus,
+ .yui-navset .yui-nav .selected a:active{
+     color: #21252E;
+     background-color: var(--accentColor);
+}
+ .yui-navset .yui-content {
+    background-color: #21252E;
+    box-shadow: none;
+}
+ .yui-navset .yui-content,
+ .yui-navset .yui-navset-top .yui-content{
+     padding: .5em;
+     border: none;
+}
+
+/*---- TAB ANIMATION by Croquembouche ---- */
+
+.yui-navset .yui-content > div {
+    display: block;
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+
+#page-content .yui-navset .yui-content > div[style*="none"] {
+    display: block !important;
+    flex: 0;
+    max-height: 0;
+    padding: 0 0.5em;
+    border-width: 0;
+    /* The following transition affects the one that DISAPPEARS */
+    transition: padding 0s linear 0.5s,
+          border-width 0s linear 0.5s,
+          flex 0.5s cubic-bezier(.18,.51,.54,.9) 0s;
+    animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+}
+#page-content .yui-navset .yui-content > div[style*="block"] {
+    display: block !important;
+    flex: 1;
+    max-height: 9999rem;
+    /* The following transition affects the one that APPEARS */
+    transition: padding 0s linear 0.5s,
+          border-width 0s linear 0.5s,
+          flex 0.5s cubic-bezier(.18,.51,.54,.9) 0.5s;
+    animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+}
+
+@keyframes tab-disappear {
+    0% { max-height: 9999rem; }
+    1% { max-height: 100vh; }
+    100% { max-height: 0; }
+}
+@keyframes tab-appear {
+    0% { max-height: 0; }
+    99% { max-height: 100vh; }
+    100% { max-height: 9999rem; }
+}
+
+
+/* ---- INFO BAR ---- */
+ body{
+     --barColour: #21252E;
+     --linkColour: #ededed;
+}
+
+ .info-container .collapsible-block-content{
+     padding: 0 .5em 30px;
+}
+ .info-container .collapsible-block-content .wiki-content-table{
+     width: 100%;
+}
+
+/* Ayer's info-bar patch by Monkatraz */
+#page-content .info-container .collapsible-block-folded, #page-content .info-container .collapsible-block-unfolded-link  {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: none;
+}
+#page-content .info-container .collapsible-block-link::before, #page-content .info-container .collapsible-block-unfolded-link::before  {
+    content: " ";
+    display: none;
+}
+#page-content .info-container .collapsible-block-content::after {
+    display: none;
+}
+
+/* ---- INFO PANE ---- */
+
+#page-content .creditRate{
+     margin: unset;
+     margin-top: 4px;
+     margin-bottom: 4px;
+     margin-right: 3px;
+}
+#page-content .rate-box-with-credit-button {
+    background-color: #21252E;
+    border: solid 2px #21252E;
+    border-radius: 0;
+    box-shadow: 3px 0px 0px 0px var(--accentColor);
+}
+#page-content .rate-box-with-credit-button .creditButton p a {
+    border-left-color: transparent;
+}
+ 
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel {
+    border-radius: 0;
+}
+#page-content .rate-box-with-credit-button div.page-rate-widget-box .rate-points {
+    border-left: 0;
+}
+ 
+.rate-box-with-credit-button .page-rate-widget-box .cancel a:hover {
+    border-radius: 0;
+}
+ 
+#page-content .rate-box-with-credit-button .fa-info {
+     color: #ededed;
+}
+#page-content .rate-box-with-credit-button .fa-info:hover {
+     color: var(--accentColor);
+}
+
+#page-content .creditButtonStandalone p a {
+    background-color: #21252E;
+    border: solid 2px #21252E;
+    border-radius: 0;
+    box-shadow: 3px 0px 0px 0px var(--accentColor);
+    color: #ededed;
+}
+#page-content .creditButtonStandalone p a:hover {
+    color: var(--accentColor);
+}
+
+#page-content .modalbox {
+     background: #2F333C !important;
+     color: #ededed;
+     box-shadow: none;
+}
+.close-credits,
+.credit-back {
+    filter: grayscale(100%) invert(100%) contrast(275%);
+}
+
+/* ---- Credit Module for JP ---- */
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button {
+    background-color: #21252E!important;
+}
+
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton {
+    background-color: unset;
+    border: unset;
+    box-shadow: unset;
+}
+
+#page-content .creditRate.creditModule ~ #u-credit-view .modalbox .modalbox-title {
+    background: #21252e;
+}
+
+
+/* ---- PAGE RATING ---- */
+ 
+.page-rate-widget-box {
+     margin: unset;
+     border-radius: 0;
+     border: solid 2px #21252E;
+     box-shadow: 3px 0px 0px 0px var(--accentColor);
+     background-color: #21252E;
+     margin-top: 4px;
+     margin-bottom:4px;
+     margin-right: 3px;
+}
+ 
+div.page-rate-widget-box .rate-points {
+    background-color: #21252E;
+    border: none;
+    color: #ededed !important;
+    text-transform: capitalize;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #21252E;
+    border-top: none;
+    border-bottom: none;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: #ededed;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #21252E;
+    color: var(--accentColor);
+}
+.page-rate-widget-box .cancel {
+    background: transparent;
+    background-color: #21252E;
+    border: none;
+}
+.page-rate-widget-box .cancel a {
+    color: #ededed;
+}
+.page-rate-widget-box .cancel a:hover {
+    background: #21252E;
+    color: var(--accentColor);
+}
+ 
+
+/* ---- PAGE ELEMENTS ---- */
+
+.page-source, tt{ 
+    font-family: "Fira Code", monospace;
+    font-size: 0.87rem;
+}
+ .code pre, .code p, .code {
+    font-family: "Fira Code", monospace;
+    font-size: 0.87rem;
+    color: #21252E;
+}
+
+h1 {
+    color: var(--accentColor);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #EDEDED;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+
+#page-title {
+    color: #ededed;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.65rem;
+    text-align: center;
+    border-color: #ededed;
+}
+
+/* Clicky links */
+a,
+a.newpage,
+a:visited,
+#side-bar a:visited {
+    color: var(--accentColor);
+    transition: color 0.15s linear;
+}
+a:hover, a.newpage:hover, a:visited:hover, #side-bar a:visited:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: var(--accentColor);
+}
+a.newpage { filter: hue-rotate(180deg); }
+
+/* patch for sidebar media, collapsibles, ACS, info button and ayers module so link doesn't override */
+#page-content .collapsible-block-folded a:hover, #page-content .collapsible-block-unfolded-link a:hover, #page-content .rate-box-with-credit-button .fa-info:hover, #side-bar .side-block.media a:hover, .danger-diamond a:hover {
+    background: transparent;
+}
+.info-container .collapsible-block-folded .collapsible-block-link, .info-container .collapsible-block-link {
+    background: var(--linkColour) !important;
+}
+
+hr{
+    background-color: var(--accentColor);
+}
+
+blockquote,
+div.blockquote,
+#toc {
+    background-color: #21252E;
+    border: solid 2px #2F333C;
+    box-shadow: -3px 0px 0px -0.1px var(--accentColor);
+}
+
+.code {
+    background-color: #F8F8F8;
+    border: solid 3px #2F333C;
+    box-shadow: none;
+}
+.scp-image-block {
+    border: solid 8px #21252E;
+    border-bottom: solid 0px #21252E;
+    box-shadow: 0px 0.26rem 0px 0px var(--accentColor);
+    box-sizing: border-box;
+}
+.scp-image-block .scp-image-caption {
+    background-color: #21252E;
+    border: solid 4px #21252E;
+    color: #ededed;
+    font-size: 0.84rem;
+}
+.scp-image-block.block-left { margin-left: 0; }
+.scp-image-block.block-right { margin-right: 0; }
+@media (max-width: 540px) {
+  .scp-image-block.block-left, .scp-image-block.block-right {
+    float: none; clear: both; margin-left: auto; margin-right: auto;
+  }
+}
+
+#page-content .wiki-content-table tr th {
+    border: solid 1px var(--accentColor);
+    color: var(--accentColor);
+    background-color: #21252E;
+    /* set border for table title */
+}
+#page-content .wiki-content-table tr td {
+    border: solid 1px var(--accentColor);
+    /* set border for table content */
+}
+
+/* fancy collapsible */
+#page-content .collapsible-block-folded, #page-content .collapsible-block-unfolded-link {
+    background: #21252E;
+    transition: background 0.25s linear;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: min-content;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto;
+}
+#page-content .collapsible-block-folded .collapsible-block-link::before {
+    content: "▷ ";
+}
+#page-content .collapsible-block-unfolded .collapsible-block-link::before {
+    content: "▽ ";
+}
+#page-content .collapsible-block-link {
+    text-decoration: none;
+    color: #ededed;
+    font-weight: bold;
+}
+#page-content .collapsible-block-folded:hover, #page-content .collapsible-block-unfolded-link:hover {
+    background: var(--accentColor);
+}
+#page-content .collapsible-block-unfolded-link {
+    box-shadow: 0px -0.26rem 0px 0px var(--accentColor);
+}
+#page-content .collapsible-block-folded, #page-content .collapsible-block-unfolded-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Selection */
+::selection {
+    background: var(--accentColor);
+    color: #ffffff;
+}
+ 
+/* Footnotes */
+.hovertip {
+    font-size: .9rem;
+    background-color: #21252E !important;
+    border: solid 1px var(--accentColor) !important;
+}
+.footnotes-footer {
+    background-color: #21252E;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-bottom: 1.5rem;
+    box-shadow: -0.24rem 0px 0px 0px var(--accentColor);
+}
+.footnotes-footer .title {
+    color: #ededed;
+}
+.footnote .f-footer, .equation .e-footer, .reference .r-footer {
+    display: none;
+}
+
+/* Tags */
+#main-content .page-tags a {
+    margin-top: .18rem;
+}
+.page-tags span {
+    border-top: 1px solid #ededed;
+}
+
+/* Pop-Up Windows */
+.owindow {
+    background-color: #21252E;
+    border-color: var(--accentColor);
+}
+ 
+.owindow .modal-header {
+    background-color: #21252E;
+}
+ 
+.owindow .modal-body img {
+    background-color: transparent !important;
+}
+ 
+.owindow .title {
+    background-color: #21252E;
+    color: #var(--accentColor);
+    border-bottom: 1px solid #2F333C;
+}
+ 
+.owindow .button-bar a {
+    background-color: #21252E;
+    border-color: var(--accentColor);
+    color: #ededed;
+}
+.owindow .button-bar a:hover {
+    background-color: var(--accentColor);
+}
+ 
+/* Edit Buttons */
+.buttons .btn {
+    background-color: #21252E;
+    border-color: var(--accentColor);
+    color: var(--accentColor);
+    padding: 3px 5px;
+}
+.buttons .btn:hover {
+    background-color: var(--accentColor);
+    color: #21252E;
+}
+ 
+/* Edit Lock Info*/
+#lock-info {
+    background-color: #21252E;
+    border-color: #ededed;
+}
+ 
+/* Close Button for Page Source, Rating, Etc */
+a.action-area-close:hover {
+    background-color: #21252E;
+}
+ 
+/* Page-History Current */
+.pager .current {
+    background-color: var(--accentColor);
+    border-color: #ededed;
+}
+
+/* History Compare */
+.inline-diff ins, .inline-diff del {
+    color: #21252E;
+}
+
+/* ---- INTERWIKI ---- */
+
+.scpnet-interwiki-frame{
+    filter: invert(100%) grayscale(100%) contrast(75%);
+}
+
+
+/* ---- CUSTOM SYNTAX ---- */
+
+.darkbox {
+    background-color: #21252E;
+    border-left: solid 0.26rem var(--accentColor);
+    border-right: solid 0.26rem var(--accentColor);
+    padding: .4rem;
+    margin-top: 12px;
+    margin-bottom:12px;
+}
+
+.lightbox {
+    background-color: #ededed;
+    color: #21252E;
+    border-left: solid 0.26rem var(--accentColor);
+    border-right: solid 0.26rem var(--accentColor);
+    padding: .4rem;
+    margin-top: 12px;
+    margin-bottom:12px;
+}
+.lightbox h2, .lightbox h3, .lightbox h4, .lightbox h5, .lightbox h6 {
+    color: #21252E;
+}
+
+.limit {
+    margin-bottom: -1rem;
+    z-index: 5;
+
+}
+.anchor {
+    position: sticky;
+    height:0;
+    top: 0;
+    z-index: 5;
+}
+.sidebox {
+    background-color: #21252E;
+    border-top: solid 2px var(--accentColor);
+    padding: .14rem;
+    margin-top: 0;
+    margin-bottom: 8px;
+    width: calc((100vw - 870px)/2);
+    max-height: calc(100vh - 18rem);
+    position: absolute;
+    top: 0;
+    left: 103.5%;
+    z-index: 5;
+    overflow: auto;
+    box-sizing: border-box;
+}
+/* Sidebox mobile optimization, courtesy of Woed */
+@media (max-width: 1290px) {
+   .sidebox {
+        width: auto;
+        max-width: 65vw!important;
+        border: none;
+        padding-left: 0.4rem; padding-right: 0.4rem;
+        top: 0.75rem;
+        right: calc(((100vw - 45.8rem)/2) * -1);
+        left: initial;
+        -webkit-clip-path: inset(-0.125rem -0.25rem 0 calc(100% - 0.85rem));
+        clip-path: inset(-0.125rem -0.25rem 0 calc(100% - 0.85rem));
+        -webkit-transition: color 0.2s ease-in-out 0.1s, -webkit-box-shadow 0.5s ease-in-out 0.1s, -webkit-clip-path 0.5s ease-in-out 0.1s;
+        transition: color 0.2s ease-in-out 0.1s, -webkit-box-shadow 0.5s ease-in-out 0.1s, -webkit-clip-path 0.5s ease-in-out 0.1s;
+        -o-transition: color 0.2s ease-in-out 0.1s, box-shadow 0.5s ease-in-out 0.1s, clip-path 0.5s ease-in-out 0.1s;
+        transition: color 0.2s ease-in-out 0.1s, box-shadow 0.5s ease-in-out 0.1s, clip-path 0.5s ease-in-out 0.1s;
+        transition: color 0.2s ease-in-out 0.1s, box-shadow 0.5s ease-in-out 0.1s, clip-path 0.5s ease-in-out 0.1s, -webkit-box-shadow 0.5s ease-in-out 0.1s, -webkit-clip-path 0.5s ease-in-out 0.1s;
+        overflow: visible;
+    }
+
+    .sidebox::before, .sidebox::after {
+        content: " ";
+        position: absolute;
+        right: 0;
+    }
+
+    .sidebox::before {
+        top: calc(50% - 0.75rem);
+        width: 0;
+        height: 0;
+        border-top: 0.75rem solid transparent;
+        border-bottom: 0.75rem solid transparent;
+        border-right: 0.75rem solid var(--accentColor);
+        transition: border 0.1s ease-in-out 0.1s;
+        z-index: 10;
+    }
+
+    .sidebox::after {
+        top: 0;
+        max-width: 0.75rem;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0.15rem 0 0 0 var(--accentColor);
+        max-height: calc(100vh - 18rem);
+        background-color: #21252E;
+        z-index: -1;
+        transition: box-shadow 0.5s ease-in-out 0.1s, max-width 0.5s ease-in-out 0.1s;
+    }
+
+    .sidebox > * {
+        opacity: 0;
+        -webkit-transition: opacity 0.2s ease-in-out 0.2s;
+        -o-transition: opacity 0.2s ease-in-out 0.2s;
+        transition: opacity 0.2s ease-in-out 0.2s;
+    }
+
+    .sidebox:hover {
+        overflow: visible;
+        -webkit-clip-path: inset(-0.125rem -0.25rem 0 0);
+        clip-path: inset(-0.125rem -0.25rem 0 0);
+        -webkit-transition: color 0.5s ease-in-out 0.2s, right 0.5s ease-in-out 0.1s, -webkit-clip-path 0.5s ease-in-out 0.1s, -webkit-box-shadow 0.5s ease-in-out 0.1s;
+        transition: color 0.5s ease-in-out 0.2s, right 0.5s ease-in-out 0.1s, -webkit-clip-path 0.5s ease-in-out 0.1s, -webkit-box-shadow 0.5s ease-in-out 0.1s;
+        -o-transition: color 0.5s ease-in-out 0.2s, right 0.5s ease-in-out 0.1s, clip-path 0.5s ease-in-out 0.1s, box-shadow 0.5s ease-in-out 0.1s;
+        transition: color 0.5s ease-in-out 0.2s, right 0.5s ease-in-out 0.1s, clip-path 0.5s ease-in-out 0.1s, box-shadow 0.5s ease-in-out 0.1s;
+        transition: color 0.5s ease-in-out 0.2s, right 0.5s ease-in-out 0.1s, clip-path 0.5s ease-in-out 0.1s, box-shadow 0.5s ease-in-out 0.1s, -webkit-clip-path 0.5s ease-in-out 0.1s, -webkit-box-shadow 0.5s ease-in-out 0.1s;
+    }
+
+    .sidebox:hover::before {
+        border-top: 0 solid transparent;
+        border-bottom: 0 solid transparent;
+    }
+    .sidebox:hover::after {
+        box-shadow: 0 -0.125rem 0 0 var(--accentColor);
+        right: 0;
+        max-width: 100%;
+    }
+    .sidebox:hover > * {
+        opacity: 1;
+    }
+}
+
+@media (max-width:768px) {
+    .sidebox, .sidebox:hover {
+        right: calc(((100vw - (100% - 3rem))/2) * -1 + 1.9rem);
+    }
+}
+
+:root {
+  --accentColor: #1EB5E8;
+  --lgurl: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-43-tbvr/logo.png");
+}
+
+[[/module]]
+[[/div]]

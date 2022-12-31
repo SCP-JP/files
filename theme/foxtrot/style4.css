@@ -1,0 +1,36 @@
+
+:root {
+    --accent: var(--acc-wyoming);
+    --header-title: "1 5 0";
+    --header-subtitle: "烏有が激発の温床となる";
+    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-78-0n3j/ATOM.svg);
+    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-78-0n3j/ATOM.svg);
+}
+
+#header h1 a::before {
+    word-spacing: -18px;
+    font-size: 1.5em;
+    color: rgb(var(--accent));
+}
+
+#header h1 a::after {
+    display: flex;
+    justify-content: center;
+    margin-top: -2.6em;
+    content: "TETON WY USA";
+    color: var(--header-txt-color);
+    font-family: var(--head-font);
+    font-size: 1rem;
+    text-shadow: none;
+    word-spacing: 10px;
+}
+
+#header h2::before {
+    font-size: 1.3em;
+    margin-top: 1.2rem;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #58000024, #fff 200px);
+}
+

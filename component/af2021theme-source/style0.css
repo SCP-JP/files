@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+/*
+  Sigma9 Customizable Header
+  --author: ukwhatn
+  --source: http://scp-jp-sandbox3.wikidot.com/draft:3396310-168-9905
+  --license: CC BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0 )
+
+  --Edited for SCP-JP AF2021 by ukwhatn
+*/
+
+#container-wrap {
+    --c-topbar: linear-gradient(45deg, #5C6769 40%, #9BA0A5 60%, #5C6769 80%);
+}
+
+:root {
+    --af2021-header-100: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-0vdh/af2021-header-100.png");
+    --af2021-header-75: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-n5y4/af2021-header-75.png");
+    --af2021-header-50: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-rvj9/af2021-header-50.png");
+    --af2021-header-25: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-wgar/af2021-header-25.png");
+    --af2021-header-0: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-38-irrh/af2021-header-0.png");
+}
+
+div#container-wrap {
+background: var(--af2021-header-{$status});
+background-size: auto 141px;
+background-repeat: repeat-x;
+overflow-x: hidden;
+}
+
+div#container-wrap::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 100%;
+    height: 23px;
+    box-shadow: 3px 2px 25px -2px rgba(0,0,0,0.75);
+    background: var(--c-topbar) top left repeat-x;
+}
+
+@keyframes snow {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px
+    }
+    100% {
+        background-position: -500px 1000px, 400px 400px, 0px 300px;
+    }
+}
+
+body {
+    background-image:
+        url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-35-tnic/af2021-bg-01.png"),
+        url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-36-aujk/af2021-bg-02.png"),
+        url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-36-tg9r/af2021-bg-03.png");
+    background-size: 500px 500px, 400px 400px, 300px 300px;
+    animation: snow 10s linear infinite;
+}
+
+:root {
+    --silver-gradient: linear-gradient(45deg, #5C6769 40%, #9BA0A5 60%, #5C6769 80%);
+}
+
+#header h1 a,
+#header h2 span {
+    font-family: 'Train One', cursive;
+}
+
+#header h1 {
+    margin-left: 160px;
+}
+
+#header h1 a {
+    padding: 50px 0 25px;
+    color: white;
+    /*text-shadow: unset;
+    background: #EAE7E3;
+    background: var(--silver-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
+
+#header h1 a span {
+    font-size: 0px;
+}
+
+#header h1 a::before {
+    content: "SCP財産";
+}
+
+#header h2 {
+    margin-left: 160px;
+}
+
+#header h2 span {
+    color: white;
+    font-size: 0px;
+    padding: 5px 0;
+    /*background: #5C6769;
+    background: var(--silver-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: unset;*/
+}
+
+#header h2 span::before {
+    line-height: 1;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 1), -2px -2px 3px rgba(0, 0, 0, 1);
+    font-size: 16px;
+}
+
+#header {
+    height: 140px;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 22px;
+    background: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-39-qesi/af2021-logo.png") no-repeat;
+    background-size: 200px auto;
+}
+
+@media (max-width: 500px) {
+    #search-top-box {
+        display: none;
+    }
+}
+
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background-color: #EAE7E3;
+    background: var(--silver-gradient);
+}
+
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    background-color: #5C6769;
+}
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    background-color: #737c80;
+}
+
+#login-status {
+    background: rgba(255, 255, 255, .45);
+    padding: 3px;
+    border-radius: 2px;
+}
+
+#login-status,
+#login-status a {
+    color: black;
+}
+
+#account-options {
+    background-color: rgba(255,255,255,0.85);
+}
+
+#side-bar .side-block {
+    background-color: rgba(255, 255, 255, 0.45)!important;
+    border: 1px solid #5C6769;
+    box-shadow: unset;
+}
+
+#page-content .content-panel {
+    border: solid 1px #5c6769;
+    background-color: rgba(255, 255, 255, 0.5)!important;
+    background: rgba(255, 255, 255, 0.5)!important;
+    box-shadow: 2px 2px 5px #5C6769;
+    overflow: hidden;
+}
+
+#page-content .content-panel[style="background: #fff0f0; padding: 10px;"] {
+    background: linear-gradient(150deg, #BF953F, #f5ec94, #B38728, #f5ec94)!important;
+}
+
+#page-content .content-panel[style="background: #808080; padding: 15px 0px 10px;"] {
+    background: rgba(92, 103, 105, .75) !important;
+}
+
+#page-content .content-panel .panel-heading,
+#page-content .content-panel .panel-footer {
+    background: rgba(92,103,105, .5)!important;
+}
+
+#page-content .content-panel .panel-body {
+    background: rgba(255, 255, 255, 0.5)!important;
+}
+
+.panel-body.mailmagazine::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    background: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-22-ilwq/buuta.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#top-bar li a {
+    background: transparent !important;
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: white;
+}
+
+#top-bar li ul {
+    background: var(--silver-gradient);
+}
+
+#top-bar li ul li a {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+#top-bar li ul li a:hover {
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.feature-block.customheight .panel-body {
+    height: 260px;
+}
+
+#page-content .poor-content {
+    display: none;
+}
+

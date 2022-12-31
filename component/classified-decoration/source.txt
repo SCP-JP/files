@@ -1,0 +1,12 @@
+[[include :scp-jp:component:classified-decoration-base
+|lv={$lv}
+|item={$item}
+|oc={$oc}
+|lang{$lang}=false
+|lang={$lang}
+|lang=false
+|trans-level={$trans-level}
+|trans-level=false
+|trans-classified={$trans-classified}
+|trans-classified=false
+]]

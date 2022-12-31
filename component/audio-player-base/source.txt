@@ -1,0 +1,1 @@
+[[iframe http://ja.scp-wiki.net/local--code/component:audio#{$URL}{$autoplay} frameborder="0" scrolling="no" width="320px" height="40px"]]

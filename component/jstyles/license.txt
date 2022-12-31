@@ -1,0 +1,5 @@
+title: JStyles :maintenance by Nanimono_Demonai
+author: Nanimono Demonai
+created_at: 2016-05-12 08:28:53+00:00
+source: http://scp-jp.wikidot.com/component:jstyles
+license: Need to Fix!

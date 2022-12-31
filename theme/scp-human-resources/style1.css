@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
+
+@supports(--css: variables) {
+
+:root {
+    /* Typefaces */
+    --header-font: "Zilla Slab", serif;
+    --title-font: "Z", monospace;
+
+    /* Standard Colors */
+
+    --white-monochrome: 207, 223, 245;
+    --pale-gray-monochrome: 157, 186, 226;
+    --light-gray-monochrome: 112, 149, 201;
+    --gray-monochrome: 75, 115, 171;
+    --dark-gray-monochrome: 49, 91, 150;
+    --black-monochrome: 7, 7, 40;
+    --bright-accent: 128, 184, 116;
+    --medium-accent: 61, 139, 44;
+    --dark-accent: 28, 104, 12;
+    
+    --swatch-text-general: var(--swatch-text-dark);
+
+    --link-color: var(--medium-accent);
+
+    --logo-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png");
+    --header-subtitle: "人事部門";
+
+    --background-gradient-color: 255, 242, 219;
+    --rating-module-bg-color: var(--dark-accent);
+    --rating-module-text-color: var(--bright-accent);
+    --rating-module-plus-color: var(--bright-accent);
+    --rating-module-negative-color: var(--bright-accent);
+    
+    scrollbar-color: rgba(var(--pale-gray-monochrome), 1) rgba(var(--dark-gray-monochrome), 0.50);
+
+    --offset-from-page-top: 0rem;
+}
+
+#side-bar .heading p {
+    color: rgba(var(--black-monochrome),1);
+    font-family: "Zilla Slab", serif;
+    --text-shadow: none;
+}
+
+#search-top-box input.empty {
+    color: rgba(var(--white-monochrome),1);
+}
+
+#search-top-box-form input[type="submit"],
+#search-top-box-form input[type="submit"]:focus,
+#search-top-box-form input[type="submit"]:hover {
+    color: rgb(var(--dark-accent));
+}
+#footer a {
+    background: inherit;
+    color: rgba(var(--white-monochrome),1);
+}
+.collapsible-block-link {
+    text-decoration-color: rgb(var(--medium-accent));
+    text-decoration: rgb(var(--medium-accent));
+}
+
+}

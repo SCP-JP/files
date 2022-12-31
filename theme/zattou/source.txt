@@ -1,0 +1,809 @@
+[[module css]]
+@import url("http://scp-jp.wikidot.com/theme:zattou/code/1");
+[[/module]]
+
+[[iftags +テーマ]]
+
+[[>]]
+[[span style="margin-right: 2em;"]]**評価モジュール:**[[/span]]
+
+[[module Rate]]
+
+[[span style="margin-right: 2em;"]]**クレジットモジュール:**[[/span]]
+[[/>]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** 雑踏テーマ
+**作成者:** [[*user sendoh-oroka]]
+**公開日:** 2021
+----
+= [[[author:sendoh-oroka|この著者の他の作品]]]
+[[include :1nu:tweet
+|color=blue
+|font=serif
+|align=left
+|mini=true
+]]
+[[include :scp-jp:credit:end-preview]]
+
+[[include :scp-int:component:coltop show=ソースコード▶|hide=ソースコード▼]]
+[[code type="css"]]
+
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap);
+
+body {
+    color: #181b39;
+    background: #e6e6e6;
+}
+
+a {
+    color: #006890;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+#main-content a {
+    transition: .3s;
+}
+
+/* HEADER */
+div#extra-div-1 {
+  height: 140px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background: url("http://scp-jp-storage.wikidot.com/local--files/file:6059604-21-32go/zattou.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#header {
+  background: none;
+}
+
+div#container-wrap {
+  background: none;
+}
+
+@media (max-width: 479px) {
+  #header{
+    background-position: 0 5.5em;
+    background-size: 55px 55px;
+  }
+}
+@media (min-width: 480px) and (max-width: 580px) {
+  #header{
+    background-position: 0.5em 4.5em;
+    background-size: 66px 66px;
+  }
+}
+@media (min-width: 581px) and (max-width: 767px) {
+  #header{
+    background-size: 77px 77px;
+  }
+}
+#header h1 a::before {
+  background: none;
+}
+#header h1 a span{
+    visibility: hidden;
+}
+#header h2 span {
+    color: transparent;
+    text-shadow: 0px 0px 0px;
+}
+#header h2 span::before {
+  background: none;
+}
+
+div#search-top-box {
+    top: 18.5px;
+    width: 100%;
+    right: 70px
+}
+ 
+div#search-top-box form {
+    display: flex;
+    justify-content: flex-end
+}
+ 
+div#search-top-box form input[type="text"],
+div#search-top-box form input[type="text"]:hover {
+    background-color: #5B5B5B !important;
+    display: inline-block;
+    height: 1.1rem;
+    width: 8rem;
+    transition: width .25s;
+    outline: none;
+    filter: brightness(120%);
+}
+
+_::-webkit-full-page-media,
+_:future,
+:root div#search-top-box form input[type="text"] {
+    font-size: 16px
+}
+
+div#search-top-box form input[type="text"]:not(:focus),
+div#search-top-box form input[type="text"]:not(:focus):not(:hover) {
+    background-color: var(--base-color);
+    color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    box-shadow: none;
+    background-position: center;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23ddd%22%20d%3D%22M505%20442.7L405.3%20343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3%2044-79.7%2044-128C416%2093.1%20322.9%200%20208%200S0%2093.1%200%20208s93.1%20208%20208%20208c48.3%200%2092.7-16.4%20128-44v16.3c0%206.4%202.5%2012.5%207%2017l99.7%2099.7c9.4%209.4%2024.6%209.4%2033.9%200l28.3-28.3c9.4-9.4%209.4-24.6.1-34zM208%20336c-70.7%200-128-57.2-128-128%200-70.7%2057.2-128%20128-128%2070.7%200%20128%2057.2%20128%20128%200%2070.7-57.2%20128-128%20128z%22%2F%3E%3C%2Fsvg%3E");
+}
+ 
+div#search-top-box form input[type="submit"] {
+    display: none
+}
+
+#search-top-box-input {
+    border: solid 1px var(--background);
+    border-radius: 5px
+}
+
+#login-status {
+    top: 2px
+}
+
+#login-status {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    font-size: 0
+}
+ 
+#login-status .printuser {
+    margin: 0;
+    background-color: none;
+    position: absolute;
+    top: 13px;
+    right: 0px;
+    width: 28px;
+    padding: 0;
+}
+ 
+#login-status .printuser img.small {
+    background: none !important;
+    margin: 0;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border-radius: 100px;
+    box-shadow: 0 0 3px #3f3f3f;
+}
+
+#login-status [id] {
+    font-size: .72rem
+}
+
+#login-status>a[href="javascript:;"] {
+    font-size: 0;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    width: 21.8px;
+    position: absolute;
+    top: 13px;
+    height: 21px;
+    right: 30px;
+    border: none;
+}
+ 
+#login-status>a[href="javascript:;"]:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 1.3rem;
+    margin: 4px 3px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    transform: translate(0, 0);
+}
+ 
+#login-status #account-topbutton:before {
+    content: "\f013";
+    color: var(--base-color)
+}
+ 
+#login-status .login-status-sign-in {
+    right: 35px !important;
+}
+ 
+#login-status .login-status-sign-in:before {
+    content: "\f13e";
+    color: var(--base-color)
+}
+ 
+#login-status .login-status-create-account {
+    right: 11px !important;
+    margin: 0 0 .25rem;
+}
+ 
+div#login-status a.login-status-create-account {
+    right: 11px;
+}
+ 
+#login-status .login-status-create-account:before {
+    content: "\f067";
+    color: var(--base-color)
+}
+ 
+#login-status #my-account {
+    display: none
+}
+ 
+#login-status a strong {
+    position: absolute;
+    top: 0;
+    right: 2.25rem;
+    font-family: var(--bauhaus);
+    font-size: 1rem;
+    white-space: nowrap
+}
+ 
+#login-status #account-topbutton:not(:focus):not(:focus-within):not(:hover):not(:active)+#account-options {
+    display: none !important
+}
+ 
+#header #login-status #account-topbutton+#account-options:focus,
+#header #login-status #account-topbutton+#account-options:focus-within,
+#header #login-status #account-topbutton+#account-options:hover,
+#header #login-status #account-topbutton+#account-options:active {
+    display: block !important
+}
+
+#account-options ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+ 
+#account-options ul>li {
+    flex-grow: 1;
+    text-align: center;
+    width: 40%
+}
+ 
+#account-options ul>li a {
+    transition: all .25s ease-in-out
+}
+ 
+#account-options ul>li a:hover {
+    background-color: var(--base-color);
+    color: var(--background);
+    text-decoration: none
+}
+ 
+#login-status ul a {
+    color: #000
+}
+
+/* TOP BAR */
+div#container-wrap {
+  background-image: url(none);
+}
+ 
+div#extra-div-2 {
+  height: 21px;
+  width: 100%;
+  top: 140px;
+  position: absolute;
+  background-color: #181b39;
+}
+
+#top-bar a {
+  color: #fff;
+}
+
+#top-bar ul li ul {
+  border: solid 1px #181b39;
+  border-top: none;
+  overflow: hidden;
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+  background: rgba(24, 27, 57, 0.85) !important;
+  border-right: solid 1px #181b39;
+  border-left: solid 1px #181b39;
+  color: #fff;
+}
+
+/* LOGIN SETTING */
+#login-status {
+  color: white;
+}
+#login-status a {
+  background: transparent;
+  color: white;
+}
+#account-options {
+  border: solid 1px #181b39;
+}
+
+div.page-rate-widget-box {
+    box-shadow: none !important;
+    border-bottom: 2px solid #181b39;
+    border-radius: 0;
+}
+.creditRate .rateBox {
+    display: inline-flex;
+    border-bottom: 2px solid #181b39;
+}
+.creditRate .rateBox div.page-rate-widget-box {
+    border-bottom: none !important;
+}
+div.page-rate-widget-box .rate-points {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: #181b39;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: transparent;
+        border: none;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: transparent !important;
+    color: #29292942 !important
+}
+
+.page-rate-widget-box .cancel {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: #181b39 !important;
+}
+
+.page-rate-widget-box .cancel a:hover {
+    color: #29292942 !important;
+    background: transparent !important;
+}
+
+.modalbox .page-rate-widget-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.rate-box-with-credit-button .creditButton {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+a.fa.fa-info {
+    color: #181b39 !important
+}
+
+a.fa.fa-info:hover {
+    color: #29292942 !important
+}
+
+.modalbox .modalbox-title {
+    background: #004150 !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+}
+
+.modalbox {
+    box-shadow: 0 2px 6px #ccc !important;
+    border-radius: 0 !important;
+    background-color: #fff !important;
+}
+
+.rate-box-with-credit-button a {
+    text-decoration: none !important
+}
+
+.page-rate-widget-box .cancel a {
+    color: #181b39 !important
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    color: #181b39 !important
+}
+
+/* SIDE BAR */
+#side-bar .side-block {
+    border-radius: 0;
+    position: relative;
+    border: none;
+    box-shadow: 0px 0px 4px #181b39;
+    color: #181b39;
+    background: #181b39;
+    background-color: #d3dbe2 !important;
+}
+
+#side-bar .side-block a {
+    color: #181b39;
+    background: -webkit-linear-gradient(to left, #2b2b2b, #180614, #000b00);
+    background: linear-gradient(to left, #2b2b2b, #180614, #000b00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#side-bar .collapsible-block-unfolded-link,
+#side-bar .collapsible-block-unfolded {
+    border-color: #000;
+}
+
+#side-bar .heading {
+    border-color: #d3dbe2;
+    color: #181b39;
+    background: -webkit-linear-gradient(to left, #2b2b2b, #180614, #000b00);
+    background: linear-gradient(to left, #2b2b2b, #180614, #000b00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#side-bar div.menu-item img {
+    filter: hue-rotate(180deg);
+}
+
+#side-bar .collapsible-block-folded,
+#side-bar .collapsible-block-unfolded-link {
+    position: relative;
+    z-index: 0;
+}
+
+#side-bar .collapsible-block-folded::before,
+#side-bar .collapsible-block-unfolded-link::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: inherit;
+    filter: hue-rotate(180deg)brightness(1.7);
+    ;
+    z-index: -1;
+}
+
+img.image[title="SCP-JP Discord Chat"],
+img.image[title="SCP-JP Twitter"] {
+    filter: hue-rotate(310deg) !important;
+}
+
+#side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0px 0px 4px #181b39;
+    color: #181b39;
+    background: #181b39;
+    background-color: #d3dbe2 !important;
+}
+
+/* TITLE */
+#page-title {
+  color: #181b39;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 220%;
+  transition: 0.5s;
+  border-bottom: 1px solid #181b39;
+  margin-top: -11px;
+  border-color: #181b39;
+}
+
+/* IMAGE CAPTION */
+#page-content .scp-image-block {
+    border-color: #003a47;
+    box-shadow: none;
+}
+#page-content .scp-image-block .scp-image-caption {
+    border-color: #000;
+    background-color: #fdfdf5;
+    color: #181b39;
+}
+
+/* TABLE */
+table.wiki-content-table th {
+    background-color: #d3dbe2;
+    color: #181b39;
+}
+hr {
+    background-color: #324356;
+}
+table.wiki-content-table td {
+    background-color: #fdfdf5;
+}
+.code {
+    border: 1px dashed #9400D3;
+    background-color: #FFF5EE;
+}
+
+/* TAB */
+.yui-navset {
+    border: solid #181b39 1px;
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-nav li a,
+.yui-navset .yui-nav li a em {
+    border: none 0;
+}
+.yui-navset .yui-nav {
+    background: #181b39;
+}
+.yui-navset .yui-nav li,
+.yui-navset .yui-nav li.selected {
+    margin: 0;
+    padding: 0;
+}
+.yui-navset .yui-nav li a,
+.yui-navset .yui-nav li a:hover {
+    background: #181b39;
+}
+.yui-navset .yui-nav li.selected a,
+.yui-navset .yui-nav li.selected a:hover,
+.yui-navset .yui-nav li.selected a:focus {
+    background: #fdfdf5;
+}
+.yui-navset .yui-nav li a em {
+    color: #fdfdf5;
+}
+.yui-navset .yui-nav li.selected a em {
+    padding: 0.25em 0.75em;
+    color: #181b39;
+}
+.yui-navset .yui-content {
+    border: none ;
+    background: #fdfdf5;
+}
+
+/* OTHER */
+div.blockquote {
+     background: #fdfdf5;
+}
+
+div#toc {
+     background: #fdfdf5;
+}
+
+.hovertip {
+    width: 20em;
+    padding: 0.5em;
+    border: 2px solid rgba(234, 244, 252) !important;
+    background: rgba(234, 244, 252) !important;
+    /* box-shadow: 0 0 6px 1px #000000aa; */
+    z-index: 100;
+    color: #181b39;
+    animation: hoverfade .5s ease-in-out both;
+    border-radius: 7px;
+}
+
+@keyframes hoverfade {
+    0% {
+     opacity: 0;
+    }
+    100% {
+     opacity: 1;
+    }
+}
+
+.hovertip .f-heading {
+    color: #000;
+}
+
+/* USER INFO */
+div.owindow {
+    background: #e6e6e6;
+    border: 2px solid #fff;
+    color: #181b39;
+}
+
+.owindow .title.modal-header {
+    background: #004150;
+    border-bottom: #555 1px solid;
+    color: #fff;
+}
+
+div.owindow>div.content>img {
+    background: transparent !important;
+}
+
+div.owindow>div.content>h1 {
+    color: #004150;
+}
+
+.owindow .button-bar a:hover {
+    background: #bbbcbf;
+}
+.owindow .button-bar a {
+    background: #d3dbe2;
+    color: #131b39;
+    transition: .3s;
+}
+.owindow .title {
+    background-color: #effdf5;
+}
+
+#footer {
+    background: #181b39;
+    color: #fff;
+    padding: 8px 3px;
+}
+
+#license-area {
+    color: #fff;
+    background: #180614;
+    border-top: 1px solid #fff;
+}
+
+.odialog-shader {
+    background-color: #3e5166;
+    filter: alpha(opacity=80);
+    opacity: .3;
+}
+
+@media (max-width: 767px) {
+    #side-bar {
+     background-color: rgba(20, 20, 70, .85);
+    }
+}
+
+div.open-menu a[href="#side-bar"] {
+    border: 5px solid #f7efe3 !important;
+    color: #f7efe3 !important;
+    border-radius: 3px;
+    background: transparent !important;
+    box-shadow: 0 0 5px #fff;
+    text-shadow: 0 0 5px #fff;
+}
+::-webkit-scrollbar {
+    border: none;
+}
+
+#side-bar::-webkit-scrollbar {
+    width: 10px;
+}
+@media (max-width: 767px)
+#side-bar:target .close-menu {
+    background: rgb(1 134 255 / 14%) 1px 1px repeat;
+}
+hr {
+    height: 0.8px;
+}
+.modalbox>.modalbox-title>h2>span {
+    font-family: 'noto serif jp';
+}
+input:focus,textarea:focus  {
+    outline: none !important;
+}
+#lock-info {
+    background-color: #180614;
+    border: 3px solid #ccc;
+    color: #fff;
+}
+div.page-rate-widget-box .rate-points {
+    color: #292929 !important;
+}
+
+[[/code]]
+[[include :scp-int:component:colend]]
+
+[[div class="blockquote"]]
+**改造させていただいた対話部門のテーマ**
+Created at 2020
+Created by [[*user dog_punch]]
+CC BY-SA 3.0
+http://1nu.wikidot.com/taiwa
+
+**検索窓・WikiIDの構文**
+Created at 2020
+Created by [[*user ting129]]
+CC BY-SA 3.0
+http://scp-zh-tr.wikidot.com/taiwan-miracle-exposition
+
+**ヘッダー画像**
+Created at 2017
+Created by [不明]
+CC0
+https://pxhere.com/ja/photo/1004785
+
+**構文協力**
+[[*user ukwhatn]]様
+[[*user iti119]]様
+
+= 👇をどこかに書くことでこのテーマが使えます。
+||[[include :scp-jp:theme:zattou]]||
+
+ヘッダー画像を変更したい場合は以下のコードも一緒に書いてください。
+[[code]]
+[[module CSS]]
+div#extra-div-1 {
+  height: 140px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background: url("ここに画像のURL");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+[[/module]]
+[[/code]]
+
+[[/div]]
+
+[[include component:image-block
+|width=200px
+|name=http://scp-jp-storage.wdfiles.com/local--files/file%3A6059604-16-mtr0/poster
+|caption=BIG CAT is Watching You![[footnote]]にゃあ[[/footnote]]]]
+
+[[toc]]
+
++ 見出し1
+
+++ 見出し2
+
++++ 見出し3
+
+++++ 見出し4
+
++++++ 見出し5
+
+++++++ 見出し6
+
+**太字** | //斜体// | _下線_ | --打ち消し線-- | {{等幅フォント}} | ^^上付き文字^^,,下付き文字,,
+
+ハイフン4つ"@@----@@"で水平線をひくことができます。
+
+----
+
+||~ ヘッダー ||~ ヘッダー ||~ ヘッダー ||~ ヘッダー ||~ ヘッダー ||~ ヘッダー ||
+|| セルの内容 || セルの内容 || セルの内容 || セルの内容 || セルの内容 || セルの内容 ||
+|| セルの内容|||||||||| ロングセルの内容 ||||
+|| セルの内容 || セルの内容 || セルの内容 || セルの内容 || セルの内容 || セルの内容 ||
+
+[[div class="code"]]
+@@偽のセレクタ{@@
+@@  偽のプロパティ: 偽の値;@@
+@@}@@
+[[/div]]
+
+[http://ja.scp-wiki.net/ リンク]
+
+# 番号付きリスト
+# リストのアイテム
+# リストのアイテム
+
+* 箇条書きリスト
+* リストのアイテム
+* リストのアイテム
+
+[[tabview]]
+[[tab １つ目のタブ]]
+やあ
+[[/tab]]
+[[tab ２つ目のタブ]]
+はじめまして
+[[/tab]]
+[[tab ３つ目のタブ]]
+製作者の[[*user sendoh-oroka]]です。
+[[/tab]]
+[[tab ４つ目のタブ]]
+この最高にcoolな雑踏テーマ
+[[/tab]]
+[[tab ５つ目のタブ]]
+ぜひ使ってみてね！
+[[/tab]]
+[[/tabview]]
+[[/iftags]]

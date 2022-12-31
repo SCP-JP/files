@@ -1,0 +1,338 @@
+
+.hfcontainer {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    background-image: url('http://scp-jp-storage.wikidot.com/local--files/file:3396310-46-b63j/Herman-Fuller-background-new.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #BEB192;
+    text-shadow: 2px 2px #000;
+}
+
+.hfheader {
+    padding: 0;
+    padding-top: 20px;
+    height: 80px;
+    width: 100%;
+    display: block;
+}
+
+.hfnarrowcontent {
+    width: 20%;
+    font-size: 2em;
+    font-family: eastmarketregular, sans-serif;
+    text-align: center;
+    padding: 0% 2%;
+    padding-bottom: 0px;
+    margin: 0;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.hfnarrowcontent p {
+    line-height: 110%;
+}
+
+.hftitle {
+   font-size: 3.2em;
+   font-family: eastmarketregular, sans-serif;
+   font-weight: bold;
+   text-align: center;
+   height: 75px;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+   display: block;
+}
+
+.hfwidecontent {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    font-size: 1.5em;
+    font-family: eastmarketregular, sans-serif;
+    text-align: center;
+    padding-bottom: -20px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.hfwidecontent p {
+    line-height: 120%;
+    letter-spacing: 0.05em;
+    padding: 0px 15px;
+}
+
+.hffooter {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    font-family: eastmarketregular, sans-serif;
+    padding: 0px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.hfpic {
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background-position: center center; 
+    vertical-align: middle;
+}
+
+.hfpicframe {
+    background-image: url('http://scp-jp-storage.wikidot.com/local--files/file:3396310-46-93kx/frame-new.png');
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.hfpic-container {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hfnarrowcontent {
+        font-size: 18pt;
+    }
+
+    .hfwidecontent p{
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    .hftitle {
+       font-size: 3.1em;
+       height: 60px;
+    }
+
+    .hfpic {
+        height: 95%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .hftitle {
+       font-size: 2.5em;
+       height: 50px;
+    }
+    .hfpic-container {
+        height: 350px;
+    }
+    .hfpic {
+        height: 100%;
+    }
+    .hfwidecontent{
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .hfnarrowcontent {
+        font-size: 15pt;
+    }
+    .hfpic-container {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .hftitle {
+       font-size: 2.2em;
+       height: 50px;
+    }
+    .hfnarrowcontent {
+        font-size: 13pt;
+    }
+    .hfnarrowcontent p{
+        margin: 10px 0px;
+    }
+    .hfpic-container {
+        height: 225px;
+        vertical-align: top;
+    }
+    .hfpic {
+        height: 95%;
+        width: 40%;
+    }
+    .hfwidecontent p{
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hftitle {
+       font-size: 2.8em;
+       height: 65px;
+    }
+    .hfnarrowcontent {
+        font-size: 18pt;
+    }
+    .hfnarrowcontent p{
+        margin: 30px 0px;
+    }
+    .hfpic-container {
+        height: 380px;
+    }
+    .hfpic {
+        height: 85%;
+        width: 40%;
+    }
+    .hfwidecontent p{
+        font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .hftitle {
+       font-size: 2.5em;
+       height: 50px;
+    }
+    .hfnarrowcontent {
+        width: 22%;
+        font-size: 17pt;
+    }
+    .hfpic-container {
+        height: 340px;
+    }
+    .hfpic {
+        height: 90%;
+    }
+    .hfwidecontent{
+        margin-top: 20px;
+    }
+    .hfwidecontent p{
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .hfpic {
+        height: 80%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 625px) {
+    .hftitle {
+       font-size: 2.3em;
+       height: 40px;
+    }
+    .hfnarrowcontent {
+        width: 20%;
+        font-size: 15pt;
+    }
+    .hfnarrowcontent p{
+        margin: 20px 0px;
+    }
+    .hfpic-container {
+        height: 325px;
+    }
+    .hfpic {
+        width: 45%;
+        height: 85%;
+    }
+}
+
+@media only screen and (max-width: 585px) {
+    .hfheader {
+    padding-top: 20px;
+    height: 60px;
+    }
+    .hftitle {
+       font-size: 2.1em;
+       height: 25px;
+    }
+    .hfpic-container {
+        height: 290px;
+    }
+    .hfpic {
+        width: 45%;
+        height: 80%;
+    }
+    .hfwidecontent{
+        margin-top: 10px;
+    }
+    .hfwidecontent p{
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .hfpic-container {
+        height: 260px;
+    }
+    .hfpic {
+        width: 45%;
+        height: 85%;
+    }
+    .hfnarrowcontent {
+        width: 19%;
+        font-size: 12pt;
+    }
+    .hfnarrowcontent p{
+        margin: 12px 0px;
+    }
+    .hfwidecontent{
+        margin-top: 0px;
+    }
+    .hfwidecontent p{
+        font-size: 0.7em;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .hfheader {
+    padding-top: 20px;
+    height: 40px;
+    }
+    .hftitle {
+       font-size: 2.1em;
+       height: 25px;
+    }
+    .hfnarrowcontent {
+        width: 19%;
+        font-size: 10pt;
+    }
+    .hfnarrowcontent p{
+        margin: 12px 0px;
+    }
+     .hfpic-container {
+        height: 200px;
+    }
+    .hfpic {
+        width: 45%;
+        height: 85%;
+    }
+    .hfwidecontent p{
+        font-size: 0.6em;
+    }
+}
+

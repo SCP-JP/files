@@ -1,0 +1,612 @@
+/*
+    Paperstack Theme
+    [2020 Wikidot Theme]
+    By EstrellaYoshte
+    Based on:
+      Inkblot Theme by Croquembouche
+      Word Processor Theme by stormbreath
+      Modern Theme by Azamo
+      Simple Yonder Theme by EstrellaYoshte
+
+     Edited by ukwhatn for SCP-JP
+*/
+
+/* Japanese Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+/* English Font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code&display=swap);
+
+#page-content {
+    font-size: 0.87rem;
+}
+
+body {
+    font-family: "Noto Sans JP", "Oxygen", sans-serif;
+}
+
+body {
+    color: black;
+    background-image: linear-gradient(
+            to bottom,
+            #EFEFEF, #EFEFEF 276px,
+            #D3D3D3 276px, #ffffff 282px,
+            #ffffff 282px, #ffffff 100%
+    );
+    background-repeat: no-repeat;
+}
+
+#main-content {
+    top: -1.6rem;
+    padding: 0.2em;
+}
+
+.page-source, .code pre, .code p, .code, tt {
+    font-family: "Fira Code", monospace;
+}
+
+
+/* ---- HEADER ---- */
+
+div#container-wrap {
+    background-image: none;
+}
+
+div#header {
+    background-image: none;
+}
+
+#header h1, #header h2 {
+    margin-left: 0;
+    float: none;
+    text-align: center;
+}
+
+/* Move the subtitle down a smidge */
+#header h2 {
+    margin-top: 0.45rem;
+}
+
+/* Hide the existing text */
+#header h1 span, #header h2 span {
+    font-size: 0;
+    display: none;
+}
+
+/* Style the new text */
+#header h1 a::before, #header h2::before {
+    color: #333333;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: none;
+}
+
+/* Set the new text's content from variable */
+#header h1 a::before {
+    content: var(--header-title, "SCP FOUNDATION");
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+#header h2::before {
+    content: var(--header-subtitle, "SECURE - CONTAIN - PROTECT");
+    font-weight: 600;
+    font-size: 1.22em;
+}
+
+#login-status,
+#login-status a {
+    color: #333333;
+}
+
+#page-title {
+    display: none;
+}
+
+#footer, #footer a {
+    background: transparent;
+    color: #333333;
+}
+
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: none;
+    background: #333333;
+    box-shadow: none;
+    border-radius: 0px;
+    color: #efefef;
+}
+
+#search-top-box input.empty {
+    color: #999999;
+}
+
+#search-top-box {
+    top: 2.3rem !important;
+    right: 8px;
+}
+
+
+/* ---- TOP BAR ---- */
+
+#top-bar {
+    display: flex;
+    justify-content: center;
+    right: 0;
+    top: 7.9rem;
+}
+
+#top-bar, #top-bar a {
+    color: #333333;
+}
+
+
+/* ---- SIDE BAR ---- */
+
+#side-bar .side-block {
+    border: transparent;
+    border-radius: 0;
+    box-shadow: 0px 0px 7px #999999;
+    background: #ffffff;
+}
+
+#side-bar .side-block.media > * {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#top-bar div.open-menu a {
+    border-radius: 0;
+    box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.19);
+    border: 1px white;
+}
+
+@media (max-width: 767px) {
+    #main-content {
+        padding: 0;
+        margin: 0 5%;
+        border-left: none;
+    }
+
+    #page-title {
+        margin-top: 0.7em;
+    }
+
+    #side-bar {
+        background-color: #fff;
+    }
+
+    #side-bar:target {
+        border: none;
+        box-shadow: 3px 0 1px -2px rgba(0, 0, 0, 0.04), 1px 0 5px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    #side-bar .close-menu {
+        transition: width 0.5s ease-in-out 0.1s,
+        opacity 1s ease-in-out 0s;
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.3);
+        background-position: 19em 50%;
+        z-index: -1;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #side-bar:target .close-menu {
+        width: calc(100% - 19em);
+        right: 0;
+        left: auto;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    #page-content > hr, #page-content > .list-pages-box > .list-pages-item > hr {
+        margin: 3em -5.5%;
+    }
+
+    #side-bar {
+        top: 0;
+    }
+
+    #side-bar .heading {
+        padding-left: 1em;
+        margin-left: -1em;
+    }
+
+    #search-top-box {
+        top: 107px;
+    }
+}
+
+/* ---- TABS ---- */
+
+/* ---- YUI TAB BASE ---- */
+.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
+    background-color: inherit;
+    background-image: inherit
+}
+
+.yui-navset .yui-nav a:hover, .yui-navset .yui-nav a:focus {
+    background: inherit;
+    text-decoration: inherit
+}
+
+.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
+    color: inherit;
+    background: inherit
+}
+
+.yui-navset .yui-nav, .yui-navset .yui-navset-top .yui-nav {
+    border-color: inherit
+}
+
+.yui-navset li {
+    line-height: inherit
+}
+
+/* ---- YUI TAB CUSTOMIZATION ----*/
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - .125rem);
+    margin: 0 auto;
+    border-color: #333333;
+    box-shadow: none;
+}
+
+.yui-navset .yui-nav a, /* ---- Link Modifier ---- */
+.yui-navset .yui-navset-top .yui-nav a {
+    color: #333333;
+    /* ---- Tab Background Colour | [UNSELECTED] ---- */
+    background-color: #efefef;
+    border: unset;
+    box-shadow: none;
+    box-shadow: none;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    color: #ffffff;
+    /* ---- Tab Background Colour | [HOVER] ---- */
+    background-color: #333333;
+}
+
+.yui-navset .yui-nav li, /* ---- Listitem Modifier ---- */
+.yui-navset .yui-navset-top .yui-nav li {
+    position: relative;
+    display: flex;
+    flex-grow: 2;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #ffffff;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.yui-navset .yui-nav li a,
+.yui-navset-top .yui-nav li a,
+.yui-navset-bottom .yui-nav li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.yui-navset .yui-nav li em {
+    border: unset;
+}
+
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+    padding: .35em .75em;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.yui-navset .yui-nav .selected, /* ---- Selection Modifier ---- */
+.yui-navset .yui-navset-top .yui-nav .selected {
+    flex-grow: 2;
+    margin: 0;
+    padding: 0;
+    /* ---- Tab Background Colour | [SELECTED] ---- */
+    background-color: #333333;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a em {
+    border: none;
+}
+
+.yui-navset .yui-nav .selected a {
+    width: 100%;
+    color: #ffffff;
+}
+
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:active {
+    color: #ffffff;
+    background-color: #333333;
+}
+
+.yui-navset .yui-content {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px #999999;
+}
+
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    padding: .5em;
+    border: none;
+}
+
+/* ---- INFO BAR ---- */
+body {
+    --barColour: #333333;
+}
+
+.info-container .collapsible-block-content {
+    padding: 0 .5em 30px;
+}
+
+.info-container .collapsible-block-content .wiki-content-table {
+    width: 100%;
+}
+
+/* ---- INFO PANE ---- */
+
+#page-content .creditRate {
+    margin: unset;
+    margin-bottom: 4px;
+}
+
+#page-content .rate-box-with-credit-button {
+    background-color: #ffffff;
+    border: solid 1px #ffffff;
+    box-shadow: 0px 0px 7px #999999;
+    border-radius: 0;
+}
+
+#page-content .rate-box-with-credit-button .fa-info {
+    border: none;
+    color: #333333;
+}
+
+#page-content .rate-box-with-credit-button .fa-info:hover {
+    background: #333333;
+    color: #ffffff;
+}
+
+.rate-box-with-credit-button .cancel {
+    border: solid 1px #ffffff;
+}
+
+/* ---- PAGE RATING ---- */
+
+.page-rate-widget-box {
+    box-shadow: 0px 0px 7px #999999;
+    margin: unset;
+    margin-bottom: 4px;
+    border-radius: 0;
+    font-family: "Oxygen", sans-serif;
+}
+
+div.page-rate-widget-box .rate-points {
+    background-color: #ffffff;
+    color: #333333 !important;
+    border: solid 1px #ffffff;
+    border-radius: 0;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #ffffff;
+    border-top: solid 1px #ffffff;
+    border-bottom: solid 1px #ffffff;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: #333333;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #333333;
+    color: #ffffff;
+}
+
+.page-rate-widget-box .cancel {
+    background: transparent;
+    background-color: #ffffff;
+    border: solid 1px #ffffff;
+    border-radius: 0;
+}
+
+.page-rate-widget-box .cancel a {
+    color: #333333;
+}
+
+.page-rate-widget-box .cancel a:hover {
+    background: #333333;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+
+/* ---- PAGE ELEMENTS ---- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333333;
+    font-family:  "Sawarabi Gothic", "Josefin Sans", sans-serif;
+    font-weight: bold;
+}
+
+blockquote,
+div.blockquote,
+#toc,
+.code {
+    background-color: #F8F8F8;
+    border: solid 1px #F8F8F8;
+    box-shadow: 0px 0px 4px #999999;
+}
+
+.scp-image-block {
+    border: solid 8px #ffffff;
+    box-shadow: 0px 0px 5px #999999;
+    box-sizing: border-box;
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: #ffffff;
+    border-top: solid 4px #ffffff;
+    color: black;
+}
+
+#page-content .wiki-content-table tr th {
+    border: solid 1px #999999;
+    background-color: #efefef;
+    /* set border for table title */
+}
+
+#page-content .wiki-content-table tr td {
+    border: solid 1px #999999;
+    /* set border for table content */
+}
+
+
+/*-- tags --*/
+
+#main-content .page-tags span {
+    max-width: 100%;
+}
+
+#main-content .page-tags a {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    font-size: 0.76rem;
+    background-color: #FDFDFD;
+    border-radius: 0.6rem 0.12rem;
+    margin: .25rem .2rem;
+    .5rem .2rem;
+    padding: 0.2rem 0.42rem 0.25rem 0.46rem;
+    box-shadow: 0.6px 0.6px 1.9px 0.8px rgba(0, 0, 0, 0.27);
+}
+
+#main-content .page-tags a:before {
+    content: "•";
+    font-size: 1.1rem;
+    float: left;
+    position: relative;
+    top: -0.19rem;
+    left: -0.24rem;
+    color: #ffffff;
+    background-color: #B8B8B8;
+    color: transparent;
+    text-shadow: 1px 1px 0.7px rgba(255, 255, 255, 0.82);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+
+/* ---- CUSTOM SYNTAX ---- */
+
+.header-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-around;
+    align-content: space-between;
+    width: 100%;
+    left: 0;
+    align-items: flex-start;
+    row-gap: 2px;
+}
+
+.text-item {
+    flex-grow: 1;
+    max-width: 25%;
+    text-align: center;
+}
+
+
+.grid-item {
+    flex-grow: 1;
+    min-width: 25%;
+    text-align: center;
+    margin: 8px 6px;
+}
+
+@media (max-width: 1200px) {
+    .grid-item {
+        min-width: 50%;
+    }
+}
+
+.logo {
+    position: absolute;
+    width: 180px;
+    top: -154px;
+    left: -17em;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .logo {
+        width: 36%;
+        top: -9.7em;
+        left: 32%;
+    }
+}
+
+.textbox {
+    position: absolute;
+    width: 42%;
+    top: 7.5rem;
+}
+
+@media (max-width: 960px) and (min-width: 767px), (max-width: 666px) {
+    .textbox {
+        position: relative;
+        width: 100%;
+        top: 0;
+    }
+}
+
+/* CreditModule対応 by ukwhatn */
+.creditRate.creditModule .creditButton {
+    background-color: white;
+    border: unset;
+    border-radius: 0px;
+    margin-left: 5px;
+    height: 100%;
+}
+
+.creditRate.creditModule .creditButton a {
+    height: 100%;
+    line-height: 20px;
+}

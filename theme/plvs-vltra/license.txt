@@ -1,0 +1,5 @@
+title: プルス・ウルトラ テーマ
+author: Tenten_518
+created_at: 2021-04-01 15:37:56+00:00
+source: http://scp-jp.wikidot.com/theme:plvs-vltra
+license: Need to Fix!

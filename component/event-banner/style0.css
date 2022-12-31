@@ -1,0 +1,32 @@
+.full-link {
+    position: relative;
+}
+
+.full-link a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+
+@media (min-width: 850px) and (max-width: 979px){
+#page-content .content-panel.centered.standalone.month {
+    font-size: 11px;
+}
+}
+@media (min-width: 768px) and (max-width: 850px){
+#page-content .content-panel.centered.standalone.month {
+    font-size: 10px;
+}
+}
+@media (min-width: 580px) and (max-width: 660px){
+#page-content .content-panel.centered.standalone.month {
+    font-size: 11px;
+}
+}
+@media (max-width: 580px){
+#page-content .content-panel.centered.standalone.month {
+    font-size: 10px;
+}
+}

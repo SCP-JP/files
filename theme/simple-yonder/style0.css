@@ -1,0 +1,419 @@
+/*
+    Simple Yonder Theme
+    [2020 Wikidot Theme]
+    By EstrellaYoshte
+    Based on:
+        Sigma-9 Theme by Aelanna and Dr Devan
+        Y2K Theme by etoisle
+        Anderson Robotics Theme by Croquembouche
+        Minimal Theme Theme by stormbreath
+        Word Processing Theme by stormbreath
+        Flopstyle CSS by Lt Flops
+
+    Edited for SCP-JP by ukwhatn
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fontlibrary.org/face/glacial-indifference');
+
+body {
+    background-attachment: fixed;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14.3px;
+    word-break: unset;
+    --themeColor: #7E2520;
+    --accentColor: #E53C35;
+}
+
+a {
+    color: rgb(229, 60, 53);
+}
+
+a:visited {
+    color: rgb(126, 37, 32);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #7E2520;
+    font-family: 'GlacialIndifferenceRegular';
+    font-weight: bold;
+}
+
+#account-topbutton{
+    border: 0px solid #000;
+}
+
+/* ---- PAGE WRAP ---- */
+ div#container-wrap{
+     background-image: url(http://scp-jp.wikidot.com/local--files/theme:simple-yonder/bg.png);
+     background-repeat: repeat-x;
+}
+
+div#header {
+    background-image: url(http://scp-jp.wdfiles.com/local--files/theme%3Asimple-yonder/logo.png);
+    background-size: 12.5%;
+}
+
+#page-title {
+    font-family: 'GlacialIndifferenceRegular';
+    font-weight: bold;
+    color: #7E2520;
+}
+
+#login-status,
+#login-status a {
+    color: white;
+    font-weight: bold;
+}
+
+#footer {
+    background: transparent;
+}
+
+#search-top-box-input,
+#search-top-box-input:hover,
+#search-top-box-input:focus,
+#search-top-box-form input[type=submit],
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: none;
+    background: #282828;
+    box-shadow: none;
+    border-radius: 2px;
+    color: #f4f4f4;
+}
+
+#search-top-box input.empty {
+    color: #bbbbbb;
+}
+
+div#header h1 a span {
+    font-family: 'GlacialIndifferenceBold';
+    font-weight: bold;
+    color: #f4f4f4;
+    text-shadow: 0px 0px 0px #000;
+}
+div#header h2 span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #f4f4f4;
+    padding: 17px 0;
+    text-shadow: 0px 0px 0px #000;
+    white-space: pre;
+}
+
+.scp-image-block.block-right {
+    margin: 0 2em 1em;
+}
+
+@media (min-width: 767px) {
+     #header {
+             background-position: 0em 1.7em;
+     }
+}
+
+/* ---- SIDE BAR ---- */
+
+#side-bar .side-block {
+    border: #ffffff 4px;
+    border-radius: 0;
+    box-shadow: none;
+    background: #ffffff !important;
+    padding: 2px;
+}
+#side-bar .heading {
+    border: none;
+    border-radius: 0;
+    color: #282828;
+    font-size: 1.2em;
+    padding: 1em 1em 0 0;
+    border-top: 1px solid rgba(0,0,0,.12);
+    margin: 1em calc(-1em + 2px) 1em 0;
+    font-weight: normal;
+}
+
+#side-bar .menu-item > a:hover {
+    background-color: rgba(0,0,0,0.04);
+    color: #E53C35;
+    text-decoration: none;
+}
+
+div.open-menu a {
+    border-radius: 0;
+    box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.2), 0px 3px 10px 0 rgba(0, 0, 0, 0.19);
+    color: #7E2520!important;
+    border: none!important;
+}
+
+#side-bar a:visited,
+#top-bar a,
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a,
+#login-status ul a,
+#login-status ul a:hover {
+    color: #7E2520;
+}
+
+@media (max-width: 767px) {
+    #main-content {
+        padding: 0;
+        margin: 0 5%;
+        border-left: none;
+    }
+    #page-title {
+        margin-top: 0.7em;
+    }
+    #side-bar {
+        background-color: #fff;
+        left: -23em;
+    }
+    #side-bar:target {
+        border: none;
+        box-shadow: 3px 0 1px -2px rgba(0,0,0,0.04), 1px 0 5px 0 rgba(0,0,0,0.2);
+    }
+    #side-bar .close-menu {
+        transition: width 0.5s ease-in-out 0.1s,
+                    opacity 1s ease-in-out 0s;
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: rgba(0,0,0,0.3);
+        background-position: 19em 50%;
+        z-index: -1;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #side-bar:target .close-menu {
+        width: calc(100% - 19em);
+        right: 0;
+        left: auto;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    #page-content > hr, #page-content > .list-pages-box > .list-pages-item > hr {
+        margin: 3em -5.5%;
+    }
+    #breadcrumbs {
+        position: relative;
+        top: 0;
+        font-style: italic;
+    }
+    #side-bar {
+        top: 0;
+    }
+    #side-bar .heading {
+        padding-left: 1em;
+        margin-left: -1em;
+    }
+    #search-top-box {
+        top: 107px;
+    }
+}
+
+/* ---- TABS ---- */
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: #7E2520; /* color between tab list and content */
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background: white; /* tab background */
+    border-color: transparent;
+    color: black;
+    transition: 0.125s;
+}
+
+.yui-navset .yui-nav a em {
+    background: #f4f4f4;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    border-color: white;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background: white; /* selected tab background */
+    color: #7E2520;
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: white;
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a em {
+    border-color: transparent;
+    box-shadow: 0px 1px 2px 0.5px rgba(0,0,0,0.5);
+    background: white;
+}
+
+.yui-navset .yui-content {
+    background: #f4f4f4; /* content background color */
+}
+
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+    border-color: transparent; /* content border */
+    border-top-color: transparent; /* different border color */
+}
+
+.yui-navset-left .yui-content {
+    border-left-color: #b7a9a9; /* different border color */
+}
+
+/* ---- TOP MENU ---- */
+
+#top-bar a {
+    color: #f4f4f4;
+    font-weight: normal;
+}
+
+/* ---- INFO BAR ---- */
+ body{
+     --barColour: rgb(126, 37, 32);
+}
+
+ .info-container .collapsible-block-content{
+     padding: 0 .5em 30px;
+}
+ .info-container .collapsible-block-content .wiki-content-table{
+     width: 100%;
+}
+
+/* ---- INFO PANE ---- */
+
+#page-content .creditRate{
+     margin: unset;
+}
+#page-content .rate-box-with-credit-button {
+    background-color: #ffffff!important;
+    border: solid 1px white!important;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+#page-content .rate-box-with-credit-button .fa-info {
+    border: none;
+    color: #7E2520!important;
+}
+
+#page-content .rate-box-with-credit-button .fa-info:hover {
+    background: #ffffff;
+    color: #E53C35!important;
+}
+
+.rate-box-with-credit-button .cancel {
+    border: solid 1px white;
+}
+
+/* ---- PAGE RATING ---- */
+
+.page-rate-widget-box {
+    box-shadow: none;
+    margin: unset;
+}
+
+div.page-rate-widget-box .rate-points {
+    background-color: white;
+    color: #7E2520 !important;
+    border: solid 1px white;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: white;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: #7E2520;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: white;
+    color: #E53C35;
+}
+
+.page-rate-widget-box .cancel {
+    background: transparent;
+    background-color: white;
+    border: solid 1px white;
+}
+
+.page-rate-widget-box .cancel a {
+    color: #7E2520;
+}
+.page-rate-widget-box .cancel a:hover {
+    background: white;
+    color: #E53C35;
+}
+
+/* ---- PAGE ELEMENTS ---- */
+
+#page-content .wiki-content-table tr th {
+    border: solid 1px #bbbbbb;
+    background-color: #f4f4f4;
+    /* set border for table title */
+}
+
+#page-content .wiki-content-table tr td {
+    border: solid 1px #bbbbbb;
+    /* set border for table content */
+}
+
+blockquote,
+div.blockquote,
+#toc,
+.code {
+     background-color: #f4f4f4;
+     border: solid 1px #bbbbbb;
+}
+
+.scp-image-block {
+    border: solid 1px #bbbbbb;
+    box-shadow: none;
+}
+.scp-image-block .scp-image-caption {
+    background-color: #f4f4f4;
+    border-top: solid 1px #bbbbbb;
+    color: black;
+}
+
+
+/* JP ONLY */
+/* Credit */
+#page-content div.page-rate-widget-box .rate-points {
+    font-family: "Open Sans", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+    font-size: unset;
+    padding: 0 5px;
+}
+
+#page-content .page-rate-widget-box .cancel a {
+    color: #7E2520;
+}
+
+#page-content .page-rate-widget-box .cancel a:hover {
+    color: #E53C35;
+}
+
+#page-content .rate-box-with-credit-button .creditButton {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin-left: unset;
+}

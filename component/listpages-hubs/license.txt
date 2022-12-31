@@ -1,0 +1,5 @@
+title: component:listpages-hubs
+author: Nanimono Demonai
+created_at: 2017-06-11 07:20:59+00:00
+source: http://scp-jp.wikidot.com/component:listpages-hubs
+license: Need to Fix!

@@ -1,0 +1,5 @@
+title: 著者ページツール（共著ページ用）
+author: Rokurokubi
+created_at: 2020-07-14 17:39:38+00:00
+source: http://scp-jp.wikidot.com/component:author-page-collab
+license: Need to Fix!

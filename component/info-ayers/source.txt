@@ -1,0 +1,81 @@
+[[iftags +コンポーネント]]
+[[note]]
+**作成者:**
+[[*user Ayers]]
+----
+**この方に多大なご援助をいただきました:**
+[[*user Woedenaz]]
+----
+**次の方々にもお力添えいただきました:**
+[[*user Rounderhouse]], [[*user djkaktus]] and [[*user Uncle-Nicolini]]
+----
+**使用方法:**
+[[[component:info-ayers#toc4]]]
+[[/note]]
+-----
+
+
+++ __例__
+
+[[include :scp-jp:component:info-ayers-source
+|lang=jp[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
+|page=component:info-ayers[!-- SCP WikiでのあなたのページのURL --]
+|authorPage=http://www.scp-wiki.net/ayers-array[!-- あなたの著者ページへのリンク --]
+|comments=みてみて！僕が情報モジュール！いえい！
+]]
+[[collapsible show="[+] サンプルコード" hide ="[-] サンプルコード"]]
+> [[include :scp-jp:component:info-ayers
+> |lang=jp[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]
+> |page=component:info-ayers[!-- SCP WikiでのあなたのページのURL --]
+> |authorPage=http://www.scp-wiki.net/ayers-array[!-- あなたの著者ページへのリンク --]
+> |comments=みてみて！僕が情報モジュール！いえい！
+> ]]
+[[/collapsible]]
+
+@@ @@
+@@ @@
+
+++ __これは何のための物？__
+
+これは記事の最上部に、その記事に関するメタ情報を表示するためのツールです。普通は記事の流れを遮らないと不可能ですが、これはユーザーの体験を邪魔したり、著者コメントの投稿を必要とせずに現実世界の情報（例えば批評のクレジットや、著者のコメンタリーなど）を示す手段として機能します。
+
+一部の著者は、この領域にコンテンツの警告を書くかもしれませんが、これは一般的な慣習ではなく、常にそうであるとは限りません。コンテンツの警告がない記事を見るというのは、単にコンテンツの警告がないというだけです。
+@@ @@
+@@ @@
+
+++ __これってBlack Highlighter (nuSCP) テーマの一部？__
+
+いいえ。どちらも非常に素晴らしいものですが、これらは独立して使用できるモジュールです。//とてもカッコいい//ので一緒の場合がよくあります。
+@@ @@
+@@ @@
+++ __動作の詳細と使用方法__
+折り畳みです。要するにそういうことですね。とてもスタイリッシュな折り畳みです。
+
+これがあなたの記事の**一番上**に追加するコードです。
+> [[include :scp-jp:component:info-ayers
+> |lang=jp@@[!-- EN/RU/KO/CN/FR/PL/ES/TH/JP/DE/IT/UA/PTBR --]@@
+> |page=scp-XXXX@@[!-- SCP Wiki上のページURL --]@@
+> |authorPage=http://scp-jp.wikidot.com/yourAuthorPage@@[!-- 著者ページへのリンク --]@@
+> |comments=その他のコメント (画像の出典、批評のクレジットなど色々)
+> ]]
+**重要:** コメント部分が複数の段落に分かれる場合、各段落の末尾に半角スペースが必要です。そうしないとテキストが表示されません。また、コメント部分の最後の行が「]]」で終わる場合（例: divブロックの終わり）、末尾に「@@@@@@ @@」を追加する必要があります。
+
+-----
+このコンポーネントには、CSSモジュール内で設定可能なdivが複数あります。divを非表示にすることでモジュールの該当部分を削除できます。
+* #u-author_block -- 「この著者の他の作品」ボタン用
+* .translation_block -- 翻訳ブロック用
+
+:rootにある2つのローカル変数を編集して、バーの色を変更することもできます。
+* @@--barColour: #633;@@ -- バーと著者ボタンの色です。
+* @@--linkColour: #FFF;@@ -- 「i」と著者ボタン内のテキストの色です。
+[[/iftags]]
+
+[[iftags -コンポーネント]]
+[[include :scp-jp:component:info-ayers-source
+|comments={$comments}
+|lang={$lang}
+|page={$page}
+|authorPage={$authorPage}
+|comments={$comments}
+]]
+[[/iftags]]

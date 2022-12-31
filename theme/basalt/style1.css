@@ -1,0 +1,2218 @@
+/*
+ 
+    BASALT Theme
+    [2021 Wikidot Theme]
+    By Liryn & Placeholder McD
+ 
+    Based on:
+ 
+    Paperstack Theme by EstrellaYoshte
+    Minimal Theme by Stormbreath
+    BLANKSTYLE CSS by Placeholder McD & HarryBlank
+    PLACESTYLE CSS by Placeholder McD
+    Simple Yonder Theme by EstrellaYoshte
+ 
+    Tab animation by Croquembouche
+
+    Edited by iti119 for SCP-JP
+*/
+ 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ 
+/* MAIN */
+
+/* ======================= */
+
+:root {
+    --title: " SCP財団";
+    --subtitle: " 確保 • 収容 • 保護";
+    --barColour: rgb(20, 20, 20);
+    --fnColor: rgb(15, 15, 15);
+    --fnLinger: 1s;
+    --logo: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-21-21vy/basalt_logotype_black.png);
+    --sidelogo: var(--logo);
+    --sidesubtitle: var(--subtitle);
+    --utilcolor: #FFF;
+    --antiutilcolor: rgb(20, 20, 20);
+    --titleLength: 8.3rem;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    font-family: 'Inter', sans-serif;
+}
+
+#main-content {
+    top: -2.8rem;
+}
+
+#container-wrap-wrap {
+    overflow-x: hidden;
+}
+
+/* ======================= */
+
+
+/* HEADER & TOPBAR */
+
+/* ======================= */
+
+#extra-div-1 {
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1000vw;
+    height: 5rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    background: white;
+}
+
+#extra-div-2 {
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1000vw;
+    height: 5rem;
+}
+
+#extra-div-1::before {
+    content: var(--title);
+    position: fixed;
+    left: 8.5rem;
+    top: 0.7rem;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 27.45px;
+    animation: slideLeft 1s;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translateZ(0);
+}
+
+#extra-div-2::before {
+    content: var(--subtitle);
+    position: fixed;
+    font-size: 1.22em;
+    left: 8.5rem;
+    top: 2.5rem;
+    color: #272842;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    animation: slideLeft 1s;
+}
+
+#u-header-link {
+    display: block;
+    position: fixed;
+    top: 0.6rem;
+    left: 8.3rem;
+    height: 3.5rem;
+    width: 15.7rem;
+    z-index: 21;
+}
+
+.logo {
+    z-index: 10;
+    position: fixed;
+    width: 4.5rem;
+    height: 4.5rem;
+    top: 0.2rem;
+    left: 3.6rem;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translateZ(0);
+    animation: slideLeft 1s;
+    background-image: var(--logo);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo:hover {
+    transform: rotate(348deg);
+}
+
+#header {
+    height: 5rem;
+}
+
+#header h1,
+#header h2 {
+    display: none;
+}
+
+#top-bar {
+    position: fixed;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    animation: slideLeft 1s;
+    top: 1.7rem;
+    max-width: 50rem;
+    min-width: 8rem;
+    font-size: 90%;
+    font-weight: 800;
+    left: 25.4rem;
+}
+
+#top-bar div.open-menu a {
+    display: none;
+}
+
+#top-bar ul {
+    float: left;
+}
+
+#top-bar ul li ul {
+    border: none;
+}
+
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    background-color: #F4F4F4;
+}
+
+#top-bar ul li>a {
+    border: none;
+}
+
+#top-bar a {
+    filter: grayscale(100%) saturate(0%);
+    -webkit-filter: grayscale(100%) saturate(0%);
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #F4F4F4;
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    border: none;
+}
+
+#top-bar ul li>a {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translateZ(0);
+}
+
+#top-bar ul li>a:hover {
+    transform: translate(0px, -3px);
+    border: none;
+}
+
+#top-bar ul li ul li>a:hover {
+    animation: none;
+}
+
+@keyframes translateTop {
+    0% {
+     opacity: 1;
+    }
+    100% {
+     transform: translate(0px, -3px);
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+     transform: translate(-200px, 0px);
+     opacity: 0;
+    }
+    100% {
+     opacity: 1;
+    }
+}
+
+@keyframes tilt {
+    0% {
+     opacity: 1;
+    }
+    100% {
+     transform: rotate(360deg);
+    }
+}
+
+#login-status {
+    position: fixed;
+    top: 0.65rem;
+    right: 2rem;
+    width: fit-content;
+    font-size: 0.78em;
+    text-align: center;
+    color: transparent;
+}
+
+#login-status > a > strong {
+    margin-right: 0.7rem;
+    font-size: 0.7rem;
+}
+
+#login-status > span {
+    color: #333;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+#login-status span.printuser img {
+    font-size: 0;
+    transform: translate(6px, 5px);
+}
+
+#login-status a#my-account {
+    display: none;
+}
+
+#account-topbutton {
+    border: none;
+    margin-left: -0.25rem;
+}
+
+div#search-top-box {
+    width: 2rem;
+    position: fixed;
+    top: 0.76rem;
+    right: 0.2rem;
+    z-index: 21;
+}
+
+#search-top-box-input {
+    display: none;
+}
+
+#search-top-box-form>input[type=submit],
+#search-top-box-form>input[type=submit]:hover,
+#search-top-box-form>input[type=submit]:focus,
+#search-top-box-form>input[type=submit]:target {
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23ddd%22%20d%3D%22M505%20442.7L405.3%20343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3%2044-79.7%2044-128C416%2093.1%20322.9%200%20208%200S0%2093.1%200%20208s93.1%20208%20208%20208c48.3%200%2092.7-16.4%20128-44v16.3c0%206.4%202.5%2012.5%207%2017l99.7%2099.7c9.4%209.4%2024.6%209.4%2033.9%200l28.3-28.3c9.4-9.4%209.4-24.6.1-34zM208%20336c-70.7%200-128-57.2-128-128%200-70.7%2057.2-128%20128-128%2070.7%200%20128%2057.2%20128%20128%200%2070.7-57.2%20128-128%20128z%22%2F%3E%3C%2Fsvg%3E") 50%/0.8rem no-repeat, #000 !important;
+    border: none;
+    border-radius: 30%;
+    font-size: 0;
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+.mobile-top-bar {
+    left: unset;
+}
+
+/* ======================= */
+
+
+
+/* SIDEBAR */
+
+/* ======================= */
+
+#u-sb-button {
+    display: block;
+    position: fixed;
+    top: 0.5rem;
+    left: 0.9rem;
+    height: 4rem;
+    width: 45px;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-decoration: none !important;
+    z-index: 21;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translateZ(0);
+    animation: slideLeft 1s;
+}
+
+#u-sb-button:hover {
+    font-weight: 900;
+}
+
+#side-bar {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    background: linear-gradient( 0deg, rgba(255, 255, 255, 1) 87%, rgba(250, 250, 250, 1) 100%);
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400 !important;
+    overflow-x: hidden;
+}
+
+#side-bar::before {
+    content: var(--sidesubtitle);
+    background: var(--sidelogo);
+    background-size: 4.5rem;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-bottom: 0.3rem;
+    padding-top: 4.7rem;
+    display: inline-block;
+    border-bottom: double 5px black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-transform: none;
+}
+
+#side-bar,
+#side-bar:target {
+    z-index: 22;
+}
+
+#side-bar a {
+    color: black;
+}
+
+#side-bar a:visited {
+    color: black;
+}
+
+#side-bar img,
+iframe.scpnet-interwiki-frame {
+    filter: grayscale(100%) saturate(0%);
+    -webkit-filter: grayscale(100%) saturate(0%);
+}
+
+#side-bar .side-block {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 100%);
+    border-color: transparent;
+    border-radius: 0px;
+}
+
+#side-bar .side-block.media {
+    background-color: white;
+    border-bottom: solid 2px rgb(190, 190, 190);
+    border-top: solid 2px rgb(190, 190, 190);
+    margin-top: 1rem;
+}
+
+#side-bar .heading {
+    color: black;
+    border-bottom: solid 1px black;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+}
+
+#side-bar .collapsible-block-folded {
+    background-image: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-27-wn18/expand.png);
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px black;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: black;
+}
+
+/* ======================= */
+
+
+/* TABS */
+
+/* ======================= */
+
+ul.yui-nav a {
+    font-family: 'Work Sans', sans-serif;
+    padding: 3.5px;
+    color: white;
+    font-weight: 600;
+}
+
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected,
+.yui-navset .yui-nav a:hover,
+yui-navset .yui-nav a:active {
+    color: white;
+    background-color: black;
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border: none;
+    border-bottom: dotted 1px grey;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.yui-navset .yui-content>div {
+    display: block;
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+
+.yui-navset-top a {
+    transition-property: background, background-color;
+    transition-duration: 0.2s;
+}
+
+/* Tab animation by Croquembouche */
+/*---------------------------------------------*/
+
+#page-content .yui-navset .yui-content>div[style*="none"] {
+    display: block !important;
+    flex: 0;
+    max-height: 0;
+    padding: 0 0.5em;
+    border-width: 0;
+    /* The following transition affects the one that DISAPPEARS */
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.18, .51, .54, .9) 0s;
+    animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+}
+
+#page-content .yui-navset .yui-content>div[style*="block"] {
+    display: block !important;
+    flex: 1;
+    max-height: 9999rem;
+    /* The following transition affects the one that APPEARS */
+    transition: padding 0s linear 0.5s, border-width 0s linear 0.5s, flex 0.5s cubic-bezier(.18, .51, .54, .9) 0.5s;
+    animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+}
+
+@keyframes tab-disappear {
+    0% {
+     max-height: 9999rem;
+    }
+    1% {
+     max-height: 100vh;
+    }
+    100% {
+     max-height: 0;
+    }
+}
+
+@keyframes tab-appear {
+    0% {
+     max-height: 0;
+    }
+    99% {
+     max-height: 100vh;
+    }
+    100% {
+     max-height: 9999rem;
+    }
+}
+
+/*---------------------------------------------*/
+
+.yui-navset .yui-content {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: dotted 4px grey;
+}
+
+/* ======================= */
+
+
+/* TAGS */
+
+/* ======================= */
+
+#main-content .page-tags a {
+    line-height: inherit;
+    background-color: rgb(20, 20, 20);
+    border-radius: 2px 6px;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+}
+
+.page-tags span {
+    border-top: none;
+}
+
+/* ======================= */
+
+
+/* CONTENT */
+
+/* ======================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: unset;
+}
+
+.top-left-box>.item {
+    display: none;
+}
+
+hr {
+    background-color: #333;
+}
+
+.info-container {
+    padding-bottom: 8px
+}
+
+
+/* CONTENT > CUSTOM DIVS */
+
+/* ======================= */
+
+.document {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 26px auto 0;
+    max-width: 550px;
+    min-height: 300px;
+    padding: 24px;
+    padding-top: 50px;
+    position: relative;
+    width: 80%;
+}
+
+.document:before,
+.document:after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.document:before {
+    background: #fafafa;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    left: -5px;
+    top: 4px;
+    transform: rotate(-2.5deg);
+}
+
+.document:after {
+    background: #f6f6f6;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    right: -3px;
+    top: 1px;
+    transform: rotate(1.4deg);
+}
+
+.darkdocument {
+    background: rgb(30, 30, 30);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 26px auto 0;
+    max-width: 550px;
+    min-height: 300px;
+    padding: 24px;
+    padding-top: 50px;
+    position: relative;
+    width: 80%;
+    color: #EDEDED;
+}
+
+.darkdocument:before,
+.darkdocument:after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.darkdocument:before {
+    background: rgb(25, 25, 25);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    left: -5px;
+    top: 4px;
+    transform: rotate(-2.5deg);
+}
+
+.darkdocument:after {
+    background: rgb(25, 25, 25);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    right: -3px;
+    top: 1px;
+    transform: rotate(1.4deg);
+}
+
+.notation {
+    border-left: solid 3px rgb(30, 30, 30);
+    border-right: solid 3px rgb(30, 30, 30);
+    padding: 25px 25px 25px 25px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    width: 75%;
+    margin: auto;
+    background: #f7f7f7;
+}
+
+.modal {
+    padding: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    width: auto;
+    margin: auto;
+    background: rgb(253, 253, 253);
+    border: solid 2px #5D5D5D;
+}
+
+.smallmodal {
+    padding: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    width: 75%;
+    margin: auto;
+    background: rgb(253, 253, 253);
+    border: solid 2px #5D5D5D;
+}
+
+.jotting {
+    padding: 5px 10px 5px 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    width: 75%;
+    margin: auto;
+    background: #FDFDFD;
+    border: dashed 0.1rem #5D5D5D;
+}
+
+.transcript {
+    padding: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin: auto;
+    background: rgb(253, 253, 253);
+    border: dotted 1px #5D5D5D;
+    border-radius: 10px;
+}
+
+.papernote {
+    background-color: #eaeeef;
+    color: #21252E !important;
+    padding: 0.1rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 1px 1px 3px 2px rgb(0 0 0 / 30%);
+    margin: auto;
+    width: 65%;
+}
+
+.raisa_memo {
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-28-qlyx/RAISA_LIGHTLOGO.png) #fff3ad;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    word-break: break-word;
+}
+
+.raisa_memo>p:nth-child(1)::before {
+    content: "記録・情報保安管理局より通達\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.classification_memo {
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-30-ubdk/CLASSIFICATION_LIGHTLOGO.png) #edf5f3;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    word-break: break-word;
+}
+
+.classification_memo>p:nth-child(1)::before {
+    content: "分類委員会覚書\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.ettra_memo {
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-32-wqge/ETTRA_LIGHTLOGO.png) #f5d7d7;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    word-break: break-word;
+}
+
+.ettra_memo>p:nth-child(1)::before {
+    content: "緊急時脅威戦術対応機構より通達\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.ethics_memo {
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-34-2jq6/ETHICS_LIGHTLOGO.png) #ffdbc4;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    word-break: break-word;
+}
+
+.ethics_memo>p:nth-child(1)::before {
+    content: "倫理委員会覚書\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.temporal_memo {
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-36-ohm1/DELTA_T_LIGHTLOGO.png) #ffffff;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+    border: double 3px lightgrey;
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    word-break: break-word;
+}
+
+.temporal_memo>p:nth-child(1)::before {
+    content: "時間異常部門\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.overwatch_memo {
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-38-9n6y/O5_LIGHTLOGO.png) #e3e3e3;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 30px 20px 20px;
+    word-break: break-word;
+}
+
+.overwatch_memo>p:nth-child(1)::before {
+    content: "監督司令部\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.55rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.miscomm_memo {
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-40-c6bj/MISCOMM_LIGHTLOGO.png) #eeedfa;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 30px 20px 20px;
+    word-break: break-word;
+}
+
+.miscomm_memo>p:nth-child(1)::before {
+    content: "誤伝達部門より通達\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.raisa_memo a,
+.temporal_memo a,
+.classification_memo a,
+.overwatch_memo a,
+.ettra_memo a,
+.ethics_memo a,
+.miscomm_memo a {
+    font-weight: 700;
+}
+
+.bigtext {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+.st {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/* ======================= */
+
+
+/* CONTENT > TABLES */
+
+/* ======================= */
+
+#page-content .wiki-content-table tr th {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    border: solid 1px #000;
+    background-color: #aaa;
+}
+
+#page-content .wiki-content-table tr td {
+    border: 1px #000 solid;
+}
+
+#page-content .table1 tr th {
+    background-color: #D7EFE7;
+}
+
+#page-content .table1 .st {
+    color: #D7EFE7;
+}
+
+#page-content .table2 tr th {
+    background-color: #D8ECF4;
+}
+
+#page-content .table2 .st {
+    color: #D8ECF4;
+}
+
+#page-content .table3 tr th {
+    background-color: #FDF6D7;
+}
+
+#page-content .table3 .st {
+    color: #FDF6D7;
+}
+
+#page-content .table4 tr th {
+    background-color: #FFDABF;
+}
+
+#page-content .table4 .st {
+    color: #FFDABF;
+}
+
+#page-content .table5 tr th {
+    background-color: #F5D8E0;
+}
+
+#page-content .table5 .st {
+    color: #F5D8E0;
+}
+
+#page-content .table6 tr th {
+    background-color: rgba(146, 0, 255, 0.2);
+}
+
+#page-content .table6 .st {
+    color: rgb(146, 0, 255);
+}
+
+.tableb .wiki-content-table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    padding-left: -100px;
+}
+
+.table1 .scp-image-block .scp-image-caption {
+    background-color: #D7EFE7;
+    color: black;
+}
+
+.table2 .scp-image-block .scp-image-caption {
+    background-color: #D8ECF4;
+    color: black;
+}
+
+.table3 .scp-image-block .scp-image-caption {
+    background-color: #FDF6D7;
+    color: black;
+}
+
+.table4 .scp-image-block .scp-image-caption {
+    background-color: #FFDABF;
+    color: black;
+}
+
+.table5 .scp-image-block .scp-image-caption {
+    background-color: #F5D8E0;
+    color: black;
+}
+
+.table6 .scp-image-block .scp-image-caption {
+    background-color: rgba(146, 0, 255, 0.2);
+    color: black;
+}
+
+/* ======================= */
+
+
+/* CONTENT > RATING MODULE */
+
+/* ======================= */
+
+div.page-rate-widget-box .rate-points {
+    color: black !important;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    font-size: 90%;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown,
+.page-rate-widget-box .cancel,
+div.page-rate-widget-box .rate-points {
+    border: none;
+}
+
+/* ======================= */
+
+
+/* CONTENT > IMAGE BLOCK */
+
+/* ======================= */
+
+.scp-image-block img {
+    background: white;
+}
+
+.scp-image-block.block-right {
+    margin: 0em 0em 1em 2em;
+}
+
+.scp-image-block.block-center {
+    max-width: 99% !important;
+}
+
+.scp-image-block {
+    border: none;
+    box-shadow: none;
+}
+
+.scp-image-block .scp-image-caption {
+    border-top: none !important;
+    margin-top: 8px;
+    background-color: #292929;
+    color: #ffffff;
+}
+
+.scp-image-block img,
+.scp-image-block .scp-image-caption {
+    outline: solid 1px #444;
+    box-shadow: 0px 0px 5px #999999;
+}
+
+.scp-image-block .scp-image-caption p {
+    font-size: 110%;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ======================= */
+
+
+/* CONTENT > LINKS */
+
+/* ======================= */
+
+a {
+    color: #0645AD;
+}
+
+a.newpage {
+    color: #CC2200;
+}
+
+a:visited {
+    color: #0B0080;
+}
+
+.danger-diamond a, .danger-diamond a::selection {
+    color: transparent;
+    background: none;
+}
+
+.scp-image-block .scp-image-caption a {
+    color: #c5c5c5;
+}
+
+/* ======================= */
+
+
+/* CONTENT > SCROLLBAR */
+
+/* ======================= */
+
+::-webkit-scrollbar {
+    cursor: pointer;
+    border: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(45, 45, 45);
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* ======================= */
+
+
+/* CONTENT > COLLAPSIBLES */
+
+/* ======================= */
+
+a.collapsible-block-link {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 9px;
+    background: rgb(20, 20, 20);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ======================= */
+
+
+/* CONTENT > PAGE TITLE / BREADCRUMBS */
+
+/* ======================= */
+
+#page-title,
+.meta-title {
+    display: block !important;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    color: #252525;
+    border: none;
+    margin-top: 3rem;
+}
+
+#breadcrumbs {
+    text-transform: uppercase;
+    color: grey;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: -1.5rem;
+    font-size: 90%;
+}
+
+/* ======================= */
+
+
+/* CONTENT > BETTERFOOTNOTES INTEGRATION */
+
+/* ======================= */
+
+.fnnum:hover {
+    background: transparent;
+    transform: scale(1.3);
+}
+
+.fnnum {
+    transition-duration: 0.2s;
+    transition-property: transform;
+    transform: translateZ(0);
+}
+
+.fnnum::after {
+    color: #3f21ff !important;
+}
+
+.fnnum:hover::after {
+    color: white !important;
+}
+
+.fncon {
+    background: rgb(25, 25, 25) !important;
+    color: #EDEDED;
+    border: 0.15rem solid rgb(20, 20, 20);
+    border-radius: 2px;
+    font-size: 90%;
+}
+
+/* ======================= */
+
+
+/* @MEDIA QUERIES / MOBILE FORMATTING */
+
+/* ======================= */
+
+@media only screen and (max-width: 600px) {
+    .scp-image-block.block-right {
+     float: none;
+     margin: 10px auto;
+    }
+}
+
+@media (min-width: 768px) {
+    #header,
+    #top-bar {
+     width: calc(100% - 4.4rem);
+     max-width: calc(100% - 4.4rem);
+    }
+    #main-content {
+     max-width: 95%;
+    }
+}
+
+@media (max-width: 1120px) {
+    #top-bar {
+     font-weight: 600;
+     font-size: 80%;
+    }
+}
+
+@media (max-width: 1020px) {
+    #top-bar {
+     top: 3.2rem;
+     left: 7.8rem;
+    }
+    #extra-div-1::before {
+     top: 0.3rem;
+    }
+    #extra-div-2::before {
+     top: 1.9rem;
+    }
+    #u-header-link {
+     height: 2.5rem;
+    }
+    .document,
+    .darkdocument {
+     width: 95%;
+    }
+}
+
+@media (max-width: 767px) {
+    .mobile-top-bar {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+    width: 100%;
+    flex-direction: row;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+     display: none;
+    }
+    #top-bar {
+     left: 3.6rem;
+    }
+    #extra-div-1::before,
+    #extra-div-2::before {
+     left: 4.2rem;
+    }
+    #u-header-link {
+     left: 4rem;
+    }
+    .document, .darkdocument {
+     width: auto;
+    }
+}
+
+@media (max-width: 560px) {
+    #login-status span.printuser {
+     font-size: 0;
+    }
+}
+
+@media (max-width: 430px) {
+    #extra-div-1::before {
+     font-size: 23.45px;
+     top: 0.5rem;
+    }
+    #extra-div-2::before {
+     font-size: 1em;
+     top: 2.1rem;
+    }
+    #u-header-link {
+     width: 13.5rem;
+    }
+    #login-status {
+     right: 1.8rem;
+    }
+}
+
+/* ======================= */
+
+
+/* MISC */
+
+/* ======================= */
+
+.avatar-hover {
+display: none !important;
+}
+
+::selection {
+    background-color: rgba(0, 0, 255, 0.7);
+    color: white;
+}
+
+select {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    border: solid 2px grey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+body.wait {
+    cursor: wait;
+}
+
+body.wait * {
+    cursor: auto;
+}
+
+input {
+    font-size: 90%;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+#action-area > p {
+    font-size: 90%;
+    font-weight: 500;
+}
+
+#action-area > h1 {
+    font-size: 150%;
+}
+
+div.buttons input, input.button, button, file, a.button {
+    margin: 0 2px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+#who-rated-page-area > h2 {
+    display: none;
+}
+
+#who-rated-page-area>div {
+    column-count: 4;
+}
+
+@media (max-width: 900px) {
+    #who-rated-page-area>div {
+     column-count: 3;
+    }
+}
+
+@media (max-width: 700px) {
+    #who-rated-page-area>div {
+     column-count: 2;
+    }
+}
+
+@media (max-width: 540px) {
+    #who-rated-page-area>div {
+     column-count: 1;
+    }
+}
+
+.pager .current {
+    border-style: solid;
+    outline: solid 1px rgb(250, 250, 250);
+}
+
+.pager a,
+.pager .current {
+    border-style: double;
+    border-width: 3px;
+    text-transform: uppercase;
+    background: none;
+    color: inherit;
+}
+
+.pager a:hover,
+.pager .current:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pager .target {
+    font-weight: 800;
+}
+
+.w-container {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    border-style: double !important;
+    border-width: 4px !important;
+    margin: auto;
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.s-cell {
+    font-size: 1.25rem !important;
+}
+
+.anom-bar-container,
+.anom-bar-container * {
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 700;
+}
+
+#page-content div.warning-box div.text-number, #page-content div.warning div.text-number {
+    font-size: 140%;
+    font-weight: 400;
+}
+
+#page-content div.warning-box strong, #page-content div.warning strong {
+    font-weight: 700;
+}
+
+#page-content div.warning-box div.text-top, #page-content div.warning div.text-top {
+    font-weight: 800;
+}
+
+#page-content div.warning-box, #page-content div.warning {
+    font-family: 'Work Sans', sans-serif !important;
+    font-weight: 500;
+}
+
+.collection {
+    font-family: 'Work Sans', sans-serif;
+    color: #905c5c;
+}
+
+.footer-wikiwalk-nav {
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
+    width: fit-content;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.footer-wikiwalk-nav p {
+    color: #EDEDED;
+}
+
+.footer-wikiwalk-nav a, .footer-wikiwalk-nav p {
+    border-radius: 10px;
+    background: rgb(20, 20, 20);
+    width: fit-content;
+    margin: auto;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.footer-wikiwalk-nav a {
+    color: #bdbdff;
+}
+
+.footer-wikiwalk-nav a:hover {
+    text-decoration: underline;
+}
+
+/* MISC > WIKIDOT OWINDOW */
+
+/* ======================= */
+
+#owindow-1 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 100%);
+}
+
+#owindow-1>div.title.modal-header {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 90%;
+    cursor: default;
+}
+
+#owindow-1>div.content.modal-body td.active>b {
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(100, 100, 100);
+}
+
+#owindow-1>div.content.modal-body>table {
+    max-height: 10rem;
+    overflow: auto;
+    display: block;
+}
+
+#owindow-1>div.content.modal-body>div {
+    margin-top: 1.5rem !important;
+    border-top: solid 0.2rem rgb(210, 210, 210);
+    padding-top: 1rem;
+}
+
+#owindow-1>div.content.modal-body>div>div>a {
+    background: #870000;
+}
+
+#owindow-1>div.content.modal-body>div>div>a:hover {
+    background: #470000;
+}
+
+#owindow-1>div.content.modal-body>img {
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3));
+    padding: 0px 0px 0px 0px !important;
+    background: none;
+    background-color: transparent !important;
+    margin-right: 1.7rem;
+}
+
+#owindow-1 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ======================= */
+
+
+/* MISC > EDIT BOX & PAGE SOURCE */
+
+/* ======================= */
+
+#lock-info {
+    box-shadow: 0px 0px 4px #999999;
+    background: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    margin-left: 1rem;
+    font-size: 95%;
+    border: solid 1px grey;
+    color: #191919;
+}
+
+#edit-page-form>table.edit-page-bottomtable>tbody>tr>td:nth-child(1)>div.sub,
+#edit-page-form>table.form>tbody>tr>td:nth-child(1) {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+}
+
+#edit-page-form>table.edit-page-bottomtable>tbody>tr>td:nth-child(1)>div:nth-child(1) {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+.wd-editor-toolbar-panel ul li a {
+    height: 22px;
+    width: 22px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    border-radius: 2px;
+    filter: invert(1), hue-rotate(180deg);
+    filter: invert(1) hue-rotate( 180deg);
+}
+
+.wd-editor-toolbar-panel {
+    margin-bottom: 0.5rem;
+}
+
+input#edit-page-title.text {
+    border-radius: 4px;
+    font-family: 'Work Sans', sans-serif;
+    border: 2px solid #afafaf;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 5px 5px 5px;
+    font-size: 105%;
+    border: 0.13rem solid #949494;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 2px;
+}
+
+.page-source {
+    background: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 105%;
+    border: none;
+    width: 80%;
+    box-shadow: 0px 0px 4px #999999;
+    padding: 18px 18px 18px 18px;
+    word-break: break-word;
+}
+
+/* ======================= */
+
+
+/* MISC > FONT SIZE/WEIGHT CHANGES */
+
+/* ======================= */
+
+#page-content strong {
+    font-weight: 900;
+}
+
+#page-content {
+    font-size: 100%;
+}
+
+/* ======================= */
+
+
+#show-upload-button {
+    float: unset;
+    border-radius: 6px;
+    border: solid 1px grey;
+    font-size: 0.85rem;
+}
+
+.edit-help-34 {
+    margin-top: 2px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.printuser a {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+form,
+#action-area>p,
+table.page-files td span {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#action-area>table>thead>tr,
+#revision-list>table>tbody>tr:nth-child(1) {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#page-info {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#page-info::first-letter,
+a.btn.btn-default.button.button-close::first-letter,
+a.btn.btn-default.button.button-close-message::first-letter,
+a.btn.btn-default.button.button-cancel::first-letter,
+a.btn.btn-default.button.button-rename::first-letter,
+a.btn.btn-default.button.button-no\,-cancel::first-letter,
+#owindow-1 > div.button-bar.modal-footer > a.btn.btn-default.button.button-yes\,-delete::first-letter,
+#owindow-1 td::first-letter {
+    text-transform: uppercase;
+}
+
+#owindow-1 td a::first-letter {
+    text-transform: lowercase !important;
+}
+
+.button-bar.modal-footer a.btn.btn-danger,
+#owindow-1>div.content.modal-body>div>div>a {
+    float: right !important;
+    margin-top: -0.73rem;
+}
+
+td:nth-child(1)>a {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+}
+
+
+/* MISC > BUTTONS */
+
+/* ======================= */
+
+a.btn.btn-danger,
+a.btn.btn-primary,
+.btn-small,
+#owindow-1>div.button-bar.modal-footer>a,
+#edit-cancel-button,
+#edit-diff-button,
+#edit-preview-button,
+#edit-save-draft-button,
+#edit-save-continue-button,
+#edit-save-button,
+#owindow-1>div.content.modal-body>div>a.btn.btn-default {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600 !important;
+    font-size: 0.75rem;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 9px;
+    background: rgb(20, 20, 20);
+    border-radius: 2px !important;
+    cursor: pointer;
+    width: fit-content !important;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.35rem;
+    float: left;
+}
+
+a.collapsible-block-link:hover,
+a.btn.btn-danger:hover,
+a.btn.btn-primary:hover,
+.btn-small:hover,
+#owindow-1>div.button-bar.modal-footer>a:hover,
+#edit-cancel-button:hover,
+#edit-diff-button:hover,
+#edit-preview-button:hover,
+#edit-save-draft-button:hover,
+#edit-save-continue-button:hover,
+#edit-save-button:hover,
+#owindow-1>div.content.modal-body>div>a.btn.btn-default:hover {
+    text-decoration: none;
+    background: rgb(45, 45, 45);
+}
+
+#action-area > p:nth-child(5) > a:hover {
+    text-decoration: none;
+    background: rgb(45, 45, 45);
+}
+
+#action-area > p:nth-child(5) > a {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600 !important;
+    font-size: 0.75rem;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 7px;
+    padding-right: 9px;
+    background: rgb(20, 20, 20);
+    border-radius: 2px !important;
+    cursor: pointer;
+    width: fit-content !important;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    margin-left: 0.3rem;
+    margin-right: 0.35rem;
+}
+
+/* ======================= */
+
+
+#footer,
+#license-area {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+}
+
+#page-content div.collapsible-block {
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+div.collapsible-block-content {
+    animation: fade 0.4s;
+    animation-fill-mode: forwards;
+}
+
+
+/* MISC > FOOTNOTES */
+
+/* ======================= */
+
+.hovertip {
+    background: rgb(25, 25, 25) !important;
+    border-radius: 2px;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    max-width: 400px;
+}
+
+.f-heading {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 80%;
+}
+
+.footnotes-footer .title {
+    font-size: 0px;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+.footnotes-footer .title:before {
+    content: "Footnotes \0026  References";
+    color: rgb(25, 25, 25);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.9rem;
+    font-family: 'Work Sans', sans-serif;
+    cursor: text;
+}
+
+.footnotes-footer a {
+    color: black;
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.footnotes-footer {
+    border-left: solid 3px rgb(20, 20, 20);
+    padding-left: 15px;
+    margin-top: 6rem;
+}
+
+.footnote .f-footer,
+.equation .e-footer,
+.reference .r-footer {
+    display: none;
+}
+
+/* ======================= */
+
+
+#page-options-container a {
+    color: rgb(45, 45, 45);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
+#page-options-container a:hover {
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+}
+
+#page-info-break {
+    height: 3rem;
+}
+
+.code pre,
+.code p,
+.code,
+tt {
+    font-family: 'Fira Code', monospace;
+}
+
+#account-options {
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    width: fit-content;
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 30%);
+    padding: 5px 5px 5px 5px;
+    text-transform: uppercase;
+}
+
+#account-options a {
+    filter: grayscale(100%) saturate(0%);
+    -webkit-filter: grayscale(100%) saturate(0%);
+    color: grey;
+}
+
+
+/* Anendlessusername's invaluable correction of the ACS octagon! */
+#page-content .quadrants>div {
+    top: 2.25%;
+    left: 18.5%;
+}
+/* WHEN YOU SEE IT... */
+
+
+.licensebox .collapsible-block-link,
+.licensebox .collapsible-block-link:hover {
+    background: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* ---- WORDS NO LONGER BROKEN, THE CROQUEMBOUCHE HAS SPOKEN ---- */
+
+#page-content span, #page-content a {
+    word-break: normal !important;
+}
+
+/* ======================= */
+ 
+/*  LOCALIZATION FOR JP */
+ 
+/* ======================= */
+
+/* CREDIT MODULE */
+#page-content .creditRate.creditModule .rate-box-with-credit-button {
+    border: none 0;
+    box-shadow: none;
+}
+#page-content div.page-rate-widget-box,
+#action-area div.page-rate-widget-box {
+    margin: 0;
+    background: #ffffff;
+    font-size: 0.88rem;
+}
+#page-content div.page-rate-widget-box .rate-points,
+#action-area div.page-rate-widget-box .rate-points {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 90%;
+}
+#page-content .page-rate-widget-box .cancel,
+#action-area .page-rate-widget-box .cancel {
+    padding: 0 1px 0 0;
+}
+#page-content .page-rate-widget-box .cancel a,
+#action-area .page-rate-widget-box .cancel a {
+    margin: 0 1px;
+    color: #333333;
+}
+#page-content .page-rate-widget-box .rateup a,
+#page-content .page-rate-widget-box .ratedown a,
+#page-content .creditRate.creditModule .page-rate-widget-box .cancel a,
+#action-area .page-rate-widget-box .rateup a,
+#action-area .page-rate-widget-box .ratedown a,
+#action-area .creditRate.creditModule .page-rate-widget-box .cancel a {
+    height: 18px;
+}
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#page-content .page-rate-widget-box .cancel a:hover,
+#action-area .page-rate-widget-box .cancel a:hover {
+    color: #ffffff;
+}
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton {
+    box-sizing: border-box;
+    padding: 0 2px;
+    box-shadow: 0px 0px 7px #999999;
+}
+#page-content .rate-box-with-credit-button .creditButton a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-content .modalcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page-content .modalbox {
+    width: 100%;
+    box-shadow: 0px 0px 7px rgb(0 0 0 / 30%);
+    position: relative;
+}
+
+/* HEADER */
+#extra-div-1::before {
+    top: 0.4rem;
+}
+#u-header-link {
+    width: var(--titleLength);
+    z-index: 10;
+}
+#top-bar {
+    text-transform: none;
+}
+div#search-top-box {
+    top: 0.76rem !important;
+}
+@media (max-width: 430px) {
+    #u-header-link {
+        width: calc( var(--titleLength) * 0.86);
+    }
+}
+@media (min-width: 431px) and (max-width: 1020px) {
+    #extra-div-1::before {
+        top: -0.2rem;
+    }
+    #u-header-link {
+        height: 2.9rem;
+        top: 0.2rem;
+    }
+}
+@media (min-width: 1021px) {
+    #top-bar {
+        left: calc(var(--titleLength) + 9.7rem);
+    }
+}
+
+/* SIDE BAR */
+#u-sb-button {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+#u-sb-button br {
+    display: none;
+}
+#side-bar {
+    text-transform: none;
+}
+#side-bar .side-block {
+    overflow-x: hidden;
+}
+#side-bar .side-block .collapsible-block-unfolded-link {
+    margin-bottom: 5px;
+}
+#side-bar .side-block a.collapsible-block-link {
+    background: none;
+    border: none 0;
+    padding: 0;
+}
+#side-bar .side-block .collapsible-block-folded a.collapsible-block-link:hover {
+    text-decoration: underline 1px;
+}
+#side-bar .side-block .collapsible-block-unfolded-link a.collapsible-block-link:hover {
+    color: #5D5D5D;
+}
+#side-bar img,
+iframe.scpnet-interwiki-frame {
+    -webkit-filter: none;
+    filter: none;
+}
+#side-bar img:not([src*="twitter" i]):not([src*="discord" i]) {
+    -webkit-filter: grayscale(100%) saturate(0%);
+    filter: grayscale(100%) saturate(0%);
+    -webkit-user-select: none;
+    user-select: none;
+}
+@media (max-width: 767px) {
+    #side-bar:target {
+        width: 19em;
+    }
+    #side-bar:target .close-menu {
+        width: calc(100% - 21em);
+    }
+    #side-bar .side-block .collapsible-block-unfolded-link {
+        padding-left: 1em;
+        margin-left: -1em;
+    }
+    #side-bar .side-block .collapsible-block-unfolded-link a.collapsible-block-link {
+        margin-left: 0;
+    }
+}
+@media (min-width: 768px) {
+    #side-bar:target {
+        width: 19em;
+        border: none 0;
+    }
+    #side-bar:target .close-menu {
+        width: calc(100% - 21em);
+        right: 0;
+        left: auto;
+        background: none;
+    }
+}
+
+/* OWINDOW */
+#owindow-1>div.title {
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 90%;
+    cursor: default;
+}
+
+/* COLMOD */
+.colmod-link-top a,
+.colmod-link-end a {
+font-family: 'Work Sans', sans-serif;
+font-weight: 600;
+color: white;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 7px;
+padding-right: 9px;
+background: rgb(20, 20, 20);
+border-radius: 3px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.colmod-link-top a:hover,
+.colmod-link-end a:hover {
+text-decoration: none;
+background: rgb(45, 45, 45);
+}
+
+/* TAGS */
+#main-content .page-tags span {
+    line-height: 1.4;
+}
+#main-content .page-tags a:before {
+    line-height: 1.1;
+}
+
+/* OWINDOW */
+#owindow-1>div.content.modal-body>h1 {
+    text-transform: none;
+}
+#owindow-1 tr:nth-last-of-type(n+3) td:nth-of-type(2)::first-letter {
+    text-transform: none;
+}
+
+#page-version-info {
+    border-style: solid;
+    background: #eaeeef;
+    color: #21252E;
+}
+.preview-message {
+    background: #0C0C0C;
+    border: none 0;
+    box-shadow: 0 0 4px #999999;
+    color: #FFFFFF;
+}
+.preview-message a {
+    color: #7aa4eb;
+}
+
+/* 圏点 */
+.kt {
+    -webkit-text-emphasis-style: filled dot;
+    text-emphasis-style: filled dot;
+}
+
+/* RUBY */
+.ruby, .rt {
+    border-collapse: collapse;
+}
+

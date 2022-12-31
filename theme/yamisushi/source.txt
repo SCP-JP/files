@@ -1,0 +1,269 @@
+[[module CSS]]
+@import url("http://scp-jp.wikidot.com/theme:yamisushi/code/1");
+[[/module]]
+
+[[iftags +テーマ]]
+
+[[include credit:start-preview]]
+**タイトル:** 闇寿司テーマ
+**著者:** ©[[*user tutuji]]
+**作成年:** 2020
+[[include credit:end-preview]]
+
+このテーマを使用するには、次のコードをページに貼り付けてくれッ！
+
+[[div class="code"]]
+[[span style="color:black"]]
+@@[[include :scp-jp:theme:yamisushi]]@@
+[[/span]]
+[[/div]]
+
+> **テーマ名**: 闇寿司テーマ
+> **作成者**: tutuji
+
+このテーマは闇寿司ファイルのために作成されたぞッ！！
+
+以下使用例
+
++ h1 闇寿司がCSSテーマを完成させたようだぞ！タカオ君！
+
+++ h2 本当か！？大変だぜ博士！！
+
++++ h3 うおおおおお！！！！！！
+
+++++ h4 燃えてきたぜ！
+
++++++ h5 美味いぜ！
+
+++++++ h6 回すぜ！
+
+[[size 0%]]　[[/size]]
+
+[[tabview]]
+[[tab タブだぜ！]]
+使いこなせるか…？
+[[/tab]]
+[[tab タフだぜ！]]
+力が欲しいか…？
+[[/tab]]
+[[/tabview]]
+
+[[collapsible show="+ 俺たちの戦いは" hide="- これからだ！！"]]
+> 闇寿司こそ最強のスシブレードだ…！！[[footnote]]好評放送中！[[/footnote]]
+[[/collapsible]]
+
+[[size 0%]]　[[/size]]
+
+[[include component:image-block
+name=yamisushi|
+caption=写真の説明だッ！！]]
+
+[[code type="css"]]
+/*
+    Powered on 2020/02/12 18:24:34
+    [2020 Wikidot Theme]
+    Created by tutuji
+    CC BY-SA 3.0
+*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP&display=swap');
+
+/* FONTS AND COLORS */
+
+body {
+    background: rgb(40, 40, 40);
+    color: rgb(190, 190, 190);
+    font-family: 'Noto Serif JP', serif;
+}
+a,a:visited {
+    color: rgb(198, 188, 252);
+}
+h1,h2,h3,h4,h5,h6 {
+    color: rgb(198, 188, 252);
+    font-family: 'Noto Serif JP', serif;
+}
+blockquote {
+    border: 1px dashed #c5bcfb;
+    background: #414243;
+}
+div#page-title {
+    color: #c5bcfb;
+}
+
+/* HEADER */
+
+div#container-wrap {
+    background: url(http://scp-jp.wikidot.com/local--files/theme:yamisushi/header) top left repeat-x;
+}
+div#header {
+    background: url(http://scp-jp.wikidot.com/local--files/theme:yamisushi/yamisushi) 10px 40px no-repeat;
+    background-position: -1em 0.5em;
+    background-size: 140px 140px;
+}
+div#header h1 a span {
+    font-size: 0px;
+}
+div#header h1 a:before {
+    content: "闇寿司";
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -0.5px 4px #ffffff;
+    font-family: 'Noto Serif JP', serif;
+}
+div#header h2 span {
+    font-size:0px;
+    padding: 4px;
+}
+div#header h2:after {
+    content: "Strongest Invincible Sushi";
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    padding: 19px 0;
+    text-shadow: -1px -1px 3px rgba(255, 255, 255, 10);
+    white-space: pre;
+}
+
+/* SIDE-BAR */
+
+#side-bar .side-block:nth-child(1),
+#side-bar .side-block:nth-child(5),
+#side-bar .side-block:nth-child(6),
+#side-bar .side-block:nth-child(7) {
+    background-color: rgb(102, 102, 102) !important;
+}
+div#side-bar div.side-block {
+    background: rgb(102, 102, 102);
+    border: 1px solid #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 5);
+}
+div#side-bar div.side-block div.heading,
+div#side-bar div.collapsible-block-unfolded-link,
+div#side-bar div.collapsible-block-unfolded-link div.collapsible-block-link {
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+/* Mobile code */
+@media (max-width: 767px) {
+    #side-bar{
+        background-color: transparent;
+    }
+}
+
+/* Interwiki */
+
+div.scpnet-interwiki-wrapper {
+    filter: hue-rotate(240deg) grayscale(35%) invert(20%);
+}
+div.yui-navset div.yui-content {
+    background: rgb(20, 20, 20);
+}
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav a:focus {
+    background: rgb(204, 204, 204);
+}
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+    background: rgb(102, 102, 102);
+}
+
+/* Rating module */
+
+div.page-rate-widget-box,
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel {
+    background-color: rgb(102, 102, 102)!important;
+    border: solid rgb(102, 102, 102) 1px!important;
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+    border: solid rgb(102, 102, 102)!important;
+    border-width: 1px 0!important;
+}
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel a,
+div.page-rate-widget-box span.cancel a:hover {
+    color: rgb(255, 255, 255);
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+    background-color: rgb(255, 255, 255)!important;
+}
+div.page-rate-widget-box span.rateup a,
+div.page-rate-widget-box span.ratedown a {
+    color: rgb(102, 102, 102)!important;
+}
+div.page-rate-widget-box span.cancel a:hover,
+div.page-rate-widget-box span.rateup a:hover,
+div.page-rate-widget-box span.ratedown a:hover {
+    background: transparent!important;
+    color: transparent!important;
+}
+
+/* Credit */
+
+#page-content .rate-box-with-credit-button .creditButton {
+  background-color: rgb(102, 102, 102);
+  border: 1px solid rgb(102, 102, 102);
+  color: white;
+}
+#page-content .rate-box-with-credit-button .creditButton:hover {
+  background-color: rgb(132, 132, 132);
+  border: 1px solid rgb(102, 102, 102);
+  color: black;
+}
+#page-content .rate-box-with-credit-button .creditButton a:hover {
+    color: white;
+}
+#page-content .modalbox .credit {
+  color: black
+}
+#page-content .modalbox .printuser a {
+    color: #b01;
+}
+#page-content .modalbox h2 {
+    color: black;
+}
+
+div.open-menu a {
+    color: rgb(204, 204, 204)!important;
+    border-color: rgb(204, 204, 204)!important;
+}
+
+/* IMAGES */
+
+#page-content .scp-image-block {
+    border-color: #cccccc;
+    box-shadow: none;
+}
+#page-content .scp-image-block .scp-image-caption {
+    border-color: #cccccc;
+    background-color: #000000;
+}
+table.wiki-content-table th {
+    background-color: #ffffff;
+}
+hr {
+    background-color: #ffffff;
+}
+.code {
+    border: 1px dashed #9400D3;
+    background-color: #FFF5EE;
+}
+
+
+/* Footnote hovers */
+
+.hovertip {
+    width: 20em;
+    padding: 0.5em;
+    border: 1px solid transparent !important;
+    border-radius: 0.5em;
+    background-color: #000000ee !important;
+    box-shadow: 0 0 6px 1px #000000aa;
+    z-index: 100;
+}
+.hovertip .f-heading {
+    color: #cccccc;
+}
+[[/code]]
+[[/iftags]]

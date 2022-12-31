@@ -1,0 +1,346 @@
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[module css]]
+
+:root {
+  --five-color: 196, 2, 51;
+  --four-color: 255, 109, 0;
+  --three-color: 255, 211, 0;
+  --two-color: 0, 135, 189;
+  --one-color: 0, 159, 107;
+}
+
+#page-title {
+  text-align: center;
+}
+
+.color-five {
+  background-color: rgb(var(--five-color));
+}
+
+.color-four {
+  background-color: rgb(var(--four-color));
+}
+
+.color-three {
+  background-color: rgb(var(--three-color));
+}
+
+.color-two {
+  background-color: rgb(var(--two-color));
+}
+
+.color-one {
+  background-color: rgb(var(--one-color));
+}
+
+.color-gray {
+  background-color: rgba(var(--gray-monochrome, 66, 66, 72), 0.15);
+}
+
+.color-white {
+  background-color: rgb(var(--white-monochrome, 252, 252, 252));
+}
+
+.color-black {
+  background-color: rgb(var(--black-monochrome, 12, 12, 12));
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(5, calc((100% / 5) - 0.25rem));
+  grid-gap: 0.25rem;
+}
+
+.class-table-box {
+  display: grid;
+  grid-template-columns: 1fr 75%;
+  background-color: rgb(var(--black-monochrome));
+  grid-gap: 0.125rem;
+  margin-top: 0.5rem;
+}
+
+.class-table-box>div {
+  padding: 0.5rem;
+}
+
+.class-name {
+  font-family: var(--title-font);
+  font-size: 1.15em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.class-description {
+  background-color: rgb(var(--white-monochrome));
+}
+
+@media (max-width: 500px) {
+  .icons {
+    grid-template-columns: repeat(3, calc((100% / 3) - 0.25rem));
+  }
+}
+
+.icon_image {
+  border-radius: 50%;
+  border: 0.25rem solid rgb(var(--black-monochrome, 12, 12, 12));
+  overflow: hidden;
+}
+
+.icon_name,
+.icon_link {
+  font-family: var(--title-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.step_container {
+  margin: 0.5rem 0;
+  border: 1px solid #999;
+  padding: 1em;
+}
+
+.help {
+  display: flex;
+  align-content: stretch;
+  padding-top: 1em;
+  border-top: 1px dashed #999;
+}
+
+.help blockquote {
+  margin: 0;
+  font-size: 85%;
+}
+
+.help blockquote>p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  margin-right: 0;
+  min-height: 2rem;
+  margin: 0;
+}
+
+.help blockquote>p * {
+  margin: 0 0.1rem;
+  height: 100%;
+}
+
+.help blockquote:nth-of-type(1) {
+  width: 50%;
+  background: transparent;
+  border: unset;
+  box-shadow: unset;
+  text-align: right;
+  margin-right: 0;
+  padding: 0;
+}
+
+.help blockquote:nth-of-type(1)>p {
+  justify-content: flex-end;
+}
+
+.help blockquote:nth-of-type(2) {
+  margin-left: 1em;
+  width: 50%;
+}
+
+#page-content>.collapsible-block {
+  display: block;
+  text-align: center;
+  padding: 0.75em;
+  background-color: lightgrey;
+  border-top: 0.125rem dashed slategrey;
+  border-bottom: 0.125rem dashed slategrey;
+}
+
+#page-content>div.collapsible-block>div.collapsible-block-unfolded>div.collapsible-block-content {
+  text-align: left;
+}
+
+/* 原語のサイズ感に近づけるため文字サイズ調整 */
+
+h2 {
+  font-size: 130%;
+}
+
+h3 {
+  font-size: 110%;
+}
+[[/module]]
+
+[[=]]
+[[module Rate]]
+[[/=]]
+
+[[div class="step_container"]]
++ [[[anomaly-classification-system-guide|使用する前に、こちらのガイドを読んでください]]]。
+++ 世界観を統一するため、[[*user djkaktus]]による[[[classification-committee-memo|こちらのメモ]]]もご一読ください。
+++ オリジナルのACS分類バーをお探しなら、[[[component:anomaly-class-bar|こちらをクリックしてください]]]。
+[[=]]
++++ このコンポーネントを使用するのに、BlackHighlighterテーマは必要ありません。
+[[/=]]
+[[/div]]
+
++ 基本となるコンポーネントとオプション
+
+[[div_ class="blockquote"]]
+{{[[include :scp-jp:component:acs-hybrid-text-bar-source}}
+{{|version= text/hybrid}}
+{{|item-number= ####}}
+{{|clearance-level= #}}
+{{|containment-class= euclid}}
+{{|include-secondary= yes/no}}
+{{|secondary-class= apollyon}}
+{{|secondary-icon= @@http://urlhere.com@@}}
+{{|disruption-class= vlam}}
+{{|risk-class= notice}}
+{{]]}}
+[[/div]]
+
+[[=]]
++++ [/component:anomaly-class-bar#toc14 セカンダリクラスのアイコンURLはこちら]
+[[/=]]
+
+-----
+
++ 使用例
+
+[[include :scp-jp:component:acs-hybrid-text-bar-source
+|version= hybrid
+|item-number= 2105
+|clearance-level= 2
+|containment-class= euclid
+|include-secondary= yes
+|secondary-class= apollyon
+|secondary-icon= http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/apollyon-icon.svg
+|disruption-class= vlam
+|risk-class= notice
+]]
+
+[[div_ class="blockquote"]]
+{{[[include :scp-jp:component:acs-hybrid-text-bar-source}}
+{{|version= hybrid}}
+{{|item-number= 2105}}
+{{|clearance-level= 2}}
+{{|containment-class= euclid}}
+{{|include-secondary= yes}}
+{{|secondary-class= apollyon}}
+{{|secondary-icon= @@http://scp-wiki.wdfiles.com/local--files/component%3Aanomaly-class-bar/apollyon-icon.svg@@}}
+{{|disruption-class= vlam}}
+{{|risk-class= notice}}
+{{]]}}
+[[/div]]
+
+------
+
+[[include :scp-jp:component:acs-hybrid-text-bar-source
+|version= hybrid
+|item-number= 2105
+|clearance-level= 3
+|containment-class= keter
+|disruption-class= keneq
+|risk-class= caution
+]]
+
+[[div_ class="blockquote"]]
+{{[[include :scp-jp:component:acs-hybrid-text-bar-source}}
+{{|version= hybrid}}
+{{|item-number= 2105}}
+{{|clearance-level= 3}}
+{{|containment-class= keter}}
+{{|disruption-class= keneq}}
+{{|risk-class= caution}}
+{{]]}}
+[[/div]]
+
+------
+
+[[include :scp-jp:component:acs-hybrid-text-bar-source
+|version= text
+|item-number= 2105
+|clearance-level= 2
+|containment-class= euclid
+|include-secondary= yes
+|secondary-class= apollyon
+|disruption-class= vlam
+|risk-class= notice
+]]
+
+[[div_ class="blockquote"]]
+{{[[include :scp-jp:component:acs-hybrid-text-bar-source}}
+{{|version= text}}
+{{|item-number= 2105}}
+{{|clearance-level= 2}}
+{{|containment-class= euclid}}
+{{|include-secondary= yes}}
+{{|secondary-class= apollyon}}
+{{|disruption-class= vlam}}
+{{|risk-class= notice}}
+{{]]}}
+[[/div]]
+
+------
+
+[[include :scp-jp:component:acs-hybrid-text-bar-source
+|version= text
+|item-number= 2105
+|clearance-level= 3
+|containment-class= keter
+|disruption-class= keneq
+|risk-class= caution
+]]
+
+[[div_ class="blockquote"]]
+{{[[include :scp-jp:component:acs-hybrid-text-bar-source}}
+{{|version= text}}
+{{|item-number= 2105}}
+{{|clearance-level= 3}}
+{{|containment-class= keter}}
+{{|disruption-class= keneq}}
+{{|risk-class= caution}}
+{{]]}}
+[[/div]]
+
+------
+
+[[include :scp-jp:component:acs-hybrid-text-bar-source
+|version= hybrid
+|item-number= 2105
+|clearance-level= 2
+|containment-class= explained
+]]
+
+[[div_ class="blockquote"]]
+{{[[include :scp-jp:component:acs-hybrid-text-bar-source}}
+{{|version= hybrid}}
+{{|item-number= 2105}}
+{{|clearance-level= 2}}
+{{|containment-class= explained}}
+{{]]}}
+[[/div]]
+
+------
+
+[[include :scp-jp:component:acs-hybrid-text-bar-source
+|version= text
+|item-number= 2105
+|clearance-level= 2
+|containment-class= explained
+]]
+
+[[div_ class="blockquote"]]
+{{[[include :scp-jp:component:acs-hybrid-text-bar-source}}
+{{|version= text}}
+{{|item-number= 2105}}
+{{|clearance-level= 2}}
+{{|containment-class= explained}}
+{{]]}}
+[[/div]]

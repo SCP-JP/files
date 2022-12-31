@@ -1,0 +1,50 @@
+[[iftags +コンポーネント]]
+
+画像ブロックモジュール改:
+* 画像の右端が評価モジュールの端ではなく、コンテンツ全体と同じ高さになるようにしました。
+* ユーザのウィンドウの幅が600px未満の場合、floatを解除して画像を中央に配置します。
+
+By PeppesGhost & Stormbreath
+
+[[[SCP-4703|例はこちらに！]]]
+
+使用するには、次のコードをコピーしてページに貼り付け、必要に応じて画像の名前、説明、幅の長さを調整してください。
+
+> [[include :scp-jp:component:image-block-peppo
+> |name=http://scp-jp.wdfiles.com/local--files/scp-4703/419475400_73559b2b7a_z.jpg
+> |caption= ここに説明を入れて！
+> |width=300px
+> |]]
+
+[[=]]
++ コードについては、Page Sourceをご確認ください。
+[[/=]]
+
+[[/iftags]]
+
+[[iftags -コンポーネント]]
+
+[[include :scp-jp:component:image-block
+|name={$name}
+|caption={$caption}
+|width={$width}|width=300px
+|link={$link}|link=#
+|align=right
+]]
+
+[[module CSS]]
+/* Aligns image to right edge */
+.scp-image-block.block-right {
+    margin: 0em 0em 1em 2em;
+}
+
+/* Visually centers image block */
+@media only screen and (max-width: 600px) {
+    .scp-image-block.block-right{
+        float: none;
+        margin: 10px auto;
+    }
+}
+[[/module]]
+
+[[/iftags]]

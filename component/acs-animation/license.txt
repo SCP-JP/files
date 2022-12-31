@@ -1,0 +1,5 @@
+title: ACSアニメーション
+author: ukwhatn
+created_at: 2022-03-23 22:37:00+00:00
+source: http://scp-jp.wikidot.com/component:acs-animation
+license: Need to Fix!

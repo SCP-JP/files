@@ -1,0 +1,5 @@
+title: linkAgeテーマ
+author: Rokurokubi
+created_at: 2020-09-18 12:30:22+00:00
+source: http://scp-jp.wikidot.com/theme:linkage
+license: Need to Fix!

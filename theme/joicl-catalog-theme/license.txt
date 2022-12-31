@@ -1,0 +1,5 @@
+title: 日本生類創研カタログ・テーマ(仮置き)
+author: shu_yabiyabi
+created_at: 2021-10-19 00:15:47+00:00
+source: http://scp-jp.wikidot.com/theme:joicl-catalog-theme
+license: Need to Fix!

@@ -1,0 +1,313 @@
+[[module CSS]]
+@import url("http://scp-jp.wikidot.com/theme:plvs-vltra/code/1");
+[[/module]]
+
+[[iftags +テーマ]]
+
+[[include :scp-jp:credit:start-preview]]
+**テーマ名:** プルス・ウルトラ テーマ
+**作成者:** [[*user Tenten_518]]
+**公開年:** 2020
+[[include :scp-jp:credit:end-preview]]
+
+> **テーマ名:** プルス・ウルトラ テーマ
+> **作成者:** [[*user Tenten_518]]
+
+このテーマは、カノン-JP「[[[1998-hub|1998年]]]」のシーズン2015年「プルス・ウルトラ」のために作成されました。このテーマを使用するには、次のコードをページに貼り付けてください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:plvs-vltra]]@@
+[[/div]]
+
+[[tabview]]
+[[tab 使用画像のライセンス]]
+
+> **__テーマ使用画像:__**
+> 
+> * **ヘッダー画像**
+> **画像タイトル:** Barcelona Panorama From Park Guell
+> **投稿者:** [*https://www.flickr.com/photos/edmenendez/ Ed Menendez]
+> **公開日:** 2011/5/18
+> **ライセンス:** CC BY-SA 2.0
+> **ソース:** [*https://flic.kr/p/9rnYdK flicker]
+> **補足:** 使用にあたって縮小・トリミングしています。
+> 
+> * **ロゴ画像**
+> **画像タイトル:** Logo SCP Foundation
+> **著作権者:** [[*user Aelanna]]
+> **公開年:** 2011
+> **ライセンス:** CC BY-SA 3.0
+> **ソース:** [*http://www.scp-wiki.net/dr-mackenzie-s-sketchbook Dr. Mackenzie's Sketchbook]
+> **補足:** 使用にあたって加工しています。
+
+[[/tab]]
+[[tab CSSコード]]
+
+[[collapsible show="+ コードを表示" hide="- コードを隠す"]]
+
+[[code type="css"]]
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@620&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* HEADER */
+div#extra-div-1 {
+  height: 140px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background: url("http://scp-jp-storage.wikidot.com/local--files/file:2532460-7-3cel/barcelona.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#header {
+  background: url(http://scp-jp-storage.wikidot.com/local--files/file:2532460-8-z4rk/The_Foundation_in_PlvsVltra_Logo.png) 10px 40px no-repeat;
+  background-size: 100px 100px;
+}
+@media (max-width: 479px) {
+  #header{
+    background-position: 0 5.5em;
+    background-size: 55px 55px;
+  }
+}
+@media (min-width: 480px) and (max-width: 580px) {
+  #header{
+    background-position: 0.5em 4.5em;
+    background-size: 66px 66px;
+  }
+}
+@media (min-width: 581px) and (max-width: 767px) {
+  #header{
+    background-size: 77px 77px;
+  }
+}
+#header h1 a::before {
+  content: "PLVS VLTRA";
+  font-size: 80%;
+  font-family: 'Vollkorn', serif;
+  font-weight: 800;
+  color: #ffc500;
+  text-shadow: 2px 2px 2px black;
+}
+#header h1 a span{
+    visibility: hidden;
+}
+#header h2 span {
+    color: transparent;
+    text-shadow: 0px 0px 0px;
+}
+#header h2 span::before {
+  content: "Año 1998: Temporada 2015";
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  text-shadow: 2px 2px 2px black;
+}
+
+/* SPACE */
+div#container-wrap {
+  background-image: url(none);
+}
+ 
+div#extra-div-2 {
+  height: 22px;
+  width: 100%;
+  top: 140px;
+  position: absolute;
+  background-color: #660000;
+}
+
+/* TOPBAR */
+#top-bar a {
+  color: white;
+}
+
+#top-bar ul li ul {
+  border: solid 1px #660000;
+  border-top: none;
+  overflow: hidden;
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+  background: white;
+  border-right: solid 1px #660000;
+  border-left: solid 1px #660000;
+}
+
+/* LOGIN SETTING */
+#login-status {
+  color: white;
+}
+#login-status a {
+  background: transparent;
+  color: white;
+}
+#account-options {
+  border: solid 1px #660000;
+}
+
+/* SEARCHBOX */
+#search-top-box {
+  position: absolute;
+  top: 30px;
+  bottom: auto;
+  right: 9px;
+  width: 250px;
+  text-align: right;
+}
+#search-top-box-input {
+  background-color: #660000;
+  border: 1px solid white;
+  color: white;
+  box-shadow: none;
+  border-radius: 0;
+}
+#search-top-box-input:hover, #search-top-box-input:focus {
+  background-color: white;
+  border: 1px solid #660000;
+  color: #660000;
+  box-shadow: none;
+}
+#search-top-box-form input[type=submit] {
+  padding: 0 0.5em;
+  border: 1px solid white;
+  border-radius: 0;
+  color: #fff;
+  background: #660000;
+}
+#search-top-box-form input[type=submit]:hover {
+  border: 1px solid #660000;
+  border-radius: 0;
+  color: #660000;
+  background: white;
+}
+
+/* SIDEBAR */
+#side-bar .side-block {
+  border: 1px solid #660000;
+  border-radius: 0px;
+  box-shadow: none;
+  background-color: white;
+}
+ 
+@media (max-width: 767px) {
+  }
+    .open-menu a {
+    border: 0.2em solid gray;
+    border-radius: 5px 5px 5px 5px;
+    background-color: white;
+  }
+}
+
+/* INTEREWIKI */
+#side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+  border: 1px solid #660000;
+  border-radius: 0px;
+  box-shadow: none;
+  background-color: white;
+}
+
+/* RATINGMODULE */
+div.page-rate-widget-box,
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel {
+  background-color: #660000;
+  border: 1px solid #660000;
+  border-radius: 0px;
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+    border: none;
+    border-width: 1px;
+}
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel a,
+div.page-rate-widget-box span.cancel a:hover {
+  color: white;
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+  background-color: white;
+}
+div.page-rate-widget-box span.rateup a,
+div.page-rate-widget-box span.ratedown a {
+  color: #660000;
+}
+
+/* CREDIT */
+#page-content .rate-box-with-credit-button .creditButton {
+  background-color: #660000;
+  border: 2px solid #660000;
+  border-radius: 0px;
+}
+#page-content .rate-box-with-credit-button .creditButton:hover {
+  background-color: #660000);
+  border: 2px solid #660000;
+  border-radius: 0px;
+}
+
+/* YUI-TABS */
+.yui-navset {
+  overflow: auto;
+  border: 1px solid gray;
+  background: white;
+}
+.yui-navset .yui-content {
+  overflow: inherit;
+  border-top: solid 1px gray;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  margin: 0;
+  padding: 5 5px;
+  background: white;
+}
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+  border: none;
+  background: #660000;
+}
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+  overflow-y:hidden;
+  border: none;
+  color: white;
+  font-weight: normal;
+  background: none;
+}
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected {
+  margin: 0;
+  background: white;
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+  overflow-y:hidden;
+  border: none;
+  color: #660000;
+  font-weight: normal;
+  background: white;
+  -webkit-text-stroke-width: 0.8px;
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+  overflow-y:hidden;
+  border: none;
+  color: none;
+  background: none;
+}
+.yui-navset .yui-nav li, .yui-navset .yui-navset-top .yui-nav li {
+  margin: 0px;
+  padding: 0px;
+}
+
+[[/code]]
+
+[[/collapsible]]
+
+[[/tab]]
+[[/tabview]]
+
+[[/iftags]]

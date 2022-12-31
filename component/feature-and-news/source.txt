@@ -1,0 +1,293 @@
+[[iftags +管理 -ハブ]]
++ スタッフ各位
+下記から編集を行えます。
+* [http://scp-jp.wikidot.com/_attention-jp-scp 編集: 注目のSCP]
+* [http://scp-jp.wikidot.com/_attention-jp-goif 編集: 注目のGoIF]
+* [http://scp-jp.wikidot.com/_attention-jp-tale 編集: 注目のTale]
+* [http://scp-jp.wikidot.com/_attention-translation-scp 編集: 注目の翻訳SCP]
+* [http://scp-jp.wikidot.com/_attention-translation-goif 編集: 注目の翻訳GoIF]
+* [http://scp-jp.wikidot.com/_attention-translation-tale 編集: 注目の翻訳Tale]
+* [http://scp-jp.wikidot.com/_attention-news 編集: ニュース]
+**注:** 一覧は”登録日”に登録された日付の順にソートされます。
+----
+[[/iftags]]
+
+
+[[div class="feature-block feature"]]
+[[module ListPages category="attention-jp" order="_date desc" limit="1" _category="1" _original="1"]]
+[[div class="content-panel"]]
+[[div class="panel-heading"]]
+注目のSCP
+[[/div]]
+[[div class="panel-body"]]
+[[div class="feature-title"]]
+[[[%%form_raw{url}%%|]]]: %%form_raw{meta}%%
+[[/div]]
+[[div class="feature-subtitle"]]
+by [[*user %%form_raw{author}%%]]
+[[/div]]
+%%form_raw{desc}%%
+[[/div]]
+[[div class="panel-footer"]]
+[[[featured-scp-archive|過去の注目SCP一覧]]]
+[[/div]]
+[[/div]]
+[[/module]]
+
+
+[[module ListPages category="attention-jp" order="_date desc" limit="1" _category="1" _original="0"]]
+[[div class="content-panel"]]
+[[div class="panel-heading"]]
+注目の翻訳SCP
+[[/div]]
+[[div class="panel-body"]]
+[[div class="feature-title"]]
+[[[%%form_raw{url}%%|]]]: %%form_raw{meta}%%
+[[/div]]
+[[div class="feature-subtitle"]]
+by [[*user %%form_raw{author}%%]]
+[[/div]]
+%%form_raw{desc}%%
+[[/div]]
+[[div class="panel-footer"]]
+[[[featured-translated-scp-archive|過去の注目翻訳SCP一覧]]]
+[[/div]]
+[[/div]]
+[[/module]]
+
+
+
+[[module ListPages category="attention-jp" order="_date desc" limit="1" _category="3" _original="1"]]
+[[div class="content-panel"]]
+[[div class="panel-heading"]]
+注目のGoIF
+[[/div]]
+[[div class="panel-body"]]
+[[div class="feature-title"]]
+[[[%%form_raw{url}%%|]]]
+[[/div]]
+[[div class="feature-subtitle"]]
+by [[*user %%form_raw{author}%%]]
+[[/div]]
+%%form_raw{desc}%%
+[[/div]]
+[[div class="panel-footer"]]
+[[[featured-goif-archive|過去の注目GoIF一覧]]]
+[[/div]]
+[[/div]]
+[[/module]]
+
+
+[[module ListPages category="attention-jp" order="_date desc" limit="1" _category="3" _original="0"]]
+[[div class="content-panel"]]
+[[div class="panel-heading"]]
+注目の翻訳GoIF
+[[/div]]
+[[div class="panel-body"]]
+[[div class="feature-title"]]
+[[[%%form_raw{url}%%|]]]
+[[/div]]
+[[div class="feature-subtitle"]]
+by [[*user %%form_raw{author}%%]]
+[[/div]]
+%%form_raw{desc}%%
+[[/div]]
+[[div class="panel-footer"]]
+[[[featured-translated-goif-archive|過去の注目翻訳GoIF一覧]]]
+[[/div]]
+[[/div]]
+[[/module]]
+
+
+[[module ListPages category="attention-jp" order="_date desc" limit="1" _category="2" _original="1"]]
+[[div class="content-panel"]]
+[[div class="panel-heading"]]
+注目のTale
+[[/div]]
+[[div class="panel-body"]]
+[[div class="feature-title"]]
+[[[%%form_raw{url}%%|]]]
+[[/div]]
+[[div class="feature-subtitle"]]
+by [[*user %%form_raw{author}%%]]
+[[/div]]
+%%form_raw{desc}%%
+[[/div]]
+[[div class="panel-footer"]]
+[[[featured-tale-archive|過去の注目Tale一覧]]]
+[[/div]]
+[[/div]]
+[[/module]]
+
+
+[[module ListPages category="attention-jp" order="_date desc" limit="1" _category="2" _original="0"]]
+[[div class="content-panel"]]
+[[div class="panel-heading"]]
+注目の翻訳Tale
+[[/div]]
+[[div class="panel-body"]]
+[[div class="feature-title"]]
+[[[%%form_raw{url}%%|]]]
+[[/div]]
+[[div class="feature-subtitle"]]
+by [[*user %%form_raw{author}%%]]
+[[/div]]
+%%form_raw{desc}%%
+[[/div]]
+[[div class="panel-footer"]]
+[[[featured-translated-tale-archive|過去の注目翻訳Tale一覧]]]
+[[/div]]
+[[/div]]
+[[/module]]
+
+[[/div]]
+
+
+[[div class="news-block content-panel"]]
+[[div class="panel-heading"]]
+ニュース
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages category="attention-news" order="_date desc" limit="5"]]
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+[[date %%form_data{date}%% format="%y/%m/%d"]]
+[[/div]]
+[[div class="news-content"]]
+%%form_raw{news}%%
+[[/div]]
+[[/div]]
+[[/module]]
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+[[/div]]
+[[/div]]
+
+[[/div]]
+[[div class="panel-footer"]]
+[http://scp-jp.wikidot.com/forum/t-1754505 スタッフからのお知らせ] | [[[Archived News|過去のニュース]]]
+[[/div]]
+[[/div]]
+
+[[module css]]
+.feature-block.feature * {
+    box-sizing: border-box;
+}
+
+.feature-block.feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature-block.feature .list-pages-box {
+    flex: 1 0 50%;
+    padding: 1em 0em;
+    min-width: 250px;
+}
+
+.feature-block.feature > div:nth-of-type(odd) {
+    padding-right: 0.5em;
+}
+
+.feature-block.feature > div:nth-of-type(even) {
+    padding-left: 0.5em;
+}
+
+@media (max-width: 555px) {
+   .feature-block.feature > div:nth-of-type(odd) {
+       padding-right: 0;
+   }
+   .feature-block.feature > div:nth-of-type(even) {
+       padding-left: 0;
+   }
+}
+
+.feature-block.feature .list-pages-box .list-pages-item,
+.feature-block.feature .list-pages-box .list-pages-item .content-panel{
+    height: 100%;
+    position: relative;
+}
+
+.feature-block.feature .list-pages-box .list-pages-item .content-panel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature-block.feature .list-pages-box .list-pages-item .content-panel > * {
+    flex: 0 0 100%;
+}
+
+.feature-block.feature .list-pages-box .list-pages-item .content-panel .panel-header,
+.feature-block.feature .list-pages-box .list-pages-item .content-panel .panel-footer {
+    height: 1.5em;
+}
+
+
+.feature-block.feature .list-pages-box .list-pages-item .content-panel .panel-body {
+    height: calc(100% - 3em);
+    min-height: 130px;
+}
+
+.feature-block.feature .feature-title {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.feature-block.feature .feature-subtitle {
+    font-size: 90%;
+}
+
+.feature-block.feature .feature-title > p, .feature-block .feature-subtitle > p {
+    margin: 0;
+}
+
+.news-block .panel-body {
+    padding: 0;
+}
+
+.news-block .panel-body .alternate {
+    padding: 5px 10px;
+}
+
+.news-block .news-title {
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 5px;
+    color: #633;
+}
+
+.news-block .news-content {
+    margin: 5px 0;
+}
+
+.news-block .news-title > p, .news-block .news-content > p {
+    margin: 0;
+}
+
+.news-block .list-pages-box .list-pages-item:nth-child(even) .alternate {
+    background-color: rgba(255,255,255,.9);
+}
+
+
+.error-inline {
+    border: none;
+    color: #333;
+    font-size: 0;
+    user-select: none;
+}
+.error-inline em {
+    font-size: 0.9rem;
+    font-style: normal;
+    user-select: text;
+}
+.error-inline em:after {
+    content: " (アカウント削除済み)";
+    font-weight: normal;
+}
+
+[[/module]]

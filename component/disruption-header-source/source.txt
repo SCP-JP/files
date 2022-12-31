@@ -1,0 +1,23 @@
+[[module css]]
+/* DISRUPTION CLASS */
+ .disruption-header{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: .3rem 0 .3rem;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: rgb(252,252,252);
+    text-shadow: 1px 3px 1px rgba(0,0,0,0.3);
+}
+ .disruption-header a:hover{
+    text-decoration: none !important;
+}
+[[/module]]
+
+[[a href="*/anomaly-classification-system-guide"]]
+  [[span_ class="disruption-header" style="background-color: {$disruption-bg-color}; color: {$disruption-text-color};"]]
+[[span style="font-weight: 700;"]]撹乱クラス:[[/span]]@@ @@{$disruption-class}
+  [[/span]]
+[[/a]]

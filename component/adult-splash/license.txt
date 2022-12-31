@@ -1,0 +1,5 @@
+title: 成人向けコンテンツ警告見出し
+author: islandsmaster
+created_at: 2022-09-03 16:45:18+00:00
+source: http://scp-jp.wikidot.com/component:adult-splash
+license: Need to Fix!

@@ -1,0 +1,5 @@
+title: The Foundationテーマ
+author: ukwhatn
+created_at: 2020-09-13 02:51:49+00:00
+source: http://scp-jp.wikidot.com/theme:the-foundation-theme
+license: Need to Fix!

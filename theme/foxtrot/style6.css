@@ -1,0 +1,1044 @@
+
+/* VARIABLES */
+
+:root {
+
+    /* VARIABLES > Core */
+
+    --logo-img: var(--darkmode-logo-img);
+    --logo-opacity: 30%;
+
+    /* VARIABLES > Misc */
+
+    --darkmode-gradient-top: var(--dark-bg-1);
+    --darkmode-gradient-bottom: var(--dark-bg-2);
+
+    --dark-bg-1: #21252E;
+    --dark-bg-2: #2F333C;
+
+    --dark-txt-color: #EDEDED;
+
+    --header-txt-color: rgb(var(--accent));
+    --subheader-txt-color: var(--dark-txt-color);
+    --misc-txt-color: var(--dark-txt-color);
+    --link-txt-color: rgb(var(--accent));
+    --link-hover-txt-color: #FFF;
+
+    /* VARIABLES > Color Accents */
+
+    --acc-default: 153, 187, 255;
+
+    --acc-wyoming: 252, 69, 69;
+    --acc-canada: 252, 69, 69;
+    --acc-poland: 186, 127, 108;
+    --acc-slothspit: 69, 99, 245;
+    --acc-vanguard: 85, 204, 51;
+    --acc-threshold: 221, 207, 238;
+    --acc-overwatch: 255, 215, 0;
+    --acc-spc: 88, 188, 209;
+    --acc-fishing: 141, 203, 211;
+    --acc-nightfall: 222, 40, 20;
+    --acc-hybrasil: 69, 109, 245;
+    --acc-goc: 112, 148, 255;
+    --acc-spooky: 252, 112, 40;
+
+    /* VARIABLES > BetterFootnotes */
+
+    --fnColor: rgb(var(--accent));
+
+    /* VARIABLES > ACS COLORS by Nagiros */
+
+    --six-color: 188, 136, 255 !important;
+    /*  purple*/
+    --five-color: 255, 34, 67 !important;
+    /*  red  */
+    --four-color: 255, 141, 54 !important;
+    /*  orange  */
+    --three-color: 255, 226, 82 !important;
+    /*  yellow  */
+    --two-color: 117, 167, 242 !important;
+    /*  blue  */
+    --one-color: 40, 159, 107 !important;
+    /*  green  */
+
+    --white-bar: 207, 207, 207;
+    --lg-bar: 118, 118, 130;
+    --gray-bg: 66, 66, 72;
+
+}
+
+/* MAIN */
+
+body {
+    color: var(--dark-txt-color);
+    background-color: var(--dark-bg-2);
+    background-image: linear-gradient(to bottom,
+     var(--darkmode-gradient-top), var(--darkmode-gradient-bottom) 200px);
+    background-repeat: no-repeat;
+    --barColour: var(--dark-bg-1);
+    --linkColour: var(--dark-txt-color);
+}
+
+#page-content a {
+    padding-bottom: .067rem;
+    border-bottom: thin solid rgb(var(--accent));
+}
+
+#page-content a:not(#page-content .authorlink-wrapper a):hover,
+.page-rate-widget-box a,
+#page-content .pseudocrumbs a,
+#page-content .yui-nav li a,
+#page-content #toc a,
+#page-content .danger-diamond a,
+#page-content a.collapsible-block-link,
+#page-content span.tooltip a,
+#page-content a.footnoteref {
+    border-bottom: none !important;
+}
+
+/* MAIN > Header */
+
+#header h1 a::after {
+    color: var(--misc-txt-color);
+}
+
+/* MAIN > Header > Search Box */
+
+#search-top-box-form>input[type=submit] {
+    border: solid 1px #EDEDED;
+    background: var(--dark-bg-1);
+     !important;
+    color: var(--dark-txt-color);
+}
+
+#search-top-box-form input[type=submit]:hover {
+    border: solid 1px rgb(var(--accent));
+}
+
+/* MAIN > Header > Top Bar */
+
+#top-bar ul li ul li a:hover {
+    color: var(--dark-txt-color) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* MAIN > Header > Login Info */
+
+#login-status {
+    color: var(--dark-txt-color);
+}
+
+#login-status a {
+    color: rgb(var(--accent));
+}
+
+#login-status ul a {
+    color: var(--dark-txt-color);
+    background: var(--dark-bg-1);
+}
+
+#login-status ul a:hover {
+    color: rgb(var(--accent));
+}
+
+#account-topbutton {
+    border: solid 1px rgb(var(--accent));
+}
+
+/* MAIN > Header > Side Bar */
+
+#side-bar {
+    background: var(--dark-bg-2);
+}
+
+#side-bar .side-block,
+#side-bar .side-block.resources,
+#side-bar .side-block.media {
+    background: var(--dark-bg-1);
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: var(--dark-txt-color) !important;
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: none;
+}
+
+#top-bar .open-menu a {
+    filter: drop-shadow(0px 1px 10px rgba(0, 0, 0, 0.2));
+}
+
+/* CONTENT */
+
+/* CONTENT > Blockquotes, Custom Divs */
+
+.blockquote,
+div.blockquote,
+blockquote {
+    background: var(--dark-bg-1);
+    border-left: 5px solid rgb(var(--accent));
+    box-shadow: 4px 4px var(--dark-bg-2);
+}
+
+.jotting,
+.notation,
+.modal,
+.paper {
+    background: var(--dark-bg-1);
+    border-color: rgb(var(--accent));
+}
+
+.paper {
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.8);
+}
+
+div.note {
+    background: var(--dark-bg-1);
+}
+
+/* CONTENT > Headings, Titles */
+
+#page-title,
+.meta-title {
+    color: var(--dark-txt-color) !important;
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    color: rgb(var(--accent)) !important;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--dark-txt-color) !important;
+}
+
+.footnotes-footer .title {
+    color: var(--dark-txt-color);
+}
+
+/* CONTENT > Rate Module */
+
+.page-rate-widget-box {
+    font-family: var(--ui-font);
+}
+
+.page-rate-widget-box,
+#page-content .rate-box-with-credit-button {
+    border: solid 1px rgb(var(--accent));
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown,
+.page-rate-widget-box .cancel,
+#page-content .rate-box-with-credit-button {
+    background: var(--dark-bg-1);
+}
+
+.page-rate-widget-box .rate-points {
+    background: var(--dark-bg-1) !important;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a,
+.page-rate-widget-box .cancel a,
+#page-content .rate-box-with-credit-button .fa-info {
+    color: var(--dark-txt-color);
+}
+
+div.page-rate-widget-box .rate-points {
+    color: var(--dark-txt-color) !important;
+}
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover,
+.page-rate-widget-box .cancel a:hover {
+    background: rgb(var(--accent)) !important;
+}
+
+/* CONTENT > Rate Module > Info Pane */
+
+#page-content .rate-box-with-credit-button .creditButton p a {
+    border-left-color: transparent;
+}
+
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel {
+    border-radius: 0;
+}
+
+#page-content .rate-box-with-credit-button .page-rate-widget-box .rate-points {
+    border-left: 0;
+}
+
+.rate-box-with-credit-button .page-rate-widget-box .cancel a:hover {
+    border-radius: 0;
+}
+
+#page-content .rate-box-with-credit-button .fa-info {
+    color: var(--dark-txt-color);
+}
+
+#page-content .rate-box-with-credit-button .fa-info:hover {
+    color: rgb(var(--accent));
+}
+
+#page-content .modalbox {
+    background: var(--dark-bg-2) !important;
+    color: var(--dark-txt-color);
+    box-shadow: none;
+}
+
+#page-content .modalbox > hr:first-of-type {
+
+    opacity: 0%;
+
+}
+
+
+
+#page-content .modalbox h2:first-of-type {
+
+    font-family: var(--ui-font);
+
+}
+
+
+.close-credits,
+.credit-back {
+    filter: grayscale(100%) invert(100%) contrast(275%);
+}
+
+/* CONTENT > Rate Module > Author Label */
+
+#page-content .authorbox {
+    background-color: var(--dark-bg-1) !important;
+    color: var(--dark-txt-color) !important;
+}
+
+#page-content .authorbox::before {
+    border-color: transparent transparent var(--dark-bg-1) transparent;
+}
+
+/* CONTENT > Image Block */
+
+.scp-image-block .scp-image-caption {
+    background-color: var(--dark-bg-1) !important;
+    color: var(--dark-txt-color);
+}
+
+.scp-image-block img,
+.scp-image-block .scp-image-caption {
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+/* CONTENT > Tables Base */
+
+#page-content tr th {
+    color: var(--dark-bg-1);
+    background-color: rgb(var(--accent));
+    border: solid 2px rgb(var(--accent));
+}
+
+#page-content tr td {
+    border: solid 2px rgb(var(--accent));
+    background-color: var(--dark-bg-1);
+}
+
+/* CONTENT > Tables Customization (Table Coloring System) */
+
+/* CONTENT > Tables Customization (Table Coloring System) > Table Headings, Image Captions */
+
+#page-content .table1 tr th,
+#page-content .table1 .scp-image-block .scp-image-caption,
+#page-content .table1 .scp-image-block img {
+    background-color: rgb(40, 159, 107);
+    border-color: rgb(40, 159, 107);
+    --link-txt-color: rgb(0, 229, 129);
+    --accent: 0, 229, 129 !important;
+}
+
+#page-content .table1 tr td {
+    border-color: rgb(40, 159, 107);
+}
+
+#page-content .table2 tr th,
+#page-content .table2 .scp-image-block .scp-image-caption,
+#page-content .table2 .scp-image-block img {
+    background-color: rgb(117, 167, 242);
+    border-color: rgb(117, 167, 242);
+    --link-txt-color: rgb(76, 146, 252);
+    --accent: 76, 146, 252 !important;
+}
+
+#page-content .table2 tr td {
+    border-color: rgb(117, 167, 242);
+}
+
+#page-content .table3 tr th,
+#page-content .table3 .scp-image-block .scp-image-caption,
+#page-content .table3 .scp-image-block img {
+    background-color: rgb(255, 226, 82);
+    border-color: rgb(255, 226, 82);
+    --link-txt-color: rgb(255, 255, 46);
+    --accent: 255, 255, 46 !important;
+}
+
+#page-content .table3 tr td {
+    border-color: rgb(255, 226, 82);
+}
+
+#page-content .table4 tr th,
+#page-content .table4 .scp-image-block .scp-image-caption,
+#page-content .table4 .scp-image-block img {
+    background-color: rgb(255, 141, 54);
+    border-color: rgb(255, 141, 54);
+    --link-txt-color: rgb(255, 98, 0);
+    --accent: 255, 98, 0 !important;
+}
+
+#page-content .table4 tr td {
+    border-color: rgb(255, 141, 54);
+}
+
+#page-content .table5 tr th,
+#page-content .table5 .scp-image-block .scp-image-caption,
+#page-content .table5 .scp-image-block img {
+    background-color: rgb(255, 34, 68);
+    border-color: rgb(255, 34, 68);
+    --link-txt-color: rgb(255, 71, 71);
+    --accent: 255, 71, 71 !important;
+}
+
+#page-content .table5 tr td {
+    border-color: rgb(255, 34, 68);
+}
+
+#page-content .table6 tr th,
+#page-content .table6 .scp-image-block .scp-image-caption,
+#page-content .table6 .scp-image-block img {
+    background-color: rgb(188, 136, 255);
+    border-color: rgb(188, 136, 255);
+    --link-txt-color: rgb(197, 159, 245);
+    --accent: 197, 159, 245 !important;
+}
+
+#page-content .table6 tr td {
+    border-color: rgb(188, 136, 255);
+}
+
+/* CONTENT > Tables Customization (Table Coloring System) > Other Colored Divs */
+
+.table1 .jotting,
+.table1 .notation,
+.table1 .modal,
+.table1 .paper,
+.jotting.table1,
+.notation.table1,
+.modal.table1,
+.paper.table1 {
+    border-color: rgb(var(--one-color));
+    --link-txt-color: rgb(var(--one-color));
+    --accent: var(--one-color) !important;
+}
+
+.table2 .jotting,
+.table2 .notation,
+.table2 .modal,
+.table2 .paper,
+.jotting.table2,
+.notation.table2,
+.modal.table2,
+.paper.table2 {
+    border-color: rgb(var(--two-color));
+    --link-txt-color: rgb(var(--two-color));
+    --accent: var(--two-color) !important;
+}
+
+.table3 .jotting,
+.table3 .notation,
+.table3 .modal,
+.table3 .paper,
+.jotting.table3,
+.notation.table3,
+.modal.table3,
+.paper.table3 {
+    border-color: rgb(var(--three-color));
+    --link-txt-color: rgb(var(--three-color));
+    --accent: var(--three-color) !important;
+}
+
+.table4 .jotting,
+.table4 .notation,
+.table4 .modal,
+.table4 .paper,
+.jotting.table4,
+.notation.table4,
+.modal.table4,
+.paper.table4 {
+    border-color: rgb(var(--four-color));
+    --link-txt-color: rgb(var(--four-color));
+    --accent: var(--four-color) !important;
+}
+
+.table5 .jotting,
+.table5 .notation,
+.table5 .modal,
+.table5 .paper,
+.jotting.table5,
+.notation.table5,
+.modal.table5,
+.paper.table5 {
+    border-color: rgb(var(--five-color));
+    --link-txt-color: rgb(var(--five-color));
+    --accent: var(--five-color) !important;
+}
+
+.table6 .jotting,
+.table6 .notation,
+.table6 .modal,
+.table6 .paper,
+.jotting.table6,
+.notation.table6,
+.modal.table6,
+.paper.table6 {
+    border-color: rgb(var(--six-color));
+    --link-txt-color: rgb(var(--six-color));
+    --accent: var(--six-color) !important;
+}
+
+.table1 .blockquote,
+.table1 div.blockquote,
+.table1 blockquote,
+.table2 .blockquote,
+.table2 div.blockquote,
+.table2 blockquote,
+.table3 .blockquote,
+.table3 div.blockquote,
+.table3 blockquote,
+.table4 .blockquote,
+.table4 div.blockquote,
+.table4 blockquote,
+.table5 .blockquote,
+.table5 div.blockquote,
+.table5 blockquote,
+.table6 .blockquote,
+.table6 div.blockquote,
+.table6 blockquote,
+.blockquote.table1,
+div.blockquote.table1,
+.blockquote.table2,
+div.blockquote.table2,
+.blockquote.table3,
+div.blockquote.table3,
+.blockquote.table4,
+div.blockquote.table4,
+.blockquote.table5,
+div.blockquote.table5,
+.blockquote.table6,
+div.blockquote.table6 {
+    background: var(--dark-bg-1);
+}
+
+.table1 .jotting,
+.table1 .notation,
+.table1 .modal,
+.table1 .paper,
+.jotting.table1,
+.notation.table1,
+.modal.table1,
+.paper.table1,
+.table2 .jotting,
+.table2 .notation,
+.table2 .modal,
+.table2 .paper,
+.jotting.table2,
+.notation.table2,
+.modal.table2,
+.paper.table2,
+.table3 .jotting,
+.table3 .notation,
+.table3 .modal,
+.table3 .paper,
+.jotting.table3,
+.notation.table3,
+.modal.table3,
+.paper.table3,
+.table4 .jotting,
+.table4 .notation,
+.table4 .modal,
+.table4 .paper,
+.jotting.table4,
+.notation.table4,
+.modal.table4,
+.paper.table4,
+.table5 .jotting,
+.table5 .notation,
+.table5 .modal,
+.table5 .paper,
+.jotting.table5,
+.notation.table5,
+.modal.table5,
+.paper.table5,
+.table6 .jotting,
+.table6 .notation,
+.table6 .modal,
+.table6 .paper,
+.jotting.table6,
+.notation.table6,
+.modal.table6,
+.paper.table6 {
+    background: var(--dark-bg-1);
+}
+
+.table1 .blockquote,
+.table1 div.blockquote,
+.table1 blockquote,
+.blockquote.table1,
+div.blockquote.table1 {
+    border-left-color: rgb(var(--one-color));
+    --link-txt-color: rgb(var(--one-color));
+    --accent: var(--one-color) !important;
+}
+
+.table2 .blockquote,
+.table2 div.blockquote,
+.table2 blockquote,
+.blockquote.table2,
+div.blockquote.table2 {
+    border-left-color: rgb(var(--two-color));
+    --link-txt-color: rgb(var(--two-color));
+    --accent: var(--two-color) !important;
+}
+
+.table3 .blockquote,
+.table3 div.blockquote,
+.table3 blockquote,
+.blockquote.table3,
+div.blockquote.table3 {
+    border-left-color: rgb(var(--three-color));
+    --link-txt-color: rgb(var(--three-color));
+    --accent: var(--three-color) !important;
+}
+
+.table4 .blockquote,
+.table4 div.blockquote,
+.table4 blockquote,
+.blockquote.table4,
+div.blockquote.table4 {
+    border-left-color: rgb(var(--four-color));
+    --link-txt-color: rgb(var(--four-color));
+    --accent: var(--four-color) !important;
+}
+
+.table5 .blockquote,
+.table5 div.blockquote,
+.table5 blockquote,
+.blockquote.table5,
+div.blockquote.table5 {
+    border-left-color: rgb(var(--five-color));
+    --link-txt-color: rgb(var(--five-color));
+    --accent: var(--five-color) !important;
+}
+
+.table6 .blockquote,
+.table6 div.blockquote,
+.table6 blockquote,
+.blockquote.table6,
+div.blockquote.table6 {
+    border-left-color: rgb(var(--six-color));
+    --link-txt-color: rgb(var(--six-color));
+    --accent: var(--six-color) !important;
+}
+
+/* CONTENT > Tabs Customization */
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border-color: rgb(var(--accent));
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    color: var(--dark-txt-color);
+    background-color: var(--dark-bg-1);
+}
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    color: var(--dark-txt-color);
+    background-color: rgb(var(--accent));
+}
+
+.yui-navset .yui-nav li,
+.yui-navset .yui-navset-top .yui-nav li {
+    color: var(--dark-txt-color);
+    background-color: var(--dark-bg-1);
+}
+
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected {
+    background-color: rgb(var(--accent));
+}
+
+.yui-navset .yui-nav .selected a {
+    color: var(--dark-bg-1);
+}
+
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:active {
+    color: var(--dark-bg-1);
+    background-color: rgb(var(--accent));
+}
+
+.yui-navset .yui-content {
+    background-color: var(--dark-bg-1);
+}
+
+/* CONTENT > Collapsibles */
+
+#page-content a.collapsible-block-link:not(.licensebox a.collapsible-block-link, .info-container a.collapsible-block-link, .default-col a.collapsible-block-link) {
+    color: var(--dark-txt-color);
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0px 0px 0px 2px rgb(var(--accent));
+}
+
+#page-content a.collapsible-block-link:not(.licensebox a.collapsible-block-link, .info-container a.collapsible-block-link, .default-col a.collapsible-block-link):hover {
+    background: rgba(var(--accent), 0.25);
+}
+
+/* CONTENT > ACS Adjustments */
+
+/*  ACS COLORS by Nagiros  */
+
+.anom-bar>.bottom-box {
+    /*  horizontal bar  */
+    box-shadow: 0 -0.5rem 0 0 rgb(207, 207, 207) !important;
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgb(207, 207, 207) !important;
+    -moz-box-shadow: 0 -0.5rem 0 0 rgb(207, 207, 207) !important;
+    box-shadow: 0 -0.5rem 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+    -moz-box-shadow: 0 -0.5rem 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+}
+
+.bottom-box>.diamond-part {
+    /*  vertical bar  */
+    box-shadow: -0.5rem 0 0 0 rgb(207, 207, 207) !important;
+    -webkit-box-shadow: -0.5rem 0 0 0 rgb(207, 207, 207) !important;
+    -moz-box-shadow: -0.5rem 0 0 0 rgb(207, 207, 207) !important;
+    box-shadow: -0.5rem 0 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+    -webkit-box-shadow: -0.5rem 0 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+    -moz-box-shadow: -0.5rem 0 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+}
+
+.anom-bar-container.esoteric .text-part .main-class,
+.anom-bar-container.explained .text-part .main-class,
+.anom-bar-container.neutralized .text-part .main-class,
+.anom-bar-container.pending .text-part .main-class {
+    background-color: rgba(66, 66, 72, .5) !important;
+    background-color: rgba(var(--gray-bg, 66, 66, 72), .5) !important;
+    border-left-color: rgb(118, 118, 130) !important;
+    border-left-color: rgb(var(--lg-bar, 118, 118, 130)) !important;
+}
+
+.danger-diamond>.arrows {
+    /*  inverted arrows  */
+    filter: invert(90%) !important;
+    -webkit-filter: invert(90%) !important;
+}
+
+.danger-diamond>.quadrants>.bottom-quad,
+.anom-bar-container.explained .danger-diamond>.quadrants>.top-quad,
+.anom-bar-container.neutralized .danger-diamond>.quadrants>.top-quad,
+.anom-bar-container.pending .danger-diamond>.quadrants>.top-quad {
+    /*  "transparent" bottoms/top icon backgrounds  */
+    background-color: rgb(26, 26, 26) !important;
+    /*  body background color  */
+}
+
+.danger-diamond>.bottom-icon,
+.anom-bar-container.pending .danger-diamond>.top-icon::before {
+    /*  esoteric, pending icon backgrounds  */
+    background-color: rgb(3, 3, 3) !important;
+}
+
+.anom-bar>.bottom-box::before {
+    background-color: var(--white-bar);
+}
+
+/* CONTENT > Woed Bar Adjustments */
+
+div.scale div.item1>div,
+div.scale div.class1>div,
+div.scale div.obj {
+    color: var(--dark-txt-color);
+}
+
+div.scale div.obj {
+    background-color: var(--dark-bg-1);
+    box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.35);
+}
+
+/* MISC */
+
+#footer,
+#footer a {
+    color: var(--dark-txt-color);
+}
+
+#license-area {
+    color: var(--dark-txt-color);
+    background: var(--dark-bg-1);
+    border-top: solid 2px rgba(0, 0, 0, 0.3);
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    border-left: solid 1px var(--dark-bg-1);
+    border-right: solid 1px var(--dark-bg-1);
+}
+
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top-color: var(--dark-bg-1);
+}
+
+#header #top-bar a {
+    color: var(--dark-bg-1);
+}
+
+#page-content hr:not(.fancyhr hr) {
+    background-color: rgb(var(--accent));
+}
+
+#page-content .divider>hr,
+div.paper hr {
+    border-top-color: rgb(var(--accent));
+}
+
+.page-options-bottom a {
+    color: var(--dark-bg-1);
+    background: rgb(var(--accent));
+}
+
+.page-options-bottom a:hover {
+    background: rgba(var(--accent), 0.3);
+    color: var(--dark-txt-color);
+}
+
+.code {
+    background-color: #F8F8F8;
+    border: solid 3px var(--dark-bg-2);
+    box-shadow: none;
+}
+
+.fncon {
+    background-color: var(--dark-bg-1);
+    border-color: rgb(var(--accent));
+}
+
+/* Pop-Up Windows */
+.owindow {
+    background-color: var(--dark-bg-1);
+    border-color: rgb(var(--accent));
+}
+
+.owindow .modal-header {
+    background-color: var(--dark-bg-1);
+}
+
+.owindow .modal-body img {
+    background-color: transparent !important;
+}
+
+.owindow .title {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgb(var(--dark-txt-color));
+    border-bottom-color: rgba(0, 0, 0, 0.6);
+}
+
+.owindow .button-bar a {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--dark-txt-color);
+}
+
+.owindow .button-bar a:hover {
+    background-color: rgb(var(--accent));
+    color: var(--dark-bg-1);
+}
+
+.buttons .btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: rgb(var(--accent));
+    color: #dfdfdf;
+}
+
+.buttons .btn:hover {
+    background-color: rgb(var(--accent));
+    color: var(--dark-txt-color);
+}
+
+#edit-cancel-button,
+#edit-diff-button,
+#edit-preview-button,
+#edit-save-draft-button,
+#edit-save-continue-button,
+#edit-save-button {
+    background: var(--dark-bg-1);
+    color: var(--dark-txt-color);
+    border-color: #979797;
+}
+
+#edit-cancel-button:hover,
+#edit-diff-button:hover,
+#edit-preview-button:hover,
+#edit-save-draft-button:hover,
+#edit-save-continue-button:hover,
+#edit-save-button:hover {
+    background: var(--dark-bg-1);
+    border-color: rgb(var(--accent));
+    color: rgb(var(--accent));
+}
+
+#edit-save-button,
+#edit-save-continue-button {
+    --accent: 33, 255, 58;
+}
+
+#edit-cancel-button {
+    --accent: 255, 31, 41;
+}
+
+#lock-info {
+    background-color: var(--dark-bg-1);
+}
+
+a.action-area-close:hover {
+    background-color: var(--dark-bg-1);
+    color: rgb(var(--accent));
+}
+
+.wd-editor-toolbar-panel {
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+.pager .current {
+    background-color: rgb(var(--accent));
+    border-color: var(--dark-txt-color);
+}
+
+table.page-history tbody tr {
+    color: var(--dark-txt-color);
+}
+
+textarea,
+input.text {
+    background-color: var(--dark-bg-1);
+    color: var(--dark-txt-color);
+}
+
+.hovertip {
+    background: var(--dark-bg-1) !important;
+}
+
+#main-content .page-tags {
+    border-color: rgb(var(--accent));
+}
+
+#main-content .page-tags a {
+    color: var(--dark-bg-1);
+}
+
+#main-content .page-tags a::after {
+    background-color: var(--dark-bg-1);
+}
+
+#action-area>p {
+    color: #c9eede;
+}
+
+.yui-ac-content {
+    border: 1px solid var(--dark-txt-color);
+    background: var(--dark-bg-1);
+}
+
+.autocomplete-list li:hover {
+    background: unset;
+    color: rgb(var(--accent));
+}
+
+.preview-message,
+.error-block {
+    background-color: rgba(64, 14, 23, 0.7) !important;
+    color: var(--dark-txt-color);
+}
+
+input.checkbox,
+.page-history input {
+    filter: invert(1) grayscale(1);
+}
+
+#h-perpage {
+    filter: invert(1);
+}
+
+table.page-history td.optionstd a,
+.pager .current,
+.pager a {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.inline-diff del {
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.inline-diff ins {
+    background-color: rgba(0, 255, 52, 0.3);
+}
+
+.fader iframe,
+.fader a {
+    border: none;
+}
+
+/* LOCALIZATION FOR JP BRANCH */
+
+/* CREDIT MODULE */
+#page-content .creditRate.creditModule .page-rate-widget-box {
+    border: solid 1px rgb(var(--accent));
+}
+#page-content .creditRate.creditModule .page-rate-widget-box .cancel a,
+#page-content #u-credit-view .modalbox .page-rate-widget-box .cancel a,
+#action-area .page-rate-widget-box .cancel a,
+#page-content .creditRate.creditModule .page-rate-widget-box .cancel a:hover,
+#page-content #u-credit-view .modalbox .page-rate-widget-box .cancel a:hover,
+#action-area .page-rate-widget-box .cancel a:hover {
+    color: var(--dark-txt-color);
+}
+#page-content .creditRate.creditModule .creditButton {
+    border: solid 1px rgb(var(--accent));
+    background: var(--dark-bg-1);
+}
+
+#page-content #u-credit-view .modalbox .modalbox-title {
+    background: rgba(var(--accent), 0.3);
+}
+#page-content #u-credit-view .modalbox .credit-license a {
+    border-bottom: none 0;
+    color: var(--dark-txt-color);
+}
+
+#side-bar .side-block {
+    background: var(--dark-bg-1) !important;
+}
+#side-bar .side-block .menu-item .sub-text {
+    color: var(--misc-txt-color);
+}
+#side-bar .side-block .collapsible-block-folded::before,
+#side-bar .side-block .menu-item img:not([src*="twitter" i]):not([src*="discord" i]) {
+    filter: brightness(0) invert(83%) sepia(25%) saturate(5396%) hue-rotate(188deg) brightness(103%) contrast(102%);
+}
+

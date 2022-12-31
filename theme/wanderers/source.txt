@@ -1,0 +1,211 @@
+[[module CSS]]
+@import url(/theme:wanderers/code/1);
+[[/module]]
+
+[[iftags +テーマ]]
+[[code type="css"]]
+@charset "utf-8";
+ 
+@import url('http://ja.scp-wiki.net/local--files/component:theme/font-bauhaus.css');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+ 
+/*
+    The Wanderers' Library Theme
+    [2019 Wikidot Theme]
+    Based on SCP-Sigma-9 for SCP Foundation by Aelanna and Dr Devan
+    Created for Wanderers' Library by ZeroStrider
+    Edited by SCP-JP Technical Team (Dr Devan)
+*/
+ 
+/* COMMON */
+ 
+h1, #page-title {
+    color: #044d00;
+}
+a {
+    color: #059400;
+}
+a.newpage {
+    color: #00a862;
+}
+ 
+/* GLOBAL WIDTH */
+div#container-wrap {
+    background: url('http://scp-jp.wdfiles.com/local--files/theme:wanderers/body_bg.png') top left repeat-x;
+}
+ 
+/* HEADER */
+#header {
+    background-image: url('http://scp-jp.wdfiles.com/local--files/theme:wanderers/logo.png');
+}
+
+#header h1 a span {
+    display: none;
+}
+ 
+#header h1 a::before {
+    content: "放浪者の図書館";
+    color: #eee;
+}
+ 
+#header h2 span {
+    visibility: hidden;
+}
+ 
+#header h2 span::before {
+    visibility: visible;
+    content: "庭園は蛇の場所だ";
+    color: #f0f0c0;
+}
+
+#search-top-box-input {
+    background-color: #1a3300;
+}
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    background-color: #3e6633;
+}
+#search-top-box-form input[type=submit] {
+    background: linear-gradient(to bottom, #739966, #396633, #0b3300);
+}
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background: linear-gradient(to bottom, #0b3300, #739966, #396633);
+}
+ 
+/* SIDE MENU */
+
+#side-bar {
+    text-align: left;
+    padding: 10px;
+    border: 2px dotted black;
+    border-radius: 10px;
+    background-color: #FFFDD9;
+    box-sizing: border-box;
+}
+
+#side-bar .side-block {
+    border: none;
+    box-shadow: none;
+    background-color: transparent !important;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#side-bar .side-block img {
+    -webkit-filter: hue-rotate(123deg) brightness(126%);
+    filter: hue-rotate(123deg) brightness(126%);
+}
+
+#side-bar .side-block.sns img {
+    -webkit-filter: none;
+    filter: none;
+}
+
+#side-bar .collapsible-block-folded {
+    filter: hue-rotate(123deg) brightness(126%);
+}
+
+#side-bar .collapsible-block-folded .collapsible-block-link {
+    color: #b01;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #116600;
+}
+
+/* Custom page content classes */
+.content-panel .panel-body {
+    background: #fff9f0 url('http://scp-jp.wdfiles.com/local--files/theme:wanderers/panel-bg-gradient-reverse.png') bottom repeat-x;
+}
+ 
+/* Page Rating Module Customizations */
+div.page-rate-widget-box .rate-points {
+    background-color: #006c00;
+    border: solid 1px #006c00;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #F0FFEC;
+    border-top: solid 1px #006c00;
+    border-bottom: solid 1px #006c00;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    color: #006c00;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #006c00;
+    color: #EFFFEC;
+}
+.page-rate-widget-box .cancel {
+    background-color: #006c00 !important;
+    border: solid 1px #006c00 !important;
+}
+.page-rate-widget-box .cancel a {
+    color: #006c00;
+}
+.page-rate-widget-box .cancel a:hover {
+    background-color: #006c00;
+    color: #EFFFEC;
+}
+#page-content .rate-box-with-credit-button .creditButton {
+    background-color: #006c00;
+    border: solid 1px #006c00;
+}
+.modalcontainer .modalbox {
+    box-shadow: 0 2px 6px rgba(0, 108, 0, .5);
+} 
+ 
+/* webkit scrollbar */
+::-webkit-scrollbar-thumb
+{
+    background: rgba(5, 148, 0, 0.3);
+}
+
+/* for the Interwiki*/
+#side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent !important;
+    -webkit-filter: hue-rotate(123deg) brightness(126%);
+    filter: hue-rotate(123deg) brightness(126%);
+}
+
+ 
+/* basic Query for mobile devices */
+@media (max-width: 767px) {
+#side-bar {
+    border-radius: 0;
+    padding: 0;
+}
+
+#side-bar .side-block {
+    border-bottom: 2px dotted #006c00;
+    border-radius: 0;
+    background-color: #fff !important;
+    padding: 10px;
+    line-height: 2em;
+}
+#side-bar hr {
+    display: none;
+}
+
+#side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+    background-color: #fff !important;
+    border-radius: 0;
+}
+}
+
+/* footnote by 7happy7 */
+span:not([class]):not([style]) > sup.footnoteref:first-child > a.footnoteref:before,
+sup.footnoteref > a.footnoteref:before {
+content: "(";
+}
+span:not([class]):not([style]) > sup.footnoteref > a.footnoteref:before {
+content: ",";
+}
+[[/code]]
+[[/iftags]]

@@ -1,0 +1,830 @@
+:root {
+    --barColour: #EDEDED !important;
+    --linkColour: rgb(20, 20, 20) !important;
+    --fnColor: #EDEDED;
+    --logo: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-22-kg1l/basalt_logotype_darkmode.png);
+    --black-monochrome: 207, 207, 207;
+    --utilcolor: rgb(20, 20, 20);
+    --antiutilcolor: #FFF;
+}
+
+body {
+    background: rgb(20, 20, 20);
+    color: #EDEDED;
+}
+
+#extra-div-1 {
+    background: rgb(35, 35, 35);
+    background: linear-gradient( 180deg, rgb(10 10 10) 0%, rgba(35, 35, 35, 1) 100%);
+}
+
+#extra-div-1::before,
+#extra-div-2::before {
+    color: #F9F9F9;
+}
+
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    background-color: rgb(35, 35, 35);
+}
+
+#main-content::before {
+    border: 1px solid grey;
+}
+
+#search-top-box-form>input[type=submit],
+#search-top-box-form>input[type=submit]:hover,
+#search-top-box-form>input[type=submit]:focus,
+#search-top-box-form>input[type=submit]:target {
+    background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20fill%3D%22%23ddd%22%20d%3D%22M505%20442.7L405.3%20343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3%2044-79.7%2044-128C416%2093.1%20322.9%200%20208%200S0%2093.1%200%20208s93.1%20208%20208%20208c48.3%200%2092.7-16.4%20128-44v16.3c0%206.4%202.5%2012.5%207%2017l99.7%2099.7c9.4%209.4%2024.6%209.4%2033.9%200l28.3-28.3c9.4-9.4%209.4-24.6.1-34zM208%20336c-70.7%200-128-57.2-128-128%200-70.7%2057.2-128%20128-128%2070.7%200%20128%2057.2%20128%20128%200%2070.7-57.2%20128-128%20128z%22%2F%3E%3C%2Fsvg%3E") 50%/0.8rem no-repeat, transparent !important;
+}
+
+#login-status > span {
+    color: #EDEDED;
+}
+
+#u-sb-button {
+    color: #EDEDED;
+}
+
+#side-bar {
+    background: linear-gradient( 0deg, rgba(20, 20, 20, 1) 87%, rgba(5, 5, 5, 1) 100%);
+}
+
+#side-bar::before {
+    border-color: #EDEDED;
+}
+
+#side-bar a {
+    color: #EDEDED;
+}
+
+#side-bar a:visited {
+    color: #EDEDED;
+}
+
+#side-bar img,
+iframe.scpnet-interwiki-frame {
+    filter: grayscale(100%) saturate(0%) invert(100%);
+    -webkit-filter: grayscale(100%) saturate(0%) invert(100%);
+}
+
+#side-bar .side-block {
+    background: linear-gradient( 180deg, rgba(25, 25, 25, 1) 0%, rgba(10, 10, 10, 1) 100%);
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.7);
+}
+
+#side-bar .side-block.media {
+    background-color: rgb(25, 25, 25) !important;
+    border-bottom: solid 4px rgb(19, 19, 19);
+    border-top: solid 2px rgb(19, 19, 19);
+}
+
+#side-bar .heading {
+    color: #EDEDED;
+    border-bottom: solid 1px #F9F9F9;
+}
+
+#side-bar .collapsible-block-folded {
+    filter: invert(1);
+}
+
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #EDEDED;
+}
+
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    color: #F9F9F9;
+}
+
+#side-bar .side-block.resources {
+    background: #101010;
+}
+
+#main-content .page-tags a {
+    background-color: rgb(30, 30, 30);
+}
+
+.document,
+.raisa_memo,
+.ettra_memo,
+.temporal_memo,
+.overwatch_memo,
+.ethics_memo,
+.classification_memo,
+.miscomm_memo {
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.7);
+}
+
+.fncon::before {
+    background-color: rgb(20, 20, 20) !important;
+    border: solid 1px #3e3e3e;
+}
+
+.fncon {
+    background: #ccc !important;
+    color: #111;
+}
+
+.fnnum::after, .fnnum:hover::after {
+    color: #b3b3b3 !important;
+}
+
+.darkdocument {
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.7);
+}
+
+a {
+    color: #7aa4eb;
+}
+
+a.newpage {
+    color: #e6735c;
+}
+
+a:visited {
+    color: #837ccf;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #EDEDED;
+}
+
+#top-bar,
+#top-bar a {
+    color: #EDEDED;
+}
+
+#page-options-container a {
+    color: #EDEDED;
+}
+
+#page-options-container a:hover {
+    color: #CCCCCC;
+}
+
+#files-button::before,
+#edit-button::before,
+#history-button::before,
+#print-button::before,
+#view-source-button::before,
+#discuss-button::before,
+#site-tools-button::before,
+#tags-button::before,
+#pagerate-button::before {
+filter: invert(100%);
+-webkit-filter: invert(100%);
+}
+
+#action-area > p:nth-child(5) > a  {
+border: solid 1px grey;
+}
+
+#footer,
+#license-area {
+    color: grey;
+}
+
+#footer,
+#footer a {
+    color: #bfbfbf;
+}
+
+textarea {
+    color: #EDEDED;
+    background-color: rgb(20, 20, 20);
+}
+
+input.text {
+    color: #EDEDED;
+    background-color: rgb(15, 15, 15);
+}
+
+#edit-page-title {
+    border: 0.13rem solid #949494;
+    border-radius: 3px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 120% !important;
+    font-weight: 600 !important;
+}
+
+#lock-info {
+    background: rgb(20, 20, 20);
+    color: #EDEDED;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(40, 40, 40);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(55, 55, 55);
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(20, 20, 20);
+}
+
+#owindow-1 {
+    background: #0C0C0C;
+    border: solid 0.15rem #080808;
+}
+
+#owindow-1>div.title.modal-header {
+    background: rgb(6, 6, 6);
+}
+
+#owindow-1>div.content.modal-body>table {
+    border-right: solid 2px #292929;
+}
+
+#owindow-1>div.content.modal-body>div {
+    border-top: solid 0.2rem rgb(19 19 19);
+}
+
+.autocomplete-list li.yui-ac-highlight {
+    background-color: rgb(10, 10, 10);
+}
+
+.autocomplete-list li {
+    background-color: rgb(20, 20, 20);
+}
+
+#login-status,
+#login-status a {
+    color: #EDEDED;
+}
+
+
+
+blockquote,
+div.blockquote,
+.blockquote {
+    background: rgb(25, 25, 25);
+    border-color: rgb(25, 25, 25);
+    color: #EDEDED;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.7);
+}
+
+.scp-image-block img,
+.scp-image-block .scp-image-caption {
+    outline: solid 1px grey;
+    box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 0.7);
+    background: rgb(10, 10, 10);
+    margin-top: 10px;
+}
+
+.scp-image-block img {
+    background: rgb(10, 10, 10);
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    color: #EDEDED;
+    background-color: rgb(30, 30, 30);
+}
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+    border: none;
+    box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 70%);
+}
+
+a.btn.btn-danger,
+a.btn.btn-primary,
+.btn-small,
+#owindow-1>div.button-bar.modal-footer>a,
+#edit-cancel-button,
+#edit-diff-button,
+#edit-preview-button,
+#edit-save-draft-button,
+#edit-save-continue-button,
+#edit-save-button,
+#owindow-1>div.content.modal-body>div>a.btn.btn-default,
+a.collapsible-block-link {
+    border: solid 1px #444444;
+}
+
+#page-title {
+    color: #EDEDED;
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: rgb(20, 20, 20);
+    color: #EDEDED;
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: transparent;
+    color: inherit;
+}
+
+#account-options {
+    background: rgb(30, 30, 30);
+    border: solid 2px #353535;
+}
+
+#login-status ul a {
+    color: #e0e0e0;
+}
+
+#account-options li a:hover {
+    color: #b5b5b5;
+}
+
+div.page-rate-widget-box .rate-points {
+    background-color: #0c0c0c;
+    border: none;
+    color: #CECECE !important;
+}
+
+#page-content .page-rate-widget-box,
+#page-content .rate-box-with-credit-button {
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.7);
+}
+
+#page-content .rate-box-with-credit-button {
+    background-color: #0c0c0c;
+    border: solid 1px #0c0c0c;
+}
+
+#page-content .rate-box-with-credit-button .fa-info {
+    color: #CECECE;
+}
+
+#page-content div.page-rate-widget-box .rate-points {
+    background-color: #0C0C0C;
+    color: #F5F5F5 !important;
+    border: none;
+}
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background: #0C0C0C;
+}
+
+.page-rate-widget-box .cancel {
+    background-color: #0C0C0C;
+}
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a,
+.page-rate-widget-box .cancel a {
+    color: #CECECE;
+}
+
+.modalbox {
+    background: #0C0C0C;
+    border: solid 0.15rem #080808;
+}
+
+table.page-files .highlight {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.footnotes-footer .title::before {
+    color: #EDEDED;
+}
+
+.footnotes-footer a {
+    color: grey;
+}
+
+.footnotes-footer {
+    border-left: solid 3px grey;
+}
+
+.page-source {
+    background: transparent;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.7);
+    border: solid 0.15rem rgb(30, 30, 30);
+}
+
+#page-content .wiki-content-table tr td {
+    border: 1px solid #ccc !important;
+}
+
+#page-content .wiki-content-table tr th {
+    color: black;
+    border-color: #aaa;
+    border-bottom: 0px;
+}
+
+#page-content .table1 tr th {
+    background-color: rgb(var(--one-color)) !important;
+    border: 1px solid rgb(var(--one-color)) !important;
+    border-bottom: 0px;
+}
+
+#page-content .table1 .st {
+    color: rgb(var(--one-color));
+}
+
+#page-content .table2 tr th {
+    background-color: rgb(var(--two-color)) !important;
+    border: 1px solid rgb(var(--two-color)) !important;
+    border-bottom: 0px;
+}
+
+#page-content .table2 .st {
+    color: rgb(var(--two-color));
+}
+
+#page-content .table3 tr th {
+    background-color: rgb(var(--three-color)) !important;
+    border: 1px solid rgb(var(--three-color)) !important;
+    border-bottom: 0px;
+}
+
+#page-content .table3 .st {
+    color: rgb(var(--three-color));
+}
+
+#page-content .table4 tr th {
+    background-color: rgb(var(--four-color)) !important;
+    border: 1px solid rgb(var(--four-color)) !important;
+    border-bottom: 0px;
+}
+
+#page-content .table4 .st {
+    color: rgb(var(--four-color));
+}
+
+#page-content .table5 tr th {
+    background-color: rgb(var(--five-color)) !important;
+    border: 1px solid rgb(var(--five-color)) !important;
+    border-bottom: 0px;
+}
+
+#page-content .table5 .st {
+    color: rgb(var(--five-color));
+}
+
+#page-content .table6 tr th {
+    background-color: #b8f;
+    border: 1px solid #b8f !important;
+    border-bottom: 0px;
+}
+
+#page-content .table6 .st {
+    color: #b8f;
+}
+
+
+/* DARK MODE ACS BY NAGIROS (NIGHT RUSH) */
+
+
+/* And God saw all that He had made, and behold, it was very good. */
+
+:root {
+    --five-color: 255, 34, 68 !important;
+    /*  red  */
+    --four-color: 255, 141, 54 !important;
+    /*  orange  */
+    --three-color: 255, 226, 82 !important;
+    /*  yellow  */
+    --two-color: 40, 135, 189 !important;
+    /*  blue  */
+    --one-color: 0, 160, 40 !important;
+    /*  green  */
+    --white-bar: 207, 207, 207;
+    --lg-bar: 118, 118, 130;
+    --gray-bg: 66, 66, 72;
+}
+
+.anom-bar>.bottom-box {
+    /*  horizontal bar  */
+    box-shadow: 0 -0.5rem 0 0 rgb(207, 207, 207) !important;
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgb(207, 207, 207) !important;
+    -moz-box-shadow: 0 -0.5rem 0 0 rgb(207, 207, 207) !important;
+    box-shadow: 0 -0.5rem 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+    -moz-box-shadow: 0 -0.5rem 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+}
+
+.bottom-box>.diamond-part {
+    /*  vertical bar  */
+    box-shadow: -0.5rem 0 0 0 rgb(207, 207, 207) !important;
+    -webkit-box-shadow: -0.5rem 0 0 0 rgb(207, 207, 207) !important;
+    -moz-box-shadow: -0.5rem 0 0 0 rgb(207, 207, 207) !important;
+    box-shadow: -0.5rem 0 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+    -webkit-box-shadow: -0.5rem 0 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+    -moz-box-shadow: -0.5rem 0 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+}
+
+.anom-bar-container.esoteric .text-part .main-class,
+.anom-bar-container.explained .text-part .main-class,
+.anom-bar-container.neutralized .text-part .main-class,
+.anom-bar-container.pending .text-part .main-class {
+    background-color: rgba(66, 66, 72, .5) !important;
+    background-color: rgba(var(--gray-bg, 66, 66, 72), .5) !important;
+    border-left-color: rgb(118, 118, 130) !important;
+    border-left-color: rgb(var(--lg-bar, 118, 118, 130)) !important;
+}
+
+.danger-diamond>.arrows,
+.danger-diamond>.bottom-icon::before {
+    /*  inverted arrows, esoteric icons  */
+    filter: invert(90%) !important;
+    -webkit-filter: invert(90%) !important;
+}
+
+.danger-diamond>.quadrants>.bottom-quad,
+.anom-bar-container.explained .danger-diamond>.quadrants>.top-quad,
+.anom-bar-container.neutralized .danger-diamond>.quadrants>.top-quad,
+.anom-bar-container.pending .danger-diamond>.quadrants>.top-quad {
+    /*  "transparent" bottoms/top icon backgrounds  */
+    background-color: rgb(26, 26, 26) !important;
+    /*  body background color  */
+}
+
+.danger-diamond>.bottom-icon,
+.anom-bar-container.pending .danger-diamond>.top-icon::before {
+    /*  esoteric, pending icon backgrounds  */
+    background-color: rgb(3, 3, 3) !important;
+}
+
+.acs-hybrid-text-bar>.acs-clear>.clearance-level-text::before,
+.acs-hybrid-text-bar>.acs-disrupt .disruption-class-number::before,
+.acs-hybrid-text-bar>.acs-risk .risk-class-number::before {
+    /*  hybrid text fixes  */
+    color: rgb(237, 237, 237) !important;
+    /*  text color  */
+}
+
+#page-content .contain-class .class-text::before {
+    color: rgb(237, 237, 237) !important;
+}
+
+.acs-hybrid-version.acs-yes .acs-secondary,
+.acs-hybrid-version.acs-esoteric .acs-contain,
+.acs-hybrid-version.acs-explained .acs-contain,
+.acs-hybrid-version.acs-neutralized .acs-contain,
+.acs-hybrid-version.acs-pending .acs-contain {
+    /*  hybrid vertical bars  */
+    box-shadow: inset 0.5rem 0 0 0 rgb(118, 118, 130) !important;
+    -webkit-box-shadow: inset 0.5rem 0 0 0 rgb(118, 118, 130) !important;
+    -moz-box-shadow: inset 0.5rem 0 0 0 rgb(118, 118, 130) !important;
+    box-shadow: inset 0.5rem 0 0 0 rgb(var(--lg-bar, 118, 118, 130)) !important;
+    -webkit-box-shadow: inset 0.5rem 0 0 0 rgb(var(--lg-bar, 118, 118, 130)) !important;
+    -moz-box-shadow: inset 0.5rem 0 0 0 rgb(var(--lg-bar, 118, 118, 130)) !important;
+}
+
+.acs-hybrid-version.acs-pending .acs-contain {
+    background-color: rgba(66, 66, 72, .5) !important;
+    background-color: rgba(var(--gray-bg, 66, 66, 72), .5) !important;
+}
+
+hr {
+    background-color: grey;
+}
+
+.notation {
+    border-left: solid 3px rgb(60, 60, 60);
+    border-right: solid 3px rgb(60, 60, 60);
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.7);
+    background: rgb(30, 30, 30);
+}
+
+.modal,
+.smallmodal {
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.7);
+    background: rgb(20, 20, 20);
+    border: solid 2px rgb(40, 40, 40);
+}
+
+.transcript {
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.7);
+    background: rgb(20, 20, 20);
+    border: dotted 1px rgb(40, 40, 40);
+}
+
+.jotting {
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.7);
+    background: rgb(15, 15, 15);
+    border: dashed 0.1rem #6F6F6F;
+}
+
+.licensebox .collapsible-block-link,
+.licensebox .collapsible-block-link:hover {
+    color: #EDEDED;
+    border: none;
+}
+
+.licensebox .collapsible-block-link:hover {
+    color: white;
+}
+
+.document {
+    color: black;
+}
+
+.raisa_memo>p:nth-child(1)::before,
+.classification_memo>p:nth-child(1)::before,
+.ettra_memo>p:nth-child(1)::before,
+.ethics_memo>p:nth-child(1)::before,
+.temporal_memo>p:nth-child(1)::before,
+.overwatch_memo>p:nth-child(1)::before,
+.miscomm_memo>p:nth-child(1)::before {
+    border-color: grey;
+}
+
+.raisa_memo {
+    border: solid 4px #fff3ad;
+    color: #fff3ad;
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-29-nbch/RAISA_DARKLOGO.png) rgb(20, 20, 20);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.classification_memo {
+    border: solid 4px #edf5f3;
+    color: #edf5f3;
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-31-9ty4/CLASSIFICATION_DARKLOGO.png) rgb(20, 20, 20);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.ettra_memo {
+    border: solid 4px #f5d7d7;
+    color: #f5d7d7;
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-33-pn6y/ETTRA_DARKLOGO.png) rgb(20, 20, 20);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.ethics_memo {
+    border: solid 4px #ffdbc4;
+    color: #ffdbc4;
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-35-ok8s/ETHICS_DARKLOGO.png) rgb(20, 20, 20);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.temporal_memo {
+    border: solid 4px #ffffff;
+    color: #ffffff;
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-37-ekpw/DELTA_T_DARKLOGO.png) rgb(20, 20, 20);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.overwatch_memo {
+    border: solid 4px #e3e3e3;
+    color: #e3e3e3;
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-39-ir7w/O5_DARKLOGO.png) rgb(20, 20, 20);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.miscomm_memo {
+    border: solid 4px #eeedfa;
+    color: #eeedfa;
+    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-41-38gu/MISCOMM_DARKLOGO.png) rgb(20, 20, 20);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.table1 .scp-image-block img,
+.table1 .scp-image-block .scp-image-caption {
+    outline: solid 1px rgb(var(--one-color));
+    background-color: rgb(10, 10, 10);
+    color: #ffffff;
+}
+
+.table2 .scp-image-block img,
+.table2 .scp-image-block .scp-image-caption {
+    outline: solid 1px rgb(var(--two-color));
+    background-color: rgb(10, 10, 10);
+    color: #ffffff;
+}
+
+.table3 .scp-image-block img,
+.table3 .scp-image-block .scp-image-caption {
+    outline: solid 1px rgb(var(--three-color));
+    background-color: rgb(10, 10, 10);
+    color: #ffffff;
+}
+
+.table4 .scp-image-block img,
+.table4 .scp-image-block .scp-image-caption {
+    outline: solid 1px rgb(var(--four-color));
+    background-color: rgb(10, 10, 10);
+    color: #ffffff;
+}
+
+.table5 .scp-image-block img,
+.table5 .scp-image-block .scp-image-caption {
+    outline: solid 1px rgb(var(--five-color));
+    background-color: rgb(10, 10, 10);
+    color: #ffffff;
+}
+
+.table6 .scp-image-block img,
+.table6 .scp-image-block .scp-image-caption {
+    outline: solid 1px rgba(146, 0, 255, 0.2);
+    background-color: rgb(10, 10, 10);
+    color: #ffffff;
+}
+
+del,
+.inline-diff del {
+    background-color: #711616;
+}
+
+ins,
+.inline-diff ins {
+    background-color: #1a4e14;
+}
+
+/* LOCALIZATION FOR JP */
+#page-content .creditRate.creditModule .rate-box-with-credit-button {
+    border: none 0;
+    box-shadow: none;
+}
+#page-content div.page-rate-widget-box,
+#action-area div.page-rate-widget-box {
+    background: #0C0C0C;
+}
+#page-content .creditRate .page-rate-widget-box {
+    box-shadow: none;
+}
+#page-content .creditRate.creditModule .page-rate-widget-box,
+#action-area .page-rate-widget-box {
+    box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 70%);
+}
+#page-content .page-rate-widget-box .cancel a,
+#action-area .page-rate-widget-box .cancel a {
+    color: #CECECE;
+}
+#page-content .page-rate-widget-box .cancel a:hover,
+#action-area .page-rate-widget-box .cancel a:hover {
+    color: #ffffff;
+}
+#page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton {
+    background: #0C0C0C;
+    box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 70%);
+}
+
+#page-content .modalbox {
+    background: #0C0C0C;
+    box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 70%);
+}
+#page-content .modalbox .modalbox-title {
+    background: #3D3D3D;
+}
+#page-content .modalbox .credit-license a.cc {
+    color: #999999;
+}
+
+#side-bar .side-block .menu-item .sub-text {
+    color: #999;
+}
+#side-bar img,
+iframe.scpnet-interwiki-frame {
+    filter: none;
+    -webkit-filter: none;
+}
+#side-bar img:not([src*="twitter" i]):not([src*="discord" i]) {
+    filter: grayscale(100%) saturate(0%) invert(100%);
+    -webkit-filter: grayscale(100%) saturate(0%) invert(100%);
+}
+#side-bar .side-block .collapsible-block-folded a.collapsible-block-link {
+    filter: invert(1);
+}
+#side-bar .side-block .collapsible-block-unfolded-link a.collapsible-block-link:hover {
+    color: #CECECE;
+}
+
+#owindow-1>div.title {
+    background: rgb(6, 6, 6);
+}
+
+#page-version-info {
+    border-style: solid;
+    background: #eaeeef;
+}
+.preview-message {
+    background-color: #F8F8F8;
+    border: solid 1px #F8F8F8;
+    box-shadow: 0 0 8px 4px rgb(0 0 0 / 70%);
+    color: #000000;
+}
+.preview-message a {
+    color: #0645AD;
+}

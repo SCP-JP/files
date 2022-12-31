@@ -1,0 +1,5 @@
+title: クレジットモーダル用バッジ
+author: Mishary
+created_at: 2021-08-01 09:02:11+00:00
+source: http://scp-jp.wikidot.com/component:credit-modal-badge
+license: Need to Fix!

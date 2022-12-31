@@ -1,0 +1,103 @@
+@import url('http://scp-jp.wdfiles.com/local--files/component:theme/font-bauhaus.css');
+@import url(https://indestructibletype-fonthosting.github.io/renner.css);
+
+.class1 .base:nth-of-type(1) {
+  display: none;
+}
+.class1 .base:nth-of-type(2) {
+  display: inline;
+}
+
+.class1 .CN:nth-of-type(1) {
+  display: inline;
+}
+.class1 .CN:nth-of-type(2) {
+  display: none;
+}
+
+.class1 .false:nth-of-type(1) {
+  display: none!important;
+}
+.class1 .false:nth-of-type(2) {
+  display: inline!important;
+}
+
+
+.class1 {
+    white-space: nowrap;
+    width: auto;
+}
+
+.class1 h1 {
+    color: #333;
+    font-family: BauhausLTDemi, Arial, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 240%;
+    margin-top: 0.55em;
+}
+
+.class1image img {
+    width:230px;
+    height: auto;
+    max-width: initial;
+}
+
+.item1 {
+    white-space: nowrap;
+    text-align: right;
+}
+
+.item1 h1 {
+    color: #333;
+    font-family: 'renner', Arial, "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size: 160%;
+    font-weight: normal;
+    transform: scale(0.9, 1);
+}
+
+.PL h1 > span {
+    font-size: 75%;
+}
+.ES h1 > span {
+    font-size: 85%;
+}
+
+.scale tr {
+    line-height: 10px;
+}
+
+.scale {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    max-width: 100% !important;
+}
+
+@media (max-width: 766px) {
+.class1 h1 {
+    font-size: 3.8vw;
+    font-weight: bold!important;
+}
+.class1image img {
+    width:33vw;
+    height: auto;
+}
+.item1 h1 {
+    font-size: 2.2vw;
+}
+}
+@media (min-width: 767px) and (max-width: 960px) {
+.class1 h1 {
+    font-size: 2.5vw;
+    font-weight: bold!important;
+}
+.class1image img {
+    width:17.5vw;
+    height: auto;
+}
+.item1 h1 {
+    font-size: 1.4vw;
+}
+}
+
+

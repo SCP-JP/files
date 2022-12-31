@@ -1,0 +1,5 @@
+title: The greatest alley CSS theme
+author: Dr_rrrr_2919
+created_at: 2022-05-07 10:40:20+00:00
+source: http://scp-jp.wikidot.com/theme:the-greatest-alley
+license: Need to Fix!

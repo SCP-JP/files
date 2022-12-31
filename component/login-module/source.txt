@@ -1,0 +1,12 @@
+[[include :scp-jp:component:login-module-base
+|title={$title}
+|title=SCiPNET LOGIN
+|id={$id}
+|pw={$pw}
+|disc={$disc}
+|disc=false
+|url={$url}
+|url=btn-false
+|value={$value}
+|value=ログイン
+]]

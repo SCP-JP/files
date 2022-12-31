@@ -1,0 +1,669 @@
+[[iftags +テーマ]]
+
+[[module css]]
+#header {
+    background-image: url(http://scp-jp.wikidot.com/local--files/theme:memoria/TitleLogo.png)
+}
+
+#side-bar:hover, #side-bar:active {
+background:
+linear-gradient(
+    rgba(var(--swatch-menubg-color),1) 30%,
+    rgba(var(--swatch-menubg-color),0)),
+linear-gradient(
+    rgba(var(--swatch-menubg-color),0),
+    rgba(var(--swatch-menubg-color),1) 70%) 0 100%,
+radial-gradient(farthest-side at 50% 0,
+    rgba(var(--swatch-primary-darkest),.5),
+    rgba(var(--black-monochrome),0)),
+radial-gradient(farthest-side at 50% 100%,
+    rgba(var(--swatch-primary-darkest),.5),
+    rgba(var(--black-monochrome),0)) 0 100%;
+}
+#side-bar {
+background:
+linear-gradient(
+    rgba(var(--swatch-menubg-color),0) 30%,
+    rgba(var(--swatch-menubg-color),0)),
+linear-gradient(
+    rgba(var(--swatch-menubg-color),0),
+    rgba(var(--swatch-menubg-color),0) 70%) 0 100%,
+radial-gradient(farthest-side at 50% 0,
+    rgba(var(--swatch-primary-darkest),0),
+    rgba(var(--black-monochrome),0)),
+radial-gradient(farthest-side at 50% 100%,
+    rgba(var(--swatch-primary-darkest),0),
+    rgba(var(--black-monochrome),0)) 0 100%;
+}
+
+#page-title{display:none}
+
+@supports(--css:variables) {
+
+    :root {
+     --header-title: "追憶のアディトゥム";
+     --header-subtitle: "カルマクタマの残響。";
+     --header-font: 'Sawarabi Mincho';
+     --background-gradient-distance:60rem; !important
+    }
+}
+
+
+    @supports (background-blend-mode: screen) {
+    
+     #extrac-div-1 {
+     width: 100%;
+     height: var(--header-height-on-desktop);
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-image: var(--gradient-header), url(http://scp-jp.wikidot.com/local--files/theme:memoria/background.jpg);
+     background-size: var(--header-background-image-size) 100%, 100%, 100%;
+     background-blend-mode: normal;
+     pointer-events: none;
+     }
+
+     div#extra-div-1 {
+     width: 100%;
+     height: calc(100% - var(--final-header-height-on-desktop));
+     position: absolute;
+     top: calc(var(--final-header-height-on-desktop));
+     left: 0;
+     z-index: -1;
+     background-color: rgba(222, 222, 222, 1);
+     background-color: rgba(var(--swatch-background), 1);
+     mask: var(--gradient-background);
+     -webkit-mask: var(--gradient-background);
+     background-image: url(http://scp-jp.wikidot.com/local--files/theme:memoria/background.jpg), var(--gradient-background);
+     background-size: 100%, 80% var(--background-gradient-distance);
+     background-blend-mode: difference;
+     background-repeat: no-repeat, repeat-x;
+     pointer-events: none;
+     }
+
+    }
+
+.type1 {
+    display: block;
+    overflow: hidden;
+    font-family: 'Sawarabi Mincho';
+    font-style: normal;
+    font-size: 110%;
+    color: rgb(57, 0, 0);
+
+    background-attachment: scroll;
+    background: url(http://scp-jp.wikidot.com/--files/theme:memoria/textback.jpg);
+
+    background-clip: border-box;
+    background-color: rgb(222, 222, 222);
+    background-origin: padding-box;
+    background-repeat: repeat;
+    background-size: 100%;
+
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2)
+    }
+
+.textbox {
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    background-color: rgb(var(--white-monochrome));
+}
+
+.scp-image-block.block-right {
+    padding: 1em !important;
+    background: var(--gradient-header);
+}
+
+.scp-image-block img {
+    padding-bottom: 1em;
+}
+
+.status {
+    font-family: var(--title-font);
+    font-weight: 900;
+    font-size: 200%;
+    display: flex:
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.status span.active {
+    color: rgb(var(--white-monochrome));
+    -webkit-box-shadow:
+        inset 100vw 0 0 0 rgb(var(--rating-module-button-plus-color)),
+        0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+        -0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+        -0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+        0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color));
+        -moz-box-shadow:
+            inset 100vw 0 0 0 rgb(var(--rating-module-button-plus-color)),
+            0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+            -0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+            -0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+            0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color));
+                box-shadow:
+                    inset 100vw 0 0 0 rgb(var(--rating-module-button-plus-color)),
+                    0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+                    -0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+                    -0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+                    0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color));
+}
+
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[=]]
+[[div style="float:center; width:400px; background-color:#cccccc; border: 3px solid #000000; border-radius: 10px; margin: auto"]]
+[[=]]
+[[span style="font-family: 'Sawarabi Mincho'; color: #390000;font-size: 450%;"]]**ちょっと待った**[[/span]]
+
+ここはSCP Wikiで使われているテンプレートページです。
+
+**このページに許可なしに触れないでください**
+[[/=]]
+[[/div]]
+[[/=]]
+@@ @@
+@@ @@
+[[div class="textbox"]]
++ 使い方
+
+どのwikiでも:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:component:collapsible-sidebar]]@@
+@@[[include :scp-jp:theme:memoria]]@@
+[[/div]]
+
+背景のグラジエントの上に白いテキストボックスを配置する場合には:
+[[div class="code"]]
+@@[[div class="textbox"]]@@
+文章やコードをここに通常通り書いてください。
+@@[[/div]]@@
+[[/div]]
+
+ソロモナリの「聖書」を書くには:
+[[div class="code"]]
+@@[[div class="type1"]]@@
+パラグラフを区切るには"@@@@@@ @@@@@@"の記号を挿入してください。
+@@[[>]]@@
+@@[[span style="font-family:var(--body-font); font-size: calc(var(--base-font-size) * 1.00); color: #000000;"]]- //これが「出典」です。//[[/span]]@@
+@@[[/>]]@@
+@@[[/div]]@@
+[[/div]]
+
+[[div class="type1"]]
+^^7^^そして何日かの間、聖書がどのように見えるかを説明する呼び声はあまねく地に行き渡った。^^8^^その時、預言者は前に立ち、職人の言葉を伝えた。^^9^^「見よ、まさに今、私は汝らに言う。私の言葉を見て、これらの言葉が汝らにどのような目的を示したのかを見なさい。」
+[[>]]
+[[span style="font-family:var(--body-font); font-size: calc(var(--base-font-size) * 1.00); color: #000000;"]]- //出典の書、1:7-9; ソロモナリ・ヴァルカザロン//[[/span]]
+[[/>]]
+[[/div]]
+
++ これは何ですか:
+
+> このテーマは[[*user MalyceGraves]]により、[*http://scp-jp.wikidot.com/memoria-adytum 追憶のアディトゥム]のカノンで書かれるSCP記事やtaleで使われるために開発されました。
+>
+> これはCC BY-SA 3.0ライセンスが付与されています。
+
+
+++ さらに
+これはBlack HighlighterとBHL Collapsible Sidebarを利用したテーマです。あなたはこのテーマに加えて、Black Highlighterテーマをインポートしなくてはなりません。[http://scp-jp.wikidot.com//theme:black-highlighter 詳しくはこちらを参照してください。]
+
+-----
+
+
+[[=]]
++ テーマの色
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=Payne's Grey
+| color1-variable=--gray-monochrome
+| color1-info=(66, 66, 72)
+| color1-has-light-text=1
+| color2-name=Rosewood
+| color2-variable=--bright-accent
+| color2-info=(133, 0, 5)
+| color2-has-light-text=1
+| subcolor1-name=Alto
+| subcolor1-variable=--very-light-gray-monochrome
+| subcolor1-info=(215, 215, 215)
+| subcolor2-name=White Smoke
+| subcolor2-variable=--pale-gray-monochrome
+| subcolor2-info=(244, 244, 244)
+| subcolor3-name=Bastille
+| subcolor3-variable=--dark-gray-monochrome
+| subcolor3-info=(48, 48, 52)
+| subcolor3-has-light-text=1
+| subcolor4-name=Buccaneer
+| subcolor4-variable=--medium-accent
+| subcolor4-info=(100, 46, 44)
+| subcolor4-has-light-text=1
+| subcolor5-name=Maroon
+| subcolor5-variable=--dark-accent
+| subcolor5-info=(100, 3, 15)
+| subcolor5-has-light-text=1
+| subcolor6-name=Mango Tango
+| subcolor6-variable=--newpage-color
+| subcolor6-info=(221, 102, 17)
+]]
+
++ 例
+
+[[include component:image-block name=http://scp-jp.wikidot.com/local--files/memoria-adytum/TitleLogo.png|caption=アディトゥムの紋章|width=200px]]
+
+横の区切り線はハイフン5つ（@@-----@@）で生成でき、何かの内部に配置されている（ブロッククウォートなど）のでない限り、ページ全体に渡ります。この文書を区切っているのが横区切り線です。
+
+-----
+
+行の最初に「+」を1から6個配置することにより、タイトルが生成できます。
+
+[[collapsible show="+ タイトル" hide="- タイトル"]]
++ タイトル1
+
+++ タイトル2
+
++++ タイトル3
+
+++++ タイトル4
+
++++++ タイトル5
+
+++++++ タイトル6
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブ1]]
+これがタブビューです。
+[[/tab]]
+[[tab タブ2]]
+更に文章を入れることができます。
+
+面白い演出になります。
+[[/tab]]
+[[tab 長いタブ]]
+長いタブです。たくさん文章が入ります。
+
+長いタブです。たくさん文章が入ります。
+
+長いタブです。たくさん文章が入ります。
+
+長いタブです。たくさん文章が入ります。
+
+長いタブです。たくさん文章が入ります。
+
+長いタブです。たくさん文章が入ります。
+
+長いタブです。たくさん文章が入ります。
+
+長いタブです。たくさん文章が入ります。
+
+長いタブです。たくさん文章が入ります。
+
+長いタブです。たくさん文章が入ります。
+
+長いタブです。たくさん文章が入ります。
+
+長いタブです。たくさん文章が入ります。
+[[/tab]]
+[[tab この空白のタブは何故か長い名前欄になっています。私にもわかりません。奇妙です。]]
+[[/tab]]
+[[tab 空白のタブ]]
+[[/tab]]
+[[tab 空白のタブ]]
+[[/tab]]
+[[tab 空白のタブ]]
+[[/tab]]
+[[tab 空白のタブ]]
+[[/tab]]
+[[tab 空白のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これがブロッククウォートです。"> "を行の最初に置くことで生成できます。
+>
+> 更に文章
+> -----
+> 横区切り線も入ります。
+>
+>> 入れ子構造のブロッククウォートです。
+
+||~ これが ||~ 表です ||
+|| 作り方は || すでにわかって ||
+|||| いるはずです ||
+
+[[=]]
+[[span style="font-family:var(--body-font); font-size: calc(var(--base-font-size) * 1.25);"]]本文フォントはFreight Sansです。[[/span]]
+[[span style="font-family:var(--header-font); font-size: calc(var(--base-font-size) * 1.25);"]]タイトルのフォントは[https://fonts.google.com/specimen/Sawarabi+Mincho Sawarabi Mincho]です。[[/span]]
+[[span style="font-family:var(--mono-font); font-size: calc(var(--base-font-size) * 1.25);"]]等幅フォントは[https://fonts.google.com/specimen/Space+Mono Space Mono]です。[[/span]]
+[[/=]]
+[[/div]]
+
+-----
+[[/iftags]]
+[[module css]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/black-highlighter.min.css");
+@import url("http://scp-jp.wikidot.com/local--code/component:collapsible-sidebar/1");
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Minchot&display=swap');
+
+/* JPサイドバー用ローカライズ */
+#side-bar div[style*="#a7dba2"] {
+    background-color: rgba(140, 20, 25, 0.25) !important;
+    background-color: rgba(var(--swatch-primary-darker), 0.25) !important;
+}
+#side-bar div.menu-item .sub-text {
+    align-items: center;
+    display: flex;
+    font-size: .6rem;
+    height: 100%;
+    padding: 0!important;
+    justify-content: center;
+    white-space: nowrap;
+    width: 75%;
+}
+#side-bar div.menu-item + hr {
+    display: none;
+}
+#side-bar div.menu-item > span[style="text-decoration: line-through;"] {
+    display: block;
+    padding: 0;
+    text-decoration: unset!important;/*for FireFox*/
+}
+#side-bar div.menu-item > span[style="text-decoration: line-through;"] a {
+    color: #aaa;
+    padding: 0 0 0 1em;
+    text-decoration: line-through;
+    transition: background-color 80ms cubic-bezier(.4,0,.2,1),  color 80ms cubic-bezier(.4,0,.2,1);
+}
+#side-bar div.menu-item > span[style="text-decoration: line-through;"] a:hover {
+    color: #333;
+}
+#side-bar div.menu-item > a {
+    display: inline-block;
+}
+
+#side-bar div.menu-item a[href*=scp-series] {
+    padding-right: 0;
+    text-align: left;
+}
+
+#side-bar div.menu-item>a:not(:first-of-type):not(:last-of-type),
+#side-bar div.menu-item>a:first-of-type:not(:last-of-type),
+#side-bar div.menu-item>a:last-of-type:not(:first-of-type) {
+    flex-grow: 1;
+    width: unset;
+}
+#side-bar div.menu-item>a:not(:first-of-type):not(:last-of-type):before,
+#side-bar div.menu-item>a:first-of-type:not(:last-of-type):before,
+#side-bar div.menu-item>a:last-of-type:not(:first-of-type):before {
+    width: 250%;
+}
+
+#side-bar div.menu-item a:before, #side-bar div.menu-item a:hover:before {
+    width: 160%;
+}
+#side-bar div.menu-item a:before {
+    -webkit-transform: translateX(-webkit-calc(-100% - 6rem));
+    -moz-transform: translateX(-moz-calc(-100% - 6rem));
+    -ms-transform: translateX(calc(-100% - 6rem));
+    -o-transform: translateX(calc(-100% - 6rem));
+    transform: translateX(calc(-100% - 6rem));
+}
+#side-bar div.menu-item a:hover:before {
+    -webkit-transform: translateX(-5rem);
+    -moz-transform: translateX(-5rem);
+    -ms-transform: translateX(-5rem);
+    -o-transform: translateX(-5rem);
+    transform: translateX(-5rem);
+}
+
+#side-bar div.scpnet-interwiki-wrapper {
+    margin: 0 0 var(--final-header-height-on-desktop);
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
+#side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+    background-color: transparent!important;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 10px 0;
+}
+#top-bar {
+    margin: var(--header-height-on-desktop) 0 0 0;
+}
+@media only screen and (max-width: 768px) {
+    #top-bar {
+     margin: calc(var(--header-height-on-mobile)) 0 1.75rem 0;
+    }
+}
+
+@media (max-width: 767px) {
+    #side-bar div.menu-item .sub-text {
+        font-size: .5rem;
+    }
+}
+/* Creditモジュール対応 by ukwhatn */
+#page-content .rate-box-with-credit-button .creditButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 21px;
+  background-color: unset;
+  border: unset;
+  border-radius: unset;
+  box-shadow: unset;
+  margin-left: 5px;
+}
+
+#page-content .creditRate .creditButton a {
+  width: 24px;
+  height: 21px;
+  line-height: 24px;
+  margin-left: 0;
+  color: black;
+  border-left: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#page-content .creditRate .rate-box-with-credit-button>.creditButton:hover {
+  background: rgba(50, 50, 50, .1);
+}
+
+#page-content .creditRate .creditButton a:hover {
+  color: black;
+}
+
+#page-content .creditRate .rate-box-with-credit-button>.creditButton:hover {
+  background: rgba(50, 50, 50, .1);
+}
+
+#page-content .creditRate div.page-rate-widget-box .rate-points,
+#u-credit-view div.page-rate-widget-box .rate-points {
+  font-family: var(--body-font);
+  font-weight: 700;
+  font-size: calc(var(--base-font-size)*0.93333*0.8);
+}
+
+#page-content .creditRate .page-rate-widget-box .rateup a,
+#page-content .creditRate .page-rate-widget-box .ratedown a,
+#page-content .page-rate-widget-box .cancel a,
+#u-credit-view .page-rate-widget-box .rateup a,
+#u-credit-view .page-rate-widget-box .ratedown a,
+#u-credit-view .page-rate-widget-box .cancel a {
+  display: block;
+  font-size: 0;
+  font-family: var(--body-font);
+  font-weight: 700;
+  padding: 0;
+  height: unset;
+  line-height: var(--rating-module-height);
+  box-sizing: unset;
+}
+
+#page-content .creditRate .page-rate-widget-box .cancel a:before,
+#page-content .creditRate .page-rate-widget-box .ratedown a:before,
+#page-content .creditRate .page-rate-widget-box .rateup a:before,
+#u-credit-view .page-rate-widget-box .cancel a:before,
+#u-credit-view .page-rate-widget-box .ratedown a:before,
+#u-credit-view .page-rate-widget-box .rateup a:before {
+  -webkit-mask-size: -webkit-calc(var(--rating-module-height)*0.8);
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: -moz-calc(var(--rating-module-height)*0.8);
+  mask-size: calc(var(--rating-module-height)*0.8);
+  background-color: #0c0c0c;
+  background-color: rgb(var(--rating-module-button-color));
+  width: 1.3125rem;
+  width: -webkit-calc(var(--base-font-size)*0.93333*1.5);
+  width: -moz-calc(var(--base-font-size)*0.93333*1.5);
+  width: calc(var(--base-font-size)*0.93333*1.5);
+  height: var(--rating-module-height);
+  pointer-events: none;
+  content: " ";
+}
+
+#page-content .creditRate .page-rate-widget-box .rateup a:before,
+#u-credit-view .page-rate-widget-box .rateup a:before {
+  -webkit-mask-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E);
+  mask-image: url(data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath d='M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E);
+}
+
+#header {
+    background-image: url(http://www.scp-wiki.net/local--files/theme:memoria/TitleLogo.png)
+}
+
+#page-title{display:none}
+
+@supports(--css:variables) {
+
+    :root {
+     --header-title: "追憶のアディトゥム";
+     --header-subtitle: "カルマクタマの残響。";
+     --header-font: 'Sawarabi Mincho';
+     --background-gradient-distance:75rem; !important
+    }
+}
+
+
+    @supports (background-blend-mode: screen) {
+    
+     #extrac-div-1 {
+     width: 100%;
+     height: var(--header-height-on-desktop);
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-image: var(--gradient-header), url(http://scp-jp.wikidot.com/local--files/theme:memoria/background.jpg);
+     background-size: var(--header-background-image-size) 100%, 100%, 100%;
+     background-blend-mode: normal;
+     pointer-events: none;
+     }
+
+     div#extra-div-1 {
+     width: 100%;
+     height: calc(100% - var(--final-header-height-on-desktop));
+     position: absolute;
+     top: calc(var(--final-header-height-on-desktop));
+     left: 0;
+     z-index: -1;
+     background-color: rgba(222, 222, 222, 1);
+     background-color: rgba(var(--swatch-background), 1);
+     mask: var(--gradient-background);
+     -webkit-mask: var(--gradient-background);
+     background-image: url(http://scp-jp.wikidot.com/local--files/theme:memoria/background.jpg), var(--gradient-background);
+     background-size: 100%, 80% var(--background-gradient-distance);
+     background-blend-mode: difference;
+     background-repeat: no-repeat, repeat-x;
+     pointer-events: none;
+     }
+
+    }
+
+.type1 {
+    display: block;
+    overflow: hidden;
+    font-family: 'Sawarabi Mincho';
+    font-style: normal;
+    font-size: 110%;
+    color: rgb(57, 0, 0);
+
+    background-attachment: scroll;
+    background: url(http://scp-jp.wikidot.com/local--files/theme:memoria/textback.jpg);
+
+    background-clip: border-box;
+    background-color: rgb(222, 222, 222);
+    background-origin: padding-box;
+    background-repeat: repeat;
+    background-size: 100%;
+
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2)
+    }
+
+.textbox {
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    background-color: rgb(var(--white-monochrome));
+}
+
+#side-bar:hover, #side-bar:active {
+background:
+linear-gradient(
+    rgba(var(--swatch-menubg-color),1) 30%,
+    rgba(var(--swatch-menubg-color),0)),
+linear-gradient(
+    rgba(var(--swatch-menubg-color),0),
+    rgba(var(--swatch-menubg-color),1) 70%) 0 100%,
+radial-gradient(farthest-side at 50% 0,
+    rgba(var(--swatch-primary-darkest),.5),
+    rgba(var(--black-monochrome),0)),
+radial-gradient(farthest-side at 50% 100%,
+    rgba(var(--swatch-primary-darkest),.5),
+    rgba(var(--black-monochrome),0)) 0 100%;
+}
+#side-bar {
+background:
+linear-gradient(
+    rgba(var(--swatch-menubg-color),0) 30%,
+    rgba(var(--swatch-menubg-color),0)),
+linear-gradient(
+    rgba(var(--swatch-menubg-color),0),
+    rgba(var(--swatch-menubg-color),0) 70%) 0 100%,
+radial-gradient(farthest-side at 50% 0,
+    rgba(var(--swatch-primary-darkest),0),
+    rgba(var(--black-monochrome),0)),
+radial-gradient(farthest-side at 50% 100%,
+    rgba(var(--swatch-primary-darkest),0),
+    rgba(var(--black-monochrome),0)) 0 100%;
+}
+
+[[/module]]
