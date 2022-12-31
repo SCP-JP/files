@@ -1,0 +1,115 @@
+[[module CSS]]
+@import url(/theme:plugsoft-theme/code/1);
+[[/module]]
+
+[[iftags +テーマ]]
+>翻訳を更新する際の注意
+>マニュアルとコードの両方をiftagsの中に置くようにしてください。
+>元記事のrev.12時点ではマニュアルのみがiftagsの中にありますが、{{[[include]]}}構文での使用のため、コードをiftagsの中に入れたままにしてください。
+
+[[code type="css"]]
+/*
+    Powered on 2019/07/18 00:18:31
+    [2019 Wikidot Theme]
+    Created by Nareum
+    CC BY-SA 3.0
+*/
+ 
+body {
+    background: #ecfaf6;
+    color: #000000;
+}
+a,a:visited {
+    color: #7f928d;
+}
+div#header h1 a span {
+    font-size: 0px;
+}
+div#header h1 a:before {
+    content: "プラグソフト";
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #000000;
+}
+div#header h2 span {
+    font-size:0px;
+    padding: 4px;
+}
+div#header h2:after {
+    content: "宇宙で唯一の楽しみ";
+    font-weight: bold;
+    color: #ffffff;
+    padding: 19px 0;
+    text-shadow: 1px 1px 1px #000000;
+    white-space: pre;
+}
+div#side-bar div.side-block {
+    background: #cdf1e6;
+    border: 1px solid #333333;
+}
+div.yui-navset div.yui-content {
+    background: #c1e5da;
+}
+div.page-rate-widget-box,
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel {
+    background-color: #cbcecd!important;
+    border: solid #cbcecd 1px!important;
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+    border: solid #cbcecd!important;
+    border-width: 1px 0!important;
+}
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel a,
+div.page-rate-widget-box span.cancel a:hover {
+    color: #0000000;
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+    background-color: #dfe0e0!important;
+}
+div.page-rate-widget-box span.rateup a,
+div.page-rate-widget-box span.ratedown a {
+    color: #0000000!important;
+}
+div.page-rate-widget-box span.cancel a:hover,
+div.page-rate-widget-box span.rateup a:hover,
+div.page-rate-widget-box span.ratedown a:hover {
+    background: transparent!important;
+    color: transparent!important;
+}
+div.open-menu a {
+    color: #888888!important;
+    border-color: #888888!important;
+}
+div#header {
+    background: url(/local--files/theme:plugsoft-theme/PlugSoft.png) no-repeat;
+    background-position: -5px 30px;
+}
+div#container-wrap {
+    background: url(/local--files/theme:plugsoft-theme/222.png) top left repeat-x;
+}
+blockquote {
+    border: 1px dashed #999;
+    background: #e3f0ed
+}
+h1 {
+    color: #596e72;
+}
+div#page-title {
+    color: rgb(89, 110, 114);
+}
+
+/* for SCP-JP Credit Module */
+#page-content .rate-box-with-credit-button .creditButton {
+    background-color: #dfe0e0;
+    border: 1px solid #dfe0e0;
+}
+
+#page-content .rate-box-with-credit-button .creditButton:hover {
+    background-color: #dbdbdb;
+    border: 1px solid #dbdbdb;
+}
+[[/code]]
+[[/iftags]]

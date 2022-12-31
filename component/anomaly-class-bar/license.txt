@@ -1,0 +1,5 @@
+title: アノマリー分類バー
+author: YS_GPCR
+created_at: 2019-10-11 13:32:41+00:00
+source: http://scp-jp.wikidot.com/component:anomaly-class-bar
+license: Need to Fix!

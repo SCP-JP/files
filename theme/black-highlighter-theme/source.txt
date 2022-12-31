@@ -1,0 +1,233 @@
+[[module CSS]]
+/*
+For localization, please edit the link below.
+http://scp-jp.wikidot.com/fragment:black-highlighter-theme-source
+*/
+@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/1");
+@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/2");
+@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/3");
+[[/module]]
+[[iftags +テーマ -nobhl]]
+[[module css]]
+.scp-image-block.block-right {
+    padding: 1em !important;
+    background: var(--gradient-header);
+}
+
+.scp-image-block img {
+    padding-bottom: 1em;
+}
+
+.status {
+    font-family: var(--title-font);
+    font-weight: 900;
+    font-size: 200%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+}
+
+.status span.active {
+    color: rgb(var(--white-monochrome));
+    margin-left: 0.5rem;
+    -webkit-box-shadow:
+        inset 100vw 0 0 0 rgb(var(--rating-module-button-plus-color)),
+        0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+        -0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+        -0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+        0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color));
+        -moz-box-shadow:
+            inset 100vw 0 0 0 rgb(var(--rating-module-button-plus-color)),
+            0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+            -0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+            -0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+            0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color));
+                box-shadow:
+                    inset 100vw 0 0 0 rgb(var(--rating-module-button-plus-color)),
+                    0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+                    -0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+                    -0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+                    0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color));
+}
+[[/module]]
+[[>]]
+[[module Rate]]
+[[/>]]
+[[image http://scp-jp.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+
+[[=]]
+[[div_ class="status"]]
+本コンポーネントは現在[[span class="active"]]有効[[/span]]です
+[[/div]]
+[[/=]]
+ _
+[[div style="border: 1px solid #ddd; padding: 1em; text-align: center;"]]
+
++ 使い方
+
+SCP-JP関連Wikiの場合:
+
+[[div class="code" style="text-align: center;"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+[[/div]]
+
+[[/div]]
+
+
+
++ これは何？
+
+[http://scptestwiki.wikidot.com/ Black Highlighter]テーマをあなたの記事に適用するためのコンポーネントです。
+
+本コンポーネントは安定版Black Highlighterテーマを適用しますが、アップデートの際に表示が崩れる場合があります。
+
+
++ 問題の報告
+
+Githubアカウントを持っているなら、 [https://github.com/Nu-SCPTheme/Black-Highlighter/issues ここで]「[[span class="ruby"]]Issue[[span class="rt"]]問題[[/span]][[/span]]」を作成し、その（美的・技術的あるいはなんでも）問題を詳述してください。
+
+Githubアカウントを持っていないなら、もしくは誰かと直接議論したいならば、SkipIRCの{{#black-highlighter}}チャンネルに参加するか、あるいは[[*user Woedenaz]]か[[*user Croquembouche]]にPMを送ってください。
+
+-----
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=Payne's Grey
+| color1-variable=--gray-monochrome
+| color1-info=(66, 66, 72)
+| color1-has-light-text=1
+| color2-name=Rosewood
+| color2-variable=--bright-accent
+| color2-info=(133, 0, 5)
+| color2-has-light-text=1
+| subcolor1-name=Alto
+| subcolor1-variable=--very-light-gray-monochrome
+| subcolor1-info=(215, 215, 215)
+| subcolor2-name=White Smoke
+| subcolor2-variable=--pale-gray-monochrome
+| subcolor2-info=(244, 244, 244)
+| subcolor3-name=Bastille
+| subcolor3-variable=--dark-gray-monochrome
+| subcolor3-info=(48, 48, 52)
+| subcolor3-has-light-text=1
+| subcolor4-name=Buccaneer
+| subcolor4-variable=--medium-accent
+| subcolor4-info=(100, 46, 44)
+| subcolor4-has-light-text=1
+| subcolor5-name=Maroon
+| subcolor5-variable=--dark-accent
+| subcolor5-info=(100, 3, 15)
+| subcolor5-has-light-text=1
+| subcolor6-name=Mango Tango
+| subcolor6-variable=--newpage-color
+| subcolor6-info=(221, 102, 17)
+]]
+
++ 例
+
+[[include component:image-block name=http://scp-jp.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/logo.svg|caption=SCP財団ロゴ|width=200px]]
+
+分割線は5個のハイフン（@@-----@@）で作ることができ、何かの中でない限り（例えば引用ブロック）ページ全体に展開されます。この文章を区切る線が分割線です。
+
+-----
+
+見出しは行の先頭に1から6個のプラス（+）を置くことで作れます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 1番目の見出し
+
+++ 2番目の見出し
+
++++ 3番目の見出し
+
+++++ 4番目の見出し
+
++++++ 5番目の見出し
+
+++++++ 6番目の見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab Tabulator]]
+これはタブです。
+[[/tab]]
+[[tab Tabulation]]
+おや見てください、ここにも文章が。
+
+奇妙なり。
+[[/tab]]
+[[tab Long Tab]]
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+[[/tab]]
+[[tab この空のタブには何故か非常に長い名前が付いています。何故でしょうか？とても奇妙ですね。]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に大なり記号と半角スペース（> ）を置くことで作れます。
+> 
+> 追加の文章
+> -----
+> 分割線
+> 
+>> 入れ子になった引用ブロック
+
+||~ これは ||~ テーブルです ||
+||もう既に || 作り方は ||
+||||知っていますね ||
+
+[[=]]
+[[span style="font-family:var(--body-font); font-size: calc(var(--base-font-size) * 1.25);"]]bodyフォントは[https://fonts.google.com/specimen/Raleway Raleway][[size 80%]](訳注: 日本語版ではVerdana)[[/size]]。[[/span]]
+[[span style="font-family:var(--header-font); font-weight: 800; font-size: calc(var(--base-font-size) * 1.25);"]]ヘッダーとタイトルのフォントは[https://fonts.google.com/specimen/Poppins Poppins]。[[/span]]
+[[span style="font-family:var(--mono-font); font-size: calc(var(--base-font-size) * 1.25);"]]等幅フォントは[https://www.recursive.design/ Recursive]。[[/span]]
+[[/=]]
+
+-----
+[[/iftags]]

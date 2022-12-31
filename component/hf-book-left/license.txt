@@ -1,0 +1,5 @@
+title: ハーマン・フラーの本　左
+author: C-take
+created_at: 2018-02-20 11:43:12+00:00
+source: http://scp-jp.wikidot.com/component:hf-book-left
+license: Need to Fix!

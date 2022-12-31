@@ -1,0 +1,8 @@
+[[div class="content-panel"]]
+[[div class="contentpanelheading"]]
+[[[{$URL}|{$NAME}]]]
+[[/div]]
+[[div class="contentpanelcontent"]]
+[[span class="unmargined"]]{$ID}[[/span]]
+----
+[[=]]

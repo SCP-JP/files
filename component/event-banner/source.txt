@@ -1,0 +1,92 @@
+[[iftags +トップ掲載]]
+
++ スタッフ各位
+
+本ページを編集することで、メインWikiおよびサンドボックスⅢトップページのイベントバナーが変化します。
+一般メンバーの権限では編集できないため、イベント常任委員はスタッフ兼任の委員に編集を依頼してください。
+----
+[[/iftags]]
+
+[[module CSS]]
+.full-link {
+    position: relative;
+}
+
+.full-link a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+
+@media (min-width: 850px) and (max-width: 979px){
+#page-content .content-panel.centered.standalone.month {
+    font-size: 11px;
+}
+}
+@media (min-width: 768px) and (max-width: 850px){
+#page-content .content-panel.centered.standalone.month {
+    font-size: 10px;
+}
+}
+@media (min-width: 580px) and (max-width: 660px){
+#page-content .content-panel.centered.standalone.month {
+    font-size: 11px;
+}
+}
+@media (max-width: 580px){
+#page-content .content-panel.centered.standalone.month {
+    font-size: 10px;
+}
+}
+[[/module]]
+
+[!-- 3000jp特設ｺｺｶﾗ --]
+[[div class="content-panel centered standalone important-news" style="background: hsl(0deg, 39%, 9%);padding: 5px;"]]
+
+[[=image https://scp-jp-storage.wdfiles.com/local--files/file%3A7662975-91-qolx/3000JP_Kota-2_2_4_1 link="http://scp-jp.wikidot.com/scp3000jp-contest-hub"]]
+
+[[=]]
+++* ###e2d9d9|**本戦投票期間 2022/12/03 ~ 2023/01/09**##
+[[/=]]
+[[/div]]
+[!-- 3000jp特設ｺｺﾏﾃﾞ --]
+
+[!-- 強化月間ｺｺｶﾗ --]
+[[div class="content-panel centered standalone full-link month" style="display: flex;border: unset;"]]
+[[table style="width: 50%;background-color: #ff708f;box-shadow: 0 2px 6px rgb(0 0 0 / 50%), inset 0 1px rgb(255 255 255 / 30%), inset 0 10px rgb(255 255 255 / 20%), inset 0 10px 20px rgb(255 255 255 / 25%), inset 0 -15px 30px rgb(0 0 0 / 10%);border: solid 1px #888880;border-radius: 10px 0px 0px 10px;"]]
+[[row]]
+[[hcell style="padding: 10px 5px 10px 10px;"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3669025-1-z34t/K style="height: 80px;"]]
+[[/hcell]]
+[[hcell style="padding: 10px 5px 10px 5px;"]]
+令和四年十二月・令和五年一月は
+ 
+**[[size 1.5em]]「k-クラスシナリオ」[[/size]]**
+ 
+翻訳強化月間です！
+[[/hcell]]
+[[/row]]
+[[/table]]
+
+[[table style="width: 50%;background-color: #ECF7F9;box-shadow: 0 2px 6px rgb(0 0 0 / 50%), inset 0 1px rgb(255 255 255 / 30%), inset 0 10px rgb(255 255 255 / 20%), inset 0 10px 20px rgb(255 255 255 / 25%), inset 0 -15px 30px rgb(0 0 0 / 10%);border: solid 1px #888880;border-radius: 0px 10px 10px 0px;"]]
+[[row]]
+[[hcell style="padding: 10px 5px 10px 10px;"]]
+[[image http://scp-jp-storage.wikidot.com/local--files/file:4053112-95-pef6/snowflake-153108.svg style="height: 80px;"]]
+[[/hcell]]
+[[hcell style="padding: 10px 5px 10px 5px;"]]
+令和四年十一・十二月は
+ 
+**[[size 1.5em]]「氷我記」[[/size]]**
+ 
+執筆強化月間です！
+[[/hcell]]
+[[/row]]
+[[/table]]
+
+[[a href="http://scp-jp.wikidot.com/awareness-month"]][[/a]]
+[[/div]]
+[!-- 強化月間ｺｺﾏﾃﾞ --]
+
+[[include :scp-jp:component:jstyles]]

@@ -1,0 +1,184 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap);
+
+/* Centered Header Sigma-9
+ * [2021 Wikidot Component]
+ * By Lt Flops (CC BY-SA 3.0)
+ * Forked from:
+   * Penumbra Theme by EstrellaYoshte
+ * Also based on:
+   * Centered Header BHL by Woedenaz
+**/
+
+/* ---- VARS ---- */
+ :root{
+     --titleColor: hsl(0, 0%, 95%);
+     --subtitleColor: hsl(60, 62%, 85%);
+     --lgurl: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7522555-167-g69b/logo.svg");
+}
+
+/* ---- SITE BANNER ---- */
+ #header,
+ div#header{
+     background-image: none;
+}
+
+ #header::before{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     content: "";
+
+     background-image: var(--lgurl);
+     background-position: center top;
+     background-repeat: no-repeat;
+     background-size: auto 10.55em;
+     opacity: .33;
+}
+
+ #header h1,
+ #header h2{
+     float: none;
+     margin-left: 0;
+
+     text-align: center;
+}
+
+ #header h1 span,
+ #header h2 span{
+   /* Hide the Existing Text */
+     display: none;
+}
+
+ #header h1 a::before,
+ #header h2::before{
+   /* Style the New Text */
+     font-family: "Montserrat", "Arial", sans-serif;
+     text-shadow: none;
+}
+
+ #header h1 a::before{
+     position: relative;
+     bottom: .15em;
+
+     color: var(--titleColor);
+
+     font-size: 115%;
+     font-weight: 700;
+}
+
+ #header h2::before{
+     position: relative;
+     top: .1em;
+
+     color: var(--subtitleColor);
+
+     font-size: 130%;
+     font-weight: 600;
+}
+
+ #header h1 a::before{
+   /* Set the New Text's Content From Variable */
+     content: var(--header-title, "SCP財団");
+}
+
+ #header h2::before{
+     content: var(--header-subtitle, "確保 - 収容 - 保護");
+}
+
+/* ---- SEARCH ---- */
+ #search-top-box{
+     top: 1em;
+     right: 0;
+}
+
+ #search-top-box-form input.button{
+     margin-right: 0;
+}
+
+ #search-top-box-input,
+ #search-top-box-input:hover,
+ #search-top-box-input:focus,
+ #search-top-box-form input[type=submit],
+ #search-top-box-form input[type=submit]:hover,
+ #search-top-box-form input[type=submit]:focus{
+     border-radius: 0;
+     box-shadow: none;
+
+     font-size: 100%;
+}
+
+/* ---- TOP BAR ---- */
+ #top-bar{
+     right: 0;
+     display: flex;
+     justify-content: center;
+}
+
+ #top-bar ul li ul{
+     border-bottom: 1px solid hsl(0, 0%, 40%);
+     box-shadow: none;
+}
+
+/* ---- LOGIN ---- */
+ #login-status{
+     top: 1.1em;
+     right: initial;
+
+     color: hsl(0, 0%, 87%);
+}
+
+ #account-topbutton{
+     border-color: hsl(0, 0%, 87%);
+
+     font-size: 100%;
+}
+
+/* ---- PAGE TITLE ---- */
+ .meta-title,
+ #page-title{
+     text-align: center;
+}
+
+/* ---- BREADCRUMBS ---- */
+ .pseudocrumbs,
+ #breadcrumbs{
+     text-align: center;
+}
+
+/* ---- MOBILE DISPLAY ---- */
+ @media (max-width: 767px){
+     #search-top-box{
+          top: 1.85em;
+          width: unset;
+    }
+
+     .mobile-top-bar{
+          position: relative;
+          left: 0;
+          display: flex;
+          justify-content: center;
+    }
+
+     #login-status{
+          top: 0;
+          right: 0;
+    }
+
+     #header .printuser{
+          font-size: 0;
+    }
+
+     #header .printuser img.small{
+          margin: 0;
+
+          transform: translate(6px, 4px);
+    }
+
+     #my-account{
+          display: none;
+    }
+
+     #account-topbutton{
+          margin-left: 2px;
+    }
+}

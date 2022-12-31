@@ -1,0 +1,336 @@
+.w-container {
+  padding: 14px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  border: 1px #bbbbbb solid;
+  box-shadow: 1px 2px 2px 0 rgba(0,0,0,0.16);
+  box-sizing: border-box;
+}
+.cell-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  font-size: small;
+  margin-bottom: -8px;
+  margin-top: -8px;
+  padding: 0px;
+}
+.cell-container-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  font-size: small;
+  margin-bottom: -8px;
+  margin-top: -8px;
+  padding: 0px;
+  background-size: var(--aim-cc-siz), var(--aim-lv-siz);
+  background-repeat: no-repeat;
+  background-position: 50%,50%;
+  background-image: var(--aim-cc-image), var(--aim-lv-image);
+}
+.s-cell {
+  width: 50%;
+  font-size: 15px;
+  margin-top: -0.4rem;
+  margin-bottom: -0.8rem;
+}
+@media (max-width: 350px) {
+.cell-container-image {
+   font-size: 12px;
+}
+.s-cell{
+   font-size: 12px;
+}
+}
+.w-cell {
+  flex-grow: 2;
+  max-width: 50%;
+  text-align: center;
+  font-size: 0.66rem;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  margin-top: -1px;
+  margin-left: -1px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+.w-cell > hr {
+  margin: -2px;
+  margin-top: -0.6em;
+  background-color: #ccc;
+}
+.b-cell {
+    position: relative;
+    padding: 0.5em;
+    margin: 0.5em;
+    overflow-wrap: break-word;
+    color: black;
+}
+
+/*====================================================================================*/
+/*DESKTOP IMAGES*/
+/* CC images */
+
+.cell-container-image.cc-SAFE {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-111-q7cn/ccSAFE.png");
+   --aim-cc-siz: contain;
+}
+.cell-container-image.cc-EUCLID {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-97-klh2/ccEUCLID.png");
+   --aim-cc-siz: contain;
+}
+.cell-container-image.cc-KETER {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-99-dwx4/ccKETER.png");
+   --aim-cc-siz: contain;
+}
+.cell-container-image.cc-NEUTRALIZED {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-110-xzjc/ccNEUTRALIZED.png");
+   --aim-cc-siz: contain;
+}
+.cell-container-image.cc-SKOLL {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-112-dq5x/ccSKOLL.png");
+   --aim-cc-siz: contain;
+}
+.cell-container-image.cc-THAUMIEL {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-113-byro/ccTHAUMIEL.png");
+   --aim-cc-siz: contain;
+}
+.cell-container-image.cc-HIEMAL {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-143-7fix/ccHEIMAL.png");
+   --aim-cc-siz: contain;
+}
+.cell-container-image.cc-AIDOS {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-95-78b8/ccAIDOS.png");
+   --aim-cc-siz: contain;
+}
+
+/* Darkmode CC images */
+
+.cell-container-image.darkmode-a.cc-SAFE {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-96-fou6/ccdSAFE.png");
+   --aim-cc-siz: contain;
+}
+.cell-container-image.darkmode-a.cc-THAUMIEL {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-114-afh3/ccTHAUMIELd.png");
+   --aim-cc-siz: contain;
+}
+
+/* Level images */
+
+.cell-container-image.lv-one {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-136-icmk/xlvlone.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.lv-two {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-135-35cy/xlvltwo.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.lv-three {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-133-9qbj/xlvlthree.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.lv-four {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-131-9qwu/xlvlfour.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.lv-five {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-129-9nk6/xlvlfive.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.lv-six {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-127-t5lp/xlvlsix.png");
+   --aim-lv-siz: contain;
+}
+
+/* Darkmode level images */
+
+.cell-container-image.darkmode-a.lv-one {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-138-nsxd/xlvloned.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.darkmode-a.lv-two {
+  --aim-lv-image: url(http://scp-jp-storage.wikidot.com/local--files/file:7522555-137-rml1/xlvltwod.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.darkmode-a.lv-three {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-134-gybc/xlvlthreed.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.darkmode-a.lv-four {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-132-iagy/xlvlfourd.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.darkmode-a.lv-five {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-130-dyq9/xlvlfived.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.darkmode-a.lv-six {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-128-h5r1/xlvlsixd.png");
+   --aim-lv-siz: contain;
+}
+
+.one::after {
+  content: "01/Unrestricted";
+}
+.two::after {
+  content: "02/Restricted";
+}
+.three::after {
+  content: "03/Confidential";
+}
+.four::after {
+  content: "04/Secret";
+}
+.five::after {
+  content: "05/Top Secret";
+}
+.six::after {
+  content: "06/Cosmic Top Secret";
+}
+/*====================================================================================*/
+/*MOBILE IMAGES*/
+
+/* CC images */
+
+.cell-container-image.ccm-SAFE {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-105-dlp4/ccmSAFE.png");
+   --aim-cc-siz: 45px;
+}
+.cell-container-image.ccm-EUCLID {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-101-lgyw/ccmEUCLID.png");
+   --aim-cc-siz: 45px;
+}
+.cell-container-image.ccm-KETER {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-103-daji/ccmKETER.png");
+   --aim-cc-siz: 45px;
+}
+.cell-container-image.ccm-NEUTRALIZED {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-104-djkg/ccmNEUTRALIZED.png");
+   --aim-cc-siz: 45px;
+}
+.cell-container-image.ccm-SKOLL {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-107-vmqk/ccmSkoll.png");
+   --aim-cc-siz: 45px;
+}
+.cell-container-image.ccm-THAUMIEL {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-108-tna1/ccmTHAUMIEL.png");
+   --aim-cc-siz: 45px;
+}
+.cell-container-image.ccm-HIEMAL {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-102-7yrc/ccmHeimal.png");
+   --aim-cc-siz: 45px;
+}
+.cell-container-image.ccm-AIDOS {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-100-7j78/ccmAIDOS.png");
+   --aim-cc-siz: 45px;
+}
+
+/* Darkmode CC images */
+
+.cell-container-image.darkmode-a.ccm-SAFE {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-106-3y5i/ccmSAFEd.png");
+   --aim-cc-siz: 45px;
+}
+.cell-container-image.darkmode-a.ccm-THAUMIEL {
+  --aim-cc-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-109-9k09/ccmTHAUMIELd.png");
+   --aim-cc-siz: 45px;
+}
+@media (max-width: 350px) {
+.cell-container-image {
+   --aim-cc-siz: 10px;
+}
+}
+/* Level images */
+
+.cell-container-image.lvm-one {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-123-v6sr/mlvlone.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.lvm-two {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-121-ush5/mlvltwo.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.lvm-three {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-119-07b8/mlvlthree.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.lvm-four {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-117-6x72/mlvlfour.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.lvm-five {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-115-pm4q/mlvlfive.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.lvm-six {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-125-vkno/mlvlsix.png");
+   --aim-lv-siz: contain;
+}
+
+/* Darkmode level images */
+
+.cell-container-image.darkmode-a.lvm-one {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-124-b67l/mlvloned.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.darkmode-a.lvm-two {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-122-4rac/mlvltwod.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.darkmode-a.lvm-three {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-120-54eo/mlvlthreed.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.darkmode-a.lvm-four {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-118-bt08/mlvlfourd.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.darkmode-a.lvm-five {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-116-4tkg/mlvlfived.png");
+   --aim-lv-siz: contain;
+}
+.cell-container-image.darkmode-a.lvm-six {
+  --aim-lv-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-126-87ud/mlvlsixd.png");
+   --aim-lv-siz: contain;
+}
+
+
+.onem::after {
+  content: "01/Un";
+}
+.twom::after {
+  content: "02/Re";
+}
+.threem::after {
+  content: "03/Co";
+}
+.fourm::after {
+  content: "04/Se";
+}
+.fivem::after {
+  content: "05/To";
+}
+.sixm::after {
+  content: "06/XT";
+}
+.desktop-aim{
+}
+.mobile-aim{
+}
+
+@media (max-width: 600px) {
+.desktop-aim{
+   display: none;
+}
+}
+@media (min-width: 601px) {
+.mobile-aim{
+   display: none;
+}
+}

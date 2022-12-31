@@ -1,0 +1,22 @@
+[[iftags +コンポーネント]]
+[[div style="background: rgba(201,133,184,.4); box-shadow: 1px 1px 3px #999; padding: .5em;"]]
+非wikidotユーザーの閲覧に対応したListUsersモジュールです。
+
++ 使い方
+> ##red|[[include :scp-jp:component:listusers-1 users="."]]##
+> @@##red|@@**%%name%%**@@##@@
+> ##red|[[include :scp-jp:component:listusers-2]]##
+> @@##blue|@@**guest**@@##@@
+> ##red|[[include :scp-jp:component:listusers-3]]##
+
+----
+* @@http://scp-jp.wikidot.com/component:listusers-1@@
+* http://scp-jp.wikidot.com/component:listusers-2
+* http://scp-jp.wikidot.com/component:listusers-3
+[[/div]]
+----
+[[/iftags]]
+
+[[div class="textchange"]]
+[[module ListUsers users={$users}]]
+[[div class="sitemember"]]

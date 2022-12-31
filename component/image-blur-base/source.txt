@@ -1,0 +1,30 @@
+[[module CSS]]
+.unblur{
+transition: .2s;
+-webkit-filter: blur(12px);
+filter: blur(12px);
+}
+
+.unblur:hover{
+transition: .2s;
+transition-delay: .1s;
+-webkit-filter: blur(0.001px);
+filter: blur(0.001px);
+}
+
+@media (max-width: 768px) {
+.scp-clear-true.scp-image-block {
+float: none;
+clear: both;
+margin-left: auto;
+margin-right: auto;
+}
+}
+[[/module]]
+
+[[div class="scp-image-block block-{$align} scp-clear-{$clear}" style="width:{$width};"]]
+[[image {$name} class="unblur" style="width:{$width};" link={$link}]]
+[[div class="scp-image-caption" style="width:{$width};"]]
+{$caption}
+[[/div]]
+[[/div]]

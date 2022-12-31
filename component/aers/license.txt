@@ -1,0 +1,5 @@
+title: Aers's Classification Stuff
+author: 7happy7
+created_at: 2018-11-11 05:41:53+00:00
+source: http://scp-jp.wikidot.com/component:aers:classification-stuff
+license: Need to Fix!

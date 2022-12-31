@@ -1,0 +1,1 @@
+[[table style="width: 100%;"]][[row style="font-weight: bold; color: #fff;"]][[cell style="padding: 0 2px; width: 18%;"]][[/cell]][[cell style="padding: 0 2px; width: 25%; text-align: center;"]][[/cell]][[cell style="padding: 0 2px; text-align: center;"]][[/cell]][[/row]]

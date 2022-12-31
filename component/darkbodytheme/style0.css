@@ -1,0 +1,273 @@
+/*
+    SCP-001 Darkbody Theme
+    [2018 Wikidot Theme]
+    Based on Aelanna's Sigma 9 and Greenwolf's Third Law
+    Edited by djkaktus for the Doomsday Contest 
+    Edited for SCP-JP by shu_yabiyabi (SCP-JP Tech staff)
+*/
+@charset "utf-8";
+
+@import url('http://scp-jp.wdfiles.com/local--theme/scp-sigma-9-off-canvas/style.css');
+@import url('https://fonts.googleapis.com/css?family=Play|Open+Sans');
+
+/* COMMON */
+
+table.wiki-content-table th {
+    border: 1px solid #888;
+    background-color: #EEE;
+}
+
+h1, #page-title {
+    color: #101919;
+}
+
+.edit-section-button {
+    background-color: transparent;
+}
+
+#page-title {
+    border-color: #bbb;
+}
+
+a {
+    color: #2F4F4F;
+}
+a.newpage {
+    color: #2F4F4F;
+}
+
+/* GLOBAL WIDTH */
+
+
+div#container-wrap {
+    background: url(http://shitake-crude-production.wikidot.com/local--files/component:darkbodytheme/body_bg.png) top left repeat-x;
+}
+ 
+/* HEADER */
+#header {
+    background: url(http://shitake-crude-production.wikidot.com/local--files/component:darkbodytheme/logo.png) 10px 35px no-repeat;
+}
+#search-top-box-input {
+    border: solid 1px #2F4F4F;
+    background-color: #708090;
+}
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+    border: solid 1px #2F4F4F;
+    background-color: #708090;
+}
+#search-top-box-form input[type=submit] {
+    border: solid 1px #2F4F4F;
+    color: #000000;
+    background-color: #708090;
+    background: linear-gradient(to bottom, #778899,#708090,#2F4F4F);
+}
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    border: solid 1px #2F4F4F;
+    background-color: #708090;
+    background: linear-gradient(to bottom, #778899,#708090,#2F4F4F);
+    box-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
+ 
+#login-status {
+    color: #708090;
+}
+#login-status a {
+    color: #708090;
+}
+#login-status ul a {
+    color: #708090;
+}
+ 
+#account-topbutton {
+    background: #2F4F4F;
+    color: #708090;
+}
+ 
+#header h1 a {
+    content: "Overwatch Command";
+    color: transparent;
+    background: transparent;
+    font-family: 'Play', sans-serif; 'Open Sans', sans-serif;
+    text-shadow: none;
+}
+ 
+#header h1 a::before {
+    content: "監督司令部";
+    color: #416d6d;
+    text-shadow: 3px 3px 5px #000000;
+}
+ 
+#header h2 span {
+    color: transparent;
+    text-shadow: none;
+}
+
+#header h2 span::before {
+    content: 'SCP財団監督者評議会';
+    color: #708090;
+    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.8);}
+}
+
+
+ 
+/* TOP MENU */
+
+#top-bar a {
+    color: #C0C0C0;
+}
+
+#top-bar ul li ul {
+    border: solid 1px #2F4F4F;
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #C0C0C0;
+    color: #2F4F4F;
+}
+ 
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+    border-top: 1px solid #ddd;
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #C0C0C0;
+}
+
+#side-bar img {
+-webkit-filter: hue-rotate(210deg);
+-moz-filter: hue-rotate(210deg);
+-o-filter: hue-rotate(210deg);
+-ms-filter: hue-rotate(210deg);
+filter: hue-rotate(210deg);
+}
+
+#side-bar .side-block {
+    border: 1px solid #2F4F4F;
+    box-shadow: 0 2px 6px rgba(32,32,32,1) !important;
+    background: #DCDCDC !important; 
+}
+
+#side-bar .side-block.sns img {
+    filter: none;
+}
+
+#side-bar .heading {
+    color: #2F4F4F;
+    border-bottom: solid 1px #2F4F4F;
+}
+
+#side-bar div.menu-item.inactive a {
+    color: #2F4F4F;
+}
+#side-bar div.menu-item .sub-text {
+    color: #2F4F4F;
+}
+#side-bar .collapsible-block-unfolded-link {
+    border-bottom: solid 1px #2F4F4F;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+    color: #2F4F4F;
+}
+/* YUI-TABS */
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background-image: url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png);
+-webkit-filter: hue-rotate(210deg);
+-moz-filter: hue-rotate(210deg);
+-o-filter: hue-rotate(210deg);
+-ms-filter: hue-rotate(210deg);
+filter: hue-rotate(210deg);
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+.yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+background: #700 url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1400px;
+-webkit-filter: hue-rotate(210deg);
+-moz-filter: hue-rotate(210deg);
+-o-filter: hue-rotate(210deg);
+-ms-filter: hue-rotate(210deg);
+filter: hue-rotate(210deg);
+}
+ 
+/* Custom page content classes */
+
+.content-panel .panel-body {
+    background: #C0C0C0;
+}
+.content-panel .panel-footer {
+    color: #C0C0C0;
+}
+.content-panel .panel-footer a {
+    color: #C0C0C0 ;
+}
+.content-panel .content-toc {
+    background-color: #C0C0C0;
+}
+ 
+/* Page Rating Module Customizations */
+
+div.page-rate-widget-box .rate-points {
+    background-color: #708090;
+    border: solid 1px #2F4F4F;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    /*background-color: 708090;*/
+    border-top: solid 1px #2F4F4F;
+    border-bottom: solid 1px #2F4F4F;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    color: #2F4F4F;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #708090;
+    color: #2F4F4F;
+}
+.page-rate-widget-box .cancel {
+    background-color: #708090;
+    border: solid 1px #2F4F4F;
+}
+.page-rate-widget-box .cancel a {
+    color: #2F4F4F;
+}
+.page-rate-widget-box .cancel a:hover {
+    background: #708090;
+}
+ 
+/* Standard Image Block */
+.scp-image-block {
+    border: solid 1px #2F4F4F;
+}
+
+.scp-image-block .scp-image-caption {
+    background-color: #C0C0C0;
+    border-top: solid 1px #2F4F4F;
+}
+
+/* off-canvas */
+ 
+@media (max-width: 767px) {
+.open-menu a {
+    color: #2F4F4F !important;
+}
+ 
+#side-bar {
+    background-color: rgb(192, 192, 192);
+}
+}
+
+/* for the Interwiki */
+#side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+    -webkit-filter: hue-rotate(185deg) saturate(41%) brightness(86%);
+    filter: hue-rotate(185deg) saturate(41%) brightness(86%);
+    border: 1px solid #2F4F4F;
+    box-shadow: 0 2px 6px rgba(32,32,32,1) !important;
+}

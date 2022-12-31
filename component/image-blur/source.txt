@@ -1,0 +1,1 @@
+[[include :scp-jp:component:image-blur-base name={$name}|caption={$caption}|width={$width}|width=300px|link={$link}|link=#|align={$align}|align=right|clear={$clear}|clear=false]]

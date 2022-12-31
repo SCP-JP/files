@@ -1,0 +1,173 @@
+[[iftags]]
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[/iftags]]
+[[iftags +コンポーネント]]
+[[module CSS]]
+/*
+For localization, please edit the link below.
+http://scp-jp.wikidot.com/fragment:black-highlighter-theme-source
+*/
+@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/1");
+@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/2");
+@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/3");
+[[/module]]
+
+[[div style="border: solid 2px #ededed; padding: 0.5rem; margin: 4px;"]]
+
+もちろん、[[span class="ruby"]]より良い[[span class="rt"]]Better[[/span]][[/span]]というのは主観に依りますが、[[span style="text-emphasis:filled;"]]見ればわかる[[/span]]でしょう。
+
+これは[[[SCP-4485]]]に見られるようなカスタム脚注を模倣したコンポーネントです。
+
+++ 例:
+
+文章[[span class="fnnum"]].[[/span]][[span class="fncon"]]脚注の中の文章。[[/span]]
+文章[[span class="fnnum"]].[[/span]][[span class="fncon"]]脚注の中の文章。[[/span]]そして文章。
+文章[[span class="fnnum"]].[[/span]][[span class="fncon"]]脚注の中の文章。[[/span]]。もっと文章。
+脚注の中ではない文章。
+
+++ 使い方:
+
+以下の記述を一つ書きます:
+
+> @@[[include :scp-jp:component:betterfootnotes]]@@
+
+下記の構文を脚注ごとにコピー＆ペーストします:
+
+> @@[[span class="fnnum"]].[[/span]][[span class="fncon"]]脚注の中の文章。[[/span]]@@
+
+++ 注:
+
+- //funnum//クラスのspan要素には1つのピリオドを入れます。これは、構文が正しく解析されるために少なくとも1つの非空白文字が必要だからです。
+
+- 以下の構文を適用することで、脚注の上付き文字の色を変更することができます。
+
+> @@[[module CSS]]@@
+> :root {
+> @@    --fnColor: ここに色コード;@@
+> }
+> [[/module]]
+
+そうでなければ、**##E6283C|#E6283C##**がデフォルトです。
+
+- ページ最下部の脚注一覧は自動生成されません。
+
+- シグマ-9でも機能しますが、シームレスではないかもしれません。
+
+- このコンポーネントを作るにあたって、[[*user Woedenaz]]の完璧なデザインセンスに、また、[[*user Placeholder McD]]の --おねだり-- きっかけ作りに心からの感謝を。
+
+[[/div]]
+
+-----
+
+++ ソースコード:
+
+[[code type="css"]]
+:root {
+    --posX: calc(50% - 358px - 12rem);
+    --fnTransition: 0.3s;
+    --fnLinger: 0.15s;
+    --fnInteract: calc(var(--fnTransition) + var(--fnLinger));
+}
+
+/*--- Footnote Auto-counter --*/
+#main-content {
+    counter-reset: megacount;
+}
+
+/*--- Footnote Superscript Number --*/
+.fnnum {
+    display: inline-block;
+    width: max-content;
+    text-indent: -0.285ch;
+    vertical-align: super;
+    line-height: 80%;
+    word-break: initial;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: initial;
+    color: transparent;
+    position: relative;
+    font-size: 80%;
+    padding: .15em .1em .15em 0;
+    margin-right: -0.25em;
+    counter-increment: megacount;
+    user-select: none;
+}
+.fnnum::after {
+    content: "" counter(megacount);
+    color: var(--fnColor, #E6283C);
+}
+.fnnum:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--fnColor, #E6283C);
+}
+.fnnum:hover::after { color: white; }
+
+/*--- Footnote Content Wrapper --*/
+.fncon {
+    position: absolute;
+    right: calc(var(--posX) + 80px);
+    line-height: 1.2;
+    padding: 0.82rem;
+    width: 10.3rem;
+    background: white;
+    border: 2px solid black;
+    font-weight: initial;
+    font-style: normal;
+    text-align: initial;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9;
+    transition:
+        opacity 0.15s linear var(--fnLinger),
+        right var(--fnTransition) cubic-bezier(.08,.72,.5,.94) var(--fnLinger),
+        visibility 0.01s linear var(--fnInteract);
+}
+.fnnum:hover + .fncon, .fncon:hover {
+    opacity: 1;
+    right: var(--posX);
+    visibility: visible;
+    transition:
+        opacity 0.15s linear,
+        right var(--fnTransition) cubic-bezier(.08,.72,.5,.94);
+}
+
+.fncon::before {
+    position: absolute;
+    top: 0; left: 0;
+    transform: translateX(-52%) translateY(-55%) scale(1.15);
+    background-color: var(--fnColor, #E6283C);
+    color: white;
+    content: counter(megacount);
+    font-size: initial;
+    font-weight: bold;
+    font-style: initial;
+    padding: 0.18rem 0.32em 0.08rem;
+}
+
+/*--- Mobile Query --*/
+@media only screen and (max-width: 1279px) {
+    .fncon {
+        position: fixed;
+        bottom: 1.3rem;
+        left: calc(11% - 50px);
+        width: 70%;
+        transition:
+            opacity 0.15s linear var(--fnLinger),
+            left var(--fnTransition) cubic-bezier(.08,.72,.5,.94) var(--fnLinger),
+            visibility 0.01s linear var(--fnInteract);
+    }
+    .fnnum:hover + .fncon, .fncon:hover {
+        left: 11%;
+        transition:
+            opacity 0.15s linear,
+            left var(--fnTransition) cubic-bezier(.08,.72,.5,.94);
+    }
+}
+[[/code]]
+[[/iftags]]
+
+[[module CSS]]
+@import url("https://scp-jp.wdfiles.com/local--code/component:betterfootnotes/1");
+[[/module]]

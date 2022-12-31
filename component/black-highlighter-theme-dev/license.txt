@@ -1,0 +1,5 @@
+title: Black Highlighterテーマ（仮置き）
+author: Rokurokubi
+created_at: 2020-06-05 23:23:03+00:00
+source: http://scp-jp.wikidot.com/component:black-highlighter-theme-dev
+license: Need to Fix!

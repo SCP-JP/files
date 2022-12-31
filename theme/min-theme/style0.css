@@ -1,0 +1,125 @@
+/* General Element */
+* {
+    color: #707070;
+}
+p {
+    margin-top: 1.5em;
+    line-height: 180%;
+}
+.contents {
+    padding-left: 1em;
+}
+.break {
+    display: inline-block;
+    color: #707070;
+}
+.thin {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+/* Hidden Element*/
+#header h1 a span, #header h2, #login-status > a > strong, #search-top-box, #page-title {
+    display: none;
+}
+
+/* Wrapper */
+div#container-wrap {
+    background: none;
+}
+#content-wrap {
+    max-width: 780px;
+}
+#main-content {
+    margin: auto;
+    padding: 0 1em 1em 1em;
+}
+
+/* Header */
+#header {
+    background: none;
+    height: 5rem;
+    max-width: 800px;
+}
+#header h1 {
+    height: 100%;
+    margin: 0;
+}
+#header h1 a {
+    background: url("https://scp-jp.wdfiles.com/local--files/theme%3Amin-theme/1.svg") center no-repeat;
+    background-size: contain;
+    height: 100%;
+    line-height: unset;
+    max-height: unset;
+    padding: 0;
+    width: 90px;
+}
+#top-bar {
+    max-width: 800px;
+    pointer-events: none;
+    top: 3rem;
+}
+#top-bar a {
+    color: #b01;
+}
+#top-bar ul {
+    pointer-events: all;
+}
+#top-bar ul li a {
+    border: none;
+}
+#top-bar ul li.sfhover a, #top-bar ul li:hover a {
+    background: #fff;
+    border: none;
+}
+#top-bar ul li ul {
+    box-shadow: none;
+}
+#top-bar li:hover ul, #top-bar li.sfhover ul {
+    border-color: #eee;
+}
+#top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
+    border-top: 1px solid #eee;
+}
+.mobile-top-bar {
+    right: 0;
+}
+#top-bar .open-menu a {
+    border: solid 1px #000 !important;
+    color: #000 !important;
+    font-weight: 100;
+    font-size: 27px;
+    line-height: 27px;
+    padding: 3px;
+    pointer-events: all;
+}
+.open-menu a:hover {
+    box-shadow: none;
+}
+#login-status {
+    filter: grayscale();
+}
+#login-status a {
+    color: #000;
+}
+
+/* Sidebar */
+#side-bar {
+    background: #eee;
+}
+#side-bar:target .close-menu {
+    opacity: .39;
+}
+#side-bar .side-block, #side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+    border-color: #eee;
+    border-radius: 0;
+    box-shadow: none;
+}
+#side-bar hr {
+    background-color: #000;
+}
+
+/* Other */
+.number {
+    color: #fff;
+}

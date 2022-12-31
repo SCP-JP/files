@@ -1,0 +1,101 @@
+#page-title {
+    display: none;
+}
+.c_international-container .panel-body {
+    padding: 0;
+}
+.c_international-body {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    *background: rgba(255,255,255,.9) url("https://scp-jp.wdfiles.com/local--files/component%3Atheme/panel-bg-gradient-reverse.png") bottom repeat-x;
+    padding: 5px 0;
+}
+.c_international-box {
+    margin: 5px 4px;
+    text-align: center;
+    min-width: 12em;
+}
+.c_international-box div > p,
+.international-entry div > p {
+    margin: 0;
+}
+.c_international-box .c_international-text {
+    margin: 5px 0;
+    font-size: 99%;
+}
+.international-entry {
+    padding: 10px 10px 5px 10px;
+    border-top: 1px solid #eeeee0;
+}
+.international-entry .international-description {
+    margin: 5px 20px;
+    font-size: 99%;
+}
+.c_international-box .c_international-logo img {
+    height: 90px;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .c_international-box .c_international-logo img {
+        height: 80px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+@media (min-width: 581px) and (max-width: 767px) {
+    .c_international-box .c_international-logo img {
+        height: 70px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+@media (min-width: 480px) and (max-width: 580px) {
+    .c_international-box .c_international-logo img {
+        height: 60px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+@media (max-width: 479px) {
+    .c_international-box .c_international-logo img {
+        height: 50px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+
+/* For AF-2022-JP */
+.strengthening-month {
+    position: relative;
+    padding: 15px 0 15px 0;
+    text-align: center;
+}
+.strengthening-month a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.af.content-panel.standalone {
+    padding: 10px;
+    background: #ffe4b3;
+}
+[class^="item-num"] {
+    display: none;
+    padding-bottom: 10px;
+}
+.item-parent.num0 .item-num0, .item-parent.num1 .item-num1, .item-parent.num2 .item-num2, .item-parent.num3 .item-num3, .item-parent.num4 .item-num4, .item-parent.num5 .item-num5, .item-parent.num6 .item-num6, .item-parent.num7 .item-num7, .item-parent.num8 .item-num8, .item-parent.num9 .item-num9, .item-parent.numc0 .item-numc0, .item-parent.numc1 .item-numc1, .item-parent.numc2 .item-numc2, .item-parent.numc3 .item-numc3, .item-parent.numc4 .item-numc4, .item-parent.numc5 .item-numc5, .item-parent.numc6 .item-numc6, .item-parent.numc7 .item-numc7, .item-parent.numc8 .item-numc8, .item-parent.numc9 .item-numc9, .item-parent.numc10 .item-numc10, .item-parent.numc11 .item-numc11, .item-parent.numc12 .item-numc12, .item-parent.numc13 .item-numc13, .item-parent.numc14 .item-numc14, .item-parent.numc15 .item-numc15, .item-parent.numc16 .item-numc16, .item-parent.numc17 .item-numc17, .item-parent.numc18 .item-numc18, .item-parent.numc19 .item-numc19, .item-parent.numc20 .item-numc20, .item-parent.numc21 .item-numc21, .item-parent.numc22 .item-numc22 {
+    display: block;
+}
+.item-numc22 a, .item-numc23 a {
+    cursor: not-allowed;
+}

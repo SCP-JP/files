@@ -1,0 +1,5 @@
+title: 遠野妖怪保護区公式Webサイトテーマ
+author: Nanigashi Sato
+created_at: 2021-02-21 13:41:45+00:00
+source: http://scp-jp.wikidot.com/theme:toyoho-web
+license: Need to Fix!

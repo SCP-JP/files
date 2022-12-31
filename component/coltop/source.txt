@@ -1,0 +1,12 @@
+[[include :scp-jp:component:coltop-deep
+ifprot={$ifprot}
+|ifprot=0
+|nohide={$nohide}
+|nohide=0
+|folded={$folded}
+|folded=1
+|hide={$hide}
+|hide=- hide block
+|show={$show}
+|show=+ show block
+|hide={$hide}|hide=- hide block]]

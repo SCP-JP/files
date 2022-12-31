@@ -1,0 +1,270 @@
+[[iftags +テーマ]]
+[[module CSS]]
+@import url("https://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/1");
+@import url("https://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/2");
+@import url("https://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/3");
+
+:root {
+    --logo-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png");
+}
+
+.scp-image-block.block-right {
+    margin: 1em 0 1em 2em;
+}
+
+.scp-image-block a {
+    width: 100%;
+    min-width: 100%;
+}
+
+.scp-image-block img {
+    min-width: 100%;
+    border: 0.5rem solid rgba(var(--pale-gray-monochrome));
+    box-sizing: border-box;
+}
+
+#page-content > div.scp-image-block.block-right > a {
+    background-color: rgb(var(--gray-monochrome));
+}
+
+#page-content > div.scp-image-block.block-right > a > img {
+    padding: 1em;
+}
+[[/module]]
+
+[[div style="display: none"]]
+[[include :scp-jp:theme:scp-offices-theme]]
+[[/div]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Human Resourcesテーマ
+**著者:** ©[[*user CityToast]]
+**作成年:** 2021
+[[include :scp-jp:credit:end-preview]]
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=Depression
+| color1-variable=--gray-monochrome
+| color1-info=(75,115,17)
+| color1-has-light-text=1
+| color2-name=Corpo Green
+| color2-variable=--bright-accent
+| color2-info=(148,204,136)
+| color2-has-light-text=0
+| subcolor1-name=Light slate blue
+| subcolor1-variable=--pale-gray-monochrome
+| subcolor1-info=(157,186,226)
+| subcolor2-name=Faded Blue
+| subcolor2-variable=--light-gray-monochrome
+| subcolor2-info=(112,149,201)
+| subcolor3-name=Denim
+| subcolor3-variable=--dark-gray-monochrome
+| subcolor3-info=(49,91,15)
+| subcolor3-has-light-text=1
+| subcolor4-name=Sky
+| subcolor4-variable=--white-monochrome
+| subcolor4-info=(207,223,24)
+| subcolor5-name=Really dark blue
+| subcolor5-variable=--black-monochrome
+| subcolor5-info=(7,7,40)
+| subcolor5-has-light-text=1
+| subcolor6-name=Emerald City
+| subcolor6-variable=--dark-accent
+| subcolor6-info=(28,104,1)
+| subcolor6-has-light-text=1
+]]
+
+[[div class="scp-image-block block-right" style="max-width:300px;"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png width="300px" link="https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png"]]
+[[div class="scp-image-caption" style="max-width: 100%;"]]
+SCP Human Resourcesテーマ
+[[/div]]
+[[/div]]
+
++ 使い方
+
+[[div_ style="display:flex;"]]
+[[image https://scp-jp.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+[[/div]]
+
+これは、[[*user Woedenaz]]の[[[theme:scp-offices-theme|]]]の拡張テーマです。
+
+++ 注: これはBlack Highlighterベースのテーマです。このテーマを使用するにはBlack Highlighterテーマもインポートする必要があります。[[[theme:black-highlighter-theme|詳細については、ここを参照してください]]]。
+
+どんなウィキでも:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:scp-offices-theme]]@@
+@@[[include :scp-jp:theme:scp-human-resources]]@@
+[[/div]]
+
++ 例
+
+罫線は、5つのハイフン「@@-----@@」を使用して作成でき、何かの内側(例: ブロック引用)に配置されていなければページ全体に適用されます。このドキュメントのセクションを区切る線は罫線です。
+
+-----
+
+見出しは、行の先頭に1～6文字の「+」を置くことで作成できます
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 1番目の見出し
+
+++ 2番目の見出し
+
++++ 3番目の見出し
+
+++++ 4番目の見出し
+
++++++ 5番目の見出し
+
+++++++ 6番目の見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブを作る]]
+これはタブです。
+
+[[/tab]]
+[[tab タブが作られた]]
+見てください、ここにもテキストがあります。
+
+なんと奇妙な。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に半角の「> 」を置くことで作成されます。
+>
+> 追加のテキスト
+> -----
+> これは罫線です
+>
+>> 入れ子になった引用ブロック
+
+||~ これは ||~ テーブルです ||
+||もう || 作り方は ||
+||||知っているはずです ||
+
+[[=]]
+[[span style="font-family: var(--header-font);"]]ヘッダー&見出しフォントはZilla Slab。[[/span]]
+[[span style="font-family: var(--body-font);"]]ボディと等幅フォントはIBM Plex Mono。[[/span]]
+[[/=]]
+
+@@ @@
+
+[[/iftags]]
+
+[[div [[iftags -テーマ]]style="display: none"[[/iftags]]]]
+-----
+[[collapsible show="+ テーマコードを表示" hide="- テーマコードを非表示"]]
+[[module CSS show="true"]]
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
+
+@supports(--css: variables) {
+
+:root {
+    /* Typefaces */
+    --header-font: "Zilla Slab", serif;
+    --title-font: "Z", monospace;
+
+    /* Standard Colors */
+
+    --white-monochrome: 207, 223, 245;
+    --pale-gray-monochrome: 157, 186, 226;
+    --light-gray-monochrome: 112, 149, 201;
+    --gray-monochrome: 75, 115, 171;
+    --dark-gray-monochrome: 49, 91, 150;
+    --black-monochrome: 7, 7, 40;
+    --bright-accent: 128, 184, 116;
+    --medium-accent: 61, 139, 44;
+    --dark-accent: 28, 104, 12;
+    
+    --swatch-text-general: var(--swatch-text-dark);
+
+    --link-color: var(--medium-accent);
+
+    --logo-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-44-ziy1/hrlogo.png");
+    --header-subtitle: "人事部門";
+
+    --background-gradient-color: 255, 242, 219;
+    --rating-module-bg-color: var(--dark-accent);
+    --rating-module-text-color: var(--bright-accent);
+    --rating-module-plus-color: var(--bright-accent);
+    --rating-module-negative-color: var(--bright-accent);
+    
+    scrollbar-color: rgba(var(--pale-gray-monochrome), 1) rgba(var(--dark-gray-monochrome), 0.50);
+
+    --offset-from-page-top: 0rem;
+}
+
+#side-bar .heading p {
+    color: rgba(var(--black-monochrome),1);
+    font-family: "Zilla Slab", serif;
+    --text-shadow: none;
+}
+
+#search-top-box input.empty {
+    color: rgba(var(--white-monochrome),1);
+}
+
+#search-top-box-form input[type="submit"],
+#search-top-box-form input[type="submit"]:focus,
+#search-top-box-form input[type="submit"]:hover {
+    color: rgb(var(--dark-accent));
+}
+#footer a {
+    background: inherit;
+    color: rgba(var(--white-monochrome),1);
+}
+.collapsible-block-link {
+    text-decoration-color: rgb(var(--medium-accent));
+    text-decoration: rgb(var(--medium-accent));
+}
+
+}
+[[/module]]
+[[/collapsible]]
+[[/div]]

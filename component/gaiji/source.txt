@@ -1,0 +1,30 @@
+[[module css]]
+@font-face {
+  font-family: {$name};
+  src: url("https://glyphwiki.org/glyph/{$code}.ttf") format("truetype");
+}
+
+.{$name} {
+  position: relative;
+  width: 1em;
+  white-space: pre;
+  display: inline-block;
+  padding: 0em;
+  color: transparent;
+}
+
+.{$name}::before {
+  font-family: {$name};
+  content: "〓";
+  color: rgba(51, 51, 51, 1.0);
+  opacity: 1;
+  position: absolute;
+  display: inline-block;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  z-index: 1;
+}
+
+[[/module]]

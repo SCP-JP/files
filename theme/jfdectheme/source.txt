@@ -1,0 +1,138 @@
+@@[[iftags +テーマ]]@@
+
+[[include credit:start]]
+**タイトル:日本支部テーマ** 
+**著者:** ©︎[[*user kihaku ]]
+**作成年:2022** 
+
+[[*user falsehood ]]のテーマのインクルードです
+
+[[include credit:end]]
+
+このテーマを使用するには、次のコードをページに貼り付けてください。
+[[div class="code"]]
+@@[[include :scp-jp:theme:Jfdectheme]]@@
+[[/div]]
+
+
+このthemeは
+> [2019 Wikidot Theme]
+> Created by falsehood
+> CC BY-SA 3.0
+です。
+
+
+
+
+
+[[module css]]
+/*
+    Powered on 2019/06/11 11:37:18
+    [2019 Wikidot Theme]
+    Created by falsehood
+    CC BY-SA 3.0
+*/
+
+
+
+a,a:visited {
+    color: #850171;
+}
+h1 {
+    color: #5f046d;
+}
+blockquote {
+    #850171
+}
+div#side-bar div.side-block {
+    background: #D9D9D9;
+    border: 1px solid #4e0139;
+}
+div#side-bar div.side-block div.heading,
+div#side-bar div.collapsible-block-unfolded-link,
+div#side-bar div.collapsible-block-unfolded-link div.collapsible-block-link {
+    color: #4e0139;
+    border-color: #4e0139;
+}
+div.scpnet-interwiki-wrapper {
+    filter: hue-rotate(312deg) saturate(100%) brightness(85%);
+}
+div.yui-navset ul.yui-nav a:hover,
+div.yui-navset ul.yui-nav a:focus {
+    background: #a64d79;
+    color: #ffffff;
+}
+div.yui-navset ul.yui-nav .selected a,
+div.yui-navset ul.yui-nav .selected a:focus,
+div.yui-navset ul.yui-nav .selected a:hover {
+    background: #4b1d5d;
+}
+div.page-rate-widget-box,
+div.page-rate-widget-box span.rate-points,
+div.page-rate-widget-box span.cancel {
+    background-color: #51015b!important;
+    border: solid #51015b 1px!important;
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+    border: solid #51015b!important;
+    border-width: 1px 0!important;
+}
+div.page-rate-widget-box span.rateup,
+div.page-rate-widget-box span.ratedown {
+    background-color: #f5e6ec!important;
+}
+div.page-rate-widget-box span.rateup a,
+div.page-rate-widget-box span.ratedown a {
+    color: #51015b!important;
+}
+div.page-rate-widget-box span.cancel a:hover,
+div.page-rate-widget-box span.rateup a:hover,
+div.page-rate-widget-box span.ratedown a:hover {
+    background: transparent!important;
+    color: transparent!important;
+}
+div.open-menu a {
+    color: #d9d9d9!important;
+    border-color: #d9d9d9!important;
+}
+
+[[/module]]
+
+[[module css]]
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+background: #D9D9D9;
+color: #850171;
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+background: #408;
+color:#FFF;
+}
+[[/module]]
+
+[[include :scp-jp-sandbox2:inc:changepagetitle |
+TITLE=　　
+COLOR=#EEE]]
+[[include :scp-jp-sandbox2:inc:headsubtitle | title=SCP財団日本支部理事会]]
+[[module CSS]]
+div#container-wrap{
+background: url(http://scp-jp.wdfiles.com/local--files/scp-1154-jp/HAIKEI) top left repeat-x;
+background-size:100px;
+}
+[[/module]]
+[[include :scp-jp-sandbox2:inc:changelogo |
+IMAGE = http://scp-jp.wdfiles.com/local--files/scp-1154-jp/RIJIKAI]]
+
+
+
+
+
+
+
+
+
+
+@@[[/iftags]]@@

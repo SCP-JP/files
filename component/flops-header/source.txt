@@ -1,0 +1,208 @@
+[[iftags +コンポーネント]]
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[module CSS]]
+/* ---- 提示 ---- */
+ .unmargined > div:first-of-type{ display: none; }
+ .templateInfo{ margin: 0 0 1em; padding: 0 1em; border: 1px solid hsl(0, 0%, 87%); }
+ .templateInfo hr{ margin: 1em 0; }
+ h1, h3{ text-align: center; }
+
+/* ---- WOEDENAZのコード ---- */
+ .help{
+     display: flex;
+     align-content: stretch;
+     padding-top: 1em;
+}
+ .help blockquote{
+     margin: 0;
+     font-size: 85%;
+}
+ .help blockquote > p{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     align-content: center;
+     min-height: 2rem;
+     margin: 0;
+     margin-right: 0;
+}
+ .help blockquote > p *{
+     height: 100%;
+     margin: 0 .1rem;
+}
+ .help blockquote:nth-of-type(1){
+     margin-right: 0;
+     padding: 0;
+     background: transparent;
+     border: unset;
+     box-shadow: unset;
+     text-align: right;
+}
+ .help blockquote:nth-of-type(1) > p{
+     justify-content: flex-end;
+}
+ .help blockquote:nth-of-type(2){
+     width: 60%;
+     margin-left: 1em;
+}
+[[/module]]
+
+[[note]]
+**作成者:**
+[[*user Lt Flops]]
+----
+**構想の原案者:**
+[[*user Woedenaz]]（[[[*https://scp-jp.wikidot.com/anomaly-classification-system-guide|ソース]]]）
+----
+**使用方法:**
+https://scp-jp.wikidot.com/component:flops-header#toc2
+[[/note]]
+
+[[div class="templateInfo"]]
++ 使用例
+[[/div]]
+
+[[include :scp-jp:component:flops-header-source
+|item=0001
+|containment=neutralized
+|level=1
+|security=unrestricted
+|disruption=dark
+|disruption-bg-color=hsl(197, 100%, 27%)
+]]
+
+[[include :scp-jp:component:flops-header-source
+|item=0002
+|containment=safe
+|level=2
+|security=restricted
+|disruption=vlam
+|disruption-bg-color=hsl(160, 100%, 27%)
+]]
+
+[[include :scp-jp:component:flops-header-source
+|item=0003
+|containment=euclid
+|level=3
+|security=confidential
+|disruption=keneq
+|disruption-bg-color=hsl(50, 100%, 37%)
+]]
+
+[[include :scp-jp:component:flops-header-source
+|item=0004
+|containment=keter
+|level=4
+|security=secret
+|disruption=ekhi
+|disruption-bg-color=hsl(26, 100%, 37%)
+]]
+
+[[include :scp-jp:component:flops-header-source
+|item=0005
+|containment=[*https://scp-jp.wikidot.com/esoteric-classes-complete-list apollyon]
+|level=5
+|security=top-secret
+|disruption=amida
+|disruption-bg-color=hsla(345, 100%, 27%)
+]]
+
+[[div class="templateInfo"]]
++ これは何？
+----
+SCPフォーマット用に設計された簡素なヘッダーデザインで、レベルに応じたセキュリティクリアランスの編集機能と軽量の「撹乱クラス」バーを備えています。
+
+**[[[*https://scp-jp.wikidot.com/anomaly-classification-system-guide#toc18|詳しくはこのページをご覧ください。]]]**
+[[/div]]
+
+[[div class="templateInfo"]]
++ 使用方法
+----
++++ ステップ1. あなたのページに私をコピペしてください！
+----
+[[div class="code"]]
+@@[[include :scp-jp:component:flops-header@@
+@@|item=@@
+@@|containment=@@
+@@|level=@@
+@@|security=@@
+@@|disruption=@@
+@@|disruption-bg-color=@@
+@@]]@@
+[[/div]]
+----
++++ ステップ2. この短いガイドをお読みください。
+----
+[[div_ class="help"]]
+> Includeブロックの開始 ▷
+> 
+> アイテム番号。 ▷
+> 
+> オブジェクト/収容クラス。 ▷ **（大文字で表示されます。）**
+> 
+> クリアランス – レベル番号。 ▷
+> 
+> クリアランス – セキュリティの種類名。 ▷ **（大文字で表示されます。）**
+> 
+> 撹乱クラス名 ▷ **（大文字で表示されます。）**
+> 
+> ご希望のバーの色 ▷ **（Hex、RGB、HSLコードが使用可能です。）**
+> 
+> Includeブロックの終了。 ▷
+> 
+
+> [[include :scp-jp:component:flops-header
+> 
+> |item={{0001–9999}}
+> 
+> |containment={{safe}}/{{euclid}}/{{keter}}/{{thaumiel}}/{{その他}}
+> 
+> |level={{1–6}}
+> 
+> |security={{unrestricted}}/{{restricted}}/{{confidential}}/{{secret}}/{{top-secret}}/{{その他}}
+> 
+> |disruption={{dark}}/{{vlam}}/{{keneq}}/{{ekhi}}/{{amida}}/{{その他}}
+> 
+> |disruption-bg-color={{#00638a}}/{{#008a5c}}/{{#bd9d00}}/{{#bd5200}}/{{#8a0022}}/{{お好み}}
+> 
+> ]]
+> 
+[[/div]]
+----
++++ ステップ3. それぞれの「=」記号の後の全ての欄にご記入ください。
+----
+[[/div]]
+
+[[div class="templateInfo"]]
++ 結果
+[[/div]]
+
+[[include :scp-jp:component:flops-header-source
+|item=0000
+|containment=thaumiel
+|level=6
+|security=評議会
+|disruption=未決
+|disruption-bg-color=hsl(240, 15%, 37%)
+]]
+
+@@ @@
+----
++++ > [[[https://scp-jp.wikidot.com/component:flops-header-source|ソースコードを見るには、私をクリックしてください！]]] <
+----
+@@ @@
+[[/iftags]]
+
+[[iftags -コンポーネント]]
+[[include :scp-jp:component:flops-header-source
+|item={$item}
+|containment={$containment}
+|level={$level}
+|security={$security}
+|disruption={$disruption}
+|disruption-bg-color={$disruption-bg-color}
+]]
+[[/iftags]]

@@ -1,0 +1,42 @@
+/* 実際に使用している様子はこちらでご覧いただけます:
+ * https://scp-jp.wikidot.com/component:flops-header
+**/
+
+/* ---- アイテム情報 ---- */
+ .itemInfo{
+     position: relative;
+     top: .5em;
+     width: 100%;
+
+     font-size: .9604rem;
+     text-transform: uppercase;
+     letter-spacing: -.01em;
+}
+ .alignL{
+    position: relative;
+    right: .195em;
+}
+ .alignR{
+    position: relative;
+    left: .195em;
+
+    text-align: right;
+}
+
+/* ---- 撹乱クラス ---- */
+ .disruptionHeader{
+     display: inline-block;
+     width: 100%;
+     padding: .3em 0;
+
+     color: hsl(0, 0%, 96%);
+     font-size: 140%;
+     text-align: center;
+     text-shadow:
+        .5px    .9px  0 hsla(0, 0%, 0%, .3),
+       1.5px   2.6px  0 hsla(0, 0%, 0%, .3);
+     text-transform: uppercase;
+}
+ .disruptionHeader a:hover{
+     text-decoration: none;
+}

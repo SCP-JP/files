@@ -1,0 +1,16 @@
+[[div class="scp-image-block block-{$align} scp-clear-{$clear}" style="width:{$width};"]]
+[[image {$name} style="width:{$width};" link={$link}]]
+[[div class="scp-image-caption" style="width:{$width};"]]
+{$caption}
+[[/div]]
+[[/div]]
+[[module CSS]]
+@media (max-width: 768px) {
+.scp-clear-true.scp-image-block {
+float: none;
+clear: both;
+margin-left: auto;
+margin-right: auto;
+}
+}
+[[/module]]

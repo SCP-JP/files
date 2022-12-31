@@ -1,0 +1,5 @@
+title: マンハッタン・クライシス テーマ
+author: Mishary
+created_at: 2021-02-19 14:18:29+00:00
+source: http://scp-jp.wikidot.com/theme:manhattan-crisis
+license: Need to Fix!

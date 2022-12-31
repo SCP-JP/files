@@ -1,0 +1,766 @@
+[[iftags +テーマ]]
+[[module css]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/normalize.min.css");
+
+@import url("https://nu-scptheme.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
+
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+これは災厄テーマであり、[[[unhuman-hub |カノン『人ならぬもの』]]]に帰属する記事の為作成されました。
+
+[[*user Oboebandgeek99]]が[[*user Croquembouche]]の[[[theme:swirling-ashes |渦巻く灰テーマ]]]を改造したものです。本テーマには[[*user Woedenaz]]の[[[component:centered-header-bhl |ヘッダー中央寄せBHL]]]及び[[[component:toggle-sidebar-bhl |トグル式サイドバーBHL]]]もincludeされています。
+
+ヘッダーは65秒かけて長い昼と夜のサイクルを繰り返します。夜になるたび雨が降り出しますが、これは真夜中に止みます。
+
++ 使用法
+
+++ 注意: これはBlack Highlighterをベースとしたテーマです。本テーマを使用するには、Black Highlighterも導入する必要があります。[[[theme:black-highlighter-theme |詳細はこちらから]]]
+
+本テーマを導入するには、貴方のページへ以下を追加してください：
+
+> @@[[include :scp-jp:theme:black-highlighter-theme]]@@
+> @@[[include :scp-jp:theme:calamity]]@@
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=Eastern Blue
+| color1-variable=--medium-accent
+| color1-info=(23, 152, 158)
+| color1-has-light-text=1
+| color2-name=Scampi
+| color2-variable=--dark-accent
+| color2-info=(90, 90, 152)
+| color2-has-light-text=1
+| color3-name=Scooter
+| color3-variable=--bright-accent
+| color3-info=(51, 201, 208)
+| color4-name=Melrose
+| color4-variable=--pale-accent
+| color4-info=(150, 150, 254)
+| subcolor1-name=Roman
+| subcolor1-variable=--sky-at-dawn
+| subcolor1-info=(221, 93, 112)
+| subcolor2-name=Seagull
+| subcolor2-variable=--sky-at-morning
+| subcolor2-info=(131, 192, 233)
+| subcolor3-name=Hippie Blue
+| subcolor3-variable=--sky-at-daytime
+| subcolor3-info=(104, 153, 186)
+| subcolor4-name=Shuttle Gray
+| subcolor4-variable=--sky-at-evening
+| subcolor4-info=(87, 98, 106)
+| subcolor4-has-light-text=1
+| subcolor5-name=Storm Dust
+| subcolor5-variable=--sky-at-dusk
+| subcolor5-info=(99, 100, 90)
+| subcolor5-has-light-text=1
+| subcolor6-name=Mirage
+| subcolor6-variable=--sky-at-night
+| subcolor6-info=(21, 25, 43)
+| subcolor6-has-light-text=1
+]]
+
+[[include component:image-block name=https://scp-jp.wdfiles.com/local--files/theme%3Acalamity/unhuman-logo-bg.png|caption=UnHuman Logo|width=200px|color=]]
+
+見出しは行の先頭に1から6個のプラス（+）を置くことで作れます。[[footnote]] これは脚注です。[[/footnote]]
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 1番目の見出し
+
+++ 2番目の見出し
+
++++ 3番目の見出し
+
+++++ 4番目の見出し
+
++++++ 5番目の見出し
+
+++++++ 6番目の見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab Tabulator]]
+これはタブです。
+
+[[/tab]]
+[[tab Tabulation]]
+おや見てください、ここにも文章が。
+
+奇妙なり。
+[[/tab]]
+[[tab Long Tab]]
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+長いタブです。たくさん文章が詰まっています。
+
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に大なり記号と半角スペース（> ）を置くことで作れます。
+>
+> 追加の文章
+> -----
+> 分割線
+>
+>> 入れ子になった引用ブロック
+
+||~ これは ||~ テーブルです ||
+||もう既に || 作り方は ||
+||||知っていますね ||
+
+[[=]]
+bodyフォントはUbuntu[[size 80%]](訳注: 日本語版ではデフォルトフォント)[[/size]]。
+[[span style="font-family: var(--header-font);"]]ヘッダーのフォントはCabin Sketch[[size 80%]](訳注: 日本語版では[[span style="font-family: 'New Tegomin';"]]New Tegomin[[/span]])[[/size]]。[[/span]]
+[[span style="font-family: var(--title-font);"]]見出しのフォントはBaumans[[size 80%]](訳注: 日本語版では[[span style="font-family: 'Yusei Magic';"]]Yusei Magic[[/span]])[[/size]]。[[/span]]
+[[span style="font-family: var(--mono-font);"]]等幅フォントはSpace Mono。[[/span]]
+[[/=]]
+[[/iftags]]
+
+[[include :scp-wiki:component:centered-header-bhl]]
+[[include :scp-wiki:component:toggle-sidebar-bhl]]
+
+[[div [[iftags -theme]]style="display: none"[[/iftags]]]]
+[[collapsible show="+ Show code" hide="- Hide code"]]
+[[module CSS show="true"]]
+
+/*
+Calamity Theme
+[2021 Wikidot Theme]
+Created by Oboebandgeek99
+Based on Swirling Ashes Theme created by Croquembouche.
+The UnHuman logo was created by Oboebandgeek99 based on an image in the Public Domain. Licensed under CC-BY-SA 3.0.
+
+Translated by Mishary
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Ubuntu|Space+Mono|Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+/* BHL Vars */
+
+:root {
+    --theme-base: "black-highlighter";
+    --theme-id: "calamity";
+    --theme-name: "Calamity Theme";
+
+    /* Header */
+    --logo-image: none;
+    --header-title: "人ならぬもの";
+    --header-subtitle: "終焉を越えし生命";
+
+    /* Typefaces */
+    --body-font: "Ubuntu", sans-serif;
+    --header-font: "Cabin Sketch", "New Tegomin", sans-serif;
+    --title-font: "Baumans", "Yusei Magic", sans-serif;
+    --mono-font: "Space Mono", "Andale Mono", "Courier New", Courier, monospace;
+
+    /* Standard Colors */
+    --black-monochrome: var(--sky-at-night);
+    --dark-gray-monochrome: var(--sky-at-evening);
+    --pale-accent: 150, 150, 254;
+    /* lavender, for visited links */
+    --bright-accent: 51, 201, 208;
+    /* bright turquoise */
+    --medium-accent: 23, 152, 158;
+    /* darker turquoise */
+    --dark-accent: 90, 90, 152;
+    /* darker purple */
+    --alt-accent: var(--sky-at-dawn);
+    /* pinkish red, for newpage links */
+
+    /* Sky */
+    --sky-at-dawn: 221, 93, 112;
+    --sky-at-morning: 131, 192, 233;
+    --sky-at-daytime: 104, 153, 186;
+    --sky-at-evening: 87, 98, 106;
+    --sky-at-dusk: 99, 100, 90;
+    --sky-at-night: 21, 25, 43;
+    --sky-length: 15;
+    --sky-time: 65s;
+ 
+    /* Delete the default header background */
+    --gradient-header: linear-gradient(transparent, transparent);
+    --diagonal-stripes: linear-gradient(transparent, transparent);
+
+    /* Background Colors */
+    --background-gradient-color: var(--sky-at-daytime);
+
+    /* Primary Theme Colors */
+    --swatch-primary: var(--medium-accent);
+    --swatch-primary-darker: var(--pale-accent);
+
+    /* Primary Menu Colors */
+    --swatch-menubg-medium-dark-color: var(--medium-accent);
+
+    /* Colors for Secondary & Tertiary items like Blockquote and YUI Tabs */
+    --swatch-secondary-color: var(--bright-accent);
+    --swatch-tertiary-color: var(--pale-accent);
+
+    /* Link Colors */
+    --link-color: 110, 110, 170;
+    --visited-link-color: var(--medium-accent);
+
+    /* Spacing Measurements */
+
+    /* header measurements */
+    --header-height-on-desktop: 10rem;
+    --header-height-on-mobile: 10rem;
+
+    /* final values */
+    --header-h1-font-size: calc(var(--base-font-size) * 3.2);
+    --header-h2-font-size: calc(var(--base-font-size) * 1.6);
+
+    /*Toggle Colors */
+    --toggle-border-color: rgb(var(--dark-accent));
+    --toggle-icon-color: rgb(var(--pale-accent));
+    --toggle-roundness: 40%;
+
+    /* Login Gradient */
+    --login-gradient: linear-gradient(to top,
+     rgb(var(--dark-accent)) 0%,
+     rgb(var(--medium-accent)) 100%);
+
+    /* Ayers Info Bar */
+    --barColour: #5A5A98 !important;
+    --linkColour: #FCFCFC !important;
+}
+
+:root:lang(ja){
+    /* Header */
+    --header-title: "人ならぬもの";
+    --header-subtitle: "終焉を越えし生命";
+
+    /* Typefaces */
+    --body-font: "Ubuntu", sans-serif;
+    --header-font: "Cabin Sketch", "New Tegomin", sans-serif;
+    --title-font: "Baumans", "Yusei Magic", sans-serif;
+    --mono-font: "Space Mono", "Andale Mono", "Courier New", Courier, monospace;
+}
+
+/* Remove text shadow from headers */
+#header h1 a::before,
+#header h2 span::before {
+    --text-shadow: none;
+    text-shadow: none;
+}
+
+/* Subtitle size and case */
+#header h2,
+#header h2::before,
+#header h2 span,
+#header h2 span::before {
+    text-transform: none;
+}
+
+#header h2 span {
+    margin-top: calc(var(--header-height-on-mobile)/2 + var(--header-h1-font-size)/2 - 1em);
+}
+
+/* Tab Selected Color */
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-nav .selected a:focus {
+    background-color: rgb(var(--dark-accent));
+}
+
+.yui-navset .yui-nav {
+    color: rgb(var(--black-monochrome));
+    background-color: rgb(var(--pale-accent));
+}
+
+/* Header Logos -
+* This calculates the distance between the two images that make up the
+* UnHuman logo, measured in rems (root ems - an em as defined by the root
+* font size) from center.
+*/
+
+#header::before {
+    display: none;
+}
+
+div#extra-div-1,
+div#extra-div-2 {
+    position: absolute;
+    top: 1rem;
+    width: 100%;
+    height: 8rem;
+}
+
+div#extra-div-1 {
+    background: url("https://scp-jp.wdfiles.com/local--files/theme%3Acalamity/unhuman-left-logo.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% - 9rem) 80%;
+    background-size: contain;
+}
+
+div#extra-div-2 {
+    background: url("https://scp-jp.wdfiles.com/local--files/theme%3Acalamity/unhuman-right-logo.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 9rem) 80%;
+    background-size: contain;
+}
+
+/* Header on Mobile */
+@media only screen and (max-width: 64rem) {
+
+    :root{
+    --header-h1-font-size: calc(var(--base-font-size) * 2.25);
+    --header-h2-font-size: calc(var(--base-font-size) * 1.25);
+     }
+    
+    div#extra-div-1 {
+      background-position: calc(50% - 6rem) 80%;
+    }
+
+    div#extra-div-2 {
+      background-position: calc(50% + 6rem) 80%;
+    }
+}
+
+#header {
+/* ===HEADER ELEMENTS=== */
+    /* ===HEADER TITLES=== */
+    /* Header H1 and H2 colors */
+    --swatch-headerh1-color: var(--swatch-text-light);
+    --swatch-headerh2-color: var(--swatch-text-light);
+
+    /* ===SEARCH ELEMENT=== */
+    --search-icon-color: var(--swatch-text-secondary-color);
+    --search-icon-bg-color: var(--swatch-primary-darkest);
+    --search-icon-hover-color: var(--swatch-text-secondary-color);
+    --search-icon-hover-bg-color: var(--swatch-alternate-color);
+    --search-textbox-text-color: 0, 0, 0, 0;
+  
+  /* Focus is when the search box has been clicked on */
+    --search-icon-focus-color: var(--swatch-text-secondary-color);
+    --search-icon-focus-bg-color: var(--swatch-primary);
+    --search-focus-outline-color: var(--swatch-primary);
+    --search-focus-textbox-bg-color: var(--swatch-alternate-color);
+    --search-focus-textbox-text-color: var(--swatch-text-secondary-color);
+
+    /* ===LOGIN BOX ELEMENT=== */
+    --login-line-divider-color: var(--swatch-text-secondary-color);
+    --login-username-color: var(--dark-accent);
+    --login-myaccount-color: var(--dark-accent);
+    --login-myaccount-underline-color: var(--swatch-primary-darkest);
+    --login-myaccount-hover-bg-color: var(--swatch-primary-darkest);
+    --login-arrow-color: var(--swatch-text-light);
+ 
+   /* Dropdown Box when arrow is clicked */
+    --login-dropdown-bg-color: var(--login-gradient);
+    --login-dropdown-bg-image: var(--login-gradient);
+    --login-dropdown-border-color: var(--bright-accent), 0.5;
+    --login-dropdown-text-color: var(--swatch-text-secondary-color);
+    --login-dropdown-text-hover-color: var(--swatch-text-secondary-color);
+    --login-dropdown-bg-hover-color: var(--black-monochrome);
+}
+
+/* Login Status */
+#login-status .printuser,
+#login-status #my-account {
+    --ui-wght: 700;
+    color: rgb(var(--login-username-color));
+    text-shadow:
+        rgb(var(--white-monochrome)) 0.0625rem 0rem 0rem,
+        rgb(var(--white-monochrome)) 0.0338rem 0.0526rem 0rem,
+        rgb(var(--white-monochrome)) -0.026rem 0.0568rem 0rem,
+        rgb(var(--white-monochrome)) -0.0619rem 0.0088rem 0rem,
+        rgb(var(--white-monochrome)) -0.0409rem -0.0473rem 0rem,
+        rgb(var(--white-monochrome)) 0.0177rem -0.0599rem 0rem,
+        rgb(var(--white-monochrome)) 0.06rem -0.0175rem 0rem;
+}
+
+#account-options {
+    width: auto;
+    padding: 0.5em;
+    border-color: rgba(var(--bright-accent));
+    background: var(--login-gradient);
+    color: rgb(var(--swatch-text-light));
+}
+
+/* search box */
+#search-top-box-form>input,
+#search-top-box-form>input:hover,
+#search-top-box-form>input:focus {
+    background: rgb(var(--dark-accent));
+}   
+
+#search-top-box-form input[type="submit"] {
+    background: rgb(var(--medium-accent));
+}
+
+#search-top-box input.empty {
+    color: rgba(var(--white-monochrome));
+}
+
+/* Horizontal rule */
+hr {
+    height: 0px;
+    border-top:  0.0625rem solid rgb(var(--medium-accent));
+    border-bottom: 0.0625rem solid rgb(var(--dark-accent));
+    background: rgba(0, 0, 0, 0);
+}
+
+/* Blockquote */
+blockquote,
+.blockquote,
+div.blockquote {
+    margin: 1em 0;
+    border-style: solid;
+    border-color: rgb(var(--medium-accent));
+    background-color: rgba(var(--pale-accent), 0.1);
+}
+
+/* table */
+table.wiki-content-table th {
+     border-color: rgb(var(--pale-accent));
+     background: rgb(var(--medium-accent));
+     color: rgb(var(--white-monochrome));
+}
+
+/* Side Bar Touch Up */
+#side-bar .heading,
+#side-bar .side-block>.collapsible-block:nth-child(1) .collapsible-block-folded {
+    background: rgba(var(--pale-accent), 0.35);
+    font-family: var(--title-font);
+    min-height: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-size: 125%;
+}
+
+#side-bar .heading p {
+    color: rgb(62, 62, 104);
+    font-family: var(--title-font);
+    text-shadow: none;
+    --text-shadow: none;
+    text-align: center;
+}
+
+/* Top Bar Touch Up */
+#top-bar {
+    --topmenu-category-color: var(--swatch-text-secondary-color);
+    --topmenu-category-hover-color: var(--swatch-text-primary-color);
+    --topmenu-category-hover-bg: var(--pale-accent);
+    --topmenu-hover-border-color: var(--swatch-primary);
+    --mobile-topmenu-sidebar-button-color: var(--swatch-text-secondary-color);
+    --dropdown-bg-color: var(--swatch-alternate-color), 0.9;
+    --dropdown-border-color: var(--swatch-text-tertiary-color), 0.5;
+    --dropdown-links-color: var(--swatch-text-secondary-color);
+    --dropdown-links-bg-color: 0,0,0,0;
+    --dropdown-links-hover-color: var(--swatch-text-secondary-color);
+    --dropdown-links-hover-bg-color: var(--swatch-primary);
+}
+
+/* Header Background - adapted from Croquembouche's Swirling Ashes theme */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height-on-desktop);
+    pointer-events: none;
+}
+
+body::before {
+    -webkit-animation: sky linear var(--sky-time) infinite;
+    animation: sky linear var(--sky-time) infinite;
+    background: linear-gradient(to top,
+              rgb(var(--sky-at-morning)) 0%,
+              rgb(var(--sky-at-morning)) 11%,
+              rgb(var(--sky-at-dawn)) 22%,
+              rgb(var(--sky-at-night)) 33%,
+              rgb(var(--sky-at-night)) 44%,
+              rgb(var(--sky-at-dusk)) 55%,
+              rgb(var(--sky-at-evening)) 66%,
+              rgb(var(--sky-at-daytime)) 77%,
+              rgb(var(--sky-at-daytime)) 88%,
+              rgb(var(--sky-at-morning)) 100%);
+    background-size: 100% calc(var(--header-height-on-desktop)
+                               * var(--sky-length));
+    animation: sky linear var(--sky-time) infinite;
+}
+
+@-webkit-keyframes sky {
+    from {
+        background-position: 0 calc(var(--header-height-on-desktop) * var(--sky-length));
+    }
+
+    to {
+        background-position: 0 0;
+    }
+}
+
+@keyframes sky {
+    from {
+        background-position: 0 calc(var(--header-height-on-desktop) * var(--sky-length));
+    }
+
+    to {
+        background-position: 0 0;
+    }
+}
+
+
+/* Rain - adapted from EstrellaYoshte's Christmas theme */
+#header-extra-div-1 {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: calc((-100vw + 100%)/2);
+    width: 99.4vw;
+    height: 10rem;
+    -webkit-animation: rainOne 1.7s infinite linear,
+        rainFade var(--sky-time) ease;
+    animation: rainOne 1.7s infinite linear,
+        rainFade var(--sky-time) ease;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background: url('https://scp-wiki.wdfiles.com/local--files/theme%3Acalamity/rain1.png');
+    background-repeat: repeat;
+    background-size: 14.375rem;
+    pointer-events: none;
+    -webkit-filter: blur(.9px);
+    filter: blur(.9px);
+}
+
+#header-extra-div-2 {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: calc((-100vw + 100%)/2);
+    width: 99.4vw;
+    height: 10rem;
+    -webkit-animation: rainTwo 1.2s infinite linear,
+        rainFade var(--sky-time) ease;
+    animation: rainTwo 1.2s infinite linear,
+        rainFade var(--sky-time) ease;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background: url('https://scp-wiki.wdfiles.com/local--files/theme%3Acalamity/rain1.png');
+    background-repeat: repeat;
+    background-size: 23.125rem;
+    pointer-events: none;
+    -webkit-filter: blur(0.4px);
+    filter: blur(0.4px);
+}
+
+#header-extra-div-3 {
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: calc((-100vw + 100%)/2);
+    width: 99.4vw;
+    height: 10rem;
+    -webkit-animation: rainThree .75s infinite linear,
+        rainFade var(--sky-time) ease;
+    animation: rainThree .75s infinite linear,
+        rainFade var(--sky-time) ease;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background: url('https://scp-wiki.wdfiles.com/local--files/theme%3Acalamity/rain1.png');
+    background-repeat: repeat;
+    background-size: 45rem;
+    pointer-events: none;
+    -webkit-filter: blur(.2px);
+    filter: blur(.2px);
+}
+
+@-webkit-keyframes rainOne{
+    0% {
+         opacity: .9;
+         background-position: 0rem 0rem;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.95;
+    }
+    100% {
+        opacity: 0.85;
+    	background-position: 0rem 46.875rem;
+    }
+}
+@keyframes rainOne{
+    0% {
+         opacity: .9;
+         background-position: 0rem 0rem;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.95;
+    }
+    100% {
+        opacity: 0.85;
+    	background-position: 0rem 46.875rem;
+    }
+}
+@-webkit-keyframes rainTwo{
+    0% {
+         opacity: 0.8;
+         background-position: 0rem -6.25rem;
+    }
+    8% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.8;
+        background-position: -3.125rem 43.75rem;
+    }
+}
+@keyframes rainTwo{
+    0% {
+         opacity: 0.8;
+         background-position: 0rem -6.25rem;
+    }
+    8% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.8;
+        background-position: -3.125rem 43.75rem;
+    }
+}
+@-webkit-keyframes rainThree{
+    0% {
+         opacity: 0.9;
+        background-position: 0rem 6.25rem;
+    }
+    13% {
+        opacity: 1;
+    }
+    91% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.7;
+        background-position: 0rem 46.875rem;
+    }
+}
+@keyframes rainThree{
+    0% {
+         opacity: 0.9;
+        background-position: 0rem 6.25rem;
+    }
+    13% {
+        opacity: 1;
+    }
+    91% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0.7;
+        background-position: 0rem 46.875rem;
+    }
+}
+
+@-webkit-keyframes rainFade {
+    34%,
+    56% {
+        opacity: 1;
+    }
+    0%,
+    30%,
+    60%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rainFade {
+    34%,
+    56% {
+        opacity: 1;
+    }
+    0%,
+    30%,
+    60%,
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Translation Box - coded by Calibri Bold */
+div.scpnet-interwiki-wrapper {
+    -webkit-filter: invert(18%) sepia(11%) saturate(216%) hue-rotate(203deg) brightness(104%) contrast(111%);
+    filter: invert(18%) sepia(11%) saturate(216%) hue-rotate(203deg) brightness(104%) contrast(111%);
+}
+
+/* Wikidot Footer Link Colors */
+#footer {
+    background: #4A4A7D;
+    color: #55D2D8;
+}
+
+/* Reduce Motion Check */
+@media screen and (prefers-reduced-motion: reduce) {
+  body::before,
+    #header-extra-div-1,
+    #header-extra-div-2,
+    #header-extra-div-3 {
+        -webkit-animation: none;
+        animation: none;
+  }
+}
+
+/* Credit Info Position fix */
+#page-content .rate-box-with-credit-button>.creditButton>p>a:before {
+    width: 100%;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+[[/module]]
+[[/collapsible]]
+[[/div]]

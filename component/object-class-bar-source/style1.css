@@ -1,0 +1,114 @@
+div.objclassbar {
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+}
+
+.objclassbar span {
+    word-break: break-word;
+}
+
+div.objclassbar > div {
+    max-width: 30%;
+    width: 30%;
+    flex-basis: 30%;
+}
+
+div.objclassbar div.sideleft {
+    font-size: 1.15em;
+    border-right: 0.125rem solid;
+    border-color: rgb(12,12,12);
+    border-color: rgb(var(--black-monochrome, 12, 12, 12));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+div.objclassbar div.sidemiddle {
+    font-size: 0.75em;
+    padding-left: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.objclassbar div.sideright {
+    display: flex;
+    font-size: 1.25em;
+    font-weight: 600;
+    border-left: 0.125rem solid;
+    border-color: rgb(12,12,12);
+    border-color: rgb(var(--black-monochrome, 12, 12, 12));
+    padding-left: 0.5rem;
+    justify-content: flex-end;
+}
+
+div.sideleft > div > span:nth-child(1),
+div.sidemiddle > div > span:nth-child(1) {
+    font-weight:900;
+}
+
+div.sideleft > div:nth-child(2) {
+    line-height: 1.1em;
+}
+
+div.sideleft > div:nth-child(2) > span:nth-child(1) {
+    height: 1.1em;
+}
+
+div.sideright > div.colorbars-container {
+    display: flex;
+    flex-direction: row-reverse;
+    transform: skew(15deg);
+    padding: 0 0.5em 0 0.25em;
+    height: 90%;
+    align-self: center;
+}
+
+div.sideright > div.leveltext-container {
+    height: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+div.sideright > div.colorbars-container > div.colorbars {
+    width: 0.5em;
+    height: 100%;
+    margin: 0 0.1rem;
+    background: {$colorbar-bg-color};
+    background: {$colorbar-bg-img};
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+div.sideright > div.colorbars-container > div.colorbars.full {
+    opacity: 1;
+}
+
+div.sideright > div.colorbars-container > div.colorbars.half {
+    opacity: 0.5;
+}
+
+div.sideright > div.colorbars-container > div.colorbars.none {
+    opacity: 0;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    div.objclassbar {
+     height: 3rem;
+    }
+    div.objclassbar div.sideleft {
+     font-size: 0.8em;
+    }
+    div.objclassbar div.sidemiddle {
+     font-size: 0.5em;
+    }
+    div.objclassbar div.sideright {
+     font-size: 0.75em;
+    }
+}

@@ -1,0 +1,454 @@
+[[iftags +テーマ]]
+[[module css]]
+@import url("https://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/1");
+@import url("https://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/2");
+@import url("https://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/3");
+
+:root {
+    --logo-image: url("https://scp-jp.wdfiles.com/local--files/theme%3Ascp-offices-theme/scpoffices_logo.svg");
+}
+
+.scp-image-block.block-right {
+    margin: 1em 0 1em 2em;
+}
+
+.scp-image-block a {
+    width: 100%;
+    min-width: 100%;
+}
+
+.scp-image-block img {
+    min-width: 100%;
+    border: 0.5rem solid rgba(var(--pale-gray-monochrome));
+    box-sizing: border-box;
+}
+
+#page-content > div.scp-image-block.block-right > a {
+    background-color: rgb(var(--gray-monochrome));
+}
+
+#page-content > div.scp-image-block.block-right > a > img {
+    padding: 1em;
+}
+[[/module]]
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[=]]
++ テーマカラー
+[[/=]]
+
+[[include :scp-jp:component:theme-squares -=-
+| color1-name=Jumbo
+| color1-variable=--gray-monochrome
+| color1-info=(127,127,127)
+| color1-has-light-text=1
+| color2-name=Envy
+| color2-variable=--bright-accent
+| color2-info=(145,179,153)
+| color2-has-light-text=1
+| subcolor1-name=Orange White
+| subcolor1-variable=--pale-gray-monochrome
+| subcolor1-info=(233,231,204)
+| subcolor2-name=Suva Gray
+| subcolor2-variable=--light-gray-monochrome
+| subcolor2-info=(147,147,147)
+| subcolor3-name=Dove Gray
+| subcolor3-variable=--dark-gray-monochrome
+| subcolor3-info=(101,101,101)
+| subcolor3-has-light-text=1
+| subcolor4-name=White Rock
+| subcolor4-variable=--white-monochrome
+| subcolor4-info=(238,238,216)
+| subcolor5-name=Zeus
+| subcolor5-variable=--black-monochrome
+| subcolor5-info=(25,20,16)
+| subcolor5-has-light-text=1
+| subcolor6-name=Viridian Green
+| subcolor6-variable=--dark-accent
+| subcolor6-info=(105,133,111)
+| subcolor6-has-light-text=1
+]]
+
+[[div class="scp-image-block block-right" style="width:300px;"]]
+[[image https://scp-jp.wdfiles.com/local--files/theme%3Ascp-offices-theme/scpoffices_logo.svg width="300px" style="width: 300px;" link="https://scp-jp.wdfiles.com/local--files/theme%3Ascp-offices-theme/scpoffices_logo.svg"]]
+[[div class="scp-image-caption" style="width: 300px;"]]
+SCP Officesテーマ
+[[/div]]
+[[/div]]
+
++ 使い方
+
+[[div_ style="display:flex;"]]
+[[image https://scp-jp.wdfiles.com/local--files/theme%3Ablack-highlighter-theme/black-highlighter-logo.svg]]
+[[/div]]
+
+++ 注: これはBlack Highlighterベースのテーマです。このテーマを使用するにはBlack Highlighterテーマもインポートする必要があります。[[[theme:black-highlighter-theme|詳細については、ここを参照してください]]]。
+
+SCP-JP関連Wikiの場合:
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:black-highlighter-theme]]@@
+@@[[include :scp-jp:theme:scp-offices-theme]]@@
+[[/div]]
+
++ 例
+
+罫線は、5つのハイフン「@@-----@@」を使用して作成でき、何かの内側（例: ブロック引用）に配置されていなければページ全体に適用されます。このドキュメントのセクションを区切る線は罫線です。
+
+-----
+
+見出しは、行の先頭に1～6文字の「+」を置くことで作成できます。
+
+[[collapsible show="+ 見出し" hide="- 見出し"]]
++ 1番目の見出し
+
+++ 2番目の見出し
+
++++ 3番目の見出し
+
+++++ 4番目の見出し
+
++++++ 5番目の見出し
+
+++++++ 6番目の見出し
+[[/collapsible]]
+
+@@ @@
+
+[[tabview]]
+[[tab タブを作る]]
+これはタブです。
+
+[[/tab]]
+[[tab タブが作られた]]
+見てください、ここにもテキストがあります。
+
+なんと奇妙な。
+[[/tab]]
+[[tab 長いタブ]]
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+
+これは長いタブです。テキストがたくさん入っています。
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[tab 空のタブ]]
+[[/tab]]
+[[/tabview]]
+
+> これは引用ブロックです。各行の先頭に半角の「> 」を置くことで作成されます。
+> 
+> 追加のテキスト
+> -----
+> これは罫線です
+> 
+>> 入れ子になった引用ブロック
+
+||~ これは ||~ テーブルです ||
+||もう || 作り方は ||
+||||知っているはずです ||
+
+[[=]]
+[[span style="font-family: var(--header-font);"]]本文、ヘッダー、見出し、および等幅フォントはIBM Plex Mono[[footnote]]**訳注:** 原文ママ。実際にはJetBrains Monoが適用されている。おそらく文面の更新忘れか。[[/footnote]]。[[/span]]
+[[/=]]
+
+@@ @@
+
+[[footnoteblock]]
+[[/iftags]]
+[[div [[iftags -テーマ]]style="display: none"[[/iftags]]]]
+-----
+[[collapsible show="+ テーマコードの表示" hide="- テーマコードの非表示"]]
+[[module CSS show="true"]]
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+@supports(display: grid) {
+    :root {
+    	/* Typefaces */
+    	--body-font: "JetBrains Mono", Recursive, Consolas, monaco, monospace;
+    	--header-font: var(--header-font);
+    	--title-font: var(--header-font);
+    	--mono-font: var(--header-font);
+    	--UI-font: var(--header-font);
+
+    	/* Standard Colors */
+
+    	--white-monochrome: 238, 238, 216;
+    	--pale-gray-monochrome: 233, 231, 204;
+    	--light-gray-monochrome: 147, 147, 147;
+    	--gray-monochrome: 127, 127, 127;
+    	--dark-gray-monochrome: 101, 101, 101;
+    	--black-monochrome: 25, 20, 16;
+    	--bright-accent: 145, 179, 153;
+    	--medium-accent: 145, 179, 153;
+    	--dark-accent: 105, 133, 111;
+
+    	--swatch-text-general: var(--swatch-text-dark);
+
+    	--logo-image: url("https://scp-jp.wdfiles.com/local--files/theme%3Ascp-offices-theme/scpoffices_logo.svg");
+
+    	--background-gradient-color: 215, 215, 215;
+    	--background-gradient-distance: 40rem;
+
+    	/* Link Colors */
+    	--link-color: var(--bright-accent);
+    	--visited-link-color: var(--dark-accent);
+    	--hover-link-color: var(--dark-accent);
+    	--newpage-color: 221, 102, 17;
+    }
+    #container-wrap-wrap {
+    	background-image:
+    		repeating-linear-gradient(180deg,
+    			hsla(0, 0%, 100%, 0),
+    			hsla(0, 0%, 100%, 0) 0.25vh,
+    			rgba(88, 88, 88, 0.1) 0.35vh,
+    			rgba(88, 88, 88, 0.2) 0.5vh),
+    		linear-gradient(to bottom,
+     				rgba(var(--black-monochrome), 1) var(--header-height-on-desktop),
+    			rgba(var(--gray-monochrome), 1) calc(var(--header-height-on-desktop) + 0.125rem),
+    			rgba(var(--gray-monochrome), 1) calc(100% - 0.125rem),
+    			rgba(var(--gray-monochrome), 1) calc(100% - 0.125rem),
+    			rgba(var(--black-monochrome), 1) 100%);
+    	background-repeat: no-repeat;
+    	background-size:
+    		100% var(--header-height-on-desktop),
+    		100% var(--final-header-height-on-desktop);
+    }
+    a {
+    	--wght: 900;
+    	font-weight: 900;
+    }
+    #header h2 span::before {
+    	color: rgb(var(--bright-accent));
+    }
+    #header h1 *,
+    #top-bar *,
+    #page-title * {
+    	will-change: opacity;
+    	transition: opacity 0.2s ease-in-out;
+    }
+    #header h1 a:hover::before,
+    #header h1 a:hover::after,
+    #top-bar a:hover,
+    #page-title:hover,
+    #search-top-box-form input[type="submit"]:hover,
+    #search-top-box-form input[type="submit"]:focus {
+    	-webkit-animation: flicker 20s linear infinite;
+    	animation: flicker 20s linear infinite;
+    }
+    #side-bar .collapsible-block-unfolded {
+    	background: unset;
+    }
+    #side-bar div.menu-item a.collapsible-block-link,
+    #side-bar .side-block>.collapsible-block a.collapsible-block-link {
+    	background: rgba(var(--medium-accent), 0.5);
+    }
+    #side-bar .close-menu::before {
+    	line-height: 0.85em !important;
+    }
+    #side-bar .heading p,
+    #side-bar .collapsible-block .collapsible-block-link {
+    	color: rgb(var(--swatch-primary-darkest))
+    }
+    #side-bar div.menu-item a,
+    #side-bar div.menu-item .text {
+    	--wght: 900;
+    	font-weight: 900;
+    }
+    #side-bar div.menu-item a:hover,
+    #side-bar div.menu-item a:active {
+    	-webkit-animation: flicker 20s linear infinite;
+    	animation: flicker 20s linear infinite;
+    	color: rgb(var(--swatch-text-tertiary-color));
+    }
+    #side-bar div.menu-item a:focus-within {
+    	-webkit-animation: flicker 20s linear infinite;
+    	animation: flicker 20s linear infinite;
+    	color: rgb(var(--swatch-text-tertiary-color));
+    }
+    .info-container .collapsible-block-folded,
+    .info-container .collapsible-block-unfolded-link {
+    	background: rgb(var(--bright-accent)) !important;
+    }
+    div[id*="page-options-bottom"] {
+    	--ui-wght: 600;
+    	--ui-hvr-wght: 600;
+    	font-size: calc(var(--base-font-size) * 0.75);
+    }
+    @media only screen and (max-width: 56.25rem) {
+    	#header {
+    		background-repeat: no-repeat, repeat;
+    		background-position: left calc(5vw + 5.5rem - 10.4rem) top calc(4% - var(--offset-from-page-top) / 2), top center;
+    		background-size: calc(8.75rem + var(--offset-from-page-top)), 100% var(--header-height-on-desktop);
+    	}
+    }
+    @-webkit-keyframes flicker {
+    	0% {
+    		opacity: 1;
+    	}
+    	5% {
+    		opacity: .9;
+    	}
+    	6% {
+    		opacity: .8;
+    	}
+    	11% {
+    		opacity: .4;
+    	}
+    	11.25% {
+    		opacity: .6;
+    	}
+    	11.5% {
+    		opacity: .4;
+    	}
+    	18% {
+    		opacity: 1;
+    	}
+    	18.5% {
+    		opacity: .9;
+    	}
+    	22% {
+    		opacity: 1;
+    	}
+    	38.5% {
+    		opacity: 1;
+    	}
+    	39% {
+    		opacity: .8;
+    	}
+    	42% {
+    		opacity: 1;
+    	}
+    	60% {
+    		opacity: 1;
+    	}
+    	60.5% {
+    		opacity: 0;
+    	}
+    	62% {
+    		opacity: 0;
+    	}
+    	63% {
+    		opacity: .2;
+    	}
+    	63.25% {
+    		opacity: 0;
+    	}
+    	65% {
+    		opacity: 1;
+    	}
+    	73% {
+    		opacity: 1;
+    	}
+    	75% {
+    		opacity: .8;
+    	}
+    	79% {
+    		opacity: 1;
+    	}
+    	100% {
+    		opacity: 1;
+    	}
+    }
+    @-webkit-keyframes flicker {
+    	0% {
+    		opacity: 1;
+    	}
+    	5% {
+    		opacity: .9;
+    	}
+    	6% {
+    		opacity: .8;
+    	}
+    	11% {
+    		opacity: .4;
+    	}
+    	11.25% {
+    		opacity: .6;
+    	}
+    	11.5% {
+    		opacity: .4;
+    	}
+    	18% {
+    		opacity: 1;
+    	}
+    	18.5% {
+    		opacity: .9;
+    	}
+    	22% {
+    		opacity: 1;
+    	}
+    	38.5% {
+    		opacity: 1;
+    	}
+    	39% {
+    		opacity: .8;
+    	}
+    	42% {
+    		opacity: 1;
+    	}
+    	60% {
+    		opacity: 1;
+    	}
+    	60.5% {
+    		opacity: 0;
+    	}
+    	62% {
+    		opacity: 0;
+    	}
+    	63% {
+    		opacity: .2;
+    	}
+    	63.25% {
+    		opacity: 0;
+    	}
+    	65% {
+    		opacity: 1;
+    	}
+    	73% {
+    		opacity: 1;
+    	}
+    	75% {
+    		opacity: .8;
+    	}
+    	79% {
+    		opacity: 1;
+    	}
+    	100% {
+    		opacity: 1;
+    	}
+    }
+}
+[[/module]]
+[[/collapsible]]
+[[/div]]

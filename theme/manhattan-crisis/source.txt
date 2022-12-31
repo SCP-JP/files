@@ -1,0 +1,230 @@
+[[module CSS]]
+@import url("http://scp-jp.wikidot.com/theme:manhattan-crisis/code/1");
+[[/module]]
+
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** マンハッタン・クライシス テーマ
+**著者:** ©︎[[*user Mishary]]
+**作成年:** 2020
+[[include :scp-jp:credit:end-preview]]
+
+> **テーマ名**: マンハッタン・クライシス テーマ
+> **作成者**: Mishary
+
+このテーマを使用するには、次のコードをページに貼り付けてください。
+
+[[div class="code"]]
+@@[[include :scp-jp:theme:manhattan-crisis]]@@
+[[/div]]
+
+このテーマは、カノン[[[1998-hub|1998年]]]内の連作[[[1998-911-hub|マンハッタン・クライシス]]]のために作成されました。[[*user Mishary]]によって作成されたCSSテーマにヘッダーの文字配置について[[*user ukwhatn]]による修正を加えたものです。
+
+ヘッダー画像等は全て[[*user Mishary]]によって作成されました。
+
+[[collapsible show="画像ライセンス" close="画像ライセンス"]]
+manhattan_silhouette.svg
+[[div class="blockquote"]]
+**ファイルページ:** [*http://scp-jp-storage.wikidot.com/file:3438721-45-y0as マンハッタンテーマヘッダー用シルエット]
+
+**ソース:** http://scp-jp-storage.wikidot.com/file:3438721-45-y0as
+**ライセンス:** CC BY-SA 3.0
+
+**タイトル:** Silhouette of Manhattan
+**著作権者:** [[*user Mishary]]
+**公開年:** 2021
+**補足:**
+以下の画像を元に作成
+[[div class="blockquote"]]
+**ソース:** http://scp-jp.wikidot.com/scp-2911-jp
+**ライセンス:** CC BY-SA 3.0
+
+**タイトル:** new-york-city-556848_1280.jpg
+**著作権者:** [[*user islandsmaster]]
+**公開年:** 2020
+**補足:** 以下の画像をトリミング、縮小加工
+[[div class="blockquote"]]
+**ソース:** https://pixabay.com/ja/photos/%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A8%E3%83%BC%E3%82%AF%E5%B8%82-%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%B3-556848/
+**ライセンス:** CC0 (サイト表記上はPixabay Lisence)
+
+**著作権者:** skeeze
+**公開年:** 2014
+[[/div]]
+[[/div]]
+[[/div]]
+
+dawn.png
+[[div class="blockquote"]]
+**ファイルページ:** [*http://scp-jp-storage.wikidot.com/file:3438721-45-1bim マンハッタンテーマ用ヘッダー背景画像夜明け]
+
+**ソース:** http://scp-jp-storage.wikidot.com/file:3438721-45-1bim
+**ライセンス:** CC BY-SA 3.0
+
+**タイトル:** dawn.png
+**著作権者:** [[*user Mishary]]
+**公開年:** 2020
+[[/div]]
+[[/collapsible]]
+
+[[code type="css"]]
+/*
+    SCP Sigma 9: Manhattan Crisis Theme
+    [2020 Wikidot Theme]
+    Created by Mishary
+    Edited by ukwhatn
+    SCP Sigma 9 was Created as for the SCP Foundation by Aelanna and Edited for SCP財団 by Dr Devan, NanimonoDemonai
+    The font Gentium Basic is under Open Font License
+    CC BY-SA 3.0
+*/
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@700&display=swap');
+ 
+div#container-wrap {
+    background: url(http://scp-jp-storage.wikidot.com/local--files/file:3438721-45-1bim/dawn.png) top left repeat-x;
+}
+div#header {
+    background: url(http://scp-jp-storage.wikidot.com/local--files/file:3438721-45-y0as/manhattan_silhouette.svg)  no-repeat;
+}
+div#header h1 a span {
+    font-size: 0px;
+}
+div#header h1 a:before {
+    font-family: 'Gentium Basic', serif;
+    content: "Manhattan Crisis";
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+}
+div#header h2 span {
+    font-size:0px;
+    padding: 4px;
+}
+div#header h2:before {
+    font-family: 'Gentium Basic', serif;
+    font-size: 16px;
+    content: "        9.11 2001";
+    color: #eee;
+    padding: 16px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    white-space: pre;
+}
+
+#account-options {
+    background: rgba(255,255,255,0.2);
+    background-clip: padding-box;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: solid 1px transparent;
+    border-radius: 15px 0;
+    box-shadow: 10px 10px 10px rgb(48 54 60 / 3%);
+}
+#login-status ul a{
+    color: #fff;
+}
+#account-options li a:hover {
+    color: #d00;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 15px 0;
+}
+
+/* TOPBAR */
+
+#top-bar {
+    top: 141px;
+    height: 20px;
+    line-height: 20px;
+}
+#top-bar ul li.sfhover a, #top-bar ul li:hover a {
+    background: #fff;
+}
+#top-bar li:hover ul, #top-bar li.sfhover ul {
+    background: rgba(255,255,255,0.2);
+    background-clip: padding-box;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: solid 1px transparent;
+    box-shadow: 10px 10px 10px rgb(48 54 60 / 3%);
+}
+#top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
+    background: transparent;
+    border-top: transparent;
+    box-shadow: 10px 10px 10px rgb(48 54 60 / 3%);
+}
+
+/* SEARCHBOX */
+ 
+#search-top-box-input {
+    border: solid 1px #eee;
+    border-radius: 0px;
+    background-color: #f00;
+    box-shadow: none;
+   color: #eee;
+}
+#search-top-box-input:hover, #search-top-box-input:focus {
+    border: solid 1px #000;
+    background-color: #f00;
+    box-shadow: none;
+}
+#search-top-box-form input[type=submit] {
+    background: none;
+    background-color: #eee;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #f00;
+    position: relative;
+}
+#search-top-box-form input[type=submit]:hover,
+#search-top-box-form input[type=submit]:focus {
+    background: none;
+    background-color: #eee;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,.8);
+    color: #f00;
+    text-shadow: none;
+}
+
+/* MEDIA powered by ukwhatn*/
+
+@media (max-width: 800px) {
+  #search-top-box-input {
+    display: none;
+  }
+  #search-top-box-form input[type=submit] {
+    top: 20px;
+  }
+}
+ 
+@media (max-width: 580px) {
+  div#header h1,
+  div#header h2 {
+    margin-left: unset;
+    text-align: center;
+    width: 100%;
+  }
+  div#header h1 {
+    margin: unset;
+    padding: unset;
+  }
+  div#header h1 a {
+    margin: 0 auto;
+    padding: 80px 0 0;
+  }
+  div#header h1 a::before {
+    width: 100%;
+    display: block;
+  }
+  div#header h2 {
+    padding: 1.5em 0 0 ;
+  }
+  div#header h2:before {
+    content: "9.11 2001";
+    padding: 0;
+  }
+}
+ 
+@media (max-width: 375px) {
+  #search-top-box-form input[type=submit] {
+    display: none;
+  }
+}
+[[/code]]
+[[/iftags]]

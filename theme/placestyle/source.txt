@@ -1,0 +1,1318 @@
+[[div class="anchor"]]
+[[div class="authorbox"]]
+[[=]]
+[[div class="tableb"]]
+[[module ListPages name="="]]
+||~ %%title%% ||
+||= **作成者:** [[iftags +テーマ]][[*user YS_GPCR]], [[/iftags]]%%created_by_linked%% ||
+||~ 作成日: %%created_at|%Y/%m/%d%% ||
+[[/module]]
+[[iftags +テーマ]]
+上記のページ情報テーブルは左手側のサイドボックスである{{authorbox}}内に、ListPagesモジュールによって自動生成されています。これはPlacestyleのinclude構文を{{display: none;}} divで囲まない限り、このページをインクルードするすべてのページに自動的に適用されます。左側に設置されているため、従来のサイドボックスとシームレスに平行して使用できます。モバイルでは表示されません。
+[[/iftags]]
+[[/div]]
+[[/=]]
+[[/div]]
+[[/div]]
+
+[[iftags +テーマ]]
+[[div style="display: none;"]]
+[[include :scp-jp:component:image-block name=http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-50-8yhg/placeholderword.png|caption=.]]
+[[/div]]
+
+[[module CSS]]
+:root {
+  --header-title: "PLACEHOLDER";
+  --header-subtitle: "HERE, HOLD MY PLACE";
+}
+[[/module]]
+
+[[div]]
+[[include :scp-jp:credit:start-preview]]
+[[=]]
+**PLACESTYLE CSS**
+**By:** [[*user Placeholder McD]]
+
+このテーマに含まれている殆どのコードを共同制作してくださったことに関して、[[*user Croquembouche]]、[[*user EstrellaYoshte]]、[[*user Nagiros]]の3名に感謝します。
+[[/=]]
+[[include :scp-jp:credit:end-preview]]
+[[/div]]
+
+[[=]]
++* これは何?
+[[/=]]
+
+このPlacestyle CSSは、[[*user Placeholder McD]]が自身の記事に使用するために作成した、[[*user EstrellaYoshte]]の[[[*theme:penumbra|Penumbraテーマ]]]の派生テーマです。幅広い作品に適用し、簡単に更新することができるように作成されました。Penumbraをベースに、私の望まない要素を除き、好きな要素を[[*user HarryBlank]]の[[[theme:blankstyle|Blankstyle CSS]]]から加え、さらに幾つか良いものを加えています！
+
+**他のテーマ、特にBlack Highlighterと共にはほぼ確実に機能しません。何が起こるか分からないのであれば、使用しないでください。**
+----
+[[=]]
++* 使い方
+[[/=]]
+
+このテーマを使用するには、次の構文をページの最上部にコピー＆ペーストしてください。
+
+> @@[[include :scp-jp:theme:placestyle]]@@
+
+このテーマには次のコンポーネントがインクルードされていることに留意してください。
+
+* [[[component:toggle-sidebar|トグル式サイドバー]]]
+* [[[component:fade-in|Fade-In]]] ({{speed=3}}に設定済み)
+* [[[component:acs-animation|ACSアニメーション]]]
+* [[[component:betterfootnotes|BetterFootnotes]]]
+
+このテーマをinfo-rateモジュールやcreditモジュールと併用する際は、情報パネルがフェードイン構文によって遅延しないようにするために、それらのモジュールを{{[[div]]}}で囲んでください。
+
+このテーマでは[[*user PeppersGhost]]の[[[component:image-block-peppo|Image Block Peppo]]]とEstrellaYoshteから、小さな画面 (モバイル端末など) で画像ブロックを中央寄せにして綺麗に見せるためのコードを転用しています。このテーマのほぼすべてのコードはPenumbraテーマからの派生です。
+----
+[[div class="limit"]]
+[[div class="anchor"]]
+[[div class="sidebox"]]
+[[div class="tableb"]]
+このテーマに含まれている殆どのコードを共同制作してくださったことに関して[[*user Croquembouche]]、[[*user EstrellaYoshte]]、[[*user Nagiros]]の3名に感謝します。 ||
+
+= 上記のテーブルは通常のサイドボックス内にあります。{{limit}} divを使用することで、文章の特定の区間のみにサイドボックスを付属させることができます。このページのコードをスクロールしていくと、サイドボックスは「ソースコード」の見出しより先へはついてこないことがわかるでしょう。
+[[/div]]
+[[/div]]
+[[/div]]
+
+PLACESTYLE CSSとPenumbraの主な違いは次の通りです。
+
+* Sigma-9と同じ本文フォント (Verdana) を使用している
+* Blankstyleと同じ見出しフォント (Monserrat) を使用している
+* シグマ-9に似せたシンプルな画像ブロック
+* Blankstyleと同様に、テーブルに内部パディングがある (サイドボックス内のものは除く)
+* テーブルのヘッダーセルがaccentColorに従って色付けされる
+* Blankstyleと同様に、{{tableb}} divを用いてセル同士を (および画像キャプションも！) 分割できる
+* Blankstyleと同様の、透明なサイドボックス背景
+* [[*user NatVoltaic]]と[[*user stormbreath]]の[[[theme:ad-astra|アド・アストラ テーマ]]]と同様に、{{bt}} spanで文章を太字にし、(accentColorに従って) 色付けできる (可読性のために、どのようなaccentColorを使っていたとしても実際にはそれよりも少し明るくなる)
+* 四角いサイドバーボタン
+* BetterFootnotesがaccentColorに従って自動調整される
+* [[*user Nagiros]]の[[[theme:night-rush-theme|Night Rushテーマ]]]と同様に、ACSコンポーネントがダークテーマに合うように配色を変更されている
+* Blankstyleと同様に、ACSコンポーネントの左上の「アイテム番号:」が非表示化されている
+* {{hideLocation="both"}}を指定された折りたたみの装飾がより直感的に表示される
+* ListPagesモジュールによって作者情報を表示する左手側のサイドボックスである{{authorbox}}が、このテーマを使用するあらゆるページに (include構文を{{div style="display: none;"}}で囲まない限り) 自動的に追加される (通常のサイドボックスとは干渉しない)
+@@ @@
+[[collapsible show="例" hide="折り畳む" hideLocation="both"]]
+
+[[div class="tableb"]]
+[[include :scp-jp:component:image-block
+    name=http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-51-ezr8/tb.png|
+    caption=キャプション分割版の画像ブロック|
+    width=200px|
+]]
+[[/div]]
+
++ 見出し1
+++ 見出し2
+
+普通の文章。[[span class="bt"]]{{bt}} spanの文章！[[/span]]
+
+[[div class="tableb"]]
+||||~ ヘッダーセルが超Coolなテーブル ||
+||= {{tableb}} divを使えば ||= セル同士を分割できる！ ||
+||||= スタイリッシュな内部パディングも少しついている ||
+||= これがワイルドじゃないのなら、 ||= 何がワイルドだというのか。[[span class="fnnum"]].[[/span]][[span class="fncon"]]BetterFootnoteの色はaccentColorに合うように調整されます。[[/span]] ||
+[[/div]]
+@@ @@
+[[/collapsible]]
+@@ @@
+[[/div]]
+= パッチノートはディスカッションスレッドにあります。
+----
+[[=]]
++ ソースコード:
+[[/=]]
+
+[[/iftags]]
+
+[[div [[iftags -テーマ]]style="display: none"[[/iftags]]]]
+
+[[include :scp-jp:component:toggle-sidebar]]
+[[include :scp-jp:component:fade-in speed=3]]
+
+>[[ift{$acs}gs +テーマ]]
+[[include :scp-jp:component:acs-animation]]
+>[[/ift{$acs}gs]]
+
+[[include :scp-jp:component:betterfootnotes]]
+
+[[collapsible show="コード" hide="コード"]]
+[[module CSS show="true"]]
+/*
+    PLACESTYLE CSS
+    [2021 Wikidot Theme]
+    By Placeholder McD
+    Based on:
+       Penumbra Theme by EstrellaYoshte
+       Paperstack Theme by EstrellaYoshte
+       BLANKSTYLE CSS by Placeholder McD, HarryBlank
+       Ad Astra Theme by NatVoltaic, stormbreath
+       Night Rush Theme by Nagiros
+
+    Edited by iti119 for SCP-JP
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap');
+
+#page-content { font-size: .81rem; }
+
+body {
+    color: #EDEDED;
+    background-color: #2F333C;
+    background-image: linear-gradient(
+        to bottom,
+        #21252E, #21252E 90px,
+        #21252E 90px, #2F333C 200px,
+        #2F333C 200px, #2F333C 100%);
+    background-repeat: no-repeat;
+}
+
+#main-content {
+    top: -1.2rem;
+}
+
+/* ---- SCROLLBAR ---- */
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: #transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: #21252E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ededed;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accentColor);
+}
+
+/* ---- HEADER ---- */
+
+div#container-wrap,
+div#header {
+     background-image: none;
+}
+
+div#extra-div-1 {
+    height: 164px;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    background: var(--lgurl);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+#header h1, #header h2 { margin-left: 0; float: none; text-align: center; }
+/* Move the subtitle down a smidge */
+#header h2 { margin-top: 0.5rem; }
+/* Hide the existing text */
+#header h1 span, #header h2 span { font-size: 0; display: none; }
+/* Style the new text */
+#header h1 a::before, #header h2::before {
+    color: var(--accentColor);
+    text-shadow: none;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Set the new text's content from variable */
+#header h1 a::before {
+  content: var(--header-title, "SCP FOUNDATION");
+  font-weight: 300;
+  font-size: 1.3em;
+}
+#header h2::before {
+  content: var(--header-subtitle, "SECURE - CONTAIN - PROTECT");
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+#login-status {
+    color: #ededed;
+}
+#login-status a {
+    color: var(--accentColor);
+}
+#login-status ul a {
+    color: #ededed;
+    background: #21252E;
+}
+#login-status ul a:hover {
+    color: var(--accentColor);
+}
+
+#account-topbutton{
+    border: solid 1px var(--accentColor);
+}
+
+#footer, #footer a {
+    background: transparent;
+    color: #ededed;
+}
+#license-area {
+     color: #ededed;
+}
+
+#search-top-box {
+    top: 2.2rem!important;
+    right: 8px;
+}
+#search-top-box-form > input[type=submit] {
+    border: solid 1px #ededed;
+    background: #21252E!important;
+    box-shadow: none;
+    border-radius: 0;
+    color: #ededed;
+    transition: color 0.15s linear;
+}
+#search-top-box-form input[type=submit]:hover {
+    border: solid 1px var(--accentColor);
+    box-shadow: none;
+    color: var(--accentColor);
+}
+#search-top-box-form > input[type=text] { display: none; }
+
+/* ---- TOP BAR ---- */
+ 
+#top-bar {
+     top: 8.4rem;
+     display: flex;
+     justify-content: center;
+     right: 0;
+}
+@media (max-width: 768px) {
+    .mobile-top-bar {
+         display: flex;
+         justify-content: center;
+         max-width: 100%;
+         width: 100%;
+         left: 0;
+    }
+}
+#top-bar, #top-bar a {
+     color: #ededed;
+     transition: color 0s;
+}
+#top-bar ul li ul {
+    border-color: var(--accentColor);
+    overflow: hidden;
+}
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+   border-top-color: #2F333C;
+}
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    background: #21252E;
+    color: #ededed;
+}
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #21252E; /* top bar hover background color */
+    color: var(--accentColor);
+    transition: color 0.1s linear;
+}
+
+/* ---- SIDE BAR ---- */
+
+div#side-bar{
+    background: #21252E;
+    clear: both;
+    padding: .8em;
+    border-radius: 0;
+    box-shadow: none;
+    overflow-x: hidden;
+}
+
+#side-bar .heading{
+    color: #ededed;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.94rem;
+    border-bottom: solid 1px #ededed;
+}
+#side-bar .side-block {
+    border: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: #21252E;
+}
+#side-bar .side-block.media {
+    background-color:#21252E;
+}
+#side-bar .side-block.resources {
+    background-color:#21252E;
+}
+.side-block .menu-item > .image {
+    display: none;
+}
+
+#top-bar div.open-menu a {
+    border-radius: 0;
+    box-shadow: none;
+    color: var(--accentColor);
+    background-color: #21252E;
+    border: 1px groove var(--accentColor);
+}
+
+@media (max-width: 767px) {
+    #main-content {
+        padding: 0;
+        margin: 0 5%;
+        border-left: none;
+    }
+    #page-title {
+        margin-top: 0.7em;
+    }
+    #side-bar {
+        background-color: #21252E;
+        left: -18.6em;
+    }
+    #side-bar:target {
+        border: none;
+        box-shadow: none;
+    }
+    #side-bar .close-menu {
+        transition: width 0.5s ease-in-out 0.1s,
+                    opacity 1s ease-in-out 0s;
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background: rgba(0,0,0,0.3);
+        background-position: 18.6em 50%;
+        z-index: -1;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #side-bar:target .close-menu {
+        width: calc(100% - 18.6em);
+        right: 0;
+        left: auto;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    #side-bar:target .close-menu:hover {
+        background: unset;
+    }
+    #page-content > hr, #page-content > .list-pages-box > .list-pages-item > hr {
+        margin: 3em -5.5%;
+    }
+    #side-bar {
+        top: 0;
+    }
+    #side-bar .heading {
+        padding-left: 1em;
+        margin-left: -1em;
+    }
+    #search-top-box {
+        top: 107px;
+    }
+}
+
+/* ---- TABS ---- */
+
+/* ---- YUI TAB BASE ---- */
+.yui-navset .yui-nav a,.yui-navset .yui-navset-top .yui-nav a{background-color:inherit;background-image:inherit}.yui-navset .yui-nav a:hover,.yui-navset .yui-nav a:focus{background:inherit;text-decoration:inherit}.yui-navset .yui-nav .selected a,.yui-navset .yui-nav .selected a:focus,.yui-navset .yui-nav .selected a:hover{color:inherit;background:inherit}.yui-navset .yui-nav,.yui-navset .yui-navset-top .yui-nav{border-color:inherit}.yui-navset li{line-height:inherit}
+ 
+/* ---- YUI TAB CUSTOMIZATION ----*/
+ 
+ .yui-navset .yui-nav,
+ .yui-navset .yui-navset-top .yui-nav{
+     display: flex;
+     flex-wrap: wrap;
+     width: calc(100% - .125rem);
+     margin: 0 auto;
+     border-color: var(--accentColor);
+     box-shadow: none;
+}
+ .yui-navset .yui-nav a, /* ---- Link Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav a{
+     color: #ededed;
+     font-weight: bold;
+    /* ---- Tab Background Colour | [UNSELECTED] ---- */
+     background-color: #21252E;
+     border: unset;
+     box-shadow: none;
+     box-shadow: none;
+     transition: background-color 0.15s linear;
+}
+ .yui-navset .yui-nav a:hover,
+ .yui-navset .yui-nav a:focus{
+     color: #ededed;
+    /* ---- Tab Background Colour | [HOVER] ---- */
+     background-color: var(--accentColor);
+}
+ .yui-navset .yui-nav li, /* ---- Listitem Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav li{
+     position: relative;
+     display: flex;
+     flex-grow: 2;
+     max-width: 100%;
+     margin: 0;
+     padding: 0;
+     color: #ededed;
+     background-color: #21252E;
+     border-color: transparent;
+     box-shadow: none;
+}
+ .yui-navset .yui-nav li a,
+ .yui-navset-top .yui-nav li a,
+ .yui-navset-bottom .yui-nav li a{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+}
+ .yui-navset .yui-nav li em{
+     border: unset;
+}
+ .yui-navset .yui-nav a em,
+ .yui-navset .yui-navset-top .yui-nav a em{
+     padding: .35em .75em;
+ 
+     text-overflow: ellipsis;
+     overflow: hidden;
+     white-space: nowrap;
+}
+ .yui-navset .yui-nav .selected, /* ---- Selection Modifier ---- */
+ .yui-navset .yui-navset-top .yui-nav .selected{
+     flex-grow: 2;
+     margin: 0;
+     padding: 0;
+    /* ---- Tab Background Colour | [SELECTED] ---- */
+     background-color: var(--accentColor);
+}
+ .yui-navset .yui-nav .selected a,
+ .yui-navset .yui-nav .selected a em{
+     border: none;
+}
+ .yui-navset .yui-nav .selected a{
+     width: 100%;
+     color: #21252E;
+     font-weight: bold;
+}
+ .yui-navset .yui-nav .selected a:focus,
+ .yui-navset .yui-nav .selected a:active{
+     color: #21252E;
+     background-color: var(--accentColor);
+}
+ .yui-navset .yui-content {
+    background-color: #21252E;
+    box-shadow: none;
+}
+ .yui-navset .yui-content,
+ .yui-navset .yui-navset-top .yui-content{
+     padding: .5em;
+     border: none;
+}
+
+/*---- TAB ANIMATION by Croquembouche ---- */
+
+.yui-navset .yui-content > div {
+    display: block;
+    top: 0;
+    overflow: hidden;
+    transform-origin: 0 0;
+}
+
+#page-content .yui-navset .yui-content > div[style*="none"] {
+    display: block !important;
+    flex: 0;
+    max-height: 0;
+    padding: 0 0.5em;
+    border-width: 0;
+    /* The following transition affects the one that DISAPPEARS */
+    transition: padding 0s linear 0.5s,
+          border-width 0s linear 0.5s,
+          flex 0.5s cubic-bezier(.18,.51,.54,.9) 0s;
+    animation: tab-disappear 0.5s ease-in-out 0s 1 both;
+}
+#page-content .yui-navset .yui-content > div[style*="block"] {
+    display: block !important;
+    flex: 1;
+    max-height: 9999rem;
+    /* The following transition affects the one that APPEARS */
+    transition: padding 0s linear 0.5s,
+          border-width 0s linear 0.5s,
+          flex 0.5s cubic-bezier(.18,.51,.54,.9) 0.5s;
+    animation: tab-appear 0.5s ease-in-out 0.5s 1 both;
+}
+
+@keyframes tab-disappear {
+    0% { max-height: 9999rem; }
+    1% { max-height: 100vh; }
+    100% { max-height: 0; }
+}
+@keyframes tab-appear {
+    0% { max-height: 0; }
+    99% { max-height: 100vh; }
+    100% { max-height: 9999rem; }
+}
+
+
+/* ---- INFO BAR ---- */
+ body{
+     --barColour: #21252E;
+     --linkColour: #ededed;
+}
+
+ .info-container .collapsible-block-content{
+     padding: 0 .5em 30px;
+}
+ .info-container .collapsible-block-content .wiki-content-table{
+     width: 100%;
+}
+
+/* Ayer's info-bar patch by Monkatraz */
+#page-content .info-container .collapsible-block-folded, #page-content .info-container .collapsible-block-unfolded-link  {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: none;
+}
+#page-content .info-container .collapsible-block-link::before, #page-content .info-container .collapsible-block-unfolded-link::before  {
+    content: " ";
+    display: none;
+}
+#page-content .info-container .collapsible-block-content::after {
+    display: none;
+}
+
+/* ---- INFO PANE ---- */
+
+#page-content .creditRate{
+     margin: unset;
+     margin-top: 4px;
+     margin-bottom: 4px;
+     margin-right: 3px;
+}
+#page-content .rate-box-with-credit-button {
+    background-color: #21252E;
+    border: solid 2px #21252E;
+    border-radius: 0;
+    box-shadow: 3px 0px 0px 0px var(--accentColor);
+}
+#page-content .rate-box-with-credit-button .creditButton p a {
+    border-left-color: transparent;
+}
+ 
+#page-content .rate-box-with-credit-button .page-rate-widget-box .cancel {
+    border-radius: 0;
+}
+#page-content .rate-box-with-credit-button .page-rate-widget-box .rate-points {
+    border-left: 0;
+}
+ 
+.rate-box-with-credit-button .page-rate-widget-box .cancel a:hover {
+    border-radius: 0;
+}
+ 
+#page-content .rate-box-with-credit-button .fa-info {
+     color: #ededed;
+}
+#page-content .rate-box-with-credit-button .fa-info:hover {
+     color: var(--accentColor);
+}
+
+#page-content .modalbox {
+     background: #2F333C !important;
+     color: #ededed;
+     box-shadow: none;
+}
+.close-credits,
+.credit-back {
+    filter: grayscale(100%) invert(100%) contrast(275%);
+}
+
+
+/* ---- PAGE RATING ---- */
+ 
+.page-rate-widget-box {
+     margin: unset;
+     border-radius: 0;
+     border: solid 2px #21252E;
+     box-shadow: 3px 0px 0px 0px var(--accentColor);
+     background-color: #21252E;
+     margin-top: 4px;
+     margin-bottom:4px;
+     margin-right: 3px;
+}
+ 
+div.page-rate-widget-box .rate-points {
+    background-color: #21252E;
+    border: none;
+    color: #ededed !important;
+    text-transform: capitalize;
+}
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+    background-color: #21252E;
+    border-top: none;
+    border-bottom: none;
+}
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+    background: transparent;
+    color: #ededed;
+}
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+    background: #21252E;
+    color: var(--accentColor);
+}
+.page-rate-widget-box .cancel {
+    background: transparent;
+    background-color: #21252E;
+    border: none;
+}
+.page-rate-widget-box .cancel a {
+    color: #ededed;
+}
+.page-rate-widget-box .cancel a:hover {
+    background: #21252E;
+    color: var(--accentColor);
+}
+ 
+
+/* ---- PAGE ELEMENTS ---- */
+
+.page-source, tt{
+    font-family: "Fira Code", monospace;
+    font-size: 0.87rem;
+}
+ .code pre, .code p, .code {
+    font-family: "Fira Code", monospace;
+    font-size: 0.87rem;
+    color: #21252E;
+}
+
+ins, del {
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif !important;
+    color: var(--accentColor);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 2em;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #EDEDED;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.45em;
+}
+.lightbox h1 {
+    color: #21252E;
+}
+
+#page-title {
+    display: none;
+}
+
+/* Clicky links */
+a,
+a.newpage,
+a:visited,
+#side-bar a:visited {
+    color: var(--accentColor);
+    transition: color 0.15s linear;
+}
+a:hover, a.newpage:hover, a:visited:hover, #side-bar a:visited:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: var(--accentColor);
+}
+
+/* patch for sidebar media, collapsibles, ACS, info button and ayers module so link doesn't override */
+#page-content .collapsible-block-folded a:hover, #page-content .collapsible-block-unfolded-link a:hover, #page-content .rate-box-with-credit-button .fa-info:hover, #side-bar .side-block.media a:hover, .danger-diamond a:hover {
+    background: transparent;
+}
+.info-container .collapsible-block-folded .collapsible-block-link, .info-container .collapsible-block-link {
+    background: var(--linkColour) !important;
+}
+
+hr{
+    background-color: var(--accentColor);
+}
+
+blockquote,
+div.blockquote,
+#toc {
+    background-color: #21252E;
+    border: #21252E 2px solid;
+    border-left: 5px dashed var(--accentColor);
+    box-shadow: 4px 4px #2F333C;
+}
+
+.code {
+    background-color: #F8F8F8;
+    border: solid 3px #2F333C;
+    box-shadow: none;
+}
+.scp-image-block {
+    border: 1px solid var(--accentColor);
+    box-sizing: border-box;
+}
+.scp-image-block .scp-image-caption {
+    background-color: #21252E;
+    border-top: 1px solid var(--accentColor);
+    color: #ededed;
+    font-size: 0.65rem;
+    padding: 0.1rem;
+    box-sizing: border-box;
+}
+.scp-image-block.block-left { margin-left: 0; }
+.scp-image-block.block-right { margin-right: 0; }
+@media (max-width: 540px) {
+  .scp-image-block.block-left, .scp-image-block.block-right {
+    float: none; clear: both; margin-left: auto; margin-right: auto;
+  }
+}
+
+/*---- CENTER IMAGES ON MOBILE courtesy of EstrellaYoshte and PeppersGhost ----*/
+ 
+.imagediv {
+    float: right;
+    margin: 15px
+}
+ 
+@media (max-width: 540px) {
+  .imagediv {
+    float: none;
+    text-align:center;
+    margin: auto;
+  }
+}
+ 
+@media only screen and (max-width: 600px) {
+    .scp-image-block.block-right{
+        float: none;
+        margin: 10px auto;
+    }
+}
+
+#page-content tr th {
+    color: #21252E;
+    background-color: var(--accentColor);
+    border: solid 1px var(--accentColor);
+    padding: 6px;
+}
+#page-content tr td {
+    border: solid 1px var(--accentColor);
+    background-color: #21252E;
+    padding: 12px;
+    line-height: 1.4;
+}
+
+/* fancy collapsible */
+#page-content .collapsible-block-folded, #page-content .collapsible-block-unfolded-link {
+    background: #21252E;
+    transition: background 0.25s linear;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: min-content;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: auto;
+}
+#page-content .collapsible-block-folded .collapsible-block-link::before {
+    content: "▷ ";
+}
+#page-content .collapsible-block-unfolded .collapsible-block-link::before {
+    content: "▽ ";
+}
+#page-content .collapsible-block-link {
+    text-decoration: none;
+    color: #ededed;
+    font-weight: bold;
+}
+#page-content .collapsible-block-folded:hover, #page-content .collapsible-block-unfolded-link:hover {
+    background: var(--accentColor);
+}
+#page-content .collapsible-block-unfolded-link {
+    box-shadow: 0px -0.26rem 0px 0px var(--accentColor);
+}
+#page-content .collapsible-block-folded, #page-content .collapsible-block-unfolded-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#page-content  .collapsible-block-unfolded > *:nth-child(3) .collapsible-block-link::before {
+    content: "△ ";
+}
+#page-content  .collapsible-block-unfolded > *:nth-child(3) {
+    box-shadow: 0px 0.26rem 0px 0px var(--accentColor);
+}
+
+/* Selection */
+::selection {
+    background: var(--accentColor);
+    color: #ffffff;
+}
+ 
+/* Footnotes */
+.hovertip {
+    font-size: .81rem;
+    background-color: #21252E !important;
+    border: solid 1px var(--accentColor) !important;
+}
+.footnotes-footer {
+    background-color: #21252E;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-bottom: 1.5rem;
+    box-shadow: -0.24rem 0px 0px 0px var(--accentColor);
+}
+.footnotes-footer .title {
+    color: #ededed;
+}
+.footnote .f-footer, .equation .e-footer, .reference .r-footer {
+    display: none;
+}
+.footnotes-footer {
+display: none;
+}
+
+/* BetterFootnotes Patch */
+.fncon {
+    background-color: #21252E;
+    border-color: var(--accentColor);
+}
+.fnnum:hover + .fncon {
+    right: calc(-8vw - 4rem);
+}
+.lightbox .fnnum::after {
+    color: #000;
+}
+
+/* Tags */
+#main-content .page-tags a {
+    margin-top: .18rem;
+}
+.page-tags span {
+    border-top: 1px solid #ededed;
+}
+
+/* Pop-Up Windows */
+.owindow {
+    background-color: #21252E;
+    border-color: var(--accentColor);
+}
+ 
+.owindow .modal-header {
+    background-color: #21252E;
+}
+ 
+.owindow .modal-body img {
+    background-color: transparent !important;
+}
+ 
+.owindow .title {
+    background-color: #21252E;
+    color: #var(--accentColor);
+    border-bottom: 1px solid #2F333C;
+}
+ 
+.owindow .button-bar a {
+    background-color: #21252E;
+    border-color: var(--accentColor);
+    color: #ededed;
+}
+.owindow .button-bar a:hover {
+    background-color: var(--accentColor);
+}
+ 
+/* Edit Buttons */
+.buttons .btn {
+    background-color: #21252E;
+    border-color: var(--accentColor);
+    color: var(--accentColor);
+    padding: 3px 5px;
+}
+.buttons .btn:hover {
+    background-color: var(--accentColor);
+    color: #21252E;
+}
+ 
+/* Edit Lock Info*/
+#lock-info {
+    background-color: #21252E;
+    border-color: #ededed;
+}
+ 
+/* Close Button for Page Source, Rating, Etc */
+a.action-area-close:hover {
+    background-color: #21252E;
+}
+ 
+/* Page-History Current */
+.pager .current {
+    background-color: var(--accentColor);
+    border-color: #ededed;
+}
+
+/* ---- INTERWIKI ---- */
+
+.scpnet-interwiki-frame{
+    filter: invert(100%) grayscale(100%) contrast(75%);
+}
+
+/*  ACS COLORS by Nagiros  */
+ 
+:root {
+  --five-color: 255, 34, 67 !important;   /*  red  */
+  --four-color: 255, 141, 54 !important;   /*  orange  */
+  --three-color: 255, 226, 82 !important;   /*  yellow  */
+  --two-color: 117, 167, 242 !important;   /*  blue  */
+  --one-color: 40, 159, 107 !important;   /*  green  */
+ 
+  --white-bar: 207, 207, 207;
+  --lg-bar: 118, 118, 130;
+  --gray-bg: 66, 66, 72;
+}
+ 
+.anom-bar > .bottom-box {   /*  horizontal bar  */
+  box-shadow: 0 -0.5rem 0 0 rgb(207, 207, 207) !important;
+  -webkit-box-shadow: 0 -0.5rem 0 0 rgb(207, 207, 207) !important;
+  -moz-box-shadow: 0 -0.5rem 0 0 rgb(207, 207, 207) !important;
+  box-shadow: 0 -0.5rem 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+  -webkit-box-shadow: 0 -0.5rem 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+  -moz-box-shadow: 0 -0.5rem 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+}
+.bottom-box > .diamond-part {   /*  vertical bar  */
+  box-shadow: -0.5rem 0 0 0 rgb(207, 207, 207) !important;
+  -webkit-box-shadow: -0.5rem 0 0 0 rgb(207, 207, 207) !important;
+  -moz-box-shadow: -0.5rem 0 0 0 rgb(207, 207, 207) !important;
+  box-shadow: -0.5rem 0 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+  -webkit-box-shadow: -0.5rem 0 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+  -moz-box-shadow: -0.5rem 0 0 0 rgb(var(--white-bar, 207, 207, 207)) !important;
+}
+.anom-bar-container.esoteric .text-part .main-class,
+.anom-bar-container.explained .text-part .main-class,
+.anom-bar-container.neutralized .text-part .main-class,
+.anom-bar-container.pending .text-part .main-class {
+  background-color: rgba(66, 66, 72, .5) !important;
+  background-color: rgba(var(--gray-bg, 66, 66, 72), .5) !important;
+  border-left-color: rgb(118, 118, 130) !important;
+  border-left-color: rgb(var(--lg-bar, 118, 118, 130)) !important;
+}
+.danger-diamond > .arrows,
+.danger-diamond > .bottom-icon::before {   /*  inverted arrows, esoteric icons  */
+  filter: invert(90%) !important;
+  -webkit-filter: invert(90%) !important;
+}
+.danger-diamond > .quadrants > .bottom-quad,
+.anom-bar-container.explained .danger-diamond > .quadrants > .top-quad,
+.anom-bar-container.neutralized .danger-diamond > .quadrants > .top-quad,
+.anom-bar-container.pending .danger-diamond > .quadrants > .top-quad {   /*  "transparent" bottoms/top icon backgrounds  */
+  background-color: rgb(26, 26, 26) !important;   /*  body background color  */
+}
+.danger-diamond > .bottom-icon,
+.anom-bar-container.pending .danger-diamond > .top-icon::before {   /*  esoteric, pending icon backgrounds  */
+  background-color: rgb(3, 3, 3) !important;
+}
+
+.anom-bar > .bottom-box::before {
+    background-color: var(--white-bar);
+}
+
+.top-left-box > .item {
+  display: none;
+}
+
+/* ---- CUSTOM SYNTAX ---- */
+
+.darkbox {
+    background-color: #21252E;
+    border-left: solid 0.26rem var(--accentColor);
+    border-right: solid 0.26rem var(--accentColor);
+    padding: .4rem;
+    padding-left: .6rem
+    margin-top: 12px;
+    margin-bottom:12px;
+}
+
+.lightbox {
+    background-color: #ededed;
+    color: #21252E;
+    border-left: solid 0.26rem #21252E;
+    border-right: solid 0.26rem #21252E;
+    padding: 0.8rem;
+    margin-top: 12px;
+    margin-bottom:12px;
+}
+.lightbox h2, .lightbox h3, .lightbox h4, .lightbox h5, .lightbox h6 {
+    color: #21252E;
+}
+
+.lightbox hr {
+    background-color: #000;
+}
+.lightbox a {
+    filter: invert(1);
+}
+.lightbox a:hover {
+    background: none;
+}
+
+ #page-content .sidebox tr td,
+ #page-content .sidebox tr th{
+     padding: .35em;
+}
+ #page-content .authorbox tr td,
+ #page-content .authorbox tr th{
+     padding: .35em;
+}
+ .limit{
+     margin-bottom: -1rem;
+}
+ .anchor{
+     position: sticky;
+     height: 0;
+     top: 0;
+}
+ .authorbox,
+ .sidebox {
+     position: absolute;
+     width: calc((100vw - 870px) / 2);
+     max-height: calc(100vh - 18rem);
+     margin: 0 8px 0 0;
+     padding: .14rem;
+     box-sizing: border-box;
+     overflow: auto;
+     z-index: 5;
+}
+ .authorbox {
+     max-width: calc((100vw - 921.2px) / 2) !important;
+     top: .5em;
+     right: 103.5%;
+}
+ .sidebox{
+     top: 0;
+     left: 103.5%;
+     padding-left: 1em;
+}
+
+@media (max-width:1079px) {
+    .authorbox, .sidebox {
+        display: none;
+    }
+}
+
+#page-content .bt {
+    color: var(--accentColor);
+    font-weight: bold;
+    filter: brightness(110%);
+    text-decoration-color: inherit;
+}
+
+.tableb .wiki-content-table {
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+.tableb .scp-image-block {
+    border: none;
+}
+
+.tableb .scp-image-block img {
+    border: var(--accentColor) 1px solid;
+    box-sizing: border-box;
+}
+
+.tableb .scp-image-block .scp-image-caption {
+    margin-top: 3px;
+    border: var(--accentColor) 1px solid;
+    box-sizing: border-box;
+}
+
+:root {
+  --accentColor: #99bbff;
+  --lgurl: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A6370408-45-op6l/arche2.png");
+  --posX: calc(50% - 358px - 13rem);
+  --fnColor: var(--accentColor);
+  --fnLinger: 1s;
+}
+
+div#extra-div-1 {
+    filter: opacity(0.5);
+}
+
+/* ---- WORDS NO LONGER BROKEN, THE CROQUEMBOUCHE HAS SPOKEN ---- */
+span, a { word-break: normal !important }
+
+.avatar-hover { display: none !important; }
+
+#breadcrumbs, .pseudocrumbs {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#main-content .page-tags span {
+    max-width: 100%;
+}
+
+/* -- FANCY THINGS from Woedenaz's Dustjacket Theme -- */
+
+.fancyhr hr {
+    border-top: 2vw solid transparent;
+    background-color: rgba(var(--bright-accent), 0);
+    height: 0;
+    box-sizing: border-box;
+    border-image-source: url('http://scp-jp-storage.wdfiles.com/local--files/file:5722815-46-ec6z/wl_hr.png');
+    border-image-repeat: round round;
+    background: none;
+    border-image-slice: 80 500 80 500 fill;
+    border-image-width: 10em 80em 10em 80em;
+}
+ 
+.fancyborder {
+    box-sizing: border-box;
+    border: 2vw solid rgba(0,0,0,0.5);
+    border-image: url('http://scp-jp-storage.wdfiles.com/local--files/file:5722815-47-mqmb/wl_border.png') 600 round;
+    border-image-width: 6;
+    padding: 2vw;
+}
+
+/* ---- Localization for JP Branch ---- */
+
+/* Credit Module */
+#page-content .rate-box-with-credit-button div.page-rate-widget-box {
+    margin-right: 0;
+    box-shadow: none;
+}
+#page-content .rate-box-with-credit-button .creditButton {
+    background: #21252E;
+    border: solid 2px #21252E;
+    border-radius: 0;
+    box-shadow: none;
+    margin-left: 0;
+    width: 20px;
+}
+#page-content div.page-rate-widget-box .rate-points {
+    font-family: verdana,arial,sans-serif;
+    font-size: 0.81rem;
+}
+#page-content div.page-rate-widget-box .cancel a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #ededed;
+}
+#page-content div.page-rate-widget-box .cancel a:hover {
+    color: var(--accentColor);
+}
+.modalbox .modalbox-title {
+    background: linear-gradient(90deg, #2F333C 2em, #0000 2em calc(100% - 2em), #2F333C calc(100% - 2em)), linear-gradient(#0000 calc(100% - 1px), var(--accentColor));
+}
+.credit-license a.cc {
+    color: var(--accentColor);
+}
+
+/* Side Bar */
+#side-bar {
+    left: -20.6em;
+}
+#side-bar:target {
+    width: 19em;
+    border: none 0;
+}
+#side-bar .side-block[style] {
+    background-color: #21252E !important;
+}
+#side-bar > hr {
+    background: #ededed;
+}
+#side-bar > hr:nth-of-type(2) {
+    display: none;
+}
+#side-bar .side-block[style="background-color: #a7dba2;"] {
+    margin: 15px auto 15px;
+}
+#side-bar .side-block[style="background-color: #e5e5ff;"],
+#side-bar .side-block[style="background-color: #fff0f0;"] {
+    margin: -30px auto -15px;
+}
+#side-bar .side-block[style="background-color: #f0f0f0;"] {
+    margin: -15px auto 15px;
+}
+#side-bar .side-block[style="background-color: #fff0f0;"]::before,
+#side-bar .side-block[style="background-color: #fff0f0;"]::after {
+    content: "";
+    display: block;
+    height: 1px;
+    margin: 2em calc(2em - 8px);
+    background: var(--accentColor);
+}
+#side-bar div.menu-item .sub-text {
+    color: #999;
+}
+#side-bar .collapsible-block-folded {
+    background: none;
+}
+#side-bar .collapsible-block-folded .collapsible-block-link {
+    margin-left: 0;
+}
+#side-bar .collapsible-block-folded .collapsible-block-link::before {
+    content: "▷\00a0";
+}
+#side-bar .collapsible-block-unfolded-link {
+    border-color: #ededed;
+}
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link, 
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+    font-size: 0.94rem;
+    color: #ededed;
+}
+#top-bar div.open-menu a {
+    color: var(--accentColor) !important;
+    background-color: #21252E !important;
+    border: 1px groove var(--accentColor) !important;
+}
+@media (min-width: 767px) {
+    #side-bar:target .close-menu {
+        margin-left: 20.6em;
+        background: none;
+        opacity: 0;
+    }
+}
+@media (max-width: 767px) {
+    #side-bar:target .close-menu {
+        width: calc(100% - 20.6em);
+    }
+}
+#side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+    filter: none;
+}
+[[/module]]
+
+[[include :scp-jp:component:interwiki-style
+|priority= 1
+|css= %23interwiki%20.side-block%20%7B%20border%3A%20transparent%3B%20border-radius%3A%200%3B%20box-shadow%3A%20none%3B%20background-color%3A%20%2321252E%3B%20margin-bottom%3A%2025px%3B%20%7D%20%23interwiki%20.heading%20%7B%20color%3A%20%23ededed%3B%20font-size%3A%200.94rem%3B%20border-bottom%3A%20solid%201px%20%23ededed%3B%20%7D%20%23interwiki%20.menu-item%20img%20%7B%20display%3A%20none%3B%20%7D%20%23interwiki%20a%20%7B%20color%3A%20%2399bbff%3B%20%7D
+]]
+
+[[/collapsible]]
+[[/div]]

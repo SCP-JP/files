@@ -1,0 +1,5 @@
+title: 情報バーのソース
+author: 7happy7
+created_at: 2020-03-05 12:14:53+00:00
+source: http://scp-jp.wikidot.com/component:info-ayers-source
+license: Need to Fix!

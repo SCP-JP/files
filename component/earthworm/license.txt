@@ -1,0 +1,5 @@
+title: Earthworm下部ナビゲーション
+author: 7happy7
+created_at: 2018-08-12 06:36:47+00:00
+source: http://scp-jp.wikidot.com/component:earthworm
+license: Need to Fix!

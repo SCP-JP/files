@@ -1,0 +1,5 @@
+title: Collapsible Sidebar
+author: ukwhatn
+created_at: 2020-09-13 02:30:05+00:00
+source: http://scp-jp.wikidot.com/component:collapsible-sidebar
+license: Need to Fix!

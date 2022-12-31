@@ -1,0 +1,5 @@
+title: Class Header Source
+author: 7happy7
+created_at: 2019-09-19 13:17:54+00:00
+source: http://scp-jp.wikidot.com/component:class-header-source
+license: Need to Fix!

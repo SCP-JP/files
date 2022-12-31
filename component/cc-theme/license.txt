@@ -1,0 +1,5 @@
+title: 聖クリスティーナ学院テーマ
+author: Dr Devan
+created_at: 2019-03-02 03:21:21+00:00
+source: http://scp-jp.wikidot.com/component:cc-theme
+license: Need to Fix!

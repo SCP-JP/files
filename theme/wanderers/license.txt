@@ -1,0 +1,5 @@
+title: 放浪者の図書館テーマ
+author: Dr Devan
+created_at: 2019-01-21 02:45:09+00:00
+source: http://scp-jp.wikidot.com/theme:wanderers
+license: Need to Fix!

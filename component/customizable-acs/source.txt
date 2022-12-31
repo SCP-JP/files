@@ -1,0 +1,1826 @@
+[[iftags]]
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[/iftags]]
+
+[!-- PRIDE MONTH STUFF
+
+[[iftags -コンポーネント]]
+
+[[module CSS]]
+body .anom-bar-container.clear-1 .top-center-box > div {
+    background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787)t;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-2 .top-center-box > div {
+    background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787);
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-3 .top-center-box > div {
+    background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787);
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-4 .top-center-box > div {
+    background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787);
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-5 .top-center-box > div {
+    background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787);
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-6 .top-center-box > div {
+    background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787);
+    background-size: 100%;
+}
+[[/module]]
+
+[[/iftags]]
+
+--]
+
+[[module CSS]]
+
+body .anom-bar-container.ekhi .danger-diamond > .quadrants > .left-quad,
+body .anom-bar-container.danger .danger-diamond > .quadrants > .right-quad {
+    background-color:rgba(255,109,0,0.25);
+    background-color: rgb(var(--four-color),0.25);
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  .calibold-wrap,
+  .calibold {
+    animation-name: jumpscare;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+  }
+}
+
+@keyframes jumpscare {
+  from {
+    opacity: 0;
+    transform: scale(0.5,0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+}
+
+.calibold-wrap {
+    animation-delay: 300s;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 20;
+    width: 302px;
+    text-align: center;
+}
+
+#page-content .calibold-wrap .collapsible-block-folded .collapsible-block-link {
+    opacity: 0;
+}
+
+.calibold {
+    animation-delay: 300s;
+    position: fixed;
+    z-index: 20;
+    background-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-148-8v3t/calibold-jumpscare.png");
+    height: 457px;
+    width: 302px;
+    text-align: center;
+}
+
+.calibold p {
+    line-height: 457px!important;
+}
+
+[[/module]]
+
+[!-- {$inc-containment}
+
+[[module CSS]]
+.anom-bar-container.{$containment-class} .text-part .main-class::before {
+    background-image: url("{$containment-image}");
+}
+
+.anom-bar-container.{$containment-class} .text-part .main-class{
+    border-left: 0.5rem solid rgba({$containment-color},1);
+    background-color: rgba({$containment-color},0.15);
+}
+
+.anom-bar-container.{$containment-class} .danger-diamond > .top-icon::before {
+    background-image: url("{$containment-image}");
+    background-size: contain;
+}
+
+.anom-bar-container.{$containment-class} .danger-diamond > .quadrants > .top-quad  {
+    background-color:rgba({$containment-color},0.25);
+}
+
+.anom-bar-container.{$containment-class} .danger-diamond > .top-icon::before {
+    background-color:rgb({$containment-color})!important;
+}
+
+.anom-bar-container.{$containment-class} .text-part .main-class::before {
+    background-color: rgb({$containment-color})!important;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-disruption}
+
+[[module CSS]]
+.anom-bar-container.{$disruption-class} .text-part .disrupt-class::after {
+    background-image: url("{$disruption-image}");
+}
+
+.anom-bar-container.{$disruption-class} .text-part .disrupt-class{
+    border-left: 0.5rem solid rgba({$disruption-color},1);
+    background-color: rgba({$disruption-color},0.15);
+}
+
+.anom-bar-container.{$disruption-class} .danger-diamond > .left-icon::before {
+    background-image: url("{$disruption-image}");
+    background-size: contain;
+}
+
+.anom-bar-container.{$disruption-class} .danger-diamond > .quadrants > .left-quad  {
+    background-color:rgba({$disruption-color},0.25);
+}
+
+.anom-bar-container.{$disruption-class} .text-part .disrupt-class::before{
+    content: ""!important;
+}
+
+.anom-bar-container.{$disruption-class} .danger-diamond > .left-icon::before {
+    background-color:rgb({$disruption-color})!important;
+}
+
+.anom-bar-container.{$disruption-class} .text-part .disrupt-class::after {
+    background-color: rgb({$disruption-color})!important;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-risk}
+
+[[module CSS]]
+.anom-bar-container.{$risk-class} .text-part .risk-class::after {
+    background-image: url("{$risk-image}");
+}
+
+.anom-bar-container.{$risk-class} .text-part .risk-class{
+    border-left: 0.5rem solid rgba({$risk-color});
+    background-color: rgba({$risk-color},0.15);
+}
+
+.anom-bar-container.{$risk-class} .danger-diamond > .right-icon::before {
+    background-image: url("{$risk-image}");
+    background-size: contain;
+}
+
+.anom-bar-container.{$risk-class} .danger-diamond > .quadrants > .right-quad  {
+    background-color:rgba({$risk-color},0.25);
+}
+
+.anom-bar-container.{$risk-class} .text-part .risk-class::before{
+    content: ""!important;
+}
+
+.anom-bar-container.{$risk-class} .danger-diamond > .right-icon::before {
+    background-color:rgb({$risk-color})!important;
+}
+
+.anom-bar-container.{$risk-class} .text-part .risk-class::after {
+    background-color: rgb({$risk-color})!important;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-clearance}
+
+[[module CSS]]
+body .anom-bar-container.clear-1 .top-center-box > div {
+    background: rgb({$clearance-one})!important;
+}
+
+body .anom-bar-container.clear-2 .top-center-box > div {
+    background: rgb({$clearance-two})!important;
+}
+
+body .anom-bar-container.clear-3 .top-center-box > div {
+    background: rgb({$clearance-three})!important;
+}
+
+body .anom-bar-container.clear-4 .top-center-box > div {
+    background: rgb({$clearance-four})!important;
+}
+
+body .anom-bar-container.clear-5 .top-center-box > div {
+    background: rgb({$clearance-five})!important;
+}
+
+body .anom-bar-container.clear-6 .top-center-box > div {
+    background: rgb({$clearance-six})!important;
+}
+
+body .anom-bar-container.clear-69 .top-center-box > div {
+    background: rgb({$clearance-sixty-nine})!important;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-neutralized-layout}
+
+[[module CSS]]
+.anom-bar-container.{$containment-class} .text-part > .main-class::before {
+    display:none;
+}
+
+.anom-bar-container.{$containment-class} .text-part .main-class {
+    background-color: rgba({$containment-color},0.15);
+    background-color: rgba({$containment-color},0.15);
+    border-left: 0.75rem solid rgba({$containment-color},1);
+    border-left: 0.75rem solid rgba({$containment-color},1);
+}
+
+.anom-bar-container.{$containment-class} .text-part {
+    -ms-grid-columns: 1fr!important;
+    grid-template-columns: 1fr!important;
+}
+
+.anom-bar-container.{$containment-class} .second-class,
+.anom-bar-container.{$containment-class} .disrupt-class,
+.anom-bar-container.{$containment-class} .risk-class,
+.anom-bar-container.{$containment-class} .danger-diamond > .quadrants > .left-quad,
+.anom-bar-container.{$containment-class} .danger-diamond > .quadrants > .right-quad,
+.anom-bar-container.{$containment-class} .danger-diamond > .left-icon,
+.anom-bar-container.{$containment-class} .danger-diamond > .right-icon {
+    display: none;
+}
+
+.danger-diamond > .quadrants > .top-quad.{$containment-class} {
+    background-color: rgb({$containment-color},0.25);
+    background-color: rgb({$containment-color},0.25);
+}
+
+.anom-bar-container.{$containment-class} .danger-diamond > .top-icon {
+    width: 65%;
+    height: 65%;
+    top: 17.5%;
+    left: 17.5%;
+    border-width: 0.3625rem;
+}
+
+.anom-bar-container.{$containment-class} .danger-diamond > .top-icon {
+    background-color: rgb(252, 252, 252);
+    background-color: rgb(var(--swatch-background, 252, 252, 252));
+}
+
+.anom-bar-container.{$containment-class} .danger-diamond > .top-icon::before {
+    background-color: rgba({$containment-color},0.25);
+    background-color: rgba({$containment-color},0.25);
+    background-image: url("{$containment-image}");
+    -webkit-background-size: 100% 100%;
+       -moz-background-size: 100% 100%;
+     -o-background-size: 100% 100%;
+     background-size: 100% 100%;
+    background-position: center center;
+}
+
+@media (max-width: 875px ) {
+    .anom-bar-container.{$containment-class} .bottom-box > .text-part {
+     height: 6rem;
+    }
+    .anom-bar-container.{$containment-class} .bottom-box > .text-part {
+     -ms-grid-rows: 1fr!important;
+     grid-template-rows: 1fr!important;
+     grid-template-areas: "main-class";
+    }
+}
+
+@media (max-width: 875px ) and (min-width: 480px ) {
+    .anom-bar-container.{$containment-class} .anom-bar > .bottom-box {
+     -ms-grid-columns: 1fr 6rem!important;
+     grid-template-columns: 1fr 6rem!important;
+     height: 6rem;
+    }
+}
+
+@media (max-width: 480px ) {
+    .anom-bar-container.{$containment-class} .anom-bar > .bottom-box {
+     height: 6rem;
+    }
+}
+
+.anom-bar-container.{$containment-class} .danger-diamond > .quadrants > .top-quad,
+.anom-bar-container.{$containment-class} .danger-diamond > .quadrants > .bottom-quad  {
+    background-color:rgba({$containment-color},0)!important;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-level-sixty-nine}
+
+[[module CSS]]
+.anom-bar-container.clear-69 .top-center-box > .bar-one {
+    display: block;
+}
+
+.anom-bar-container.clear-69 .top-center-box > .bar-two {
+    display: block;
+}
+
+.anom-bar-container.clear-69 .top-center-box > .bar-three {
+    display: block;
+}
+
+.anom-bar-container.clear-69 .top-center-box > .bar-four {
+    display: block;
+}
+
+.anom-bar-container.clear-69 .top-center-box > .bar-five {
+    display: block;
+}
+
+.anom-bar-container.clear-69 .top-center-box > .bar-six {
+    display: block;
+}
+
+.anom-bar-container.clear-69 .top-center-box > .bar-sixty-nine {
+    display: block;
+}
+
+div.top-center-box > :nth-child(1) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay))!important; }
+div.top-center-box > :nth-child(2) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay))!important; }
+div.top-center-box > :nth-child(3) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay))!important; }
+div.top-center-box > :nth-child(4) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay))!important; }
+div.top-center-box > :nth-child(5) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay))!important; }
+div.top-center-box > :nth-child(6) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay))!important; }
+
+.anom-bar-container.clear-69 .top-right-box > .clearance::before {
+    content: "Nice";
+}
+[[/module]]
+
+[[div_ class="anom-bar-container item-{$item-number} clear-{$clearance} {$container-class} {$secondary-class} {$disruption-class} {$risk-class} {$american}"]]
+    [[div_ class="anom-bar"]]
+     [[div_ class="top-box"]]
+     [[div_ class="top-left-box"]]
+     [[span class="item"]]アイテム番号:[[/span]] [[span class="number"]]{$item-number}[[/span]]
+     [[/div]]
+     [[div_ class="top-center-box"]]
+     [[div_ class="bar-one"]]
+     [[/div]]
+     [[div_ class="bar-two"]]
+     [[/div]]
+     [[div_ class="bar-three"]]
+     [[/div]]
+     [[div_ class="bar-four"]]
+     [[/div]]
+     [[div_ class="bar-five"]]
+     [[/div]]
+     [[div_ class="bar-six"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[div_ class="bar-sixty-nine"]]
+     [[/div]]
+     [[/div]]
+     [[div_ class="top-right-box"]]
+     [[div_ class="level"]]
+     レベル{$clearance}
+     [[/div]]
+     [[div_ class="clearance"]]
+     [[/div]]
+     [[/div]]
+     [[/div]]
+     [[div_ class="bottom-box"]]
+     [[div_ class="text-part"]]
+     [[div_ class="main-class"]]
+     [[div_ class="contain-class"]]
+     [[div_ class="class-category"]]
+     収容クラス:
+     [[/div]]
+     [[div_ class="class-text"]]
+     {$container-class}
+     [[/div]]
+     [[/div]]
+     [[div_ class="second-class"]]
+     [[div_ class="class-category"]]
+     Secondary Class:
+     [[/div]]
+     [[div_ class="class-text"]]
+     {$secondary-class}
+     [[/div]]
+     [[/div]]
+     [[/div]]
+     [[div_ class="disrupt-class"]]
+     [[div_ class="class-category"]]
+     撹乱クラス:
+     [[/div]]
+     [[div_ class="class-text"]]
+     {$disruption-class}
+     [[/div]]
+     [[/div]]
+     [[div_ class="risk-class"]]
+     [[div_ class="class-category"]]
+     リスククラス:
+     [[/div]]
+     [[div_ class="class-text"]]
+     {$risk-class}
+     [[/div]]
+     [[/div]]
+     [[/div]]
+     [[div_ class="diamond-part"]]
+     [[div_ class="danger-diamond"]]
+[[[Classification Committee Memo|link to memo]]]
+     [[div_ class="arrows"]]
+     [[/div]]
+     [[div_ class="octagon"]]
+     [[/div]]
+     [[div_ class="quadrants"]]
+     [[div_ class="top-quad"]]
+
+     [[/div]]
+     [[div_ class="right-quad"]]
+     
+     [[/div]]
+     [[div_ class="left-quad"]]
+     
+     [[/div]]
+     [[div_ class="bottom-quad"]]
+     
+     [[/div]]
+     [[/div]]
+     [[div_ class="top-icon"]]
+
+     [[/div]]   
+     [[div_ class="right-icon"]]
+
+     [[/div]]
+     [[div_ class="left-icon"]]
+     
+     [[/div]]
+     [[div_ class="bottom-icon"]]
+     
+     [[/div]]    
+     [[/div]]
+     [[/div]]
+     [[/div]]
+    [[/div]]
+[[/div]]
+
+[[div style="display: none;"]]
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number=
+|clearance=
+|container-class=
+|secondary-class=
+|disruption-class=
+|risk-class=
+]]
+[[/div]]
+
+[!----]
+
+[!-- {$inc-custom-text}
+
+[[module CSS]]
+.custom-text-wrap .anom-bar-container.clear-6 .top-right-box > .clearance::before {
+    content: ""!important;
+}
+
+.custom-text-wrap .anom-bar-container.clear-5 .top-right-box > .clearance::before {
+    content: ""!important;
+}
+
+.custom-text-wrap .anom-bar-container.clear-4 .top-right-box > .clearance::before {
+    content: ""!important;
+}
+
+.custom-text-wrap .anom-bar-container.clear-3 .top-right-box > .clearance::before {
+    content: ""!important;
+}
+
+.custom-text-wrap .anom-bar-container.clear-2 .top-right-box > .clearance::before {
+    content: ""!important;
+}
+
+.custom-text-wrap .anom-bar-container.clear-1 .top-right-box > .clearance::before {
+    content: ""!important;
+}
+[[/module]]
+
+[[div_ class="custom-text-wrap"]]
+[[div_ class="anom-bar-container item-{$item-number} clear-{$clearance} {$container-class} {$secondary-class} {$disruption-class} {$risk-class} {$american}"]]
+    [[div_ class="anom-bar"]]
+     [[div_ class="top-box"]]
+     [[div_ class="top-left-box"]]
+     [[span class="item"]]{$item-text}[[/span]] [[span class="number"]]{$item-number}[[/span]]
+     [[/div]]
+     [[div_ class="top-center-box"]]
+     [[div_ class="bar-one"]]
+     [[/div]]
+     [[div_ class="bar-two"]]
+     [[/div]]
+     [[div_ class="bar-three"]]
+     [[/div]]
+     [[div_ class="bar-four"]]
+     [[/div]]
+     [[div_ class="bar-five"]]
+     [[/div]]
+     [[div_ class="bar-six"]]
+     [[/div]]
+     [[/div]]
+     [[div_ class="top-right-box"]]
+     [[div_ class="level"]]
+     {$level-text}{$clearance-number-text}
+     [[/div]]
+     [[div_ class="clearance"]]
+     {$clearance-text}
+     [[/div]]
+     [[/div]]
+     [[/div]]
+     [[div_ class="bottom-box"]]
+     [[div_ class="text-part"]]
+     [[div_ class="main-class"]]
+     [[div_ class="contain-class"]]
+     [[div_ class="class-category"]]
+     {$containment-text}
+     [[/div]]
+     [[div_ class="class-text"]]
+     {$container-class}
+     [[/div]]
+     [[/div]]
+     [[div_ class="second-class"]]
+     [[div_ class="class-category"]]
+     {$secondary-text}
+     [[/div]]
+     [[div_ class="class-text"]]
+     {$secondary-class}
+     [[/div]]
+     [[/div]]
+     [[/div]]
+     [[div_ class="disrupt-class"]]
+     [[div_ class="class-category"]]
+     {$disruption-text}
+     [[/div]]
+     [[div_ class="class-text"]]
+     {$disruption-class}
+     [[/div]]
+     [[/div]]
+     [[div_ class="risk-class"]]
+     [[div_ class="class-category"]]
+     {$risk-text}
+     [[/div]]
+     [[div_ class="class-text"]]
+     {$risk-class}
+     [[/div]]
+     [[/div]]
+     [[/div]]
+     [[div_ class="diamond-part"]]
+     [[div_ class="danger-diamond"]]
+[[[Classification Committee Memo|link to memo]]]
+     [[div_ class="arrows"]]
+     [[/div]]
+     [[div_ class="octagon"]]
+     [[/div]]
+     [[div_ class="quadrants"]]
+     [[div_ class="top-quad"]]
+
+     [[/div]]
+     [[div_ class="right-quad"]]
+     
+     [[/div]]
+     [[div_ class="left-quad"]]
+     
+     [[/div]]
+     [[div_ class="bottom-quad"]]
+     
+     [[/div]]
+     [[/div]]
+     [[div_ class="top-icon"]]
+
+     [[/div]]   
+     [[div_ class="right-icon"]]
+
+     [[/div]]
+     [[div_ class="left-icon"]]
+     
+     [[/div]]
+     [[div_ class="bottom-icon"]]
+     
+     [[/div]]    
+     [[/div]]
+     [[/div]]
+     [[/div]]
+    [[/div]]
+[[/div]]
+[[/div]]
+
+[[div style="display: none;"]]
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number=
+|clearance= {$clearance}
+|container-class=
+|secondary-class=
+|secondary-icon= {$secondary-icon}
+|disruption-class=
+|risk-class=
+]]
+[[/div]]
+
+[!----]
+
+[!-- {$inc-clearance-image}
+
+[[module CSS]]
+body .anom-bar-container.clear-1 .anom-bar > .top-box {
+    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr calc(5vw + 8rem);
+    padding-bottom: 1.15em;
+}
+
+body .anom-bar-container.clear-1 .top-center-box > div {
+    background-image: url("{$clearance-one-image}")!important;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+body .anom-bar-container.clear-2 .anom-bar > .top-box {
+    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr calc(5vw + 8rem);
+    padding-bottom: 1.15em;
+}
+
+body .anom-bar-container.clear-2 .top-center-box > div {
+    background-image: url("{$clearance-two-image}")!important;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+body .anom-bar-container.clear-3 .anom-bar > .top-box {
+    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr calc(5vw + 8rem);
+    padding-bottom: 1.15em;
+}
+
+body .anom-bar-container.clear-3 .top-center-box > div {
+    background-image: url("{$clearance-three-image}")!important;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+body .anom-bar-container.clear-4 .anom-bar > .top-box {
+    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr calc(5vw + 8rem);
+    padding-bottom: 1.15em;
+}
+
+body .anom-bar-container.clear-4 .top-center-box > div {
+    background-image: url("{$clearance-four-image}")!important;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+body .anom-bar-container.clear-5 .anom-bar > .top-box {
+    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr calc(5vw + 8rem);
+    padding-bottom: 1.15em;
+}
+
+body .anom-bar-container.clear-5 .top-center-box > div {
+    background-image: url("{$clearance-five-image}")!important;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+body .anom-bar-container.clear-6 .anom-bar > .top-box {
+    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+    grid-template-columns: auto 1fr calc(5vw + 8rem);
+    padding-bottom: 1.15em;
+}
+
+body .anom-bar-container.clear-6 .top-center-box > div {
+    background-image: url("{$clearance-six-image}")!important;
+    background-attachment: fixed;
+    background-size: contain;
+    background-blend-mode: normal!important;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-esoteric-layout}
+
+[[module CSS]]
+.anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .text-part > .main-class {
+    padding-right: 3.5rem;
+}
+
+.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class {
+    padding-right: 2rem!important;
+}
+
+.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class::before {
+    top: 0.5rem!important;
+    right: 1.25rem!important;
+    width: 5rem!important;
+    -webkit-border-radius: -webkit-calc(3.53125rem / 2)!important;
+       -moz-border-radius: -moz-calc(3.53125rem / 2)!important;
+     border-radius: calc(3.53125rem / 2)!important;
+    background-color: rgb({$containment-color})!important;
+    border-color: rgb(12,12,12)!important;
+    background-image: url("{$containment-image}")!important;
+    -webkit-background-size: 75% 75%!important;
+       -moz-background-size: 75% 75%!important;
+     -o-background-size: 75% 75%!important;
+     background-size: 75% 75%!important;
+    background-repeat: no-repeat!important;
+    background-position: left -10px center!important;
+}
+
+.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class::after {
+    content: ""!important;
+    position: absolute!important;
+    top: 0.5rem!important;
+    right: 0.25rem!important;
+    width: 3.53125rem!important;
+    height: 3.53125rem!important;
+    -webkit-border-radius: 50%!important;
+       -moz-border-radius: 50%!important;
+     border-radius: 50%!important;
+    border: 0.25rem solid rgb(12,12,12)!important;
+    background-color: rgb(252, 252, 252)!important;
+    background-color: rgb(var(--swatch-background, 252, 252, 252))!important;
+    -webkit-background-size: contain!important;
+       -moz-background-size: contain!important;
+     -o-background-size: contain!important;
+     background-size: contain!important;
+    background-position: center center!important;
+}
+
+.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .second-class > .class-text {
+    font-size: -webkit-calc( 6px + (11 - 6) * ( (100vw - 400px) / ( 800 - 400) ))!important;
+    font-size: -moz-calc( 6px + (11 - 6) * ( (100vw - 400px) / ( 800 - 400) ))!important;
+    font-size: calc( 6px + (11 - 6) * ( (100vw - 400px) / ( 800 - 400) ))!important;
+    position: relative!important;
+}
+
+.anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .text-part > .main-class > .contain-class > .class-text {
+    font-size: -webkit-calc(10px + (18 - 10) * ( (100vw - 400px) / ( 800 - 400) ));
+    font-size: -moz-calc(10px + (18 - 10) * ( (100vw - 400px) / ( 800 - 400) ));
+    font-size: calc(10px + (18 - 10) * ( (100vw - 400px) / ( 800 - 400) ));
+}
+
+.anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .text-part > .main-class > .second-class {
+    display: none;
+}
+
+.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .second-class {
+    display: initial!important;
+}
+
+.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part .main-class {
+    background-color: rgba({$containment-color},0.15)!important;
+    border-left: 0.75rem solid rgba({$containment-color},1)!important;
+}
+
+.anom-bar-esoteric .anom-bar-container.{$containment-class} .contain-class > .class-category {
+    max-width: 55% !important;
+}
+
+.anom-bar-esoteric .text-part > div > .class-category,
+.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .contain-class > .class-category {
+    font-size: 0.75em!important;
+}
+
+.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .contain-class > .class-text,
+.anom-bar-esoteric .text-part > .disrupt-class > .class-text,
+.anom-bar-esoteric .text-part > .risk-class > .class-text {
+    font-size: -webkit-calc( 8px + (12 - 8) * ( (100vw - 400px) / ( 800 - 400) ))!important;
+    font-size: -moz-calc( 8px + (12 - 8) * ( (100vw - 400px) / ( 800 - 400) ))!important;
+    font-size: calc( 8px + (12 - 8) * ( (100vw - 400px) / ( 800 - 400) ))!important;
+}
+
+.anom-bar-esoteric .anom-bar-container.{$containment-class} .danger-diamond > .quadrants > .top-quad {
+    background-color: rgb({$containment-color},0.25)!important;
+}
+
+.anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .danger-diamond > .bottom-icon {
+    display: none;
+}
+
+.anom-bar-esoteric .anom-bar-container.{$containment-class} .danger-diamond > .bottom-icon {
+    display: initial!important;
+}
+
+.anom-bar-esoteric .anom-bar-container.{$containment-class} .danger-diamond > .top-icon::before {
+    background-color: rgb({$containment-color})!important;
+    background-image: url("{$containment-image}")!important;
+    background-size: contain!important;
+}
+
+@media (max-width: 960px ) {
+
+    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .contain-class > .class-text, .text-part > .disrupt-class > .class-text, .text-part > .risk-class > .class-text {
+     font-size: -webkit-calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ))!important;
+     font-size: -moz-calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ))!important;
+     font-size: calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ))!important;
+    }
+
+    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .contain-class > .class-text {
+     font-size: -webkit-calc( 12px + (18 - 12) * ( (100vw - 400px) / ( 960 - 300) ))!important;
+     font-size: -moz-calc( 12px + (18 - 12) * ( (100vw - 400px) / ( 960 - 300) ))!important;
+     font-size: calc( 12px + (18 - 12) * ( (100vw - 400px) / ( 960 - 300) ))!important;
+    }
+
+    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .second-class > .class-text {
+     font-size: -webkit-calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ))!important;
+     font-size: -moz-calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ))!important;
+     font-size: calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ))!important;
+    }
+
+    .anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .text-part > .main-class > .contain-class > .class-text {
+     font-size: -webkit-calc( 20px + (40 - 20) * ( (100vw - 400px) / ( 960 - 300) ));
+     font-size: -moz-calc( 20px + (40 - 20) * ( (100vw - 400px) / ( 960 - 300) ));
+     font-size: calc( 20px + (40 - 20) * ( (100vw - 400px) / ( 960 - 300) ));
+    }
+
+}
+
+@media (max-width: 875px ) {
+
+    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class::after,
+    .anom-bar-esoteric .text-part > .main-class::after {
+     height: 3rem!important;
+     width: 3rem!important;
+    }
+
+    .anom-bar-esoteric .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class::after,
+    .anom-bar-esoteric .text-part > .main-class::after,
+    .anom-bar-esoteric .text-part .disrupt-class::after,
+    .anom-bar-esoteric .text-part .risk-class::after {
+     top: -webkit-calc(50% - 1.125rem)!important;
+     top: -moz-calc(50% - 1.125rem)!important;
+     top: calc(50% - 1.125rem)!important;
+     border-width: 0.25rem!important;
+    }
+
+    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class::after {
+     top: 0.15rem!important;
+    }
+
+    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class::before {
+     top: 0.15rem!important;
+     width: 5.75rem!important;
+     height: 3rem!important;
+     right: 1.25rem!important;
+     -webkit-background-size: 100% 100%!important;
+        -moz-background-size: 100% 100%!important;
+     -o-background-size: 100% 100%!important;
+     background-size: 100% 100%!important;
+     background-position: left -20px center!important;
+    }
+
+    .anom-bar-esoteric .anom-bar-container.{$containment-class} .contain-class > .class-category {
+     max-width: 100% !important;
+    }
+
+}
+
+@media (max-width: 480px ) {
+
+    .anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .text-part > .main-class::before {
+     width: 2.5rem;
+     height: 2.5rem;
+     top: -webkit-calc(50% - 1.475rem);
+     top: -moz-calc(50% - 1.475rem);
+     top: calc(50% - 1.475rem);
+     right: 0.5rem;
+    }
+
+    .anom-bar-esoteric .text-part > div > .class-category,
+    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .contain-class > .class-category {
+     font-size: 1em!important;
+    }
+
+    .anom-bar-container.{$containment-class} .text-part > .main-class::before {
+     top: 0.15rem!important;
+     width: 4.5rem!important;
+     height: 2.5rem!important;
+     right: 1rem!important;
+     -webkit-background-size: 100% 100%!important;
+        -moz-background-size: 100% 100%!important;
+     -o-background-size: 100% 100%!important;
+     background-size: 100% 100%!important;
+     background-position: left -10px center!important;
+    }
+
+    .anom-bar-container.{$containment-class} .text-part > .main-class::after {
+     height: 2.5rem!important;
+     width: 2.5rem!important;
+    }
+
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-split-color}
+
+[[module CSS]]
+
+.anom-bar-esoteric .anom-bar-container.{$containment-class}.{$secondary-class} .text-part .main-class {
+    background: linear-gradient(-60deg, rgba({$secondary-color},0.15) 50%, rgba({$containment-color},0.15) 50%);
+}
+
+.anom-bar-esoteric .anom-bar-container.{$secondary-class} .anom-bar .text-part > .main-class::after {
+    background-color: rgb({$secondary-color})!important;
+}
+
+.anom-bar-container.{$secondary-class} .danger-diamond > .bottom-icon::before {
+    background-color: rgb({$secondary-color});
+}
+
+.anom-bar-container.{$secondary-class} .danger-diamond > .quadrants > .bottom-quad  {
+    background-color:rgba({$secondary-color},0.25);
+}
+
+[[/module]]
+
+[!----]
+
+[!-- {$inc-color-accent}
+
+[[module CSS]]
+body .anom-bar > .bottom-box {
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgb({$accent-one})!important;
+       -moz-box-shadow: 0 -0.5rem 0 0 rgb({$accent-one})!important;
+     box-shadow: 0 -0.5rem 0 0 rgb({$accent-one})!important;
+}
+
+body .anom-bar > .bottom-box::before {
+    background-color: rgb({$accent-one});
+}
+
+body .text-part > .main-class::before {
+    border: 0.25rem solid rgb({$accent-two});
+}
+
+body .anom-bar-container.esoteric .text-part > .main-class::before {
+    top: 0.5rem;
+    right: 1.25rem;
+    width: 5rem;
+    -webkit-border-radius: -webkit-calc(3.53125rem / 2);
+       -moz-border-radius: -moz-calc(3.53125rem / 2);
+     border-radius: calc(3.53125rem / 2);
+    background-color: rgb(3, 3, 3);
+    border-color: rgb({$accent-two});
+    -webkit-filter: invert(0);
+     filter: invert(0);
+    background-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-149-olg4/esoteric-icon.svg");
+    -webkit-background-size: 75% 75%;
+       -moz-background-size: 75% 75%;
+     -o-background-size: 75% 75%;
+     background-size: 75% 75%;
+    background-repeat: no-repeat;
+    background-position: left -10px center;
+    background-clip: border-box;
+}
+
+body .anom-bar-container.esoteric .text-part > .main-class::after {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    right: 0.25rem;
+    width: 3.53125rem;
+    height: 3.53125rem;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+     border-radius: 50%;
+    border: 0.25rem solid rgb({$accent-two});
+    -webkit-background-size: contain;
+       -moz-background-size: contain;
+     -o-background-size: contain;
+     background-size: contain;
+    background-position: center center;
+}
+
+body .text-part .disrupt-class::after,
+body .text-part .risk-class::after,
+body .text-part .disrupt-class::before,
+body .text-part .risk-class::before {
+    content: "";
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+       -moz-box-pack: center;
+     -ms-flex-pack: center;
+     justify-content: center;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+     border-radius: 50%;
+    border: 0.25rem solid rgb({$accent-two});
+    width: 2.5rem;
+    height: 2.5rem;
+    top: -webkit-calc(50% - 1.5rem);
+    top: -moz-calc(50% - 1.5rem);
+    top: calc(50% - 1.5rem);
+    font-size: 2em;
+    background-color: rgb(252, 252, 252);
+    background-color: rgb(var(--swatch-background, 252, 252, 252));
+    -webkit-background-size: contain;
+       -moz-background-size: contain;
+     -o-background-size: contain;
+     background-size: contain;
+    background-position: center center;
+}
+
+body .text-part .disrupt-class::before,
+body .text-part .risk-class::before {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+       -moz-box-pack: start;
+     -ms-flex-pack: start;
+     justify-content: flex-start;
+    background-color: rgb({$accent-two});
+    width: 3rem;
+    height: 3rem;
+    top: -webkit-calc(50% - 1.5rem);
+    top: -moz-calc(50% - 1.5rem);
+    top: calc(50% - 1.5rem);
+    border: 0;
+    right: 1rem;
+    text-align: left;
+    font-size: 1em;
+    padding-left: 0.5rem;
+    color: rgb(252, 252, 252);
+    color: rgb(var(--swatch-text-secondary-color, 252, 252, 252));
+}
+
+body .bottom-box > .diamond-part {
+    -webkit-box-shadow: -0.5rem 0 0 0 rgb({$accent-one});
+       -moz-box-shadow: -0.5rem 0 0 0 rgb({$accent-one});
+     box-shadow: -0.5rem 0 0 0 rgb({$accent-one});
+}
+
+body .danger-diamond > .arrows {
+    background-color: rgb({$accent-one});
+}
+
+body .danger-diamond > .top-icon,
+body .danger-diamond > .right-icon,
+body .danger-diamond > .left-icon,
+body .danger-diamond > .bottom-icon {
+    border: 0.1875rem solid rgb({$accent-two});
+}
+
+body .anom-bar-container .text-part .disrupt-class::before,
+body .anom-bar-container .text-part .risk-class::before {
+    color: rgb({$class-number-color})!important;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-trans-accent}
+
+[[module CSS]]
+body .anom-bar > .bottom-box,
+body .anom-bar > .bottom-box::before {
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+       -moz-box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+     box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+     background-position: center 0rem;
+     background: linear-gradient(90deg, #55CDFC, #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC)!important;
+     background-repeat: no-repeat!important;
+     background-size: 100% 0.5rem!important;
+     padding-top: 0.8rem;
+}
+
+body .anom-bar > .top-box {
+    padding-bottom: 0.5rem;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-lgbt-accent}
+
+[[module CSS]]
+body .anom-bar > .bottom-box,
+body .anom-bar > .bottom-box::before {
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+       -moz-box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+     box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+     background-position: center 0rem;
+     background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787)!important;
+     background-repeat: no-repeat!important;
+     background-size: 100% 0.5rem!important;
+     padding-top: 0.8rem;
+}
+
+body .anom-bar > .top-box {
+    padding-bottom: 0.5rem;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-bi-accent}
+
+[[module CSS]]
+body .anom-bar > .bottom-box,
+body .anom-bar > .bottom-box::before {
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+       -moz-box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+     box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+     background-position: center 0rem;
+     background: linear-gradient(90deg, #d60270, #9b4f96, #0038a8)!important;
+     background-repeat: no-repeat!important;
+     background-size: 100% 0.5rem!important;
+     padding-top: 0.8rem;
+}
+
+body .anom-bar > .top-box {
+    padding-bottom: 0.5rem;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-pan-accent}
+
+[[module CSS]]
+body .anom-bar > .bottom-box,
+body .anom-bar > .bottom-box::before {
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+       -moz-box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+     box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+     background-position: center 0rem;
+     background: linear-gradient(90deg, #ff1c8d, #ffd700, #1ab3ff)!important;
+     background-repeat: no-repeat!important;
+     background-size: 100% 0.5rem!important;
+     padding-top: 0.8rem;
+}
+
+body .anom-bar > .top-box {
+    padding-bottom: 0.5rem;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-nb-accent}
+
+[[module CSS]]
+body .anom-bar > .bottom-box,
+body .anom-bar > .bottom-box::before {
+    -webkit-box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+       -moz-box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+     box-shadow: 0 -0.5rem 0 0 rgba(0,255,0,0)!important;
+     background-position: center 0rem;
+     background: linear-gradient(90deg, #fcf431, #fcfcfc, #9d59d2, #282828)!important;
+     background-repeat: no-repeat!important;
+     background-size: 100% 0.5rem!important;
+     padding-top: 0.8rem;
+}
+
+body .anom-bar > .top-box {
+    padding-bottom: 0.5rem;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-trans-clearance}
+
+[[module CSS]]
+body .anom-bar-container.clear-1 .top-center-box > div {
+    background: linear-gradient(90deg, #55CDFC, #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-2 .top-center-box > div {
+    background: linear-gradient(90deg, #55CDFC, #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-3 .top-center-box > div {
+    background: linear-gradient(90deg, #55CDFC, #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-4 .top-center-box > div {
+    background: linear-gradient(90deg, #55CDFC, #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-5 .top-center-box > div {
+    background: linear-gradient(90deg, #55CDFC, #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-6 .top-center-box > div {
+    background: linear-gradient(90deg, #55CDFC, #F7A8B8, #FFFFFF, #F7A8B8, #55CDFC)!important;
+    background-size: 100%;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-lgbt-clearance}
+
+[[module CSS]]
+body .anom-bar-container.clear-1 .top-center-box > div {
+    background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-2 .top-center-box > div {
+    background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-3 .top-center-box > div {
+    background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-4 .top-center-box > div {
+    background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-5 .top-center-box > div {
+    background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-6 .top-center-box > div {
+    background: linear-gradient(90deg, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787)!important;
+    background-size: 100%;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-bi-clearance}
+
+[[module CSS]]
+body .anom-bar-container.clear-1 .top-center-box > div {
+    background: linear-gradient(90deg, #d60270, #9b4f96, #0038a8)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-2 .top-center-box > div {
+    background: linear-gradient(90deg, #d60270, #9b4f96, #0038a8)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-3 .top-center-box > div {
+    background: linear-gradient(90deg, #d60270, #9b4f96, #0038a8)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-4 .top-center-box > div {
+    background: linear-gradient(90deg, #d60270, #9b4f96, #0038a8)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-5 .top-center-box > div {
+    background: linear-gradient(90deg, #d60270, #9b4f96, #0038a8)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-6 .top-center-box > div {
+    background: linear-gradient(90deg, #d60270, #9b4f96, #0038a8)!important;
+    background-size: 100%;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-pan-clearance}
+
+[[module CSS]]
+body .anom-bar-container.clear-1 .top-center-box > div {
+    background: linear-gradient(90deg, #ff1c8d, #ffd700, #1ab3ff)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-2 .top-center-box > div {
+    background: linear-gradient(90deg, #ff1c8d, #ffd700, #1ab3ff)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-3 .top-center-box > div {
+    background: linear-gradient(90deg, #ff1c8d, #ffd700, #1ab3ff)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-4 .top-center-box > div {
+    background: linear-gradient(90deg, #ff1c8d, #ffd700, #1ab3ff)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-5 .top-center-box > div {
+    background: linear-gradient(90deg, #ff1c8d, #ffd700, #1ab3ff)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-6 .top-center-box > div {
+    background: linear-gradient(90deg, #ff1c8d, #ffd700, #1ab3ff)!important;
+    background-size: 100%;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-nb-clearance}
+
+[[module CSS]]
+body .anom-bar-container.clear-1 .top-center-box > div {
+    background: linear-gradient(90deg, #fcf431, #fcfcfc, #9d59d2, #282828)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-2 .top-center-box > div {
+    background: linear-gradient(90deg, #fcf431, #fcfcfc, #9d59d2, #282828)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-3 .top-center-box > div {
+    background: linear-gradient(90deg, #fcf431, #fcfcfc, #9d59d2, #282828)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-4 .top-center-box > div {
+    background: linear-gradient(90deg, #fcf431, #fcfcfc, #9d59d2, #282828)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-5 .top-center-box > div {
+    background: linear-gradient(90deg, #fcf431, #fcfcfc, #9d59d2, #282828)!important;
+    background-size: 100%;
+}
+
+body .anom-bar-container.clear-6 .top-center-box > div {
+    background: linear-gradient(90deg, #fcf431, #fcfcfc, #9d59d2, #282828)!important;
+    background-size: 100%;
+}
+[[/module]]
+
+[!----]
+
+[!-- {$inc-extra-categories}
+
+[[module CSS]]
+
+@import url('https://cdn.jsdelivr.net/gh/Nu-SCPTheme/Black-Highlighter@gh-pages/fonts/inter.css');
+
+.anom-bar > .bottom-box {
+    margin-bottom: 0.25rem;
+}
+
+.acs-extra {
+    display: grid;
+    display: -ms-grid;
+    display: grid;
+    grid-column-gap: 0.5rem;
+    margin-left: 0.25rem;
+    text-transform: uppercase;
+}
+
+.acs-extra.column-1 {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+}
+
+.acs-extra.column-2 {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.acs-extra.column-3 {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.acs-extra.column-4 {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.acs-extra-1,
+.acs-extra-2,
+.acs-extra-3,
+.acs-extra-4 {
+    font-family: Inter, sans-serif;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    padding-left: 0.5rem;
+    display: grid;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr 2rem;
+    grid-template-columns: auto 1fr 2rem;
+}
+
+.acs-extra.column-1 .acs-extra-2,
+.acs-extra.column-1 .acs-extra-3,
+.acs-extra.column-1 .acs-extra-4 {
+    display:none;
+}
+
+.acs-extra.column-2 .acs-extra-3,
+.acs-extra.column-2 .acs-extra-4 {
+    display:none;
+}
+
+.acs-extra.column-3 .acs-extra-4 {
+    display:none;
+}
+
+.acs-extra-1 {
+    background-color: rgba({$class-color-1},0.15);
+    border-left: 0.5rem solid rgba({$class-color-1},1);
+}
+
+.acs-extra-2 {
+    background-color: rgba({$class-color-2},0.15);
+    border-left: 0.5rem solid rgba({$class-color-2},1);
+}
+
+.acs-extra-3 {
+    background-color: rgba({$class-color-3},0.15);
+    border-left: 0.5rem solid rgba({$class-color-3},1);
+}
+
+.acs-extra-4 {
+    background-color: rgba({$class-color-4},0.15);
+    border-left: 0.5rem solid rgba({$class-color-4},1);
+}
+
+.acs-extra-1 *,
+.acs-extra-2 *,
+.acs-extra-3 *,
+.acs-extra-4 * {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+}
+
+.acs-extra-1 > .class-category,
+.acs-extra-2 > .class-category,
+.acs-extra-3 > .class-category,
+.acs-extra-4 > .class-category {
+    margin-right: 0.5rem;
+    font-size: 0.75rem;
+}
+
+.acs-extra-1 > .class-text,
+.acs-extra-2 > .class-text,
+.acs-extra-3 > .class-text,
+.acs-extra-4 > .class-text {
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.icon-1,
+.icon-2,
+.icon-3,
+.icon-4 {
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    margin-right: 0.25rem;
+}
+
+div.acs-extra-1 > *,  div.acs-extra-2 > *, div.acs-extra-3 > *, div.acs-extra-4 > * {
+    white-space: nowrap;
+    animation-name: flowIn;
+    animation-duration: calc(0.42s * var(--timeScale));
+    animation-delay: calc(0.75s * var(--timeScale) + var(--timeDelay));
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+div.acs-extra > * {
+    clip-path: polygon( 0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    animation-name: expand2;
+    animation-duration: calc(0.5s * var(--timeScale));
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.12,.41,.27,.99);
+    animation-fill-mode: backwards;
+}
+
+div.acs-extra > :nth-child(n) { animation-delay: calc(0.75s * var(--timeScale) + var(--timeDelay)); }
+
+@media (min-width: 876px ) {
+
+.anom-bar .text-part {
+    grid-template-columns: calc((100% + 6.25rem) / 2) auto!important;
+}
+
+.anom-bar-container.neutralized .anom-bar .text-part,
+.anom-bar-container.neutralised .anom-bar .text-part,
+.anom-bar-container.explained .anom-bar .text-part,
+.anom-bar-container.pending .anom-bar .text-part {
+    grid-template-columns: 1fr!important;
+}
+
+}
+
+@media (max-width: 875px ) {
+
+.acs-extra.column-1,
+.acs-extra.column-2,
+.acs-extra.column-3,
+.acs-extra.column-4 {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+}
+
+}
+
+@media (max-width: 480px ) {
+
+.acs-extra {
+    margin-right: 0.5rem;
+}
+
+}
+
+[[/module]]
+
+[[div_ class="acs-extra column-{$category-count} {$class-color-1} {$class-color-2} {$class-color-3} {$class-color-4} {$class-category-1} {$class-text-1}"]]
+[[div_ class="acs-extra-1" style="background-color: rgba({$class-color-1},0.15); border-left: 0.5rem solid rgba({$class-color-1},1);"]]
+[[div_ class="class-category"]]
+{$class-category-1}
+[[/div]]
+[[div_ class="class-text"]]
+{$class-text-1}
+[[/div]]
+[[div_ class="icon-1" style="background-image: url("{$class-icon-1}");"]]
+[[/div]]
+[[/div]]
+[[div_ class="acs-extra-2" style="background-color: rgba({$class-color-2},0.15); border-left: 0.5rem solid rgba({$class-color-2},1);"]]
+[[div_ class="class-category"]]
+{$class-category-2}
+[[/div]]
+[[div_ class="class-text"]]
+{$class-text-2}
+[[/div]]
+[[div_ class="icon-2" style="background-image: url("{$class-icon-2}");"]]
+[[/div]]
+[[/div]]
+[[div_ class="acs-extra-3" style="background-color: rgba({$class-color-3},0.15); border-left: 0.5rem solid rgba({$class-color-3},1);"]]
+[[div_ class="class-category"]]
+{$class-category-3}
+[[/div]]
+[[div_ class="class-text"]]
+{$class-text-3}
+[[/div]]
+[[div_ class="icon-3" style="background-image: url("{$class-icon-3}");"]]
+[[/div]]
+[[/div]]
+[[div_ class="acs-extra-4" style="background-color: rgba({$class-color-4},0.15); border-left: 0.5rem solid rgba({$class-color-4},1);"]]
+[[div_ class="class-category"]]
+{$class-category-4}
+[[/div]]
+[[div_ class="class-text"]]
+{$class-text-4}
+[[/div]]
+[[div_ class="icon-4" style="background-image: url("{$class-icon-4}");"]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+[!----]
+
+[!-- {$inc-custom-font}
+
+[[module CSS]]
+{$font-import}
+
+.anom-bar-container,
+.anom-bar-container *,
+.acs-extra,
+.acs-extra * {
+    font-family: '{$font-name}'!important;
+}
+[[/module]]
+
+[!----]
+
+[[iftags +コンポーネント・バックエンド]]
+
+[[module CSS]]
+/*
+For localization, please edit the link below.
+http://scp-jp.wikidot.com/fragment:black-highlighter-theme-source
+*/
+@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/1");
+@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/2");
+@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/3");
+[[/module]]
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[include :scp-wiki:component:author-label-source start=--
+|name=Calibold
+|no-right-margin=*]]
+[[=]]
+[[module ListPages range="."]]
+**%%title%%**
+[[/module]]
+
+**[[[Calibri Bold's Mega Cool Author Page|Caliboldの超クールな著者ページ]]]**
+[[/=]]
+[[include :scp-wiki:component:author-label-source end=--]]
+
+[[=]]
+
++ 超クールなACSのカスタムアドオンへようこそ！
+
+当コンポーネントの使用方法を知りたい場合は[[[component:customizable-acs-guide|こちら]]]を参照してください！
+
+もしも貴方がリラックスできる場所を探しているなら此処でも構いません。でも、コードは気にかけておいて下さい。今懸命に動いているところですから。
+
+[[/=]]
+
+[[/iftags]]

@@ -1,0 +1,1 @@
+[[span class="areaIcon" style="background: linear-gradient(to bottom right, #333,{$c0});"]][[image component:site/facility-texture.png]][[span class="number"]]{$number}[[/span]][[/span]] [[size 110%]]**{$name}** {$subtitle}[[/size]]

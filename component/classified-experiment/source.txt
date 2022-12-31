@@ -1,0 +1,14 @@
+[[include :scp-jp:component:classified-experiment-base
+|warning={$warning}
+|warning=アクセス承認
+|experiment-title={$experiment-title}
+|sub-title={$sub-title}
+|sub-title=false
+|left={$left}
+|left=false
+|right={$right}
+|right=false
+|content={$content}
+|signature={$signature}
+|signature=false
+]]

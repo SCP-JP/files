@@ -1,0 +1,4 @@
+[[include {${$l}}p} l{$e}{$l}_|e{$e}{${$l}_}e}|
+{$c}{$e}{$ |g{$e}*|e{$e}*|p{$e}{$p}|c{$e}{$c}|
+{$l}_{$e}{$|g{$e}]|e{$e}=|p{$e}:scp-jp:component:inc-loop-base|
+{${$l}}g}]

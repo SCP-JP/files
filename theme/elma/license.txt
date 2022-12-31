@@ -1,0 +1,5 @@
+title: エルマ外教 テーマ
+author: indonootoko
+created_at: 2020-10-19 13:21:58+00:00
+source: http://scp-jp.wikidot.com/theme:elma
+license: Need to Fix!

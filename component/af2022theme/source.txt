@@ -1,0 +1,975 @@
+[[iftags +テーマ]]
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** AF-2022-JPテーマ
+**著者:** AF-2022-JP企画委員
+**作成年:** 2022
+[[include :scp-jp:credit:end-preview]]
+
+[[module CSS]]
+#page-title {
+    display: none;
+}
+.c_international-container .panel-body {
+    padding: 0;
+}
+.c_international-body {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-evenly;
+    justify-content: space-evenly;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    *background: rgba(255,255,255,.9) url("https://scp-jp.wdfiles.com/local--files/component%3Atheme/panel-bg-gradient-reverse.png") bottom repeat-x;
+    padding: 5px 0;
+}
+.c_international-box {
+    margin: 5px 4px;
+    text-align: center;
+    min-width: 12em;
+}
+.c_international-box div > p,
+.international-entry div > p {
+    margin: 0;
+}
+.c_international-box .c_international-text {
+    margin: 5px 0;
+    font-size: 99%;
+}
+.international-entry {
+    padding: 10px 10px 5px 10px;
+    border-top: 1px solid #eeeee0;
+}
+.international-entry .international-description {
+    margin: 5px 20px;
+    font-size: 99%;
+}
+.c_international-box .c_international-logo img {
+    height: 90px;
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .c_international-box .c_international-logo img {
+        height: 80px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+@media (min-width: 581px) and (max-width: 767px) {
+    .c_international-box .c_international-logo img {
+        height: 70px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+@media (min-width: 480px) and (max-width: 580px) {
+    .c_international-box .c_international-logo img {
+        height: 60px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+@media (max-width: 479px) {
+    .c_international-box .c_international-logo img {
+        height: 50px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+
+/* For AF-2022-JP */
+.strengthening-month {
+    position: relative;
+    padding: 15px 0 15px 0;
+    text-align: center;
+}
+.strengthening-month a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.af.content-panel.standalone {
+    padding: 10px;
+    background: #ffe4b3;
+}
+[class^="item-num"] {
+    display: none;
+    padding-bottom: 10px;
+}
+.item-parent.num0 .item-num0, .item-parent.num1 .item-num1, .item-parent.num2 .item-num2, .item-parent.num3 .item-num3, .item-parent.num4 .item-num4, .item-parent.num5 .item-num5, .item-parent.num6 .item-num6, .item-parent.num7 .item-num7, .item-parent.num8 .item-num8, .item-parent.num9 .item-num9, .item-parent.numc0 .item-numc0, .item-parent.numc1 .item-numc1, .item-parent.numc2 .item-numc2, .item-parent.numc3 .item-numc3, .item-parent.numc4 .item-numc4, .item-parent.numc5 .item-numc5, .item-parent.numc6 .item-numc6, .item-parent.numc7 .item-numc7, .item-parent.numc8 .item-numc8, .item-parent.numc9 .item-numc9, .item-parent.numc10 .item-numc10, .item-parent.numc11 .item-numc11, .item-parent.numc12 .item-numc12, .item-parent.numc13 .item-numc13, .item-parent.numc14 .item-numc14, .item-parent.numc15 .item-numc15, .item-parent.numc16 .item-numc16, .item-parent.numc17 .item-numc17, .item-parent.numc18 .item-numc18, .item-parent.numc19 .item-numc19, .item-parent.numc20 .item-numc20, .item-parent.numc21 .item-numc21, .item-parent.numc22 .item-numc22 {
+    display: block;
+}
+.item-numc22 a, .item-numc23 a {
+    cursor: not-allowed;
+}
+[[/module]]
+
+[[div style="text-align: center; color: #600;"]]
+[[div class="unmargined"]]
+傾聴:
+[[/div]]
+[[div class="unmargined" style="font-size: 400%; font-weight: bold; margin: 2px 0 5px;"]]
+ﾆｬﾝ
+[[/div]]
+[[/div]]
+
+----
+[[div class="content-panel centered standalone newbies" style="padding: 10px;"]]
+[[size 130%]][[collapsible show="初めての方へ(可愛すぎ注意！)" hide="当サイトは共同怪奇創作サイトです、まずは以下のリンク先をお読みください"]][[/size]]
+[[div class="menu-item"]]
+[[size 130%]][[[about-the-scp-foundation|SCP財団とは]]][[/size]]
+当サイトの簡単な説明です
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[FAQ]]][[/size]]
+SCPに関する様々なことについてFAQ形式で説明しています
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[Site Rules|サイトルール]]][[/size]]
+当サイトのマナーと心構えについて
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[Licensing Guide|ライセンスガイド]]][[/size]]
+SCPに関する全世界共通のライセンスについて
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[guide-for-newbies|サイトへの参加を希望される方へ]]][[/size]]
+参加されたい方はこちらからどうぞ
+[[/div]]
+[[/collapsible]]
+[[/div]]
+
+[!-- 緊急度の高いお知らせ --]
+
+[[div class="content-panel centered standalone important-news" style="background: #9c7c55;padding: 10px;"]]
+**お世話の次に重要なお知らせ**
+
+[[span style="font-size:150%;"]]**現在SCP-JP上のファイルサイズ規制中。**
+[[/span]]
+100kB以下のみアップロード可能とします。代わりに[*http://scp-jp-storage.wikidot.com/ SCP-JPファイルストレージ]をご利用ください。
+
+**詳細は[http://scp-jp.wikidot.com/forum/t-10303565/scp-jp こちら]。**
+[[/div]]
+
+[[div class="content-panel centered standalone important-news" style="background: #474444; padding: 10px;color: white;"]]
+**おやつの次に緊急のお知らせ**
+
+[[span style="font-size:150%;"]]**Wikidotが不安定になっています！**
+[[/span]]
+
+Rateモジュールの表示が不安定になる不具合
+Facebookログインが使用できなくなる不具合
+編集時に直前の編集が反映されなくなる不具合
+
+上記などが確認されています。
+**詳細は[http://05command-ja.wikidot.com/defect-report こちら]。**
+
+[[/div]]
+
+[[module Listpages order="random" limit="1" wrapper="no" separate="no"]]
+[[div_ class="content-panel centered standalone af item-parent num[[#expr %%size%%%10]]"]]
+[[div_ class="item-num0"]]
++ 今日のおネコ様
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ネコ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-71-nuki/cat-gedfd213b4_640.jpg]][[/a]][[/div]]
+[[div_ class="item-num1"]]
++ 今日のおネコ様
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ネコ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-71-nuki/cat-gedfd213b4_640.jpg]][[/a]][[/div]]
+[[div_ class="item-num2"]]
++ 今日のおネコ様
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ネコ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-71-nuki/cat-gedfd213b4_640.jpg]][[/a]][[/div]]
+[[div_ class="item-num3"]]
++ 今日のおネコ様
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ネコ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-71-nuki/cat-gedfd213b4_640.jpg]][[/a]][[/div]]
+[[div_ class="item-num4"]]
++ 今日のおネコ様
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ネコ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-71-nuki/cat-gedfd213b4_640.jpg]][[/a]][[/div]]
+[[div_ class="item-num5"]]
++ 今日のおネコ様
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ネコ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-71-nuki/cat-gedfd213b4_640.jpg]][[/a]][[/div]]
+[[div_ class="item-num6"]]
++ 今日のおネコ様
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ネコ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-71-nuki/cat-gedfd213b4_640.jpg]][[/a]][[/div]]
+[[div_ class="item-num7"]]
++ 今日のおネコ様
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ネコ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-71-nuki/cat-gedfd213b4_640.jpg]][[/a]][[/div]]
+[[div_ class="item-num8"]]
++ 今日のおネコ様
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ネコ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-71-nuki/cat-gedfd213b4_640.jpg]][[/a]][[/div]]
+[[div_ class="item-num9"]]
++ 今日のおネコ様？
+[[div_ class="item-parent numc[[#expr %%size%%%23]]"]]
+
+[[div_ class="item-numc0"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+イヌ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-50-sfvu/animal-g18c9caa4d_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc1"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ウサギ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-51-igx8/rabbit-g6614849de_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc2"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ウシ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-52-g4vk/cow-g3aabdde44_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc3"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ウマ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-53-qgwk/horses-gc45d7834a_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc4"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+カエル"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-54-4e29/frog-g06f4a5e77_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc5"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+カメ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-55-t005/giant-tortoises-g2028b03bc_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc6"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+キツネ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-56-frum/red-fox-gcc109c07e_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc7"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+恐竜"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-57-y27g/monochrome-g319979f6c_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc8"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+魚類"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-58-htkz/lion-fish-g90b836042_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc9"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+クジラ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-59-wn0i/humpback-g28d6856fc_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc10"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+クマ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-60-twn1/bear-g1fdb29ada_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc11"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+サル"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-61-eofq/gorilla-g29ad61a59_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc12"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+シカ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-62-hqqb/fallow-deer-gefbc7fbfe_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc13"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+鳥類"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-63-nkpo/eagle-g1734e2b86_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc14"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+軟骨魚類"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-64-2oi9/shark-gc4ac0e8aa_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc15"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ネズミ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-65-yu1j/wood-mouse-gbc8ed02e4_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc16"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+爬虫類"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-66-asug/animal-g3d89e2e96_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc17"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ヒツジ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-67-xu2n/mouflon-gad33b3436_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc18"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+ヘビ"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-68-zgyc/line-gb73af80dc_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc19"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+無脊椎動物"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-69-uyy9/nature-g5da4c341b_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc20"]]
+[[a href="http://scp-jp.wikidot.com/random:random-redirect/tags/+リス"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-70-fx2e/squirrel-gbcf452eac_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc21"]]
+[[a href="##"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-73-bnfy/camel-g8fa1ec6a8_640.jpg]][[/a]][[/div]]
+
+[[div_ class="item-numc22"]]
+[[a href="##"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A2419995-74-5oh4/anteater-g1d04de73f_640.jpg]][[/a]][[/div]]
+
+[[/div]]
+
+[[/div]]
+
+[[/div]]
+
+[[/module]]
+
+[!-- コンテストパネル --]
+[[div class="content-panel centered standalone strengthening-month" style="background-color: rgba(119,136,153,0.75);"]]
+[[table  style="margin-left: auto; margin-right: auto;"]]
+[[row]]
+[[hcell style="padding: 10px 25px 10px 10px;"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3438721-151-0bbd/cat-silhouette-2.svg style="height: 100px;"]]
+[[/hcell]]
+[[hcell style="padding: 10px 10px 10px 15px;"]]
+令和四年四月一日は
+
+**[[span style="font-size:1.5em;"]]「ネコ」[[/span]]**
+
+執筆強化日です！
+[[/hcell]]
+[[/row]]
+[[/table]]
+[[a href="http://scp-jp.wikidot.com/awareness-month"]][[/a]]
+[[/div]]
+
+[[div class="content-panel centered standalone invite" style="background: #000000; padding: 15px 0px 10px;"]]
+[[size 150%]]###e6e600|**ニャつらへの反逆の時間だ**##[[/size]]
+
+[[a href="##"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4137401-11-9cb8/%E3%83%8D%E3%82%B3%E3%81%A8%E9%97%98%E4%BA%89%E3%81%9B%E3%82%88%E3%83%90%E3%83%8A%E3%83%BC.png style="margin-top: -10px;"]][[/a]]
+
+##white|**エントリー受付期間:** 4/1 (Fri) ～ 4/1 (Fri)##
+[[/div]]
+
+[!-- 新着記事 --]
+
+[[div class="feature-block"]]
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+新着のJP記事
+[[/div]]
+[[div class="panel-body"]]
+[[module ListPages category="-fragment -deleted" tags="scp tale goi-format アートワーク サイト 合作 設定集 news 著者ページ +jp" order="created_at desc" limit="7" separate="false"]]
+[[div_ style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; cursor: pointer; line-height: 18px;"]]
+%%linked_title%%
+[[/div]]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+[*http://scp-jp.wikidot.com/feed/pages/pagename/main/category/-fragment,-deleted/tags/+jp,scp,tale,goi-format,アートワーク,サイト,合作,設定集,ニュース,著者ページ/order/created_at+desc/limit/20/t/新着のJP記事 RSSフィード] | [[[most-recently-created-jp|新着のJP記事一覧]]]
+[[/div]]
+[[/div]]
+
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+新着の翻訳記事
+[[/div]]
+[[div class="panel-body"]]
+[[module ListPages category="-fragment -deleted" tags="scp tale goi-format アートワーク サイト 合作 著者ページ 外部ウィキアーカイブ -jp" order="created_at desc" limit="7" separate="false"]]
+[[div_ style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; cursor: pointer; line-height: 18px;"]]
+%%linked_title%%
+[[/div]]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+[*http://scp-jp.wikidot.com/feed/pages/pagename/main/category/-fragment,-deleted/tags/scp,tale,goi-format,アートワーク,サイト,合作,著者ページ,外部ウィキアーカイブ,-jp/order/created_at+desc/limit/20/t/新着の翻訳記事 RSSフィード] | [[[most-recently-created-translated|新着の翻訳記事一覧]]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+~~~~
+
+----
+
+[!------ INT-Block Start ------]
+[[div class="international-block content-panel"]]
+[[div class="panel-heading"]]
+他言語版へのリンク
+[[/div]]
+[[div class="panel-body"]]
+
+[[div class="c_international-body"]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-30-yubw/logo-remade-whiteout.svg link="https://scpwiki.com"]]
+[[/div]]
+[[div class="c_international-text"]]
+[https://scpwiki.com SCP Foundation]
+//英語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-16-7kig/scp-logo-ru.svg link="http://scp-ru.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-ru.wikidot.com/ Фонд SCP]
+//ロシア語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-142-xwjq/scp-logo-ko-400.png link="http://ko.scp-wiki.net/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://ko.scp-wiki.net/ SCP 재단]
+//韓国語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-5-i1qi/scp-logo-cn.svg link="http://scp-wiki-cn.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-wiki-cn.wikidot.com/ SCP基金会]
+//中国語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-8-f3ck/scp-logo-fr.svg link="http://fondationscp.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://fondationscp.wikidot.com/ Fondation SCP]
+//フランス語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-14-gjku/scp-logo-pl.svg link="http://scp-wiki.net.pl"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-wiki.net.pl Fundacja SCP]
+//ポーランド語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-7-hx89/scp-logo-es.svg link="http://lafundacionscp.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://lafundacionscp.wikidot.com/ La Fundación SCP]
+//スペイン語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-17-zs9r/scp-logo-th.svg link="http://scp-th.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-th.wikidot.com/ สถาบัน SCP]
+//タイ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wikidot.com/local--files/file:3438721-196-zbna/scp-logo-dach.svg link="http://scp-wiki-de.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-wiki-de.wikidot.com/ SCP auf Deutsch]
+//ドイツ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-11-62nv/scp-logo-it.svg link="http://fondazionescp.wikidot.com"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://fondazionescp.wikidot.com/ Fondazione SCP]
+//イタリア語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-131-vhww/scp-logo-ua.svg link="http://scp-ukrainian.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-ukrainian.wikidot.com/ Фонд SCP]
+//ウクライナ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-132-wrx0/scp-logo-pt.svg link="http://scp-pt-br.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-pt-br.wikidot.com/ Fundação SCP]
+//ポルトガル語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-130-gvk9/scp-logo-cs.svg link="http://scp-cs.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-cs.wikidot.com/ SCP Nadace]
+//チェコ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file:3438721-158-eess/scp-logo-zh.svg link="http://scp-zh-tr.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-zh-tr.wikidot.com/ SCP基金會]
+//繁体中国語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file:3438721-161-fv0x/scp-logo-vn.svg link="http://scp-vn.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-vn.wikidot.com/ Tổ Chức SCP]
+//ベトナム語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-10-3nlk/scp-logo-int-full.svg link="http://scp-int.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-int.wikidot.com/ International Translation Archive]
+//英語 (翻訳)//
+[[/div]]
+[[/div]]
+
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+    [[image https://scp-jp.wdfiles.com/local--files/main/un.png]] 非公式支部
+[[/div]]
+
+[[div class="international-description" style="font-style: normal;"]]
+[[table style="width: 100%;"]]
+[[row]]
+    [[cell]]
+     [[image https://scp-jp.wdfiles.com/local--files/main/gr.png]] [http://scp-el.wikidot.com/ SCP-EL] -- ギリシャ語
+    [[/cell]]
+    [[cell]]
+     [[image https://scp-jp.wdfiles.com/local--files/main/id.png]] [http://scp-idn.wikidot.com/ SCP-ID] -- インドネシア語
+    [[/cell]]
+    [[cell]]
+     [[image https://scp-jp.wdfiles.com/local--files/main/nd.png]] [http://scp-nd.wikidot.com/ SCP-ND] -- 北欧諸言語
+    [[/cell]]
+[[/row]]
+[[row]]
+    [[cell]]
+     [[image https://scp-jp.wdfiles.com/local--files/main/tr.png]] [http://scpvakfi.wikidot.com/ SCP-TR] -- トルコ語
+    [[/cell]]
+[[/row]]
+[[/table]]
+[[/div]]
+
+[[/div]]
+
+[[/div]]
+[[div class="panel-footer"]]
+[http://scp-un.wikidot.com/ その他の言語]
+[[/div]]
+[[/div]]
+[!------ INT-Block Ende ------]
+
+----
+
+[[div class="content-panel centered standalone" style="padding: 0.5em 1em;"]]
+[[size 90%]]SCP財団日本支部、及びSCP Foundationのメインテーマ **Sigma-9** は[[user Aelanna]]氏によって制作され、クリエイティブ・コモンズ・ライセンス 表示-継承 3.0([[[https://creativecommons.org/licenses/by-sa/3.0/deed.ja |CC BY-SA 3.0]]])の元で使用されています。[[/size]]
+[[/div]]
+
+-----
+
+++++ ソースコード:
+[[/iftags]]
+
+[[div class="codes code" [[iftags -テーマ]]style="display: none;"[[/iftags]]]]
+
+[[module CSS show="true"]]
+/*
+    Worship Cats Theme
+    [2022 Wikidot Theme]
+    Created by MikuKaneko
+    Licensed under the CC-BY SA 3.0
+
+    ₍ᐞ•༝•ᐞ₎◞ ̑̑ :　ヘッダーをよーく見ててニャ
+
+    ₍ᐞ•༝•ᐞ₎◞ ̑̑ :　もしニャんにもニャかったら少し待ってから再読込してニャ
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+
+:root {
+    --logo-size: 90px;
+    --logo-top: 27%;
+    --logo-left: 1%;
+    --hand: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-22-33lq/catHand.png");
+    --hand-mobile: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-23-ed38/catHandMobile.png");
+    --hand-size: calc(var(--logo-size) * 3.7);
+    --cat-body: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-21-h9ky/catBody.png");
+    --cat-body-left: 160px;
+    --pop-cat-size: 100px;
+}
+body {
+    overflow: hidden auto;
+}
+div#container-wrap {
+    background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-24-xvpc/footprints.png");
+    -moz-background-size: 200px;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+}
+#header {
+    z-index: 1;
+    background: none;
+}
+#header h1 a span, #header h2 span {
+    font-size: 0;
+    padding: 0;
+}
+#header h1 a::before {
+    font-family: "Mochiy Pop One", sans-serif;
+    content: "SCPざいにゃん";
+}
+#header h2 {
+    padding: 19px 0;
+}
+#header h2::before {
+    font-family: "Mochiy Pop One", sans-serif;
+    content: "Slave of Cat Party";
+    line-height: 0;
+    font-weight: bold;
+    color: #f0f0c0;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 80%);
+}
+#login-status {
+    right: unset;
+}
+#search-top-box {
+    top: 13px;
+}
+#header-extra-div-1, #header-extra-div-2, #header-extra-div-3 {
+    position: absolute;
+    pointer-events: none;
+}
+#header-extra-div-1 {
+    width: var(--hand-size);
+    height: var(--hand-size);
+    z-index: -1;
+    top: calc(var(--logo-top) - calc(var(--hand-size) - var(--logo-size)) / 2);
+    left: calc(var(--logo-left) - calc(var(--hand-size) - var(--logo-size)) / 2);
+    background-image: var(--hand);
+    -moz-background-size: var(--hand-size);
+    -webkit-background-size: var(--hand-size);
+    background-size: var(--hand-size);
+    --hand-animaiton: goro-hand 3s ease-in-out infinite;
+    -moz-animation: var(--hand-animaiton);
+    -webkit-animation: var(--hand-animaiton);
+    animation: var(--hand-animaiton);
+    -moz-transform-origin: calc(var(--hand-size) / 2);
+    -webkit-transform-origin: calc(var(--hand-size) / 2);
+    transform-origin: calc(var(--hand-size) / 2);
+}
+@keyframes goro-hand {
+    0%, 100% {
+        -webkit-transform: rotateZ(40deg);
+        transform: rotateZ(40deg);
+    }
+    50% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+}
+#header-extra-div-2 {
+    width: var(--logo-size);
+    height: var(--logo-size);
+    z-index: -2;
+    position: absolute;
+    top: var(--logo-top);
+    left: var(--logo-left);
+    background-image: url("https://scp-jp.wdfiles.com/local--files/component%3Atheme/logo.png");
+    -moz-background-size: var(--logo-size);
+    -webkit-background-size: var(--logo-size);
+    background-size: var(--logo-size);
+    --logo-animation: goro-logo 3s ease-in-out infinite;
+    -moz-animation: var(--logo-animation);
+    -webkit-animation: var(--logo-animation);
+    animation: var(--logo-animation);
+    -moz-transform-origin: calc(var(--logo-size) / 2);
+    -webkit-transform-origin: calc(var(--logo-size) / 2);
+    transform-origin: calc(var(--logo-size) / 2);
+}
+@keyframes goro-logo {
+    0%, 100% {
+        -webkit-transform: rotateZ(30deg);
+        transform: rotateZ(30deg);
+    }
+    50% {
+        -webkit-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg);
+    }
+}
+#header-extra-div-3 {
+    z-index: -1;
+    right: 0;
+    bottom: 22px;
+    width: 100%;
+    height: 0px;
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-29-1zem/cat.png");
+    -moz-background-size: auto 100px;
+    -webkit-background-size: auto 100px;
+    background-size: auto 100px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    --pop-cat-animation: popup 20s ease-in-out infinite, randomCat 20s steps(1, end) infinite, randomMove 20s steps(1, start) infinite;
+    -moz-animation: var(--pop-cat-animation);
+    -webkit-animation: var(--pop-cat-animation);
+    animation: var(--pop-cat-animation);
+}
+@keyframes popup {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        height: 0px;
+        margin-top: 140px;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        height: var(--pop-cat-size);
+        margin-top: calc(140px - var(--pop-cat-size));
+    }
+}
+@keyframes randomMove {
+    0% {
+        background-position: top right var(--right-1);
+    }
+    20% {
+        background-position: top right var(--right-2);
+    }
+    40% {
+        background-position: top right var(--right-3);
+    }
+    60% {
+        background-position: top right var(--right-4);
+    }
+    80% {
+        background-position: top right var(--right-5);
+    }
+}
+#extrac-div-1, #extrac-div-2, #extrac-div-3 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 140px;
+    pointer-events: none;
+}
+#extrac-div-1 {
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-25-7q5x/JapaneseStyleRoom.png");
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+}
+#extrac-div-2 {
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1089px;
+    margin: 0 auto;
+    background-image: var(--cat-body);
+    -moz-background-size: auto 140px;
+    -webkit-background-size: auto 140px;
+    background-size: auto 140px;
+    background-position: calc(var(--cat-body-left) + 5%) top;
+    background-repeat: no-repeat;
+}
+#extrac-div-3 {
+    top: 140px;
+    height: 21.9px;
+    background-image: url("https://scp-jp.wdfiles.com/local--files/component%3Atheme/body_bg.png");
+    background-position: top 260px left;
+}
+#side-bar {
+    z-index: 1;
+}
+.codes {
+    padding: 1em;
+}
+.codes .code {
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: unset;
+}
+.codes pre {
+    margin: 0;
+}
+@media (max-width: 479px) {
+:root {
+    --logo-size: 56px;
+    --logo-top: 40%;
+    --logo-left: 1%;
+    --hand-size: calc(var(--logo-size) * 6.9);
+    --cat-body-left: 150px ;
+}
+#login-status {
+    right: 10px;
+}
+#search-top-box {
+    top: 39px;
+}
+#header-extra-div-1 {
+    background-image: var(--hand-mobile);
+}
+}
+@media (min-width: 480px) and (max-width: 580px) {
+:root {
+    --logo-size: 66px;
+    --logo-top: 35%;
+    --logo-left: -1%;
+    --hand-size: calc(var(--logo-size) * 6.3);
+    --cat-body-left: 150px;
+}
+#login-status {
+    right: 10px;
+}
+#search-top-box {
+    top: 39px;
+}
+#header-extra-div-1 {
+    background-image: var(--hand-mobile);
+}
+}
+@media (min-width: 581px) and (max-width: 767px) {
+:root {
+    --logo-size: 78px;
+    --logo-top: 30%;
+    --logo-left: -1%;
+    --cat-body-left: 139px;
+}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+:root {
+    --logo-size: 88px;
+    --logo-top: 27%;
+    --cat-body-left: 150px;
+}
+}
+
+/* 以下ランダム */
+[[/module]]
+
+[[module ListPages limit="5" wrapper="no" separate="no" order="random" category="*" votes="<101"]]
+[[%%content{0}%%module CSS show="true"]]
+:root {
+     --right-%%index%%: %%rating_votes%%%;
+}
+[[%%content{0}%%/module]]
+[[/module]]
+
+[[module ListPages limit="1" offset="1" wrapper="no" separate="no" order="random" category="*"]]
+[[#ifexpr %%size%%%14 != 0 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+:root {
+    --hand: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-30-nf2u/040JPCatHand.png");
+    --hand-mobile: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-31-c0ol/040JPCatHandMobile.png");
+    --cat-body: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-55-v49g/040JPCatBody.png");
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%14 != 0 | --] ]]
+[[#ifexpr %%size%%%14 != 1 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+:root {
+    --cat-body: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-56-155s/083JPCatBody.png");
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%14 != 1 | --] ]]
+[[#ifexpr %%size%%%14 != 2 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+:root {
+    --hand: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-37-p2ff/529CatHand.png");
+    --hand-mobile: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-38-giwl/529CatHandMobile.png");
+    --cat-body: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-57-nftv/529CatBody.png");
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%14 != 2 | --] ]]
+[[#ifexpr %%size%%%14 != 3 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+:root {
+    --hand: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-39-tz7g/531CatHand.png");
+    --hand-mobile: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-40-uvag/531CatHandMobile.png");
+    --cat-body: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-58-0g73/531CatBody.png");
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%14 != 3 | --] ]]
+[[#ifexpr %%size%%%14 != 4 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+:root {
+    --hand: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-32-ncvs/774JPCatHand.png");
+    --hand-mobile: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-33-y86h/774JPCatHandMobile.png");
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%14 != 4 | --] ]]
+[[#ifexpr %%size%%%14 != 5 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+:root {
+    --hand: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-43-kv8z/1109JPCatHand.png");
+    --hand-mobile: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-44-zatp/1109JPCatHandMobile.png");
+    --cat-body: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-59-75ao/1109JPCatBody.png");
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%14 != 5 | --] ]]
+[[#ifexpr %%size%%%14 != 6 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+:root {
+    --hand: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-45-8rfa/1960JPCatHand.png");
+    --hand-mobile: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-46-b4p3/1960JPCatHandMobile.png");
+    --cat-body: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-60-h20m/1960JPCatBody.png");
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%14 != 6 | --] ]]
+[[#ifexpr %%size%%%14 != 7 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+:root {
+    --hand: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-47-1xmn/2472JPCatHand.png");
+    --hand-mobile: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-48-j1nc/2472JPCatHandMobile.png");
+    --cat-body: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-61-8qer/2472JPCatBody.png");
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%14 != 7 | --] ]]
+[[#ifexpr %%size%%%14 != 8 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+:root {
+    --hand: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-51-wkbd/2744JPCatHand.png");
+    --hand-mobile: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-52-lxzm/2744JPCatHandMobile.png");
+    --cat-body: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-62-7j4h/2744JPCatBody.png");
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%14 != 8 | --] ]]
+[[#ifexpr %%size%%%14 != 9 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+:root {
+    --hand: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-53-2rhx/2949CatHand.png");
+    --hand-mobile: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-54-v5sj/2949CatHandMobile.png");
+    --cat-body: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-63-ochu/2949CatBody.png");
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%14 != 9 | --] ]]
+[[/module]]
+
+[[module ListPages limit="1" offset="2" wrapper="no" separate="no" order="random" category="*"]]
+[[#ifexpr %%size%%%6 != 0 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+@keyframes randomCat {
+    80% {
+        background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-27-bdsm/Neko.png");
+        --pop-cat-size: 90px;
+        background-position: top right var(--right-1);
+    }
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%6 != 0 | --] ]]
+[[#ifexpr %%size%%%6 != 1 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+@keyframes randomCat {
+    80% {
+        background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-26-q6xz/Josie.png");
+        --pop-cat-size: 85px;
+        background-position: top right var(--right-1);
+    }
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%6 != 1 | --] ]]
+[[#ifexpr %%size%%%6 != 2 | [!-- ]]
+[[%%content{0}%%module CSS show="true"]]
+@keyframes randomCat {
+    80% {
+        background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-28-0pcz/tora.png");
+        --pop-cat-size: 93px;
+        background-position: top right var(--right-1);
+    }
+}
+[[%%content{0}%%/module]]
+[[#ifexpr %%size%%%6 != 2 | --] ]]
+[[/module]]
+
+[[/div]]

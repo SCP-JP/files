@@ -1,0 +1,55 @@
+[[iftags +テンプレート]]
+> 著者: [[*user Dr Aers]] / 編集: [[*user 7happy7]]
+> http://smlt.wikidot.com/component:aers:classification-stuff
+> [[collapsible show="+ 使い方" hide="- 閉じる"]]
+> ----
+> [[include :scp-jp:component:aers:classification-stuff
+> |item=XXXX
+> |lvl=4
+> |class=Keter
+> |threat=赤
+> |threat-colour=#b01
+> ]]
+> [[/collapsible]]
+[[/iftags]]
+----
+[[table style="width: 80%; font-family: Helvetica Neue,Helvetica,Arial,sans-serif; margin: 0 auto;"]]
+[[row]]
+[[cell class="device-all"]]
+[[span class="device-part"]]**アイテム番号:**[[/span]] SCP-{$item}
+[[/cell]]
+[[cell rowspan="2" style="width: 30% !important; vertical-align: middle;"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aaers%3Aclassification-stuff/l{$lvl}.png style="height: 10%;"]]
+[[/cell]]
+[[cell class="device-all"]]
+[[span class="device-part"]]**オブジェクトクラス:**[[/span]] {$class}
+[[/cell]]
+[[/row]]
+[[row]]
+[[cell class="device-all"]]
+[[span class="device-part"]]**Level {$lvl}**[[/span]] **Clearance**
+[[/cell]]
+[[cell class="device-all"]]
+[[span class="device-part"]]**脅威レベル:** {$threat}[[span style="color:{$threat-colour};"]] ●[[/span]][[/span]]
+[[/cell]]
+[[/row]]
+[[/table]]
+----
+[[module CSS]]
+.device-all {
+font-size: 150%;
+}
+@media (max-width: 767px) {
+.device-part {
+white-space: nowrap;
+}
+.device-all {
+font-size: 120%;
+}
+}
+@media (min-width: 767px) {
+.device-all {
+white-space: nowrap;
+}
+}
+[[/module]]

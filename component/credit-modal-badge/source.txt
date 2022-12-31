@@ -1,0 +1,23 @@
+[[div_ class="optionalbadge {$name}"]]
+[[image http://scp-jp-storage.wikidot.com/local--files/file:3438721-114-z4ps/usaidan.svg class="odango2021" link="http://scp-jp.wikidot.com/pile-up-dumplings-2021"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A2577572-285-hkyb/gekkahyojin.svg class="matchmaking2021" link="http://scp-jp.wikidot.com/matchmaking2021"]]
+[[/div]]
+[[module css]]
+.optionalbadge{
+  position: absolute;
+  bottom: 0;
+  left: 12.5%;
+  z-index: 1;
+}
+#page-content .optionalbadge img {
+  display: none;
+}
+#page-content .optionalbadge.odango2021 img.odango2021,
+#page-content .optionalbadge.matchmaking2021 img.matchmaking2021 {
+  display: unset;
+  width:auto;
+  height:45px;
+  top:-10px;
+  position: relative;
+}
+[[/module]]

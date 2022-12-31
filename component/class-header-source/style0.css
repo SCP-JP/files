@@ -1,0 +1,95 @@
+/* CLASSIFICATION HEADER */
+ div.classification-header{
+     color: rgb(12,12,12);
+
+     display: flex;
+     height: 4rem;
+     justify-content: center;
+}
+ .classification-header span{
+     word-break: break-word;
+}
+ div.classification-header > div{
+     width: 50%;
+     max-width: 50%;
+
+     flex-basis: 50%;
+}
+ div.classification-header div.side-left{
+     font-size: 1.25em;
+     text-transform: uppercase;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+ div.classification-header div.side-right{
+     font-size: 1.25em;
+     font-weight: 900;
+     text-transform: uppercase;
+     padding-left: .5rem;
+
+     display: flex;
+     justify-content: flex-end;
+}
+ div.side-left > div > span:nth-child(1){
+     font-weight: 900;
+     color: {$class-text-color};
+}
+ div.side-left > div:nth-child(2){
+     line-height: 1.4rem;
+     color: {$altbody-text-color};
+}
+ div.side-left > div:nth-child(2) > span:nth-child(1){
+     height: 1.4rem;
+}
+ div.side-right > div.clearance-container{
+     transform: skew(15deg);
+     padding: 0 0.5rem 0 0.25rem;
+     height: 100%;
+
+     display: flex;
+     flex-direction: row-reverse;
+     align-self: center;
+}
+ div.side-right > div.leveltext-container{
+     line-height: 1.4rem;
+     height: 100%;
+     text-align: right;
+     color: {$class-text-color};
+
+     display: flex;
+     flex-direction: column;
+     align-self: center;
+     justify-content: center;
+}
+ div.side-right > div.clearance-container > div.clearance{
+     width: 0.5rem;
+     height: 100%;
+     margin: 0 0.1rem;
+     overflow: hidden;
+     background: {$clearance-bg-color};
+}
+/* CLEARANCE BARS */
+ div.side-right > div.clearance-container > div.clearance.full{
+     opacity: 1;
+}
+ div.side-right > div.clearance-container > div.clearance.half{
+     opacity: 0.5;
+}
+ div.side-right > div.clearance-container > div.clearance.none{
+     opacity: 0;
+     display: none;
+}
+/* MOBILE MEDIA FILTER */
+ @media (max-width: 767px){
+     div.classification-header{
+         height: 3rem;
+    }
+     div.classification-header div.side-left{
+         font-size: 1.25em;
+    }
+     div.classification-header div.side-right{
+         font-size: 1.25em;
+    }
+}

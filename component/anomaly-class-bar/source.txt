@@ -1,0 +1,582 @@
+[[module css]]
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/normalize.min.css");
+@import url("https://nu-scptheme.github.io/Black-Highlighter/stable/styles/black-highlighter.min.css");
+
+:root {
+    --five-color: 196,2,51;
+    --four-color: 255,109,0;
+    --three-color: 255,211,0;
+    --two-color: 0,135,189;
+    --one-color: 0,159,107;
+}
+
+.color-five {
+    background-color: rgb(var(--five-color));
+}
+
+.color-four {
+    background-color: rgb(var(--four-color));
+}
+
+.color-three {
+    background-color: rgb(var(--three-color));
+}
+
+.color-two {
+    background-color: rgb(var(--two-color));
+}
+
+.color-one {
+    background-color: rgb(var(--one-color));
+}
+
+.color-gray {
+    background-color: rgba(var(--gray-monochrome, 66, 66, 72),0.15);
+}
+
+.color-white {
+    background-color: rgb(var(--white-monochrome, 252, 252, 252));
+}
+
+.color-black {
+    background-color: rgb(var(--black-monochrome, 12, 12, 12));
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(5, calc((100% / 5) - 0.25rem));
+    grid-gap: 0.25rem;
+}
+
+.class-table-box {
+    display: grid;
+    grid-template-columns: 1fr 75%;
+    background-color: rgb(var(--black-monochrome));
+    grid-gap: 0.125rem;
+    margin-top: 0.5rem;
+}
+
+.class-table-box > div {
+    padding: 0.5rem;
+}
+
+.class-name {
+    font-family: var(--title-font);
+    font-size: 1.15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.class-description {
+    background-color: rgb(var(--white-monochrome));
+}
+
+@media (max-width: 500px ) {
+.icons {
+    grid-template-columns: repeat(3, calc((100% / 3) - 0.25rem));
+}
+}
+
+.icon_image {
+    border-radius: 50%;
+    border: 0.25rem solid  rgb(var(--black-monochrome, 12, 12, 12));
+    overflow: hidden;
+}
+
+.icon_name,
+.icon_link {
+    font-family: var(--title-font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.step_container {
+    margin: 0.5rem 0;
+    border: 1px solid #999;
+    padding: 1em;
+}
+
+.help {
+    display: flex;
+    align-content: stretch;
+    padding-top: 1em;
+    border-top: 1px dashed #999;
+}
+
+.help blockquote {
+    margin: 0;
+    font-size: 85%;
+}
+
+.help blockquote > p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin-right: 0;
+    min-height: 2rem;
+    margin: 0;
+}
+
+.help blockquote > p * {
+    margin: 0 0.1rem;
+    height: 100%;
+}
+
+.help blockquote:nth-of-type(1) {
+    width: 50%;
+    background: transparent;
+    border: unset;
+    box-shadow: unset;
+    text-align: right;
+    margin-right: 0;
+    padding: 0;
+}
+
+.help blockquote:nth-of-type(1) > p {
+    justify-content: flex-end;
+}
+
+.help blockquote:nth-of-type(2) {
+    margin-left: 1em;
+    width: 50%;
+}
+
+#page-content > .collapsible-block {
+    display: block;
+    text-align: center;
+    padding: 0.75em;
+    background-color: lightgrey;
+    border-top: 0.125rem dashed slategrey;
+    border-bottom: 0.125rem dashed slategrey;
+}
+
+#page-content > div.collapsible-block > div.collapsible-block-unfolded > div.collapsible-block-content {
+    text-align:left;
+}
+[[/module]]
+
++ **Anomaly Classification Bar**
+
+------
+
+[[>]]
+[[module Rate]]
+[[/>]]
+
+[[div class="step_container"]]
++ [/anomaly-classification-system-guide 使用の前に、このガイドを読んでください。]
+++ 物語内での解説は、[[*user djkaktus]]による[/classification-committee-memo このメモ]を読んでください 。
+[[=]]
++++ このコンポーネントの使用にBlack Highlighterは必要ありません。
+[[/=]]
+[[/div]]
+
+[[div class="step_container"]]
+++++ このシステムは多くの他の著者の入力とともに、主として[[*user woedenaz]]によりコンパイルされました。
+
+**順不同で、以下の方々に感謝します:** [[*user The Great Hippo]] | [[*user Rounderhouse]] | [[*user djkaktus]] | [[*user Yossipossi]] | [[*user Captain Kirby]] | [[*user CadaverCommander]] | [[*user Uncle Nicolini]] | [[*user aismallard]] | [[*user DrAnnoyingDog]] | [[*user Lt Flops]] | [[*user Sterbai]]
+
+++++ これは大いなる情熱を持ったプロジェクトであり、私は得られた全ての素晴らしい、有用なフィードバックに本当に感謝します。もしあなたが貢献しており、上記で言及されていないならば、私に知らせてください！
+[[/div]]
+
++ 例
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 2105
+|clearance= 2
+|container-class= euclid
+|secondary-class= none
+|disruption-class= vlam
+|risk-class= notice
+]]
+@@ @@
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 3000
+|clearance= 5
+|container-class= esoteric
+|secondary-class= thaumiel
+|secondary-icon= https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/thaumiel-icon.svg
+|disruption-class= ekhi
+|risk-class= critical
+]]
+@@ @@
+[[include :scp-jp:component:anomaly-class-bar-source
+|item-number= 4511
+|clearance= 4
+|container-class= pending
+|secondary-class= none
+|disruption-class= none
+|risk-class= none
+]]
+
+------
+
+[[collapsible show="+ 上記の例のコードはこちらをクリック" hide="- コードを閉じる"]]
+
+> {{[[include :scp-jp:component:anomaly-class-bar-source}}
+> {{|item-number= 2105}}
+> {{|clearance= 2}}
+> {{|container-class= euclid}}
+> {{|secondary-class= none}}
+> {{|disruption-class= vlam}}
+> {{|risk-class= notice}}
+> {{]]}}
+>
+> {{[[include :scp-jp:component:anomaly-class-bar-source}}
+> {{|item-number= 3000}}
+> {{|clearance= 5}}
+> {{|container-class= esoteric}}
+> {{|secondary-class= thaumiel}}
+> {{|secondary-icon=https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/thaumiel-icon.svg}}
+> {{|disruption-class= ekhi}}
+> {{|risk-class= critical}}
+> {{]]}}
+>
+> {{[[include :scp-jp:component:anomaly-class-bar-source}}
+> {{|item-number= 4511}}
+> {{|clearance= 4}}
+> {{|container-class= pending}}
+> {{|secondary-class= none}}
+> {{|disruption-class= none}}
+> {{|risk-class= none}}
+> {{]]}}
+
+[[/collapsible]]
+
++ **使い方**
+
+[[=]]
++++ 見た目より簡単です！
+[[/=]]
+
+[[div_ class="step_container"]]
+
+[[div class="blockquote"]]
+[[=]]
++++ 全てのオプションは__小文字__で入力してください。大文字は__動作しません。__
+[[/=]]
+[[/div]]
+
+[[div_ class="help"]]
+>
+> インクルードの開始↦
+>
+> SCPのアイテム番号↦
+>
+> クリアランスレベル //数字を使用 (5,4,3,2,1,0)// ([/anomaly-classification-system-guide ガイドを参照])↦
+>
+> 収容クラス (オブジェクトクラスとも呼ばれる) ↦
+>
+> (オプション) 副次クラス (もし使うならば、収容クラスをEsotericにセット)↦
+>
+> もし副次クラスが用いられているならば、クラスのアイコンのURLをこちらへ設置↦
+>
+> 撹乱クラス ([/anomaly-classification-system-guide ガイド]及び下の説明を参照)↦
+>
+> Risk Class ([/anomaly-classification-system-guide ガイド]及び下の説明を参照）↦
+>
+> インクルードの終了↦
+>
+
+>
+> {{[[@@include@@ :scp-jp:component:anomaly-class-bar-source}}
+>
+> {{|item-number= XXXX}}
+>
+> {{|clearance= #}}
+>
+> {{|container-class= euclid}}
+>
+> {{|secondary-class= none}}
+>
+> {{|secondary-icon= http://urlhere.com}}
+>
+> {{|disruption-class= vlam}}
+>
+> {{|risk-class= warning}}
+>
+> {{]]}}
+>
+[[/div]]
+
+> **翻訳者へ：**このコンポーネントを使用した記事を翻訳し、日本支部に掲載する際には、"[[include :scp-wiki:component:anomaly-class-bar-source"（ENの場合。支部により変化する可能性あり）を"[[include :scp-jp:component:anomaly-class-bar-source"に差し替えるとバーが日本語化されます。
+[[/div]]
+
++ クラスの種類とアイコン
+
+[[div_ class="step_container"]]
++ 収容クラスの種類
+
+[[div_ class="icons"]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-one"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/safe-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+safe
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-three"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/euclid-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+euclid
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-five"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/keter-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+keter
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-gray"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/neutralized-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+neutralized
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-black"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/pending-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+pending
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/explained-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+explained
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/esoteric-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+esoteric
+[[/div]]
+[[/div]]
+
+[[/div]]
+
+[[/div]]
+
+[[div_ class="step_container"]]
++ 撹乱クラスの種類
+[[div_ class="icons"]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-one"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/dark-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+dark
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-two"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/vlam-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+vlam
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-three"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/keneq-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+keneq
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-four"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/ekhi-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+ekhi
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-five"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/amida-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+amida
+[[/div]]
+[[/div]]
+
+[[/div]]
+
+[[/div]]
+
+[[div_ class="step_container"]]
++ リスククラスの種類
+
+[[div_ class="icons"]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-one"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/notice-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+notice
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-two"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/caution-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+caution
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-three"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/warning-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+warning
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-four"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/danger-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+danger
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-five"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/critical-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+critical
+[[/div]]
+[[/div]]
+
+[[/div]]
+[[/div]]
+
+[[div_ class="step_container"]]
++ 副次クラスの種類とリンク | [/esoteric-classes-complete-list 詳細はこのページを参照]
+
+[[div_ class="icons"]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/apollyon-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+apollyon
+[[/div]]
+[[div_ class="icon_link"]]
+[https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/apollyon-icon.svg link]
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/archon-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+archon
+[[/div]]
+[[div_ class="icon_link"]]
+[https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/archon-icon.svg link]
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/cernunnos-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+cernunnos
+[[/div]]
+[[div_ class="icon_link"]]
+[https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/cernunnos-icon.svg link]
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/hiemal-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+hiemal
+[[/div]]
+[[div_ class="icon_link"]]
+[https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/hiemal-icon.svg link]
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/tiamat-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+tiamat
+[[/div]]
+[[div_ class="icon_link"]]
+[https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/tiamat-icon.svg link]
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/ticonderoga-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+ticonderoga
+[[/div]]
+[[div_ class="icon_link"]]
+[https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/ticonderoga-icon.svg link]
+[[/div]]
+[[/div]]
+
+[[div_ class="icon_container"]]
+[[div_ class="icon_image color-white"]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/thaumiel-icon.svg]]
+[[/div]]
+[[div_ class="icon_name"]]
+thaumiel
+[[/div]]
+[[div_ class="icon_link"]]
+[https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/thaumiel-icon.svg link]
+[[/div]]
+[[/div]]
+
+[[/div]]
+[[/div]]

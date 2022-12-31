@@ -1,0 +1,4 @@
+[[div_ class="colmod-block"]]
+[[ul]][[li class="[[#if {$folded} | folded | unfolded ]] [[#if {$ifprot} | colmod-collapsiblealt ]]"]][[ul]]_[[/ul]][[div class="colmod-link-top"]]
+[[div_ class="foldable-list-container"]]
+[# {$show}][[#if {$nohide} |  | [# {$hide}] ]][[/div]][[/div]][[div class="colmod-content"]]

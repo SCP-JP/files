@@ -1,0 +1,27 @@
+[[module CSS]]
+#page-title {
+    display: none;
+}
+
+a#pagerate-button,
+.page-rate-widget-box {
+    display: none;
+}
+[[/module]]
+
+[[div_ class="wikisys--template-dialog"]]
+[[div_ class="wikisys--template-dialog-header"]]
+成人向けコンテンツを含むページです
+[[/div]]
+[[div_ class="wikisys--template-dialog-content"]]
+**このページには成人向けコンテンツが含まれています。**
+**あなたが18歳以上であり、これらのコンテンツの閲覧を希望される場合は、ご自身の責任で閲覧してください。**
+
+[[module listpages separate="no" wrapper="no" range="."]]
+**[/adult:%%name%%/noredirect/true このページの内容を閲覧するには、ここをクリックしてください。]**
+[[/module]]
+[[/div]]
+[[div_ class="wikisys--template-dialog-footer"]]
+このページについて、詳しくは[[[adult-guide|]]]を確認してください。
+[[/div]]
+[[/div]]

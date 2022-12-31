@@ -1,0 +1,5 @@
+title: 闇寿司テーマ
+author: tutuji
+created_at: 2020-10-27 12:38:10+00:00
+source: http://scp-jp.wikidot.com/theme:yamisushi
+license: Need to Fix!

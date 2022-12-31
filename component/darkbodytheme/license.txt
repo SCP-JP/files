@@ -1,0 +1,5 @@
+title: KaktusKontainer Dark Body テーマ
+author: shu_yabiyabi
+created_at: 2018-07-22 11:35:57+00:00
+source: http://scp-jp.wikidot.com/component:darkbodytheme
+license: Need to Fix!

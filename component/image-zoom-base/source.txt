@@ -1,0 +1,27 @@
+[[module CSS]]
+.enlarge{
+transition: .25s;
+}
+
+.enlarge:hover{
+transform: scale(1.6);
+transition: .25s;
+transition-delay: .4s;
+}
+
+@media (max-width: 768px) {
+.scp-clear-true.scp-image-block {
+float: none;
+clear: both;
+margin-left: auto;
+margin-right: auto;
+}
+}
+[[/module]]
+
+[[div class="scp-image-block block-{$align} scp-clear-{$clear}" style="width:{$width};"]]
+[[image {$name} class="enlarge" style="width:{$width};" link={$link}]]
+[[div class="scp-image-caption" style="width:{$width};"]]
+{$caption}
+[[/div]]
+[[/div]]

@@ -1,0 +1,63 @@
+.earthworm {
+  --nav-color: #ccc;
+  --thickness: 2px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+  clear: both;
+}
+.earthworm div {
+  display: inline-flex;
+  align-items: center;
+}
+.earthworm p {
+  margin: 0 1em;
+  text-align: center;
+}
+.earthworm div:nth-child(1) {
+  height: 30px;
+  border-top: var(--thickness) var(--nav-color) solid;
+  border-bottom: var(--thickness) var(--nav-color) solid;
+  position: relative;
+}
+.earthworm div:nth-child(1):not(.true)::before {
+  content: ""; position: absolute; border: 17px solid transparent; border-right: 17px solid #ccc; left: -34px; top: -2px; z-index: 6;
+}
+.earthworm div:nth-child(1):not(.true)::after {
+  content: ""; position: absolute; border: 15px solid transparent; border-right: 15px solid white; left: -29px; top: 0; z-index: 7;
+}
+.earthworm div:nth-child(2) {
+  height: 35px;
+  border: 3px var(--nav-color) solid;
+  background: linear-gradient(to top right, #eee, #fff)
+}
+.earthworm div:nth-child(2).no a, .earthworm a[href="/"] {
+  color: #333;
+  text-decoration: none;
+  cursor: text;
+  pointer-events: none;
+}
+.earthworm div:nth-child(3) {
+  height: 30px;
+  line-height: 30px;
+  border-top: var(--thickness) var(--nav-color) solid;
+  border-bottom: var(--thickness) var(--nav-color) solid;
+  position: relative;
+}
+.earthworm div:nth-child(3):not(.true)::before {
+  content: ""; position: absolute; border: 17px solid transparent; border-left: 17px solid #ccc; right: -34px; top: -2px; z-index: 6;
+}
+.earthworm div:nth-child(3):not(.true)::after {
+  content: ""; position: absolute; border: 15px solid transparent; border-left: 15px solid white; right: -29px; top: 0; z-index: 7;
+}
+.earthworm div.true {
+  width: 1px;
+}
+.earthworm div.true p {
+  display: none;
+}
+.earthworm a {
+  word-break: normal;
+}

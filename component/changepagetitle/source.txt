@@ -1,0 +1,11 @@
+[[module CSS]]
+#html-body #header h1 a span {
+  font-size: 0px;
+  letter-spacing: 0px;
+}
+
+#html-body #header h1 a::after {
+  color: {$COLOR};
+  content: "{$TITLE}";
+}
+[[/module]]

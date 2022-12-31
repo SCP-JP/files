@@ -1,0 +1,5 @@
+title: 「第三法則」カノン CSSテーマ
+author: holy_nova
+created_at: 2016-08-29 13:55:00+00:00
+source: http://scp-jp.wikidot.com/theme:3law
+license: Need to Fix!

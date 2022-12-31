@@ -1,0 +1,716 @@
+[[module css]]
+@import url('http://scp-jp.wdfiles.com/local--code/component%3Aaf2019theme');
+[[/module]]
+[[module css]]
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+
+div.standalone {
+    margin: 0;
+}
+div[style="text-align: center; color: #600;"] + hr + div.standalone {
+    margin: 0 12.5%;
+    padding: 0!important;
+}
+div[style="text-align: center; color: #600;"] + hr + div.standalone .collapsible-block {
+    margin: 2em 2em 0;
+    background: rgba(50,130,250,0.5);
+}
+ 
+div[style="text-align: center; color: #600;"] + hr + div.standalone,
+div[style="text-align: center; color: #600;"] + hr + div.standalone .collapsible-block,
+div[style="text-align: center; color: #600;"] + hr + div.standalone + div.standalone {
+    border-radius: 10px 10px 0 0;
+}
+div[style="text-align: center; color: #600;"] + hr + div.standalone + div.standalone + div.standalone {
+    border-radius: 0;
+    border-bottom: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25);
+}
+div[style="text-align: center; color: #600;"] + hr + div.standalone + div.standalone + div.standalone + div.standalone {
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px 20px rgba(255,255,255,0.25);
+}
+
+#page-title { display: none; }
+.feature-block {
+    height: 230px;
+}
+.feature-block .panel-body {
+    height: 160px;
+    overflow-y: hidden;
+}
+.feature-block .feature-title {
+    font-size: 120%;
+    font-weight: bold;
+}
+.feature-block .feature-subtitle {
+    font-size: 90%;
+}
+
+.feature-block .feature-title > p,
+.feature-block .feature-subtitle > p {
+    margin: 0;
+}
+
+.international-block .panel-body {
+    padding: 0;
+}
+.international-entry {
+    padding: 5px 10px;
+}
+.international-entry:nth-child(even),
+.alternate:nth-child(even) {
+    background-color: rgba(255,255,255,.9);
+    border-top: solid 1px #eeeee0;
+    border-bottom: solid 1px #eeeee0;
+}
+.international-entry div > p {
+    margin: 0;
+}
+.international-entry .international-title {
+    font-weight: bold;
+    font-size: 110%;
+}
+.international-entry .international-title img {
+    width: 16px;
+    height: 11px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.international-entry .international-description {
+    font-size: 90%;
+    font-style: italic;
+    margin: 5px 20px;
+}
+.international-entry .international-footer {
+    font-size: #333;
+    font-size: 80%;
+    margin: 5px 0;
+}
+.feature-block {
+    height: 430px!important;
+}
+
+.feature-block .panel-body {
+    height: 350px!important;
+    overflow-y: hidden;
+}
+
+
+
+.sp .feature-block {
+    display: none;
+}
+[[/module]]
+
+[[div style="text-align: center; color: #600;"]]
+[[div class="unmargined"]]
+お願い:
+[[/div]]
+[[div class="unmargined" style="font-size: 400%; font-weight: bold; margin: 2px 0 5px;"]]
+あと5分…
+[[/div]]
+[[div class="unmargined"]]
+そしてあなたは深い微睡みに包まれた。
+[[/div]]
+[[/div]]
+----
+[[div class="content-panel centered standalone" style="padding: 10px;"]]
+[[size 130%]][[collapsible show="あなたは布団にくるまっています。" hide="起きましたか？今日はエイプリルフールです。"]][[/size]]
+[[div class="menu-item"]]
+[[size 130%]][[[guide-for-newbies|初めての方へ]]][[/size]]
+当サイトの簡単な説明です
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[FAQ]]][[/size]]
+SCPに関する様々なことについてFAQ形式で説明しています
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[Site Rules|サイトルール]]][[/size]]
+当サイトのマナーと心構えについて
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[Licensing Guide|ライセンスガイド]]][[/size]]
+SCPに関する全世界共通のライセンスについて
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[system:join|SCP財団参加の手引き]]][[/size]]
+参加されたい方はこちらからどうぞ
+[[/div]]
+[[/collapsible]]
+[[/div]]
+[[div class="content-panel centered standalone"]]
+**Tips For April Fool**
+
+[[div style="padding:0 0.8em"]]
+本日用のスペシャルな記事には「af2019」をつけてください。
+[[/div]]
+
+[[/div]]
+
+[[div class="content-panel centered standalone" style="background: #fff0f0; padding: 10px;"]]
+**寝ていられないほど重要なお知らせ**
+[[/div]]
+
+[[div class="content-panel centered standalone" style="background: #fff0f0; padding: 10px;"]]
+[[span style="font-size:150%;"]]**__現在SCP-JP上のファイルサイズ規制中。__**
+[[/span]]
+100kb以下のみアップロード可能とします。
+
+**詳細は[http://ja.scp-wiki.net/forum/t-10303565/scp-jp こちら]**
+[[/div]]
+
+
+
+
+[[div class="feature-block"]]
+ [[div class="content-panel left-column"]]
+  [[div class="panel-heading"]]
+   注目の布団
+  [[/div]]
+  [[div class="panel-body"]]
+[[=image http://scp-jp-sandbox3.wdfiles.com/local--files/draft:7happy7-27-0a13/cat-animal-sleep-cats-pet-animals-cute-nap.jpg style="max-width:200px;"]]
+[!--
+https://visualhunt.com/photo/95416/
+https://visualhunt.com/photos/4/cat-animal-sleep-cats-pet-animals-cute-nap.jpg?s=l
+--]
+
+SCP布団は、[[span class="ruby"]]Silky[[span class="rt"]]すべすべ[[/span]][[/span]] [[span class="ruby"]]Clean[[span class="rt"]]清潔[[/span]][[/span]] [[span class="ruby"]]Paramount[[span class="rt"]]最高級[[/span]][[/span]]な睡眠体験であなたの時間を奪います
+  [[/div]]
+  [[div class="panel-footer"]]
+注目の布団
+[[/div]]
+[[/div]]
+
+ [[div class="content-panel right-column"]]
+  [[div class="panel-heading"]]
+   **注m**
+  [[/div]]
+  [[div class="panel-body"]]
+[[div class="feature-title"]]
+[[[SCP-ZZZ-JP-J|]]]: 暁を覚えず
+[[/div]]
+[[[scp-j|先延ばs]]]
+  [[/div]]
+  [[div class="panel-footer"]]
+...
+[[/div]]
+[[/div]]
+[[/div]]
+
+
+[[div class="sp"]]
+[[include :scp-jp:component:feature-and-news]]
+[[/div]]
+
+----
+
+[[div class="international-block content-panel"]]
+[[div class="panel-heading"]]
+SCP International
+[[/div]]
+[[div class="panel-body"]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image int.png]] [http://scp-int.wikidot.com/ SCP-INT] -- International Translation Archive
+[[/div]]
+[[div class="international-description"]]
+SCP財団の国際的コミュニティのための集会場。各国の記事を英訳して掲載するサイトです。翻訳は**[http://translate.google.com/translate?hl=ja&sl=en&tl=ja&u=http%3A%2F%2Fscp-int.wikidot.com こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+Admins: [[user dr-grym]] -- [[user dr-grom]]
+[[/div]]
+[[/div]]
+[[/div]]
+[[div class="panel-footer"]]
+@@ @@
+[[/div]]
+[[/div]]
+
+----
+
+[[div class="international-block content-panel"]]
+[[div class="panel-heading"]]
+各国のサイト
+[[/div]]
+[[div class="panel-body"]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image us.png]] [http://www.scp-wiki.net/ SCP-EN] -- SCP Foundation
+[[/div]]
+[[div class="international-description"]]
+英語のSCPサイトで、SCP財団の**本家**です。翻訳は**[http://translate.google.com/translate?hl=ja&sl=en&tl=ja&u=http%3A%2F%2Fwww.scp-wiki.net こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+管理者: [[user DrEverettMann]]  -- [[user DrClef]] -- [[user Drewbear]]  -- [[user Photosynthetic]] -- [[user snorlison]] -- [[user TheDeadlyMoose]] -- [[user AdminBright]] -- [[user TroyL]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image ru.png]] [http://scp-ru.wikidot.com/ SCP-RU] -- SCP Foundation (Russian Branch)
+[[/div]]
+[[div class="international-description"]]
+ロシア語のサイトです。SCP-RUは一番歴史が長い翻訳サイトです。翻訳は**[http://translate.google.com/translate?hl=ja&sl=ru&tl=ja&u=http%3A%2F%2Fscp-ru.wikidot.com こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+管理者: [[user Gene R]] -- [[user Osobist]] -- [[user Resure]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image kr.png]] [http://ko.scp-wiki.net/ SCP-KO] -- SCP 재단
+[[/div]]
+[[div class="international-description"]]
+韓国語のサイトです。翻訳は**[http://translate.google.com/translate?hl=ja&sl=ko&tl=ja&u=http%3A%2F%2Fko.scp-wiki.net こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+管理者: [[user Salamander724]] -- [[user shfoakdls]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image cn.png]] [http://scp-wiki-cn.wikidot.com// SCP-CN] -- SCP基金会
+[[/div]]
+[[div class="international-description"]]
+中国語のサイトです。翻訳は**[http://translate.google.com/translate?hl=ja&sl=zh-CN&tl=ja&prev=_dd&u=http%3A%2F%2Fscp-wiki-cn.wikidot.com こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+管理者: [[user areyoucrazytom]] -- [[user SunnyClockwork]] -- [[user MScarlet]]-- [[user Holy_Darklight]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image fr.png]] [http://fondationscp.wikidot.com/ SCP-FR] -- Fondation SCP
+[[/div]]
+[[div class="international-description"]]
+フランス語のサイトです。翻訳は**[http://translate.google.com/translate?hl=ja&sl=fr&tl=ja&u=http%3A%2F%2Ffondationscp.wikidot.com こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+管理者: [[user Dr Frog]] -- [[user DrJohannes]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image pl.png]] [http://scp-pl.wikidot.com/ SCP-PL] -- SCP Polska Filia
+[[/div]]
+[[div class="international-description"]]
+ポーランド語のサイトです。翻訳は**[http://translate.google.com/translate?hl=ja&sl=pl&tl=ja&u=http%3A%2F%2Fscp-pl.wikidot.com こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+管理者: [[user Mefioo9]] -- [[user Dr_Blackpeace]] -- [[user wanna-amigo]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image es.png]] [http://lafundacionscp.wikidot.com/ SCP-ES] -- La Fundación SCP
+[[/div]]
+[[div class="international-description"]]
+スペイン語のサイトです。翻訳は**[http://translate.google.com/translate?hl=ja&sl=es&tl=ja&u=http%3A%2F%2Flafundacionscp.wikidot.com こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+管理者: [[user Dr Reach]] -- [[user Investigador Mallea]] -- [[user The Minuteman]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image th.png]] [http://scp-th.wikidot.com/ SCP-TH] -- สถาบัน SCP
+[[/div]]
+[[div class="international-description"]]
+タイ語のサイトです。翻訳は**[http://translate.google.com/translate?hl=ja&sl=th&tl=ja&u=http%3A%2F%2Fscp-th.wikidot.com こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+管理者: [[user DrSSS]] -- [[user Kuruni]] -- [[user Philosafix]] -- [[user Slang]]
+[[/div]]
+[[/div]]
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image de.png]] [http://scp-wiki-de.wikidot.com/ SCP-DE] -- SCP Deutschland
+[[/div]]
+[[div class="international-description"]]
+ドイツ語のサイトです。翻訳は **[http://translate.google.com/translate?hl=ja&sl=de&tl=ja&u=http%3A%2F%2Fscp-wiki-de.wikidot.com/ こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+管理者: [[user Dr_Grom]] -- [[user ThePencilwriter]]
+[[/div]]
+[[/div]]
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image it.png]] [http://fondazionescp.wikidot.com/ SCP-IT] --  Fondazione SCP
+[[/div]]
+[[div class="international-description"]]
+イタリア語のサイトです。翻訳は **[http://translate.google.com/translate?hl=ja&sl=it&tl=ja&u=http%3A%2F%2Ffondazionescp.wikidot.com/ こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+管理者: [[user Dr Voker]] -- [[user Dr Pisy]] -- [[user  LofB]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image ua.png]] [http://scp-ukrainian.wikidot.com/ SCP-UA] -- SCP Foundation(Ukraine Branch)
+[[/div]]
+[[div class="international-description"]]
+ウクライナ語のサイトです。翻訳は**[http://translate.google.com/translate?hl=ja&sl=auto&tl=ja&u=http%3A%2F%2Fscp-ukrainian.wikidot.com%2F こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+Admins: [[user murzei_chaos]] -- [[user FishStealer]] -- [[user Legio V Alaudae]]
+[[/div]]
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+[[image pt.png]] [http://scp-pt-br.wikidot.com/ SCP-PT/BR] -- Lusófona Branch
+[[/div]]
+[[div class="international-description"]]
+ポルトガル語のサイトです。翻訳は **[http://translate.google.com/translate?hl=ja&sl=auto&tl=ja&u=http%3A%2F%2Fscp-pt-br.wikidot.com%2F こちら]**。
+[[/div]]
+[[div class="international-footer"]]
+Admins: [[user Silvacrest]]
+[[/div]]
+[[/div]]
+
+[[/div]]
+[[div class="panel-footer"]]
+@@ @@
+[[/div]]
+[[/div]]
+
+-----
+[[code type="css"]]
+@charset "utf-8";
+ 
+/* 
+    ZZZ theme
+    [2019 Wikidot theme]
+    Created by 7happy7, WotaliaSD, Dr Devan, NanimonoDemonai
+    for af2019 in SCP-JP
+    CC BY-SA 3.0
+ */
+ 
+body  {
+    color: #730000;
+}
+a {
+    color: hsla(0, 100%, 38%, 1);
+}
+ 
+div.open-menu a {
+    color: #730000!important;
+    border-color: #730000!important;
+}
+ 
+/* Z本体 */
+div#header h2 span:before,
+div#header h2 span:after {
+    content: "Z";
+    font-size: calc(180% * 1.9 / 1.05);
+    color: #eee;
+    background: transparent;
+    font-family: BauhausLTDemi, Arial, sans-serif;
+    text-shadow: 3px 3px 5px #000;
+    letter-spacing: 0.9px;
+    position: absolute;
+    top: 66px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    pointer-events: none;
+}
+/* Zのアニメーション */
+div#header h2 span:before {
+    animation: smoky 5s 0s infinite both;
+}
+div#header h2 span:after {
+    animation: smoky-mirror 5s 2.5s infinite both;
+}
+/* Zのアニメーションの定義 */
+@keyframes smoky {
+  10% {
+    text-shadow: 0 0 0 #666;
+    color: #ddd;
+    opacity: 1;
+  }
+  60% {
+    text-shadow: 0 0 40px #666;
+    color: #ddd;
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(240px,-128px,0) rotate(-40deg) skewX(70deg) scale(1.5);
+    text-shadow: 0 0 20px #666;
+    color: #ddd;
+    opacity: 0;
+  }
+}
+@keyframes smoky-mirror {
+  10% {
+    text-shadow: 0 0 0 #666;
+    color: #ddd;
+    opacity: 1;
+  }
+  60% {
+    text-shadow: 0 0 40px #666;
+    color: #ddd;
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(288px,-128px,0) rotate(-40deg) skewX(-70deg) scale(2);
+    text-shadow: 0 0 20px whitesmoke;
+    opacity: 0;
+  }
+}
+ 
+/* 
+    花柄 by WotaliaSD
+    ヘッダー by NanimonoDemonai
+ */
+div#container-wrap {
+    background: url(http://scp-jp-sandbox3.wikidot.com/local--files/draft:7happy7-27-0a13/body_bg_4_1.png) top left repeat-x, url("http://scp-jp-sandbox3.wikidot.com/local--files/draft:7happy7-27-0a13/often.png");
+}
+ 
+/* タイトルの真ん中寄せなど */
+#header h1 {
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+}
+#header h2 {
+    pointer-events: none;
+    margin: 0 auto;
+    clear: both;
+    float: none;
+    text-align: center;
+    width: 100%;
+    height: 162px;
+    min-height: 162px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+/* SCP財団を非表示 */
+div#header h1 a span {
+    font-size: 0px;
+}
+/* 確保、収容、保護を非表示 */
+div#header h2 span {
+    color: transparent;
+    text-shadow: none;
+    padding: 0;
+}
+/* 疑似タイトル */
+div#header h1 a:before {
+    content: "SCP布団";
+    color: #eee;
+}
+div#header h1 a:after {
+    content: "起こさないで";
+    display: block;
+    font-family: "Trebuchet MS", Trebuchet, Verdana, Arial, Helvetica;
+    font-size: calc(16px * 0.8 * 1.05);
+    font-weight: bold;
+    color: #f0f0c0;
+    padding: 19px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .8);
+    white-space: pre;
+}
+/* 枕 */
+div#header h1 a span {
+    font-size: 0px;
+    display: block;
+    position: absolute;
+    width: calc(16px * 0.8 * 1.8 * 1.9 * 6);
+    height: 95px;
+    top: 16%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    outline: 1px dashed #fff;
+    outline-offset: -5px;
+    padding: 5px;
+    border-radius: 5px;
+    background: radial-gradient(#fff 0, rgb(250,180,180) 100%);
+    background: -webkit-radial-gradient(#fff 0, rgb(250,180,180) 100%);
+    z-index: -1;
+}
+ 
+/* 各メディア毎のZと枕の大きさ */
+@media (max-width: 410px) {
+div#header h2 span:before,
+div#header h2 span:after {
+    font-size: calc(100% * 1.9 / 1.05 * 0.85);
+}
+div#header h1 a span {
+    width: calc(16px * 0.8 * 0.75 * 1.9 * 5);
+    top: 30%;
+    height: calc(100px /1.8 * 0.75 + 20px);
+}
+}
+@media (max-width: 479px) {
+div#header h2 span:before,
+div#header h2 span:after {
+    font-size: calc(100% * 1.9 / 1.05 * 0.95);
+}
+div#header h1 a span {
+    width: calc(16px * 0.8 * 0.85 * 1.9 * 6);
+    top: 30%;
+    height: calc(100px /1.8 * 0.85 + 20px);
+}
+}
+@media (min-width: 480px) and (max-width: 580px) {
+div#header h2 span:before,
+div#header h2 span:after {
+    font-size: calc(100% * 1.9 / 1.05 * 1.2);
+}
+div#header h1 a span {
+    width: calc(16px * 0.8 * 1.2 * 1.9 * 6);
+    height: calc(100px /1.8 * 1.2 + 20px);
+}
+}
+@media (min-width: 581px) and (max-width: 767px) {
+div#header h2 span:before,
+div#header h2 span:after {
+    font-size: calc(100% * 1.9 / 1.05 * 1.4);
+}
+div#header h1 a span {
+    width: calc(16px * 0.8 * 1.4 * 1.9 * 6);
+    height: calc(100px /1.8 * 1.4 + 15px);
+}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+div#header h2 span:before,
+div#header h2 span:after {
+    font-size: calc(100% * 1.9 / 1.05 * 1.6);
+}
+div#header h1 a span {
+    width: calc(16px * 0.8 * 1.6 * 1.9 * 6);
+}
+}
+ 
+/* いろいろ */
+div#header {
+    background: none;
+}
+#login-status a#my-account,
+#top-bar ul li a {
+    color: #888;
+    font-weight: normal;
+}
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+    color: #333;
+}
+
+#top-bar ul li.sfhover a:hover,
+#top-bar ul li:hover a:hover {
+    background: #fff;
+}
+
+#login-status #account-options a {
+    color: #b01;
+    text-shadow: none;
+}
+ 
+/* Minimalized Search Bar
+Developed by the Wikidot Community */
+#search-top-box input.btn {
+    display: none;
+}
+ 
+#search-top-box input.text {
+    position: absolute;
+    right: 0;
+    height: 20px;
+    width: 24px;
+    border-radius: 14px;
+    border: 1px solid;
+    border-color: rgba(215, 215, 215, 0);
+    background: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    padding: 2px 0;
+    color: rgba(51, 51, 51, 0);
+    transition: width .5s, color .5s, background .5s, border-color .5s;
+    cursor: pointer;
+}
+ 
+#search-top-box-input {
+    margin: 0;
+}
+ 
+#search-top-box form * {
+    -webkit-appearance: none;
+    outline: none;
+}
+ 
+#search-top-box form {
+    width: 24px;
+    height: 28px;
+}
+ 
+#search-top-box form:hover input.text {
+    background: rgba(0, 0, 0, .188);
+    border-color: rgba(215, 215, 215, 1);
+}
+ 
+#search-top-box form:hover input.text:focus {
+    background: rgba(255, 255, 255, 1);
+}
+ 
+#search-top-box form:focus {
+    width: 200px;
+}
+ 
+#search-top-box input.text:focus {
+    width: 150px;
+    padding: 2px 1em;
+    color: rgba(51, 51, 51, 1);
+    box-shadow: 1px 1px 2px -1px rgba(0, 0, 0, .15) inset;
+    border: 1px solid #D7D7D7;
+    background: rgba(255, 255, 255, 1);
+    cursor: text;
+}
+ 
+#search-top-box input.text.empty {
+    font-size: 0;
+}
+ 
+#search-top-box form:before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: 'FontAwesome', 'Font Awesome 5 Free';
+    font-weight: 700;
+    font-size: 13px;
+    content: '';
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    color: #ccc;
+    text-align: center;
+    background-color: hsla(0, 100%, 40%, 1);
+    background: linear-gradient(to bottom, hsla(0, 30%, 30%, 0.7), hsla(0, 30%, 50%, 0.7), hsla(0, 30%, 50%, 0.7));
+    border-radius: 14px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+    line-height: 25px;
+}
+ 
+/* Interwiki */
+iframe.html-block-iframe.scpnet-interwiki-frame {
+    filter: hue-rotate(6deg) brightness(140%);
+}
+[[/code]]
+
+[[div class="content-panel centered standalone"]]
+[[size 90%]]SCP財団日本支部、及びSCP Foundationのメインテーマ **Sigma-9** は[[user Aelanna]]氏によって制作され、クリエイティブ・コモンズ・ライセンス-表示-継承 3.0([[[https://creativecommons.org/licenses/by-sa/3.0/deed.ja |CC-BY-SA]]])の元で使用されています。
+[[/size]]
+[[/div]]

@@ -1,0 +1,339 @@
+[[iftags +コンポーネント]]
+[[include :scp-wiki:component:croqstyle]]
+
+[[module CSS]]
+/* ---- PRESENTATION ---- */
+ .templateInfo{
+     margin: 1em 0;
+     padding: 0 1em;
+     background: hsl(0, 0%, 100%);
+     border: 1px solid hsl(0, 0%, 87%);
+}
+[[/module]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** Centered Header Sigma-9
+**著者:** [[*user Lt Flops]]
+**オリジナル:** [https://scp-wiki.wikidot.com/component:centered-header-sigma-9 (SCP-EN)]
+**作成年:** 2021
+**訳者:** [[*user Burnin_A_GoGo]]
+[[include :scp-jp:credit:end-preview]]
+[[note]]
+**著者:**
+[[*user Lt Flops]]
+----
+**フォーク元:**
+[[*user EstrellaYoshte]]による[[[*https://scp-jp.wikidot.com/theme:penumbra|Penumbraテーマ]]]
+----
+**画像提供:**
+[[*user Woedenaz]]による"[http://scp-jp-storage.wikidot.com/local--files/file:7522555-167-g69b/logo.svg logo.svg]"
+[https://creativecommons.org/licenses/by-sa/3.0/ CC BY-SA 3.0]下で提供。
+----
+**使用方法:**
+[#toc1 ここをクリック]
+[[/note]]
+
+@@ @@
+
+[[div class="templateInfo"]]
+[[=]]
++ これは何？
+[[/=]]
+----
+これは**シグマ-9**に新たな中央寄せのヘッダーデザインを導入したコンポーネントです。[[*user EstrellaYoshte]]による[[[*https://scp-jp.wikidot.com/theme:penumbra|Penumbraテーマ]]]からフォークされています。
+
+当コンポーネントは[[[*https://scp-jp.wikidot.com/component:toggle-sidebar|トグル式サイドバー]]]との併用を__**推奨**__します。
+
+当コンポーネントはBlack Highliterとの互換性を__**有しません**__。[[[*https://scp-jp.wikidot.com/component:centered-header-bhl|Centered Header BHLはここからアクセス可能です。]]]
+[[/div]]
+
+@@ @@
+
+[[div class="templateInfo"]]
+[[=]]
++ 使用方法
+[[/=]]
+----
+当コンポーネントの導入には、以下の構文をページの最上部に貼り付けてください。シグマ-9ベースのカスタムテーマを使用している場合、以下の構文をカスタムテーマのincludeの//直後//に以下の構文を貼り付けてください。
+
+[[div class="code terminal"]]
+**##var(--c-keyword)|[[include##** ##var(--c-symbol)|:scp-jp:component:centered-header-sigma-9##**##var(--c-keyword)|]]##**
+[[/div]]
+
+@@ @@
+
+タイトル、サブタイトル、ヘッダータイトルの文字色、ヘッダーのサブタイトルの文字色、並びにヘッダーロゴは自由に変更が可能です。この構文を{{include}}の//直後//に貼り付け、スタイルを設定するだけです。
+
+[[div class="code terminal"]]
+**##var(--c-keyword)|[[module##** ##var(--c-builtin)|CSS##**##var(--c-keyword)|]]##**
+@@ @@##var(--c-symbol)|:root##{
+@@   @@##var(--c-builtin)|@@--@@header-title##: ##var(--c-value)|"タイトル"##;
+@@   @@##var(--c-builtin)|@@--@@header-subtitle##: ##var(--c-value)|"サブタイトル"##;
+@@   @@##var(--c-builtin)|@@--@@titleColor##: ##var(--c-value)|タイトルの文字色##;
+@@   @@##var(--c-builtin)|@@--@@subtitleColor##: ##var(--c-value)|サブタイトルの文字色##;
+@@   @@##var(--c-builtin)|@@--@@lgurl##: ##var(--c-builtin)|url##(##var(--c-string)|@@ここにURL@@##);
+}
+**##var(--c-keyword)|[[/module]]##**
+[[/div]]
+
+既定の__header-title__及び__header-subtitle__に設定されているフォントは[[span style="font-family: 'Montserrat', sans-serif;"]]Montserrat[[/span]]です。
+
+ページにおける//オリジナルの//フォントを__header-title__に適用したい場合は以下のコードを追加してください。
+
+[[div class="code terminal"]]
+@@ @@##var(--c-symbol)|#header h1 a::before##{
+@@     @@##var(--c-builtin)|font-family##: ##var(--c-value)|unset##;
+}
+[[/div]]
+
+ページにおける//オリジナルの//フォントを__header-subtitle__に適用したい場合は以下のコードを追加してください。
+
+[[div class="code terminal"]]
+@@ @@##var(--c-symbol)|#header h2::before##{
+@@     @@##var(--c-builtin)|font-family##: ##var(--c-value)|unset##;
+}
+[[/div]]
+
+既定の__titleColor__は[[span style="display: inline-block;
+     width: 1em;
+     height: 1em;
+     vertical-align: middle;
+     background-color: hsl(0, 0%, 95%);
+     border: 3px solid hsl(0, 0%, 85%);"]]
+[[/span]] {{hsl(0, 0%, 95%)}}です。
+既定の__subtitleColor__は[[span style="display: inline-block;
+     width: 1em;
+     height: 1em;
+     vertical-align: middle;
+     background-color: hsl(60, 62%, 85%);
+     border: 3px solid hsl(60, 62%, 75%);"]]
+[[/span]] {{hsl(60, 62%, 85%)}}です。
+
+//オリジナルの//タイトルの色を維持したいのであれば、これら2つのフィールドを完全に省略可能です。
+
+又、ロゴ無しを選択する事も可能です。
+
+[[div class="code terminal"]]
+@@ @@##var(--c-symbol)|:root##{
+@@   @@##var(--c-builtin)|@@--@@lgurl##: ##var(--c-value)|none##;
+}
+[[/div]]
+
+@@ @@
+
+当コンポーネントはヘッダーのデザインに通常と異なるアプローチを取るため、([[[*https://scp-jp.wikidot.com/component:scp-pride|SCP Pride Template]]], [[[*http://scp-jp.wikidot.com/component:pride-highlighter|Pride Highlighter]]]、並びに[[[*https://scp-jp.wikidot.com/theme:calibri-logos|Calibriの超クールなオルタネイトSCPロゴページ]]]のような)ロゴコンポーネントは想定通りに動作しません。仮に以上のページのロゴを使用したい場合は該当するページの"Files"セクションを開き[[footnote]]**訳注:** JPでは本サイトへのアップロードは禁止されています。[[/footnote]]、必要なロゴ画像を直接リンクしてください。
+
+@@ @@
+
+**[オプション]** トグル式サイドバーへのクイックアクセス:
+
+[[div class="code terminal"]]
+**##var(--c-keyword)|[[include##** ##var(--c-symbol)|:scp-jp:component:toggle-sidebar##**##var(--c-keyword)|]]##**
+[[/div]]
+[[/div]]
+
+@@ @@
+
+[[div class="templateInfo"]]
+[[=]]
++ ソースコード
+[[/=]]
+[[/div]]
+[[/iftags]]
+
+[[div [[iftags -コンポーネント]]style="display: none"[[/iftags]]]]
+
+[[=]]
+[[collapsible show="▷ コードを表示 ◁" hide="△ コードを隠す △"]]
+[[/=]]
+[[<]]
+
+[[module CSS show="true"]]
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap);
+
+/* Centered Header Sigma-9
+ * [2021 Wikidot Component]
+ * By Lt Flops (CC BY-SA 3.0)
+ * Forked from:
+   * Penumbra Theme by EstrellaYoshte
+ * Also based on:
+   * Centered Header BHL by Woedenaz
+**/
+
+/* ---- VARS ---- */
+ :root{
+     --titleColor: hsl(0, 0%, 95%);
+     --subtitleColor: hsl(60, 62%, 85%);
+     --lgurl: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7522555-167-g69b/logo.svg");
+}
+
+/* ---- SITE BANNER ---- */
+ #header,
+ div#header{
+     background-image: none;
+}
+
+ #header::before{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     content: "";
+
+     background-image: var(--lgurl);
+     background-position: center top;
+     background-repeat: no-repeat;
+     background-size: auto 10.55em;
+     opacity: .33;
+}
+
+ #header h1,
+ #header h2{
+     float: none;
+     margin-left: 0;
+
+     text-align: center;
+}
+
+ #header h1 span,
+ #header h2 span{
+   /* Hide the Existing Text */
+     display: none;
+}
+
+ #header h1 a::before,
+ #header h2::before{
+   /* Style the New Text */
+     font-family: "Montserrat", "Arial", sans-serif;
+     text-shadow: none;
+}
+
+ #header h1 a::before{
+     position: relative;
+     bottom: .15em;
+
+     color: var(--titleColor);
+
+     font-size: 115%;
+     font-weight: 700;
+}
+
+ #header h2::before{
+     position: relative;
+     top: .1em;
+
+     color: var(--subtitleColor);
+
+     font-size: 130%;
+     font-weight: 600;
+}
+
+ #header h1 a::before{
+   /* Set the New Text's Content From Variable */
+     content: var(--header-title, "SCP財団");
+}
+
+ #header h2::before{
+     content: var(--header-subtitle, "確保 - 収容 - 保護");
+}
+
+/* ---- SEARCH ---- */
+ #search-top-box{
+     top: 1em;
+     right: 0;
+}
+
+ #search-top-box-form input.button{
+     margin-right: 0;
+}
+
+ #search-top-box-input,
+ #search-top-box-input:hover,
+ #search-top-box-input:focus,
+ #search-top-box-form input[type=submit],
+ #search-top-box-form input[type=submit]:hover,
+ #search-top-box-form input[type=submit]:focus{
+     border-radius: 0;
+     box-shadow: none;
+
+     font-size: 100%;
+}
+
+/* ---- TOP BAR ---- */
+ #top-bar{
+     right: 0;
+     display: flex;
+     justify-content: center;
+}
+
+ #top-bar ul li ul{
+     border-bottom: 1px solid hsl(0, 0%, 40%);
+     box-shadow: none;
+}
+
+/* ---- LOGIN ---- */
+ #login-status{
+     top: 1.1em;
+     right: initial;
+
+     color: hsl(0, 0%, 87%);
+}
+
+ #account-topbutton{
+     border-color: hsl(0, 0%, 87%);
+
+     font-size: 100%;
+}
+
+/* ---- PAGE TITLE ---- */
+ .meta-title,
+ #page-title{
+     text-align: center;
+}
+
+/* ---- BREADCRUMBS ---- */
+ .pseudocrumbs,
+ #breadcrumbs{
+     text-align: center;
+}
+
+/* ---- MOBILE DISPLAY ---- */
+ @media (max-width: 767px){
+     #search-top-box{
+          top: 1.85em;
+          width: unset;
+    }
+
+     .mobile-top-bar{
+          position: relative;
+          left: 0;
+          display: flex;
+          justify-content: center;
+    }
+
+     #login-status{
+          top: 0;
+          right: 0;
+    }
+
+     #header .printuser{
+          font-size: 0;
+    }
+
+     #header .printuser img.small{
+          margin: 0;
+
+          transform: translate(6px, 4px);
+    }
+
+     #my-account{
+          display: none;
+    }
+
+     #account-topbutton{
+          margin-left: 2px;
+    }
+}
+[[/module]]
+[[/<]]
+[[/div]]
+[[/collapsible]]

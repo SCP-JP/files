@@ -1,0 +1,92 @@
+
+:root {
+    --accent: var(--acc-vanguard);
+    --header-title: "ANGUARD";
+    --header-subtitle: "保護、通常化、情報公開";
+    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-62-tcqn/fxtrt-vanguard_logo.webp);
+    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-62-tcqn/fxtrt-vanguard_logo.webp);
+    --logo-opacity: 100% !important;
+
+    --dark-bg-1: #0c1a2e !important;
+    --dark-bg-2: #132a4a !important;
+
+}
+
+body {
+    background-image: linear-gradient(to bottom, #50dbd5, #d9ffc8 90px, #d9ffc8 90px, #fff 200px);
+}
+
+#header h2::before {
+    font-size: 1.15em;
+    line-height: 21px;
+}
+
+div#extra-div-1 {
+    margin-top: -15px;
+    left: -9.75rem;
+}
+
+#header h1 {
+    position: inherit;
+    right: -1.7em;
+}
+
+#header h2 {
+    margin-left: 4.5rem;
+}
+
+@media (max-width: 767px) {
+
+    #header h2::before {
+     font-size: 1em;
+     line-height: 12px;
+     margin-left: 12px;
+    }
+
+    div#extra-div-1 {
+     left: -8rem;
+    }
+
+    #header h1 a::before {
+     font-size: 1.5em;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #header h2::before {
+     margin-left: 16px;
+     margin-top: 0.9rem;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    #top-bar,
+    #top-bar a {
+     top: 9.5rem;
+    }
+
+    div#header {
+     height: 145px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    div#extra-div-1 {
+     left: -7rem;
+    }
+
+    #header h2::before {
+     font-size: 0.8em;
+     line-height: 20px;
+     margin-left: 18px;
+     margin-top: 0.3rem;
+    }
+
+}
+

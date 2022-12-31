@@ -1,0 +1,99 @@
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+
+div.standalone {
+    margin: 0;
+}
+div[style="text-align: center; color: #600;"] + hr + div.standalone {
+    margin: 0 12.5%;
+    padding: 0!important;
+}
+div[style="text-align: center; color: #600;"] + hr + div.standalone .collapsible-block {
+    margin: 2em 2em 0;
+    background: rgba(50,130,250,0.5);
+}
+ 
+div[style="text-align: center; color: #600;"] + hr + div.standalone,
+div[style="text-align: center; color: #600;"] + hr + div.standalone .collapsible-block,
+div[style="text-align: center; color: #600;"] + hr + div.standalone + div.standalone {
+    border-radius: 10px 10px 0 0;
+}
+div[style="text-align: center; color: #600;"] + hr + div.standalone + div.standalone + div.standalone {
+    border-radius: 0;
+    border-bottom: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25);
+}
+div[style="text-align: center; color: #600;"] + hr + div.standalone + div.standalone + div.standalone + div.standalone {
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px 20px rgba(255,255,255,0.25);
+}
+
+#page-title { display: none; }
+.feature-block {
+    height: 230px;
+}
+.feature-block .panel-body {
+    height: 160px;
+    overflow-y: hidden;
+}
+.feature-block .feature-title {
+    font-size: 120%;
+    font-weight: bold;
+}
+.feature-block .feature-subtitle {
+    font-size: 90%;
+}
+
+.feature-block .feature-title > p,
+.feature-block .feature-subtitle > p {
+    margin: 0;
+}
+
+.international-block .panel-body {
+    padding: 0;
+}
+.international-entry {
+    padding: 5px 10px;
+}
+.international-entry:nth-child(even),
+.alternate:nth-child(even) {
+    background-color: rgba(255,255,255,.9);
+    border-top: solid 1px #eeeee0;
+    border-bottom: solid 1px #eeeee0;
+}
+.international-entry div > p {
+    margin: 0;
+}
+.international-entry .international-title {
+    font-weight: bold;
+    font-size: 110%;
+}
+.international-entry .international-title img {
+    width: 16px;
+    height: 11px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.international-entry .international-description {
+    font-size: 90%;
+    font-style: italic;
+    margin: 5px 20px;
+}
+.international-entry .international-footer {
+    font-size: #333;
+    font-size: 80%;
+    margin: 5px 0;
+}
+.feature-block {
+    height: 430px!important;
+}
+
+.feature-block .panel-body {
+    height: 350px!important;
+    overflow-y: hidden;
+}
+
+
+
+.sp .feature-block {
+    display: none;
+}

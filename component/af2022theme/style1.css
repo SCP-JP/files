@@ -1,0 +1,268 @@
+/*
+    Worship Cats Theme
+    [2022 Wikidot Theme]
+    Created by MikuKaneko
+    Licensed under the CC-BY SA 3.0
+
+    ₍ᐞ•༝•ᐞ₎◞ ̑̑ :　ヘッダーをよーく見ててニャ
+
+    ₍ᐞ•༝•ᐞ₎◞ ̑̑ :　もしニャんにもニャかったら少し待ってから再読込してニャ
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+
+:root {
+    --logo-size: 90px;
+    --logo-top: 27%;
+    --logo-left: 1%;
+    --hand: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-22-33lq/catHand.png");
+    --hand-mobile: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-23-ed38/catHandMobile.png");
+    --hand-size: calc(var(--logo-size) * 3.7);
+    --cat-body: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-21-h9ky/catBody.png");
+    --cat-body-left: 160px;
+    --pop-cat-size: 100px;
+}
+body {
+    overflow: hidden auto;
+}
+div#container-wrap {
+    background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-24-xvpc/footprints.png");
+    -moz-background-size: 200px;
+    -webkit-background-size: 200px;
+    background-size: 200px;
+}
+#header {
+    z-index: 1;
+    background: none;
+}
+#header h1 a span, #header h2 span {
+    font-size: 0;
+    padding: 0;
+}
+#header h1 a::before {
+    font-family: "Mochiy Pop One", sans-serif;
+    content: "SCPざいにゃん";
+}
+#header h2 {
+    padding: 19px 0;
+}
+#header h2::before {
+    font-family: "Mochiy Pop One", sans-serif;
+    content: "Slave of Cat Party";
+    line-height: 0;
+    font-weight: bold;
+    color: #f0f0c0;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 80%);
+}
+#login-status {
+    right: unset;
+}
+#search-top-box {
+    top: 13px;
+}
+#header-extra-div-1, #header-extra-div-2, #header-extra-div-3 {
+    position: absolute;
+    pointer-events: none;
+}
+#header-extra-div-1 {
+    width: var(--hand-size);
+    height: var(--hand-size);
+    z-index: -1;
+    top: calc(var(--logo-top) - calc(var(--hand-size) - var(--logo-size)) / 2);
+    left: calc(var(--logo-left) - calc(var(--hand-size) - var(--logo-size)) / 2);
+    background-image: var(--hand);
+    -moz-background-size: var(--hand-size);
+    -webkit-background-size: var(--hand-size);
+    background-size: var(--hand-size);
+    --hand-animaiton: goro-hand 3s ease-in-out infinite;
+    -moz-animation: var(--hand-animaiton);
+    -webkit-animation: var(--hand-animaiton);
+    animation: var(--hand-animaiton);
+    -moz-transform-origin: calc(var(--hand-size) / 2);
+    -webkit-transform-origin: calc(var(--hand-size) / 2);
+    transform-origin: calc(var(--hand-size) / 2);
+}
+@keyframes goro-hand {
+    0%, 100% {
+        -webkit-transform: rotateZ(40deg);
+        transform: rotateZ(40deg);
+    }
+    50% {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+}
+#header-extra-div-2 {
+    width: var(--logo-size);
+    height: var(--logo-size);
+    z-index: -2;
+    position: absolute;
+    top: var(--logo-top);
+    left: var(--logo-left);
+    background-image: url("https://scp-jp.wdfiles.com/local--files/component%3Atheme/logo.png");
+    -moz-background-size: var(--logo-size);
+    -webkit-background-size: var(--logo-size);
+    background-size: var(--logo-size);
+    --logo-animation: goro-logo 3s ease-in-out infinite;
+    -moz-animation: var(--logo-animation);
+    -webkit-animation: var(--logo-animation);
+    animation: var(--logo-animation);
+    -moz-transform-origin: calc(var(--logo-size) / 2);
+    -webkit-transform-origin: calc(var(--logo-size) / 2);
+    transform-origin: calc(var(--logo-size) / 2);
+}
+@keyframes goro-logo {
+    0%, 100% {
+        -webkit-transform: rotateZ(30deg);
+        transform: rotateZ(30deg);
+    }
+    50% {
+        -webkit-transform: rotateZ(-10deg);
+        transform: rotateZ(-10deg);
+    }
+}
+#header-extra-div-3 {
+    z-index: -1;
+    right: 0;
+    bottom: 22px;
+    width: 100%;
+    height: 0px;
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-29-1zem/cat.png");
+    -moz-background-size: auto 100px;
+    -webkit-background-size: auto 100px;
+    background-size: auto 100px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    --pop-cat-animation: popup 20s ease-in-out infinite, randomCat 20s steps(1, end) infinite, randomMove 20s steps(1, start) infinite;
+    -moz-animation: var(--pop-cat-animation);
+    -webkit-animation: var(--pop-cat-animation);
+    animation: var(--pop-cat-animation);
+}
+@keyframes popup {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        height: 0px;
+        margin-top: 140px;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        height: var(--pop-cat-size);
+        margin-top: calc(140px - var(--pop-cat-size));
+    }
+}
+@keyframes randomMove {
+    0% {
+        background-position: top right var(--right-1);
+    }
+    20% {
+        background-position: top right var(--right-2);
+    }
+    40% {
+        background-position: top right var(--right-3);
+    }
+    60% {
+        background-position: top right var(--right-4);
+    }
+    80% {
+        background-position: top right var(--right-5);
+    }
+}
+#extrac-div-1, #extrac-div-2, #extrac-div-3 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 140px;
+    pointer-events: none;
+}
+#extrac-div-1 {
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-25-7q5x/JapaneseStyleRoom.png");
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: bottom;
+}
+#extrac-div-2 {
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1089px;
+    margin: 0 auto;
+    background-image: var(--cat-body);
+    -moz-background-size: auto 140px;
+    -webkit-background-size: auto 140px;
+    background-size: auto 140px;
+    background-position: calc(var(--cat-body-left) + 5%) top;
+    background-repeat: no-repeat;
+}
+#extrac-div-3 {
+    top: 140px;
+    height: 21.9px;
+    background-image: url("https://scp-jp.wdfiles.com/local--files/component%3Atheme/body_bg.png");
+    background-position: top 260px left;
+}
+#side-bar {
+    z-index: 1;
+}
+.codes {
+    padding: 1em;
+}
+.codes .code {
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: unset;
+}
+.codes pre {
+    margin: 0;
+}
+@media (max-width: 479px) {
+:root {
+    --logo-size: 56px;
+    --logo-top: 40%;
+    --logo-left: 1%;
+    --hand-size: calc(var(--logo-size) * 6.9);
+    --cat-body-left: 150px ;
+}
+#login-status {
+    right: 10px;
+}
+#search-top-box {
+    top: 39px;
+}
+#header-extra-div-1 {
+    background-image: var(--hand-mobile);
+}
+}
+@media (min-width: 480px) and (max-width: 580px) {
+:root {
+    --logo-size: 66px;
+    --logo-top: 35%;
+    --logo-left: -1%;
+    --hand-size: calc(var(--logo-size) * 6.3);
+    --cat-body-left: 150px;
+}
+#login-status {
+    right: 10px;
+}
+#search-top-box {
+    top: 39px;
+}
+#header-extra-div-1 {
+    background-image: var(--hand-mobile);
+}
+}
+@media (min-width: 581px) and (max-width: 767px) {
+:root {
+    --logo-size: 78px;
+    --logo-top: 30%;
+    --logo-left: -1%;
+    --cat-body-left: 139px;
+}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+:root {
+    --logo-size: 88px;
+    --logo-top: 27%;
+    --cat-body-left: 150px;
+}
+}
+
+/* 以下ランダム */

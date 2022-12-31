@@ -1,0 +1,39 @@
+[[code type="html"]]
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <title>MP3プレーヤー</title>
+    <!-- 
+    Created by James Kanjo 2009
+    Edited by Dr Devan 2014
+    -->
+</head>
+<body>
+  <div id="wrapper">
+    <script type="text/javascript" src="http://ko.scp-wiki.net/local--files/component%3Aaudio/audio-player.js"></script>
+    <script type="text/javascript">
+    var url_params = /^#([^#]*)(#autoplay)?$/;
+    var match = url_params.exec(unescape(window.location.hash));
+ 
+    if (match) {
+        document.write('<audio preload="auto" controls ');
+        if (match[2]) {
+            document.write('autoplay');
+        }
+        document.write('><source src="' + match[1]);
+        document.write('" />');
+        document.write('</audio>');
+    }
+    else
+        document.write('<i>URL構文が有効ではありません。</i>');
+    </script>
+            <script>$( function() { $( 'audio' ).audioPlayer(); } );</script>
+
+    <noscript>
+    <i>Javascriptが作動されておりません。MP3プレーヤーが機能するためにはJavascriptが必要です。</i>
+    </noscript>
+ </div>
+</body>
+</html>
+[[/code]]

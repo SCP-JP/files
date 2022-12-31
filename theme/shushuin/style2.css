@@ -1,0 +1,59 @@
+h1, #page-title {
+  color: #486a8a;
+  font-weight: normal;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", 'Noto Serif JP', serif;
+}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+    background: linear-gradient(0deg, #f6f7fb 0%, #f6f7fb 25%, #ffffff 50%, #ffffff 100%);
+}
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+    background: linear-gradient(0deg, #324960 0%, #324960 25%, #486a8a 50%, #486a8a 100%);
+    color:#fff;
+}
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+    background: linear-gradient(0deg, #ececdf 0%, #ececdf 25%, #ffffef 50%, #ffffef 100%);
+}
+/* note elements designed by indonootoko */
+
+.note_a {
+  border : dashed 1px #444444;
+  background: #d6e8ff url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-35-hwt1/%E6%A1%94%E6%A2%971.png)center no-repeat;
+  margin: 1em auto;
+  padding:10px;
+  background-size: 300px;
+}
+
+.note_b {
+  border: dashed 1px #444444;
+  background: #fdc5cd url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-37-lxat/%E8%92%90%E9%9B%861.png)center no-repeat;
+  margin: 1em auto;
+  padding: 10px;
+  background-size: 300px;
+}
+
+.note_c {
+  border: dashed 1px #444444;
+  background: #e5e5e5 url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-36-5be2/%E7%89%A1%E4%B8%B91.png)center no-repeat;
+  margin: 1em auto;
+  padding: 10px;
+  background-size: 300px;
+}
+.note_d {
+  border: dashed 1px #444444;
+  background: #c1fdc1 url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-34-yq8l/%E6%92%AB%E5%AD%901.png)center no-repeat;
+  margin: 1em auto;
+  padding: 10px;
+  background-size: 300px;
+}
+.note_e {
+  border: dashed 1px #444444;
+  background: #bcdce7 url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-38-0kpz/%E6%94%AF%E5%80%89.png)center no-repeat;
+  margin: 1em auto;
+  padding: 10px;
+  background-size: 300px;
+}

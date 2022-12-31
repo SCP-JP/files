@@ -1,0 +1,8 @@
+[[include component:audio-player-base
+|URL={$URL}
+|autoplay={$autoplay_{$autoplay}}
+|autoplay=false
+|autoplay_TRUE={$autoplay_true} |autoplay_True={$autoplay_true} |autoplay_yes={$autoplay_true} |autoplay_YES={$autoplay_true} |autoplay_Yes={$autoplay_true}
+|autoplay_{$autoplay}={$autoplay_false}
+|autoplay_true=#autoplay |autoplay_false=[!----]
+]]

@@ -1,0 +1,5 @@
+[[html]]
+<audio preload="metadata" controls {$autoplay}>
+<source src="{$url}">
+</audio>
+[[/html]]

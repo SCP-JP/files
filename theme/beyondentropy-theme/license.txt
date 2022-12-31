@@ -1,0 +1,5 @@
+title: エントロピーを越えてテーマ
+author: Elfen_mathL
+created_at: 2018-08-22 07:46:40+00:00
+source: http://scp-jp.wikidot.com/theme:beyondentropy-theme
+license: Need to Fix!

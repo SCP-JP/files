@@ -1,0 +1,898 @@
+[[include :scp-jp:component:af2021theme-source
+|status={$legal_status}
+|legal_status={$is_{$status}}
+|is_100=100
+|is_75=75
+|is_50=50
+|is_25=25
+|is_0=0
+|is_{$status}=100
+|status=100
+|is_100=100
+|mode={$mode}
+]]
+
+[[iftags +jp +テーマ +af2021]]
+[[module css]]
+.c_international-container .panel-body {
+    padding: 0;
+}
+.c_international-body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    *background: rgba(255,255,255,.9) url(http://www.scp-wiki.net/local--files/component:theme/panel-bg-gradient-reverse.png) bottom repeat-x;
+    padding: 5px 0;
+}
+.c_international-box {
+    margin: 5px 4px;
+    text-align: center;
+    min-width: 12em;
+}
+.c_international-box div > p,
+.international-entry div > p {
+    margin: 0;
+}
+.c_international-box .c_international-text {
+    margin: 5px 0;
+    font-size: 99%;
+}
+.international-entry {
+    padding: 10px 10px 5px 10px;
+    border-top: 1px solid #eeeee0;
+}
+.international-entry .international-description {
+    margin: 5px 20px;
+    font-size: 99%;
+}
+.c_international-box .c_international-logo img {
+    height: 90px;
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .c_international-box .c_international-logo img {
+        height: 80px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+@media (min-width: 581px) and (max-width: 767px) {
+    .c_international-box .c_international-logo img {
+        height: 70px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+@media (min-width: 480px) and (max-width: 580px) {
+    .c_international-box .c_international-logo img {
+        height: 60px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+@media (max-width: 479px) {
+    .c_international-box .c_international-logo img {
+        height: 50px;
+    }
+    .c_international-box {
+        min-width: 10em;
+    }
+}
+
+.feature-block {
+    height: 210px;
+}
+.feature-block .panel-body {
+    height: 130px;
+    overflow-y: hidden;
+}
+.feature-block .feature-title {
+    font-size: 120%;
+    font-weight: bold;
+}
+.feature-block .feature-subtitle {
+    font-size: 90%;
+}
+
+.feature-block .feature-title > p,
+.feature-block .feature-subtitle > p {
+    margin: 0;
+}
+
+.news-block .panel-body {
+    padding: 0;
+}
+.news-block .panel-body .alternate {
+    padding: 5px 10px;
+}
+.news-block .news-title {
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 5px;
+    color: #633;
+}
+.news-block .news-content {
+    margin: 5px 0;
+}
+.news-block .news-title > p,
+.news-block .news-content > p {
+    margin: 0;
+}
+.news-block .list-pages-box .list-pages-item:nth-child(even) .alternate {
+    background-color: rgba(255,255,255,.9);
+}
+[[/module]]
+[[div_ class="rich-content"]]
+[[div style="text-align: center; color: #600;"]]
+[[div class="unmargined"]]
+ご存じの通り:
+[[/div]]
+[[div class="unmargined" style="font-size: 350%; font-weight: bold; margin: 2px 0 5px;"]]
+SCP財団は健全な利益追求を是とする合法組織です
+[[/div]]
+[[div class="unmargined"]]
+**マネーイズパワー**
+[[/div]]
+[[/div]]
+----
+[[div class="content-panel centered standalone" style="padding: 10px;"]]
+[[size 130%]][[collapsible show="+ えっ？まだSCP始めてないの？今からでも遅くない！まずはこちらをクリック！" hide="- さぁ、成功者になろう"]][[/size]]
+[[div class="menu-item"]]
+[[size 130%]][[[guide-for-newbies|初めての方へ]]][[/size]]
+当サイトの簡単な説明です
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[FAQ]]][[/size]]
+SCPに関する様々なことについてFAQ形式で説明しています
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[Site Rules|サイトルール]]][[/size]]
+当サイトのマナーと心構えについて
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[Licensing Guide|ライセンスガイド]]][[/size]]
+SCPに関する全世界共通のライセンスについて
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[system:join|SCP財団参加の手引き]]][[/size]]
+参加されたい方はこちらからどうぞ
+[[/div]]
+[[/collapsible]]
+[[/div]]
+[[div class="content-panel centered standalone"]]
+**Tips For April Fool**
+
+[[div style="padding:0 0.8em"]]
+本日用のスペシャルな記事には「[[[system:page-tags/tag/af2021|af2021]]]」タグを付与してください。詳しくは[*http://scp-jp.wikidot.com/forum/c-790909/ こちら]。
+[[/div]]
+
+[[/div]]
+
+
+
+[[div class="content-panel centered standalone" style="background: #fff0f0; padding: 10px;"]]
+**ウハウハしてられないほど重要なお知らせ**
+
+[[span style="font-size:150%;"]]**[*http://scp-jp-sandbox3.wikidot.com/start サンドボックスⅢ]が参加制になりました。**
+[[/span]]
+[*http://scp-jp.wikidot.com/sandbox3guide 利用ガイド]をよく読んだうえで参加申請をしてください。
+----
+[[span style="font-size:150%;"]]**現在SCP-JP上のファイルサイズ規制中。**
+[[/span]]
+100kB以下のみアップロード可能とします。代わりに[*http://scp-jp-storage.wikidot.com/ SCP-JPファイルストレージ]をご利用ください。
+
+**詳細は[http://ja.scp-wiki.net/forum/t-10303565/scp-jp こちら]**
+[[/div]]
+
+[[div class="feature-block customheight"]]
+ [[div class="content-panel left-column"]]
+  [[div class="panel-heading"]]
+   注目の財産
+  [[/div]]
+  [[div class="panel-body"]]
+[[div class="feature-title"]]
+**##b01|新たな成功者・[[[author:hatogou|波戸崎研究員]]]##**
+[[/div]]
+[[=image http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-141-l5fg/008.ashx style="max-width:200px;"]]
+[!--
+CC0
+https://publicdomainq.net/taro-vegetable-food-0000694/
+--]
+  [[/div]]
+  [[div class="panel-footer"]]
+財産は人生を豊かにする
+[[/div]]
+[[/div]]
+
+ [[div class="content-panel right-column"]]
+  [[div class="panel-heading"]]
+   **財団リッチメルマガ**
+  [[/div]]
+  [[div class="panel-body mailmagazine" style="position:relative"]]
+[[div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%;"]]
+[[size 1.3em]]
+= 絶対に稼ぎたくない人だけ参加しないでください！ _
+成金博士の[[[SCP-019-JP]]]でもできる投資セミナー
+[[/size]]
+
+@@ @@
+**講師:** 成金博士
+**特別ゲスト:** [[[scp-111-jp|ぶう太]]]
+
+**日時:** 2021年4月█日(█) 14:00～17:00
+**場所:** サイト-8181 第2会議室
+**付記:** 硬貨を多めにお持ちください。
+[[/div]]
+  [[/div]]
+  [[div class="panel-footer"]]
+[[[scp-242-jp|無料体験コースはここをクリック！]]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+~~~~
+
+[!-- コンテストパネル --]
+[[div class="content-panel centered standalone invite" style="background: #808080; padding: 15px 0px 10px;"]]
+= [[size 150%]]##E6E600|**さあ、札束で殴り合え！**##[[/size]]
+[[=image http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-52-iw7h/stasutabadenaguru2.png link="http://scp-jp.wikidot.com/forum/c-790909/" style="margin-top: -10px;"]]
+= ##white|**エントリー受付期間:**　4/1 (Thu) ～ 4/1 (Thu)##
+[[/div]]
+
+[!-- 新着記事 --]
+
+[[div class="feature-block"]]
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+新着のJP記事
+[[/div]]
+[[div class="panel-body"]]
+[[module ListPages category="-fragment -deleted" tags="scp tale goi-format アートワーク サイト 合作 設定集 news 著者ページ +jp" order="created_at desc" limit="7" separate="false"]]
+[[div_ style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; cursor: pointer; line-height: 18px;"]]
+%%linked_title%%
+[[/div]]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+[*http://scp-jp.wikidot.com/feed/pages/pagename/main/category/-fragment,-deleted/tags/+jp,scp,tale,goi-format,アートワーク,サイト,合作,設定集,ニュース,著者ページ/order/created_at+desc/limit/20/t/新着のJP記事 RSSフィード] | [[[most-recently-created-jp|新着のJP記事一覧]]]
+[[/div]]
+[[/div]]
+
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+新着の翻訳記事
+[[/div]]
+[[div class="panel-body"]]
+[[module ListPages category="-fragment -deleted" tags="scp tale goi-format アートワーク サイト 合作 著者ページ 外部ウィキアーカイブ -jp" order="created_at desc" limit="7" separate="false"]]
+[[div_ style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; cursor: pointer; line-height: 18px;"]]
+%%linked_title%%
+[[/div]]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+[*http://scp-jp.wikidot.com/feed/pages/pagename/main/category/-fragment,-deleted/tags/scp,tale,goi-format,アートワーク,サイト,合作,著者ページ,外部ウィキアーカイブ,-jp/order/created_at+desc/limit/20/t/新着の翻訳記事 RSSフィード] | [[[most-recently-created-translated|新着の翻訳記事一覧]]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+[!-- 注目記事とニュース --]
+
+[[div class="news-block content-panel"]]
+[[div class="panel-heading"]]
+ニュース
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages category="attention-news" order="_date desc" limit="5"]]
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+[[date %%form_data{date}%% format="%y/%m/%e"]]
+[[/div]]
+[[div class="news-content"]]
+%%form_raw{news}%% 
+[[/div]]
+[[/div]]
+[[/module]]
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+[[/div]]
+[[/div]]
+
+[[/div]]
+[[div class="panel-footer"]]
+[http://scp-jp.wikidot.com/forum/t-1754505 スタッフからのお知らせ] | [[[Archived News|過去のニュース]]]
+[[/div]]
+[[/div]]
+
+----
+
+[!------ INT-Block Start ------]
+[[div class="international-block content-panel"]]
+[[div class="panel-heading"]]
+他言語版へのリンク
+[[/div]]
+[[div class="panel-body"]]
+
+[[div class="c_international-body"]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-30-yubw/logo-remade-whiteout.svg link="http://www.scp-wiki.net/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://www.scp-wiki.net/ SCP Foundation]
+//英語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-16-7kig/scp-logo-ru.svg link="http://scp-ru.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-ru.wikidot.com/ Фонд SCP]
+//ロシア語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-13-7xcc/scp-logo-ko.svg link="http://ko.scp-wiki.net/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://ko.scp-wiki.net/ SCP 재단]
+//韓国語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-5-i1qi/scp-logo-cn.svg link="http://scp-wiki-cn.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-wiki-cn.wikidot.com/ SCP基金会]
+//中国語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-8-f3ck/scp-logo-fr.svg link="http://fondationscp.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://fondationscp.wikidot.com/ Fondation SCP]
+//フランス語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-14-gjku/scp-logo-pl.svg link="http://scp-wiki.net.pl"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-wiki.net.pl Fundacja SCP]
+//ポーランド語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-7-hx89/scp-logo-es.svg link="http://lafundacionscp.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://lafundacionscp.wikidot.com/ La Fundación SCP]
+//スペイン語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-17-zs9r/scp-logo-th.svg link="http://scp-th.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-th.wikidot.com/ สถาบัน SCP]
+//タイ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-6-xnnx/scp-logo-de.svg link="http://scp-wiki-de.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-wiki-de.wikidot.com/ SCP auf Deutsch]
+//ドイツ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-11-62nv/scp-logo-it.svg link="http://fondazionescp.wikidot.com"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://fondazionescp.wikidot.com/ Fondazione SCP]
+//イタリア語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-131-vhww/scp-logo-ua.svg link="http://scp-ukrainian.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-ukrainian.wikidot.com/ Фонд SCP]
+//ウクライナ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-132-wrx0/scp-logo-pt.svg link="http://scp-pt-br.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-pt-br.wikidot.com/ Fundação SCP]
+//ポルトガル語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-130-gvk9/scp-logo-cs.svg link="http://scp-cs.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-cs.wikidot.com/ SCP Nadace]
+//チェコ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-129-5liy/scp-logo-zh.svg link="http://scp-zh-tr.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-zh-tr.wikidot.com/ SCP基金會]
+//繁体中国語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-10-3nlk/scp-logo-int-full.svg link="http://scp-int.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-int.wikidot.com/ International Translation Archive]
+//英語 (翻訳)//
+[[/div]]
+[[/div]]
+
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+    [[image http://scp-jp.wikidot.com/local--files/main/un.png]] 非公式支部
+[[/div]]
+
+[[div class="international-description" style="font-style: normal;"]]
+[[table style="width: 100%;"]]
+[[row]]
+    [[cell]]
+     [[image http://scp-jp.wdfiles.com/local--files/main/gr.png]] [http://scp-el.wikidot.com/ SCP-EL] -- ギリシャ語
+    [[/cell]]
+    [[cell]]
+     [[image http://scp-jp.wdfiles.com/local--files/main/nd.png]] [http://scp-nd.wikidot.com/ SCP-ND] -- 北欧諸言語
+    [[/cell]]
+    [[cell]]
+     [[image http://scp-jp.wdfiles.com/local--files/main/tr.png]] [http://scpvakfi.wikidot.com/ SCP-TR] -- トルコ語
+    [[/cell]]
+[[/row]]
+[[row]]
+    [[cell]]
+     [[image http://scp-jp.wdfiles.com/local--files/main/vn.png]] [http://scp-vn.wikidot.com/ SCP-VN] -- ベトナム語
+    [[/cell]]
+[[/row]]
+[[/table]]
+[[/div]]
+
+[[/div]]
+
+[[/div]]
+[[div class="panel-footer"]]
+[http://scp-un.wikidot.com/ その他の言語]
+[[/div]]
+[[/div]]
+[!------ INT-Block Ende ------]
+
+----
+
+[[div class="content-panel centered standalone" style="padding: 0.5em 1em;"]]
+[[size 90%]]SCP財団日本支部、及びSCP Foundationのメインテーマ **Sigma-9** は[[user Aelanna]]氏によって制作され、クリエイティブ・コモンズ・ライセンス-表示-継承 3.0([[[https://creativecommons.org/licenses/by-sa/3.0/deed.ja |CC-BY-SA]]])の元で使用されています。[[/size]]
+----
+エイプリルフール仕様のトップページに使用されているメディアファイル **008.ashx** は[https://creativecommons.org/licenses/by-sa/4.0/ CC BY-SA 4.0]の下で運用されており(詳しいライセンス情報は[*http://scp-jp-storage.wikidot.com/file:3282741-141-l5fg こちら]を参照してください)、[http://scp-jp.wikidot.com/main 本ページ]のrev.490も同様にCC BY-SA 4.0で公開されています。
+[[/div]]
+[[/div]]
+
+
+[[div_ class="poor-content"]]
+[[div style="text-align: center; color: #600;"]]
+[[div class="unmargined"]]
+差し押さえによるスペース削減編集を適用中:
+[[collapsible show="+ O5声明" hide="- O5声明"]]
+[[<]]
+諸君、我々は失敗した。SCP財産の栄華は、過去のものになってしまった。このSCPのイニシャルは不名誉な意味合いに変わり、我々の面目は等しく潰された。SCP財産の損失は全ての職員・サイトに荒廃をもたらした。我々は大いに尽くされ過ぎていたのだ。
+
+更なる資金獲得のための「ギャンブル」で成功するという試みもまた失敗した。我々は競馬にて大いなる勝利を連続で獲得したが、███回目の転がしに失敗してしまった。その上、今しがた使者がオフィスに到着し、我々の株価が大収容違反を起こしたことを伝えてくれた。未来のエージェントは我々を厄介者扱いするだろうな…。
+
+我々にはたった一つの選択肢が残されたのだ、諸君。私は財団の最終手段、[[span class="ruby"]]破産宣言[[span class="rt"]]アンニュイ[[/span]][[/span]]・プロトコルを実行する。
+
+適切な権限を持つ君達がこのメッセージを受領する頃には、財団は世界中の資源を売却し、保有する記憶処理薬である化合物YENUI-800、それすらも売却を終えていることだろう。世界中のこのような貧困を味わったことのない職員たちが、立ち止まり、困惑し、今後の生活に困るだろう、あの財産が常に存在していると妄信し、何を失ったかを決して見ようとしないまま。ただ一つ、SCP財産の破産を受けていないオブジェクトたちのみが真実を伝えていくことだろう。私は残念でならない、諸君。本当に残念だよ。
+
+これ(返済)はやり遂げられねばならない。
+
+— O5-金8.
+
+獲得、収入、反故。
+[[/<]]
+[[/collapsible]]
+[[/div]]
+[[/div]]
+----
+[[div class="content-panel centered standalone" style="padding: 10px;"]]
+[[size 130%]][[collapsible show="+ SCP？どうせお高いんでしょう？" hide="- 実はそんなことないんです"]][[/size]]
+[[div class="menu-item"]]
+[[size 130%]][[[guide-for-newbies|初めての方へ]]][[/size]]
+当サイトの簡単な説明です
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[FAQ]]][[/size]]
+SCPに関する様々なことについてFAQ形式で説明しています
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[Site Rules|サイトルール]]][[/size]]
+当サイトのマナーと心構えについて
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[Licensing Guide|ライセンスガイド]]][[/size]]
+SCPに関する全世界共通のライセンスについて
+[[/div]]
+[[div class="menu-item"]]
+[[size 130%]][[[system:join|SCP財団参加の手引き]]][[/size]]
+参加されたい方はこちらからどうぞ
+[[/div]]
+[[/collapsible]]
+[[/div]]
+[[div class="content-panel centered standalone"]]
+**Tips For April Fool**
+
+[[div style="padding:0 0.8em"]]
+本日用のスペシャルな記事には「[[[http://scp-jp.wikidot.com/system:page-tags/tag/af2021|af2021]]]」タグを付与してください。詳しくは[*http://scp-jp.wikidot.com/forum/t-14038574/scp-af2021-jp こちら]。
+[[/div]]
+
+[[/div]]
+
+
+
+[[div class="content-panel centered standalone" style="background: #fff0f0; padding: 10px;"]]
+**ウハウハしてられないほど重要なお知らせ**
+
+[[span style="font-size:150%;"]]**[*http://scp-jp-sandbox3.wikidot.com/start サンドボックスⅢ]が参加制になりました。**
+[[/span]]
+[*http://scp-jp.wikidot.com/sandbox3guide 利用ガイド]をよく読んだうえで参加申請をしてください。
+----
+[[span style="font-size:150%;"]]**現在SCP-JP上のファイルサイズ規制中。**
+[[/span]]
+100kB以下のみアップロード可能とします。代わりに[*http://scp-jp-storage.wikidot.com/ SCP-JPファイルストレージ]をご利用ください。
+
+**詳細は[http://ja.scp-wiki.net/forum/t-10303565/scp-jp こちら]**
+[[/div]]
+
+[[div class="feature-block customheight"]]
+ [[div class="content-panel left-column"]]
+  [[div class="panel-heading"]]
+   注目の財産
+  [[/div]]
+  [[div class="panel-body"]]
+[[=image http://scp-jp-storage.wdfiles.com/local--files/file%3A6059604-130-k66m/wanted.jpg style="max-width:200px;"]]
+  [[/div]]
+  [[div class="panel-footer"]]
+財産は人生を豊かにする
+[[/div]]
+[[/div]]
+
+ [[div class="content-panel right-column"]]
+  [[div class="panel-heading"]]
+   **財団リッチメルマガ**
+  [[/div]]
+  [[div class="panel-body mailmagazine" style="position:relative"]]
+[[div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%;"]]
+広告代金が未払状態であるため、広告の掲示を停止しています。
+[[/div]]
+  [[/div]]
+  [[div class="panel-footer"]]
+[[[scp-242-jp|プレミアムコース加入はここをクリック！]]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+~~~~
+
+[!-- コンテストパネル --]
+[[div class="content-panel centered standalone invite" style="background: #808080; padding: 15px 0px 10px;"]]
+= [[size 150%]]##E6E600|**さあ、札束で殴り合え！**##[[/size]]
+[[=image http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-53-4343/stasutabadenaguru4.png link="http://scp-jp.wikidot.com/forum/t-14038574/scp-af2021-jp" style="margin-top: -10px;"]]
+= ##white|**エントリー受付期間:**　4/1 (Thu) ～ 4/1 (Thu)##
+[[/div]]
+
+[!-- 新着記事 --]
+
+[[div class="feature-block"]]
+[[div class="content-panel left-column"]]
+[[div class="panel-heading"]]
+新着のJP記事
+[[/div]]
+[[div class="panel-body"]]
+[[module ListPages category="-fragment -deleted" tags="scp tale goi-format アートワーク サイト 合作 設定集 news 著者ページ +jp" order="created_at desc" limit="7" separate="false"]]
+[[div_ style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; cursor: pointer; line-height: 18px;"]]
+%%linked_title%%
+[[/div]]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+[*http://scp-jp.wikidot.com/feed/pages/pagename/main/category/-fragment,-deleted/tags/+jp,scp,tale,goi-format,アートワーク,サイト,合作,設定集,ニュース,著者ページ/order/created_at+desc/limit/20/t/新着のJP記事 RSSフィード] | [[[most-recently-created-jp|新着のJP記事一覧]]]
+[[/div]]
+[[/div]]
+
+[[div class="content-panel right-column"]]
+[[div class="panel-heading"]]
+新着の翻訳記事
+[[/div]]
+[[div class="panel-body"]]
+[[module ListPages category="-fragment -deleted" tags="scp tale goi-format アートワーク サイト 合作 著者ページ 外部ウィキアーカイブ -jp" order="created_at desc" limit="7" separate="false"]]
+[[div_ style="display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; cursor: pointer; line-height: 18px;"]]
+%%linked_title%%
+[[/div]]
+[[/module]]
+[[/div]]
+[[div class="panel-footer"]]
+[*http://scp-jp.wikidot.com/feed/pages/pagename/main/category/-fragment,-deleted/tags/scp,tale,goi-format,アートワーク,サイト,合作,著者ページ,外部ウィキアーカイブ,-jp/order/created_at+desc/limit/20/t/新着の翻訳記事 RSSフィード] | [[[most-recently-created-translated|新着の翻訳記事一覧]]]
+[[/div]]
+[[/div]]
+[[/div]]
+
+[!-- 注目記事とニュース --]
+
+[[div class="news-block content-panel"]]
+[[div class="panel-heading"]]
+ニュース
+[[/div]]
+[[div class="panel-body"]]
+
+[[module ListPages category="attention-news" order="_date desc" limit="5"]]
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+[[date %%form_data{date}%% format="%y/%m/%e"]]
+[[/div]]
+[[div class="news-content"]]
+%%form_raw{news}%%
+[[/div]]
+[[/div]]
+[[/module]]
+[[div class="alternate unmargined"]]
+[[div class="news-title"]]
+[[/div]]
+[[/div]]
+
+[[/div]]
+[[div class="panel-footer"]]
+[http://scp-jp.wikidot.com/forum/t-1754505 スタッフからのお知らせ] | [[[Archived News|過去のニュース]]]
+[[/div]]
+[[/div]]
+
+----
+
+[!------ INT-Block Start ------]
+[[div class="international-block content-panel"]]
+[[div class="panel-heading"]]
+他言語版へのリンク
+[[/div]]
+[[div class="panel-body"]]
+
+[[div class="c_international-body"]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-30-yubw/logo-remade-whiteout.svg link="http://www.scp-wiki.net/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://www.scp-wiki.net/ SCP Foundation]
+//英語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-16-7kig/scp-logo-ru.svg link="http://scp-ru.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-ru.wikidot.com/ Фонд SCP]
+//ロシア語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-13-7xcc/scp-logo-ko.svg link="http://ko.scp-wiki.net/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://ko.scp-wiki.net/ SCP 재단]
+//韓国語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-5-i1qi/scp-logo-cn.svg link="http://scp-wiki-cn.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-wiki-cn.wikidot.com/ SCP基金会]
+//中国語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-8-f3ck/scp-logo-fr.svg link="http://fondationscp.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://fondationscp.wikidot.com/ Fondation SCP]
+//フランス語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-14-gjku/scp-logo-pl.svg link="http://scp-wiki.net.pl"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-wiki.net.pl Fundacja SCP]
+//ポーランド語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-7-hx89/scp-logo-es.svg link="http://lafundacionscp.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://lafundacionscp.wikidot.com/ La Fundación SCP]
+//スペイン語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-17-zs9r/scp-logo-th.svg link="http://scp-th.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-th.wikidot.com/ สถาบัน SCP]
+//タイ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-6-xnnx/scp-logo-de.svg link="http://scp-wiki-de.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-wiki-de.wikidot.com/ SCP auf Deutsch]
+//ドイツ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-11-62nv/scp-logo-it.svg link="http://fondazionescp.wikidot.com"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://fondazionescp.wikidot.com/ Fondazione SCP]
+//イタリア語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-131-vhww/scp-logo-ua.svg link="http://scp-ukrainian.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-ukrainian.wikidot.com/ Фонд SCP]
+//ウクライナ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-132-wrx0/scp-logo-pt.svg link="http://scp-pt-br.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-pt-br.wikidot.com/ Fundação SCP]
+//ポルトガル語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-130-gvk9/scp-logo-cs.svg link="http://scp-cs.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-cs.wikidot.com/ SCP Nadace]
+//チェコ語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-129-5liy/scp-logo-zh.svg link="http://scp-zh-tr.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-zh-tr.wikidot.com/ SCP基金會]
+//繁体中国語//
+[[/div]]
+[[/div]]
+
+[[div class="c_international-box"]]
+[[div class="c_international-logo"]]
+[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A4052664-10-3nlk/scp-logo-int-full.svg link="http://scp-int.wikidot.com/"]]
+[[/div]]
+[[div class="c_international-text"]]
+[http://scp-int.wikidot.com/ International Translation Archive]
+//英語 (翻訳)//
+[[/div]]
+[[/div]]
+
+[[/div]]
+
+[[div class="international-entry"]]
+[[div class="international-title"]]
+    [[image http://scp-jp.wikidot.com/local--files/main/un.png]] 非公式支部
+[[/div]]
+
+[[div class="international-description" style="font-style: normal;"]]
+[[table style="width: 100%;"]]
+[[row]]
+    [[cell]]
+     [[image http://scp-jp.wdfiles.com/local--files/main/gr.png]] [http://scp-el.wikidot.com/ SCP-EL] -- ギリシャ語
+    [[/cell]]
+    [[cell]]
+     [[image http://scp-jp.wdfiles.com/local--files/main/nd.png]] [http://scp-nd.wikidot.com/ SCP-ND] -- 北欧諸言語
+    [[/cell]]
+    [[cell]]
+     [[image http://scp-jp.wdfiles.com/local--files/main/tr.png]] [http://scpvakfi.wikidot.com/ SCP-TR] -- トルコ語
+    [[/cell]]
+[[/row]]
+[[row]]
+    [[cell]]
+     [[image http://scp-jp.wdfiles.com/local--files/main/vn.png]] [http://scp-vn.wikidot.com/ SCP-VN] -- ベトナム語
+    [[/cell]]
+[[/row]]
+[[/table]]
+[[/div]]
+
+[[/div]]
+
+[[/div]]
+[[div class="panel-footer"]]
+[http://scp-un.wikidot.com/ その他の言語]
+[[/div]]
+[[/div]]
+[!------ INT-Block Ende ------]
+
+----
+
+[[div class="content-panel centered standalone" style="padding: 0.5em 1em;"]]
+[[size 90%]]SCP財団日本支部、及びSCP Foundationのメインテーマ **Sigma-9** は[[user Aelanna]]氏によって制作され、クリエイティブ・コモンズ・ライセンス-表示-継承 3.0([[[https://creativecommons.org/licenses/by-sa/3.0/deed.ja |CC-BY-SA]]])の元で使用されています。[[/size]]
+[[/div]]
+[[/div]]
+[[/iftags]]

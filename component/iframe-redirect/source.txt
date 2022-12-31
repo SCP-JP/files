@@ -1,0 +1,1 @@
+[[iframe https://scp-jp.github.io/files/util/redirect/iframe-redirect.html#{$url} frameborder="0" scrolling="no" style="width: 9px; height: 9px;" sandbox="allow-top-navigation allow-scripts" referrerpolicy="unsafe-url"]]

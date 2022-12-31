@@ -1,0 +1,6 @@
+[[div class="heritage-rating-module"]]
+[[module Rate]]
+[[div class="heritage-emblem"]]
+[[image /component:heritage-rating/scp-heritage-v3.png link="[[iftags en]]heritage-collection-arc[[/iftags]][[iftags jp]]heritage-collection-jp[[/iftags]][[iftags fr]]patrimoine-francais-de-la-fondation-scp[[/iftags]]" style=" max-width: none;"]]
+[[/div]]
+[[/div]]

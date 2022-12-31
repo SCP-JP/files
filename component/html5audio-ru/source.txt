@@ -1,0 +1,5 @@
+[[html]]
+<audio preload="metadata" controls loop {$autoplay} style="width: 100%">
+<source src="{$url}">
+</audio>
+[[/html]]

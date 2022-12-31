@@ -1,0 +1,5 @@
+title: Changelogo
+author: R74
+created_at: 2022-07-22 08:23:58+00:00
+source: http://scp-jp.wikidot.com/component:changelogo
+license: Need to Fix!
