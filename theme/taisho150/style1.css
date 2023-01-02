@@ -1,33 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
-body{
-    font-family: 'Shippori Mincho', serif;
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap");
+
+body {
+  font-family: "Shippori Mincho", serif;
 }
+
 #interwiki .side-block {
-    border: solid 1px black;
-    position: relative;
-    outline: double 3px black;
-    border-radius: 10px;
-    outline-offset: 1px;
-    background: white !important;
-    box-shadow: unset;
+  border: solid 1px black;
+  position: relative;
+  outline: double 3px black;
+  border-radius: 10px;
+  outline-offset: 1px;
+  background: white !important;
+  box-shadow: unset;
 }
+
 #interwiki .side-block::after {
-    content: "";
-    border: solid 2px black;
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    width: calc(100% + 8px);
-    height: calc(100% + 8px);
-    border-radius: unset;
-    z-index: -1;
+  content: "";
+  border: solid 2px black;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  border-radius: unset;
+  z-index: -1;
 }
+
 #interwiki .heading {
-    color: #243150;
-    border-bottom: solid 1px #600;
-    padding-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 8pt;
-    font-weight: bold;
+  color: #243150;
+  border-bottom: solid 1px #660000;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 8pt;
+  font-weight: bold;
 }

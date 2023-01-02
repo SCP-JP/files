@@ -1,4 +1,3 @@
-
 /*
     Powered on 2020/12/19 19:27:07
     [2020 Wikidot Theme]
@@ -6,64 +5,78 @@
     CC BY-SA 3.0
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
 
 div#container-wrap {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-128-kwud/%E7%B4%85%E7%99%BD%E5%B9%95.png) top left repeat-x;
+  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-128-kwud/%E7%B4%85%E7%99%BD%E5%B9%95.png) top left repeat-x;
 }
+
 div#header {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5818807-4-pseq/3B742849-A19A-4C97-9510-A07C46C0B438.png) 10px 15px no-repeat;
-    background-size: 120px;
+  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5818807-4-pseq/3B742849-A19A-4C97-9510-A07C46C0B438.png) 10px 15px no-repeat;
+  background-size: 120px;
 }
+
 div#header h1 a {
-    padding: 70px 0 10px;
+  padding: 70px 0 10px;
 }
+
 div#header h1 a span {
-    font-size: 0px;
+  font-size: 0;
 }
-div#header h1 a:before {
-    content: "謹賀新年";
-    font-family: 'Sawarabi Mincho', sans-serif;
-    color: #eee;
-    padding-left: 35px;
-    text-shadow:
-    1.5px 1.5px 0 #000, -1.5px -1.5px 0 #000,
-    -1.5px 1.5px 0 #000, 1.5px -1.5px 0 #000,
-    0px 1.5px 0 #000,  0 -1.5px 0 #000,
-    -1.5px 0 0 #000, 1.5px 0 0 #000;
+
+div#header h1 a::before {
+  content: "謹賀新年";
+  font-family: "Sawarabi Mincho", sans-serif;
+  color: #eeeeee;
+  padding-left: 35px;
+  text-shadow: 1.5px 1.5px 0 #000000,
+    -1.5px -1.5px 0 #000000,
+    -1.5px 1.5px 0 #000000,
+    1.5px -1.5px 0 #000000,
+    0 1.5px 0 #000000,
+    0 -1.5px 0 #000000,
+    -1.5px 0 0 #000000,
+    1.5px 0 0 #000000;
 }
+
 div#header h2 span {
-    font-size:0px;
-    padding: 5px 5px;
+  font-size: 0;
+  padding: 5px;
 }
-div#header h2:after {
-    content: "SCP財団日本支部";
-    font-weight: bold;
-    font-size: 140%;
-    color: #226d30;
-    padding: 10px 0 15px 37px;
-    white-space: pre;
-    text-shadow: 1px 1px 4px white;
+
+div#header h2::after {
+  content: "SCP財団日本支部";
+  font-weight: bold;
+  font-size: 140%;
+  color: #226d30;
+  padding: 10px 0 15px 37px;
+  white-space: pre;
+  text-shadow: 1px 1px 4px white;
 }
+
 div#side-bar div.side-block {
-    box-shadow: 0 2px 6px #e4041c;
-    color: #e4041c;
+  box-shadow: 0 2px 6px #e4041c;
+  color: #e4041c;
 }
+
 div#side-bar div.side-block div.heading,
 div#side-bar div.collapsible-block-unfolded-link,
 div#side-bar div.collapsible-block-unfolded-link div.collapsible-block-link {
-    color: #e4041c;
-    border-color: #e4041c;
+  color: #e4041c;
+  border-color: #e4041c;
 }
+
 div#side-bar a {
-    color: #e4041c !important;   
+  color: #e4041c !important;
 }
+
 div.scpnet-interwiki-wrapper {
-    filter: drop-shadow(0 2px 6px #e4041c);
+  filter: drop-shadow(0 2px 6px #e4041c);
 }
+
 div.open-menu a {
-    color: #e4041c !important;
-    border-color: #e4041c !important;
+  color: #e4041c !important;
+  border-color: #e4041c !important;
 }
 
 #search-top-box-input {
@@ -77,20 +90,20 @@ div.open-menu a {
   border: solid 1px #007b43;
   color: white;
   background-color: #007b43;
-  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 1px 1px 3px rgb(0 0 0 / 80%);
 }
 
-#search-top-box-form input[type="submit"] {
+#search-top-box-form input[type = "submit"] {
   border: solid 1px #316745;
   color: white;
   background-color: #316745;
   background: linear-gradient(to bottom, #007b43, #316745, #2f5d50);
 }
 
-#search-top-box-form input[type="submit"]:hover,
-#search-top-box-form input[type="submit"]:focus {
-  border: solid 1px #fff;
-  color: #fff;
+#search-top-box-form input[type = "submit"]:hover,
+#search-top-box-form input[type = "submit"]:focus {
+  border: solid 1px #ffffff;
+  color: #ffffff;
   background: linear-gradient(to bottom, #69b076, #007b43, #316745);
 }
 
@@ -103,27 +116,27 @@ div.open-menu a {
 }
 
 @media (max-width: 479px) {
-    div#header {
-        background-size: 90px;
-    }
 
-    div#header {
-        background-position: 0em 2.5em;
-    }
+  div#header {
+    background-size: 90px;
+  }
 
-    div#header h1 a {
-        padding: 70px 0 5px;
-    }
+  div#header {
+    background-position: 0 2.5em;
+  }
 
-    div#header h1 a:before {
-         font-size: 1.7em;
-    }
-    div#search-top-box {
-        top: 115px;
-    }
+  div#header h1 a {
+    padding: 70px 0 5px;
+  }
+
+  div#header h1 a::before {
+    font-size: 1.7em;
+  }
+
+  div#search-top-box {
+    top: 115px;
+  }
 }
-
-
 
 #page-content .header-warning {
   color: #c9171e;
@@ -180,4 +193,3 @@ div.open-menu a {
 #page-content .content-panel.credit a {
   color: white;
 }
-

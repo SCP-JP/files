@@ -4,53 +4,55 @@
 }
 
 #side-bar {
-  background: 
+  background: linear-gradient(
+    rgb(var(--swatch-menubg-color) 1) 30%,
+    rgb(var(--swatch-menubg-color) 0)
+  ),
     linear-gradient(
-      rgba(var(--swatch-menubg-color),1) 30%,
-      rgba(var(--swatch-menubg-color),0)),
-    linear-gradient(
-      rgba(var(--swatch-menubg-color),0),
-      rgba(var(--swatch-menubg-color),1) 70%) 0 100%,
-    radial-gradient(farthest-side at 50% 0,
-      rgba(var(--swatch-primary-darkest),.5),
-      rgba(var(--white-monochrome),0)),
-    radial-gradient(farthest-side at 50% 100%,
-      rgba(var(--swatch-primary-darkest),.5),
-      rgba(var(--white-monochrome),0)) 0 100%;
+    rgb(var(--swatch-menubg-color) 0),
+    rgb(var(--swatch-menubg-color) 1) 70%
+  ) 0 100%,
+    radial-gradient(
+    farthest-side at 50% 0,
+    rgb(var(--swatch-primary-darkest) 0.5),
+    rgb(var(--white-monochrome) 0)
+  ),
+    radial-gradient(
+    farthest-side at 50% 100%,
+    rgb(var(--swatch-primary-darkest) 0.5),
+    rgb(var(--white-monochrome) 0)
+  ) 0 100%;
   color: rgb(var(--swatch-text-light));
-  scrollbar-color: 
-    rgba(var(--swatch-menubg-dark-color),0) 
-    rgba(var(--swatch-menubg-dark-color),0);
+  scrollbar-color: rgb(var(--swatch-menubg-dark-color) 0)
+    rgb(var(--swatch-menubg-dark-color) 0);
 }
 
 #side-bar div.menu-item .sub-text {
-    color: rgba(var(--swatch-text-light),0.75);
+  color: rgb(var(--swatch-text-light) 0.75);
 }
 
-#side-bar div.menu-item > :not(:nth-child(2)):not(.collapsible-block) {
-    border-left: .125rem solid rgba(var(--white-monochrome),0.08);
+#side-bar div.menu-item > :not(:nth-child(2), .collapsible-block) {
+  border-left: 0.125rem solid rgb(var(--white-monochrome) 0.08);
 }
 
 #side-bar:hover {
-  scrollbar-color: 
-    rgba(var(--swatch-menubg-medium-color),1) 
-    rgba(var(--swatch-menubg-dark-color),1);
+  scrollbar-color: rgb(var(--swatch-menubg-medium-color) 1)
+    rgb(var(--swatch-menubg-dark-color) 1);
 }
 
 #side-bar::-webkit-scrollbar-thumb,
 #side-bar::-webkit-scrollbar-track {
-  background:rgba(var(--swatch-menubg-medium-color),0)
+  background: rgb(var(--swatch-menubg-medium-color) 0);
 }
 
 #side-bar:hover::-webkit-scrollbar-track {
-  background:rgba(var(--swatch-menubg-dark-color),1)
+  background: rgb(var(--swatch-menubg-dark-color) 1);
 }
 
 #side-bar:hover::-webkit-scrollbar-thumb {
-  background:rgba(var(--swatch-menubg-medium-color),1)
+  background: rgb(var(--swatch-menubg-medium-color) 1);
 }
 
 iframe.scpnet-interwiki-frame {
-    -webkit-filter: invert(0.8) hue-rotate(180deg) saturate(0.5);
-            filter: invert(0.8) hue-rotate(180deg) saturate(0.5);
+  filter: invert(0.8) hue-rotate(180deg) saturate(0.5);
 }

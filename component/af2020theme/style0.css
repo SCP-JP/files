@@ -6,120 +6,140 @@
     Header image:
         (CC0) https://publicdomainq.net/potato-vegetable-food-0028807/
 */
-:root {
-    --ratio: 1;
 
-    --big: normal calc(2.25rem * var(--ratio)) BauhausLTDemi;
-    --small: normal calc(1.35rem * var(--ratio)) BauhausLTDemi;
+:root {
+  --ratio: 1;
+  --big: normal calc(2.25rem * var(--ratio)) bauhausltdemi;
+  --small: normal calc(1.35rem * var(--ratio)) bauhausltdemi;
 }
+
 body {
-   background: white;
-   background-image: url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato1.svg'),url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato2.svg'),url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato3.svg'),url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato4.svg'),url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato5.svg'),url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato6.svg'),url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato7.svg');
-   animation: gamingpotato 3s linear infinite;
-   background-size: 150px 150px;
+  background: white;
+  background-image: url("http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato1.svg"), url("http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato2.svg"), url("http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato3.svg"), url("http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato4.svg"), url("http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato5.svg"), url("http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato6.svg"), url("http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato7.svg");
+  animation: gamingpotato 3s linear infinite;
+  background-size: 150px 150px;
 }
+
 @keyframes gamingpotato {
+
   0% {
-    background-position: 0px 0px;
+    background-position: 0 0;
   }
+
   100% {
     background-position: 150px 150px;
   }
 }
+
 div#container-wrap {
-    background: none;
+  background: none;
 }
-
-
 
 #header {
-    background: none;
+  background: none;
 }
+
 #header h1 {
-    width: 100%;
-    margin: 0;
+  width: 100%;
+  margin: 0;
 }
+
 #header h1 a {
-    position: relative;
-    font-size: 0;
-    padding: 0;
-    width: 100%;
+  position: relative;
+  font-size: 0;
+  padding: 0;
+  width: 100%;
 }
-#header h1 a:before {
-    content: "";
-    --size: calc(150px * var(--ratio));
-    animation: nice-potato .35s ease-in-out infinite alternate;
-    background: url(/local--files/component:af2020theme/potato.png) center/contain no-repeat;
-    display: block;
-    width: var(--size);
-    height: var(--size);
-    position: absolute;
-    top: 5%;
-    left: 0;
-    right: 0;
-    margin: auto;
+
+#header h1 a::before {
+  content: "";
+
+  --size: calc(150px * var(--ratio));
+
+  animation: nice-potato 0.35s ease-in-out infinite alternate;
+  background: url(/local--files/component:af2020theme/potato.png) center/contain no-repeat;
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-#header h1 a:after {
-    animation: nice-potato-min .35s ease-in-out infinite alternate;
-    content: "SCP財男爵芋";
-    color: #ff0;
-    display: block;
-    font-size: calc(1.8rem * var(--ratio));
-    height: 3rem;
-    position: absolute;
-    text-align: center;
-    top: 55px;
-    left: 0;
-    right: 0;
-    margin: auto;
+
+#header h1 a::after {
+  animation: nice-potato-min 0.35s ease-in-out infinite alternate;
+  content: "SCP財男爵芋";
+  color: #ffff00;
+  display: block;
+  font-size: calc(1.8rem * var(--ratio));
+  height: 3rem;
+  position: absolute;
+  text-align: center;
+  top: 55px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
+
 #header h1 a span {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 130px;
-    width: 140px;
-    z-index: -1;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 130px;
+  width: 140px;
+  z-index: -1;
 }
+
 @keyframes nice-potato {
-    from {
-        transform: skew(10deg, 10deg);
-        filter: drop-shadow(2px 4px 6px #af0) hue-rotate(0deg);
-    }
-    to {
-        transform: skew(-10deg, -10deg);
-        filter: drop-shadow(2px 4px 6px #f08) hue-rotate(360deg);
-    }
+
+  from {
+    transform: skew(10deg, 10deg);
+    filter: drop-shadow(2px 4px 6px #aaff00) hue-rotate(0deg);
+  }
+
+  to {
+    transform: skew(-10deg, -10deg);
+    filter: drop-shadow(2px 4px 6px #ff0088) hue-rotate(360deg);
+  }
 }
+
 @keyframes nice-potato-min {
-    from {
-        filter: hue-rotate(0deg);
-    }
-    to {
-        filter: hue-rotate(360deg);
-    }
+
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(360deg);
+  }
 }
- 
+
 #header h2 {
-    display: none;
+  display: none;
 }
- 
+
 #extrac-div-1 {
-    animation: super-potato 3s linear infinite;
-    background: #fff url(/local--files/component:af2020theme/potato.png) 0%/70px repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 140px;
-    width: 100%;
+  animation: super-potato 3s linear infinite;
+  background: #ffffff url(/local--files/component:af2020theme/potato.png) 0%/70px repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 140px;
+  width: 100%;
 }
+
 @keyframes super-potato {
-    0% {
-        background-position: 0% 0%;
-    }/*
+
+  0% {
+    background-position: 0% 0%;
+  }
+
+  /*
     25% {
         background-position: -2rem 25%;
     }
@@ -128,208 +148,229 @@ div#container-wrap {
     }
     75% {
         background-position: 2rem 75%;
-    }*/
-    100% {
-        background-position: 0% 100%;
-    }
+    } */
+
+  100% {
+    background-position: 0% 100%;
+  }
 }
+
 #extrac-div-2 {
-    background: #333;
-    position: absolute;
-    top: 140px;
-    left: 0;
-    height: 21px;
-    width: 100%;
+  background: #333333;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  height: 21px;
+  width: 100%;
 }
- 
-#extra-div-3, #extra-div-4, #extra-div-5 {
-    color: #ff0;
-    display: inline;
-    pointer-events: none;
-    position: absolute;
-    top: 75px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-shadow: 1px 1px 8px #000;
-    width: calc(85px * var(--ratio));
-    z-index: 10;
-}
-#extra-div-3 {
-    transform: translateX(-100%);
-}
+
+#extra-div-3,
+#extra-div-4,
 #extra-div-5 {
-    transform: translateX(100%);
-    width: calc(95px * var(--ratio));
+  color: #ffff00;
+  display: inline;
+  pointer-events: none;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-shadow: 1px 1px 8px #000000;
+  width: calc(85px * var(--ratio));
+  z-index: 10;
 }
- 
+
+#extra-div-3 {
+  transform: translateX(-100%);
+}
+
+#extra-div-5 {
+  transform: translateX(100%);
+  width: calc(95px * var(--ratio));
+}
+
 @keyframes pop {
-    0% {
-        filter: hue-rotate(0deg);
-        transform: scale(1, 1);
-    }
-    33% {
-        transform: scale(1.1, 0.9) translate(0, 10%);
-    }
-    40% {
-        transform: scale(0.95, 1.05) translate(0, -5%);
-    }
-    50%, 100% {
-        filter: hue-rotate(360deg);
-        transform: scale(1, 1);
-    }
+
+  0% {
+    filter: hue-rotate(0deg);
+    transform: scale(1, 1);
+  }
+
+  33% {
+    transform: scale(1.1, 0.9) translate(0, 10%);
+  }
+
+  40% {
+    transform: scale(0.95, 1.05) translate(0, -5%);
+  }
+
+  50%,
+  100% {
+    filter: hue-rotate(360deg);
+    transform: scale(1, 1);
+  }
 }
 
-#extra-div-3:before {
-    content: "S";
-    animation: pop 1.15s .15s infinite;
-    display: inline-block;
-    font: var(--big);
-}
-#extra-div-3 span:before {
-    content: "hining";
-    animation: pop 1.15s .3s infinite;
-    display: inline-block;
-    font: var(--small);
-}
- 
-#extra-div-4:before {
-    content: "C";
-    animation: pop 1.15s .45s infinite;
-    display: inline-block;
-    font: var(--big);
-}
-#extra-div-4 span:before {
-    content: "olorful";
-    animation: pop 1.15s .6s infinite;
-    display: inline-block;
-    font: var(--small);
-}
- 
-#extra-div-5:before {
-    content: "P";
-    animation: pop 1.15s .75s infinite;
-    display: inline-block;
-    font: var(--big);
-}
-#extra-div-5 span:before {
-    content: "otato";
-    animation: pop 1.15s .9s infinite;
-    display: inline-block;
-    font: var(--small);
+#extra-div-3::before {
+  content: "S";
+  animation: pop 1.15s 0.15s infinite;
+  display: inline-block;
+  font: var(--big);
 }
 
+#extra-div-3 span::before {
+  content: "hining";
+  animation: pop 1.15s 0.3s infinite;
+  display: inline-block;
+  font: var(--small);
+}
+
+#extra-div-4::before {
+  content: "C";
+  animation: pop 1.15s 0.45s infinite;
+  display: inline-block;
+  font: var(--big);
+}
+
+#extra-div-4 span::before {
+  content: "olorful";
+  animation: pop 1.15s 0.6s infinite;
+  display: inline-block;
+  font: var(--small);
+}
+
+#extra-div-5::before {
+  content: "P";
+  animation: pop 1.15s 0.75s infinite;
+  display: inline-block;
+  font: var(--big);
+}
+
+#extra-div-5 span::before {
+  content: "otato";
+  animation: pop 1.15s 0.9s infinite;
+  display: inline-block;
+  font: var(--small);
+}
 
 #search-top-box {
-    bottom: 25px;
-    position: absolute;
-    top: unset;
-    right: 0;
-    left: -2em;
-    margin: 0 auto;
-    width: 11.5rem;
+  bottom: 25px;
+  position: absolute;
+  top: unset;
+  right: 0;
+  left: -2em;
+  margin: 0 auto;
+  width: 11.5rem;
 }
+
 #search-top-box-form {
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: inset 1px 1px 3px rgba(0,0,0,.5);
-    display: flex;
-    transition: all ease .25s;
-    width: 10rem;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 3px rgb(0 0 0 / 50%);
+  display: flex;
+  transition: all ease 0.25s;
+  width: 10rem;
 }
+
 #search-top-box-form:hover {
-    box-shadow: inset 1px 1px 5px rgba(0,0,0,.75);
+  box-shadow: inset 1px 1px 5px rgb(0 0 0 / 75%);
 }
-#search-top-box-form:not(:focus-within):before {
-    content: "Search potato chips";
-    color: #aaa;
-    padding: 0 .25em;
-    pointer-events: none;
-    position: absolute;
-    transition: all ease .25s;
-    transform: scale(0.95, 1);
-    transform-origin: 0 0;
+
+#search-top-box-form:not(:focus-within)::before {
+  content: "Search potato chips";
+  color: #aaaaaa;
+  padding: 0 0.25em;
+  pointer-events: none;
+  position: absolute;
+  transition: all ease 0.25s;
+  transform: scale(0.95, 1);
+  transform-origin: 0 0;
 }
-#search-top-box-form:hover:before {
-    color: #999;
+
+#search-top-box-form:hover::before {
+  color: #999999;
 }
+
 #search-top-box-input,
 #search-top-box-input:hover,
 #search-top-box-input:focus {
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    color: #aaa;
-    flex-grow: 1;
-    height: 1em;
-    outline: none;
-    padding: .25em 1em .25em .25em;
-    width: unset!important;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  color: #aaaaaa;
+  flex-grow: 1;
+  height: 1em;
+  outline: none;
+  padding: 0.25em 1em 0.25em 0.25em;
+  width: unset !important;
 }
+
 #search-top-box-form:not(:focus-within) #search-top-box-input,
 #search-top-box input.empty {
-    color: transparent;
+  color: transparent;
 }
-#search-top-box-form input[type=submit] {
-    background: #fff;
-    color: #aaa;
-    transition: all .25s ease;
-    transform: translateX(50%);
-    width: unset!important;
-    -webkit-appearance: none;
+
+#search-top-box-form input[type = "submit"] {
+  background: #ffffff;
+  color: #aaaaaa;
+  transition: all 0.25s ease;
+  transform: translateX(50%);
+  width: unset !important;
+  appearance: none;
 }
-#search-top-box-form input[type=submit]:hover,
-#search-top-box-form input[type=submit]:focus {
-    animation: pop-btn 1.2s both;
-    background: #fff0f0;
-    color: #b01;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    -webkit-font-smoothing: antialiased;
+
+#search-top-box-form input[type = "submit"]:hover,
+#search-top-box-form input[type = "submit"]:focus {
+  animation: pop-btn 1.2s both;
+  background: #fff0f0;
+  color: #bb0011;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 @keyframes pop-btn {
-    0% {
-        filter: hue-rotate(0deg);
-        transform: translateX(50%) scale(1, 1);
-    }
-    33% {
-        transform: translateX(50%) scale(1.1, 0.9) translate(0, 10%);
-    }
-    40% {
-        transform: translateX(50%) scale(0.95, 1.05) translate(0, -5%);
-    }
-    50%, 100% {
-        filter: hue-rotate(360deg);
-        transform: translateX(50%) scale(1, 1);
-    }
+
+  0% {
+    filter: hue-rotate(0deg);
+    transform: translateX(50%) scale(1, 1);
+  }
+
+  33% {
+    transform: translateX(50%) scale(1.1, 0.9) translate(0, 10%);
+  }
+
+  40% {
+    transform: translateX(50%) scale(0.95, 1.05) translate(0, -5%);
+  }
+
+  50%,
+  100% {
+    filter: hue-rotate(360deg);
+    transform: translateX(50%) scale(1, 1);
+  }
 }
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 767px) {
-    :root {
-        --ratio: .9;
-    }
-    #side-bar:target {
-        z-index: 11;
-    }
+
+  :root {
+    --ratio: 0.9;
+  }
+
+  #side-bar:target {
+    z-index: 11;
+  }
 }
+
 @media (max-width: 580px) {
-    :root {
-        --ratio: .85;
-    }
+
+  :root {
+    --ratio: 0.85;
+  }
 }
- 
+
 @media (max-width: 479px) {
-    :root {
-        --ratio: .8;
-    }
+
+  :root {
+    --ratio: 0.8;
+  }
 }

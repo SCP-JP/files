@@ -1,291 +1,293 @@
 #html-body:not(:target) {
-    --silver-gradient: black;
+  --silver-gradient: black;
 }
 
 @keyframes payment {
-    0% {
-        background-position: 0px 0px, 0px 0px, 0px 0px;
-    }
-    100% {
-        background-position: -500px -1000px, -400px -400px, 0px -300px;
-    }
+
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+
+  100% {
+    background-position: -500px -1000px, -400px -400px, 0 -300px;
+  }
 }
 
 #html-body:not(:target) {
-    background-image:
-        url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-40-oiv0/af2021-hasanbg-01.png"),
-        url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-40-5e0t/af2021-hasanbg-02.png"),
-        url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-40-m3nm/af2021-hasanbg-03.png");
-    animation: payment 10s linear infinite;
+  background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-40-oiv0/af2021-hasanbg-01.png"),
+    url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-40-5e0t/af2021-hasanbg-02.png"),
+    url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-40-m3nm/af2021-hasanbg-03.png");
+  animation: payment 10s linear infinite;
 }
 
 #html-body:not(:target) #header {
-    background: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-14-xspn/logo-remade.svg") no-repeat;
-    background-size: 100px auto;
-    background-position: bottom 40px left 50px;
+  background: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-14-xspn/logo-remade.svg") no-repeat;
+  background-size: 100px auto;
+  background-position: bottom 40px left 50px;
 }
 
 #html-body:not(:target) #side-bar .side-block {
-    position: relative;
+  position: relative;
 }
 
 /* 差し押さえ */
 
 #html-body:not(:target) #header::before,
-#html-body:not(:target) #header #search-top-box:before,
+#html-body:not(:target) #header #search-top-box::before,
 #html-body:not(:target) #side-bar .side-block:nth-of-type(1)::before,
 #html-body:not(:target) #side-bar .side-block:nth-of-type(2)::before,
 #html-body:not(:target) #side-bar .side-block:nth-of-type(4)::before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-21-wybg/0401_sasiosae.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 20;
-    pointer-events: none;
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-21-wybg/0401_sasiosae.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 20;
+  pointer-events: none;
 }
 
 #html-body:not(:target) #header::before {
-    top: 50px;
-    left: 90px;
-    width: 70px;
-    height: 70px;
-    transform: rotate(20deg);
+  top: 50px;
+  left: 90px;
+  width: 70px;
+  height: 70px;
+  transform: rotate(20deg);
 }
 
 #html-body:not(:target) #header #search-top-box::before {
-    top: -30px;
-    left: 35%;
-    width: 70px;
-    height: 70px;
-    transform: rotate(-20deg);
+  top: -30px;
+  left: 35%;
+  width: 70px;
+  height: 70px;
+  transform: rotate(-20deg);
 }
 
 #html-body:not(:target) #side-bar .side-block:nth-of-type(1)::before,
 #html-body:not(:target) #side-bar .side-block:nth-of-type(4)::before {
-    top: -20px;
-    right: -20px;
-    width: 100px;
-    height: 100px;
-    transform: rotate(-20deg);
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-20deg);
 }
 
 #html-body:not(:target) #side-bar .side-block:nth-of-type(2)::before {
-    top: 50%;
-    right: 10px;
-    width: 100px;
-    height: 100px;
-    transform: rotate(20deg);
+  top: 50%;
+  right: 10px;
+  width: 100px;
+  height: 100px;
+  transform: rotate(20deg);
 }
 
-#html-body:not(:target) #search-top-box-form input[type=submit],
-#html-body:not(:target) #search-top-box-form input[type=submit]:hover,
-#html-body:not(:target) #search-top-box-form input[type=submit]:focus {
-    background-color: white;
-    background: white;
+#html-body:not(:target) #search-top-box-form input[type = "submit"],
+#html-body:not(:target) #search-top-box-form input[type = "submit"]:hover,
+#html-body:not(:target) #search-top-box-form input[type = "submit"]:focus {
+  background-color: white;
+  background: white;
 }
 
 #html-body:not(:target) #search-top-box-input,
 #html-body:not(:target) #search-top-box-input:hover,
 #html-body:not(:target) #search-top-box-input:focus {
-    background-color: white;
+  background-color: white;
 }
 
 #html-body:not(:target) #search-top-box-input:hover,
 #html-body:not(:target) #search-top-box-input:focus {
-    background-color: white;
+  background-color: white;
 }
 
 #html-body:not(:target) #header h1 a,
 #html-body:not(:target) #header h2 span {
-    font-family: sans-serif;
-    color: black;
-    text-shadow: unset;
+  font-family: sans-serif;
+  color: black;
+  text-shadow: unset;
 }
+
 #html-body:not(:target) #header h2 span::before {
-    content: "Super Cash Payment.......";
-    text-shadow: unset;
+  content: "Super Cash Payment.......";
+  text-shadow: unset;
 }
 
 #html-body:not(:target) div#container-wrap::after {
-    background: black;
-    box-shadow: unset;
+  background: black;
+  box-shadow: unset;
 }
 
-#html-body:not(:target) #page-content div[style="text-align: center; color: #600;"] {
-    position: relative;
+#html-body:not(:target) #page-content div[style = "text-align: center; color: #600;"] {
+  position: relative;
 }
 
-#html-body:not(:target) #page-content div[style="text-align: center; color: #600;"]::before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-42-cqy4/sei6.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 8;
-    pointer-events: none;
-    top: -20px;
-    right: 0px;
-    width: 143px;
-    height: 21px;
-    transform: rotate(45deg);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+#html-body:not(:target) #page-content div[style = "text-align: center; color: #600;"]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-42-cqy4/sei6.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 8;
+  pointer-events: none;
+  top: -20px;
+  right: 0;
+  width: 143px;
+  height: 21px;
+  transform: rotate(45deg);
+  box-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
 }
-
 
 #html-body:not(:target) #page-content .content-panel {
-    border: solid 1px #5c6769;
-    background-color: rgba(255, 255, 255, 0.5)!important;
-    background: rgba(255, 255, 255, 0.5)!important;
-    box-shadow: 2px 2px 5px #5C6769;
-    overflow: hidden;
+  border: solid 1px #5c6769;
+  background-color: rgb(255 255 255 / 50%) !important;
+  background: rgb(255 255 255 / 50%) !important;
+  box-shadow: 2px 2px 5px #5c6769;
+  overflow: hidden;
 }
 
 #html-body:not(:target) #page-content .content-panel .panel-heading,
 #html-body:not(:target) #page-content .content-panel .panel-footer {
-    background: rgba(0, 0, 0, 0.75)!important;
+  background: rgb(0 0 0 / 75%) !important;
 }
 
 #html-body:not(:target) #page-content .content-panel,
 #html-body:not(:target) #page-content .content-panel .panel-body,
-#html-body:not(:target) #page-content .content-panel[style="background: #fff0f0; padding: 10px;"],
-#html-body:not(:target) #page-content .content-panel[style="background: #808080; padding: 15px 0px 10px;"] {
-    background: white!important;
-    position: relative;
+#html-body:not(:target) #page-content .content-panel[style = "background: #fff0f0; padding: 10px;"],
+#html-body:not(:target) #page-content .content-panel[style = "background: #808080; padding: 15px 0px 10px;"] {
+  background: white !important;
+  position: relative;
 }
 
 #html-body:not(:target) #page-content .customheight .content-panel.right-column::before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-42-p752/sei4.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top right;
-    z-index: 8;
-    pointer-events: none;
-    top: 30px;
-    right: 10px;
-    width: 200px;
-    height: 100px;
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-42-p752/sei4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top right;
+  z-index: 8;
+  pointer-events: none;
+  top: 30px;
+  right: 10px;
+  width: 200px;
+  height: 100px;
 }
 
 #html-body:not(:target) .feature-block.customheight .panel-body {
-    height: 290px;
+  height: 290px;
 }
 
 #html-body:not(:target) #side-bar {
-    background: white;
+  background: white;
 }
 
 #html-body:not(:target) #side-bar:target .close-menu {
-    background: unset;
+  background: unset;
 }
 
 /* 復帰処理 */
+
 #html-body:target {
-    --af2021-header-0: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-0vdh/af2021-header-100.png");
+  --af2021-header-0: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-0vdh/af2021-header-100.png");
 }
 
 .status-changer a {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    transform: scale(1);
-    padding: 1em;
-    background: white;
-    border: solid 1px black;
-    border-radius: 1em;
-    font-size: 120%;
-    z-index: 50;
-    transition: 0.25s;
-    color: black;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transform: scale(1);
+  padding: 1em;
+  background: white;
+  border: solid 1px black;
+  border-radius: 1em;
+  font-size: 120%;
+  z-index: 50;
+  transition: 0.25s;
+  color: black;
 }
 
 .status-changer a:hover {
-    transform: scale(1.05);
-    text-decoration: none;
+  transform: scale(1.05);
+  text-decoration: none;
 }
 
 #html-body:not(:target) .status-changer.get-rich a {
-    display: block;
+  display: block;
 }
 
 #html-body:target .status-changer.become-poor a {
-    display: block;
+  display: block;
 }
 
 .status-changer.no-changer {
-    display: none!important;
+  display: none !important;
 }
 
 #html-body:target #header h2 span::before {
-    content: "Super Cash Posseser!!!"
+  content: "Super Cash Posseser!!!";
 }
 
 #page-content .poor-content,
 #page-content .rich-content {
-    display: none;
+  display: none;
 }
 
 #html-body:not(:target) #page-content .poor-content {
-    display: block!important;
+  display: block !important;
 }
 
 #html-body:target #page-content .rich-content {
-    display: block!important;
+  display: block !important;
 }
 
 /* buuta */
 
 .panel-body.mailmagazine::after {
-    content: unset;
+  content: unset;
 }
 
 .panel-body .buta {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
 }
 
 .panel-body .buta .collapsible-block .collapsible-block-content {
-    display: none!important;
+  display: none !important;
 }
 
 .panel-body .buta .collapsible-block {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 50px;
-    height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
 }
 
 .panel-body .buta .collapsible-block-link {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 50px;
-    height: 50px;
-    font-size: 0px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .panel-body .buta .collapsible-block-folded .collapsible-block-link {
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-22-ilwq/buuta.png");
+  background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-22-ilwq/buuta.png");
 }
 
 .panel-body .buta .collapsible-block-folded .collapsible-block-link:hover {
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-31-t19z/obiebuta.png");
+  background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-31-t19z/obiebuta.png");
 }
 
 .panel-body .buta .collapsible-block-unfolded .collapsible-block-link {
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-30-drqc/buta10.png");
+  background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-30-drqc/buta10.png");
 }

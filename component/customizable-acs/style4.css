@@ -1,209 +1,239 @@
 .anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .text-part > .main-class {
-    padding-right: 3.5rem;
+  padding-right: 3.5rem;
 }
 
-.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class {
-    padding-right: 2rem!important;
+.anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+.text-part > .main-class {
+  padding-right: 2rem !important;
 }
 
-.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class::before {
-    top: 0.5rem!important;
-    right: 1.25rem!important;
-    width: 5rem!important;
-    -webkit-border-radius: -webkit-calc(3.53125rem / 2)!important;
-       -moz-border-radius: -moz-calc(3.53125rem / 2)!important;
-     border-radius: calc(3.53125rem / 2)!important;
-    background-color: rgb({$containment-color})!important;
-    border-color: rgb(12,12,12)!important;
-    background-image: url("{$containment-image}")!important;
-    -webkit-background-size: 75% 75%!important;
-       -moz-background-size: 75% 75%!important;
-     -o-background-size: 75% 75%!important;
-     background-size: 75% 75%!important;
-    background-repeat: no-repeat!important;
-    background-position: left -10px center!important;
+.anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+.text-part > .main-class::before {
+  top: 0.5rem !important;
+  right: 1.25rem !important;
+  width: 5rem !important;
+  border-radius: calc(3.53125rem / 2) !important;
+  border-radius: calc(3.53125rem / 2) !important;
+  background-color: rgb({$containment-color}) !important;
+  border-color: rgb(12 12 12) !important;
+  background-image: url("{$containment-image}") !important;
+  background-size: 75% 75% !important;
+  background-size: 75% 75% !important;
+  background-size: 75% 75% !important;
+  background-repeat: no-repeat !important;
+  background-position: left -10px center !important;
 }
 
-.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class::after {
-    content: ""!important;
-    position: absolute!important;
-    top: 0.5rem!important;
-    right: 0.25rem!important;
-    width: 3.53125rem!important;
-    height: 3.53125rem!important;
-    -webkit-border-radius: 50%!important;
-       -moz-border-radius: 50%!important;
-     border-radius: 50%!important;
-    border: 0.25rem solid rgb(12,12,12)!important;
-    background-color: rgb(252, 252, 252)!important;
-    background-color: rgb(var(--swatch-background, 252, 252, 252))!important;
-    -webkit-background-size: contain!important;
-       -moz-background-size: contain!important;
-     -o-background-size: contain!important;
-     background-size: contain!important;
-    background-position: center center!important;
+.anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+.text-part > .main-class::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0.5rem !important;
+  right: 0.25rem !important;
+  width: 3.53125rem !important;
+  height: 3.53125rem !important;
+  border-radius: 50% !important;
+  border-radius: 50% !important;
+  border: 0.25rem solid rgb(12 12 12) !important;
+  background-color: rgb(252 252 252) !important;
+  background-color: rgb(var(--swatch-background, 252, 252, 252)) !important;
+  background-size: contain !important;
+  background-size: contain !important;
+  background-size: contain !important;
+  background-position: center center !important;
 }
 
-.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .second-class > .class-text {
-    font-size: -webkit-calc( 6px + (11 - 6) * ( (100vw - 400px) / ( 800 - 400) ))!important;
-    font-size: -moz-calc( 6px + (11 - 6) * ( (100vw - 400px) / ( 800 - 400) ))!important;
-    font-size: calc( 6px + (11 - 6) * ( (100vw - 400px) / ( 800 - 400) ))!important;
-    position: relative!important;
+.anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+.text-part > .main-class > .second-class > .class-text {
+  font-size: calc(6px + (11 - 6) * ( (100vw - 400px) / ( 800 - 400) )) !important;
+  font-size: calc(6px + (11 - 6) * ( (100vw - 400px) / ( 800 - 400) )) !important;
+  position: relative !important;
 }
 
 .anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .text-part > .main-class > .contain-class > .class-text {
-    font-size: -webkit-calc(10px + (18 - 10) * ( (100vw - 400px) / ( 800 - 400) ));
-    font-size: -moz-calc(10px + (18 - 10) * ( (100vw - 400px) / ( 800 - 400) ));
-    font-size: calc(10px + (18 - 10) * ( (100vw - 400px) / ( 800 - 400) ));
+  font-size: calc(10px + (18 - 10) * ( (100vw - 400px) / ( 800 - 400) ));
+  font-size: calc(10px + (18 - 10) * ( (100vw - 400px) / ( 800 - 400) ));
 }
 
 .anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .text-part > .main-class > .second-class {
-    display: none;
+  display: none;
 }
 
-.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .second-class {
-    display: initial!important;
+.anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+.text-part > .main-class > .second-class {
+  display: initial !important;
 }
 
-.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part .main-class {
-    background-color: rgba({$containment-color},0.15)!important;
-    border-left: 0.75rem solid rgba({$containment-color},1)!important;
+.anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+.text-part .main-class {
+  background-color: rgb({$containment-color} 0.15) !important;
+  border-left: 0.75rem solid rgb({$containment-color} 1) !important;
 }
 
-.anom-bar-esoteric .anom-bar-container.{$containment-class} .contain-class > .class-category {
-    max-width: 55% !important;
+.anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+.contain-class > .class-category {
+  max-width: 55% !important;
 }
 
 .anom-bar-esoteric .text-part > div > .class-category,
-.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .contain-class > .class-category {
-    font-size: 0.75em!important;
+.anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+.text-part > .main-class > .contain-class > .class-category {
+  font-size: 0.75em !important;
 }
 
-.anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .contain-class > .class-text,
+.anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+.text-part > .main-class > .contain-class > .class-text,
 .anom-bar-esoteric .text-part > .disrupt-class > .class-text,
 .anom-bar-esoteric .text-part > .risk-class > .class-text {
-    font-size: -webkit-calc( 8px + (12 - 8) * ( (100vw - 400px) / ( 800 - 400) ))!important;
-    font-size: -moz-calc( 8px + (12 - 8) * ( (100vw - 400px) / ( 800 - 400) ))!important;
-    font-size: calc( 8px + (12 - 8) * ( (100vw - 400px) / ( 800 - 400) ))!important;
+  font-size: calc(8px + (12 - 8) * ( (100vw - 400px) / ( 800 - 400) )) !important;
+  font-size: calc(8px + (12 - 8) * ( (100vw - 400px) / ( 800 - 400) )) !important;
 }
 
-.anom-bar-esoteric .anom-bar-container.{$containment-class} .danger-diamond > .quadrants > .top-quad {
-    background-color: rgb({$containment-color},0.25)!important;
+.anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+.danger-diamond > .quadrants > .top-quad {
+  background-color: rgb({$containment-color} 0.25) !important;
 }
 
 .anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .danger-diamond > .bottom-icon {
-    display: none;
+  display: none;
 }
 
-.anom-bar-esoteric .anom-bar-container.{$containment-class} .danger-diamond > .bottom-icon {
-    display: initial!important;
+.anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+.danger-diamond > .bottom-icon {
+  display: initial !important;
 }
 
-.anom-bar-esoteric .anom-bar-container.{$containment-class} .danger-diamond > .top-icon::before {
-    background-color: rgb({$containment-color})!important;
-    background-image: url("{$containment-image}")!important;
-    background-size: contain!important;
+.anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+.danger-diamond > .top-icon::before {
+  background-color: rgb({$containment-color}) !important;
+  background-image: url("{$containment-image}") !important;
+  background-size: contain !important;
 }
 
-@media (max-width: 960px ) {
+@media (max-width: 960px) {
 
-    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .contain-class > .class-text, .text-part > .disrupt-class > .class-text, .text-part > .risk-class > .class-text {
-     font-size: -webkit-calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ))!important;
-     font-size: -moz-calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ))!important;
-     font-size: calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ))!important;
-    }
+  .anom-bar-esoteric .anom-bar-container.{$containment-class}
 
-    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .contain-class > .class-text {
-     font-size: -webkit-calc( 12px + (18 - 12) * ( (100vw - 400px) / ( 960 - 300) ))!important;
-     font-size: -moz-calc( 12px + (18 - 12) * ( (100vw - 400px) / ( 960 - 300) ))!important;
-     font-size: calc( 12px + (18 - 12) * ( (100vw - 400px) / ( 960 - 300) ))!important;
-    }
+  .text-part > .main-class > .contain-class > .class-text,
+  .text-part > .disrupt-class > .class-text,
+  .text-part > .risk-class > .class-text {
+    font-size: calc(18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) )) !important;
+    font-size: calc(18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) )) !important;
+  }
 
-    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .second-class > .class-text {
-     font-size: -webkit-calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ))!important;
-     font-size: -moz-calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ))!important;
-     font-size: calc( 18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) ))!important;
-    }
+  .anom-bar-esoteric .anom-bar-container.{$containment-class}
 
-    .anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .text-part > .main-class > .contain-class > .class-text {
-     font-size: -webkit-calc( 20px + (40 - 20) * ( (100vw - 400px) / ( 960 - 300) ));
-     font-size: -moz-calc( 20px + (40 - 20) * ( (100vw - 400px) / ( 960 - 300) ));
-     font-size: calc( 20px + (40 - 20) * ( (100vw - 400px) / ( 960 - 300) ));
-    }
+  .text-part > .main-class > .contain-class > .class-text {
+    font-size: calc(12px + (18 - 12) * ( (100vw - 400px) / ( 960 - 300) )) !important;
+    font-size: calc(12px + (18 - 12) * ( (100vw - 400px) / ( 960 - 300) )) !important;
+  }
 
+  .anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+  .text-part > .main-class > .second-class > .class-text {
+    font-size: calc(18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) )) !important;
+    font-size: calc(18px + (24 - 18) * ( (100vw - 400px) / ( 960 - 300) )) !important;
+  }
+
+  .anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .text-part > .main-class > .contain-class > .class-text {
+    font-size: calc(20px + (40 - 20) * ( (100vw - 400px) / ( 960 - 300) ));
+    font-size: calc(20px + (40 - 20) * ( (100vw - 400px) / ( 960 - 300) ));
+  }
 }
 
-@media (max-width: 875px ) {
+@media (max-width: 875px) {
 
-    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class::after,
-    .anom-bar-esoteric .text-part > .main-class::after {
-     height: 3rem!important;
-     width: 3rem!important;
-    }
+  .anom-bar-esoteric .anom-bar-container.{$containment-class}
 
-    .anom-bar-esoteric .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class::after,
-    .anom-bar-esoteric .text-part > .main-class::after,
-    .anom-bar-esoteric .text-part .disrupt-class::after,
-    .anom-bar-esoteric .text-part .risk-class::after {
-     top: -webkit-calc(50% - 1.125rem)!important;
-     top: -moz-calc(50% - 1.125rem)!important;
-     top: calc(50% - 1.125rem)!important;
-     border-width: 0.25rem!important;
-    }
+  .text-part > .main-class::after,
+  .anom-bar-esoteric .text-part > .main-class::after {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
 
-    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class::after {
-     top: 0.15rem!important;
-    }
+  .anom-bar-esoteric .anom-bar-esoteric .anom-bar-container.{$containment-class}
 
-    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class::before {
-     top: 0.15rem!important;
-     width: 5.75rem!important;
-     height: 3rem!important;
-     right: 1.25rem!important;
-     -webkit-background-size: 100% 100%!important;
-        -moz-background-size: 100% 100%!important;
-     -o-background-size: 100% 100%!important;
-     background-size: 100% 100%!important;
-     background-position: left -20px center!important;
-    }
+  .text-part > .main-class::after,
+  .anom-bar-esoteric .text-part > .main-class::after,
+  .anom-bar-esoteric .text-part .disrupt-class::after,
+  .anom-bar-esoteric .text-part .risk-class::after {
+    top: calc(50% - 1.125rem) !important;
+    top: calc(50% - 1.125rem) !important;
+    border-width: 0.25rem !important;
+  }
 
-    .anom-bar-esoteric .anom-bar-container.{$containment-class} .contain-class > .class-category {
-     max-width: 100% !important;
-    }
+  .anom-bar-esoteric .anom-bar-container.{$containment-class}
 
+  .text-part > .main-class::after {
+    top: 0.15rem !important;
+  }
+
+  .anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+  .text-part > .main-class::before {
+    top: 0.15rem !important;
+    width: 5.75rem !important;
+    height: 3rem !important;
+    right: 1.25rem !important;
+    background-size: 100% 100% !important;
+    background-size: 100% 100% !important;
+    background-size: 100% 100% !important;
+    background-position: left -20px center !important;
+  }
+
+  .anom-bar-esoteric .anom-bar-container.{$containment-class}
+
+  .contain-class > .class-category {
+    max-width: 100% !important;
+  }
 }
 
-@media (max-width: 480px ) {
+@media (max-width: 480px) {
 
-    .anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .text-part > .main-class::before {
-     width: 2.5rem;
-     height: 2.5rem;
-     top: -webkit-calc(50% - 1.475rem);
-     top: -moz-calc(50% - 1.475rem);
-     top: calc(50% - 1.475rem);
-     right: 0.5rem;
-    }
+  .anom-bar-esoteric .anom-bar-container:not(.{$containment-class}) .text-part > .main-class::before {
+    width: 2.5rem;
+    height: 2.5rem;
+    top: calc(50% - 1.475rem);
+    top: calc(50% - 1.475rem);
+    right: 0.5rem;
+  }
 
-    .anom-bar-esoteric .text-part > div > .class-category,
-    .anom-bar-esoteric .anom-bar-container.{$containment-class} .text-part > .main-class > .contain-class > .class-category {
-     font-size: 1em!important;
-    }
+  .anom-bar-esoteric .text-part > div > .class-category,
+  .anom-bar-esoteric .anom-bar-container.{$containment-class}
 
-    .anom-bar-container.{$containment-class} .text-part > .main-class::before {
-     top: 0.15rem!important;
-     width: 4.5rem!important;
-     height: 2.5rem!important;
-     right: 1rem!important;
-     -webkit-background-size: 100% 100%!important;
-        -moz-background-size: 100% 100%!important;
-     -o-background-size: 100% 100%!important;
-     background-size: 100% 100%!important;
-     background-position: left -10px center!important;
-    }
+  .text-part > .main-class > .contain-class > .class-category {
+    font-size: 1em !important;
+  }
 
-    .anom-bar-container.{$containment-class} .text-part > .main-class::after {
-     height: 2.5rem!important;
-     width: 2.5rem!important;
-    }
+  .anom-bar-container.{$containment-class}
 
+  .text-part > .main-class::before {
+    top: 0.15rem !important;
+    width: 4.5rem !important;
+    height: 2.5rem !important;
+    right: 1rem !important;
+    background-size: 100% 100% !important;
+    background-size: 100% 100% !important;
+    background-size: 100% 100% !important;
+    background-position: left -10px center !important;
+  }
+
+  .anom-bar-container.{$containment-class}
+
+  .text-part > .main-class::after {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
 }

@@ -1,154 +1,150 @@
 #header {
-    background-image: url(http://scp-jp.wikidot.com/local--files/theme:memoria/TitleLogo.png)
+  background-image: url(http://scp-jp.wikidot.com/local--files/theme:memoria/TitleLogo.png);
 }
 
-#side-bar:hover, #side-bar:active {
-background:
-linear-gradient(
-    rgba(var(--swatch-menubg-color),1) 30%,
-    rgba(var(--swatch-menubg-color),0)),
-linear-gradient(
-    rgba(var(--swatch-menubg-color),0),
-    rgba(var(--swatch-menubg-color),1) 70%) 0 100%,
-radial-gradient(farthest-side at 50% 0,
-    rgba(var(--swatch-primary-darkest),.5),
-    rgba(var(--black-monochrome),0)),
-radial-gradient(farthest-side at 50% 100%,
-    rgba(var(--swatch-primary-darkest),.5),
-    rgba(var(--black-monochrome),0)) 0 100%;
+#side-bar:hover,
+#side-bar:active {
+  background: linear-gradient(
+    rgb(var(--swatch-menubg-color) 1) 30%,
+    rgb(var(--swatch-menubg-color) 0)
+  ),
+    linear-gradient(
+    rgb(var(--swatch-menubg-color) 0),
+    rgb(var(--swatch-menubg-color) 1) 70%
+  ) 0 100%,
+    radial-gradient(
+    farthest-side at 50% 0,
+    rgb(var(--swatch-primary-darkest) 0.5),
+    rgb(var(--black-monochrome) 0)
+  ),
+    radial-gradient(
+    farthest-side at 50% 100%,
+    rgb(var(--swatch-primary-darkest) 0.5),
+    rgb(var(--black-monochrome) 0)
+  ) 0 100%;
 }
+
 #side-bar {
-background:
-linear-gradient(
-    rgba(var(--swatch-menubg-color),0) 30%,
-    rgba(var(--swatch-menubg-color),0)),
-linear-gradient(
-    rgba(var(--swatch-menubg-color),0),
-    rgba(var(--swatch-menubg-color),0) 70%) 0 100%,
-radial-gradient(farthest-side at 50% 0,
-    rgba(var(--swatch-primary-darkest),0),
-    rgba(var(--black-monochrome),0)),
-radial-gradient(farthest-side at 50% 100%,
-    rgba(var(--swatch-primary-darkest),0),
-    rgba(var(--black-monochrome),0)) 0 100%;
+  background: linear-gradient(
+    rgb(var(--swatch-menubg-color) 0) 30%,
+    rgb(var(--swatch-menubg-color) 0)
+  ),
+    linear-gradient(
+    rgb(var(--swatch-menubg-color) 0),
+    rgb(var(--swatch-menubg-color) 0) 70%
+  ) 0 100%,
+    radial-gradient(
+    farthest-side at 50% 0,
+    rgb(var(--swatch-primary-darkest) 0),
+    rgb(var(--black-monochrome) 0)
+  ),
+    radial-gradient(
+    farthest-side at 50% 100%,
+    rgb(var(--swatch-primary-darkest) 0),
+    rgb(var(--black-monochrome) 0)
+  ) 0 100%;
 }
 
-#page-title{display:none}
+#page-title { display: none; }
 
-@supports(--css:variables) {
+@supports (--css:variables) {
 
-    :root {
-     --header-title: "追憶のアディトゥム";
-     --header-subtitle: "カルマクタマの残響。";
-     --header-font: 'Sawarabi Mincho';
-     --background-gradient-distance:60rem; !important
-    }
+  :root {
+    --header-title: "追憶のアディトゥム";
+    --header-subtitle: "カルマクタマの残響。";
+    --header-font: "Sawarabi Mincho";
+    --background-gradient-distance: 60rem;
+  }
 }
 
+@supports (background-blend-mode: screen) {
 
-    @supports (background-blend-mode: screen) {
-    
-     #extrac-div-1 {
-     width: 100%;
-     height: var(--header-height-on-desktop);
-     position: absolute;
-     top: 0;
-     left: 0;
-     background-image: var(--gradient-header), url(http://scp-jp.wikidot.com/local--files/theme:memoria/background.jpg);
-     background-size: var(--header-background-image-size) 100%, 100%, 100%;
-     background-blend-mode: normal;
-     pointer-events: none;
-     }
+  #extrac-div-1 {
+    width: 100%;
+    height: var(--header-height-on-desktop);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: var(--gradient-header), url(http://scp-jp.wikidot.com/local--files/theme:memoria/background.jpg);
+    background-size: var(--header-background-image-size) 100%, 100%, 100%;
+    background-blend-mode: normal;
+    pointer-events: none;
+  }
 
-     div#extra-div-1 {
-     width: 100%;
-     height: calc(100% - var(--final-header-height-on-desktop));
-     position: absolute;
-     top: calc(var(--final-header-height-on-desktop));
-     left: 0;
-     z-index: -1;
-     background-color: rgba(222, 222, 222, 1);
-     background-color: rgba(var(--swatch-background), 1);
-     mask: var(--gradient-background);
-     -webkit-mask: var(--gradient-background);
-     background-image: url(http://scp-jp.wikidot.com/local--files/theme:memoria/background.jpg), var(--gradient-background);
-     background-size: 100%, 80% var(--background-gradient-distance);
-     background-blend-mode: difference;
-     background-repeat: no-repeat, repeat-x;
-     pointer-events: none;
-     }
-
-    }
+  div#extra-div-1 {
+    width: 100%;
+    height: calc(100% - var(--final-header-height-on-desktop));
+    position: absolute;
+    top: calc(var(--final-header-height-on-desktop));
+    left: 0;
+    z-index: -1;
+    background-color: rgb(222 222 222 / 100%);
+    background-color: rgb(var(--swatch-background) 1);
+    mask: var(--gradient-background);
+    background-image: url(http://scp-jp.wikidot.com/local--files/theme:memoria/background.jpg), var(--gradient-background);
+    background-size: 100%, 80% var(--background-gradient-distance);
+    background-blend-mode: difference;
+    background-repeat: no-repeat, repeat-x;
+    pointer-events: none;
+  }
+}
 
 .type1 {
-    display: block;
-    overflow: hidden;
-    font-family: 'Sawarabi Mincho';
-    font-style: normal;
-    font-size: 110%;
-    color: rgb(57, 0, 0);
-
-    background-attachment: scroll;
-    background: url(http://scp-jp.wikidot.com/--files/theme:memoria/textback.jpg);
-
-    background-clip: border-box;
-    background-color: rgb(222, 222, 222);
-    background-origin: padding-box;
-    background-repeat: repeat;
-    background-size: 100%;
-
-    border-radius: 10px;
-    padding: 10px 10px;
-    margin-bottom: 10px;
-
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2)
-    }
+  display: block;
+  overflow: hidden;
+  font-family: "Sawarabi Mincho";
+  font-style: normal;
+  font-size: 110%;
+  color: rgb(57 0 0);
+  background-attachment: scroll;
+  background: url(http://scp-jp.wikidot.com/--files/theme:memoria/textback.jpg);
+  background-clip: border-box;
+  background-color: rgb(222 222 222);
+  background-origin: padding-box;
+  background-repeat: repeat;
+  background-size: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 20%);
+}
 
 .textbox {
-    border-radius: 10px;
-    padding: 10px 10px;
-    margin-bottom: 10px;
-    background-color: rgb(var(--white-monochrome));
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(var(--white-monochrome));
 }
 
 .scp-image-block.block-right {
-    padding: 1em !important;
-    background: var(--gradient-header);
+  padding: 1em !important;
+  background: var(--gradient-header);
 }
 
 .scp-image-block img {
-    padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 .status {
-    font-family: var(--title-font);
-    font-weight: 900;
-    font-size: 200%;
-    display: flex:
+  font-family: var(--title-font);
+  font-weight: 900;
+  font-size: 200%;
+  display: flex:
     align-content: center;
-    justify-items: center;
-    text-align: center;
+  justify-items: center;
+  text-align: center;
 }
 
 .status span.active {
-    color: rgb(var(--white-monochrome));
-    -webkit-box-shadow:
-        inset 100vw 0 0 0 rgb(var(--rating-module-button-plus-color)),
-        0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
-        -0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color)),
-        -0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
-        0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color));
-        -moz-box-shadow:
-            inset 100vw 0 0 0 rgb(var(--rating-module-button-plus-color)),
-            0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
-            -0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color)),
-            -0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
-            0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color));
-                box-shadow:
-                    inset 100vw 0 0 0 rgb(var(--rating-module-button-plus-color)),
-                    0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
-                    -0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color)),
-                    -0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
-                    0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color));
+  color: rgb(var(--white-monochrome));
+  box-shadow: inset 100vw 0 0 0 rgb(var(--rating-module-button-plus-color)),
+    0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+    -0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+    -0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+    0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color));
+  box-shadow: inset 100vw 0 0 0 rgb(var(--rating-module-button-plus-color)),
+    0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+    -0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+    -0.25rem 0.25rem 0 rgb(var(--rating-module-button-plus-color)),
+    0.25rem -0.25rem 0 rgb(var(--rating-module-button-plus-color));
 }
-

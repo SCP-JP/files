@@ -1,84 +1,84 @@
 body .anom-bar-container.clear-1 .anom-bar > .top-box {
-    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
-    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
-    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
-    grid-template-columns: auto 1fr calc(5vw + 8rem);
-    padding-bottom: 1.15em;
+  -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+  grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+  grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+  grid-template-columns: auto 1fr calc(5vw + 8rem);
+  padding-bottom: 1.15em;
 }
 
 body .anom-bar-container.clear-1 .top-center-box > div {
-    background-image: url("{$clearance-one-image}")!important;
-    background-attachment: fixed;
-    background-size: contain;
+  background-image: url("{$clearance-one-image}") !important;
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 body .anom-bar-container.clear-2 .anom-bar > .top-box {
-    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
-    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
-    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
-    grid-template-columns: auto 1fr calc(5vw + 8rem);
-    padding-bottom: 1.15em;
+  -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+  grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+  grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+  grid-template-columns: auto 1fr calc(5vw + 8rem);
+  padding-bottom: 1.15em;
 }
 
 body .anom-bar-container.clear-2 .top-center-box > div {
-    background-image: url("{$clearance-two-image}")!important;
-    background-attachment: fixed;
-    background-size: contain;
+  background-image: url("{$clearance-two-image}") !important;
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 body .anom-bar-container.clear-3 .anom-bar > .top-box {
-    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
-    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
-    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
-    grid-template-columns: auto 1fr calc(5vw + 8rem);
-    padding-bottom: 1.15em;
+  -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+  grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+  grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+  grid-template-columns: auto 1fr calc(5vw + 8rem);
+  padding-bottom: 1.15em;
 }
 
 body .anom-bar-container.clear-3 .top-center-box > div {
-    background-image: url("{$clearance-three-image}")!important;
-    background-attachment: fixed;
-    background-size: contain;
+  background-image: url("{$clearance-three-image}") !important;
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 body .anom-bar-container.clear-4 .anom-bar > .top-box {
-    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
-    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
-    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
-    grid-template-columns: auto 1fr calc(5vw + 8rem);
-    padding-bottom: 1.15em;
+  -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+  grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+  grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+  grid-template-columns: auto 1fr calc(5vw + 8rem);
+  padding-bottom: 1.15em;
 }
 
 body .anom-bar-container.clear-4 .top-center-box > div {
-    background-image: url("{$clearance-four-image}")!important;
-    background-attachment: fixed;
-    background-size: contain;
+  background-image: url("{$clearance-four-image}") !important;
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 body .anom-bar-container.clear-5 .anom-bar > .top-box {
-    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
-    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
-    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
-    grid-template-columns: auto 1fr calc(5vw + 8rem);
-    padding-bottom: 1.15em;
+  -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+  grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+  grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+  grid-template-columns: auto 1fr calc(5vw + 8rem);
+  padding-bottom: 1.15em;
 }
 
 body .anom-bar-container.clear-5 .top-center-box > div {
-    background-image: url("{$clearance-five-image}")!important;
-    background-attachment: fixed;
-    background-size: contain;
+  background-image: url("{$clearance-five-image}") !important;
+  background-attachment: fixed;
+  background-size: contain;
 }
 
 body .anom-bar-container.clear-6 .anom-bar > .top-box {
-    -ms-grid-columns: auto 1fr calc(5vw + 8rem);
-    grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
-    grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
-    grid-template-columns: auto 1fr calc(5vw + 8rem);
-    padding-bottom: 1.15em;
+  -ms-grid-columns: auto 1fr calc(5vw + 8rem);
+  grid-template-columns: auto 1fr -webkit-calc(5vw + 8rem);
+  grid-template-columns: auto 1fr -moz-calc(5vw + 8rem);
+  grid-template-columns: auto 1fr calc(5vw + 8rem);
+  padding-bottom: 1.15em;
 }
 
 body .anom-bar-container.clear-6 .top-center-box > div {
-    background-image: url("{$clearance-six-image}")!important;
-    background-attachment: fixed;
-    background-size: contain;
-    background-blend-mode: normal!important;
+  background-image: url("{$clearance-six-image}") !important;
+  background-attachment: fixed;
+  background-size: contain;
+  background-blend-mode: normal !important;
 }

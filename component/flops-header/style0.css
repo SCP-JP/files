@@ -1,44 +1,53 @@
 /* ---- 提示 ---- */
- .unmargined > div:first-of-type{ display: none; }
- .templateInfo{ margin: 0 0 1em; padding: 0 1em; border: 1px solid hsl(0, 0%, 87%); }
- .templateInfo hr{ margin: 1em 0; }
- h1, h3{ text-align: center; }
+.unmargined > div:first-of-type { display: none; }
+.templateInfo { margin: 0 0 1em; padding: 0 1em; border: 1px solid hsl(0deg 0% 87%); }
+.templateInfo hr { margin: 1em 0; }
+
+h1,
+h3 { text-align: center; }
 
 /* ---- WOEDENAZのコード ---- */
- .help{
-     display: flex;
-     align-content: stretch;
-     padding-top: 1em;
+
+.help {
+  display: flex;
+  align-content: stretch;
+  padding-top: 1em;
 }
- .help blockquote{
-     margin: 0;
-     font-size: 85%;
+
+.help blockquote {
+  margin: 0;
+  font-size: 85%;
 }
- .help blockquote > p{
-     display: flex;
-     flex-wrap: wrap;
-     align-items: center;
-     align-content: center;
-     min-height: 2rem;
-     margin: 0;
-     margin-right: 0;
+
+.help blockquote > p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  min-height: 2rem;
+  margin: 0;
+  margin-right: 0;
 }
- .help blockquote > p *{
-     height: 100%;
-     margin: 0 .1rem;
+
+.help blockquote > p * {
+  height: 100%;
+  margin: 0 0.1rem;
 }
- .help blockquote:nth-of-type(1){
-     margin-right: 0;
-     padding: 0;
-     background: transparent;
-     border: unset;
-     box-shadow: unset;
-     text-align: right;
+
+.help blockquote:nth-of-type(1) {
+  margin-right: 0;
+  padding: 0;
+  background: transparent;
+  border: unset;
+  box-shadow: unset;
+  text-align: right;
 }
- .help blockquote:nth-of-type(1) > p{
-     justify-content: flex-end;
+
+.help blockquote:nth-of-type(1) > p {
+  justify-content: flex-end;
 }
- .help blockquote:nth-of-type(2){
-     width: 60%;
-     margin-left: 1em;
+
+.help blockquote:nth-of-type(2) {
+  width: 60%;
+  margin-left: 1em;
 }

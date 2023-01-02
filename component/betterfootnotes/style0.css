@@ -1,103 +1,110 @@
 :root {
-    --posX: calc(50% - 358px - 12rem);
-    --fnTransition: 0.3s;
-    --fnLinger: 0.15s;
-    --fnInteract: calc(var(--fnTransition) + var(--fnLinger));
+  --posX: calc(50% - 358px - 12rem);
+  --fnTransition: 0.3s;
+  --fnLinger: 0.15s;
+  --fnInteract: calc(var(--fnTransition) + var(--fnLinger));
 }
 
-/*--- Footnote Auto-counter --*/
+/* --- Footnote Auto-counter -- */
+
 #main-content {
-    counter-reset: megacount;
+  counter-reset: megacount;
 }
 
-/*--- Footnote Superscript Number --*/
+/* --- Footnote Superscript Number -- */
+
 .fnnum {
-    display: inline-block;
-    width: max-content;
-    text-indent: -0.285ch;
-    vertical-align: super;
-    line-height: 80%;
-    word-break: initial;
-    text-decoration: none;
-    font-weight: bold;
-    font-style: initial;
-    color: transparent;
-    position: relative;
-    font-size: 80%;
-    padding: .15em .1em .15em 0;
-    margin-right: -0.25em;
-    counter-increment: megacount;
-    user-select: none;
+  display: inline-block;
+  width: max-content;
+  text-indent: -0.285ch;
+  vertical-align: super;
+  line-height: 80%;
+  word-break: initial;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: initial;
+  color: transparent;
+  position: relative;
+  font-size: 80%;
+  padding: 0.15em 0.1em 0.15em 0;
+  margin-right: -0.25em;
+  counter-increment: megacount;
+  user-select: none;
 }
+
 .fnnum::after {
-    content: "" counter(megacount);
-    color: var(--fnColor, #E6283C);
+  content: "" counter(megacount);
+  color: var(--fnColor, #e6283c);
 }
+
 .fnnum:hover {
-    text-decoration: none;
-    cursor: pointer;
-    background-color: var(--fnColor, #E6283C);
+  text-decoration: none;
+  cursor: pointer;
+  background-color: var(--fnColor, #e6283c);
 }
 .fnnum:hover::after { color: white; }
 
-/*--- Footnote Content Wrapper --*/
+/* --- Footnote Content Wrapper -- */
+
 .fncon {
-    position: absolute;
-    right: calc(var(--posX) + 80px);
-    line-height: 1.2;
-    padding: 0.82rem;
-    width: 10.3rem;
-    background: white;
-    border: 2px solid black;
-    font-weight: initial;
-    font-style: normal;
-    text-align: initial;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 9;
-    transition:
-        opacity 0.15s linear var(--fnLinger),
-        right var(--fnTransition) cubic-bezier(.08,.72,.5,.94) var(--fnLinger),
-        visibility 0.01s linear var(--fnInteract);
+  position: absolute;
+  right: calc(var(--posX) + 80px);
+  line-height: 1.2;
+  padding: 0.82rem;
+  width: 10.3rem;
+  background: white;
+  border: 2px solid black;
+  font-weight: initial;
+  font-style: normal;
+  text-align: initial;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 9;
+  transition: opacity 0.15s linear var(--fnLinger),
+    right var(--fnTransition) cubic-bezier(0.08, 0.72, 0.5, 0.94) var(--fnLinger),
+    visibility 0.01s linear var(--fnInteract);
 }
-.fnnum:hover + .fncon, .fncon:hover {
-    opacity: 1;
-    right: var(--posX);
-    visibility: visible;
-    transition:
-        opacity 0.15s linear,
-        right var(--fnTransition) cubic-bezier(.08,.72,.5,.94);
+
+.fnnum:hover + .fncon,
+.fncon:hover {
+  opacity: 1;
+  right: var(--posX);
+  visibility: visible;
+  transition: opacity 0.15s linear,
+    right var(--fnTransition) cubic-bezier(0.08, 0.72, 0.5, 0.94);
 }
 
 .fncon::before {
-    position: absolute;
-    top: 0; left: 0;
-    transform: translateX(-52%) translateY(-55%) scale(1.15);
-    background-color: var(--fnColor, #E6283C);
-    color: white;
-    content: counter(megacount);
-    font-size: initial;
-    font-weight: bold;
-    font-style: initial;
-    padding: 0.18rem 0.32em 0.08rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-52%) translateY(-55%) scale(1.15);
+  background-color: var(--fnColor, #e6283c);
+  color: white;
+  content: counter(megacount);
+  font-size: initial;
+  font-weight: bold;
+  font-style: initial;
+  padding: 0.18rem 0.32em 0.08rem;
 }
 
-/*--- Mobile Query --*/
+/* --- Mobile Query -- */
 @media only screen and (max-width: 1279px) {
-    .fncon {
-        position: fixed;
-        bottom: 1.3rem;
-        left: calc(11% - 50px);
-        width: 70%;
-        transition:
-            opacity 0.15s linear var(--fnLinger),
-            left var(--fnTransition) cubic-bezier(.08,.72,.5,.94) var(--fnLinger),
-            visibility 0.01s linear var(--fnInteract);
-    }
-    .fnnum:hover + .fncon, .fncon:hover {
-        left: 11%;
-        transition:
-            opacity 0.15s linear,
-            left var(--fnTransition) cubic-bezier(.08,.72,.5,.94);
-    }
+
+  .fncon {
+    position: fixed;
+    bottom: 1.3rem;
+    left: calc(11% - 50px);
+    width: 70%;
+    transition: opacity 0.15s linear var(--fnLinger),
+      left var(--fnTransition) cubic-bezier(0.08, 0.72, 0.5, 0.94) var(--fnLinger),
+      visibility 0.01s linear var(--fnInteract);
+  }
+
+  .fnnum:hover + .fncon,
+  .fncon:hover {
+    left: 11%;
+    transition: opacity 0.15s linear,
+      left var(--fnTransition) cubic-bezier(0.08, 0.72, 0.5, 0.94);
+  }
 }

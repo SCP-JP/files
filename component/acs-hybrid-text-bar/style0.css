@@ -1,4 +1,3 @@
-
 :root {
   --five-color: 196, 2, 51;
   --four-color: 255, 109, 0;
@@ -32,7 +31,7 @@
 }
 
 .color-gray {
-  background-color: rgba(var(--gray-monochrome, 66, 66, 72), 0.15);
+  background-color: rgb(var(--gray-monochrome, 66, 66, 72) 0.15);
 }
 
 .color-white {
@@ -57,7 +56,7 @@
   margin-top: 0.5rem;
 }
 
-.class-table-box>div {
+.class-table-box > div {
   padding: 0.5rem;
 }
 
@@ -74,6 +73,7 @@
 }
 
 @media (max-width: 500px) {
+
   .icons {
     grid-template-columns: repeat(3, calc((100% / 3) - 0.25rem));
   }
@@ -94,13 +94,14 @@
   text-transform: uppercase;
 }
 
-h1, h2 {
+h1,
+h2 {
   text-align: center;
 }
 
 .step_container {
   margin: 0.5rem 0;
-  border: 1px solid #999;
+  border: 1px solid #999999;
   padding: 1em;
 }
 
@@ -108,7 +109,7 @@ h1, h2 {
   display: flex;
   align-content: stretch;
   padding-top: 1em;
-  border-top: 1px dashed #999;
+  border-top: 1px dashed #999999;
 }
 
 .help blockquote {
@@ -116,7 +117,7 @@ h1, h2 {
   font-size: 85%;
 }
 
-.help blockquote>p {
+.help blockquote > p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -126,7 +127,7 @@ h1, h2 {
   margin: 0;
 }
 
-.help blockquote>p * {
+.help blockquote > p * {
   margin: 0 0.1rem;
   height: 100%;
 }
@@ -141,7 +142,7 @@ h1, h2 {
   padding: 0;
 }
 
-.help blockquote:nth-of-type(1)>p {
+.help blockquote:nth-of-type(1) > p {
   justify-content: flex-end;
 }
 
@@ -150,7 +151,7 @@ h1, h2 {
   width: 50%;
 }
 
-#page-content>.collapsible-block {
+#page-content > .collapsible-block {
   display: block;
   text-align: center;
   padding: 0.75em;
@@ -159,7 +160,7 @@ h1, h2 {
   border-bottom: 0.125rem dashed slategrey;
 }
 
-#page-content>div.collapsible-block>div.collapsible-block-unfolded>div.collapsible-block-content {
+#page-content > div.collapsible-block > div.collapsible-block-unfolded > div.collapsible-block-content {
   text-align: left;
 }
 

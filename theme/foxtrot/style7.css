@@ -1,38 +1,46 @@
 #page-content .creditRate.creditModule {
-    float: none !important;
+  float: none !important;
 }
+
 #page-content .creditRate.creditModule .rate-box-with-credit-button {
-    border: solid 1px #bbb;
-    min-width: unset;
+  border: solid 1px #bbbbbb;
+  min-width: unset;
 }
+
 #page-content .creditRate.creditModule .page-rate-widget-box,
 #page-content .creditRate.creditModule .creditButton {
-    border: none 0;
+  border: none 0;
 }
+
 #page-content .creditRate.creditModule .page-rate-widget-box .cancel {
-    padding: 0;
+  padding: 0;
 }
+
 #page-content .creditRate.creditModule .page-rate-widget-box .cancel a {
-    margin: 0 1px;
+  margin: 0 1px;
 }
+
 #page-content .creditRate.creditModule .creditButton {
-    width: 21px;
-    height: 16px;
-    border: none 0;
-    margin: 0;
-    padding: 0 1px 0 0;
+  width: 21px;
+  height: 16px;
+  border: none 0;
+  margin: 0;
+  padding: 0 1px 0 0;
 }
+
 #page-content .creditRate.creditModule .creditButton a {
-    margin: 0 1px;
+  margin: 0 1px;
 }
 
 #page-content #u-credit-view .modalbox .modalbox-title {
-    background: linear-gradient(90deg, #eee 2em, #0000 2em calc(100% - 2em), #eee calc(100% - 2em)), linear-gradient(0deg, #333 1px, #eee 1px);
+  background: linear-gradient(90deg, #eeeeee 2em, #00000000 2em calc(100% - 2em), #eeeeee calc(100% - 2em)), linear-gradient(0deg, #333333 1px, #eeeeee 1px);
 }
+
 #page-content #u-credit-view .modalbox .creditBottomRate {
-    padding: 1em 0 0;
-    background: linear-gradient(90deg, #fff 2em, #0000 2em calc(100% - 2em), #fff calc(100% - 2em)), linear-gradient(#333 1px, #fff 1px);
+  padding: 1em 0 0;
+  background: linear-gradient(90deg, #ffffff 2em, #00000000 2em calc(100% - 2em), #ffffff calc(100% - 2em)), linear-gradient(#333333 1px, #ffffff 1px);
 }
+
 #page-content #u-credit-view .modalbox::after {
-    height: 44px;
+  height: 44px;
 }

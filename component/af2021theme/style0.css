@@ -1,111 +1,136 @@
 .c_international-container .panel-body {
-    padding: 0;
+  padding: 0;
 }
+
 .c_international-body {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    *background: rgba(255,255,255,.9) url(http://www.scp-wiki.net/local--files/component:theme/panel-bg-gradient-reverse.png) bottom repeat-x;
-    padding: 5px 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  *background: rgb(255 255 255 / 90%) url(http://www.scp-wiki.net/local--files/component:theme/panel-bg-gradient-reverse.png) bottom repeat-x;
+  padding: 5px 0;
 }
+
 .c_international-box {
-    margin: 5px 4px;
-    text-align: center;
-    min-width: 12em;
+  margin: 5px 4px;
+  text-align: center;
+  min-width: 12em;
 }
+
 .c_international-box div > p,
 .international-entry div > p {
-    margin: 0;
-}
-.c_international-box .c_international-text {
-    margin: 5px 0;
-    font-size: 99%;
-}
-.international-entry {
-    padding: 10px 10px 5px 10px;
-    border-top: 1px solid #eeeee0;
-}
-.international-entry .international-description {
-    margin: 5px 20px;
-    font-size: 99%;
-}
-.c_international-box .c_international-logo img {
-    height: 90px;
+  margin: 0;
 }
 
+.c_international-box .c_international-text {
+  margin: 5px 0;
+  font-size: 99%;
+}
+
+.international-entry {
+  padding: 10px 10px 5px;
+  border-top: 1px solid #eeeee0;
+}
+
+.international-entry .international-description {
+  margin: 5px 20px;
+  font-size: 99%;
+}
+
+.c_international-box .c_international-logo img {
+  height: 90px;
+}
 
 @media (min-width: 768px) and (max-width: 979px) {
-    .c_international-box .c_international-logo img {
-        height: 80px;
-    }
-    .c_international-box {
-        min-width: 10em;
-    }
+
+  .c_international-box .c_international-logo img {
+    height: 80px;
+  }
+
+  .c_international-box {
+    min-width: 10em;
+  }
 }
+
 @media (min-width: 581px) and (max-width: 767px) {
-    .c_international-box .c_international-logo img {
-        height: 70px;
-    }
-    .c_international-box {
-        min-width: 10em;
-    }
+
+  .c_international-box .c_international-logo img {
+    height: 70px;
+  }
+
+  .c_international-box {
+    min-width: 10em;
+  }
 }
+
 @media (min-width: 480px) and (max-width: 580px) {
-    .c_international-box .c_international-logo img {
-        height: 60px;
-    }
-    .c_international-box {
-        min-width: 10em;
-    }
+
+  .c_international-box .c_international-logo img {
+    height: 60px;
+  }
+
+  .c_international-box {
+    min-width: 10em;
+  }
 }
+
 @media (max-width: 479px) {
-    .c_international-box .c_international-logo img {
-        height: 50px;
-    }
-    .c_international-box {
-        min-width: 10em;
-    }
+
+  .c_international-box .c_international-logo img {
+    height: 50px;
+  }
+
+  .c_international-box {
+    min-width: 10em;
+  }
 }
 
 .feature-block {
-    height: 210px;
+  height: 210px;
 }
+
 .feature-block .panel-body {
-    height: 130px;
-    overflow-y: hidden;
+  height: 130px;
+  overflow-y: hidden;
 }
+
 .feature-block .feature-title {
-    font-size: 120%;
-    font-weight: bold;
+  font-size: 120%;
+  font-weight: bold;
 }
+
 .feature-block .feature-subtitle {
-    font-size: 90%;
+  font-size: 90%;
 }
 
 .feature-block .feature-title > p,
 .feature-block .feature-subtitle > p {
-    margin: 0;
+  margin: 0;
 }
 
 .news-block .panel-body {
-    padding: 0;
+  padding: 0;
 }
+
 .news-block .panel-body .alternate {
-    padding: 5px 10px;
+  padding: 5px 10px;
 }
+
 .news-block .news-title {
-    font-weight: bold;
-    font-size: 110%;
-    margin-bottom: 5px;
-    color: #633;
+  font-weight: bold;
+  font-size: 110%;
+  margin-bottom: 5px;
+  color: #663333;
 }
+
 .news-block .news-content {
-    margin: 5px 0;
+  margin: 5px 0;
 }
+
 .news-block .news-title > p,
 .news-block .news-content > p {
-    margin: 0;
+  margin: 0;
 }
+
 .news-block .list-pages-box .list-pages-item:nth-child(even) .alternate {
-    background-color: rgba(255,255,255,.9);
+  background-color: rgb(255 255 255 / 90%);
 }
