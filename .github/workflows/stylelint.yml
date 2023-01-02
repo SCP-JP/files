@@ -2,7 +2,7 @@ name: Stylelint
 on:
   pull_request:
     branches:
-      - master
+      - main
     paths:
       - '**.css'
       - '**.scss'
