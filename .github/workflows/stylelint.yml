@@ -4,8 +4,8 @@ on:
     branches:
       - main
     paths:
-      - '**.css'
-      - '**.scss'
+      - '**/*.css'
+      - '**/*.scss'
 
 jobs:
   linters:
