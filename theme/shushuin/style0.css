@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
-/*header*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP");
+
+/* header */
 
 div#container-wrap {
-  background-image: linear-gradient(165deg, rgba(240, 240, 240, 0.8) 0%, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 0) 90%, rgba(240, 240, 240, 0.8) 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-31-wtu3/paper.jpg");
+  background-image: linear-gradient(165deg, rgb(240 240 240 / 80%) 0%, rgb(255 255 255 / 0%) 2%, rgb(255 255 255 / 0%) 90%, rgb(240 240 240 / 80%) 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-31-wtu3/paper.jpg");
   background-size: 100% 100%, 350px 350px;
   background-repeat: no-repeat, repeat;
 }
+
 #header {
   background: #e0e0d5;
   background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-32-ejz5/shushusign-1.png) 10px 40px no-repeat;
 }
+
 #header h1 {
   position: relative;
   top: 35px;
@@ -17,92 +20,120 @@ div#container-wrap {
   min-height: 100px;
   width: 190px;
 }
+
 #header h1 a {
   opacity: 0;
 }
+
 #header h2 {
   display: none;
 }
-#top-bar a, #top-bar a:hover, #top-bar ul li.sfhover a, #top-bar ul li:hover a {
+
+#top-bar a,
+#top-bar a:hover,
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
   background: #f6f7fb;
   color: #486a8a;
 }
+
 #login-status {
   color: #486a8a;
 }
+
 #login-status a {
   color: inherit;
 }
+
 #search-top-box-input {
-  border: solid 1px #999;
+  border: solid 1px #999999;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: none;
-  color: #000;
+  color: #000000;
 }
-#search-top-box-input:hover, #search-top-box-input:focus {
-  border: solid 1px #000;
-  background-color: #fff;
+
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+  border: solid 1px #000000;
+  background-color: #ffffff;
   box-shadow: none;
-  color: #000;
+  color: #000000;
 }
-#search-top-box-form input[type=submit] {
+
+#search-top-box-form input[type = "submit"] {
   padding: 2px 5px;
-  border: solid 1px #999;
+  border: solid 1px #999999;
   border-radius: 5px;
   background: none;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: none;
-  color: #ccc;
+  color: #cccccc;
   font-weight: bold;
   font-size: 90%;
   cursor: pointer;
 }
-#search-top-box-form input[type=submit]:hover, #search-top-box-form input[type=submit]:focus {
-  border: solid 1px #000;
+
+#search-top-box-form input[type = "submit"]:hover,
+#search-top-box-form input[type = "submit"]:focus {
+  border: solid 1px #000000;
   background: none;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: none;
-  color: #000;
+  color: #000000;
   text-shadow: none;
 }
+
 #side-bar .side-block {
   border-radius: 0;
   box-shadow: none;
   filter: sepia(100%);
 }
+
 #side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
   border-radius: 0;
   box-shadow: none;
   filter: sepia(100%);
 }
+
 @media (max-width: 1050px) {
+
   .page-history tbody tr td:last-child {
     width: 35%;
   }
+
   .owindow {
     min-width: 80%;
     max-width: 99%;
   }
-  .modal-body .table, .modal-body .table~div {
+
+  .modal-body .table,
+  .modal-body .table ~ div {
     float: left;
   }
+
   .owindow .button-bar {
     float: right;
   }
+
   .owindow div .btn-primary {
     float: left;
     width: 100%;
   }
-  .owindow div .btn-primary~div {
+
+  .owindow div .btn-primary ~ div {
     width: 100%;
   }
+
   .yui-navset {
     z-index: 1;
   }
-  #navi-bar, #navi-bar-shadow {
+
+  #navi-bar,
+  #navi-bar-shadow {
     display: none;
   }
+
   .open-menu a {
     position: fixed;
     bottom: 0.5em;
@@ -110,34 +141,35 @@ div#container-wrap {
     z-index: 15;
     width: 30px;
     height: 30px;
-    border: 0.2em solid #888 !important;
+    border: 0.2em solid #888888 !important;
     border-radius: 3em;
-    background-color: #fff !important;
-    color: #888 !important;
+    background-color: #ffffff !important;
+    color: #888888 !important;
     text-align: center;
     font-weight: 700;
     font-size: 30px;
-    font-family: san-serif;
+    font-family: "san-serif";
     line-height: 0.9em;
   }
+
   .open-menu a:hover {
-    -webkit-box-shadow: 0px 0px 20px 3px rgba(153, 153, 153, 1);
-    -moz-box-shadow: 0px 0px 20px 3px rgba(153, 153, 153, 1);
-    -ms-box-shadow: 0px 0px 20px 3px rgba(153, 153, 153, 1);
-    -o-box-shadow: 0px 0px 20px 3px rgba(153, 153, 153, 1);
-    box-shadow: 0px 0px 20px 3px rgba(153, 153, 153, 1);
+    box-shadow: 0 0 20px 3px rgb(153 153 153 / 100%);
+    box-shadow: 0 0 20px 3px rgb(153 153 153 / 100%);
+    box-shadow: 0 0 20px 3px rgb(153 153 153 / 100%);
+    box-shadow: 0 0 20px 3px rgb(153 153 153 / 100%);
     text-decoration: none !important;
   }
+
   #main-content {
     margin: 0 5%;
     padding: 0;
     max-width: 90%;
-    -webkit-transition: 0.5s ease-in-out 0.1s;
-    -moz-transition: 0.5s ease-in-out 0.1s;
-    -ms-transition: 0.5s ease-in-out 0.1s;
-    -o-transition: 0.5s ease-in-out 0.1s;
+    transition: 0.5s ease-in-out 0.1s;
+    transition: 0.5s ease-in-out 0.1s;
+    transition: 0.5s ease-in-out 0.1s;
     transition: 0.5s ease-in-out 0.1s;
   }
+
   #side-bar {
     position: fixed;
     top: 0;
@@ -145,24 +177,25 @@ div#container-wrap {
     z-index: 10;
     display: block;
     overflow-y: auto;
-    padding: 1em 1em 0 1em;
+    padding: 1em 1em 0;
     width: 17em;
     height: 100%;
     background-color: #ffd27d;
-    -webkit-transition: left 0.5s ease-in-out 0.1s;
-    -moz-transition: left 0.5s ease-in-out 0.1s;
-    -ms-transition: left 0.5s ease-in-out 0.1s;
-    -o-transition: left 0.5s ease-in-out 0.1s;
+    transition: left 0.5s ease-in-out 0.1s;
+    transition: left 0.5s ease-in-out 0.1s;
+    transition: left 0.5s ease-in-out 0.1s;
     transition: left 0.5s ease-in-out 0.1s;
   }
-  #side-bar:after {
+
+  #side-bar::after {
     position: absolute;
     top: 0;
     width: 0;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(0 0 0 / 20%);
     content: "";
   }
+
   #side-bar:target {
     left: 0;
     z-index: 10;
@@ -171,9 +204,11 @@ div#container-wrap {
     width: 17em;
     border: 1px solid #dedede;
   }
-  #side-bar:target+#main-content {
+
+  #side-bar:target + #main-content {
     left: 0;
   }
+
   #side-bar:target .close-menu {
     position: fixed;
     top: 0;
@@ -182,92 +217,110 @@ div#container-wrap {
     display: block;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3) 1px 1px repeat;
+    background: rgb(0 0 0 / 30%) 1px 1px repeat;
   }
+
   .mobile-top-bar {
     display: block;
   }
-  #top-bar .mobile-top-bar>ul {
+
+  #top-bar .mobile-top-bar > ul {
     display: none;
   }
 }
-/*pagee contents elements*/
+
+/* pagee contents elements */
 
 #page-title {
   display: none;
 }
+
 #page-content {
-  margin: 0em 10px 10px;
+  margin: 0 10px 10px;
   padding: 1em;
-  background-color: #fff;
-  box-shadow: 0 0 0 1px #000, 0 0 0 3px #fff, 0 0 0 6px #000;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px #000000, 0 0 0 3px #ffffff, 0 0 0 6px #000000;
 }
+
 h4 {
   margin: 0 0 0.6em;
   padding: 0.5em 0 0.75em;
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid #bbbbbb;
   color: #486a8a;
   text-align: center;
   font-weight: normal;
   font-size: 200%;
-  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", 'Noto Serif JP', serif;
+  font-family: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "Noto Serif JP", serif;
   unicode-bidi: bidi-override;
-  -webkit-font-feature-settings: "trad";
-  -moz-font-feature-settings: "trad";
+  font-feature-settings: "trad";
   font-feature-settings: "trad";
   font-variant-east-asian: traditional;
 }
-h4>span {
+
+h4 > span {
   display: block;
   margin: 0 -0.5em;
 }
-h4>span span {
+
+h4 > span span {
   position: relative;
   display: inline-block;
 }
-h4>span>span:before, h4>span>span:after {
+
+h4 > span > span::before,
+h4 > span > span::after {
   position: absolute;
   display: block;
 }
-h4>span>span:first-of-type {
+
+h4 > span > span:first-of-type {
   margin-bottom: 0.25em;
   padding: 0 1em;
 }
-h4>span>span:first-of-type:before {
+
+h4 > span > span:first-of-type::before {
   top: 0;
   left: 0;
   content: "「";
 }
-h4>span>span:first-of-type:after {
+
+h4 > span > span:first-of-type::after {
   right: 0;
   bottom: 0;
   content: "」";
 }
-h4>span>span[style="font-size:60%;"] {
+
+h4 > span > span[style = "font-size:60%;"] {
   padding: 0 0.5em;
   text-indent: 0.25em;
   letter-spacing: 0.25em;
 }
-h4>span>span[style="font-size:60%;"]:before {
+
+h4 > span > span[style = "font-size:60%;"]::before {
   top: 0;
   left: 0;
   content: "(";
 }
-h4>span>span[style="font-size:60%;"]:after {
+
+h4 > span > span[style = "font-size:60%;"]::after {
   right: 0;
   bottom: 0;
   content: ")";
 }
+
 a {
   color: #486a8a;
 }
+
 ol {
   list-style-type: cjk-ideographic;
 }
-blockquote, .blockquote {
+
+blockquote,
+.blockquote {
   border: 1px solid #c8c8c8;
-  background: linear-gradient(165deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  box-shadow: 0.25em 0.25em rgba(240, 240, 240, 0.8);
+  background: linear-gradient(165deg, #f0f0f0 0%, #ffffff 2%, #ffffff 8%, rgb(255 255 255 / 69%) 18%, rgb(255 255 255 / 19%) 34%, rgb(255 255 255 / 0%) 40%, rgb(255 255 255 / 6%) 51%, rgb(255 255 255 / 14%) 66%, rgb(255 255 255 / 27%) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  box-shadow: 0.25em 0.25em rgb(240 240 240 / 80%);
 }
 
 .imageFrame {
@@ -279,12 +332,11 @@ blockquote, .blockquote {
   margin: 1em 1em 1em 0.5em;
   padding: 0.5em 0.5em 1px;
   border: 1px solid #c8c8c8;
-  background: -webkit-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: -moz-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: -o-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: -ms-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: linear-gradient(165deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  box-shadow: 0.25em 0.25em rgba(240, 240, 240, 0.8);
+  background: linear-gradient(285deg, #f0f0f0 0%, #ffffff 2%, #ffffff 8%, rgb(255 255 255 / 69%) 18%, rgb(255 255 255 / 19%) 34%, rgb(255 255 255 / 0%) 40%, rgb(255 255 255 / 6%) 51%, rgb(255 255 255 / 14%) 66%, rgb(255 255 255 / 27%) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: linear-gradient(285deg, #f0f0f0 0%, #ffffff 2%, #ffffff 8%, rgb(255 255 255 / 69%) 18%, rgb(255 255 255 / 19%) 34%, rgb(255 255 255 / 0%) 40%, rgb(255 255 255 / 6%) 51%, rgb(255 255 255 / 14%) 66%, rgb(255 255 255 / 27%) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: linear-gradient(285deg, #f0f0f0 0%, #ffffff 2%, #ffffff 8%, rgb(255 255 255 / 69%) 18%, rgb(255 255 255 / 19%) 34%, rgb(255 255 255 / 0%) 40%, rgb(255 255 255 / 6%) 51%, rgb(255 255 255 / 14%) 66%, rgb(255 255 255 / 27%) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: linear-gradient(165deg, #f0f0f0 0%, #ffffff 2%, #ffffff 8%, rgb(255 255 255 / 69%) 18%, rgb(255 255 255 / 19%) 34%, rgb(255 255 255 / 0%) 40%, rgb(255 255 255 / 6%) 51%, rgb(255 255 255 / 14%) 66%, rgb(255 255 255 / 27%) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  box-shadow: 0.25em 0.25em rgb(240 240 240 / 80%);
 }
 
 .imageFrame.right {
@@ -298,7 +350,7 @@ blockquote, .blockquote {
   margin: 1em auto;
 }
 
-.imageFrame:before {
+.imageFrame::before {
   position: absolute;
   background-repeat: no-repeat;
   content: "";
@@ -319,12 +371,12 @@ blockquote, .blockquote {
   width: 100%;
   height: 130px;
   margin-bottom: 0.5em;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(0 0 0 / 20%);
   border-radius: 2px;
 }
 
 .page-rate-widget-box {
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 3px rgb(0 0 0 / 50%);
 }
 
 div.page-rate-widget-box .rate-points {
@@ -362,14 +414,17 @@ div.page-rate-widget-box .rate-points {
   background: #486a8a;
   color: #568bbd;
 }
+
 .rateBox .creditButton a:hover {
   color: #fffff0;
 }
 
 .heritage-rating-module {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 25%);
 }
+
 /* CSS for CreditButton Added by ukwhatn */
+
 #page-content .rate-box-with-credit-button .creditButton {
   background-color: #486a8a;
   border: 1px solid #486a8a;
@@ -379,7 +434,9 @@ div.page-rate-widget-box .rate-points {
   background-color: #568bbd;
   border: 1px solid #568bbd;
 }
+
 @media (max-width: 580px) {
+
   #page-content .wikisys--template-dialog {
     width: 80%;
   }

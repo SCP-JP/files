@@ -1,117 +1,142 @@
-@import url('https://fonts.googleapis.com/css?family=K2D');
+@import url("https://fonts.googleapis.com/css?family=K2D");
 
 .log-form .mailform-box .buttons,
 .log-form .mailform-box td:nth-child(1),
 .log-form .field-error-message {
-display:none;
+  display: none;
 }
+
 .log-form + p {
-text-align: center;
+  text-align: center;
 }
-.log-form + .collapsible-block .collapsible-block-unfolded-link{
-margin:0.5em 0;
-text-align: center;
+
+.log-form + .collapsible-block .collapsible-block-unfolded-link {
+  margin: 0.5em 0;
+  text-align: center;
 }
+
 .log-form + .collapsible-block .collapsible-block-folded {
-margin:0.5em 0;text-align: center;
+  margin: 0.5em 0;
+  text-align: center;
 }
+
 .log-form a,
 .log-form + .collapsible-block a.collapsible-block-link {
-display: inline-block;
-width: 50%;
-max-width: 160px;
-background-color: Maroon;
-color: white;
-padding: 10px 20px;
-border: none;
-cursor: pointer;
-opacity: 0.9;
-transition: 0.09s;
-border-radius: 3px;
-transition 0.8s;
+  display: inline-block;
+  width: 50%;
+  max-width: 160px;
+  background-color: maroon;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.09s;
+  border-radius: 3px;
+transition 0.8s
 }
+
 .log-form a:hover,
 .log-form + .collapsible-block a.collapsible-block-link:hover {
-opacity: 1;
-transition: 0.8s;
-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
-text-decoration: none;
+  opacity: 1;
+  transition: 0.8s;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 70%);
+  text-decoration: none;
 }
+
 .log-form a:active,
 .log-form + .collapsible-block a.collapsible-block-link:active {
-transition: 0.09s;
-transform: translateY(1px);
-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+  transition: 0.09s;
+  transform: translateY(1px);
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 0%);
 }
-.log-form .mailform-box ,.log-form .mailform-box .form {
-width: 100%;
-max-width: 450px!important;
-margin: auto;
+
+.log-form .mailform-box,
+.log-form .mailform-box .form {
+  width: 100%;
+  max-width: 450px !important;
+  margin: auto;
 }
+
 .log-form {
-font-family: Verdana;
-text-align: center;
+  font-family: "Verdana";
+  text-align: center;
 }
+
 .log-form * {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 .log-form .input-container {
-display: -ms-flexbox; /* IE10 */
-display: flex;
-width: 100%;
-margin-bottom: 15px;
+  display: flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
 }
+
 .log-form .text {
-width: 100%;
-padding: 10px;
-outline: none;
-border-color: #aaa;
-border-width: 1px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-color: #aaaaaa;
+  border-width: 1px;
 }
-.log-form .text:focus{
-padding: 9px;
-border-style: solid;
-border-color: maroon;
-border-width: 2px;
+
+.log-form .text:focus {
+  padding: 9px;
+  border-style: solid;
+  border-color: maroon;
+  border-width: 2px;
 }
-.log-form .logint{
-font-size: 420%; 
-font-family: 'K2D', sans-serif;
+
+.log-form .logint {
+  font-size: 420%;
+  font-family: "K2D", sans-serif;
 }
+
 .log-form .btn-false {
-display: none;
+  display: none;
 }
+
 .log-form .true-form tr:nth-of-type(2) .text {
-text-security:disc;
--webkit-text-security:disc;
--mox-text-security:disc;
+  text-security: disc;
+  -webkit-text-security: disc;
+  -mox-text-security: disc;
 }
 
 .log-form td input {
-margin-top: 1.5em!important;
+  margin-top: 1.5em !important;
 }
 
 @media (max-width: 400px) {
-.log-form .logint {
-font-size: 285%!important;
+
+  .log-form .logint {
+    font-size: 285% !important;
+  }
 }
-}
+
 @media (min-width: 400px) and (max-width: 450px) {
-.log-form .logint {
-font-size: 330%!important;
+
+  .log-form .logint {
+    font-size: 330% !important;
+  }
 }
-}
+
 @media (min-width: 450px) and (max-width: 767px) {
-.log-form .logint {
-font-size: 365%!important;
+
+  .log-form .logint {
+    font-size: 365% !important;
+  }
 }
-}
+
 @media (max-width: 767px) {
-.log-form .form tr {
-text-align: center!important;
-}
-.log-form .form td {
-display: inline-block;
-width: 100%;
-}
+
+  .log-form .form tr {
+    text-align: center !important;
+  }
+
+  .log-form .form td {
+    display: inline-block;
+    width: 100%;
+  }
 }

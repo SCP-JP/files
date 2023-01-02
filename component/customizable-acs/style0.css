@@ -1,11 +1,11 @@
-
 body .anom-bar-container.ekhi .danger-diamond > .quadrants > .left-quad,
 body .anom-bar-container.danger .danger-diamond > .quadrants > .right-quad {
-    background-color:rgba(255,109,0,0.25);
-    background-color: rgb(var(--four-color),0.25);
+  background-color: rgb(255 109 0 / 25%);
+  background-color: rgb(var(--four-color) 0.25);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
+
   .calibold-wrap,
   .calibold {
     animation-name: jumpscare;
@@ -17,41 +17,42 @@ body .anom-bar-container.danger .danger-diamond > .quadrants > .right-quad {
 }
 
 @keyframes jumpscare {
+
   from {
     opacity: 0;
-    transform: scale(0.5,0.5);
+    transform: scale(0.5, 0.5);
   }
+
   to {
     opacity: 1;
-    transform: scale(1,1);
+    transform: scale(1, 1);
   }
 }
 
 .calibold-wrap {
-    animation-delay: 300s;
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    z-index: 20;
-    width: 302px;
-    text-align: center;
+  animation-delay: 300s;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  z-index: 20;
+  width: 302px;
+  text-align: center;
 }
 
 #page-content .calibold-wrap .collapsible-block-folded .collapsible-block-link {
-    opacity: 0;
+  opacity: 0;
 }
 
 .calibold {
-    animation-delay: 300s;
-    position: fixed;
-    z-index: 20;
-    background-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-148-8v3t/calibold-jumpscare.png");
-    height: 457px;
-    width: 302px;
-    text-align: center;
+  animation-delay: 300s;
+  position: fixed;
+  z-index: 20;
+  background-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-148-8v3t/calibold-jumpscare.png");
+  height: 457px;
+  width: 302px;
+  text-align: center;
 }
 
 .calibold p {
-    line-height: 457px!important;
+  line-height: 457px !important;
 }
-

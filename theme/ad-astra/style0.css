@@ -1,604 +1,636 @@
-
 /* AAPA New CSS Theme by NatVoltaic and stormbreath, based on code by Cyantreuse and InitHello */
+
 /* Edited for SCP財団 by SCP-JP Technical Staff(Dr Devan) */
+
 /* Licensed as CC-by-SA-3.0 */
+
 /* Header image is public domain, having been taken by NASA during the Hubble Program. Header icon created by Woedenaz. Top-bar by TSATPWTCOTTTADC. */
+
 /* spaaaaaaaaaaaaaaaaace */
 
-@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:400,800');
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:400,800");
 
 /* HEADER */
+
 div#extra-div-1 {
-    height: 140px;
-    width: 100%;
-    top: 0;
-    position: absolute;
-    background: url("http://scp-wiki.wdfiles.com/local--files/theme:ad-astra/hubble.png");
-    background-size: cover;
-    background-position: 50% 50%;
+  height: 140px;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  background: url("http://scp-wiki.wdfiles.com/local--files/theme:ad-astra/hubble.png");
+  background-size: cover;
+  background-position: 50% 50%;
 } /* SPACE */
 
 div#container-wrap {
-    background-image: none;
+  background-image: none;
 }
 
 div#extra-div-2 {
-    height: 22px;
-    width: 100%;
-    top: 140px;
-    position: absolute;
-    background: linear-gradient(to bottom,
-      rgb(92, 29, 36),
-      rgb(66,21,26));
+  height: 22px;
+  width: 100%;
+  top: 140px;
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgb(92 29 36),
+    rgb(66 21 26)
+  );
 } /* Red-top bar */
 
 #header {
-    background: url("http://scp-wiki.wdfiles.com/local--files/theme:ad-astra/logo.svg") 15px 40px no-repeat;
-    background-size: 6rem;
+  background: url("http://scp-wiki.wdfiles.com/local--files/theme:ad-astra/logo.svg") 15px 40px no-repeat;
+  background-size: 6rem;
 }
+
 @media (max-width: 580px) and (min-width: 480px) {
-    #header {
-    	background-position: 0.5em 4.5em;
-    	background-size: 66px 66px;
-    }
+
+  #header {
+    background-position: 0.5em 4.5em;
+    background-size: 66px 66px;
+  }
 }
 
 @media (max-width: 479px) {
-    #header {
-    	background-position: 0 5.5em;
-    	background-size: 55px 55px;
-    }
+
+  #header {
+    background-position: 0 5.5em;
+    background-size: 55px 55px;
+  }
 }
 
 #header h1 a::before {
-    content: "AD ASTRA PER ASPERA"; 
-    font-size: 80%;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 800;
-    text-shadow: 4px 4px 4px rgba(0,0,0,.8);
+  content: "AD ASTRA PER ASPERA";
+  font-size: 80%;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 800;
+  text-shadow: 4px 4px 4px rgb(0 0 0 / 80%);
 }
 
-#header h1 a span{
-    display: block;
-    visibility: hidden;
+#header h1 a span {
+  display: block;
+  visibility: hidden;
 }
 
 #header h2 span {
-    display: block;
-    margin: 0;
-    margin-left: 9px;
-    padding: 19px 0;
-    font-weight: bold;
-    color: transparent;
-    text-shadow: 0px 0px 0px;
+  display: block;
+  margin: 0;
+  margin-left: 9px;
+  padding: 19px 0;
+  font-weight: bold;
+  color: transparent;
+  text-shadow: 0 0 0;
 }
- 
+
 #header h2 span::before {
-    content: "困難を通じて天へ";
-    color: #ffc780;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-weight: 400;
-    font-size: 120%;
-    text-shadow: 3px 3px 3px rgba(0,0,0,.9);
+  content: "困難を通じて天へ";
+  color: #ffc780;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-size: 120%;
+  text-shadow: 3px 3px 3px rgb(0 0 0 / 90%);
 }
 
 /* Log-In Info */
+
 #login-status {
-    color: #ffc780;
+  color: #ffc780;
 }
+
 #login-status a {
-    background: transparent;
-    color: #ffc780;
+  background: transparent;
+  color: #ffc780;
 }
 
 #login-status ul a {
-    color: #ffbe3d;
-    background: #101d2e;
-    border-color: #ffc780;
+  color: #ffbe3d;
+  background: #101d2e;
+  border-color: #ffc780;
 }
 
 #login-status ul a:hover {
-   color: #ffbe3d;
-   font-weight: bold;
+  color: #ffbe3d;
+  font-weight: bold;
 }
 
 #account-topbutton {
-    background: transparent;
-    color: #ffc780;
-    border: none;
+  background: transparent;
+  color: #ffc780;
+  border: none;
 }
 
 #account-options {
-   border: 1px solid #ffc780;
+  border: 1px solid #ffc780;
 }
 
 /* Search Bar */
+
 #search-top-box-input,
 #search-top-box-input:hover,
 #search-top-box-input:focus {
-    border: solid 1px #ffb961;
-    background-color: #1b304d;
+  border: solid 1px #ffb961;
+  background-color: #1b304d;
 }
 
 #search-top-box-input {
-    color: #ffc780 !important;
+  color: #ffc780 !important;
 }
 
 #search-top-box-input:hover,
 #search-top-box-input:focus {
-    color: #ffb961 !important;
+  color: #ffb961 !important;
 }
- 
-#search-top-box-form input[type=submit],
-#search-top-box-form input[type=submit]:hover,
-#search-top-box-form input[type=submit]:focus {
-    border: solid 1px #ffb961;
-    background: #5C1D24;
-    color: #ffb961;
+
+#search-top-box-form input[type = "submit"],
+#search-top-box-form input[type = "submit"]:hover,
+#search-top-box-form input[type = "submit"]:focus {
+  border: solid 1px #ffb961;
+  background: #5c1d24;
+  color: #ffb961;
 }
 
 /* TITLE */
 
-h1, #page-title {
-    color: #ffb961;
+h1,
+#page-title {
+  color: #ffb961;
 }
 
 #page-title {
-    border-color: #ffc780;
+  border-color: #ffc780;
 }
 
 /* TOP-BAR SETTINGS */
-#top-bar a { 
-    color: #ccc 
+
+#top-bar a {
+  color: #cccccc;
 }
 
 #top-bar ul li ul {
-    border: solid 1px #ffc780;
-    border-radius: 0px 0px 10px 10px;
-    overflow: hidden;
+  border: solid 1px #ffc780;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
 }
 
 #top-bar ul li.sfhover ul li a,
 #top-bar ul li:hover ul li a {
-   border-top-color: #5C1D24;
+  border-top-color: #5c1d24;
 }
 
 #top-bar ul li.sfhover a,
 #top-bar ul li:hover a {
-    background: #5C1D24;
-    color: #ffbe3d;
+  background: #5c1d24;
+  color: #ffbe3d;
 }
 
 #top-bar ul li.sfhover a:hover,
 #top-bar ul li:hover a:hover {
-    background: #1b304d; /* top bar hover background color */
-    color: #ffbe3d;
+  background: #1b304d; /* top bar hover background color */
+  color: #ffbe3d;
 }
 
 /* SIDEBAR SETTINGS */
+
 #side-bar .side-block {
-    border: 2px solid #ffb961;
-    box-shadow: none;
-    background-color: #1b304d;
-    color: #ffc780;
+  border: 2px solid #ffb961;
+  box-shadow: none;
+  background-color: #1b304d;
+  color: #ffc780;
 }
 
-#side-bar .side-block[style="background-color: #a7dba2;"] {
-    background-color: #6B8020 !important;
+#side-bar .side-block[style = "background-color: #a7dba2;"] {
+  background-color: #6b8020 !important;
 }
-#side-bar .side-block[style="background-color: #fff0f0;"] {
-    background-color: #5C1D24 !important;
+
+#side-bar .side-block[style = "background-color: #fff0f0;"] {
+  background-color: #5c1d24 !important;
 }
-#side-bar .side-block[style="background-color: #e5e5ff;"] {
-    background-color: #26152e !important; 
-} 
-#side-bar .side-block[style="background-color: #f0f0f0;"] {
-    background-color: #4a456e !important; 
-} 
+
+#side-bar .side-block[style = "background-color: #e5e5ff;"] {
+  background-color: #26152e !important;
+}
+
+#side-bar .side-block[style = "background-color: #f0f0f0;"] {
+  background-color: #4a456e !important;
+}
 
 #side-bar .heading {
-    border-bottom: 2px solid #ffb961;
-    color: #ffb961;
+  border-bottom: 2px solid #ffb961;
+  color: #ffb961;
 }
 
 /* Side-Bar Images */
+
 .side-block .menu-item > .image {
-    filter:hue-rotate(60deg) brightness(400%);
+  filter: hue-rotate(60deg) brightness(400%);
 }
 
 /* Mobile Sidebar */
 @media (max-width: 767px) {
-    #side-bar {
-        background-color: #101d2e
-    }
- 
-    .open-menu a {
-        border: 0.2em solid #ffbe3d !important;
-        background-color: #101d2e !important;
-        color: #ffbe3d !important;
-    }
+
+  #side-bar {
+    background-color: #101d2e;
+  }
+
+  .open-menu a {
+    border: 0.2em solid #ffbe3d !important;
+    background-color: #101d2e !important;
+    color: #ffbe3d !important;
+  }
 }
 
 /* BODY */
+
 body {
-    background-color: #101d2e;
-    background-image: linear-gradient(#060b11, #101d2e 400px);
-    color: #ccc;
+  background-color: #101d2e;
+  background-image: linear-gradient(#060b11, #101d2e 400px);
+  color: #cccccc;
 }
 
 /* FOOTER */
+
 #footer {
-    background: #5C1D24;
-    color: #ffc780;
+  background: #5c1d24;
+  color: #ffc780;
 }
 
 #footer a {
-    color: #ffbe3d;
+  color: #ffbe3d;
 }
 
 #license-area {
-     color: #ccc;
+  color: #cccccc;
 }
 
 /* OTHER STRUCTURAL ELEMENTS */
 
 /* Links */
+
 a {
-    color: #ffbe3d;
+  color: #ffbe3d;
 }
 
 a.newpage {
-    color: #ffbe3d;
+  color: #ffbe3d;
 }
 
-#side-bar a:visited { 
-    color: #ffbe3d; 
+#side-bar a:visited {
+  color: #ffbe3d;
 }
- 
- a:visited {
-     color: #ffbe3d; 
+
+a:visited {
+  color: #ffbe3d;
 }
 
 /* Footnotes */
+
 .hovertip {
-     background-color: #1b304d !important;
-     border: 1px solid #808080;
+  background-color: #1b304d !important;
+  border: 1px solid #808080;
 }
 
 .footnotes-footer .title {
-    color: #ffb961;
+  color: #ffb961;
 }
 
-/* Scrollbar */ 
+/* Scrollbar */
+
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 185, 97);
+  background: rgb(255 185 97);
 }
 
 /* Pop-Up Windows */
+
 .owindow {
-    background-color: #1b304d;
-    border-color: #ffb961;
+  background-color: #1b304d;
+  border-color: #ffb961;
 }
- 
+
 .owindow .modal-header {
-    background-color: #1b304d;
+  background-color: #1b304d;
 }
- 
+
 .owindow .modal-body img {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
- 
+
 .owindow .button-bar a {
-    background-color: #1b304d;
-    border: 1px solid #808080;
+  background-color: #1b304d;
+  border: 1px solid #808080;
 }
 
 .owindow .button-bar a:hover {
-    background-color: #26152e;
+  background-color: #26152e;
 }
 
 /* Edit Buttons */
+
 .buttons .btn {
-    background-color: #1b304d;
-    border: 1px solid #ffb961;
-    color: #ffb961;
-    padding: 3px 5px;
+  background-color: #1b304d;
+  border: 1px solid #ffb961;
+  color: #ffb961;
+  padding: 3px 5px;
 }
 
 .buttons .btn:hover {
-    background-color: #26152e;
-    color: #ffb961;
+  background-color: #26152e;
+  color: #ffb961;
 }
 
-/* Edit Lock Info*/
+/* Edit Lock Info */
+
 #lock-info {
-    background-color: #1b304d;
-    border: 1px solid #ffb961;
+  background-color: #1b304d;
+  border: 1px solid #ffb961;
 }
 
 /* Code */
+
 .code {
-    border: 1px dashed #666;
-    background-color: transparent;
- 
-    font-family: "Consolas", "Courier New", "Roboto Mono", monospace;
-    font-size: 14px;
+  border: 1px dashed #666666;
+  background-color: transparent;
+  font-family: "Consolas", "Courier New", "Roboto Mono", monospace;
+  font-size: 14px;
 }
-   
+
 /* code highlighter stuff */
- 
-.hl-identifier, .hl-code, .hl-brackets {
-    color: #ccc;
+
+.hl-identifier,
+.hl-code,
+.hl-brackets {
+  color: #cccccc;
 }
- 
+
 .hl-var {
-    color: #21ff00;
+  color: #21ff00;
 }
- 
+
 .hl-special {
-    color: #ffff00;
+  color: #ffff00;
 }
- 
+
 .hl-reserved {
-    color: #00b2ff;
+  color: #00b2ff;
 }
- 
-.hl-number, .hl-string {
-    color: #ff0020;
+
+.hl-number,
+.hl-string {
+  color: #ff0020;
 }
 
 del {
-    color: #333;
+  color: #333333;
 }
+
 ins {
-    color: #333;   
+  color: #333333;
 }
 
 /* RATING AND INFO MODULES */
+
 .page-rate-widget-box {
-     box-shadow: 0px 0px 0px 2px #ffb961;
-     background-color: #5C1D24;
-     padding: .1em;
-    display: inline-flex;
-    align-items: center;
+  box-shadow: 0 0 0 2px #ffb961;
+  background-color: #5c1d24;
+  padding: 0.1em;
+  display: inline-flex;
+  align-items: center;
 }
 
 div.page-rate-widget-box .rate-points {
-    background-color: #5C1D24;
-    border: none;
-    color: #ffb961 !important;
-    text-transform: capitalize;
+  background-color: #5c1d24;
+  border: none;
+  color: #ffb961 !important;
+  text-transform: capitalize;
 }
+
 .page-rate-widget-box .rateup,
 .page-rate-widget-box .ratedown {
-    background-color: #5C1D24;
-    border-top: none;
-    border-bottom: none;
+  background-color: #5c1d24;
+  border-top: none;
+  border-bottom: none;
 }
+
 .page-rate-widget-box .rateup a,
 .page-rate-widget-box .ratedown a {
-    background: transparent;
-    color: #ffb961;
+  background: transparent;
+  color: #ffb961;
 }
+
 .page-rate-widget-box .rateup a:hover,
 .page-rate-widget-box .ratedown a:hover {
-    background: #ffb961;
-    color: #5C1D24;
+  background: #ffb961;
+  color: #5c1d24;
 }
+
 .page-rate-widget-box .cancel {
-    background: transparent;
-    background-color: #5C1D24;
-    border: none;
+  background: transparent;
+  background-color: #5c1d24;
+  border: none;
 }
+
 .page-rate-widget-box .cancel a {
-    color: #ffb961;
+  color: #ffb961;
 }
+
 .page-rate-widget-box .cancel a:hover {
-    background: #ffb961;
-    color: #5C1D24;
+  background: #ffb961;
+  color: #5c1d24;
 }
 
 /* Credit Module */
+
 #page-content .creditRate {
-    margin: 0 0 10px 0;
+  margin: 0 0 10px;
 }
 
 #page-content .rate-box-with-credit-button .creditButton {
-    box-shadow: 0px 0px 0px 2px #ffb961;
-    background-color: #5C1D24;
-    padding: .1em;
+  box-shadow: 0 0 0 2px #ffb961;
+  background-color: #5c1d24;
+  padding: 0.1em;
 }
 
 #page-content .rate-box-with-credit-button .creditButton p a {
-    border-left-color: #ffb961;
+  border-left-color: #ffb961;
 }
 
 #page-content .rate-box-with-credit-button .page-rate-widget-box .cancel {
-    border-radius: 0;
+  border-radius: 0;
 }
+
 #page-content .rate-box-with-credit-button div.page-rate-widget-box .rate-points {
-    border-left: 0;
+  border-left: 0;
 }
 
 #page-content .rate-box-with-credit-button .fa-info {
-     border-color: #ffb961 ;
-     color: #ffb961 ;
+  border-color: #ffb961;
+  color: #ffb961;
 }
+
 #page-content .rate-box-with-credit-button .fa-info:hover {
-     color: white;
+  color: white;
 }
 
 #page-content .modalbox {
-     background-color: #101d2e !important;
-     color: #ccc;
-     box-shadow: 0px 0px 0px 2px #ffb961;
+  background-color: #101d2e !important;
+  color: #cccccc;
+  box-shadow: 0 0 0 2px #ffb961;
 }
 
 #page-content .modalbox .modalbox-title {
-    background-color: #5C1D24;
+  background-color: #5c1d24;
 }
 
 .close-credits,
 .credit-back {
-    filter: hue-rotate(60deg) brightness(400%);
+  filter: hue-rotate(60deg) brightness(400%);
 }
 
 .credit-license a.cc {
-    color: #fff;
+  color: #ffffff;
 }
 
-
 /* Ayer's Info Module */
+
 :root {
-    --barColour: #5C1D24;
-    --linkColour: #ffb961;
+  --barColour: #5c1d24;
+  --linkColour: #ffb961;
 }
 
 .info-container .collapsible-block-unfolded {
-    border-color: #ffb961;
+  border-color: #ffb961;
 }
 
 /* PAGE ELEMENTS */
-blockquote{
-    margin: 1em 0;
-    border: 3px solid #ccc;
-    border-radius: 10px;
-    background-color: rgba(33,33,45);
+
+blockquote {
+  margin: 1em 0;
+  border: 3px solid #cccccc;
+  border-radius: 10px;
+  background-color: rgb(33 33 45);
 }
 
 .blue blockquote {
-     background-color: #1b304d;
+  background-color: #1b304d;
 }
- 
+
 .pink blockquote {
-     background-color: #5c1d24;
+  background-color: #5c1d24;
 }
 
 .gold blockquote {
-      background-color: #442f03;
+  background-color: #442f03;
 }
 
 .purp blockquote {
-    background-color: #26152e;
+  background-color: #26152e;
 }
 
 .scp-image-block .scp-image-caption {
-    background-color: #1b304d;
+  background-color: #1b304d;
 }
 
-.wiki-content-table tr th { 
-     background: #1b304d; 
-     color: #ffb961; 
-     border-color: #ffb961; 
+.wiki-content-table tr th {
+  background: #1b304d;
+  color: #ffb961;
+  border-color: #ffb961;
 }
 
 /* TABVIEW - ここから入らんとする者はすべて希望を捨てよ */
 
 .yui-navset * {
-    -webkit-transition: background-color 80ms cubic-bezier(0.4, 0.0, 0.2, 1), color 80ms cubic-bezier(0.4, 0.0, 0.2, 1);
-    -o-transition: background-color 80ms cubic-bezier(0.4, 0.0, 0.2, 1), color 80ms cubic-bezier(0.4, 0.0, 0.2, 1);
-    transition: background-color 80ms cubic-bezier(0.4, 0.0, 0.2, 1), color 80ms cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: background-color 80ms cubic-bezier(0.4, 0, 0.2, 1), color 80ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .yui-navset .yui-nav,
 .yui-navset .yui-navset-top .yui-nav {
-    zoom: unset;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    border-color: #ffb961;
-    width: -webkit-calc(100% - 0.125rem);
-    width: calc(100% - 0.125rem);
-    margin: 0 auto;
-    border: 0;
-    -webkit-box-shadow: 0 -webkit-calc(0.0625rem * 5) 0 0 #ffb961;
-    box-shadow: 0 calc(0.0625rem * 5) 0 0 #ffb961;
+  zoom: unset;
+  display: -webkit-box;
+  display: flex;
+  display: -moz-box;
+  display: flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  border-color: #ffb961;
+  width: calc(100% - 0.125rem);
+  margin: 0 auto;
+  border: 0;
+  box-shadow: 0 -webkit-calc(0.0625rem * 5) 0 0 #ffb961;
+  box-shadow: 0 calc(0.0625rem * 5) 0 0 #ffb961;
 }
 
 .yui-navset .yui-nav a,
 .yui-navset .yui-navset-top .yui-nav a {
-    zoom: unset;
-    background-image: none;
-    background-color: #26152e;
-    border: unset;
-    color: #ffb961;
-    font-weight: bold;
+  zoom: unset;
+  background-image: none;
+  background-color: #26152e;
+  border: unset;
+  color: #ffb961;
+  font-weight: bold;
 }
 
 .yui-navset .yui-nav a:hover,
 .yui-navset .yui-nav a:focus {
-    zoom: unset;
-    background-image: none;
-    background: #5C1D24;
-    font-weight: bold;
+  zoom: unset;
+  background-image: none;
+  background: #5c1d24;
+  font-weight: bold;
 }
 
 .yui-navset .yui-nav li,
 .yui-navset .yui-navset-top .yui-nav li {
-    background: rgb(244, 244, 244);
-    border-color: transparent;
-    max-width: 100%;
-    padding: 0;
-    margin: 0;
-    zoom: unset;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -webkit-flex-basis: 7vw;
-    -ms-flex-preferred-size: 7vw;
-    flex-basis: 7vw;
-    -webkit-box-flex: 2;
-    -webkit-flex-grow: 2;
-    -moz-box-flex: 2;
-    -ms-flex-positive: 2;
-    flex-grow: 2;
-    -webkit-box-shadow: 0 0 0 0.0625rem #ffb961;
-    box-shadow: 0 0 0 0.0625rem #ffb961;
+  background: rgb(244 244 244);
+  border-color: transparent;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  zoom: unset;
+  display: -webkit-box;
+  display: flex;
+  display: -moz-box;
+  display: flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-preferred-size: 7vw;
+  flex-basis: 7vw;
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  box-shadow: 0 0 0 0.0625rem #ffb961;
 }
 
 .yui-navset .yui-nav li a,
 .yui-navset-top .yui-nav li a,
 .yui-navset-bottom .yui-nav li a {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    vertical-align: bottom;
-    zoom: unset;
-    width: 100%;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  display: -webkit-box;
+  display: flex;
+  display: -moz-box;
+  display: flexbox;
+  display: flex;
+  vertical-align: bottom;
+  zoom: unset;
+  width: 100%;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .yui-navset .yui-nav a em,
 .yui-navset .yui-navset-top .yui-nav a em {
-    padding: 0.35em 0.75em;
-    white-space: nowrap;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    overflow: hidden;
+  padding: 0.35em 0.75em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .yui-navset .yui-nav li em {
-    /* Undoes border set by wikidot's default layout */
-    border: unset !important;
+  /* Undoes border set by wikidot's default layout */
+  border: unset !important;
 }
 
 /* Selected Tab */
@@ -607,63 +639,65 @@ blockquote{
 .yui-navset .yui-navset-top .yui-nav .selected,
 .yui-navset .yui-nav .selected:hover,
 .yui-navset .yui-navset-top .yui-nav .selected:hover {
-    padding: 0;
-    margin: 0;
-    -webkit-box-flex: 2;
-    -webkit-flex-grow: 2;
-    -moz-box-flex: 2;
-    -ms-flex-positive: 2;
-    flex-grow: 2;
-    color: #ffb961;
-    background-image: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+  color: #ffb961;
+  background-image: none;
 }
 
 .yui-navset .yui-nav .selected a,
 .yui-navset .yui-nav .selected a em {
-    border: none !important;
-    border-color: transparent;
-    color: #ffb961;
+  border: none !important;
+  border-color: transparent;
+  color: #ffb961;
 }
 
 .yui-navset .yui-nav .selected a {
-    /* Undoes a color set by wikidot's default layout */
-    color: rgb(252, 252, 252) !important;
-    width: 100%;
-    background-image: none;
+  /* Undoes a color set by wikidot's default layout */
+  color: rgb(252 252 252) !important;
+  width: 100%;
+  background-image: none;
 }
 
-
 .yui-navset .yui-content {
-    background-color: #1b304d;
-    /* content background color */
+  background-color: #1b304d;
+
+  /* content background color */
 }
 
 .yui-navset .yui-content,
 .yui-navset .yui-navset-top .yui-content {
-    border-color: #ffb961;
-    /* content border */
+  border-color: #ffb961;
+
+  /* content border */
 }
 
 .yui-navset-left .yui-content {
-    border-left-color: #ffb961;
-    /* different border color */
+  border-left-color: #ffb961;
+
+  /* different border color */
 }
+
 .yui-navset .yui-nav .selected a,
-.yui-navset .yui-nav .selected a:focus, 
+.yui-navset .yui-nav .selected a:focus,
 .yui-navset .yui-nav .selected a:hover {
-        background-image: none; 
-        background-color: #1b304d;
-        color: #ffb961; 
-        cursor: default; 
-        margin-bottom: -2px; 
-        font-weight: bold;
+  background-image: none;
+  background-color: #1b304d;
+  color: #ffb961;
+  cursor: default;
+  margin-bottom: -2px;
+  font-weight: bold;
 }
 
 /* Interwiki */
-#side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
-    border: 2px solid #b01;
-    box-shadow: none;
-    background-color: hsl(102, 24%, 82%) !important;
-    filter: hue-rotate(220deg) saturate(122%) invert(1) contrast(83%);
-}
 
+#side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
+  border: 2px solid #bb0011;
+  box-shadow: none;
+  background-color: hsl(102deg 24% 82%) !important;
+  filter: hue-rotate(220deg) saturate(122%) invert(1) contrast(83%);
+}

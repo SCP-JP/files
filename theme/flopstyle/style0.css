@@ -8,235 +8,276 @@
 **/
 
 /* ---- HEADER CHANGES ---- */
- span, a{
-     word-break: unset;
-}
- #header h1 a,
- #header h1 a::before{
-     position: relative;
-     left: -1.5px;
 
-     color: hsl(0, 0%, 90%);
-     text-shadow:
-        .7px    .7px  0 hsla(0, 0%, 0%, .8),
-       1.4px   1.4px  0 hsla(0, 0%, 0%, .8);
-     letter-spacing: -.02em;
+span,
+a {
+  word-break: unset;
 }
- #header h1 a{
-     font-family: "Montserrat", "Arial", sans-serif;
+
+#header h1 a,
+#header h1 a::before {
+  position: relative;
+  left: -1.5px;
+  color: hsl(0deg 0% 90%);
+  text-shadow: 0.7px    0.7px  0 hsl(0deg 0% 0% / 80%),
+    1.4px   1.4px  0 hsl(0deg 0% 0% / 80%);
+  letter-spacing: -0.02em;
 }
- #header h2 span,
- #header h2 span::before{
-     color: hsl(0, 0%, 90%);
-     text-shadow: 1px 1px 0 hsla(0, 0%, 0%, .8);
+
+#header h1 a {
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+#header h2 span,
+#header h2 span::before {
+  color: hsl(0deg 0% 90%);
+  text-shadow: 1px 1px 0 hsl(0deg 0% 0% / 80%);
 }
 
 /* ---- MOBILE MEDIA QUERY ---- */
- @media (max-width: 479px){
-     #header h1 a{
-         font-size: 90%;
-    }
+@media (max-width: 479px) {
+
+  #header h1 a {
+    font-size: 90%;
+  }
 }
 
 /* ---- NOTE MEDIA QUERY ---- */
- @media (min-width: 480px) and (max-width: 580px){
-     #header h1 a{
-         font-size: 110%;
-    }
+@media (min-width: 480px) and (max-width: 580px) {
+
+  #header h1 a {
+    font-size: 110%;
+  }
 }
 
 /* ---- MINI TABLET MEDIA QUERY ---- */
- @media (min-width: 581px) and (max-width: 767px){
-     #header h1 a{
-         font-size: 130%;
-    }
+@media (min-width: 581px) and (max-width: 767px) {
+
+  #header h1 a {
+    font-size: 130%;
+  }
 }
 
 /* ---- TABLET MEDIA QUERY ---- */
- @media (min-width: 768px) and (max-width: 979px){
-     #header h1 a{
-         font-size: 150%;
-    }
+@media (min-width: 768px) and (max-width: 979px) {
+
+  #header h1 a {
+    font-size: 150%;
+  }
 }
 
 /* ---- SIGMA-9 CHANGES ---- */
- #search-top-box-form input[type="submit"],
- #search-top-box-form input[type=submit]:hover,
- #search-top-box-form input[type=submit]:focus,
- #top-bar ul li ul,
- #side-bar .side-block,
- .page-rate-widget-box,
- .scp-image-block{
-     box-shadow: none;
+
+#search-top-box-form input[type = "submit"],
+#search-top-box-form input[type = "submit"]:hover,
+#search-top-box-form input[type = "submit"]:focus,
+#top-bar ul li ul,
+#side-bar .side-block,
+.page-rate-widget-box,
+.scp-image-block {
+  box-shadow: none;
 }
- #top-bar a{
-     color: hsl(0, 0%, 96%);
+
+#top-bar a {
+  color: hsl(0deg 0% 96%);
 }
- .scp-image-block scp-image-caption{
-      width: 310px;
+
+.scp-image-block scp-image-caption {
+  width: 310px;
 }
- .scp-image-block .scp-image-caption{
-     font-size: unset;
+
+.scp-image-block .scp-image-caption {
+  font-size: unset;
 }
- @media (max-width: 767px){
-     .open-menu a:hover{
-         box-shadow: none;
-    }
+
+@media (max-width: 767px) {
+
+  .open-menu a:hover {
+    box-shadow: none;
+  }
 }
 
 /* ---- GENERAL FORMATTING CHANGES ---- */
- #page-content h1,
- #page-content h2,
- #page-content h3,
- #page-content h4,
- #page-content h5,
- #page-content h6{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     margin-bottom: .57em;
 
-     word-break: unset;
+#page-content h1,
+#page-content h2,
+#page-content h3,
+#page-content h4,
+#page-content h5,
+#page-content h6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.57em;
+  word-break: unset;
 }
- hr{
-     margin: 1em 0;
+
+hr {
+  margin: 1em 0;
 }
- .collapsible-block-link{
-     font-weight: bold;
+
+.collapsible-block-link {
+  font-weight: bold;
 }
-.wiki-content-table{
-    width: 100%;
+
+.wiki-content-table {
+  width: 100%;
 }
 
 /* ---- INFO BAR CHANGES ---- */
- body{
-     --barColour: hsl(0, 89%, 18%);
-     color: hsl(0, 0%, 5%);
-     word-break: unset;
+
+body {
+  --barColour: hsl(0deg 89% 18%);
+
+  color: hsl(0deg 0% 5%);
+  word-break: unset;
 }
- .u-faq{
-     display: none;
+
+.u-faq {
+  display: none;
 }
 
 /* ---- DIV BLOCKS ---- */
- div.blockquote, /* ---- Regular Block Quote ---- */
- blockquote{
-     border: 3px double hsl(0, 0%, 60%);
-}
- .alt-blockquote{ /* ---- Alternative Block Quote ---- */
-     margin: 1em 0;
-     padding: 0 1em;
 
-     background-color: hsl(0, 0%, 96%);
-     border: 1px solid hsl(0, 0%, 60%);
-     border-radius: 1em;
+div.blockquote,
+blockquote {
+  border: 3px double hsl(0deg 0% 60%);
 }
- .lightweight{ /* ---- Lightweight Block Quote ---- */
-     margin: 1em 3em;
-     padding: 0 1em;
 
-     background-color: hsl(0, 0%, 90%);
-     text-align: left;
+.alt-blockquote { /* ---- Alternative Block Quote ---- */
+  margin: 1em 0;
+  padding: 0 1em;
+  background-color: hsl(0deg 0% 96%);
+  border: 1px solid hsl(0deg 0% 60%);
+  border-radius: 1em;
 }
- .report-box{ /* ---- Report Block ---- */
-     margin: 1em 0;
-     padding: 0 1em;
 
-     background-color: hsl(0, 0%, 100%);
-     border: 2px solid hsl(0, 0%, 5%);
+.lightweight { /* ---- Lightweight Block Quote ---- */
+  margin: 1em 3em;
+  padding: 0 1em;
+  background-color: hsl(0deg 0% 90%);
+  text-align: left;
 }
- .report-box hr{
-     background: hsl(0, 0%, 5%);
-}
- .raisa-header, .pink-header{
-     margin-bottom: 1em;
-     padding: 0 .5em;
 
-     text-align: center;
+.report-box { /* ---- Report Block ---- */
+  margin: 1em 0;
+  padding: 0 1em;
+  background-color: hsl(0deg 0% 100%);
+  border: 2px solid hsl(0deg 0% 5%);
 }
- .raisa-header{ /* ---- RAISA Header ---- */
-     background: hsl(60, 65%, 85%);
-     border: 1px solid hsl(0, 0%, 60%);
-}
- .pink-header{ /* ---- Pretty Header ---- */
-     background: hsl(350, 100%, 85%);
-     border: 1px solid hsl(0, 4%, 36%);
-}
- .pink-header hr{
-     background: hsl(0, 4%, 36%);
-}
- .log-header{ /* ---- Interview/Exploration Log Header ---- */
-     margin-bottom: 1em;
-     padding: 0 1em;
 
-     background: hsl(0, 0%, 96%);
-     border: 3px dashed hsl(0, 0%, 60%);
-     border-radius: .75em;
+.report-box hr {
+  background: hsl(0deg 0% 5%);
+}
+
+.raisa-header,
+.pink-header {
+  margin-bottom: 1em;
+  padding: 0 0.5em;
+  text-align: center;
+}
+
+.raisa-header { /* ---- RAISA Header ---- */
+  background: hsl(60deg 65% 85%);
+  border: 1px solid hsl(0deg 0% 60%);
+}
+
+.pink-header { /* ---- Pretty Header ---- */
+  background: hsl(350deg 100% 85%);
+  border: 1px solid hsl(0deg 4% 36%);
+}
+
+.pink-header hr {
+  background: hsl(0deg 4% 36%);
+}
+
+.log-header { /* ---- Interview/Exploration Log Header ---- */
+  margin-bottom: 1em;
+  padding: 0 1em;
+  background: hsl(0deg 0% 96%);
+  border: 3px dashed hsl(0deg 0% 60%);
+  border-radius: 0.75em;
 }
 
 /* ---- SPECIAL FORMATTING ---- */
- .centered{ /* ---- Center-Aligns Text ---- */
-     text-align: center;
+
+.centered { /* ---- Center-Aligns Text ---- */
+  text-align: center;
 }
- .justified{ /* ---- Justify-Aligns Text ---- */
-     text-align: justify;
+
+.justified { /* ---- Justify-Aligns Text ---- */
+  text-align: justify;
 }
- .rev-red{ /* ---- Red Document Revision Text ---- */
-     color: hsl(360, 100%, 27%);
-     font-weight: bold;
+
+.rev-red { /* ---- Red Document Revision Text ---- */
+  color: hsl(360deg 100% 27%);
+  font-weight: bold;
 }
- .rev-green{ /* ---- Green Document Revision Text ---- */
-     color: hsl(120, 100%, 27%);
-     font-weight: bold;
+
+.rev-green { /* ---- Green Document Revision Text ---- */
+  color: hsl(120deg 100% 27%);
+  font-weight: bold;
 }
- .rev-blue{ /* ---- Blue Document Revision Text ---- */
-     color: hsl(240, 100%, 27%);
-     font-weight: bold;
+
+.rev-blue { /* ---- Blue Document Revision Text ---- */
+  color: hsl(240deg 100% 27%);
+  font-weight: bold;
 }
- .lite-heading{ /* ---- Special Heading Area (Adapted From SCP-4058) ---- */
-     margin: 2.4em auto;
+
+.lite-heading { /* ---- Special Heading Area (Adapted From SCP-4058) ---- */
+  margin: 2.4em auto;
 }
- .lite-heading h3{
-     color: hsl(360, 100%, 27%);
+
+.lite-heading h3 {
+  color: hsl(360deg 100% 27%);
 }
- .lite-heading hr{
-     height: 2px;
-     width: 45%;
-     margin: auto;
+
+.lite-heading hr {
+  height: 2px;
+  width: 45%;
+  margin: auto;
 }
- div.blockquote .collapsible-block-folded, blockquote .collapsible-block-folded,
- .document .collapsible-block-folded,
- .lightweight .collapsible-block-folded,
- .report-box .collapsible-block-folded{
-/* ---- For Collapsibles Inside Divs | [CLOSED] ---- */
-     padding: .75em 0;
-/* -------- */
+
+div.blockquote .collapsible-block-folded,
+blockquote .collapsible-block-folded,
+.document .collapsible-block-folded,
+.lightweight .collapsible-block-folded,
+.report-box .collapsible-block-folded {
+  /* ---- For Collapsibles Inside Divs | [CLOSED] ---- */
+  padding: 0.75em 0;
+
+  /* -------- */
 }
- div.blockquote .collapsible-block-unfolded,
- .document .collapsible-block-unfolded,
- .lightweight .collapsible-block-unfolded,
- .report-box .collapsible-block-unfolded{
-/* ---- For Collapsibles Inside Divs | [OPEN] ---- */
-     padding-top: .75em;
-/* -------- */
+
+div.blockquote .collapsible-block-unfolded,
+.document .collapsible-block-unfolded,
+.lightweight .collapsible-block-unfolded,
+.report-box .collapsible-block-unfolded {
+  /* ---- For Collapsibles Inside Divs | [OPEN] ---- */
+  padding-top: 0.75em;
+
+  /* -------- */
 }
- .terminal-span{ /* ---- Mimic Terminal Text ---- */
-     font-size: 110%;
-     font-family: Courier, monospace;
-     font-weight: bold;
+
+.terminal-span { /* ---- Mimic Terminal Text ---- */
+  font-size: 110%;
+  font-family: "Courier", monospace;
+  font-weight: bold;
 }
- .footing::before{ /* ---- Article Footing ---- */
-     content: " ";
-     position: absolute;
-     left: 0;
-     right: 0;
-     bottom: 1px;
-     border-bottom: 2px solid hsl(0, 0%, 47%);
+
+.footing::before { /* ---- Article Footing ---- */
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  border-bottom: 2px solid hsl(0deg 0% 47%);
 }
- .footing{
-     position: relative;
-     border-bottom: 1px solid hsl(0, 0%, 47%);
+
+.footing {
+  position: relative;
+  border-bottom: 1px solid hsl(0deg 0% 47%);
 }
 
 /*
@@ -244,180 +285,219 @@
  * Adapted From SCP-001-JP - indonootoko's Proposal
  * See the Example at the Top of the Page
 **/
- .orderwrapper{
-     position: relative;
-     width: auto;
 
-     text-align: center;
+.orderwrapper {
+  position: relative;
+  width: auto;
+  text-align: center;
 }
- .council{
-     position: relative;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     width: 295px;
-     height: 295px;
-     margin: auto;
 
-     background-image: url(http://scp-wiki.wdfiles.com/local--files/scp-style-resource/scp_trans.png);
-     background-position: center;
-     background-size: 295px 295px;
-     background-repeat: no-repeat;
+.council {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 295px;
+  height: 295px;
+  margin: auto;
+  background-image: url(http://scp-wiki.wdfiles.com/local--files/scp-style-resource/scp_trans.png);
+  background-position: center;
+  background-size: 295px 295px;
+  background-repeat: no-repeat;
 }
- .ordertitle{
-     position: absolute;
-     top: 27px;
-     left: 0;
-     right: 0;
+
+.ordertitle {
+  position: absolute;
+  top: 27px;
+  left: 0;
+  right: 0;
 }
- .ordertitle h1{
-     color: hsl(0, 0%, 5%);
-     font-size: 220%;
-     line-height: 90%;
+
+.ordertitle h1 {
+  color: hsl(0deg 0% 5%);
+  font-size: 220%;
+  line-height: 90%;
 }
- .orderdescription{
-     position: absolute;
-     top: 93px;
-     left: 0;
-     right: 0;
-     width: 100%;
+
+.orderdescription {
+  position: absolute;
+  top: 93px;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
- .orderdescription h1{
-     color: hsl(0, 0%, 5%);
-     font-size: 120%;
+
+.orderdescription h1 {
+  color: hsl(0deg 0% 5%);
+  font-size: 120%;
 }
- .orderdescription p{
-     color: hsl(0, 0%, 5%);
-     font-size: 90%;
+
+.orderdescription p {
+  color: hsl(0deg 0% 5%);
+  font-size: 90%;
 }
- .itemno{
-     position: absolute;
-     bottom: 18px;
-     left: 0;
-     right: 0;
+
+.itemno {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0;
 }
- .itemno h1{
-     color: hsl(0, 0%, 5%);
-     font-size: 170%;
+
+.itemno h1 {
+  color: hsl(0deg 0% 5%);
+  font-size: 170%;
 }
 
 /* ---- YUI TAB BASE ---- */
-.yui-navset .yui-nav a,.yui-navset .yui-navset-top .yui-nav a{background-color:inherit;background-image:inherit}.yui-navset .yui-nav a:hover,.yui-navset .yui-nav a:focus{background:inherit;text-decoration:inherit}.yui-navset .yui-nav .selected a,.yui-navset .yui-nav .selected a:focus,.yui-navset .yui-nav .selected a:hover{color:inherit;background:inherit}.yui-navset .yui-nav,.yui-navset .yui-navset-top .yui-nav{border-color:inherit}.yui-navset li{line-height:inherit}
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a { background-color: inherit; background-image: inherit; }
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus { background: inherit; text-decoration: inherit; }
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover { color: inherit; background: inherit; }
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav { border-color: inherit; }
+.yui-navset li { line-height: inherit; }
 
 /*
  * ---- YUI TAB CUSTOMIZATION ----
  * Thanks stormbreath!
 **/
- .yui-navset *{
-     transition:
-                  color 80ms cubic-bezier(.4, 0, .2, 1),
-       background-color 80ms cubic-bezier(.4, 0, .2, 1);
-}
- .yui-navset .yui-nav,
- .yui-navset .yui-navset-top .yui-nav{
-     display: flex;
-     flex-wrap: wrap;
-     width: calc(100% - .125rem);
-     margin: 0 auto;
 
-     border-color: hsl(360, 94%, 20%);
-     box-shadow: 0 calc(.0625rem * 5) 0 0 hsl(360, 94%, 20%);
+.yui-navset * {
+  transition: color 80ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 80ms cubic-bezier(0.4, 0, 0.2, 1);
 }
- .yui-navset .yui-nav a, /* ---- Link Modifier ---- */
- .yui-navset .yui-navset-top .yui-nav a{
-     color: hsl(0, 0%, 5%);
-/* ---- Tab Background Color | [UNSELECTED] ---- */
-     background-color: hsl(0, 0%, 99%);
-/* -------- */
-     background-image: none;
-     border: unset;
-}
- .yui-navset .yui-nav a:hover,
- .yui-navset .yui-nav a:focus{
-     color: hsl(0, 0%, 96%);
-/* ---- Tab Background Color | [HOVER] ---- */
-     background-color: hsl(360, 100%, 27%);
-/* -------- */
-}
- .yui-navset .yui-nav li, /* ---- Listitem Modifier ---- */
- .yui-navset .yui-navset-top .yui-nav li{
-     position: relative;
-     display: flex;
-     flex-grow: 2;
-     max-width: 100%;
-     margin: 0;
-     padding: 0;
 
-     background-color: hsl(0, 0%, 96%);
-     border-color: transparent;
-     box-shadow: 0 0 0 .0625rem hsl(360, 94%, 20%);
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% - 0.125rem);
+  margin: 0 auto;
+  border-color: hsl(360deg 94% 20%);
+  box-shadow: 0 calc(0.0625rem * 5) 0 0 hsl(360deg 94% 20%);
 }
- .yui-navset .yui-nav li a,
- .yui-navset-top .yui-nav li a,
- .yui-navset-bottom .yui-nav li a{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     width: 100%;
-}
- .yui-navset .yui-nav li em{
-     border: unset;
-}
- .yui-navset .yui-nav a em,
- .yui-navset .yui-navset-top .yui-nav a em{
-     padding: .35em .75em;
 
-     text-overflow: ellipsis;
-     overflow: hidden;
-     white-space: nowrap;
-}
- .yui-navset .yui-nav .selected, /* ---- Selection Modifier ---- */
- .yui-navset .yui-navset-top .yui-nav .selected{
-     flex-grow: 2;
-     margin: 0;
-     padding: 0;
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+  color: hsl(0deg 0% 5%);
 
-/* ---- Tab Background Color | [SELECTED] ---- */
-     background-color: hsl(360, 94%, 20%);
-/* -------- */
-}
- .yui-navset .yui-nav .selected a,
- .yui-navset .yui-nav .selected a em{
-     border: hsl(360, 94%, 20%);
-}
- .yui-navset .yui-nav .selected a{
-     width: 100%;
+  /* ---- Tab Background Color | [UNSELECTED] ---- */
+  background-color: hsl(0deg 0% 99%);
 
-     color: hsl(0, 0%, 96%) !important;
-     background-image: none;
+  /* -------- */
+  background-image: none;
+  border: unset;
 }
- .yui-navset .yui-nav .selected a:focus,
- .yui-navset .yui-nav .selected a:active{
-     color: hsl(0, 0%, 96%);
-     background-color: hsl(360, 94%, 20%);
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+  color: hsl(0deg 0% 96%);
+
+  /* ---- Tab Background Color | [HOVER] ---- */
+  background-color: hsl(360deg 100% 27%);
+
+  /* -------- */
 }
- .yui-navset .yui-nav .selected a:hover{
-     cursor: default;
+
+.yui-navset .yui-nav li,
+.yui-navset .yui-navset-top .yui-nav li {
+  position: relative;
+  display: flex;
+  flex-grow: 2;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0deg 0% 96%);
+  border-color: transparent;
+  box-shadow: 0 0 0 0.0625rem hsl(360deg 94% 20%);
 }
- .yui-navset-left .yui-content{
- /* ---- Content Background ---- */
-     background-color: hsl(0, 0%, 99%);
- /* -------- */
+
+.yui-navset .yui-nav li a,
+.yui-navset-top .yui-nav li a,
+.yui-navset-bottom .yui-nav li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
- .yui-navset .yui-content,
- .yui-navset .yui-navset-top .yui-content{
-     border-color: hsl(0, 0%, 60%);
+
+.yui-navset .yui-nav li em {
+  border: unset;
+}
+
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+  padding: 0.35em 0.75em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected {
+  flex-grow: 2;
+  margin: 0;
+  padding: 0;
+
+  /* ---- Tab Background Color | [SELECTED] ---- */
+  background-color: hsl(360deg 94% 20%);
+
+  /* -------- */
+}
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a em {
+  border: hsl(360deg 94% 20%);
+}
+
+.yui-navset .yui-nav .selected a {
+  width: 100%;
+  color: hsl(0deg 0% 96%) !important;
+  background-image: none;
+}
+
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:active {
+  color: hsl(0deg 0% 96%);
+  background-color: hsl(360deg 94% 20%);
+}
+
+.yui-navset .yui-nav .selected a:hover {
+  cursor: default;
+}
+
+.yui-navset-left .yui-content {
+  /* ---- Content Background ---- */
+  background-color: hsl(0deg 0% 99%);
+
+  /* -------- */
+}
+
+.yui-navset .yui-content,
+.yui-navset .yui-navset-top .yui-content {
+  border-color: hsl(0deg 0% 60%);
 }
 
 /*
  * ---- REDUCED MOTION ACCESSIBILITY ----
  * Thanks SMLT!
 **/
- @media (prefers-reduced-motion: reduce){
-     *, *::before, *::after{
-         animation-duration: .001s !important;
-         animation-iteration-count: 1 !important;
-         transition-duration: .001s !important;
-    }
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+  }
 }

@@ -7,153 +7,177 @@
     The font Gentium Basic is under Open Font License
     CC BY-SA 3.0
 */
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@700&display=swap');
- 
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Basic:wght@700&display=swap");
+
 div#container-wrap {
-    background: url(http://scp-jp-storage.wikidot.com/local--files/file:3438721-45-1bim/dawn.png) top left repeat-x;
+  background: url(http://scp-jp-storage.wikidot.com/local--files/file:3438721-45-1bim/dawn.png) top left repeat-x;
 }
+
 div#header {
-    background: url(http://scp-jp-storage.wikidot.com/local--files/file:3438721-45-y0as/manhattan_silhouette.svg)  no-repeat;
+  background: url(http://scp-jp-storage.wikidot.com/local--files/file:3438721-45-y0as/manhattan_silhouette.svg)  no-repeat;
 }
+
 div#header h1 a span {
-    font-size: 0px;
+  font-size: 0;
 }
-div#header h1 a:before {
-    font-family: 'Gentium Basic', serif;
-    content: "Manhattan Crisis";
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+
+div#header h1 a::before {
+  font-family: "Gentium Basic", serif;
+  content: "Manhattan Crisis";
+  text-shadow: 2px 2px 2px rgb(0 0 0 / 40%);
 }
+
 div#header h2 span {
-    font-size:0px;
-    padding: 4px;
+  font-size: 0;
+  padding: 4px;
 }
-div#header h2:before {
-    font-family: 'Gentium Basic', serif;
-    font-size: 16px;
-    content: "        9.11 2001";
-    color: #eee;
-    padding: 16px 0;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
-    white-space: pre;
+
+div#header h2::before {
+  font-family: "Gentium Basic", serif;
+  font-size: 16px;
+  content: "        9.11 2001";
+  color: #eeeeee;
+  padding: 16px 0;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+  white-space: pre;
 }
 
 #account-options {
-    background: rgba(255,255,255,0.2);
-    background-clip: padding-box;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: solid 1px transparent;
-    border-radius: 15px 0;
-    box-shadow: 10px 10px 10px rgb(48 54 60 / 3%);
+  background: rgb(255 255 255 / 20%);
+  background-clip: padding-box;
+  backdrop-filter: blur(16px);
+  border: solid 1px transparent;
+  border-radius: 15px 0;
+  box-shadow: 10px 10px 10px rgb(48 54 60 / 3%);
 }
-#login-status ul a{
-    color: #fff;
+
+#login-status ul a {
+  color: #ffffff;
 }
+
 #account-options li a:hover {
-    color: #d00;
-    text-decoration: none;
-    background: #fff;
-    border-radius: 15px 0;
+  color: #dd0000;
+  text-decoration: none;
+  background: #ffffff;
+  border-radius: 15px 0;
 }
 
 /* TOPBAR */
 
 #top-bar {
-    top: 141px;
-    height: 20px;
-    line-height: 20px;
+  top: 141px;
+  height: 20px;
+  line-height: 20px;
 }
-#top-bar ul li.sfhover a, #top-bar ul li:hover a {
-    background: #fff;
+
+#top-bar ul li.sfhover a,
+#top-bar ul li:hover a {
+  background: #ffffff;
 }
-#top-bar li:hover ul, #top-bar li.sfhover ul {
-    background: rgba(255,255,255,0.2);
-    background-clip: padding-box;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: solid 1px transparent;
-    box-shadow: 10px 10px 10px rgb(48 54 60 / 3%);
+
+#top-bar li:hover ul,
+#top-bar li.sfhover ul {
+  background: rgb(255 255 255 / 20%);
+  background-clip: padding-box;
+  backdrop-filter: blur(16px);
+  border: solid 1px transparent;
+  box-shadow: 10px 10px 10px rgb(48 54 60 / 3%);
 }
-#top-bar ul li.sfhover ul li a, #top-bar ul li:hover ul li a {
-    background: transparent;
-    border-top: transparent;
-    box-shadow: 10px 10px 10px rgb(48 54 60 / 3%);
+
+#top-bar ul li.sfhover ul li a,
+#top-bar ul li:hover ul li a {
+  background: transparent;
+  border-top: transparent;
+  box-shadow: 10px 10px 10px rgb(48 54 60 / 3%);
 }
 
 /* SEARCHBOX */
- 
+
 #search-top-box-input {
-    border: solid 1px #eee;
-    border-radius: 0px;
-    background-color: #f00;
-    box-shadow: none;
-   color: #eee;
-}
-#search-top-box-input:hover, #search-top-box-input:focus {
-    border: solid 1px #000;
-    background-color: #f00;
-    box-shadow: none;
-}
-#search-top-box-form input[type=submit] {
-    background: none;
-    background-color: #eee;
-    border: none;
-    border-radius: 0px;
-    box-shadow: none;
-    color: #f00;
-    position: relative;
-}
-#search-top-box-form input[type=submit]:hover,
-#search-top-box-form input[type=submit]:focus {
-    background: none;
-    background-color: #eee;
-    border: none;
-    box-shadow: 0 1px 3px rgba(0,0,0,.8);
-    color: #f00;
-    text-shadow: none;
+  border: solid 1px #eeeeee;
+  border-radius: 0;
+  background-color: #ff0000;
+  box-shadow: none;
+  color: #eeeeee;
 }
 
-/* MEDIA powered by ukwhatn*/
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+  border: solid 1px #000000;
+  background-color: #ff0000;
+  box-shadow: none;
+}
+
+#search-top-box-form input[type = "submit"] {
+  background: none;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #ff0000;
+  position: relative;
+}
+
+#search-top-box-form input[type = "submit"]:hover,
+#search-top-box-form input[type = "submit"]:focus {
+  background: none;
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 80%);
+  color: #ff0000;
+  text-shadow: none;
+}
+
+/* MEDIA powered by ukwhatn */
 
 @media (max-width: 800px) {
+
   #search-top-box-input {
     display: none;
   }
-  #search-top-box-form input[type=submit] {
+
+  #search-top-box-form input[type = "submit"] {
     top: 20px;
   }
 }
- 
+
 @media (max-width: 580px) {
+
   div#header h1,
   div#header h2 {
     margin-left: unset;
     text-align: center;
     width: 100%;
   }
+
   div#header h1 {
     margin: unset;
     padding: unset;
   }
+
   div#header h1 a {
     margin: 0 auto;
     padding: 80px 0 0;
   }
+
   div#header h1 a::before {
     width: 100%;
     display: block;
   }
+
   div#header h2 {
-    padding: 1.5em 0 0 ;
+    padding: 1.5em 0 0;
   }
-  div#header h2:before {
+
+  div#header h2::before {
     content: "9.11 2001";
     padding: 0;
   }
 }
- 
+
 @media (max-width: 375px) {
-  #search-top-box-form input[type=submit] {
+
+  #search-top-box-form input[type = "submit"] {
     display: none;
   }
 }

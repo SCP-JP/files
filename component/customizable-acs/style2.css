@@ -1,38 +1,38 @@
 .anom-bar-container.clear-69 .top-center-box > .bar-one {
-    display: block;
+  display: block;
 }
 
 .anom-bar-container.clear-69 .top-center-box > .bar-two {
-    display: block;
+  display: block;
 }
 
 .anom-bar-container.clear-69 .top-center-box > .bar-three {
-    display: block;
+  display: block;
 }
 
 .anom-bar-container.clear-69 .top-center-box > .bar-four {
-    display: block;
+  display: block;
 }
 
 .anom-bar-container.clear-69 .top-center-box > .bar-five {
-    display: block;
+  display: block;
 }
 
 .anom-bar-container.clear-69 .top-center-box > .bar-six {
-    display: block;
+  display: block;
 }
 
 .anom-bar-container.clear-69 .top-center-box > .bar-sixty-nine {
-    display: block;
+  display: block;
 }
 
-div.top-center-box > :nth-child(1) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay))!important; }
-div.top-center-box > :nth-child(2) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay))!important; }
-div.top-center-box > :nth-child(3) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay))!important; }
-div.top-center-box > :nth-child(4) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay))!important; }
-div.top-center-box > :nth-child(5) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay))!important; }
-div.top-center-box > :nth-child(6) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay))!important; }
+div.top-center-box > :nth-child(1) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay)) !important; }
+div.top-center-box > :nth-child(2) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay)) !important; }
+div.top-center-box > :nth-child(3) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay)) !important; }
+div.top-center-box > :nth-child(4) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay)) !important; }
+div.top-center-box > :nth-child(5) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay)) !important; }
+div.top-center-box > :nth-child(6) { animation-delay: calc(0s * var(--timeScale) + var(--timeDelay)) !important; }
 
 .anom-bar-container.clear-69 .top-right-box > .clearance::before {
-    content: "Nice";
+  content: "Nice";
 }

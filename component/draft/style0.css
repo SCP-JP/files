@@ -1,59 +1,69 @@
-#page-content span[style$="new"] {
+#page-content span[style $= "new"] {
   display: inline-block;
   background: #eaffea;
 }
-#page-content span[style$="new"]::before {
+
+#page-content span[style $= "new"]::before {
   padding-left: 5px;
   content: "+ ";
   color: #00b700;
   font-weight: bold;
 }
-#page-content span[style$="new"]::after {
+
+#page-content span[style $= "new"]::after {
   content: " ";
   padding-right: 5px;
 }
-#page-content span[style$="old"] {
+
+#page-content span[style $= "old"] {
   display: inline-block;
   background: #ffecec;
 }
-#page-content span[style$="old"]::before {
+
+#page-content span[style $= "old"]::before {
   padding-left: 5px;
   content: "- ";
   color: #b90000;
   font-weight: bold;
 }
-#page-content span[style$="old"]::after {
+
+#page-content span[style $= "old"]::after {
   content: " ";
   padding-right: 5px;
 }
+
 #page-content .new {
   margin-right: 5px;
   display: inline-block;
   background: #eaffea;
 }
+
 #page-content .new::before {
   padding-left: 5px;
   content: "+ ";
   color: #00b700;
   font-weight: bold;
 }
+
 #page-content .new::after {
   content: " ";
   padding-right: 5px;
 }
+
 #page-content .old {
   margin-right: 5px;
   display: inline-block;
   background: #ffecec;
 }
+
 #page-content .old::before {
   padding-left: 5px;
   content: "- ";
   color: #b90000;
   font-weight: bold;
 }
+
 #page-content .old::after {
   content: " ";
   padding-right: 5px;
 }
-

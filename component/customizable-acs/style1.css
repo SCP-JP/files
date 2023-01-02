@@ -1,84 +1,119 @@
-.anom-bar-container.{$containment-class} .text-part > .main-class::before {
-    display:none;
+.anom-bar-container.{$containment-class}
+
+.text-part > .main-class::before {
+  display: none;
 }
 
-.anom-bar-container.{$containment-class} .text-part .main-class {
-    background-color: rgba({$containment-color},0.15);
-    background-color: rgba({$containment-color},0.15);
-    border-left: 0.75rem solid rgba({$containment-color},1);
-    border-left: 0.75rem solid rgba({$containment-color},1);
+.anom-bar-container.{$containment-class}
+
+.text-part .main-class {
+  background-color: rgb({$containment-color} 0.15);
+  border-left: 0.75rem solid rgb({$containment-color} 1);
 }
 
-.anom-bar-container.{$containment-class} .text-part {
-    -ms-grid-columns: 1fr!important;
-    grid-template-columns: 1fr!important;
+.anom-bar-container.{$containment-class}
+
+.text-part {
+  -ms-grid-columns: 1fr !important;
+  grid-template-columns: 1fr !important;
 }
 
-.anom-bar-container.{$containment-class} .second-class,
-.anom-bar-container.{$containment-class} .disrupt-class,
-.anom-bar-container.{$containment-class} .risk-class,
-.anom-bar-container.{$containment-class} .danger-diamond > .quadrants > .left-quad,
-.anom-bar-container.{$containment-class} .danger-diamond > .quadrants > .right-quad,
-.anom-bar-container.{$containment-class} .danger-diamond > .left-icon,
-.anom-bar-container.{$containment-class} .danger-diamond > .right-icon {
-    display: none;
+.anom-bar-container.{$containment-class}
+
+.second-class,
+.anom-bar-container.{$containment-class}
+
+.disrupt-class,
+.anom-bar-container.{$containment-class}
+
+.risk-class,
+.anom-bar-container.{$containment-class}
+
+.danger-diamond > .quadrants > .left-quad,
+.anom-bar-container.{$containment-class}
+
+.danger-diamond > .quadrants > .right-quad,
+.anom-bar-container.{$containment-class}
+
+.danger-diamond > .left-icon,
+.anom-bar-container.{$containment-class}
+
+.danger-diamond > .right-icon {
+  display: none;
 }
 
-.danger-diamond > .quadrants > .top-quad.{$containment-class} {
-    background-color: rgb({$containment-color},0.25);
-    background-color: rgb({$containment-color},0.25);
+.danger-diamond > .quadrants > .top-quad.{$containment-class}
+
+ {
+  background-color: rgb({$containment-color} 0.25);
 }
 
-.anom-bar-container.{$containment-class} .danger-diamond > .top-icon {
-    width: 65%;
-    height: 65%;
-    top: 17.5%;
-    left: 17.5%;
-    border-width: 0.3625rem;
+.anom-bar-container.{$containment-class}
+
+.danger-diamond > .top-icon {
+  width: 65%;
+  height: 65%;
+  top: 17.5%;
+  left: 17.5%;
+  border-width: 0.3625rem;
 }
 
-.anom-bar-container.{$containment-class} .danger-diamond > .top-icon {
-    background-color: rgb(252, 252, 252);
-    background-color: rgb(var(--swatch-background, 252, 252, 252));
+.anom-bar-container.{$containment-class}
+
+.danger-diamond > .top-icon {
+  background-color: rgb(252 252 252);
+  background-color: rgb(var(--swatch-background, 252, 252, 252));
 }
 
-.anom-bar-container.{$containment-class} .danger-diamond > .top-icon::before {
-    background-color: rgba({$containment-color},0.25);
-    background-color: rgba({$containment-color},0.25);
-    background-image: url("{$containment-image}");
-    -webkit-background-size: 100% 100%;
-       -moz-background-size: 100% 100%;
-     -o-background-size: 100% 100%;
-     background-size: 100% 100%;
-    background-position: center center;
+.anom-bar-container.{$containment-class}
+
+.danger-diamond > .top-icon::before {
+  background-color: rgb({$containment-color} 0.25);
+  background-image: url("{$containment-image}");
+  background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: center center;
 }
 
-@media (max-width: 875px ) {
-    .anom-bar-container.{$containment-class} .bottom-box > .text-part {
-     height: 6rem;
-    }
-    .anom-bar-container.{$containment-class} .bottom-box > .text-part {
-     -ms-grid-rows: 1fr!important;
-     grid-template-rows: 1fr!important;
-     grid-template-areas: "main-class";
-    }
+@media (max-width: 875px) {
+  .anom-bar-container.{$containment-class}
+
+  .bottom-box > .text-part {
+    height: 6rem;
+  }
+  .anom-bar-container.{$containment-class}
+
+  .bottom-box > .text-part {
+    -ms-grid-rows: 1fr !important;
+    grid-template-rows: 1fr !important;
+    grid-template-areas: "main-class";
+  }
 }
 
-@media (max-width: 875px ) and (min-width: 480px ) {
-    .anom-bar-container.{$containment-class} .anom-bar > .bottom-box {
-     -ms-grid-columns: 1fr 6rem!important;
-     grid-template-columns: 1fr 6rem!important;
-     height: 6rem;
-    }
+@media (max-width: 875px) and (min-width: 480px) {
+  .anom-bar-container.{$containment-class}
+
+  .anom-bar > .bottom-box {
+    -ms-grid-columns: 1fr 6rem !important;
+    grid-template-columns: 1fr 6rem !important;
+    height: 6rem;
+  }
 }
 
-@media (max-width: 480px ) {
-    .anom-bar-container.{$containment-class} .anom-bar > .bottom-box {
-     height: 6rem;
-    }
+@media (max-width: 480px) {
+  .anom-bar-container.{$containment-class}
+
+  .anom-bar > .bottom-box {
+    height: 6rem;
+  }
 }
 
-.anom-bar-container.{$containment-class} .danger-diamond > .quadrants > .top-quad,
-.anom-bar-container.{$containment-class} .danger-diamond > .quadrants > .bottom-quad  {
-    background-color:rgba({$containment-color},0)!important;
+.anom-bar-container.{$containment-class}
+
+.danger-diamond > .quadrants > .top-quad,
+.anom-bar-container.{$containment-class}
+
+.danger-diamond > .quadrants > .bottom-quad {
+  background-color: rgb({$containment-color} 0) !important;
 }

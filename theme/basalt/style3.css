@@ -1,106 +1,119 @@
 body {
-    background-color: #380004;
-    background-image: url("https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg");
-    background-attachment: fixed;
-    background-size: contain;
-    background-blend-mode: overlay;
+  background-color: #380004;
+  background-image: url("https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/galactic.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+  background-blend-mode: overlay;
 }
 
-body:before {
-    content: ' ';
-    position: fixed;
-    display: block;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, transparent, #0c0c0c 75%, #0c0c0c 75%, #0c0c0c 100%);
+body::before {
+  content: " ";
+  position: fixed;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, transparent, #0c0c0c 75%, #0c0c0c 75%, #0c0c0c 100%);
 }
 
 hr {
-    background: transparent;
-    border-top: double 3px #b10009;
+  background: transparent;
+  border-top: double 3px #b10009;
 }
 
-.notation hr, .jotting hr, .darkdocument hr, .modal hr, .smallmodal hr, div.blockquote hr, .blockquote hr, blockquote hr {
-    border-top: solid 2px grey;
+.notation hr,
+.jotting hr,
+.darkdocument hr,
+.modal hr,
+.smallmodal hr,
+div.blockquote hr,
+.blockquote hr,
+blockquote hr {
+  border-top: solid 2px grey;
 }
 
 #extra-div-1 {
-background: linear-gradient(180deg, rgb(10, 10, 10) 0%, rgb(60, 0, 0) 100%);
-box-shadow: 0px 0px 8px 4px rgb(0 0 0);
+  background: linear-gradient(180deg, rgb(10 10 10) 0%, rgb(60 0 0) 100%);
+  box-shadow: 0 0 8px 4px rgb(0 0 0);
 }
 
 #side-bar {
-    background: linear-gradient(
-0deg
- , rgba(10, 10, 10, 1) 87%, rgb(27 5 5) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(10 10 10 / 100%) 87%,
+    rgb(27 5 5) 100%
+  );
 }
 
 a {
-    color: #ff3838;
-    font-weight: 600;
+  color: #ff3838;
+  font-weight: 600;
 }
 
 a.newpage {
-    color: #ff6b6b;
-    font-weight: 600;
+  color: #ff6b6b;
+  font-weight: 600;
 }
 
 a:visited {
-    color: #ff1414;
-    font-weight: 600;
+  color: #ff1414;
+  font-weight: 600;
 }
 
 #side-bar .side-block {
-    background: linear-gradient(
-180deg
-, rgba(10, 10, 10, 1) 0%, rgb(35, 0, 1) 100%);
-border: solid 2px rgb(35, 0, 1);
+  background: linear-gradient(
+    180deg,
+    rgb(10 10 10 / 100%) 0%,
+    rgb(35 0 1) 100%
+  );
+  border: solid 2px rgb(35 0 1);
 }
 
 #side-bar .side-block.resources {
-    background: rgb(10, 0, 1);
+  background: rgb(10 0 1);
 }
 
 #side-bar .side-block.media {
-    background-color: rgb(5 5 5) !important;
-    border-bottom: solid 2px rgb(10, 10, 10);
-    border-top: solid 2px rgb(10 10 10);
+  background-color: rgb(5 5 5) !important;
+  border-bottom: solid 2px rgb(10 10 10);
+  border-top: solid 2px rgb(10 10 10);
 }
 
 ::selection {
-    background-color: rgba(255, 0, 0, 0.7);
-    color: white;
+  background-color: rgb(255 0 0 / 70%);
+  color: white;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(35, 0, 1);
+  background: rgb(35 0 1);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(45, 0, 1);
+  background: rgb(45 0 1);
 }
 
 .bigtext {
-color: rgb(var(--five-color));
+  color: rgb(var(--five-color));
 }
 
-.scp-image-block img, .scp-image-block .scp-image-caption {
-    outline: solid 1px rgb(var(--five-color));
+.scp-image-block img,
+.scp-image-block .scp-image-caption {
+  outline: solid 1px rgb(var(--five-color));
 }
 
 .footer-wikiwalk-nav a {
-    color: #ff8787;
+  color: #ff8787;
 }
 
 /* FOR JP */
+
 .preview-message a {
-    color: #ff3838;
+  color: #ff3838;
 }
 
 #side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
-    background: linear-gradient(180deg, rgba(10, 10, 10, 1) 0%, rgb(35, 0, 1) 100%);
-    border: solid rgb(35, 0, 1) 2px;
-    box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 70%);
+  background: linear-gradient(180deg, rgb(10 10 10 / 100%) 0%, rgb(35 0 1) 100%);
+  border: solid rgb(35 0 1) 2px;
+  box-shadow: 0 0 8px 4px rgb(0 0 0 / 70%);
 }

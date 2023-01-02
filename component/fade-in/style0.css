@@ -1,5 +1,8 @@
 @media screen and (prefers-reduced-motion: no-preference) {
-  #page-title, #breadcrumbs, #page-content > * {
+
+  #page-title,
+  #breadcrumbs,
+  #page-content > * {
     animation-name: fadeIn;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -11,13 +14,15 @@
 #page-title { animation-delay: 0s; }
 
 @keyframes fadeIn {
+
   from {
     opacity: 0;
-    transform: translate(0,30px);
+    transform: translate(0, 30px);
   }
+
   to {
     opacity: 1;
-    transform: translate(0,0);
+    transform: translate(0, 0);
   }
 }
 

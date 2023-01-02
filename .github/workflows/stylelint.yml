@@ -1,0 +1,20 @@
+name: Stylelint
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '**/*.css'
+      - '**/*.scss'
+
+jobs:
+  linters:
+    name: stylelint
+    runs-on: ubuntu-latest
+
+    env:
+      PATTERN: "**/*.css"
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions-hub/stylelint@master

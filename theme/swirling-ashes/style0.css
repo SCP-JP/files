@@ -1,8 +1,8 @@
-
 /* - == === BHL変数 === == - */
 
 /* これはBHLテーマであり、設定に基づいて構成されているため、ルート要素にはテーマ全体に影響を与える変数が含まれています
  */
+
 :root {
   /* カラー */
   --dark-gray-monochrome: 26, 24, 26;
@@ -22,7 +22,7 @@
   --sky-length: 15;
   --sky-time: 60s;
 
-  /* ヘッダー調整*/
+  /* ヘッダー調整 */
   --header-title: "ぼさぐちゃ";
   --header-subtitle: "終わりを始めよう";
 
@@ -41,6 +41,7 @@
  * これらはヘッダー上に正確に描画し、、クリックを不可にしてそこ存在するリンクに干渉しないようにする必要があります。
  * これらは記載された順にページに表示されるため、この順序で互いに重なって描画されます。
  */
+
 body::before,
 div#container-wrap-wrap::before,
 div#container-wrap::before,
@@ -48,39 +49,50 @@ div#container-wrap-wrap::after,
 body::after {
   content: "";
   position: absolute;
-  height: var(--header-height-on-desktop); width: 100%; top: 0; left: 0;
+  height: var(--header-height-on-desktop);
+  width: 100%;
+  top: 0;
+  left: 0;
   pointer-events: none;
 }
 
 /* この空は一連の色でループし、止めることの出来ない時間の経過を想起させます
  */
+
 body::before {
   background: linear-gradient(
-                to top,
-                rgb(var(--sky-at-morning)) 0%,
-                rgb(var(--sky-at-morning)) 11%,
-                rgb(var(--sky-at-daytime)) 22%,
-                rgb(var(--sky-at-daytime)) 33%,
-                rgb(var(--sky-at-evening)) 44%,
-                rgb(var(--sky-at-dusk)) 55%,
-                rgb(var(--sky-at-night)) 66%,
-                rgb(var(--sky-at-night)) 77%,
-                rgb(var(--sky-at-dawn)) 88%,
-                rgb(var(--sky-at-morning)) 100%
-              );
-  background-size: 100% calc(var(--header-height-on-desktop)
-                             * var(--sky-length));
+    to top,
+    rgb(var(--sky-at-morning)) 0%,
+    rgb(var(--sky-at-morning)) 11%,
+    rgb(var(--sky-at-daytime)) 22%,
+    rgb(var(--sky-at-daytime)) 33%,
+    rgb(var(--sky-at-evening)) 44%,
+    rgb(var(--sky-at-dusk)) 55%,
+    rgb(var(--sky-at-night)) 66%,
+    rgb(var(--sky-at-night)) 77%,
+    rgb(var(--sky-at-dawn)) 88%,
+    rgb(var(--sky-at-morning)) 100%
+  );
+  background-size: 100% calc(
+    var(--header-height-on-desktop)
+    * var(--sky-length)
+  );
   animation: sky linear var(--sky-time) infinite;
 }
+
 @keyframes sky {
   from { background-position: 0 0; }
+
   to {
-    background-position: 0 calc(var(--header-height-on-desktop)
-                                * var(--sky-length));
+    background-position: 0 calc(
+      var(--header-height-on-desktop)
+      * var(--sky-length)
+    );
   }
 }
 
 /* 街のスカイライン */
+
 div#container-wrap-wrap::before {
   background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-14-6oib/skyline.png");
   background-size: auto var(--header-height-on-desktop);
@@ -88,47 +100,68 @@ div#container-wrap-wrap::before {
 
 /* 2つの背景: ひとつは、元のスカイラインの画像の明るさのしきい値から作成した、白くぼやけた光。そして、スカイラインの画像をクリッピングマスクとして使用する、白から透明へのグラデーション。これらは昼に現れ、夜になると消え、建物に反射した日光を表しています。
  */
+
 div#container-wrap::before {
   background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-16-g9cc/skyline-whitewash.png"),
-              url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-15-tbt4/skyline-highlight.png");
+    url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-15-tbt4/skyline-highlight.png");
   background-size: auto var(--header-height-on-desktop);
   animation: shine ease-in-out var(--sky-time) infinite;
 }
+
 @keyframes shine {
-  0%, 40%, 100% { opacity: 0.2; }
-  55%, 77% { opacity: 0; }
+
+  0%,
+  40%,
+  100% { opacity: 0.2; }
+
+  55%,
+  77% { opacity: 0; }
 }
 
 /* 最後の2つの疑似要素には灰が含まれています: 街の地上を通り過ぎる雲。雲の2つの層は幅が異なり、速さもことなるため、2つの要素が必要です。
  * フェードアニメーションは、3日ごとに何にも遮られていない街の眺めをもたらします。
  */
-div#container-wrap-wrap::after, body::after {
+
+div#container-wrap-wrap::after,
+body::after {
   background-size: var(--ashes-width) var(--header-height-on-desktop);
   background-repeat: repeat-x;
   animation: ashes-move linear var(--ashes-move-duration),
-             ashes-fade ease calc(var(--sky-time) * 3);
+    ashes-fade ease calc(var(--sky-time) * 3);
   animation-iteration-count: infinite;
   animation-fill-mode: both;
 }
+
 div#container-wrap-wrap::after {
   background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-17-mwdr/ashes-large.png");
+
   --ashes-move-duration: 27s;
   --ashes-width: 500px;
   --ashes-opacity: 0.5;
 }
+
 body::after {
   background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-18-aj3z/ashes-small.png");
+
   --ashes-move-duration: 20s;
   --ashes-width: 800px;
   --ashes-opacity: 0.4;
 }
+
 @keyframes ashes-move {
   from { background-position: 0 0; }
   to { background-position: var(--ashes-width) 0; }
 }
+
 @keyframes ashes-fade {
-  0%, 85%, 96%, 100% { opacity: var(--ashes-opacity); }
-  88.66%, 92.33% { opacity: 0.1; }
+
+  0%,
+  85%,
+  96%,
+  100% { opacity: var(--ashes-opacity); }
+
+  88.66%,
+  92.33% { opacity: 0.1; }
 }
 
 /* - == === ボディ背景 === == - */
@@ -136,10 +169,14 @@ body::after {
 /* この疑似要素には、暗から明へのテーマの遷移として、ヘッダーの直下の部分に位置する淡い紫色の斑点のあるもやが含まれています。
  */
 #content-wrap { position: relative; }
+
 #content-wrap::before {
   content: "";
   position: absolute;
-  height: 100%; width: 100%; top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
   background-repeat: repeat-x;
   pointer-events: none;
   background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A7657035-19-6npd/purple-smoke.png");
@@ -149,18 +186,21 @@ body::after {
 /* - == === その他 === == - */
 
 /* Interwiki */
+
 .scpnet-interwiki-wrapper {
   filter: brightness(0.86) invert(1) hue-rotate(73deg) saturate(10);
 }
 
 /* ログイン情報の部分に少量のコントラストを更に追加 */
+
 #login-status {
-  background: rgba(var(--dark-accent), 0.3);
+  background: rgb(var(--dark-accent) 0.3);
   padding-left: 0.5rem;
 }
 
 /* ユーザーのモーション設定を優先 */
 @media screen and (prefers-reduced-motion: reduce) {
+
   body::before,
   div#container-wrap::before,
   div#container-wrap-wrap::after,
@@ -172,9 +212,11 @@ body::after {
 /* - == === 日本支部用 === == - */
 
 /* クレジットモジュール */
+
 .modalcontainer .modalbox {
-    box-shadow: 0 2px 6px rgba(var(--dark-accent), 0.5);
+  box-shadow: 0 2px 6px rgb(var(--dark-accent) 0.5);
 }
+
 .creditModule .rate-box-with-credit-button .page-rate-widget-box {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }

@@ -8,7 +8,7 @@
     CC BY-SA 3.0
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap");
 
 /*
   Sigma9 Customizable Header
@@ -16,341 +16,411 @@
   --source: http://scp-jp-sandbox3.wikidot.com/draft:3396310-168-9905
   --license: CC BY-SA 3.0 ( http://creativecommons.org/licenses/by-sa/3.0 )
 */
+
 div#container-wrap {
-    background: linear-gradient(180deg, #ebe0ce 22%, #954039 22%, #954039 86.5%, #ebe0ce 86.5%, #ebe0ce 100%) top left repeat-x;
-    background-size: 100px 162px;
+  background: linear-gradient(180deg, #ebe0ce 22%, #954039 22%, #954039 86.5%, #ebe0ce 86.5%, #ebe0ce 100%) top left repeat-x;
+  background-size: 100px 162px;
 }
-#header h1, #header h2{
-    direction: rtl;
-    float: unset;
-    margin-left: auto;
-    width: 280px;
-    margin-right: auto;
+
+#header h1,
+#header h2 {
+  direction: rtl;
+  float: unset;
+  margin-left: auto;
+  width: 280px;
+  margin-right: auto;
 }
-div#header h1 a{
-    text-shadow: unset;
+
+div#header h1 a {
+  text-shadow: unset;
 }
-div#header h1 a:before {
-    font-family: 'Shippori Mincho', serif;
-    direction: rtl;
-    unicode-bidi: bidi-override;
-    content: "大正百伍拾年";
-    color: #ebe0ce;
+
+div#header h1 a::before {
+  font-family: "Shippori Mincho", serif;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  content: "大正百伍拾年";
+  color: #ebe0ce;
 }
+
 div#header h1 a span {
-    font-size: 0px;
+  font-size: 0;
 }
+
 div#header h2 span {
-    font-size:0px;
-    padding: 4px;
+  font-size: 0;
+  padding: 4px;
 }
-div#header h2:after {
-    font-family: 'Shippori Mincho', serif;
-    content: "皇紀二七二一年";
-    direction: rtl;
-    unicode-bidi: bidi-override;
-    font-weight: bold;
-    color: #ebe0ce;
-    padding: 19px 0;
-    margin-right: 15px;
-    white-space: pre;
+
+div#header h2::after {
+  font-family: "Shippori Mincho", serif;
+  content: "皇紀二七二一年";
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-weight: bold;
+  color: #ebe0ce;
+  padding: 19px 0;
+  margin-right: 15px;
+  white-space: pre;
 }
+
 #header {
-    height: 140px;
-    position: relative;
-    z-index: 10;
-    padding-bottom: 22px;
-    background: unset;
+  height: 140px;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 22px;
+  background: unset;
 }
 
 #top-bar a {
-    color: #6a1435;
+  color: #6a1435;
 }
+
 #top-bar ul li.sfhover a,
 #top-bar ul li:hover a {
-    background: #ebe0ce;
+  background: #ebe0ce;
 }
+
 #top-bar ul li.sfhover ul li a,
 #top-bar ul li:hover ul li a {
-    border-top: 1px solid #ddd;
+  border-top: 1px solid #dddddd;
 }
+
 #top-bar ul li.sfhover a:hover,
 #top-bar ul li:hover a:hover {
-    background: #fdd2b9;
-    color: #da003d;
+  background: #fdd2b9;
+  color: #da003d;
 }
+
 /* SEARCHBOX */
 
 #search-top-box-input {
-    border: solid 1px #ebe0ce;
-    border-radius: 5px;
-    color: #ebe0ce;
-    background-color: #932E40;
-    box-shadow: unset;
+  border: solid 1px #ebe0ce;
+  border-radius: 5px;
+  color: #ebe0ce;
+  background-color: #932e40;
+  box-shadow: unset;
 }
 
-#search-top-box-form input[type=submit]{
-    color: #ebe0ce;
-    background: #932E40;
+#search-top-box-form input[type = "submit"] {
+  color: #ebe0ce;
+  background: #932e40;
 }
+
 div#search-top-box {
-    top: 7px;
-    width: 100%;
-    right: 100px
+  top: 7px;
+  width: 100%;
+  right: 100px;
 }
 
 div#search-top-box form {
-    display: inline-flex;
-    justify-content: flex-end
+  display: inline-flex;
+  justify-content: flex-end;
 }
 
-div#search-top-box form input[type="text"],
-div#search-top-box form input[type="text"]:hover {
-    background-color: transparent;
-    display: inline-block;
-    height: 1.1rem;
-    width: 8rem;
-    transition: width .25s;
-    outline: double black;
-}
-#search-top-box-input:hover, #search-top-box-input:focus{
-    border: solid 1px black;
+div#search-top-box form input[type = "text"],
+div#search-top-box form input[type = "text"]:hover {
+  background-color: transparent;
+  display: inline-block;
+  height: 1.1rem;
+  width: 8rem;
+  transition: width 0.25s;
+  outline: double black;
 }
 
-div#search-top-box form input[type="text"]:not(:focus),
-div#search-top-box form input[type="text"]:not(:focus):not(:hover) {
-    background-color: transparent;
-    color: transparent;
-    cursor: pointer;
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    box-sizing: border-box;
-    border-radius: 24px;
-    box-shadow: none;
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url("data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%203.44%203.44%22%3E%3Cg%20fill%3D%22%23932e40%22%3E%3Cpath%20d%3D%22M.53%202.249V.132l1.057%201.059v2.116zM2.91%202.249V.132L1.852%201.191v2.116zM1.587%200h.265v1.19h-.265M1.587%203.307h.265v.133h-.265%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+#search-top-box-input:hover,
+#search-top-box-input:focus {
+  border: solid 1px black;
 }
- 
-div#search-top-box form input[type="submit"] {
-    display: none;
+
+div#search-top-box form input[type = "text"]:not(:focus),
+div#search-top-box form input[type = "text"]:not(:focus, :hover) {
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  box-shadow: none;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%203.44%203.44%22%3E%3Cg%20fill%3D%22%23932e40%22%3E%3Cpath%20d%3D%22M.53%202.249V.132l1.057%201.059v2.116zM2.91%202.249V.132L1.852%201.191v2.116zM1.587%200h.265v1.19h-.265M1.587%203.307h.265v.133h-.265%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
- 
+
+div#search-top-box form input[type = "submit"] {
+  display: none;
+}
+
 #search-top-box-input {
-    border: solid 1px black;
-    border-radius: 5px;
+  border: solid 1px black;
+  border-radius: 5px;
 }
+
 div#search-top-box::after {
-    content: "☜ケンサク";
-    display: inline-flex;
+  content: "☜ケンサク";
+  display: inline-flex;
 }
+
 /* LOGIN */
-#login-status{
-    top: 7px;
-    right: 0px;
+
+#login-status {
+  top: 7px;
+  right: 0;
 }
-#login-status, #login-status a, #login-status ul a {
-    color: #6a1435;
+
+#login-status,
+#login-status a,
+#login-status ul a {
+  color: #6a1435;
 }
+
 #login-status .printuser {
-    margin: 0;
-    font-size: 0;
-    position: absolute;
-    top: unset;
-    right: -14px;
-    width: 100px;
-    padding: 0;
+  margin: 0;
+  font-size: 0;
+  position: absolute;
+  top: unset;
+  right: -14px;
+  width: 100px;
+  padding: 0;
 }
+
 #login-status .printuser img.small {
-    background: none !Important;
-    margin: 0;
-    width: 20px;
-    height: 20px;
-    border: solid 1px black;
-    border-radius: 10px;
-    outline: double black;
-    padding: 0;
+  background: none !Important;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border: solid 1px black;
+  border-radius: 10px;
+  outline: double black;
+  padding: 0;
 }
-#my-account{
-    display:none;
+
+#my-account {
+  display: none;
 }
-#account-topbutton, #account-options{
-    background-color: #ebe0ce;
-    border: 1px solid #5c3b54;
+
+#account-topbutton,
+#account-options {
+  background-color: #ebe0ce;
+  border: 1px solid #5c3b54;
 }
-#account-topbutton{
-    padding: unset;
+
+#account-topbutton {
+  padding: unset;
 }
-#login-status>a[href="javascript:;"] {
-    margin: 0;
-    text-align: center;
-    font-size: 0;
-    text-decoration: none;
-    background: none;
-    position: absolute;
-    right: 29px;
-    width: 22px;
-    height: 22px;
-    top: -1px;
-    border: 1px solid black;
-    border-radius: 10px;
-    outline: double 3px black;
-    outline-offset: 1px;
+
+#login-status > a[href = "javascript:;"] {
+  margin: 0;
+  text-align: center;
+  font-size: 0;
+  text-decoration: none;
+  background: none;
+  position: absolute;
+  right: 29px;
+  width: 22px;
+  height: 22px;
+  top: -1px;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: double 3px black;
+  outline-offset: 1px;
 }
-#login-status>a.login-status-create-account.btn {
-    right: 25px;
+
+#login-status > a.login-status-create-account.btn {
+  right: 25px;
 }
-#login-status>a.login-status-sign-in.btn {
-    right: 60px;
+
+#login-status > a.login-status-sign-in.btn {
+  right: 60px;
 }
-#login-status>a[href="javascript:;"]:before {
-    display: inline-block;
-    font-family: 'Shippori Mincho', serif;
-    font-style: bold;
-    font-size: 1rem;
-    margin: auto;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    transform: translate(0, 0);
+
+#login-status > a[href = "javascript:;"]::before {
+  display: inline-block;
+  font-family: "Shippori Mincho", serif;
+  font-style: bold;
+  font-size: 1rem;
+  margin: auto;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  transform: translate(0, 0);
 }
-#login-status #account-topbutton:before{
-    content:"詳";
+
+#login-status #account-topbutton::before {
+  content: "詳";
 }
-#login-status .login-status-sign-in:before{
-    content:"入";
+
+#login-status .login-status-sign-in::before {
+  content: "入";
 }
-#login-status .login-status-create-account:before {
-    content:"登";
+
+#login-status .login-status-create-account::before {
+  content: "登";
 }
-#login-status .login-status-sign-in #text, #login-status .login-status-create-account #text{
-    font-size:0;
+
+#login-status .login-status-sign-in #text,
+#login-status .login-status-create-account #text {
+  font-size: 0;
 }
+
 #login-status span {
-    font-size: 0;
+  font-size: 0;
 }
 
 /* SIDE */
+
 #side-bar div.menu-item img {
-    display: unset;
+  display: unset;
 }
 
-#toc, #side-bar .side-block{
-    border: solid 1px black;
-    position: relative;
-    outline: double 3px black;
-    border-radius: 10px;
-    outline-offset: 1px;
-    background: white !important;
-    box-shadow: unset;
+#toc,
+#side-bar .side-block {
+  border: solid 1px black;
+  position: relative;
+  outline: double 3px black;
+  border-radius: 10px;
+  outline-offset: 1px;
+  background: white !important;
+  box-shadow: unset;
 }
-#toc:after, #side-bar .side-block::after {
-    content: "";
-    border: solid 2px black;
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    width: calc(100% + 8px);
-    height: calc(100% + 8px);
-    border-radius: unset;
-    z-index: -1;
+
+#toc::after,
+#side-bar .side-block::after {
+  content: "";
+  border: solid 2px black;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  border-radius: unset;
+  z-index: -1;
 }
+
 #side-bar .heading {
-    color: #243150;
-    border-bottom: solid 1px #600;
-    padding-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 8pt;
-    font-weight: bold;
+  color: #243150;
+  border-bottom: solid 1px #660000;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 8pt;
+  font-weight: bold;
 }
 
 /* RATE */
+
 .page-rate-widget-box {
-    outline: double #243150;
-    outline-offset: 1px;
-    border-radius: 10px;
-    border: solid 1px #243150;
-    box-shadow: none;
+  outline: double #243150;
+  outline-offset: 1px;
+  border-radius: 10px;
+  border: solid 1px #243150;
+  box-shadow: none;
 }
-div.page-rate-widget-box .rate-points{
-    background-color: transparent;
-    border: unset;
-    color: #243150;
+
+div.page-rate-widget-box .rate-points {
+  background-color: transparent;
+  border: unset;
+  color: #243150;
 }
-.rateBox div.page-rate-widget-box .rate-points, #action-area div.page-rate-widget-box .rate-points{
-    color: #243150;
+
+.rateBox div.page-rate-widget-box .rate-points,
+#action-area div.page-rate-widget-box .rate-points {
+  color: #243150;
 }
-.page-rate-widget-box .rateup, .page-rate-widget-box .ratedown {
-    background-color: transparent;
-    border: unset;
-    font-weight: bold;
+
+.page-rate-widget-box .rateup,
+.page-rate-widget-box .ratedown {
+  background-color: transparent;
+  border: unset;
+  font-weight: bold;
 }
-.page-rate-widget-box .rateup a, .page-rate-widget-box .ratedown a{
-    color: #243150;
+
+.page-rate-widget-box .rateup a,
+.page-rate-widget-box .ratedown a {
+  color: #243150;
 }
-.page-rate-widget-box .rateup a:hover, .page-rate-widget-box .ratedown a:hover{
-    background-color: #243150;
-    color: white;
+
+.page-rate-widget-box .rateup a:hover,
+.page-rate-widget-box .ratedown a:hover {
+  background-color: #243150;
+  color: white;
 }
+
 .page-rate-widget-box .cancel {
-    background-color: transparent;
-    border: unset;
+  background-color: transparent;
+  border: unset;
 }
+
 #container .page-rate-widget-box .cancel a {
-    font-size: 0;
-    color: #243150;
-    padding: 3px 5px;
-    height: 12px;
+  font-size: 0;
+  color: #243150;
+  padding: 3px 5px;
+  height: 12px;
 }
+
 #container .page-rate-widget-box .cancel a:hover {
-    background: #243150;
-    color: white;
+  background: #243150;
+  color: white;
 }
+
 .rateBox .rate-box-with-credit-button .creditButton {
-    width: 20px;
-    height: 20px;
-    background-color: #243150;
-    border: unset;
-    border-radius: 0px;
-    box-shadow: unset;
+  width: 20px;
+  height: 20px;
+  background-color: #243150;
+  border: unset;
+  border-radius: 0;
+  box-shadow: unset;
 }
+
 .creditButton a:hover {
-    color: #99a;
+  color: #9999aa;
 }
 
 /* BODY */
-body, h1, h2, h3, h4, h5, h6, #page-title {
-    font-family: 'Shippori Mincho', serif;
-}
-h1, #page-title{
-    color: #DA003D;
-}
-hr{
-    background-color: #b5c2c6;
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#page-title {
+  font-family: "Shippori Mincho", serif;
 }
 
-.taisho1{
-    border: solid 1px black;
-    position: relative;
-    outline: double 3px black;
-    border-radius: 10px;
-    outline-offset: 1px;
-    background: white;
-    box-shadow: unset;
-    padding: 3px;
+h1,
+#page-title {
+  color: #da003d;
 }
+
+hr {
+  background-color: #b5c2c6;
+}
+
+.taisho1 {
+  border: solid 1px black;
+  position: relative;
+  outline: double 3px black;
+  border-radius: 10px;
+  outline-offset: 1px;
+  background: white;
+  box-shadow: unset;
+  padding: 3px;
+}
+
 .taisho1::before {
-    content: "";
-    border: solid 2px black;
-    position: absolute;
-    top: -6px;
-    right: -6px;
-    width: calc(100% + 8px);
-    height: calc(100% + 8px);
-    border-radius: unset;
-    z-index: -1;
+  content: "";
+  border: solid 2px black;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  border-radius: unset;
+  z-index: -1;
 }
 
 .article {
@@ -358,93 +428,113 @@ hr{
   width: auto;
   margin: 10px 5px;
   padding: 15px 20px;
-  background-color:rgba(255,255,255,0.8);
-  -webkit-box-sizing: border-box;
+  background-color: rgb(255 255 255 / 80%);
   box-sizing: border-box;
-  box-shadow: 0 0 0 4px #fff inset,
-                          0 0 0 5px #90a3aa inset;
+  box-shadow: 0 0 0 4px #ffffff inset,
+    0 0 0 5px #90a3aa inset;
   text-align: center;
 }
+
 .article::before,
 .article::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 80px;
   height: 80px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .article::before {
   top: 0;
   left: 0;
-  border-top: 2px solid #DA003D;
-  border-left: 2px solid #DA003D;
+  border-top: 2px solid #da003d;
+  border-left: 2px solid #da003d;
 }
+
 .article::after {
   bottom: 0;
   right: 0;
-  border-bottom: 2px solid #DA003D;
-  border-right: 2px solid #DA003D;
+  border-bottom: 2px solid #da003d;
+  border-right: 2px solid #da003d;
 }
 
-.Oradano{
-  font-family: OradanoGSRR, serif;
+.Oradano {
+  font-family: "OradanoGSRR", serif;
 }
-
 
 /* TAB */
-.yui-nav, .yui-nav li {
-    margin: 2px;
-    padding: 2px;
+
+.yui-nav,
+.yui-nav li {
+  margin: 2px;
+  padding: 2px;
 }
-.yui-navset .yui-nav li, .yui-navset .yui-navset-top .yui-nav li {
-    margin: 0 0.16em 0 0;
-    padding: 1px 0 0;
-    zoom: 1;
-    border: solid 1px black;
-    position: relative;
-    outline: solid 1px black;
-    border-radius: 10px;
-    outline-offset: 1px;
-    background: transparent;
+
+.yui-navset .yui-nav li,
+.yui-navset .yui-navset-top .yui-nav li {
+  margin: 0 0.16em 0 0;
+  padding: 1px 0 0;
+  zoom: 1;
+  border: solid 1px black;
+  position: relative;
+  outline: solid 1px black;
+  border-radius: 10px;
+  outline-offset: 1px;
+  background: transparent;
 }
-.yui-navset .yui-nav a, .yui-navset .yui-navset-top .yui-nav a {
-    background-color: transparent;
-    border: unset;
-    background-image: unset;
+
+.yui-navset .yui-nav a,
+.yui-navset .yui-navset-top .yui-nav a {
+  background-color: transparent;
+  border: unset;
+  background-image: unset;
 }
-.yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a em {
-    border: unset;
+
+.yui-navset .yui-nav a em,
+.yui-navset .yui-navset-top .yui-nav a em {
+  border: unset;
 }
-.yui-navset .yui-nav .selected, .yui-navset .yui-navset-top .yui-nav .selected {
-    border: solid 1px black;
-    position: relative;
-    outline: double 3px black;
-    border-radius: 10px;
-    outline-offset: 1px;
-    background: transparent;
-    margin: 0 4px -1px 2px;
+
+.yui-navset .yui-nav .selected,
+.yui-navset .yui-navset-top .yui-nav .selected {
+  border: solid 1px black;
+  position: relative;
+  outline: double 3px black;
+  border-radius: 10px;
+  outline-offset: 1px;
+  background: transparent;
+  margin: 0 4px -1px 2px;
 }
-.yui-navset .yui-nav a:hover, .yui-navset .yui-nav a:focus{
-    background: transparent;
+
+.yui-navset .yui-nav a:hover,
+.yui-navset .yui-nav a:focus {
+  background: transparent;
 }
-.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a:focus, .yui-navset .yui-nav .selected a:hover {
-    background: transparent;
-    color: black;
-    border: unset;
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a:focus,
+.yui-navset .yui-nav .selected a:hover {
+  background: transparent;
+  color: black;
+  border: unset;
 }
-.yui-navset .yui-nav .selected a, .yui-navset .yui-nav .selected a em {
-    border: unset;
+
+.yui-navset .yui-nav .selected a,
+.yui-navset .yui-nav .selected a em {
+  border: unset;
 }
-.yui-navset .yui-nav, .yui-navset .yui-navset-top .yui-nav{
-    border: unset;
+
+.yui-navset .yui-nav,
+.yui-navset .yui-navset-top .yui-nav {
+  border: unset;
 }
+
 .yui-navset .yui-content {
-    border: solid 1px black;
-    position: relative;
-    outline: double 3px black;
-    border-radius: 10px;
-    outline-offset: 1px;
-    margin: 2px;
-    margin-top: 4px;
+  border: solid 1px black;
+  position: relative;
+  outline: double 3px black;
+  border-radius: 10px;
+  outline-offset: 1px;
+  margin: 2px;
+  margin-top: 4px;
 }

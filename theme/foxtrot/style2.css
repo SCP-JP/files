@@ -1,56 +1,50 @@
-
 :root {
-    --accent: var(--acc-threshold);
-    --header-title: "THRESHOLD";
-    --header-subtitle: "維持、持続、延長";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-55-celk/overwatchheaderthreshold.svg);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-55-celk/overwatchheaderthreshold.svg);
-    --logo-opacity: 100% !important;
-
-    --darkmode-gradient-top: rgb(var(--accent)) !important;
+  --accent: var(--acc-threshold);
+  --header-title: "THRESHOLD";
+  --header-subtitle: "維持、持続、延長";
+  --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-55-celk/overwatchheaderthreshold.svg);
+  --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-55-celk/overwatchheaderthreshold.svg);
+  --logo-opacity: 100% !important;
+  --darkmode-gradient-top: rgb(var(--accent)) !important;
 }
 
 #header h1 a::before,
 #header h2::before {
-    color: transparent;
+  color: transparent;
 }
 
 #login-status {
-    color: var(--dark-bg-1) !important;
+  color: var(--dark-bg-1) !important;
 }
 
-#login-status>a {
-    color: var(--dark-bg-2) !important;
-    border-color: var(--dark-bg-2);
+#login-status > a {
+  color: var(--dark-bg-2) !important;
+  border-color: var(--dark-bg-2);
 }
 
 div#extra-div-1 {
-    background-size: 300px;
+  background-size: 300px;
 }
 
 @media (max-width: 700px) {
 
-    div#extra-div-1 {
-     background-size: 270px;
-     top: -3px;
-    }
-
+  div#extra-div-1 {
+    background-size: 270px;
+    top: -3px;
+  }
 }
 
 @media (max-width: 620px) {
 
-    div#extra-div-1 {
-     top: -10px;
-    }
-
+  div#extra-div-1 {
+    top: -10px;
+  }
 }
 
 @media (max-width: 520px) {
 
-    div#extra-div-1 {
-     background-size: 245px;
-     top: 3px;
-    }
-
+  div#extra-div-1 {
+    background-size: 245px;
+    top: 3px;
+  }
 }
-

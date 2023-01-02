@@ -1,246 +1,265 @@
 body {
-  -webkit-text-size-adjust: 110%;
+  text-size-adjust: 110%;
 }
+
 .vpoem {
   text-indent: 0;
-  -webkit-writing-mode: vertical-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   margin: auto;
   margin-bottom: 0.5em;
   font-size: 2.5em;
   font-family: "KaiTi", "MS PMincho", "STKaiti", "HiraMinProN-W6", "Hiragino Kaku Gothic Pro", "MS PGothic", serif;
 }
+
 .vpoem p {
   line-height: 1.4;
   margin: 0 auto;
 }
+
 .vpoem tt {
   vertical-align: middle;
   font-family: "KaiTi", "MS PMincho", "STKaiti", "HiraMinProN-W6", "Hiragino Kaku Gothic Pro", "MS PGothic", serif;
 }
+
 @media screen and (max-width: 767px) {
+
   .vpoem {
     font-size: 1.5em;
   }
 }
-span[style="text-decoration: line-through;"] {
-  display: -webkit-inline-flex;   /* Safari */
-  display:         inline-flex;
-  -webkit-flex-direction: column; /* Safari */
-          flex-direction: column;
+
+span[style = "text-decoration: line-through;"] {   /* Safari */
+  display: inline-flex; /* Safari */
+  flex-direction: column;
   vertical-align: bottom;
 }
-span[style="text-decoration: line-through;"] > tt {
+
+span[style = "text-decoration: line-through;"] > tt {
   font-size: 50%;
   line-height: 0.5em;
 }
-.tategaki span[style="text-decoration: line-through;"] > tt {
+
+.tategaki span[style = "text-decoration: line-through;"] > tt {
   line-height: 1em;
 }
-.tategaki span[style="text-decoration: line-through;"] {
+
+.tategaki span[style = "text-decoration: line-through;"] {
   vertical-align: 0.3em;
 }
+
 .tategaki blockquote {
   padding: 2em 0.5em;
 }
+
 .tategaki tt {
   vertical-align: middle;
   font-family: "ヒラギノ明朝 Pro W3", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
-.tategaki .henoji:before {
+
+.tategaki .henoji::before {
   content: "〳〵";
-  color: rgba(51, 51, 51, 1.0);
+  color: rgb(51 51 51 / 100%);
   opacity: 1;
-  transform: scale(1, 1)rotateX(0) translateY(0);
+  transform: scale(1, 1) rotateX(0) translateY(0);
 }
-.tategaki .dhenoji:before {
+
+.tategaki .dhenoji::before {
   content: "〴〵";
-  color: rgba(51, 51, 51, 1.0);
+  color: rgb(51 51 51 / 100%);
   opacity: 1;
-  transform: scale(1, 1)rotateX(0) translateY(0);
+  transform: scale(1, 1) rotateX(0) translateY(0);
 }
-.tategaki .dhenoji:after {
+
+.tategaki .dhenoji::after {
   content: "";
-  color: rgba(51, 51, 51, 1.0);
+  color: rgb(51 51 51 / 100%);
   opacity: 1;
-  transform: scale(1, 1)rotateX(0) translateY(0);
+  transform: scale(1, 1) rotateX(0) translateY(0);
 }
+
 .tategaki {
   -webkit-columns-axis: vertical;
-     -moz-columns: auto 20em;
-     -moz-column-gap: 20px;
-     -moz-column-rule: 1px solid #dddddd;
-     -moz-column-fill: auto;
-  -webkit-columns: auto 20em;
-  -webkit-column-gap: 20px;
-  -webkit-column-rule: 1px solid #dddddd;
-  -webkit-column-fill: auto;
-          columns: auto 20em;
-          column-gap: 20px;
-          column-rule: 1px solid #dddddd;
-          column-fill: auto;
+  columns: auto 20em;
+  column-gap: 20px;
+  column-rule: 1px solid #dddddd;
+  column-fill: auto;
+  columns: auto 20em;
+  column-gap: 20px;
+  column-rule: 1px solid #dddddd;
+  column-fill: auto;
   font-size: small;
   overflow-y: scroll;
   width: calc(100% + 3em);
   padding-right: 2em;
-          writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-     -moz-writing-mode: vertical-rl;
-  -webkit-writing-mode: vertical-rl;
+  writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   font-family: "ヒラギノ明朝 Pro W3", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
+
 .tategaki {
   -webkit-column-axis: vertical;
-     -moz-columns: auto 20em;
-     -moz-column-gap: 20px;
-     -moz-column-rule: 1px solid #dddddd;
-     -moz-column-fill: auto;
-  -webkit-columns: auto 20em;
-  -webkit-column-gap: 20px;
-  -webkit-column-rule: 1px solid #dddddd;
-  -webkit-column-fill: auto;
-          columns: auto 20em;
-          column-gap: 20px;
-          column-rule: 1px solid #dddddd;
-          column-fill: auto;
+  columns: auto 20em;
+  column-gap: 20px;
+  column-rule: 1px solid #dddddd;
+  column-fill: auto;
+  columns: auto 20em;
+  column-gap: 20px;
+  column-rule: 1px solid #dddddd;
+  column-fill: auto;
   font-size: small;
   width: calc(100% + 3em);
   padding-right: 2em;
-          writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-     -moz-writing-mode: vertical-rl;
-  -webkit-writing-mode: vertical-rl;
+  writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   font-family: "ヒラギノ明朝 Pro W3", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+@media screen and (min-device-pixel-ratio: 0) {
+
   .tategaki {
     overflow-y: scroll;
   }
 }
-.henoji:before {
+
+.henoji::before {
   content: "へ";
-  color: rgba(51, 51, 51, 1.0);
+  color: rgb(51 51 51 / 100%);
   opacity: 1;
-  transform: scale(1.9, 1)rotateX(180deg) translateY(-0.08em);
+  transform: scale(1.9, 1) rotateX(180deg) translateY(-0.08em);
   position: absolute;
   display: inline-block;
-          user-select: none;
-     -moz-user-select: none;
-  -webkit-user-select: none;
-      -ms-user-select: none;
+  user-select: none;
+  user-select: none;
+  user-select: none;
   z-index: 1;
 }
+
 .henoji {
   position: relative;
   width: 1em;
   white-space: pre;
   display: inline-block;
   padding: 0 0.5em;
-  color: rgba(51, 51, 51, 0);
+  color: rgb(51 51 51 / 0%);
 }
-.dhenoji:before {
+
+.dhenoji::before {
   content: "へ";
-  color: rgba(51, 51, 51, 1.0);
+  color: rgb(51 51 51 / 100%);
   opacity: 1;
-  transform: scale(1.9, 1)rotateX(180deg) translateY(-0.08em);
+  transform: scale(1.9, 1) rotateX(180deg) translateY(-0.08em);
   position: absolute;
   display: inline-block;
-          user-select: none;
-     -moz-user-select: none;
-  -webkit-user-select: none;
-      -ms-user-select: none;
+  user-select: none;
+  user-select: none;
+  user-select: none;
   z-index: 1;
 }
+
 .dhenoji {
   position: relative;
   width: 1em;
   white-space: pre;
   display: inline-block;
   padding: 0 0.5em;
-  color: rgba(51, 51, 51, 0);
+  color: rgb(51 51 51 / 0%);
 }
-.dhenoji:after {
+
+.dhenoji::after {
   position: absolute;
-  color: rgba(51, 51, 51, 1.0);
+  color: rgb(51 51 51 / 100%);
   content: "゛";
   top: 0.07em;
   left: 0.6em;
   z-index: 1;
 }
-.hdhenoji:before {
+
+.hdhenoji::before {
   content: "へ";
-  color: rgba(51, 51, 51, 1.0);
+  color: rgb(51 51 51 / 100%);
   opacity: 1;
-  transform: scale(1.9, 1)rotateX(180deg) translateY(-0.08em);
+  transform: scale(1.9, 1) rotateX(180deg) translateY(-0.08em);
   position: absolute;
   display: inline-block;
-          user-select: none;
-     -moz-user-select: none;
-  -webkit-user-select: none;
-      -ms-user-select: none;
+  user-select: none;
+  user-select: none;
+  user-select: none;
   z-index: 1;
 }
+
 .hdhenoji {
   position: relative;
   width: 1em;
   white-space: pre;
   display: inline-block;
   padding: 0 0.5em;
-  color: rgba(51, 51, 51, 0);
+  color: rgb(51 51 51 / 0%);
 }
-.hdhenoji:after {
+
+.hdhenoji::after {
   position: absolute;
-  color: rgba(51, 51, 51, 1.0);
+  color: rgb(51 51 51 / 100%);
   content: "゜";
   top: 0.07em;
   left: 0.6em;
   z-index: 1;
 }
-span[style="text-decoration: underline;"] tt {
+
+span[style = "text-decoration: underline;"] tt {
   position: relative;
   text-decoration: none;
 }
-span[style="text-decoration: underline;"] tt::before {
+
+span[style = "text-decoration: underline;"] tt::before {
   content: "";
   position: absolute;
   top: 90%;
   width: 100%;
   height: 0.25em;
-  background: -webkit-linear-gradient(315deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%), -webkit-linear-gradient(45deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%);
-  background:         linear-gradient(135deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%);
+  background: linear-gradient(315deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%);
+  background: linear-gradient(135deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%);
   background-size: 0.5em 0.5em;
   background-repeat: repeat-x, repeat-x;
 }
+
 .namisen {
   position: relative;
 }
+
 .namisen::before {
   content: "";
   position: absolute;
   top: 90%;
   width: 100%;
   height: 0.25em;
-  background: -webkit-linear-gradient(315deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%), -webkit-linear-gradient(45deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%);
-  background:         linear-gradient(135deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%);
+  background: linear-gradient(315deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%);
+  background: linear-gradient(135deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #000000, transparent 55%, transparent 100%);
   background-size: 0.5em 0.5em;
   background-repeat: repeat-x, repeat-x;
 }
+
 .warning {
   position: relative;
 }
+
 .warning::before {
   content: "";
   position: absolute;
   top: 90%;
   width: 100%;
   height: 0.25em;
-  background: -webkit-linear-gradient(315deg, transparent, transparent 45%, #ff0000, transparent 55%, transparent 100%), -webkit-linear-gradient(45deg, transparent, transparent 45%, #ff0000, transparent 55%, transparent 100%);
-  background:         linear-gradient(135deg, transparent, transparent 45%, #ff0000, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #ff0000, transparent 55%, transparent 100%);
+  background: linear-gradient(315deg, transparent, transparent 45%, #ff0000, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #ff0000, transparent 55%, transparent 100%);
+  background: linear-gradient(135deg, transparent, transparent 45%, #ff0000, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #ff0000, transparent 55%, transparent 100%);
   background-size: 0.5em 0.5em;
   background-repeat: repeat-x, repeat-x;
 }
+
 tt {
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: "verdana", "arial", "helvetica", sans-serif;
   font-size: 1em;
   display: inline-table;
   text-align: center;
@@ -250,6 +269,7 @@ tt {
   vertical-align: calc(1em - 1px);
   text-indent: 0%;
 }
+
 tt > sup {
   display: table-header-group;
   font-size: 0.6em;
@@ -257,19 +277,20 @@ tt > sup {
   text-align: center;
   white-space: pre;
 }
+
 tt > sub {
-  -webkit-text-emphasis-style: filled sesame;
-          text-emphasis-style: filled sesame;
+  text-emphasis-style: filled sesame;
   font-size: 1em;
   vertical-align: calc(-1em + 1px);
 }
+
 tt > em {
   font-size: 12.8px;
   font-style: normal;
-  -webkit-text-emphasis-style: filled dot;
-          text-emphasis-style: filled dot;
+  text-emphasis-style: filled dot;
   vertical-align: calc(-1em + 1px);
 }
+
 tt > em {
   /* For the environments which comply with CSS3. */
   font-style: normal;
@@ -281,10 +302,12 @@ tt > em {
   background-clip: padding-box, content-box;
   background-size: 1em 1.3em, auto;
 }
+
 .reddel {
   position: relative;
 }
-.reddel:before {
+
+.reddel::before {
   content: " ";
   display: block;
   position: absolute;
@@ -295,60 +318,61 @@ tt > em {
   border-top: 1px solid red;
   border-bottom: 1px solid red;
 }
+
 .kenten-b {
-  -webkit-text-emphasis-style: filled dot;
-          text-emphasis-style: filled dot;
+  text-emphasis-style: filled dot;
 }
+
 .kenten-c {
-  -webkit-text-emphasis-style: filled circle;
-          text-emphasis-style: filled circle;
+  text-emphasis-style: filled circle;
 }
+
 .kenten-janome {
-  -webkit-text-emphasis-style: filled double-circle;
-          text-emphasis-style: filled double-circle;
+  text-emphasis-style: filled double-circle;
 }
+
 .kenten-t {
-  -webkit-text-emphasis-style: filled triangle;
-          text-emphasis-style: filled triangle;
+  text-emphasis-style: filled triangle;
 }
+
 .kenten-goma {
-  -webkit-text-emphasis-style: filled sesame;
-          text-emphasis-style: filled sesame;
+  text-emphasis-style: filled sesame;
 }
+
 .kenten-wb {
-  -webkit-text-emphasis-style: open dot;
-          text-emphasis-style: open dot;
+  text-emphasis-style: open dot;
 }
+
 .kenten-wc {
-  -webkit-text-emphasis-style: open circle;
-          text-emphasis-style: open circle;
+  text-emphasis-style: open circle;
 }
+
 .kenten-doublec {
-  -webkit-text-emphasis-style: open double-circle;
-          text-emphasis-style: open double-circle;
+  text-emphasis-style: open double-circle;
 }
+
 .kenten-wt {
-  -webkit-text-emphasis-style: open triangle;
-          text-emphasis-style: open triangle;
+  text-emphasis-style: open triangle;
 }
+
 .kenten-wgoma {
-  -webkit-text-emphasis-style: open sesame;
-          text-emphasis-style: open sesame;
+  text-emphasis-style: open sesame;
 }
+
 .kenten-hoshi {
-  -webkit-text-emphasis-style: "★";
-          text-emphasis-style: "★";
+  text-emphasis-style: "★";
 }
+
 .kenten-kane {
-  -webkit-text-emphasis-style: "¥";
-          text-emphasis-style: "¥";
+  text-emphasis-style: "¥";
 }
+
 .bousen {
   text-decoration: overline;
 }
 
-
 /* thank you tonootto */
+
 div.pseudo-tags ul {
   font-size: 85%;
   border-top: 1px solid #bbbbbb;
@@ -357,6 +381,7 @@ div.pseudo-tags ul {
   padding: 0 2px;
   list-style: none;
 }
+
 div.pseudo-tags li {
   color: #bb0011;
   text-decoration: none;
@@ -364,59 +389,72 @@ div.pseudo-tags li {
   margin: 0 1px;
   cursor: pointer;
 }
+
 div.pseudo-tags li:hover {
   text-decoration: underline;
 }
-#page-content span[style$="new"] {
+
+#page-content span[style $= "new"] {
   display: inline-block;
   background: #eaffea;
 }
-#page-content span[style$="new"]::before {
+
+#page-content span[style $= "new"]::before {
   padding-left: 5px;
   content: "+ ";
   color: #55cc55;
 }
-#page-content span[style$="new"]::after {
+
+#page-content span[style $= "new"]::after {
   content: " ";
   padding-right: 5px;
 }
-#page-content span[style$="old"] {
+
+#page-content span[style $= "old"] {
   display: inline-block;
   background: #ffecec;
 }
-#page-content span[style$="old"]::before {
+
+#page-content span[style $= "old"]::before {
   padding-left: 5px;
   content: "- ";
   color: #da5757;
 }
-#page-content span[style$="old"]::after {
+
+#page-content span[style $= "old"]::after {
   content: " ";
   padding-right: 5px;
 }
+
 #page-content .new {
   display: inline-block;
   margin-right: 5px;
   background: #eaffea;
 }
+
 #page-content .new::before {
   padding-left: 5px;
   content: "+ ";
   color: #55cc55;
 }
+
 #page-content .new::after {
   content: " ";
   padding-right: 5px;
 }
+
 #page-content .old {
   display: inline-block;
   margin-right: 5px;
   background: #ffecec;
 }
+
 #page-content .old::before {
   padding-left: 5px;
   content: "- ";
   color: #da5757;
 }
+
 #page-content .old::after {
   content: " ";
   padding-right: 5px;

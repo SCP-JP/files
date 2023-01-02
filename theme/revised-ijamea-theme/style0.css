@@ -1,4 +1,3 @@
-
 /*
   IJAMEA Theme Revised
     Powered on 2020/04/07 14:38:39
@@ -6,10 +5,10 @@
     Created by Nanigashi Sato
     Fixed by ukwhatn
     CC BY-SA 3.0
- 
+
     This theme is based on the IJAMEA Theme by Dr Solo.
     Source: http://www.scpwiki.com/component:ijamea-theme
- 
+
   IJAMEA Logo
     Title: IJAMEA2.png
     Created by Nanimono Demonai
@@ -18,247 +17,255 @@
     Note: The background of this image was permeabilized by Nanigashi Sato.
     CC BY-SA 3.0
 */
- 
+
 /* Fonts */
- 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;900&family=Sawarabi+Mincho&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
- 
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;900&family=Sawarabi+Mincho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
 /* Header */
- 
+
 div#container-wrap {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-8-xthd/Header.png) top left repeat-x;
+  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-8-xthd/Header.png) top left repeat-x;
 }
- 
+
 div#header {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-9-p47y/IJAMEA2.png) 10px 40px no-repeat;
-    background-position: 1em 1.5em;
-    background-size: 70px;
+  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-9-p47y/IJAMEA2.png) 10px 40px no-repeat;
+  background-position: 1em 1.5em;
+  background-size: 70px;
 }
- 
+
 div#header h1 a {
-    padding: 60px 0 28px;
+  padding: 60px 0 28px;
 }
- 
+
 div#header h1 a span {
-    font-size: 0px;
+  font-size: 0;
 }
- 
-div#header h1 a:before {
-    content: "IJAMEA";
-    color: black;
-    font-size: 115%;
-    font-family: 'Abril Fatface', cursive;
-    text-shadow: 1.75px 1.75px white;
+
+div#header h1 a::before {
+  content: "IJAMEA";
+  color: black;
+  font-size: 115%;
+  font-family: "Abril Fatface", cursive;
+  text-shadow: 1.75px 1.75px white;
 }
- 
+
 div#header h2 span {
-    font-size:0px;
-    padding: 3.5px;
+  font-size: 0;
+  padding: 3.5px;
 }
- 
-div#header h2:after {
-    content: "局査調例事常異國帝本日大";
-    font-family: 'Sawarabi Mincho', 'Noto Serif JP', sans-serif;
-    font-weight: bold;
-    color: black;
-    padding: 15px 0;
-    text-shadow: none;
-    white-space: pre;
+
+div#header h2::after {
+  content: "局査調例事常異國帝本日大";
+  font-family: "Sawarabi Mincho", "Noto Serif JP", sans-serif;
+  font-weight: bold;
+  color: black;
+  padding: 15px 0;
+  text-shadow: none;
+  white-space: pre;
 }
- 
+
 div#search-top-box {
-    top: 58px;
+  top: 58px;
 }
- 
+
 /* Header for Smartphone */
- 
+
 @media (max-width: 580px) {
-    div#header {
-        background-position: 0.3em 1.5em;
-    }
+
+  div#header {
+    background-position: 0.3em 1.5em;
+  }
 }
- 
+
 @media (max-width: 479px) {
-    div#header {
-        background-position: -0.3em 1.5em;
-    }
- 
-    #search-top-box-input {
-        display: none;
-    }
- 
-    div#header h1 a {
-        padding: 62.5px 0 21px 10px;
-    }
- 
-    div#header h1 a:before {
-        font-size: 40px;
-        text-shadow: 1.75px 1.75px white;
-    }
- 
-    div#header h2:after {
-        padding-left: 10px;
-    }
- 
-    div#search-top-box {
-        top: 57px;
-    }
- 
+
+  div#header {
+    background-position: -0.3em 1.5em;
+  }
+
+  #search-top-box-input {
+    display: none;
+  }
+
+  div#header h1 a {
+    padding: 62.5px 0 21px 10px;
+  }
+
+  div#header h1 a::before {
+    font-size: 40px;
+    text-shadow: 1.75px 1.75px white;
+  }
+
+  div#header h2::after {
+    padding-left: 10px;
+  }
+
+  div#search-top-box {
+    top: 57px;
+  }
 }
- 
+
 /* Body */
- 
+
 #html-body a {
-    color: #000000;
+  color: #000000;
 }
- 
+
 #html-body {
-    background-color: #FFF5C3;
-    color: #000000;
-    font-family: 'Noto Serif JP', sans-serif;
+  background-color: #fff5c3;
+  color: #000000;
+  font-family: "Noto Serif JP", sans-serif;
 }
- 
+
 #page-content a {
-    text-decoration: underline;
-    text-decoration-color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #000000;
 }
- 
+
 #page-content a:hover {
-    text-decoration-thickness: 2px;
+  text-decoration-thickness: 2px;
 }
- 
+
 #page-content a:visited {
-    text-decoration-color: #708090;
+  text-decoration-color: #708090;
 }
- 
+
 #page-content .printuser a {
-    text-decoration: none;
+  text-decoration: none;
 }
- 
-#page-content .h0, h1, h2, h3, h4, h5, h6 {
-    color: #000000;
-    font-family: 'Sawarabi Mincho', 'Noto Serif JP', sans-serif;
+
+#page-content .h0,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000000;
+  font-family: "Sawarabi Mincho", "Noto Serif JP", sans-serif;
 }
- 
+
 #page-content .heading {
-    color: #000000;
+  color: #000000;
 }
- 
+
 #container a.collapsible-block-link {
-    color: #000000;
+  color: #000000;
 }
- 
+
 table.wiki-content-table th {
-    color: #000;
+  color: #000000;
 }
- 
+
 /* Tab */
- 
+
 #container .yui-content {
-    color: #000;
+  color: #000000;
 }
- 
+
 div.yui-navset div.yui-content {
-    background: rgb(255, 255, 255);
-    background-image: none;
+  background: rgb(255 255 255);
+  background-image: none;
 }
- 
+
 div.yui-navset ul.yui-nav a,
 div.yui-navset div.yui-navset-top ul.yui-nav a {
-    background: rgb(255, 255, 255);
-    color: #000000;
-    background-image: none;
+  background: rgb(255 255 255);
+  color: #000000;
+  background-image: none;
 }
- 
+
 div.yui-navset ul.yui-nav a:hover,
 div.yui-navset ul.yui-nav a:focus {
-    background: #d2d1c4;
-    color: #000000;
-    background-image: none;
-    text-decoration: none;
+  background: #d2d1c4;
+  color: #000000;
+  background-image: none;
+  text-decoration: none;
 }
- 
+
 div.yui-navset ul.yui-nav .selected a,
 div.yui-navset ul.yui-nav .selected a:focus,
 div.yui-navset ul.yui-nav .selected a:hover {
-    background: #abbabe;
-    color: #000000;
-    background-image: none;
+  background: #abbabe;
+  color: #000000;
+  background-image: none;
 }
- 
+
 #page-content .yui-nav a {
   text-decoration: none;
 }
- 
+
 /* Module Rate */
- 
+
 #container div.page-rate-widget-box .rate-points {
-    background-color: #000000;
+  background-color: #000000;
 }
- 
-#container .rateup.btn.btn-default, #container .ratedown.btn.btn-default {
-    background-color: #ffffff;
+
+#container .rateup.btn.btn-default,
+#container .ratedown.btn.btn-default {
+  background-color: #ffffff;
 }
- 
+
 #container .page-rate-widget-box .rateup a:hover {
-    background: #9acd32;
+  background: #9acd32;
 }
- 
+
 #container .page-rate-widget-box .ratedown a:hover {
-    background: #e9967a;
+  background: #e9967a;
 }
- 
+
 #container .page-rate-widget-box .cancel {
-    background-color: #000000;
+  background-color: #000000;
 }
- 
+
 #container .page-rate-widget-box .cancel a:hover {
-    background: #cccccc;
+  background: #cccccc;
 }
- 
-#container .page-rate-widget-box .cancel a:before {
-    color: #ffffff;
+
+#container .page-rate-widget-box .cancel a::before {
+  color: #ffffff;
 }
- 
+
 #page-content .page-rate-widget-box .cancel.btn.btn-default a:hover {
-    color: #333333;
+  color: #333333;
 }
 
 #page-content .page-rate-widget-box .cancel.btn.btn-default:hover a::before {
-    color: #333333;
+  color: #333333;
 }
 
 /* Credit Box for JP */
- 
+
 #page-content .creditRate.creditModule .rate-box-with-credit-button {
-    border: none;
+  border: none;
 }
- 
+
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton {
-    background-color: #000000;
-    border: 1px solid #000000;
+  background-color: #000000;
+  border: 1px solid #000000;
 }
- 
+
 #page-content .creditRate.creditModule .rate-box-with-credit-button .creditButton:hover {
-    background-color: #cccccc;
-    border: 1px solid #cccccc;
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
 }
- 
+
 #page-content .creditRate.creditModule .rate-box-with-credit-button .page-rate-widget-box {
-    border: 0.5px solid #000000;
-    border-radius: 5px;
-    background-color: #000000;
+  border: 0.5px solid #000000;
+  border-radius: 5px;
+  background-color: #000000;
 }
- 
+
 #page-content .creditRate.creditModule .creditButton a {
-    color: #ffffff;
+  color: #ffffff;
 }
- 
+
 #page-content .creditRate.creditModule .creditButton:hover a::before {
-    color: #000000;
+  color: #000000;
 }
- 
+
 #page-content div.creditRate a,
 #page-content div.page-rate-widget-box a,
 #u-credit-view a {
@@ -266,189 +273,191 @@ div.yui-navset ul.yui-nav .selected a:hover {
 }
 
 #container .creditRate.creditModule .rate-box-with-credit-button > .page-rate-widget-box .cancel a:hover {
-    border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 #page-content .creditRate.creditModule .creditButton p a {
-    border-left: solid 1px transparent;
+  border-left: solid 1px transparent;
 }
- 
+
 #page-content .modalbox .modalbox-title {
-    background: #dbcb82;
+  background: #dbcb82;
 }
- 
-/* Info Box for EN*/
- 
+
+/* Info Box for EN */
+
 #page-content .cancel.btn.btn-default a {
-    color: #ffffff;
+  color: #ffffff;
 }
- 
-#page-content .fa-info:before {
-    color: #ffffff;
+
+#page-content .fa-info::before {
+  color: #ffffff;
 }
- 
+
 #page-content .rate-box-with-credit-button {
-    background-color: #000000;
-    border: solid 1px #000000;
+  background-color: #000000;
+  border: solid 1px #000000;
 }
- 
+
 #page-content .rate-box-with-credit-button > .page-rate-widget-box {
-    border-radius: 0px;
-    border: 0px;
+  border-radius: 0;
+  border: 0;
 }
- 
+
 #page-content .rate-box-with-credit-button > div.page-rate-widget-box .rate-points {
-    border: none;
+  border: none;
 }
- 
+
 #page-content .rate-box-with-credit-button > .page-rate-widget-box .rateup,
 #page-content .rate-box-with-credit-button > .page-rate-widget-box .ratedown {
-    border-top: none;
-    border-bottom: none;
+  border-top: none;
+  border-bottom: none;
 }
- 
+
 #container .page-rate-widget-box .cancel a:hover {
-    border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
- 
+
 #container .rate-box-with-credit-button > .page-rate-widget-box .cancel a:hover {
-    border-radius: 0;
+  border-radius: 0;
 }
- 
+
 #page-content .rate-box-with-credit-button > .page-rate-widget-box .cancel {
-    border: none;
-    border-radius: 0;
+  border: none;
+  border-radius: 0;
 }
- 
+
 #page-content .creditButton p a {
-    border-left: solid 1px #cccccc;
+  border-left: solid 1px #cccccc;
 }
 
 #page-content .creditButton:hover a::before {
-    color: #dbcb82;
+  color: #dbcb82;
 }
 
 #page-content .modalbox {
-    background: linear-gradient(#dbcb82 51px,#fefefe 51px,#fefefe);
+  background: linear-gradient(#dbcb82 51px, #fefefe 51px, #fefefe);
 }
- 
+
 /* Side Bar */
- 
+
 #side-bar .side-block {
-    border: 1px solid #000000;
-    box-shadow: 0 2px 6px #000000;
-    background: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: 0 2px 6px #000000;
+  background: #ffffff;
 }
- 
+
 #side-bar .heading {
-    border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
- 
+
 #side-bar .side-block.media,
 #side-bar .side-block.resources {
-    background: #ffffff;
+  background: #ffffff;
 }
- 
+
 #side-bar a:visited {
-    color: #000000;
+  color: #000000;
 }
- 
-#side-bar .heading, #side-bar .collapsible-block-unfolded-link .collapsible-block-link {
-    color: #333333;
+
+#side-bar .heading,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link {
+  color: #333333;
 }
- 
-#side-bar .heading:hover, #side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
-    color: #000000;
+
+#side-bar .heading:hover,
+#side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+  color: #000000;
 }
- 
+
 /* Recolors in the side-bar */
+
 .side-block .menu-item > .image {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: grayscale(100%);
 }
- 
+
 div.scpnet-interwiki-wrapper {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: grayscale(100%);
 }
- 
+
 #side-bar .collapsible-block-folded {
-    filter: grayscale(1);
+  filter: grayscale(1);
 }
- 
+
 @media
- (max-width: 767px) {
-    #side-bar{
-        background-color: #dbcb82;
-    }
+  (max-width: 767px) {
+
+  #side-bar {
+    background-color: #dbcb82;
+  }
 }
- 
+
 /* Search Box */
- 
+
 #search-top-box-input {
-    border: solid 1px #999;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: none;
-    color: #000;
+  border: solid 1px #999999;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: none;
+  color: #000000;
 }
- 
+
 #search-top-box-input:hover,
 #search-top-box-input:focus {
-    border: solid 1px #000;
-    background-color: #ccc;
-    box-shadow: none;
-    color: #000;
+  border: solid 1px #000000;
+  background-color: #cccccc;
+  box-shadow: none;
+  color: #000000;
 }
- 
-#search-top-box-form input[type=submit] {
-    padding: 2px 5px;
-    border: solid 1px #999;
-    border-radius: 5px;
-    background: none;
-    background-color: #000;
-    box-shadow: none;
-    color: #ccc;
-    font-size: 90%;
-    font-weight: bold;
-    cursor: pointer;
+
+#search-top-box-form input[type = "submit"] {
+  padding: 2px 5px;
+  border: solid 1px #999999;
+  border-radius: 5px;
+  background: none;
+  background-color: #000000;
+  box-shadow: none;
+  color: #cccccc;
+  font-size: 90%;
+  font-weight: bold;
+  cursor: pointer;
 }
- 
-#search-top-box-form input[type=submit]:hover,
-#search-top-box-form input[type=submit]:focus {
-    border: solid 1px #000;
-    background: none;
-    background-color: #ccc;
-    box-shadow: none;
-    text-shadow: none;
-    color: #fff;
+
+#search-top-box-form input[type = "submit"]:hover,
+#search-top-box-form input[type = "submit"]:focus {
+  border: solid 1px #000000;
+  background: none;
+  background-color: #cccccc;
+  box-shadow: none;
+  text-shadow: none;
+  color: #ffffff;
 }
- 
+
 /* Inter Wiki */
- 
+
 .scpnet-interwiki-wrapper {
-    filter: grayscale(100%) drop-shadow(0 1px 1px #000000);
+  filter: grayscale(100%) drop-shadow(0 1px 1px #000000);
 }
- 
+
 /* General's Note */
- 
-.generals-note{
+
+.generals-note {
   margin: -7.5px 0 1.5em 1em;
 }
- 
+
 /*
   For J-style
     It was edited by Nanigashi Sato
     Original is http://scp-jp.wikidot.com/component:jstyles
     Original was created by Nanimono Demonai
 */
- 
+
 tt {
-    font-family:  'Sawarabi Mincho', 'Noto Serif JP', sans-serif;
+  font-family: "Sawarabi Mincho", "Noto Serif JP", sans-serif;
 }

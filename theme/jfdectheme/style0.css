@@ -5,67 +5,78 @@
     CC BY-SA 3.0
 */
 
-
-
-a,a:visited {
-    color: #850171;
+a,
+a:visited {
+  color: #850171;
 }
+
 h1 {
-    color: #5f046d;
+  color: #5f046d;
 }
+
 blockquote {
     #850171
 }
+
 div#side-bar div.side-block {
-    background: #D9D9D9;
-    border: 1px solid #4e0139;
+  background: #d9d9d9;
+  border: 1px solid #4e0139;
 }
+
 div#side-bar div.side-block div.heading,
 div#side-bar div.collapsible-block-unfolded-link,
 div#side-bar div.collapsible-block-unfolded-link div.collapsible-block-link {
-    color: #4e0139;
-    border-color: #4e0139;
+  color: #4e0139;
+  border-color: #4e0139;
 }
+
 div.scpnet-interwiki-wrapper {
-    filter: hue-rotate(312deg) saturate(100%) brightness(85%);
+  filter: hue-rotate(312deg) saturate(100%) brightness(85%);
 }
+
 div.yui-navset ul.yui-nav a:hover,
 div.yui-navset ul.yui-nav a:focus {
-    background: #a64d79;
-    color: #ffffff;
+  background: #a64d79;
+  color: #ffffff;
 }
+
 div.yui-navset ul.yui-nav .selected a,
 div.yui-navset ul.yui-nav .selected a:focus,
 div.yui-navset ul.yui-nav .selected a:hover {
-    background: #4b1d5d;
+  background: #4b1d5d;
 }
+
 div.page-rate-widget-box,
 div.page-rate-widget-box span.rate-points,
 div.page-rate-widget-box span.cancel {
-    background-color: #51015b!important;
-    border: solid #51015b 1px!important;
+  background-color: #51015b !important;
+  border: solid #51015b 1px !important;
 }
+
 div.page-rate-widget-box span.rateup,
 div.page-rate-widget-box span.ratedown {
-    border: solid #51015b!important;
-    border-width: 1px 0!important;
+  border: solid #51015b !important;
+  border-width: 1px 0 !important;
 }
+
 div.page-rate-widget-box span.rateup,
 div.page-rate-widget-box span.ratedown {
-    background-color: #f5e6ec!important;
+  background-color: #f5e6ec !important;
 }
+
 div.page-rate-widget-box span.rateup a,
 div.page-rate-widget-box span.ratedown a {
-    color: #51015b!important;
+  color: #51015b !important;
 }
+
 div.page-rate-widget-box span.cancel a:hover,
 div.page-rate-widget-box span.rateup a:hover,
 div.page-rate-widget-box span.ratedown a:hover {
-    background: transparent!important;
-    color: transparent!important;
-}
-div.open-menu a {
-    color: #d9d9d9!important;
-    border-color: #d9d9d9!important;
+  background: transparent !important;
+  color: transparent !important;
 }
 
+div.open-menu a {
+  color: #d9d9d9 !important;
+  border-color: #d9d9d9 !important;
+}

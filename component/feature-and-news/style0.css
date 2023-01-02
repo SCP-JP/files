@@ -1,119 +1,122 @@
 .feature-block.feature * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .feature-block.feature {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .feature-block.feature .list-pages-box {
-    flex: 1 0 50%;
-    padding: 1em 0em;
-    min-width: 250px;
+  flex: 1 0 50%;
+  padding: 1em 0;
+  min-width: 250px;
 }
 
 .feature-block.feature > div:nth-of-type(odd) {
-    padding-right: 0.5em;
+  padding-right: 0.5em;
 }
 
 .feature-block.feature > div:nth-of-type(even) {
-    padding-left: 0.5em;
+  padding-left: 0.5em;
 }
 
 @media (max-width: 555px) {
-   .feature-block.feature > div:nth-of-type(odd) {
-       padding-right: 0;
-   }
-   .feature-block.feature > div:nth-of-type(even) {
-       padding-left: 0;
-   }
+
+  .feature-block.feature > div:nth-of-type(odd) {
+    padding-right: 0;
+  }
+
+  .feature-block.feature > div:nth-of-type(even) {
+    padding-left: 0;
+  }
 }
 
 .feature-block.feature .list-pages-box .list-pages-item,
-.feature-block.feature .list-pages-box .list-pages-item .content-panel{
-    height: 100%;
-    position: relative;
+.feature-block.feature .list-pages-box .list-pages-item .content-panel {
+  height: 100%;
+  position: relative;
 }
 
 .feature-block.feature .list-pages-box .list-pages-item .content-panel {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    flex-wrap: wrap;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  flex-wrap: wrap;
 }
 
 .feature-block.feature .list-pages-box .list-pages-item .content-panel > * {
-    flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
 .feature-block.feature .list-pages-box .list-pages-item .content-panel .panel-header,
 .feature-block.feature .list-pages-box .list-pages-item .content-panel .panel-footer {
-    height: 1.5em;
+  height: 1.5em;
 }
 
-
 .feature-block.feature .list-pages-box .list-pages-item .content-panel .panel-body {
-    height: calc(100% - 3em);
-    min-height: 130px;
+  height: calc(100% - 3em);
+  min-height: 130px;
 }
 
 .feature-block.feature .feature-title {
-    font-size: 120%;
-    font-weight: bold;
+  font-size: 120%;
+  font-weight: bold;
 }
 
 .feature-block.feature .feature-subtitle {
-    font-size: 90%;
+  font-size: 90%;
 }
 
-.feature-block.feature .feature-title > p, .feature-block .feature-subtitle > p {
-    margin: 0;
+.feature-block.feature .feature-title > p,
+.feature-block .feature-subtitle > p {
+  margin: 0;
 }
 
 .news-block .panel-body {
-    padding: 0;
+  padding: 0;
 }
 
 .news-block .panel-body .alternate {
-    padding: 5px 10px;
+  padding: 5px 10px;
 }
 
 .news-block .news-title {
-    font-weight: bold;
-    font-size: 110%;
-    margin-bottom: 5px;
-    color: #633;
+  font-weight: bold;
+  font-size: 110%;
+  margin-bottom: 5px;
+  color: #663333;
 }
 
 .news-block .news-content {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
-.news-block .news-title > p, .news-block .news-content > p {
-    margin: 0;
+.news-block .news-title > p,
+.news-block .news-content > p {
+  margin: 0;
 }
 
 .news-block .list-pages-box .list-pages-item:nth-child(even) .alternate {
-    background-color: rgba(255,255,255,.9);
+  background-color: rgb(255 255 255 / 90%);
 }
-
 
 .error-inline {
-    border: none;
-    color: #333;
-    font-size: 0;
-    user-select: none;
-}
-.error-inline em {
-    font-size: 0.9rem;
-    font-style: normal;
-    user-select: text;
-}
-.error-inline em:after {
-    content: " (アカウント削除済み)";
-    font-weight: normal;
+  border: none;
+  color: #333333;
+  font-size: 0;
+  user-select: none;
 }
 
+.error-inline em {
+  font-size: 0.9rem;
+  font-style: normal;
+  user-select: text;
+}
+
+.error-inline em::after {
+  content: " (アカウント削除済み)";
+  font-weight: normal;
+}

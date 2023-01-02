@@ -10,304 +10,354 @@
 
 /* COMMON */
 
-h1, #page-title {
-    color: #225C7C;
-    font-weight: bold;
+h1,
+#page-title {
+  color: #225c7c;
+  font-weight: bold;
 }
 
 #page-title {
-    border-color: #827f7f;
+  border-color: #827f7f;
 }
 
 a {
-    color: #15486b;
+  color: #15486b;
 }
+
 a.newpage {
-    color: #15486b;
+  color: #15486b;
 }
+
 a:hover {
-    color: #0481d1;
+  color: #0481d1;
 }
-a:visited{
-    color:#15486b 
+
+a:visited {
+  color: #15486b;
 }
- 
+
 /* GLOBAL WIDTH */
- 
- 
+
 body {
-    color: #215d87;
+  color: #215d87;
 }
+
 div#container-wrap {
-    background: url(http://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/margin.png) top left repeat-x;
+  background: url(http://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/margin.png) top left repeat-x;
 }
- 
+
 /* HEADER */
+
 #header {
-    height: 120px;
-    background: url(http://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/CClogo.png) 10px 35px no-repeat;
+  height: 120px;
+  background: url(http://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/CClogo.png) 10px 35px no-repeat;
 }
+
 #search-top-box-input {
-    color: #15486B;
-    background-color: #ffffff;
+  color: #15486b;
+  background-color: #ffffff;
 }
+
 #search-top-box-input:hover,
 #search-top-box-input:focus {
-    color: #fff;
-    background-color: #ffffff ;
+  color: #ffffff;
+  background-color: #ffffff;
 }
-#search-top-box-form input[type=submit] {
-    color: #ffffff ;
-    background-color: #ffffff;
-    background: linear-gradient(to bottom, #225c7c ,#15486b ,#0b3851);
+
+#search-top-box-form input[type = "submit"] {
+  color: #ffffff;
+  background-color: #ffffff;
+  background: linear-gradient(to bottom, #225c7c, #15486b, #0b3851);
 }
-#search-top-box-form input[type=submit]:hover,
-#search-top-box-form input[type=submit]:focus {
-    border: solid 1px #f0fcff;
-    color: #ffffff;
-    background-color: #225c7c ;
-    background: linear-gradient(to bottom, #225c7c ,#15486b ,#0b3851 );
+
+#search-top-box-form input[type = "submit"]:hover,
+#search-top-box-form input[type = "submit"]:focus {
+  border: solid 1px #f0fcff;
+  color: #ffffff;
+  background-color: #225c7c;
+  background: linear-gradient(to bottom, #225c7c, #15486b, #0b3851);
 }
- 
+
 #login-status {
-    color: #15486b ;
+  color: #15486b;
 }
+
 #login-status a {
-    color: #15486b ;
+  color: #15486b;
 }
+
 #login-status ul a {
-    color: #15486b ;
+  color: #15486b;
 }
- 
+
 #account-topbutton {
-    background: #f0fcff ;
-    color: #0b3851 ;
+  background: #f0fcff;
+  color: #0b3851;
 }
- 
+
 #header h1 a {
-    color: transparent;
-    text-shadow: none;
+  color: transparent;
+  text-shadow: none;
 }
 
 #header h1 a::before {
-    content: "聖クリスティーナ学院";
-    color: #0481d1;
-    text-shadow: 3px 3px 5px #0c4d66;
+  content: "聖クリスティーナ学院";
+  color: #0481d1;
+  text-shadow: 3px 3px 5px #0c4d66;
 }
- 
+
 #header h2 span {
-    font-size: 100%;
-    color: transparent;
-    text-shadow: none;
+  font-size: 100%;
+  color: transparent;
+  text-shadow: none;
 }
- 
+
 #header h2 span::before {
-    content: '　St. Christina College　';
-    color: #478bad;
-    text-shadow: 1px 1px 1px #0c4d66;
-    text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+  content: "　St. Christina College　";
+  color: #478bad;
+  text-shadow: 1px 1px 1px #0c4d66;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 80%);
 }
 
 /* TOP MENU */
+
 #top-bar {
-    right: 0;
+  right: 0;
 }
+
 #top-bar a {
-    color: #15486B;
+  color: #15486b;
 }
- 
+
 #top-bar ul li.sfhover a,
 #top-bar ul li:hover a {
-    color: #15486b ;
+  color: #15486b;
 }
- 
+
 #top-bar ul li.sfhover ul li a,
 #top-bar ul li:hover ul li a {
-    width: 175px;
+  width: 175px;
 }
-#top-bar ul li ul a, #top-bar a:hover {
-    color: #225c7c;
+
+#top-bar ul li ul a,
+#top-bar a:hover {
+  color: #225c7c;
 }
- 
+
 /* SIDE MENU */
+
 #side-bar .side-block {
-    border: 1px solid #0c4d66 ;
-    background: #f0fcff;
+  border: 1px solid #0c4d66;
+  background: #f0fcff;
 }
+
 #side-bar .heading {
-    color: #225c7c ;
-    border-bottom: solid 1px #2e2930 ;
+  color: #225c7c;
+  border-bottom: solid 1px #2e2930;
 }
+
 #side-bar div.menu-item.inactive a {
-    color: #225C7C ;
+  color: #225c7c;
 }
+
 #side-bar div.menu-item .sub-text {
-    font-size: 80%;
-    color: #225c7c;
+  font-size: 80%;
+  color: #225c7c;
 }
+
 #side-bar .collapsible-block-unfolded-link {
-    border-bottom: solid 1px #522f60 ;
+  border-bottom: solid 1px #522f60;
 }
+
 #side-bar .collapsible-block-unfolded-link .collapsible-block-link {
-    color: #225C7C ;
+  color: #225c7c;
 }
+
 #side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
-    color: #225C7C ;
+  color: #225c7c;
 }
- 
+
 /* YUI-TABS */
-.yui-navset .yui-content{
-    background-color: #dae6e8;
+
+.yui-navset .yui-content {
+  background-color: #dae6e8;
 }
+
 .yui-navset .yui-nav a,
 .yui-navset .yui-navset-top .yui-nav a {
-    background-color:#94c7d3;
+  background-color: #94c7d3;
 }
+
 .yui-navset .yui-nav .selected a,
 .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
 .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
-    background:#D8D8D8  url(http://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/yuitabs.png) repeat-x left -1402px; 
-    color:#FFFFFF;
+  background: #d8d8d8  url(http://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/yuitabs.png) repeat-x left -1402px;
+  color: #ffffff;
 }
+
 .yui-navset .yui-nav a:hover,
 .yui-navset .yui-nav a:focus {
-    background:#15486B url(http://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/yuitabs.png) repeat-x left -1302px;
+  background: #15486b url(http://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/yuitabs.png) repeat-x left -1302px;
 }
+
 .yui-navset .yui-nav,
 .yui-navset .yui-navset-top .yui-nav {
-    border-color: #15486B;
+  border-color: #15486b;
 }
+
 .yui-navset .yui-nav,
 .yui-navset .yui-navset-top .yui-nav {
-    border-color: #15486B;
+  border-color: #15486b;
 }
+
 .yui-navset li {
-    line-height: normal;
+  line-height: normal;
 }
- 
+
 /* Page Rating Module Customizations */
+
 .page-rate-widget-box {
   margin-right: 2em;
 }
+
 div.page-rate-widget-box .rate-points {
   background-color: #0481d1;
-  border: solid 1px #0d3754 ;
+  border: solid 1px #0d3754;
 }
+
 .page-rate-widget-box .rateup,
 .page-rate-widget-box .ratedown {
   background-color: #5eb8f2;
-  border-top: solid 1px #0d3754 ;
-  border-bottom: solid 1px #0d3754 ;
+  border-top: solid 1px #0d3754;
+  border-bottom: solid 1px #0d3754;
 }
+
 .page-rate-widget-box .rateup a,
 .page-rate-widget-box .ratedown a {
   background: transparent;
-  color: #0d3754 ;
+  color: #0d3754;
 }
+
 .page-rate-widget-box .rateup a:hover,
 .page-rate-widget-box .ratedown a:hover {
-  background: #0d3754 ;
+  background: #0d3754;
   color: #5eb8f2;
 }
+
 .page-rate-widget-box .cancel {
-  background-color: #0481d1 ;
-  border: solid 1px #0d3754 ;
+  background-color: #0481d1;
+  border: solid 1px #0d3754;
 }
+
 .page-rate-widget-box .cancel a {
   color: #0d3754;
 }
+
 .page-rate-widget-box .cancel a:hover {
-  background: #0d3754 ;
+  background: #0d3754;
   color: #5eb8f2;
 }
- 
+
 /* Heritage Collection Rating Module */
+
 .heritage-rating-module {
   background-color: #5eb8f2;
   border: solid 1px #0d3754;
 }
+
 .heritage-rating-module .heritage-emblem {
   top: -2px;
 }
 
 /* Standard Image Block */
+
 .scp-image-block {
-    border: solid 1px #fce98b;
+  border: solid 1px #fce98b;
 }
 
- 
 /* Mini Tablet Media Query */
 @media (min-width: 581px) and (max-width: 767px) {
- 
-.top-bar {
-    right: 10%
-}
-}
- 
-/* Tablet Media Query */
-@media (min-width: 768px) and (max-width: 979px) {
- 
-.top-bar {
-    right: 10%
+
+  .top-bar {
+    right: 10%;
+  }
 }
 
-.top-bar ul li.sfhover ul li a, .top-bar ul li:hover ul li a {
+/* Tablet Media Query */
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .top-bar {
+    right: 10%;
+  }
+
+  .top-bar ul li.sfhover ul li a,
+  .top-bar ul li:hover ul li a {
     width: 100px;
-}
+  }
 }
 
 /* off-canvas */
 @media (max-width: 767px) {
- 
-#side-bar {
-    background-color: rgb(54, 100, 139);
-}
+
+  #side-bar {
+    background-color: rgb(54 100 139);
+  }
 }
 
 /* Credit module customizations */
+
 /* Modified for the layout by Jochoi */
- 
+
 #u-credit-view-button {
-    display: block;
-    text-align: right;
+  display: block;
+  text-align: right;
 }
- 
-.rate-box-with-credit-button{
-    background-color: #0481d1 !important;
-    border: solid 1px #0d3754 !important;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+
+.rate-box-with-credit-button {
+  background-color: #0481d1 !important;
+  border: solid 1px #0d3754 !important;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgb(0 0 0 / 50%);
 }
-.rate-box-with-credit-button .creditButton p a{
-    border-left: solid 1px #0481d1 !important;
+
+.rate-box-with-credit-button .creditButton p a {
+  border-left: solid 1px #0481d1 !important;
 }
+
 .rate-box-with-credit-button .creditButton p a:hover {
-    color: #0d3754 !important;
+  color: #0d3754 !important;
 }
+
 .rate-box-with-credit-button .page-rate-widget-box .cancel {
-    border-radius: 0;
-    border-bottom: 0;
+  border-radius: 0;
+  border-bottom: 0;
 }
+
 .rate-box-with-credit-button .page-rate-widget-box .cancel a:hover {
-    border-radius: 0;
+  border-radius: 0;
 }
+
 .rate-box-with-credit-button div.page-rate-widget-box .rate-points {
-    border-left: 0;
-    border-bottom: 0;
+  border-left: 0;
+  border-bottom: 0;
 }
+
 .rate-box-with-credit-button .page-rate-widget-box .rateup,
 .rate-box-with-credit-button .page-rate-widget-box .ratedown {
-    border-bottom: 0;
+  border-bottom: 0;
 }
-.creditButtonStandalone p a{
-    background: #0481d1 !important;
+
+.creditButtonStandalone p a {
+  background: #0481d1 !important;
 }
+
 .creditButtonStandalone p a:hover {
-    background: #0d3754 !important;
+  background: #0d3754 !important;
 }
 
 /* Interwiki */
+
 #side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
-    filter: hue-rotate(209deg) saturate(80%);
-    background-color: #fff9ce !important;
+  filter: hue-rotate(209deg) saturate(80%);
+  background-color: #fff9ce !important;
 }
