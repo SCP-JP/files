@@ -14,6 +14,8 @@ var SearchTags = {
 
     /*ジャンル設定*/
     Genre: {
+        "A類": "_category-a",
+        "B類": "_category-b",
         "ジョーク": "_joke",
         "アダルト": "_adult",
         "既存記事改稿": "_reforming-g",
@@ -39,8 +41,9 @@ var SearchTags = {
         "ホラー/サスペンス": "_horror",
         "メタフィクション": "_metafiction",
         "歴史": "_history",
-        "A類": "_category-a",
-        "B類": "_category-b"
+		"任意A": "_option-a",
+		"任意B": "_option-b",
+		"任意C": "_option-c"
     },
 
     /*ステータス設定*/

@@ -37,8 +37,9 @@ var SearchTags = {
 		"ホラー/サスペンス": "_horror",
 		"メタフィクション": "_metafiction",
 		"歴史": "_history",
-		"A類": "_category-a",
-		"B類": "_category-b"
+		"任意A": "_option-a",
+		"任意B": "_option-b",
+		"任意C": "_option-c"
 	}
 }
 /*ジャンル、カテゴリ選択用要素格納*/
