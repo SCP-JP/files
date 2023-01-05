@@ -40,10 +40,7 @@ var SearchTags = {
         "人間ドラマ/恋愛": "_drama",
         "ホラー/サスペンス": "_horror",
         "メタフィクション": "_metafiction",
-        "歴史": "_history",
-		"任意A": "_option-a",
-		"任意B": "_option-b",
-		"任意C": "_option-c"
+        "歴史": "_history"
     },
 
     /*ステータス設定*/
