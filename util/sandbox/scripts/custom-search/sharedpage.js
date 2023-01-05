@@ -17,7 +17,7 @@ var SearchTags = {
         "ジョーク": "_joke",
         "アダルト": "_adult",
         "既存記事改稿": "_reforming-g",
-        "イベント": "_event"
+        "イベント": "_event",
         "短編": "_short",
         "中編": "_medium",
         "長編": "_long",

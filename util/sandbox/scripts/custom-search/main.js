@@ -13,19 +13,32 @@ var SearchTags = {
 	/*ジャンル設定*/
 	Genre: {
 		"ジョーク": "_joke",
-		"ホラー": "_horror",
-		"SF": "_sf",
-		"オカルト・都市伝説": "_occult",
-		"サスペンス": "_suspense",
-		"感動系": "_excitement",
-		"シュール": "_sur",
-		"コミカル": "_comical",
-		"メタフィクション": "_metafiction",
 		"アダルト": "_adult",
 		"既存記事改稿": "_reforming-g",
-		"日→外国語翻訳": "_translationjpto",
-		"コンテスト": "_contest",
-		"その他": "_others-g"
+		"イベント": "_event",
+        "短編": "_short",
+		"中編": "_medium",
+		"長編": "_long",
+		"事前知識不要": "_ignorant",
+		"フォーマットスクリュー": "_formatscrew",
+		"シリーズ-JP": "_series-jp",
+		"シリーズ-Other": "_series-other",
+		"世界観用語-JP": "_worldview-jp",
+		"世界観用語-Other": "_worldview-other",
+		"アクション": "_action",
+		"SF": "_sf",
+		"オカルト/都市伝説": "_occult",
+		"感動系": "_excitement",
+		"ギャグ/コミカル": "_comical",
+		"シリアス": "_serious",
+		"シュール": "_sur",
+		"ダーク": "_dark",
+		"人間ドラマ/恋愛": "_drama",
+		"ホラー/サスペンス": "_horror",
+		"メタフィクション": "_metafiction",
+		"歴史": "_history",
+		"A類": "_category-a",
+		"B類": "_category-b"
 	}
 }
 /*ジャンル、カテゴリ選択用要素格納*/
@@ -48,7 +61,7 @@ var SelectedClassNames = {
 	}
 }
 var searchForm;
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
 	searchForm = document.getElementById("searchsetting");
 	setSelecters("Category");
 	setSelecters("Genre");
