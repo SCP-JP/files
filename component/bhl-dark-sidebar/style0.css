@@ -27,7 +27,7 @@
 
     /* ===MENU-ITEMS=== */
     --sidebar-border-color: var(--swatch-primary), 0.08;
-    --sidebar-subtest-color: var(--swatch-text-tertiary-color);
+    --sidebar-subtext-color: var(--swatch-text-tertiary-color);
 
     --sidebar-links-text: var(--swatch-text-tertiary-color);
     --sidebar-links-hover-bg-color: var(--bright-accent);
