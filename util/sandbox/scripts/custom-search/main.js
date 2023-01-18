@@ -16,7 +16,7 @@ var SearchTags = {
 		"アダルト": "_adult",
 		"既存記事改稿": "_reforming-g",
 		"イベント": "_event",
-        "短編": "_short",
+		"短編": "_short",
 		"中編": "_medium",
 		"長編": "_long",
 		"事前知識不要": "_ignorant",

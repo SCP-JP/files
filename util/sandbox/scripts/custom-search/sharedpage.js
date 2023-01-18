@@ -52,7 +52,6 @@ var SearchTags = {
     }
 }
 
-
 /*ジャンル、カテゴリ選択用要素格納*/
 var SettingAreaObj = {
     Category: [],
