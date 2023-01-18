@@ -1,8 +1,11 @@
+[[iftags]]
+[[include :scp-jp:theme:black-highlighter-theme]]
+[[/iftags]]
+
 [[iftags +コンポーネント]]
-[[module css]]
-@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/1");
-@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/2");
-@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/3");
+[[module CSS]]
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css");
+@import url("https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css");
 div.blockquote {
     padding-top: 0.5em;
 }
@@ -13,74 +16,267 @@ div.blockquote tt {
     color: rgb(var(--white-monochrome));
     padding: 0.5em;
 }
+
+.creditModule {
+	justify-content: center;
+	width: 100%;
+}
 [[/module]]
+
+[[include :scp-jp:component:interwiki-style
+|priority=1
+|theme=https://scp-jp.github.io/Black-Highlighter/css/min/normalize.min.css
+]]
+
+[[include :scp-jp:component:interwiki-style
+|priority=2
+|theme=https://scp-jp.github.io/Black-Highlighter/css/min/black-highlighter.min.css
+]]
+
+[[include :scp-jp:credit:start-preview]]
+**タイトル:** BHLダークサイドバー
+**著者:** ©[[*user Woedenaz]]
+**原題:** Dark Sidebar BHL
+**作成年:** 2020
+[[include :scp-jp:credit:end-preview]]
 [[=]]
-[[module Rate]]
 [[div_ class="blockquote"]]
 
-まさに読んで字のとおりです。
-BHLのダークサイドバーを記事に使用したい方へ。
-BHLのインクルードの**直後**に、以下のインクルードを追加してください。
+だいたいそのまま。
+//本当に//O.G. BHLのダークサイドバーが記事に欲しい人に。
+下記のincludeをBHLのincludeの**後**に追加するだけ:
 {{[[include :scp-jp:component:bhl-dark-sidebar]]}}
 [[/div]]
 [[/=]]
+-----
+[[collapsible show="+ コンポーネントのコードを表示" hide="- コンポーネントのコードを非表示"]]
+
+[[code type="css"]]
+#interwiki, 
+#side-bar {
+    /* ===SECONDARY & TERTIARY COLORS=== */
+    /* Editing these will edit a vast majority of theme elements. Useful for making dark themes */
+ 
+    /* Colors for Secondary & Tertiary items like Blockquote and YUI Tabs */
+    --swatch-secondary-color: var(--swatch-menubg-dark-color);
+    --swatch-tertiary-color: var(--swatch-menubg-medium-color);
+    --swatch-alternate-color: var(--swatch-menubg-light-color);
+ 
+    /* Text Colors for Secondary & Tertiary items like Sidebar Headers and Top-Bar Menu Text */
+    --swatch-text-secondary-color: var(--swatch-menutxt-dark-color);
+    --swatch-text-tertiary-color: var(--swatch-menutxt-light-color);
+ 
+    /* ===SIDE-BAR ELEMENTS=== */
+ 
+    /* ===SIDE-BAR GENERAL=== */
+    --sidebar-bg-color: var(--swatch-menubg-dark-color);
+    --sidebar-resources-bg-color: 0, 0, 0, 0;
+    --sidebar-media-bg-color: 0, 0, 0, 0;
+ 
+    /* ===SIDEBLOCK MENU=== */
+    --sideblock-heading-border-color: var(--bright-accent);
+    --sideblock-heading-bg-color: 0, 0, 0, 0;
+    /* Transparent */
+    --sideblock-heading-text-color: var(--swatch-text-tertiary-color);
+ 
+    /* ===MENU-ITEMS=== */
+    --sidebar-border-color: var(--swatch-primary), 0.08;
+    --sidebar-subtext-color: var(--swatch-text-tertiary-color);
+ 
+    --sidebar-links-text: var(--swatch-text-tertiary-color);
+    --sidebar-links-hover-bg-color: var(--bright-accent);
+    --sidebar-links-hover-text-color: var(--swatch-text-tertiary-color);
+ 
+    /* ===SIDEBAR COLLAPSIBLES=== */
+    /*Folded Colors */
+    --sidebar-collapsible-fld-link-bg: var(--swatch-primary), 0.25;
+    --sidebar-collapsible-fld-link-color: var(--swatch-text-tertiary-color);
+    --sidebar-collapsible-fld-link-hover-color: var(--swatch-text-tertiary-color);
+    --sidebar-collapsible-fld-arrow-hover-color: var(--swatch-text-tertiary-color);
+ 
+    /*Unfolded Colors */
+    --sidebar-collapsible-ufld-link-bg: var(--swatch-primary-darker), 0.25;
+    --sidebar-collapsible-ufld-link-color: var(--swatch-text-tertiary-color);
+    --sidebar-collapsible-ufld-link-hover-color: var(--swatch-text-tertiary-color);
+    --sidebar-collapsible-ufld-arrow-hover-color: var(--swatch-text-tertiary-color);
+ 
+    /* Unfolded Body Colors */
+    --sidebar-collapsible-link-color: var(--swatch-text-tertiary-color);
+    --sidebar-collapsible-link-hover-color: var(--swatch-text-tertiary-color);
+ 
+    scrollbar-color:
+        rgba(var(--swatch-primary-darker), 0.1)
+        /* Thumb */
+        rgba(var(--swatch-secondary-color), 0.05);
+    /* Track */
+ 
+    border-color: rgba(var(--swatch-secondary-color), 0.4);
+}
+ 
+/* Hover Scrollbar Behavior */
+#side-bar:hover,
+#side-bar:active {
+    scrollbar-color:
+        rgb(var(--swatch-primary-darker), 1)
+        /* Thumb */
+        rgb(var(--swatch-menubg-dark-color), 1);
+    /* Track */
+}
+ 
+#side-bar:focus-within {
+    scrollbar-color:
+        rgb(var(--swatch-primary-darker), 1)
+        /* Thumb */
+        rgb(var(--swatch-menubg-dark-color), 1);
+    /* Track */
+}
+ 
+#side-bar::-webkit-scrollbar-track {
+    background-color: rgba(var(--swatch-tertiary-color), 0.8);
+}
+ 
+#side-bar::-webkit-scrollbar,
+#side-bar::-webkit-scrollbar-thumb,
+#side-bar::-webkit-scrollbar-corner {
+    background-color: rgba(var(--swatch-menubg-dark-color), 0);
+}
+ 
+#side-bar .side-block.media a:-webkit-any-link {
+    background: rgba(var(--swatch-menubg-light-color), 0.75) !important;
+}
+ 
+#side-bar .side-block.media a:-moz-any-link {
+    background: rgba(var(--swatch-menubg-light-color), 0.75) !important;
+}
+ 
+#side-bar .side-block.media a:any-link {
+    background: rgba(var(--swatch-menubg-light-color), 0.75) !important;
+}
+ 
+#side-bar .side-block.media a::before {
+    background: rgb(var(--social-color));
+}
+ 
+#side-bar .side-block.media a[href*="tiktok"]::before,
+#side-bar .side-block.media a[href*="tiktok"]::after {
+    transition:
+        background 200ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 200ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-image 200ms cubic-bezier(0.4, 0, 0.2, 1),
+        -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+        clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1),
+        background 200ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 200ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-image 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+        clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1),
+        background 200ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 200ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-image 200ms cubic-bezier(0.4, 0, 0.2, 1),
+        -webkit-clip-path 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+ 
+#side-bar .side-block.media a[href*="tiktok"]:hover::before {
+    --clip-path:
+        polygon(-15% 0,
+            115% 0,
+            100% 100%,
+            0 100%
+        );
+}
+ 
+#side-bar .side-block.media a[href*="tiktok"]:hover::before,
+#side-bar .side-block.media a[href*="tiktok"]:active::before {
+    --clip-path:
+        polygon(-15% 0,
+            115% 0,
+            100% 100%,
+            0 100%
+        );
+    background-image: var(--tiktok-icon-gradient);
+    background-size: contain;
+}
+ 
+#side-bar .side-block.media a[href*="tiktok"]:focus-within::before {
+    --clip-path:
+        polygon(-15% 0,
+            115% 0,
+            100% 100%,
+            0 100%
+        );
+    background-image: var(--tiktok-icon-gradient);
+    background-size: contain;
+}
+ 
+#side-bar .side-block.media a[href*="tiktok"]::after {
+    --clip-path:
+        polygon(0 0,
+            0 0,
+            0 100%,
+            0 100%
+        );
+    background: rgba(var(--swatch-menubg-light-color), 0.75) !important;
+}
+ 
+#side-bar .side-block.media a[href*="tiktok"]:hover::after,
+#side-bar .side-block.media a[href*="tiktok"]:active::after {
+    --clip-path:
+        polygon(-15% 0,
+            115% 0,
+            100% 100%,
+            0 100%
+        );
+    background: rgba(var(--swatch-menubg-light-color), 0.75) !important;
+}
+ 
+#side-bar .side-block.media a[href*="tiktok"]:focus-within::after {
+    --clip-path:
+        polygon(-15% 0,
+            115% 0,
+            100% 100%,
+            0 100%
+        );
+    background: rgba(var(--swatch-menubg-light-color), 0.75) !important;
+}
+ 
+#side-bar .side-block.media a img {
+    -webkit-filter: drop-shadow(0 0 0 rgba(var(--swatch-alternate-color), 0));
+            filter: drop-shadow(0 0 0 rgba(var(--swatch-alternate-color), 0));
+    transition: -webkit-filter 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: filter 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: filter 200ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+ 
+#side-bar .side-block.media a:hover img,
+#side-bar .side-block.media a:active img {
+    -webkit-filter: drop-shadow(0.1875rem 0.1875rem 0 rgb(var(--swatch-alternate-color)));
+            filter: drop-shadow(0.1875rem 0.1875rem 0 rgb(var(--swatch-alternate-color)));
+}
+ 
+#side-bar .side-block.media a:focus-within img {
+    -webkit-filter: drop-shadow(0.1875rem 0.1875rem 0 rgb(var(--swatch-alternate-color)));
+            filter: drop-shadow(0.1875rem 0.1875rem 0 rgb(var(--swatch-alternate-color)));
+}
+ 
+div.scpnet-interwiki-wrapper p::before {
+    box-shadow: inherit;
+}
+ 
+#side-bar .scpnet-interwiki-wrapper::before,
+#side-bar .scpnet-interwiki-wrapper p::before,
+#side-bar .scpnet-interwiki-wrapper p::after {
+    background-color: rgb(var(--swatch-menubg-dark-color));
+}
+[[/code]]
+[[/collapsible]]
 [[/iftags]]
 
-[[module css]]
-:root {
-  --swatch-menubg-color: var(--dark-gray-monochrome);
-  --sidebar-links-text: var(--white-monochrome);
-}
-
-#side-bar {
-  background: 
-    linear-gradient(
-      rgba(var(--swatch-menubg-color),1) 30%,
-      rgba(var(--swatch-menubg-color),0)),
-    linear-gradient(
-      rgba(var(--swatch-menubg-color),0),
-      rgba(var(--swatch-menubg-color),1) 70%) 0 100%,
-    radial-gradient(farthest-side at 50% 0,
-      rgba(var(--swatch-primary-darkest),.5),
-      rgba(var(--white-monochrome),0)),
-    radial-gradient(farthest-side at 50% 100%,
-      rgba(var(--swatch-primary-darkest),.5),
-      rgba(var(--white-monochrome),0)) 0 100%;
-  color: rgb(var(--swatch-text-light));
-  scrollbar-color: 
-    rgba(var(--swatch-menubg-dark-color),0) 
-    rgba(var(--swatch-menubg-dark-color),0);
-}
-
-#side-bar div.menu-item .sub-text {
-    color: rgba(var(--swatch-text-light),0.75);
-}
-
-#side-bar div.menu-item > :not(:nth-child(2)):not(.collapsible-block) {
-    border-left: .125rem solid rgba(var(--white-monochrome),0.08);
-}
-
-#side-bar:hover {
-  scrollbar-color: 
-    rgba(var(--swatch-menubg-medium-color),1) 
-    rgba(var(--swatch-menubg-dark-color),1);
-}
-
-#side-bar::-webkit-scrollbar-thumb,
-#side-bar::-webkit-scrollbar-track {
-  background:rgba(var(--swatch-menubg-medium-color),0)
-}
-
-#side-bar:hover::-webkit-scrollbar-track {
-  background:rgba(var(--swatch-menubg-dark-color),1)
-}
-
-#side-bar:hover::-webkit-scrollbar-thumb {
-  background:rgba(var(--swatch-menubg-medium-color),1)
-}
-
-iframe.scpnet-interwiki-frame {
-    -webkit-filter: invert(0.8) hue-rotate(180deg) saturate(0.5);
-            filter: invert(0.8) hue-rotate(180deg) saturate(0.5);
-}
+[[module CSS]]
+@import url("https://scp-jp.wdfiles.com/local--code/component%3Abhl-dark-sidebar/1");
 [[/module]]
+
+[[include :scp-jp:component:interwiki-style
+|priority=4
+|theme=https://scp-jp.wdfiles.com/local--code/component%3Abhl-dark-sidebar/1
+]]
