@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Ubuntu|Space+Mono|Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+#interwiki {
+    /* Typefaces */
+    --body-font: "Ubuntu", "M Plus 1p", sans-serif;
+    --header-font: "Cabin Sketch", "New Tegomin", sans-serif;
+    --title-font: "Baumans", "Yusei Magic", sans-serif;
+    --mono-font: "Space Mono", "Andale Mono", "Courier New", Courier, monospace;
+
+    /* Standard Colors */
+    --black-monochrome: var(--sky-at-night);
+    --dark-gray-monochrome: var(--sky-at-evening);
+    --pale-accent: 150, 150, 254;
+    /* lavender, for visited links */
+    --bright-accent: 51, 201, 208;
+    /* bright turquoise */
+    --medium-accent: 23, 152, 158;
+    /* darker turquoise */
+    --dark-accent: 90, 90, 152;
+    /* darker purple */
+    --alt-accent: var(--sky-at-dawn);
+    /* pinkish red, for newpage links */
+
+    /* Sky */
+    --sky-at-dawn: 221, 93, 112;
+    --sky-at-morning: 131, 192, 233;
+    --sky-at-daytime: 104, 153, 186;
+    --sky-at-evening: 87, 98, 106;
+    --sky-at-dusk: 99, 100, 90;
+    --sky-at-night: 21, 25, 43;
+    --sky-length: 15;
+    --sky-time: 65s;
+
+    /* Primary Theme Colors */
+    --swatch-primary: var(--medium-accent);
+    --swatch-primary-darker: var(--pale-accent);
+
+    /* Primary Menu Colors */
+    --swatch-menubg-medium-dark-color: var(--medium-accent);
+
+    /* Colors for Secondary & Tertiary items like Blockquote and YUI Tabs */
+    --swatch-secondary-color: var(--bright-accent);
+    --swatch-tertiary-color: var(--pale-accent);
+
+    /* Link Colors */
+    --link-color: 110, 110, 170;
+    --visited-link-color: var(--medium-accent);
+}
+/* Side Bar Touch Up */
+#interwiki .heading {
+    background: rgba(var(--pale-accent), 0.35);
+    font-family: var(--title-font);
+    min-height: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-size: 125%;
+}
+
+#interwiki .heading p {
+    color: rgb(62, 62, 104);
+    font-family: var(--title-font);
+    text-shadow: none;
+    --text-shadow: none;
+    text-align: center;
+}
+
+/* Reduce Motion Check */
+@media screen and (prefers-reduced-motion: reduce) {
+
+    body::before,
+    #header-extra-div-1,
+    #header-extra-div-2,
+    #header-extra-div-3 {
+     -webkit-animation: none;
+     animation: none;
+    }
+}
