@@ -1,0 +1,48 @@
+/* - == === BHL VARIABLES === == - */
+
+/* This is a BHL theme, which is configuration-based, so the root element
+ * contains variables that will affect the whole theme
+ */
+ :root {
+    /* S-CSS-P integration */
+    --theme-base: "black-highlighter";
+    --theme-id: "swirling-ashes";
+    --theme-name: "Swirling Ashes Theme";
+
+    /* Colours */
+    --dark-gray-monochrome: 26, 24, 26;
+    --swatch-topmenu-bg-color: var(--dark-gray-monochrome);
+    --dark-accent: 63, 9, 143;
+    --medium-accent: 81, 13, 181;
+    --bright-accent: 105, 49, 186;
+    --pale-accent: 128, 80, 200;
+
+    /* Sky */
+    --sky-at-dawn: 236, 112, 99;
+    --sky-at-morning: 174, 214, 241;
+    --sky-at-daytime: 249, 231, 159;
+    --sky-at-evening: 248, 196, 113;
+    --sky-at-dusk: 140, 50, 70;
+    --sky-at-night: 50, 40, 67;
+    --sky-length: 15;
+    --sky-time: 60s;
+
+    /* Header adjustments */
+    --header-title: "Rat's Nest";
+    --header-subtitle: "let's begin at the end";
+
+    /* Delete the default header background */
+    --diagonal-stripes: linear-gradient(transparent, transparent);
+}
+
+/* Respect user motion settings */
+@media screen and (prefers-reduced-motion: reduce) {
+
+    body::before,
+    div#container-wrap::before,
+    div#container-wrap-wrap::after,
+    body::after {
+     -webkit-animation: none;
+             animation: none;
+    }
+}
