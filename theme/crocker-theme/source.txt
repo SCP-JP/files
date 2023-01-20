@@ -762,7 +762,7 @@
     }
 
     .code>* {
-     line-height: line-height: calc(var(--base-font-size) * 1.62);
+     line-height: calc(var(--base-font-size) * 1.62);
     }
 
     .footnotes-footer>* {
