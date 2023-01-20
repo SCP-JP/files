@@ -562,7 +562,7 @@
     }
 
     .code>* {
-     line-height: 1.75;
+     line-height: line-height: calc(var(--base-font-size) * 1.62);
     }
 
     .footnotes-footer>* {
@@ -679,7 +679,7 @@
 
      .code>*,
      .footnotes-footer>* {
-     line-height: 1.85;
+     line-height: 1.78;
      padding-left: 2.5rem;
      }
 
