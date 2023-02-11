@@ -1768,7 +1768,6 @@ li.folded > .colmod-content {
   padding-left: 0.75rem;
 }
 
-.thread-container .head a:empty:after,
 .forum-category-box .title a:empty:after {
     content: "　";
 }
