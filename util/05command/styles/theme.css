@@ -958,3 +958,10 @@ li.folded>.colmod-content {
 #avatar-hover-container {
     display: none;
 }
+
+.ins {
+  background-color: #ddddff;
+}
+.del {
+  background-color: #ffcccc;
+}
