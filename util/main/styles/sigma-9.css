@@ -1770,3 +1770,10 @@ li.folded > .colmod-content {
 .forum-category-box .title a:empty:after {
     content: "　";
 }
+
+#container-wrap {
+  -webkit-touch-callout: none;
+}
+#container-wrap>* {
+    -webkit-touch-callout: unset;
+}
