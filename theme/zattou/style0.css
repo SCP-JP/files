@@ -427,6 +427,7 @@ a.fa.fa-info:hover {
   background: linear-gradient(to left, #2b2b2b, #180614, #000b00);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 #side-bar .collapsible-block-unfolded-link,
@@ -440,9 +441,14 @@ a.fa.fa-info:hover {
   background: linear-gradient(to left, #2b2b2b, #180614, #000b00);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 #side-bar div.menu-item img {
+  filter: hue-rotate(180deg);
+}
+
+#side-bar .menu-item li {
   filter: hue-rotate(180deg);
 }
 
@@ -468,15 +474,6 @@ a.fa.fa-info:hover {
 img.image[title = "SCP-JP Discord Chat"],
 img.image[title = "SCP-JP Twitter"] {
   filter: hue-rotate(310deg) !important;
-}
-
-#side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {
-  border: none;
-  border-radius: 0;
-  box-shadow: 0 0 4px #181b39;
-  color: #181b39;
-  background: #181b39;
-  background-color: #d3dbe2 !important;
 }
 
 /* TITLE */
@@ -713,4 +710,39 @@ textarea:focus {
 
 div.page-rate-widget-box .rate-points {
   color: #292929 !important;
+}
+
+/* INTER WIKI */
+
+
+
+#interwiki .side-block {
+    border-radius: 0;
+    position: relative;
+    border: none;
+    box-shadow: 0 0 4px #181b39;
+    color: #181b39;
+    background: #181b39;
+    background-color: #d3dbe2;
+}
+
+#interwiki .heading {
+    border-color: #d3dbe2;
+    color: #181b39;
+    background: linear-gradient(to left, #2b2b2b, #180614, #000b00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#interwiki .menu-item a {
+    color: #181b39;
+    background: linear-gradient(to left, #2b2b2b, #180614, #000b00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#interwiki .menu-item img {
+    filter: hue-rotate(180deg);
 }
