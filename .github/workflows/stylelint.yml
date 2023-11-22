@@ -22,3 +22,11 @@ jobs:
           DEFAULT_BRANCH: main
           LINTER_RULES_PATH: /
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Stylelint and Configurations
+        run: |
+          npm install stylelint stylelint-config-standard
+
+      - name: Run Stylelint
+        run: |
+          npx stylelint "**/*.css" --fix --ignore-pattern '**/*.min.css'          
