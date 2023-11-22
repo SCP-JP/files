@@ -1,7 +1,7 @@
 {
   "extends": "stylelint-config-standard",
   "rules": {
-    "indentation": 2,
+    "indentation": 4,
     "string-quotes": "double",
     "no-duplicate-selectors": true,
     "color-hex-case": "lower",
@@ -21,7 +21,6 @@
     "declaration-colon-space-before": "never",
     "declaration-colon-space-after": "always",
     "number-leading-zero": "always",
-    "function-url-quotes": "never",
     "font-family-name-quotes": "always-unless-keyword",
     "rule-empty-line-before": "always-multi-line",
     "selector-pseudo-element-colon-notation": "double",
@@ -32,5 +31,6 @@
     "media-feature-colon-space-before": "never",
     "media-feature-colon-space-after": "always",
     "declaration-block-no-shorthand-property-overrides": true
-  }
+  },
+  "defaultSeverity": "warning"
 }
