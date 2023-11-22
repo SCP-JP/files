@@ -25,7 +25,7 @@ jobs:
 
       - name: Install Stylelint and Configurations
         run: |
-          npm install stylelint stylelint-config-standard
+          npm install stylelint stylelint-config-recommended --save-dev
 
       - name: Run Stylelint
         run: |
