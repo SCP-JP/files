@@ -1,4 +1,4 @@
-//リンク生成、「特定の日時を指定するタイマー」
+// リンク生成、「特定の日時を指定するタイマー」
 function generateDeletionLink() {
     var month = $("#genMonth").val();
     var day = $("#genDay").val();
@@ -6,7 +6,7 @@ function generateDeletionLink() {
     var hour = $("#genHour").val();
     var minute = $("#genMinute").val();
     var type = $("input:radio[name=type]:checked").val();
-    var timestamp = new Date(year, month, day, hour, minute, 0, 0);
+    var timestamp = new Date(year, month - 1, day, hour, minute, 0, 0);
     var code = "";
 
     var url =
@@ -26,7 +26,7 @@ function generateDeletionLink() {
     $("#generated").show();
 }
 
-//タイマーの日時を指定時間後にセットする
+// タイマーの日時を指定時間後にセットする
 function setDeletionTimer() {
     var day = $("#aftDay").val();
     var hour = $("#aftHour").val();
@@ -38,7 +38,7 @@ function setDeletionTimer() {
     );
 
     $("#genYear").val(timestamp.getFullYear());
-    $("#genMonth").val(timestamp.getMonth());
+    $("#genMonth").val(timestamp.getMonth() + 1);
     $("#genDay").val(timestamp.getDate());
     $("#genHour").val(timestamp.getHours());
     $("#genMinute").val(timestamp.getMinutes());
@@ -57,61 +57,62 @@ function batchDelete() {
     setDeletionTimer();
 }
 
-//ページ表示時の初期処理
+// ページ表示時の初期処理
 function initGenerators() {
     var now = new Date();
-    var i;
-    var html = "";
+    generateYearOptions(now.getFullYear());
+    generateMonthOptions();
+    generateDayOptions(now.getFullYear(), now.getMonth() + 1);
+    generateTimeOptions("#genHour", 24);
+    generateTimeOptions("#genMinute", 60);
+    generateTimeOptions("#aftDay", 31);
+    generateTimeOptions("#aftHour", 24);
+    generateTimeOptions("#aftMinute", 60);
 
-    for (i = now.getFullYear() - 1; i <= now.getFullYear() + 1; i++) {
-        html += '<option value="' + i + '">' + i + "</option>";
-    }
-    $("#genYear").html(html).val(now.getFullYear());
-    html = "";
-
-    for (i = 0; i < 12; i++) {
-        html += '<option value="' + i + '">' + (i + 1) + "</option>";
-    }
-    $("#genMonth").html(html).val(now.getMonth());
-    html = "";
-
-    for (i = 1; i < 32; i++) {
-        html += '<option value="' + i + '">' + i + "</option>";
-    }
-    $("#genDay").html(html).val(now.getDate());
-    html = "";
-
-    for (i = 0; i < 24; i++) {
-        html += '<option value="' + i + '">' + i + "</option>";
-    }
-    $("#genHour").html(html).val(now.getHours());
-    html = "";
-
-    for (i = 0; i < 60; i++) {
-        html += '<option value="' + i + '">' + (i < 10 ? "0" : "") + i +
-            "</option>";
-    }
-    $("#genMinute").html(html).val(now.getMinutes());
-    html = "";
-
-    for (i = 0; i < 31; i++) {
-        html += '<option value="' + i + '">' + i + "</option>";
-    }
-    $("#aftDay").html(html);
-    html = "";
-
-    for (i = 0; i < 24; i++) {
-        html += '<option value="' + i + '">' + i + "</option>";
-    }
-    $("#aftHour").html(html);
-    html = "";
-
-    for (i = 0; i < 60; i++) {
-        html += '<option value="' + i + '">' + i + "</option>";
-    }
-    $("#aftMinute").html(html);
+    $("#genYear, #genMonth").change(function() {
+        var year = $("#genYear").val();
+        var month = $("#genMonth").val();
+        generateDayOptions(year, month);
+    });
 
     $("#batchDel").on("click", function () {
         batchDelete();
     });
+}
+
+// 年の選択肢を生成する関数
+function generateYearOptions(currentYear) {
+    var html = "";
+    for (var i = currentYear - 1; i <= currentYear + 1; i++) {
+        html += '<option value="' + i + '">' + i + '</option>';
+    }
+    $("#genYear").html(html).val(currentYear);
+}
+
+// 月の選択肢を生成する関数
+function generateMonthOptions() {
+    var html = "";
+    for (var i = 1; i <= 12; i++) {
+        html += '<option value="' + i + '">' + i + '</option>';
+    }
+    $("#genMonth").html(html);
+}
+
+// 日の選択肢を生成する関数
+function generateDayOptions(year, month) {
+    var dayCount = new Date(year, month, 0).getDate();
+    var html = "";
+    for (var i = 1; i <= dayCount; i++) {
+        html += '<option value="' + i + '">' + i + '</option>';
+    }
+    $("#genDay").html(html);
+}
+
+// 時間の選択肢（時間、分、日）を生成する関数
+function generateTimeOptions(selector, count) {
+    var html = "";
+    for (var i = 0; i < count; i++) {
+        html += '<option value="' + i + '">' + i + '</option>';
+    }
+    $(selector).html(html);
 }
