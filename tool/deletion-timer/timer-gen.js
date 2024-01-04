@@ -83,7 +83,7 @@ function initGenerators() {
 // 年の選択肢を生成する関数
 function generateYearOptions(currentYear) {
     var html = "";
-    for (var i = currentYear - 10; i <= currentYear + 10; i++) {
+    for (var i = currentYear - 1; i <= currentYear + 1; i++) {
         html += '<option value="' + i + '">' + i + '</option>';
     }
     $("#genYear").html(html).val(currentYear);
