@@ -1,0 +1,266 @@
+<html>
+<head>
+    <!--
+        Created by ukwhatn
+        Created at 2020
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url(https://d3g0gp89917ko0.cloudfront.net/v--de24f08b1628/common--theme/base/css/style.css);
+        @import url(https://d3g0gp89917ko0.cloudfront.net/v--de24f08b1628/common--theme/shiny/css/style.css);
+        @import url(https://br-jpwiki.github.io/files/theme/sigma-9/sigma-9.css);
+
+        body {
+            background: transparent;
+            margin: 2em 1em;
+        }
+
+        form {
+            font-family: Verdana;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .input-container {
+            display: flex;
+            width: 100%;
+            min-width: 5em;
+            margin-bottom: 15px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .input-field {
+            flex-basis: 30%;
+            min-width: 6em;
+            margin: 0.25em;
+            flex-grow: 1;
+            flex-shrink: 1;
+            padding: 10px;
+            outline: none;
+            transition: 0.5s;
+            text-align: center;
+        }
+
+        .input-field:focus {
+            border-style: solid;
+            transition: 0.5;
+            border-color: maroon;
+            border-width: 2px;
+
+        }
+
+        #loginbtn,
+        #link {
+            background-color: Maroon;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            opacity: 0.9;
+            transition: 0.09s;
+            border-radius: 3px;
+            transition 0.8s;
+        }
+
+
+        #loginbtn:focus,
+        #link:focus {
+            outline: 0;
+        }
+
+        #loginbtn:hover,
+        #link:hover {
+            opacity: 1;
+            transition: 0.5s;
+            box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        #loginbtn:active,
+        #link:active {
+            transition: 0.09s;
+            transform: translateY(1px);
+            box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0);
+        }
+
+        p {
+            font-family: Helvetica;
+            margin-bottom: 5%;
+        }
+
+    </style>
+    <script>
+document.addEventListener("DOMContentLoaded",function(){
+    var mySite = document.referrer;
+    mySite = mySite.split("http://").join("");
+    mySite = "http://" + mySite.split("/")[0] + "/";
+ 
+    var iframeSet = document.getElementById('iframeset');
+    var oldHeight = 0;
+ 
+    var url = location.href;
+    url = url.replace(/^.*\//,'/');
+ 
+    createResizeIframe();
+ 
+    function createResizeIframe(){
+ 
+        var Height = getMyHeight();
+        var iframe = document.createElement("iframe");
+        var CacheBreak = String(Math.floor(Math.random() * 10000));
+ 
+        if(Height != oldHeight){
+            iframeSet.innerHTML = '';
+            iframe.src = mySite + "common--javascript/resize-iframe.html?" + CacheBreak + "#" + Height +url;
+            iframe.style.display = "none";
+ 
+            iframeSet.appendChild(iframe);
+            oldHeight = Height;
+        }
+        setTimeout(createResizeIframe,50);
+   }
+ 
+    function getMyHeight() {
+ 
+        return iframeSet.getBoundingClientRect().top;
+    };
+});
+    </script>
+    <script>
+        function linkupdate() {
+            //GET INPUT
+            var lppagetype = document.getElementById("pagetype").value;
+            var lpcategory = document.getElementById("category").value;
+            var lptags = document.getElementById("tags").value;
+            var lpparent = document.getElementById("parent").value;
+            var lplinkto = document.getElementById("linkto").value;
+            var lpcreatedat = document.getElementById("createdat").value;
+            var lpcreatedby = document.getElementById("createdby").value;
+            var lpupdatedat = document.getElementById("updatedat").value;
+            var lprating = document.getElementById("rating").value;
+            var lpvotes = document.getElementById("votes").value;
+            var lpoffset = document.getElementById("offset").value;
+            var lprange = document.getElementById("range").value;
+            var lpname = document.getElementById("name").value;
+            var lpfullname = document.getElementById("fullname").value;
+            var lporder = document.getElementById("order").value;
+            var lplimit = document.getElementById("limit").value;
+            var lpperpage = document.getElementById("perpage").value;
+
+            const searchParams = new URLSearchParams(document.location.search);
+            var link = "/"+searchParams.get("page")+"/";
+
+            if (lppagetype.length > 0) {
+                link = link + "lp_pagetype/" + lppagetype + "/";
+            }
+
+            if (lpcategory.length > 0) {
+                link = link + "lp_category/" + lpcategory + "/";
+            } else {
+                link = link + "lp_category/_default/";
+            }
+
+            if (lptags.length > 0) {
+                lptags = lptags.replace(/\s/g, '%20');
+                lptags = lptags.replace(/\+/g, '%2B');
+                link = link + "lp_tags/" + lptags + "/";
+            }
+
+            if (lpparent.length > 0) {
+                link = link + "lp_parent/" + lpparent + "/";
+            }
+
+            if (lplinkto.length > 0) {
+                link = link + "lp_link_to/" + lplinkto + "/";
+            }
+
+            if (lpcreatedat.length > 0) {
+                link = link + "lp_created_at/" + lpcreatedat + "/";
+            }
+
+            if (lpcreatedby.length > 0) {
+                link = link + "lp_created_by/" + lpcreatedby + "/";
+            }
+
+            if (lpupdatedat.length > 0) {
+                link = link + "lp_updated_at/" + lpupdatedat + "/";
+            }
+
+            if (lprating.length > 0) {
+                link = link + "lp_rating/" + lprating + "/";
+            }
+
+            if (lpvotes.length > 0) {
+                link = link + "lp_votes/" + lpvotes + "/";
+            }
+
+            if (lpoffset.length > 0) {
+                link = link + "lp_offset/" + lpoffset + "/";
+            }
+
+            if (lprange.length > 0) {
+                link = link + "lp_range/" + lprange + "/";
+            }
+
+            if (lpname.length > 0) {
+                link = link + "lp_name/" + lpname + "/";
+            }
+
+            if (lpfullname.length > 0) {
+                link = link + "lp_fullname/" + lpfullname + "/";
+            }
+
+            if (lporder.length > 0) {
+                link = link + "lp_order/" + lporder + "/";
+            }
+
+            if (lplimit.length > 0) {
+                link = link + "lp_limit/" + lplimit + "/";
+            } else {
+                link = link + "lp_limit/999999/";
+            }
+
+            if (lpperpage.length > 0) {
+                link = link + "lp_perPage/" + lpperpage + "/";
+            }
+
+            parent.location.href = link + "lp_p/1/";
+        }
+
+    </script>
+</head>
+
+<body>
+    <form onsubmit="return linkupdate()" autocomplete="off" style="max-width:450px;text-align:center;margin: auto;">
+        <div class="input-container">
+            <input id="pagetype" class="input-field" type="text" placeholder="pagetype">
+            <input id="category" class="input-field" type="text" placeholder="category">
+            <input id="tags" class="input-field" type="text" placeholder="tags">
+            <input id="parent" class="input-field" type="text" placeholder="parent">
+            <input id="linkto" class="input-field" type="text" placeholder="linkto">
+            <input id="createdat" class="input-field" type="text" placeholder="created_at">
+            <input id="updatedat" class="input-field" type="text" placeholder="updated_at">
+            <input id="createdby" class="input-field" type="text" placeholder="created_by">
+            <input id="rating" class="input-field" type="text" placeholder="rating">
+            <input id="votes" class="input-field" type="text" placeholder="votes">
+            <input id="offset" class="input-field" type="text" placeholder="offset">
+            <input id="range" class="input-field" type="text" placeholder="range">
+            <input id="name" class="input-field" type="text" placeholder="name">
+            <input id="fullname" class="input-field" type="text" placeholder="fullname">
+            <input id="order" class="input-field" type="text" placeholder="order">
+            <input id="limit" class="input-field" type="text" placeholder="limit">
+            <input id="perpage" class="input-field" type="text" placeholder="perpage">
+        </div>
+
+        <button id="loginbtn" class="btn" style="" type="button" onclick="linkupdate()">確認する</button>
+
+    </form>
+<div id="iframeset"></div>
+
+
+</body>
+</html>
