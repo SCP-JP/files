@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
 :root {
-  --deepsea: linear-gradient(t        o bottom,
+  --deepsea: linear-gradient(to bottom,
      b(0,0,101),
        23,0,82),
          0,0))  ;
