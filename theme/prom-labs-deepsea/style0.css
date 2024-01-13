@@ -2,11 +2,12 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
 :root {
-  --deepsea: linear-gradient(t        o bottom,
-     b(0,0,101),
-       23,0,82),
-         0,0))  ;
+  --deepsea: linear-gradient(to bottom,
+       rgb(0,0,101),
+       rgb(23,0,82),
+       rgb(0,0,0))
 }
+
 
 div#container-wrap {
   background: url(none);
