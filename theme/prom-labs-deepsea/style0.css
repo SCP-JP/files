@@ -3,10 +3,11 @@
 
 :root {
   --deepsea: linear-gradient(to bottom,
-     b(0,0,101),
-       23,0,82),
-         0,0))  ;
+       rgb(0,0,101),
+       rgb(23,0,82),
+       rgb(0,0,0))
 }
+
 
 div#container-wrap {
   background: url(none);
