@@ -435,3 +435,9 @@ div.page-rate-widget-box .rate-points {
 #side-bar .side-block .collapsible-block-folded a.collapsible-block-link::before {
   background: url("http://scp-jp.wikidot.com/local--files/nav:side/expand.png") 0 2px no-repeat;
 }
+
+/* creditモジュールの表示崩れを修正 */
+.creditRate.creditModule .page-rate-widget-box {
+  margin-bottom: unset;
+  margin-right: unset;
+}
