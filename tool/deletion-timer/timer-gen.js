@@ -14,7 +14,7 @@ function generateDeletionLink() {
         timestamp.getTime() + "&type=" + type;
 
     if ($("#notice").prop("checked")) {
-        code += "この記事は評価が-3を下回った為、「低評価による削除」の対象となりました。<br />\n" +
+        code += "この記事は評価が-3以下になったため、「低評価による削除」の対象となりました。<br />\n" +
             "この通知から**72時間後**までに、評価-2以上にならなければ削除となります。<br />\n" +
             "詳しくは[[[deletions-guide|こちら]]]を参照して、適切な対処を行ってください。<br />\n" +
             "<br />\n";
