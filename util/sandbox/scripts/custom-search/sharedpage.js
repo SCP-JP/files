@@ -23,7 +23,7 @@ var SearchTags = {
         "短編": "_short",
         "中編": "_medium",
         "長編": "_long",
-        "事前知識不要": "_ignorant",
+        "事前知識不要": "_no_prereqs",
         "フォーマットスクリュー": "_formatscrew",
         "シリーズ-JP": "_series-jp",
         "シリーズ-Other": "_series-other",
