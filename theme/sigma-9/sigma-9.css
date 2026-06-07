@@ -28,7 +28,7 @@ body {
   position: relative;
   margin: 2em auto 0;
   max-width: 1040px;
-  min-height: 2100px;
+  min-height: 2300px;
   height: auto !important;
   height: 1850px;
 }
@@ -822,7 +822,7 @@ div.page-rate-widget-box .rate-points {
 
 .scp-image-block img {
   border: 0;
-  width: 300px;
+  width: 100%;
 }
 
 .scp-image-block .scp-image-caption {
@@ -832,7 +832,6 @@ div.page-rate-widget-box .rate-points {
   font-size: 80%;
   font-weight: bold;
   text-align: center;
-  width: 300px;
 }
 
 .scp-image-block > p {
@@ -1541,6 +1540,10 @@ table {
   }
 }
 
+div.scpnet-interwiki-wrapper {
+	margin: 0 -5px;
+}
+
 .post .content a {
   word-wrap: break-word;
 }
@@ -1770,4 +1773,11 @@ li.folded > .colmod-content {
 
 .forum-category-box .title a:empty:after {
     content: "　";
+}
+
+#container-wrap {
+  -webkit-touch-callout: none;
+}
+#container-wrap>* {
+    -webkit-touch-callout: unset;
 }

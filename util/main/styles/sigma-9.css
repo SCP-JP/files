@@ -1540,6 +1540,10 @@ table {
   }
 }
 
+div.scpnet-interwiki-wrapper {
+	margin: 0 -5px;
+}
+
 .post .content a {
   word-wrap: break-word;
 }
