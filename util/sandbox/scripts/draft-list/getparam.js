@@ -10,8 +10,9 @@ if ((!PageSetting.currentParam)||(new URL(PageSetting.currentParam).pathname.len
     PageSetting.getParent = false;
 }
 PageSetting.myPage = (function () {
-    var tmpURL = PageSetting.currentParam.split("http://").join("").split("/");
-    return "http://" + tmpURL[0] + "/" + tmpURL[1];
+    // referrer は https のこともあるため "http://" 決め打ちにしない（URLが壊れ親フレームの遷移先も壊れる）
+    var tmpURL = new URL(PageSetting.currentParam);
+    return tmpURL.origin + "/" + tmpURL.pathname.split("/")[1];
 })();
 PageSetting.currentParam = PageSetting.currentParam.split(PageSetting.myPage).join("");
 PageSetting.OrderParam = "";
