@@ -1,4 +1,7 @@
 {
+	"resolutions": {
+		"yaml": "^2.8.3"
+	},
 	"devDependencies": {
 		"husky": "^8.0.3",
 		"lint-staged": "^15.1.0",
