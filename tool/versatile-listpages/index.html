@@ -95,9 +95,13 @@
     </style>
     <script>
 document.addEventListener("DOMContentLoaded",function(){
-    var mySite = document.referrer;
-    mySite = mySite.split("http://").join("");
-    mySite = "http://" + mySite.split("/")[0] + "/";
+    // referrer は https のこともあるため "http://" 決め打ちにしない（URLが壊れ混在コンテンツにもなる）
+    var mySite = "";
+    try {
+        mySite = new URL(document.referrer).origin + "/";
+    } catch (e) {
+        mySite = "";
+    }
  
     var iframeSet = document.getElementById('iframeset');
     var oldHeight = 0;
