@@ -1634,18 +1634,21 @@ li.folded > .colmod-content {
   padding: 0 0 0 1.5em;
 }
 
+/* -webkit-line-clamp は使わない: Safariでルビ註の高さ分だけclamp高が不足し、ルビ入り行が切れる */
+
 .content-panel.scp ul li {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  display: block;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS  3D touch 不具合修正 */
 }
 
 .content-panel.scp ul li:hover {
-  -webkit-line-clamp: unset;
   overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
 }
 
 .content-panel.scp ul li::before {
