@@ -5,12 +5,37 @@
 </head>
 <body>
     <script type="text/javascript">
-        strReferrer = document.referrer + "/";
-        if(strReferrer.match(/\/noredirect\/(true|t)\//)) {
-            document.write("This redirect has been disabled by the <b>/noredirect/true/<\/b> code in the URL.<br><br>It would normally redirect to:<br>" + window.location.hash.substring(1));
-        } else {
-            window.parent.location.replace(window.location.hash.substring(1));
-        }
+        (function () {
+            var target = window.location.hash.substring(1);
+            var strReferrer = document.referrer + "/";
+
+            var resolved = null;
+            try {
+                resolved = new URL(target, window.location.href);
+            } catch (e) {
+                resolved = null;
+            }
+            // フラグメントは任意値のため、javascript: 等のスキームは親に渡さない
+            var isNavigable = resolved !== null &&
+                (resolved.protocol === "http:" || resolved.protocol === "https:");
+
+            if (strReferrer.match(/\/noredirect\/(true|t)\//)) {
+                var message = document.createElement("div");
+                message.appendChild(document.createTextNode("This redirect has been disabled by the "));
+                var code = document.createElement("b");
+                code.appendChild(document.createTextNode("/noredirect/true/"));
+                message.appendChild(code);
+                message.appendChild(document.createTextNode(" code in the URL."));
+                message.appendChild(document.createElement("br"));
+                message.appendChild(document.createElement("br"));
+                message.appendChild(document.createTextNode("It would normally redirect to:"));
+                message.appendChild(document.createElement("br"));
+                message.appendChild(document.createTextNode(target));
+                document.body.appendChild(message);
+            } else if (isNavigable) {
+                window.parent.location.replace(resolved.href);
+            }
+        })();
     </script>
 </body>
 </html>
