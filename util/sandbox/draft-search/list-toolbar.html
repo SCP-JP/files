@@ -1,0 +1,302 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        /*
+        * CSS-Author: ukwhatn
+        *
+        */
+        :root {
+            --accent: #328da2;
+            --accent-dark: #1f6d80;
+            --accent-pale: #e8f4f7;
+            --line: #cfe3e8;
+            --ink: #2f3a3d;
+            --ink-weak: #7a8a8f;
+            --chip-h: 28px;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Sans", "Noto Sans JP", sans-serif;
+            color: var(--ink);
+            font-size: 13px;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .toolbar {
+            box-sizing: border-box;
+            width: 44em;
+            max-width: 100%;
+            margin: 0 auto;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        .row {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px 14px;
+        }
+
+        .row + .row {
+            border-top: 1px solid var(--line);
+        }
+
+        .row-label {
+            flex: 0 0 4.5em;
+            color: var(--ink-weak);
+            font-size: 12px;
+            line-height: var(--chip-h);
+        }
+
+        .row-body {
+            flex: 1 1 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .chip {
+            box-sizing: border-box;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: var(--chip-h);
+            padding: 0 12px;
+            border: 1px solid var(--line);
+            border-radius: calc(var(--chip-h) / 2);
+            background: #fff;
+            color: var(--accent-dark);
+            font-size: 13px;
+            text-decoration: none !important;
+            white-space: nowrap;
+            transition: background-color .12s ease, border-color .12s ease, color .12s ease;
+        }
+
+        .chip:hover {
+            background: var(--accent-pale);
+            border-color: var(--accent);
+        }
+
+        .chip.selected {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+        }
+
+        .chip.selected:hover {
+            background: var(--accent-dark);
+        }
+
+        .chip.direction {
+            margin-left: 4px;
+            width: var(--chip-h);
+            padding: 0;
+            font-size: 14px;
+        }
+
+        .chip.disabled {
+            opacity: .4;
+            pointer-events: none;
+        }
+
+        .spacer {
+            flex: 1 1 auto;
+        }
+
+        .foot {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 4px 16px;
+            padding: 8px 14px;
+            border-top: 1px solid var(--line);
+            background: var(--accent-pale);
+            font-size: 12px;
+            color: var(--ink-weak);
+        }
+
+        .foot #status {
+            color: var(--ink);
+        }
+
+        .foot a {
+            color: var(--accent-dark);
+            text-decoration: none;
+        }
+
+        .foot a:hover {
+            text-decoration: underline;
+        }
+
+        .foot a::after {
+            content: " ↗";
+            font-size: 10px;
+        }
+
+        @media (max-width: 560px) {
+            .row {
+                padding: 8px 10px;
+                gap: 8px;
+            }
+
+            .row-label {
+                flex-basis: 4.2em;
+            }
+
+            .foot {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="toolbar">
+    <div class="row">
+        <div class="row-label">絞り込み</div>
+        <div class="row-body" id="filters"></div>
+    </div>
+    <div class="row">
+        <div class="row-label">並び替え</div>
+        <div class="row-body" id="sorts"></div>
+    </div>
+    <div class="foot">
+        <span id="status"></span>
+        <span class="spacer"></span>
+        <a href="https://data.scp-jp.com/drafts?no_comments_only=%22false%22&amp;page=1&amp;sort=created_at&amp;order=desc"
+           target="_blank" rel="noopener">タグを組み合わせて探す</a>
+        <a href="https://data.scp-jp.com/drafts?no_comments_only=%22true%22&amp;page=1&amp;sort=created_at&amp;order=desc"
+           target="_blank" rel="noopener">まだ批評が付いていない下書き</a>
+    </div>
+</div>
+<script>
+    /*
+     * script-Author: ukwhatn
+     * 原型: type-search.html (script-Author: C-take)
+     */
+    (function () {
+        var TAG_JP = "/tag/%2b_criticism-in,-_en,-_ru,-_ko,-_cn,-_fr,-_pl,-_es,-_th,-_de,-_it,-_ua,-_pt-br,-_cz,-_zh-tr,-_vn,-_otherlang,-_others,-_null";
+        var TAG_TRANSLATION = "/tag/%2b_criticism-in,-_scp-jp,-_tale-jp,-_goi-format-jp,-_others,-_null";
+        var DEFAULT_ORDER = "created_at desc";
+        var FALLBACK_PAGE = "http://scp-jp-sandbox3.wikidot.com/draft-list";
+
+        var FILTERS = [
+            {label: "すべて", tag: ""},
+            {label: "JP記事", tag: TAG_JP},
+            {label: "翻訳記事", tag: TAG_TRANSLATION}
+        ];
+
+        var SORT_KEYS = [
+            {key: "created_at", label: "作成日", desc: "新しい順", asc: "古い順"},
+            {key: "updated_at", label: "更新日", desc: "新しい順", asc: "古い順"},
+            {key: "comments", label: "コメント", desc: "多い順", asc: "少ない順"},
+            {key: "size", label: "文字数", desc: "多い順", asc: "少ない順"},
+            {key: "random", label: "ランダム"}
+        ];
+
+        // ListPages は /order/<key>%20<dir> で受けるが、referrer 経由では空白が %20 / + / 生スペースに揺れる
+        function normalizeOrder(raw) {
+            var decoded = raw;
+            try {
+                decoded = decodeURIComponent(raw.replace(/\+/g, " "));
+            } catch (e) {
+            }
+            return decoded.replace(/\s+/g, " ").trim();
+        }
+
+        function parseParent() {
+            var url;
+            try {
+                url = new URL(document.referrer);
+            } catch (e) {
+                url = new URL(FALLBACK_PAGE);
+            }
+            if (url.pathname.length <= 1) {
+                url = new URL(FALLBACK_PAGE);
+            }
+            var segments = url.pathname.replace(/\/$/, "").split("/");
+            var rest = "/" + segments.slice(2).join("/");
+
+            var orderIndex = rest.indexOf("/order/");
+            var order = DEFAULT_ORDER;
+            if (orderIndex >= 0) {
+                order = normalizeOrder(rest.substring(orderIndex + "/order/".length));
+                rest = rest.substring(0, orderIndex);
+            }
+            var parts = order.split(" ");
+            return {
+                base: url.origin + "/" + segments[1],
+                tag: rest.indexOf("/tag/") >= 0 ? rest : "",
+                key: parts[0],
+                descending: parts[1] === "desc"
+            };
+        }
+
+        function buildUrl(state, tag, key, descending) {
+            var order = descending ? key + " desc" : key;
+            var orderPath = order === DEFAULT_ORDER ? "" : "/order/" + encodeURIComponent(order);
+            return state.base + tag + orderPath;
+        }
+
+        function chip(text, href, selected, extraClass) {
+            var a = document.createElement("a");
+            a.className = "chip" + (selected ? " selected" : "") + (extraClass ? " " + extraClass : "");
+            a.textContent = text;
+            a.href = href;
+            a.target = "_top";
+            return a;
+        }
+
+        function render() {
+            var state = parseParent();
+            var current = null;
+
+            var filters = document.getElementById("filters");
+            FILTERS.forEach(function (f) {
+                filters.appendChild(chip(f.label, buildUrl(state, f.tag, state.key, state.descending), state.tag === f.tag));
+            });
+
+            var sorts = document.getElementById("sorts");
+            SORT_KEYS.forEach(function (s) {
+                var selected = state.key === s.key;
+                if (selected) {
+                    current = s;
+                }
+                // キーを変えても向きは保つ（向きを持たない random だけは既定に戻す）
+                var descending = s.desc ? state.descending : true;
+                sorts.appendChild(chip(s.label, buildUrl(state, state.tag, s.key, descending), selected));
+            });
+
+            var hasDirection = current && current.desc;
+            var flipped = buildUrl(state, state.tag, state.key, !state.descending);
+            var direction = chip(state.descending ? "↓" : "↑", hasDirection ? flipped : "#", false,
+                "direction" + (hasDirection ? "" : " disabled"));
+            direction.title = hasDirection ? "並び順を反転" : "";
+            sorts.appendChild(direction);
+
+            var status = document.getElementById("status");
+            if (current) {
+                var suffix = hasDirection ? (state.descending ? current.desc : current.asc) : "";
+                status.textContent = "表示中: " + current.label + (suffix ? " / " + suffix : "");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", render);
+    })();
+</script>
+</body>
+
+</html>
