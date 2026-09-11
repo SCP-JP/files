@@ -251,8 +251,8 @@
                 if (selected) {
                     currentKey = s;
                 }
-                // キーを変えても向きは保つ（向きを持たない random だけは既定に戻す）
-                var descending = s.desc ? state.descending : true;
+                // キーを変えても向きは保つ。random は方向を取らないので order に付けない
+                var descending = s.desc ? state.descending : false;
                 sorts.appendChild(chip(s.label, buildUrl(state, state.tag, s.key, descending), selected));
             });
 
