@@ -11,7 +11,7 @@
             --accent: #328da2;
             --accent-dark: #1f6d80;
             --accent-pale: #e8f4f7;
-            --line: #cfe3e8;
+            --line: rgba(50, 141, 162, .45);
             --ink: #2f3a3d;
             --ink-weak: #7a8a8f;
             --chip-h: 28px;
@@ -36,21 +36,13 @@
             width: 44em;
             max-width: 100%;
             margin: 0 auto;
-            border: 1px solid var(--line);
-            border-radius: 10px;
-            background: #fff;
-            overflow: hidden;
         }
 
         .row {
             display: flex;
             align-items: flex-start;
             gap: 10px;
-            padding: 10px 14px;
-        }
-
-        .row + .row {
-            border-top: 1px solid var(--line);
+            padding: 5px 0;
         }
 
         .row-label {
@@ -76,7 +68,7 @@
             padding: 0 12px;
             border: 1px solid var(--line);
             border-radius: calc(var(--chip-h) / 2);
-            background: #fff;
+            background: rgba(255, 255, 255, .85);
             color: var(--accent-dark);
             font-size: 13px;
             text-decoration: none !important;
@@ -111,24 +103,14 @@
             pointer-events: none;
         }
 
-        .spacer {
-            flex: 1 1 auto;
-        }
-
         .foot {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
+            justify-content: center;
             gap: 4px 16px;
-            padding: 8px 14px;
-            border-top: 1px solid var(--line);
-            background: var(--accent-pale);
+            padding: 8px 0 0;
             font-size: 12px;
-            color: var(--ink-weak);
-        }
-
-        .foot #status {
-            color: var(--ink);
         }
 
         .foot a {
@@ -157,7 +139,6 @@
 
             .foot {
                 flex-direction: column;
-                align-items: flex-start;
             }
         }
     </style>
@@ -174,8 +155,6 @@
         <div class="row-body" id="sorts"></div>
     </div>
     <div class="foot">
-        <span id="status"></span>
-        <span class="spacer"></span>
         <a href="https://data.scp-jp.com/drafts?no_comments_only=%22false%22&amp;page=1&amp;sort=created_at&amp;order=desc"
            target="_blank" rel="noopener">タグを組み合わせて探す</a>
         <a href="https://data.scp-jp.com/drafts?no_comments_only=%22true%22&amp;page=1&amp;sort=created_at&amp;order=desc"
@@ -200,11 +179,11 @@
         ];
 
         var SORT_KEYS = [
-            {key: "created_at", label: "作成日", desc: "新しい順", asc: "古い順"},
-            {key: "updated_at", label: "更新日", desc: "新しい順", asc: "古い順"},
-            {key: "comments", label: "コメント", desc: "多い順", asc: "少ない順"},
-            {key: "size", label: "文字数", desc: "多い順", asc: "少ない順"},
-            {key: "random", label: "ランダム"}
+            {key: "created_at", label: "作成日", reversible: true},
+            {key: "updated_at", label: "更新日", reversible: true},
+            {key: "comments", label: "コメント", reversible: true},
+            {key: "size", label: "文字数", reversible: true},
+            {key: "random", label: "ランダム", reversible: false}
         ];
 
         // ListPages は /order/<key>%20<dir> で受けるが、referrer 経由では空白が %20 / + / 生スペースに揺れる
@@ -262,7 +241,7 @@
 
         function render() {
             var state = parseParent();
-            var current = null;
+            var currentKey = null;
 
             var filters = document.getElementById("filters");
             FILTERS.forEach(function (f) {
@@ -273,25 +252,19 @@
             SORT_KEYS.forEach(function (s) {
                 var selected = state.key === s.key;
                 if (selected) {
-                    current = s;
+                    currentKey = s;
                 }
                 // キーを変えても向きは保つ（向きを持たない random だけは既定に戻す）
-                var descending = s.desc ? state.descending : true;
+                var descending = s.reversible ? state.descending : true;
                 sorts.appendChild(chip(s.label, buildUrl(state, state.tag, s.key, descending), selected));
             });
 
-            var hasDirection = current && current.desc;
+            var hasDirection = currentKey && currentKey.reversible;
             var flipped = buildUrl(state, state.tag, state.key, !state.descending);
             var direction = chip(state.descending ? "↓" : "↑", hasDirection ? flipped : "#", false,
                 "direction" + (hasDirection ? "" : " disabled"));
             direction.title = hasDirection ? "並び順を反転" : "";
             sorts.appendChild(direction);
-
-            var status = document.getElementById("status");
-            if (current) {
-                var suffix = hasDirection ? (state.descending ? current.desc : current.asc) : "";
-                status.textContent = "表示中: " + current.label + (suffix ? " / " + suffix : "");
-            }
         }
 
         document.addEventListener("DOMContentLoaded", render);
