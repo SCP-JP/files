@@ -1,5 +1,5 @@
 [[module CSS]]
-@import url(http://scp-jp.wdfiles.com/local--code/theme%3Aflopstyle/1);
+@import url(https://scp-jp.wdfiles.com/local--code/theme%3Aflopstyle/1);
 [[/module]]
 
 [[iftags +テーマ]]
@@ -180,7 +180,7 @@ __ソースコード__:
 @@ .lite-heading h3{ color: hsl(360, 100%, 27%); }@@
 
 @@/* ---- 警告ヘッダのロゴを変更 ---- */@@
-@@ .council{ background-image: url(http://scp-wiki.wdfiles.com/local--files/scp-style-resource/scp_trans.png);@@
+@@ .council{ background-image: url(https://scp-wiki.wdfiles.com/local--files/scp-style-resource/scp_trans.png);@@
 [[/div]]
 
 [[/div]]
@@ -452,7 +452,7 @@ __ソースコード__:
      height: 295px;
      margin: auto;
 
-     background-image: url(http://scp-wiki.wdfiles.com/local--files/scp-style-resource/scp_trans.png);
+     background-image: url(https://scp-wiki.wdfiles.com/local--files/scp-style-resource/scp_trans.png);
      background-position: center;
      background-size: 295px 295px;
      background-repeat: no-repeat;

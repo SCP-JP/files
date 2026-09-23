@@ -28,7 +28,7 @@ div#container-wrap {
   padding-top: 2em;
   height: 130px;
   z-index: 10;
-  background: url(http://scp-jp.wdfiles.com/local--files/joicle-catalog-hub/q2.png) 10px 40px no-repeat, url(http://scp-jp.wdfiles.com/local--files/joicle-catalog-hub/q1.png) calc(100% - 10px) calc(100% - 40px) no-repeat;
+  background: url(https://scp-jp.wdfiles.com/local--files/joicle-catalog-hub/q2.png) 10px 40px no-repeat, url(https://scp-jp.wdfiles.com/local--files/joicle-catalog-hub/q1.png) calc(100% - 10px) calc(100% - 40px) no-repeat;
 }
 
 div #header h1 {
@@ -127,7 +127,7 @@ div #header h2 {
   margin: 0 auto;
   margin-top: 130px;
   height: 100px;
-  background: url(http://scp-jp.wdfiles.com/local--files/joicle-catalog-hub/q3-min-min.png) top left repeat-x;
+  background: url(https://scp-jp.wdfiles.com/local--files/joicle-catalog-hub/q3-min-min.png) top left repeat-x;
 }
 
 /*
@@ -598,7 +598,7 @@ div.page-rate-widget-box .rate-points {
   #header::after {
     margin-top: 100px;
     height: 100px;
-    background: url(http://scp-jp.wdfiles.com/local--files/joicle-catalog-hub/q3-min-min.png) top left repeat-x;
+    background: url(https://scp-jp.wdfiles.com/local--files/joicle-catalog-hub/q3-min-min.png) top left repeat-x;
     background-size: 440px;
   }
 

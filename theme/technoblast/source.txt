@@ -8,7 +8,7 @@
 **クレジット付き評価モジュール:**
 [[/>]]
 [[module css]]
-@import url('http://scp-jp.wdfiles.com/local--code_/credit%3Astyle/1');
+@import url('https://scp-jp.wdfiles.com/local--code_/credit%3Astyle/1');
 [[/module]]
 
 [[div_ class="creditRate creditModule"]]
@@ -16,7 +16,7 @@
 [[div_ class="rate-box-with-credit-button"]]
 [[module Rate]]
 [[div_ class="creditButton"]]
-[[a href="#u-credit-view" class="fa fa-info" style="position:relative;"]][[image http://scp-jp.wikidot.com/local--files/nav:side/blank.png title="クレジットを表示する" style="position:absolute;height:100%;width:100%;top:0;left:0;"]][[/a]]
+[[a href="#u-credit-view" class="fa fa-info" style="position:relative;"]][[image https://scp-jp.wikidot.com/local--files/nav:side/blank.png title="クレジットを表示する" style="position:absolute;height:100%;width:100%;top:0;left:0;"]][[/a]]
 [[/div]]
 [[/div]]
 [[/div]]
@@ -27,7 +27,7 @@
 
 [[div_ id="credit-view"]]
 [[div_ class="fader"]]
-[[iframe http://scp-jp.wdfiles.com/local--code/credit%3Abackmodule/1 ]]
+[[iframe https://scp-jp.wdfiles.com/local--code/credit%3Abackmodule/1 ]]
 [[/div]]
 
 [[div_ class="modalcontainer"]]
@@ -38,7 +38,7 @@
 [[div class="credit"]]
 ページ情報です。
 [[div_ class="credit-back" style="text-align: center;"]]
-[[iframe http://scp-jp.wdfiles.com/local--code/credit%3Abackmodule/2 style="height:2em;width: 100%;margin: 0;padding: 0;border: 0;background: transparent;" scrolling="no"]]
+[[iframe https://scp-jp.wdfiles.com/local--code/credit%3Abackmodule/2 style="height:2em;width: 100%;margin: 0;padding: 0;border: 0;background: transparent;" scrolling="no"]]
 [[/div]]
 [[/div]]
 
@@ -62,7 +62,7 @@
 
 + 例
 
-[[include component:image-block name= http://scp-wiki.wdfiles.com/local--files/theme%3Atechnoblast/logoaiad.png|caption=ロゴ|width=200px]]
+[[include component:image-block name= https://scp-wiki.wdfiles.com/local--files/theme%3Atechnoblast/logoaiad.png|caption=ロゴ|width=200px]]
 
 5つのハイフン(@@-----@@)を使うと横線が作られ、(引用などの)他の構文の中に入ってない限りページ全体まで延びます。今この記事のセクションを分けるのが横線です。
 
@@ -206,11 +206,11 @@ h6 {
 /* ---- HEADER ---- */
 
  div#container-wrap{
-     background-image: url(http://scp-wiki.wdfiles.com/local--files/theme%3Atechnoblast/bg.png);
+     background-image: url(https://scp-wiki.wdfiles.com/local--files/theme%3Atechnoblast/bg.png);
 }
 
 div#header {
-    background-image: url(http://scp-wiki.wdfiles.com/local--files/theme%3Atechnoblast/logoaiad.png);
+    background-image: url(https://scp-wiki.wdfiles.com/local--files/theme%3Atechnoblast/logoaiad.png);
     background-size: 7.3rem;
     background-position: 3px 29px;
 }
@@ -298,7 +298,7 @@ div#header h2 span {
      border: none;
      border-radius: 3px;
      box-shadow: none;
-     background: linear-gradient(rgba(1,55,55,0), rgba(1,55,55,0)), url('http://scp-jp.wdfiles.com/local--files/theme%3Atechnoblast/darkbg.png')!important;
+     background: linear-gradient(rgba(1,55,55,0), rgba(1,55,55,0)), url('https://scp-jp.wdfiles.com/local--files/theme%3Atechnoblast/darkbg.png')!important;
      color: #00ffff;
 }
 
@@ -465,7 +465,7 @@ div#header h2 span {
      margin: 0;
      padding: 0;
     /* ---- Tab Background Colour | [SELECTED] ---- */
-     background: linear-gradient(rgba(1,55,55,0), rgba(1,55,55,0)), url('http://scp-jp.wdfiles.com/local--files/theme%3Atechnoblast/darkbg.png');
+     background: linear-gradient(rgba(1,55,55,0), rgba(1,55,55,0)), url('https://scp-jp.wdfiles.com/local--files/theme%3Atechnoblast/darkbg.png');
 }
  .yui-navset .yui-nav .selected a,
  .yui-navset .yui-nav .selected a em{
@@ -482,7 +482,7 @@ div#header h2 span {
 }
  .yui-navset-left .yui-content{
     /* ---- Content Background ---- */
-     background: linear-gradient(rgba(1,55,55,0), rgba(1,55,55,0)), url('http://scp-jp.wdfiles.com/local--files/theme%3Atechnoblast/darkbg.png');
+     background: linear-gradient(rgba(1,55,55,0), rgba(1,55,55,0)), url('https://scp-jp.wdfiles.com/local--files/theme%3Atechnoblast/darkbg.png');
 }
  .yui-navset .yui-content,
  .yui-navset .yui-navset-top .yui-content{
@@ -595,7 +595,7 @@ div.page-rate-widget-box .rate-points {
 #page-content .wiki-content-table tr th {
     border: solid 1px #013737;
     color: #f4f4f4;
-    background: linear-gradient(rgba(1,55,55,0), rgba(1,55,55,0)), url('http://scp-jp.wdfiles.com/local--files/theme%3Atechnoblast/darkbg.png');
+    background: linear-gradient(rgba(1,55,55,0), rgba(1,55,55,0)), url('https://scp-jp.wdfiles.com/local--files/theme%3Atechnoblast/darkbg.png');
     /* set border for table title */
 }
 
@@ -617,7 +617,7 @@ div.blockquote,
     box-shadow: none;
 }
 .scp-image-block .scp-image-caption {
-    background: linear-gradient(rgba(1,55,55,0), rgba(1,55,55,0)), url('http://scp-jp.wdfiles.com/local--files/theme%3Atechnoblast/darkbg.png');
+    background: linear-gradient(rgba(1,55,55,0), rgba(1,55,55,0)), url('https://scp-jp.wdfiles.com/local--files/theme%3Atechnoblast/darkbg.png');
     border-top: solid 1px #013737;
     color: #f4f4f4;
 }
@@ -634,7 +634,7 @@ hr {
 
 /* ---- For the Interwiki ---- */
 #side-bar .scpnet-interwiki-wrapper {
-    background: linear-gradient(rgba(1,55,55,0), rgba(1,55,55,0)), url('http://scp-jp.wdfiles.com/local--files/theme%3Atechnoblast/darkbg.png');
+    background: linear-gradient(rgba(1,55,55,0), rgba(1,55,55,0)), url('https://scp-jp.wdfiles.com/local--files/theme%3Atechnoblast/darkbg.png');
     border-radius: 3px;
 }
 #side-bar .scpnet-interwiki-wrapper iframe.scpnet-interwiki-frame {

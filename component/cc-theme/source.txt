@@ -49,13 +49,13 @@ body {
     color: #215d87;
 }
 div#container-wrap {
-    background: url(http://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/margin.png) top left repeat-x;
+    background: url(https://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/margin.png) top left repeat-x;
 }
  
 /* HEADER */
 #header {
     height: 120px;
-    background: url(http://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/CClogo.png) 10px 35px no-repeat;
+    background: url(https://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/CClogo.png) 10px 35px no-repeat;
 }
 #search-top-box-input {
     color: #15486B;
@@ -176,12 +176,12 @@ div#container-wrap {
 .yui-navset .yui-nav .selected a,
 .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
 .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
-    background:#D8D8D8  url(http://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/yuitabs.png) repeat-x left -1402px; 
+    background:#D8D8D8  url(https://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/yuitabs.png) repeat-x left -1402px; 
     color:#FFFFFF;
 }
 .yui-navset .yui-nav a:hover,
 .yui-navset .yui-nav a:focus {
-    background:#15486B url(http://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/yuitabs.png) repeat-x left -1302px;
+    background:#15486B url(https://scp-wiki-cn.wikidot.com/local--files/component:cc-theme/yuitabs.png) repeat-x left -1302px;
 }
 .yui-navset .yui-nav,
 .yui-navset .yui-navset-top .yui-nav {

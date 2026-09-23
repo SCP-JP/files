@@ -1,5 +1,5 @@
 [[module CSS]]
-@import url("http://scp-jp.wikidot.com/component:af2020theme/code/1");
+@import url("https://scp-jp.wikidot.com/component:af2020theme/code/1");
 #page-title {
     display: none;
 }
@@ -128,7 +128,7 @@ SCPに関する全世界共通のライセンスについて
 [[div class="feature-title"]]
 **##b01|採れたてのジャガイモ##**
 [[/div]]
-[[=image http://scp-jp.wikidot.com/local--files/component:af2020theme/I_am_potato style="max-width:200px;"]]
+[[=image https://scp-jp.wikidot.com/local--files/component:af2020theme/I_am_potato style="max-width:200px;"]]
 [!--
 CC0
 https://publicdomainq.net/taro-vegetable-food-0000694/
@@ -382,7 +382,7 @@ Primary Contact: [[user HawkeyeVole]]
 }
 body {
    background: white;
-   background-image: url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato1.svg'),url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato2.svg'),url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato3.svg'),url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato4.svg'),url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato5.svg'),url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato6.svg'),url('http://scp-jp.wdfiles.com/local--files/component:af2020theme/potato7.svg');
+   background-image: url('https://scp-jp.wdfiles.com/local--files/component:af2020theme/potato1.svg'),url('https://scp-jp.wdfiles.com/local--files/component:af2020theme/potato2.svg'),url('https://scp-jp.wdfiles.com/local--files/component:af2020theme/potato3.svg'),url('https://scp-jp.wdfiles.com/local--files/component:af2020theme/potato4.svg'),url('https://scp-jp.wdfiles.com/local--files/component:af2020theme/potato5.svg'),url('https://scp-jp.wdfiles.com/local--files/component:af2020theme/potato6.svg'),url('https://scp-jp.wdfiles.com/local--files/component:af2020theme/potato7.svg');
    animation: gamingpotato 3s linear infinite;
    background-size: 150px 150px;
 }

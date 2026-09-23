@@ -90,7 +90,7 @@ body .anom-bar-container.danger .danger-diamond > .quadrants > .right-quad {
     animation-delay: 300s;
     position: fixed;
     z-index: 20;
-    background-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-148-8v3t/calibold-jumpscare.png");
+    background-image: url("https://scp-jp-storage.wikidot.com/local--files/file:7522555-148-8v3t/calibold-jumpscare.png");
     height: 457px;
     width: 302px;
     text-align: center;
@@ -1125,7 +1125,7 @@ body .anom-bar-container.esoteric .text-part > .main-class::before {
     border-color: rgb({$accent-two});
     -webkit-filter: invert(0);
      filter: invert(0);
-    background-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7522555-149-olg4/esoteric-icon.svg");
+    background-image: url("https://scp-jp-storage.wikidot.com/local--files/file:7522555-149-olg4/esoteric-icon.svg");
     -webkit-background-size: 75% 75%;
        -moz-background-size: 75% 75%;
      -o-background-size: 75% 75%;
@@ -1792,9 +1792,9 @@ div.acs-extra > :nth-child(n) { animation-delay: calc(0.75s * var(--timeScale) +
 For localization, please edit the link below.
 http://scp-jp.wikidot.com/fragment:black-highlighter-theme-source
 */
-@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/1");
-@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/2");
-@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/3");
+@import url("https://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/1");
+@import url("https://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/2");
+@import url("https://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/3");
 [[/module]]
 
 [[>]]

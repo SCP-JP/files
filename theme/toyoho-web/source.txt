@@ -1,5 +1,5 @@
 [[module css]]
-@import url(http://scp-jp.wikidot.com/theme:toyoho-web/code/2);
+@import url(https://scp-jp.wikidot.com/theme:toyoho-web/code/2);
 [[/module]]
 
 [[iftags +テーマ]]
@@ -164,10 +164,10 @@ Image Lisence
 /* Header */
 
 div#container-wrap {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-137-7ges/toyoho-header-haikei.png) top left repeat-x;
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-137-7ges/toyoho-header-haikei.png) top left repeat-x;
 }
 div#header {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-127-1twv/tono_green.png) 25px 55px no-repeat;
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-127-1twv/tono_green.png) 25px 55px no-repeat;
     position: relative;
     background-size: 68px 68px;
 }

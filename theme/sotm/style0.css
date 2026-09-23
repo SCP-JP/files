@@ -409,31 +409,31 @@ div.page-rate-widget-box .rate-points {
 
 #side-bar .side-block .menu-item img[src *= "default"] + a::before,
 #interwiki .side-block .menu-item img[src *= "default"] + a::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/default.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/default.png") 0 2px no-repeat;
 }
 
 #side-bar .side-block .menu-item img[src *= "forum"] + a::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/forum.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/forum.png") 0 2px no-repeat;
 }
 
 #side-bar .side-block .menu-item img[src *= "help"] + a::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/help.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/help.png") 0 2px no-repeat;
 }
 
 #side-bar .side-block .menu-item img[src *= "home"] + a::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/home.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/home.png") 0 2px no-repeat;
 }
 
 #side-bar .side-block .menu-item img[src *= "main"] + a::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/main.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/main.png") 0 2px no-repeat;
 }
 
 #side-bar .side-block .menu-item img[src *= "series"] + a::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/series.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/series.png") 0 2px no-repeat;
 }
 
 #side-bar .side-block .collapsible-block-folded a.collapsible-block-link::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/expand.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/expand.png") 0 2px no-repeat;
 }
 
 /* creditモジュールの表示崩れを修正 */

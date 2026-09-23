@@ -29,7 +29,7 @@
     overflow: visible;
     margin: 0;
     padding: 0;
-    background-image: url('http://scp-jp-storage.wikidot.com/local--files/file:3396310-46-b63j/Herman-Fuller-background-new.png');
+    background-image: url('https://scp-jp-storage.wikidot.com/local--files/file:3396310-46-b63j/Herman-Fuller-background-new.png');
     background-size: 100%;
     background-repeat: no-repeat;
     color: #BEB192;
@@ -113,7 +113,7 @@
 }
 
 .hfpicframe {
-    background-image: url('http://scp-jp-storage.wikidot.com/local--files/file:3396310-46-93kx/frame-new.png');
+    background-image: url('https://scp-jp-storage.wikidot.com/local--files/file:3396310-46-93kx/frame-new.png');
     background-repeat: no-repeat; 
     background-position: center center; 
     background-size: contain;

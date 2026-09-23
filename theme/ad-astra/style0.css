@@ -17,7 +17,7 @@ div#extra-div-1 {
   width: 100%;
   top: 0;
   position: absolute;
-  background: url("http://scp-wiki.wdfiles.com/local--files/theme:ad-astra/hubble.png");
+  background: url("https://scp-wiki.wdfiles.com/local--files/theme:ad-astra/hubble.png");
   background-size: cover;
   background-position: 50% 50%;
 } /* SPACE */
@@ -39,7 +39,7 @@ div#extra-div-2 {
 } /* Red-top bar */
 
 #header {
-  background: url("http://scp-wiki.wdfiles.com/local--files/theme:ad-astra/logo.svg") 15px 40px no-repeat;
+  background: url("https://scp-wiki.wdfiles.com/local--files/theme:ad-astra/logo.svg") 15px 40px no-repeat;
   background-size: 6rem;
 }
 

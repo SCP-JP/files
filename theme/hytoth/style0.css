@@ -44,11 +44,11 @@ body {
 /* HEADER IMAGES */
 
 div#container-wrap {
-  background: url(http://scp-jp.wdfiles.com/local--files/theme:hytoth/autumn_bg.png) repeat-x;
+  background: url(https://scp-jp.wdfiles.com/local--files/theme:hytoth/autumn_bg.png) repeat-x;
 }
 
 #header {
-  background-image: url(http://scp-jp.wdfiles.com/local--files/theme:hytoth/second_hytoth_logo5.png);
+  background-image: url(https://scp-jp.wdfiles.com/local--files/theme:hytoth/second_hytoth_logo5.png);
 }
 
 /* HIDE OR CHANGE HEADER TEXT */
@@ -334,7 +334,7 @@ div.comptine { float: center; border: solid 2px #43130d; width: 570px; padding: 
 
 .orderwrapper { position: relative; width: auto; text-align: center; }
 
-.second-hytoth { position: relative; top: 0; bottom: 0; left: 0; right: 0; width: 295px; height: 295px; margin: auto; background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-56-jjpz/logo-sh.png"); background-size: 295px 295px; background-repeat: no-repeat; background-position: center; }
+.second-hytoth { position: relative; top: 0; bottom: 0; left: 0; right: 0; width: 295px; height: 295px; margin: auto; background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-56-jjpz/logo-sh.png"); background-size: 295px 295px; background-repeat: no-repeat; background-position: center; }
 
 .ordertitle { position: absolute; left: 0; right: 0; top: 38px; }
 
@@ -447,29 +447,29 @@ div.comptine { float: center; border: solid 2px #43130d; width: 570px; padding: 
 
 #side-bar .side-block .menu-item img[src *= "default"] + a::before,
 #interwiki .side-block .menu-item img[src *= "default"] + a::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/default.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/default.png") 0 2px no-repeat;
 }
 
 #side-bar .side-block .menu-item img[src *= "forum"] + a::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/forum.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/forum.png") 0 2px no-repeat;
 }
 
 #side-bar .side-block .menu-item img[src *= "help"] + a::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/help.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/help.png") 0 2px no-repeat;
 }
 
 #side-bar .side-block .menu-item img[src *= "home"] + a::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/home.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/home.png") 0 2px no-repeat;
 }
 
 #side-bar .side-block .menu-item img[src *= "main"] + a::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/main.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/main.png") 0 2px no-repeat;
 }
 
 #side-bar .side-block .menu-item img[src *= "series"] + a::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/series.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/series.png") 0 2px no-repeat;
 }
 
 #side-bar .side-block .collapsible-block-folded a.collapsible-block-link::before {
-  background: url("http://scp-jp.wikidot.com/local--files/nav:side/expand.png") 0 2px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/nav:side/expand.png") 0 2px no-repeat;
 }

@@ -37,7 +37,7 @@
 }
 
 .preview.yes:hover, .preview.true:hover{
-  background: url('http://scp-jp.wdfiles.com/local--files/component%3Aauthor-page/logo.png') 80% 50% fixed no-repeat;
+  background: url('https://scp-jp.wdfiles.com/local--files/component%3Aauthor-page/logo.png') 80% 50% fixed no-repeat;
 }
 
 .preview .span {

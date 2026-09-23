@@ -9,13 +9,13 @@
 /* Header */
 
 div#container-wrap {
-  background: url("http://scp-jp-storage.wikidot.com/local--files/file:7200455-52-izxu/background.png") center top repeat-x;
+  background: url("https://scp-jp-storage.wikidot.com/local--files/file:7200455-52-izxu/background.png") center top repeat-x;
   background-size: 150px;
 }
 
 #header {
   height: 230px;
-  background-image: url("http://scp-jp-storage.wikidot.com/local--files/file:7200455-51-ipmx/logo.png");
+  background-image: url("https://scp-jp-storage.wikidot.com/local--files/file:7200455-51-ipmx/logo.png");
   background-position: 50% 15%;
   background-repeat: no-repeat;
   background-size: 200px auto;

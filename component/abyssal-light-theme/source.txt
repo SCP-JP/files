@@ -14,7 +14,7 @@
 [[div class="abyssal"]]
 [[=]]
 
-[[=image http://scp-jp.wdfiles.com/local--files/abyssal-light/logo3.png width="150px"]]
+[[=image https://scp-jp.wdfiles.com/local--files/abyssal-light/logo3.png width="150px"]]
 
 [[/=]]
 
@@ -117,7 +117,7 @@ note
 /* HEADER */
 
 div#container-wrap {
-    background: url(http://scp-wiki-cn.wikidot.com/local--files/abyssal-light/Abyssal_Background.jpg) top left repeat-x;
+    background: url(https://scp-wiki-cn.wikidot.com/local--files/abyssal-light/Abyssal_Background.jpg) top left repeat-x;
 }
 
 #header h1 {
@@ -192,7 +192,7 @@ div#container-wrap {
 /* SIDEBAR */
 
 #side-bar .side-block {
-background: url(http://scp-wiki-cn.wdfiles.com/local--files/abyssal-light/blue.jpg) repeat;
+background: url(https://scp-wiki-cn.wdfiles.com/local--files/abyssal-light/blue.jpg) repeat;
 }
 
 #side-bar a {
@@ -268,7 +268,7 @@ color: #FFD306;
  font-family: Courier New, Courier, monospace; 
  padding: 10px 30px; 
  color:#FFFFFF; 
- background: url(http://scp-wiki-cn.wdfiles.com/local--files/abyssal-light/blue.jpg) repeat;
+ background: url(https://scp-wiki-cn.wdfiles.com/local--files/abyssal-light/blue.jpg) repeat;
  text-shadow: 1px 1px 1px rgba(0,0,0,.5);
  box-shadow: 2px 2px 5px rgba(0,0,0,.2);
     border: 1px solid #bbbbbb;

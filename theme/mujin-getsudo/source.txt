@@ -1,5 +1,5 @@
 [[module CSS]]
-@import url(http://scp-jp.wikidot.com/theme:mujin-getsudo/code/1);
+@import url(https://scp-jp.wikidot.com/theme:mujin-getsudo/code/1);
 [[/module]]
 
 [[iftags +テーマ]]
@@ -108,11 +108,11 @@ ins, del {
 /* HEADER */
  
 div#container-wrap {
-    background: url(http://scp-jp.wdfiles.com/local--files/theme%3Amujin-getsudo/seigaiha.png) top left repeat-x;
+    background: url(https://scp-jp.wdfiles.com/local--files/theme%3Amujin-getsudo/seigaiha.png) top left repeat-x;
 }
  
 div#header {
-    background: url(http://scp-jp.wdfiles.com/local--files/theme%3Amujin-getsudo/mujingetsudo.png) 40px 6px no-repeat;
+    background: url(https://scp-jp.wdfiles.com/local--files/theme%3Amujin-getsudo/mujingetsudo.png) 40px 6px no-repeat;
 }
  
 div#header h1 a span {
@@ -516,7 +516,7 @@ font-family: 'HG正楷書体-PRO', Courier, monospace;
 width: 650px;
 padding: 10px 10px;
 margin: 10px 10px 50px 10px;
-background: url(http://scp-jp.wdfiles.com/local--files/theme%3Amujin-getsudo/bg.png) repeat;
+background: url(https://scp-jp.wdfiles.com/local--files/theme%3Amujin-getsudo/bg.png) repeat;
 font-size: 130%;
 font-weight: 700;
 text-shadow: 0px 0px 0px rgba(0,0,0,.25);

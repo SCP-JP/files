@@ -11,7 +11,7 @@ By PeppesGhost & Stormbreath
 使用するには、次のコードをコピーしてページに貼り付け、必要に応じて画像の名前、説明、幅の長さを調整してください。
 
 > [[include :scp-jp:component:image-block-peppo
-> |name=http://scp-jp.wdfiles.com/local--files/scp-4703/419475400_73559b2b7a_z.jpg
+> |name=https://scp-jp.wdfiles.com/local--files/scp-4703/419475400_73559b2b7a_z.jpg
 > |caption= ここに説明を入れて！
 > |width=300px
 > |]]

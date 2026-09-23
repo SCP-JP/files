@@ -30,7 +30,7 @@
 
 + 例
 
-[[include :scp-jp:component:image-block name= http://scp-jp-storage.wdfiles.com/local--files/file:2963469-79-n6or/wandererslibary_logobg.png|caption=放浪者の図書館のロゴ|width=200px]]
+[[include :scp-jp:component:image-block name= https://scp-jp-storage.wdfiles.com/local--files/file:2963469-79-n6or/wandererslibary_logobg.png|caption=放浪者の図書館のロゴ|width=200px]]
 
 水平の区切り線はハイフン4つ「@@----@@」で挿入でき、何かが置かれていない限り（例：blockquote）ページ全体の幅に広がります。この文書のセクションを区切る線が水平の区切り線です。
 
@@ -204,7 +204,7 @@ div#extra-div-2 {
 }
 
 div#extra-div-1 {
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-53-5ykp/wlheader_bg.png");
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-53-5ykp/wlheader_bg.png");
     background-size: 31.250rem;
     z-index: -1;
     mix-blend-mode: hard-light;
@@ -229,7 +229,7 @@ div#extra-div-3 {
 } /* Green top bar */
 
 #header {
-    background: url('http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-54-6cez/wl_logo.png') 13px 41px no-repeat;
+    background: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-54-6cez/wl_logo.png') 13px 41px no-repeat;
     background-size: 94px 94px;
 }
 #header > h1 > a > span {
@@ -246,7 +246,7 @@ div#extra-div-3 {
     content: '放浪者の図書館';
     color: rgb(var(--bright-accent));
     text-shadow: inherit;
-    background: url('http://scp-jp-storage.wdfiles.com/local--files/file:5722815-55-d5zo/goldfoil.png');
+    background: url('https://scp-jp-storage.wdfiles.com/local--files/file:5722815-55-d5zo/goldfoil.png');
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -260,7 +260,7 @@ div#extra-div-3 {
 
 @media (max-width: 767px) {
     #header {
-        background: url('http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-54-6cez/wl_logo.png') 2px 72px no-repeat;
+        background: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-54-6cez/wl_logo.png') 2px 72px no-repeat;
         background-size: 50px 50px;
     }
     #header h1 a {
@@ -580,7 +580,7 @@ hr {
     border: 0;
     border-top: .063rem solid transparent;
     background-color: rgba(var(--bright-accent));
-    background: url('http://scp-jp-storage.wdfiles.com/local--files/file:5722815-55-d5zo/goldfoil.png');
+    background: url('https://scp-jp-storage.wdfiles.com/local--files/file:5722815-55-d5zo/goldfoil.png');
     background-size: cover;
 }
 
@@ -589,7 +589,7 @@ hr {
     background-color: rgba(var(--bright-accent), 0);
     height: 0;
     box-sizing: border-box;
-    border-image-source: url('http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-46-ec6z/wl_hr.png');
+    border-image-source: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-46-ec6z/wl_hr.png');
     border-image-repeat: round round;
     background: none;
     border-image-slice: 80 500 80 500 fill;
@@ -599,7 +599,7 @@ hr {
 .fancyborder {
     box-sizing: border-box;
     border: 2vw solid rgba(0,0,0,0.5);
-    border-image: url('http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-47-mqmb/wl_border.png') 600 round;
+    border-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-47-mqmb/wl_border.png') 600 round;
     border-image-width: 6;
     padding: 2vw;
 }

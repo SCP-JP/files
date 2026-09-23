@@ -25,7 +25,7 @@ The greatest alley CSS themeは[[*user c_bonefish]]と[[*user Denevola]]そし�
 -----
 + ページ要素
 @@@@
-[[include component:image-block name=http://scp-jp-storage.wikidot.com/local--files/file:7200455-51-ipmx/logo.png|caption=ヘッダーイメージ|width=200px]]
+[[include component:image-block name=https://scp-jp-storage.wikidot.com/local--files/file:7200455-51-ipmx/logo.png|caption=ヘッダーイメージ|width=200px]]
 
 + タイトル1
 ++ タイトル2
@@ -63,13 +63,13 @@ The greatest alley CSS themeは[[*user c_bonefish]]と[[*user Denevola]]そし�
 
 /* Header */
 div#container-wrap {
-    background: url('http://scp-jp-storage.wikidot.com/local--files/file:7200455-52-izxu/background.png') center top repeat-x;
+    background: url('https://scp-jp-storage.wikidot.com/local--files/file:7200455-52-izxu/background.png') center top repeat-x;
     background-size: 150px;
 }
 
 #header {
     height: 230px;
-    background-image: url('http://scp-jp-storage.wikidot.com/local--files/file:7200455-51-ipmx/logo.png');
+    background-image: url('https://scp-jp-storage.wikidot.com/local--files/file:7200455-51-ipmx/logo.png');
     background-position: 50% 15%;
     background-repeat: no-repeat;
     background-size: 200px auto;

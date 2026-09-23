@@ -1,5 +1,5 @@
 [[module css]]
-@import url(http://scp-jp.wikidot.com/theme:fusouki-theme/code/2);
+@import url(https://scp-jp.wikidot.com/theme:fusouki-theme/code/2);
 [[/module]]
 
 [[iftags +テーマ]]
@@ -50,10 +50,10 @@ body {
     font-family: 'Noto Serif JP';
 }
 div#container-wrap {
-    background: url( http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-6-78jn/%E6%89%B6%E6%A1%91%E7%B4%80%E8%A3%85%E5%B9%80%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%E8%83%8C%E6%99%AF.png) top left repeat-x;
+    background: url( https://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-6-78jn/%E6%89%B6%E6%A1%91%E7%B4%80%E8%A3%85%E5%B9%80%E3%83%98%E3%83%83%E3%83%80%E3%83%BC%E8%83%8C%E6%99%AF.png) top left repeat-x;
 }
 div#header {
-    background: url( http://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-5-yh9l/Japanese_crest_Kiku_ni_Ichimonnji_2.svg ) 10px 40px no-repeat;
+    background: url( https://scp-jp-storage.wdfiles.com/local--files/file%3A3282741-5-yh9l/Japanese_crest_Kiku_ni_Ichimonnji_2.svg ) 10px 40px no-repeat;
     background-size: 100px;
     background-position: 10px;
 }

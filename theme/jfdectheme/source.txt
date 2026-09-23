@@ -119,12 +119,12 @@ COLOR=#EEE]]
 [[include :scp-jp-sandbox2:inc:headsubtitle | title=SCP財団日本支部理事会]]
 [[module CSS]]
 div#container-wrap{
-background: url(http://scp-jp.wdfiles.com/local--files/scp-1154-jp/HAIKEI) top left repeat-x;
+background: url(https://scp-jp.wdfiles.com/local--files/scp-1154-jp/HAIKEI) top left repeat-x;
 background-size:100px;
 }
 [[/module]]
 [[include :scp-jp-sandbox2:inc:changelogo |
-IMAGE = http://scp-jp.wdfiles.com/local--files/scp-1154-jp/RIJIKAI]]
+IMAGE = https://scp-jp.wdfiles.com/local--files/scp-1154-jp/RIJIKAI]]
 
 
 

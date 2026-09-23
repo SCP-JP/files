@@ -33,7 +33,7 @@
 +++++ H5
 ++++++ H6
 
-[[include component:image-block name=http://scp-jp.wikidot.com/local--files/scp-4755/containment|caption=これはテストイメージです。|width=200px|alt=黒背景に輝く財団ロゴ]]
+[[include component:image-block name=https://scp-jp.wikidot.com/local--files/scp-4755/containment|caption=これはテストイメージです。|width=200px|alt=黒背景に輝く財団ロゴ]]
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut consequat semper viverra nam. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Justo laoreet sit amet cursus sit. Nunc consequat interdum varius sit. Donec pretium vulputate sapien nec sagittis. Cras semper auctor neque vitae tempus quam. Convallis a cras semper auctor neque.[[footnote]]ごらん、脚注だよ！[[/footnote]]
 
@@ -204,11 +204,11 @@ file:hover {
 }
 
 div#container-wrap {   /*  purple header  */
-  background-image: url('http://scp-jp-storage.wikidot.com/local--files/file:7974444-50-9wqt/night-rush-header.png');
+  background-image: url('https://scp-jp-storage.wikidot.com/local--files/file:7974444-50-9wqt/night-rush-header.png');
 }
 
 #header {   /*  white icon  */
-  background-image: url('http://scp-jp-storage.wikidot.com/local--files/file:7974444-51-jv2x/night-rush-icon.png');
+  background-image: url('https://scp-jp-storage.wikidot.com/local--files/file:7974444-51-jv2x/night-rush-icon.png');
 }
 
 /*  LOGIN MENU  */

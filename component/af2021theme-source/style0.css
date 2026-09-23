@@ -14,11 +14,11 @@
 }
 
 :root {
-  --af2021-header-100: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-0vdh/af2021-header-100.png");
-  --af2021-header-75: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-n5y4/af2021-header-75.png");
-  --af2021-header-50: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-rvj9/af2021-header-50.png");
-  --af2021-header-25: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-wgar/af2021-header-25.png");
-  --af2021-header-0: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-38-irrh/af2021-header-0.png");
+  --af2021-header-100: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-0vdh/af2021-header-100.png");
+  --af2021-header-75: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-n5y4/af2021-header-75.png");
+  --af2021-header-50: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-rvj9/af2021-header-50.png");
+  --af2021-header-25: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-wgar/af2021-header-25.png");
+  --af2021-header-0: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-38-irrh/af2021-header-0.png");
 }
 
 div#container-wrap {
@@ -52,9 +52,9 @@ div#container-wrap::after {
 }
 
 body {
-  background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-35-tnic/af2021-bg-01.png"),
-    url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-36-aujk/af2021-bg-02.png"),
-    url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-36-tg9r/af2021-bg-03.png");
+  background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-35-tnic/af2021-bg-01.png"),
+    url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-36-aujk/af2021-bg-02.png"),
+    url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-36-tg9r/af2021-bg-03.png");
   background-size: 500px 500px, 400px 400px, 300px 300px;
   animation: snow 10s linear infinite;
 }
@@ -120,7 +120,7 @@ body {
   position: relative;
   z-index: 10;
   padding-bottom: 22px;
-  background: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-39-qesi/af2021-logo.png") no-repeat;
+  background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-39-qesi/af2021-logo.png") no-repeat;
   background-size: 200px auto;
 }
 
@@ -202,7 +202,7 @@ body {
   right: 10px;
   width: 50px;
   height: 50px;
-  background: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-22-ilwq/buuta.png");
+  background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-22-ilwq/buuta.png");
   background-size: contain;
   background-repeat: no-repeat;
 }

@@ -67,11 +67,11 @@ h1,
 \*------------------ */
 
 div#container-wrap {
-  background: url(http://scp-wiki.wdfiles.com/local--files/theme%3Aar/ar_bg.png) top left repeat-x;
+  background: url(https://scp-wiki.wdfiles.com/local--files/theme%3Aar/ar_bg.png) top left repeat-x;
 }
 
 #header {
-  background-image: url(http://scp-wiki.wdfiles.com/local--files/theme%3Aar/ar_circle.png);
+  background-image: url(https://scp-wiki.wdfiles.com/local--files/theme%3Aar/ar_circle.png);
 }
 
 #header h1 a {
@@ -477,7 +477,7 @@ table.wiki-content-table th {
 
 #header::before {
   content: "";
-  background-image: url(http://scp-wiki.wdfiles.com/local--files/theme%3Aar/ar_logo_blue.png);
+  background-image: url(https://scp-wiki.wdfiles.com/local--files/theme%3Aar/ar_logo_blue.png);
   position: absolute;
   opacity: 0;
   transform-origin: 50% 50%;

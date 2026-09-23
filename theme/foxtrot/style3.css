@@ -2,8 +2,8 @@
   --accent: var(--acc-overwatch);
   --header-title: "監督司令部";
   --header-subtitle: "犠牲が力を与える";
-  --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-4-z8c6/overwatchheader.svg);
-  --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-4-z8c6/overwatchheader.svg);
+  --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-4-z8c6/overwatchheader.svg);
+  --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-4-z8c6/overwatchheader.svg);
   --logo-opacity: 100% !important;
   --darkmode-gradient-top: rgb(var(--accent)) !important;
 }

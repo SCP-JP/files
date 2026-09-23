@@ -58,7 +58,7 @@ h7 {
 }
 
 ul {
-  /* list-style-image: url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
+  /* list-style-image: url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
   list-style: square;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 div#container-wrap {
-  background: url(http://scp-yerko-3.wdfiles.com/local--files/component:i57theme/body_bg_1.jpg) top left repeat-x;
+  background: url(https://scp-yerko-3.wdfiles.com/local--files/component:i57theme/body_bg_1.jpg) top left repeat-x;
 }
 
 /* HEADER */
@@ -135,7 +135,7 @@ div#container-wrap {
   position: relative;
   z-index: 10;
   padding-bottom: 30px; /* FOR MENU */
-  background: url(http://lafundacionscp.wdfiles.com/local--files/component%3Ai57theme/SCP-LOGO-RENDER-HD.png) 10px 35px no-repeat;
+  background: url(https://lafundacionscp.wdfiles.com/local--files/component%3Ai57theme/SCP-LOGO-RENDER-HD.png) 10px 35px no-repeat;
 }
 
 #search-top-box {
@@ -532,19 +532,19 @@ Hopefully temporary kludge THANKS GREENWOLF
 .yui-navset .yui-nav a,
 .yui-navset .yui-navset-top .yui-nav a {
   background-color: #d8d8d8;
-  background-image: url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png);
+  background-image: url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png);
 }
 
 .yui-navset .yui-nav .selected a,
 .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
 .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
-  background: #770000 url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1400px; /* selected tab background */
+  background: #770000 url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1400px; /* selected tab background */
   color: #ffffff;
 }
 
 .yui-navset .yui-nav a:hover,
 .yui-navset .yui-nav a:focus {
-  background: #dd8888 url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1300px;
+  background: #dd8888 url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1300px;
   text-decoration: none;
 }
 
@@ -1027,7 +1027,7 @@ rt {
     font-family: monospace;
     font-style: normal;
     font-weight: normal;
-    background-image: url(http://www.kaktuskontainer.wikidot.com/local--files/component%3Atheme/dot.png), none;
+    background-image: url(https://www.kaktuskontainer.wikidot.com/local--files/component%3Atheme/dot.png), none;
     background-repeat: repeat-x;
     padding: 0.5em 0 0;
     background-color: transparent;
@@ -1044,7 +1044,7 @@ rt {
     font-family: monospace;
     font-style: normal;
     font-weight: normal;
-    background-image: url(http://www.kaktuskontainer.wikidot.com/local--files/component%3Atheme/dot.png), none;
+    background-image: url(https://www.kaktuskontainer.wikidot.com/local--files/component%3Atheme/dot.png), none;
     background-repeat: repeat-x;
     padding: 0.5em 0 0;
     background-color: transparent;

@@ -2,8 +2,8 @@
   --accent: var(--acc-wyoming);
   --header-title: "1 5 0";
   --header-subtitle: "烏有が激発の温床となる";
-  --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-78-0n3j/ATOM.svg);
-  --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-78-0n3j/ATOM.svg);
+  --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-78-0n3j/ATOM.svg);
+  --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-78-0n3j/ATOM.svg);
 }
 
 #header h1 a::before {

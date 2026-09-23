@@ -74,7 +74,7 @@
 [[/div]]
 
 [[code type="css"]]
-@import url("http://scp-jp-storage.wikidot.com/local--files/file:3396310-45-05ku/national-park.css");
+@import url("https://scp-jp-storage.wikidot.com/local--files/file:3396310-45-05ku/national-park.css");
 
 /*
     Wilson's Wildlife Theme
@@ -147,7 +147,7 @@ div#extra-div-2 {
 } /* Dark brown gradient for top-bar */
 
 #header {
-    background: url("http://scp-jp-storage.wikidot.com/local--files/file:3396310-45-9rdj/WWS_Logo_2.2_abrv.png") 15px 40px no-repeat;
+    background: url("https://scp-jp-storage.wikidot.com/local--files/file:3396310-45-9rdj/WWS_Logo_2.2_abrv.png") 15px 40px no-repeat;
     background-size: 6rem;
 }
  

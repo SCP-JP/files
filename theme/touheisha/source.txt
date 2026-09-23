@@ -231,7 +231,7 @@ SCPライブラリ[[/div]]
 @@@@
 [[div class="scpnet-interwiki-wrap"]]
 [[div class="scpnet-interwiki-wrapper"]]
-[[include :rtas:interwiki |lang=jp|cssurl=http://scp-jp.wdfiles.com/local--code/theme%3Atouheisha/1]]
+[[include :rtas:interwiki |lang=jp|cssurl=https://scp-jp.wdfiles.com/local--code/theme%3Atouheisha/1]]
 [[/div]][[/div]]
 @@@@
 [[div class="side-block"]]
@@ -250,7 +250,7 @@ SCPライブラリ[[/div]]
 [[/div]]
 
 [[module css]]
-@import url(http://scp-jp.wdfiles.com/local--code/theme%3Atouheisha/1);
+@import url(https://scp-jp.wdfiles.com/local--code/theme%3Atouheisha/1);
 [[/module]]
 [[iftags +テーマ]]
 [[div class="ps-t"]]
@@ -319,7 +319,7 @@ Content color [[span class="css-variable"]]@@content-bg-color@@[[/span]][[span c
 
 ++++++ Sixth Title
 [[/collapsible]]
-[[include component:image-block name=http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-12-xobl/%E6%9D%B1%E5%BC%8A%E8%88%8E_2%402x.png|caption=これは画像ブロックの例。|width=200px]]
+[[include component:image-block name=https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-12-xobl/%E6%9D%B1%E5%BC%8A%E8%88%8E_2%402x.png|caption=これは画像ブロックの例。|width=200px]]
 @@ @@
 
 [[tabview]]
@@ -582,7 +582,7 @@ body {
   background-color: rgb(var(--content-bg-color));
 }
 div#container-wrap {
-  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-11-ljto/header.png) no-repeat;
+  background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-11-ljto/header.png) no-repeat;
   background-position-x: center;
   background-position-y: 36px;
   background-size: auto 180px;

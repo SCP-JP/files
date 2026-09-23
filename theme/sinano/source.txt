@@ -1,5 +1,5 @@
 [[module css]]
-@import url("http://scp-jp.wdfiles.com/local--code/theme:sinano/1");
+@import url("https://scp-jp.wdfiles.com/local--code/theme:sinano/1");
 [[/module]]
 
 [[iftags +テーマ]]
@@ -101,7 +101,7 @@
 
 [[include component:image-block
 |width=200px
-|name=http://scp-jp-storage.wikidot.com/local--files/file:2428007-30-qcex/39F9494F-ECFE-4067-A580-AFCB19BDEA15.png  |caption=縁よ結べ、華よさけ[[footnote]] [*http://scp-jp.wikidot.com/scp-2707-jp-art 餞][[/footnote]]]]
+|name=https://scp-jp-storage.wikidot.com/local--files/file:2428007-30-qcex/39F9494F-ECFE-4067-A580-AFCB19BDEA15.png  |caption=縁よ結べ、華よさけ[[footnote]] [*http://scp-jp.wikidot.com/scp-2707-jp-art 餞][[/footnote]]]]
 
 [[toc]]
 
@@ -246,7 +246,7 @@ font-weight: bold;
 /* HEADER */
 
 #header {
-    background: url(http://scp-jp-storage.wikidot.com/local--files/file:2428007-37-0n17/55237EBA-DF7F-46D4-8DBF-CB487FBF50DF.png) 40px 6px no-repeat;
+    background: url(https://scp-jp-storage.wikidot.com/local--files/file:2428007-37-0n17/55237EBA-DF7F-46D4-8DBF-CB487FBF50DF.png) 40px 6px no-repeat;
     background-position: center;
     background-size: auto 150%;
 }
@@ -256,7 +256,7 @@ div#extra-div-1 {
   width: 100%;
   top: 0;
   position: absolute;
-  background: url(http://scp-jp-storage.wikidot.com/local--files/file:2428007-36-faem/516637F1-C5EB-4C26-914D-DC7E4E4F056D.png);
+  background: url(https://scp-jp-storage.wikidot.com/local--files/file:2428007-36-faem/516637F1-C5EB-4C26-914D-DC7E4E4F056D.png);
   background-size: cover;
   background-position: 50% 50%;
 }

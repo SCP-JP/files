@@ -1,5 +1,5 @@
 [[module CSS]]
-@import url("http://scp-jp.wikidot.com/theme:prom-labs-deepsea/code/1");
+@import url("https://scp-jp.wikidot.com/theme:prom-labs-deepsea/code/1");
 [[/module]]
 
 [[iftags +テーマ]]
@@ -84,7 +84,7 @@ div#extra-div-2 {
 }
 
 #header {
-    background-image: url("http://scp-jp-storage.wikidot.com/local--files/file:5875210-2-nxpc/%E3%83%97%E3%83%AD%E3%83%A1%E3%83%86%E3%82%A6%E3%82%B9%E3%83%AD%E3%82%B4%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88.png");
+    background-image: url("https://scp-jp-storage.wikidot.com/local--files/file:5875210-2-nxpc/%E3%83%97%E3%83%AD%E3%83%A1%E3%83%86%E3%82%A6%E3%82%B9%E3%83%AD%E3%82%B4%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88.png");
 }
 
 #header h1 a {
