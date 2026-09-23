@@ -58,7 +58,7 @@
 [[table style="width: 50%;background-color: #ff708f;box-shadow: 0 2px 6px rgb(0 0 0 / 50%), inset 0 1px rgb(255 255 255 / 30%), inset 0 10px rgb(255 255 255 / 20%), inset 0 10px 20px rgb(255 255 255 / 25%), inset 0 -15px 30px rgb(0 0 0 / 10%);border: solid 1px #888880;border-radius: 10px 0px 0px 10px;"]]
 [[row]]
 [[hcell style="padding: 10px 5px 10px 10px;"]]
-[[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3669025-1-z34t/K style="height: 80px;"]]
+[[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3669025-1-z34t/K style="height: 80px;"]]
 [[/hcell]]
 [[hcell style="padding: 10px 5px 10px 5px;"]]
 令和四年十二月・令和五年一月は
@@ -73,7 +73,7 @@
 [[table style="width: 50%;background-color: #ECF7F9;box-shadow: 0 2px 6px rgb(0 0 0 / 50%), inset 0 1px rgb(255 255 255 / 30%), inset 0 10px rgb(255 255 255 / 20%), inset 0 10px 20px rgb(255 255 255 / 25%), inset 0 -15px 30px rgb(0 0 0 / 10%);border: solid 1px #888880;border-radius: 0px 10px 10px 0px;"]]
 [[row]]
 [[hcell style="padding: 10px 5px 10px 10px;"]]
-[[image http://scp-jp-storage.wikidot.com/local--files/file:4053112-95-pef6/snowflake-153108.svg style="height: 80px;"]]
+[[image https://scp-jp-storage.wikidot.com/local--files/file:4053112-95-pef6/snowflake-153108.svg style="height: 80px;"]]
 [[/hcell]]
 [[hcell style="padding: 10px 5px 10px 5px;"]]
 令和四年十一・十二月は

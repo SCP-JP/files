@@ -1,5 +1,5 @@
 [[module css]]
-@import url("http://scp-jp.wikidot.com/theme:zattou/code/1");
+@import url("https://scp-jp.wikidot.com/theme:zattou/code/1");
 [[/module]]
 
 [[iftags +テーマ]]
@@ -55,7 +55,7 @@ div#extra-div-1 {
   width: 100%;
   top: 0;
   position: absolute;
-  background: url("http://scp-jp-storage.wikidot.com/local--files/file:6059604-21-32go/zattou.jpg");
+  background: url("https://scp-jp-storage.wikidot.com/local--files/file:6059604-21-32go/zattou.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -745,7 +745,7 @@ div#extra-div-1 {
 
 [[include component:image-block
 |width=200px
-|name=http://scp-jp-storage.wdfiles.com/local--files/file%3A6059604-16-mtr0/poster
+|name=https://scp-jp-storage.wdfiles.com/local--files/file%3A6059604-16-mtr0/poster
 |caption=BIG CAT is Watching You![[footnote]]にゃあ[[/footnote]]]]
 
 [[toc]]

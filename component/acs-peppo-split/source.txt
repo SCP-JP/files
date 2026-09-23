@@ -77,7 +77,7 @@ ACSヘッダーのオブジェクトクラス欄を分割し、特殊オブジ�
 
 > [[include :scp-jp:component:acs-peppo-split
 > |object= keter
-> |object-image= http://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/keter-icon.svg
+> |object-image= https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/keter-icon.svg
 > |object-color= keter
 > |esoteric-color= esoteric
 > ]]

@@ -203,7 +203,7 @@
 [[/div]]
 
 [[div class="scpnet-interwiki-wrapper"]]
-[[include :rtas:interwiki |lang=jp|cssurl=http://scp-jp.wdfiles.com/local--code/theme%3Anewtouhei/1]]
+[[include :rtas:interwiki |lang=jp|cssurl=https://scp-jp.wdfiles.com/local--code/theme%3Anewtouhei/1]]
 [[/div]]
 [[div class="side-block"]]
 [[=]]
@@ -219,7 +219,7 @@
 [[a href="#u-side"]]≡[[/a]]
 [[/div]]
 [[module css]]
-@import url(http://scp-jp.wdfiles.com/local--code/theme%3Anewtouhei/1);
+@import url(https://scp-jp.wdfiles.com/local--code/theme%3Anewtouhei/1);
 [[/module]]
 [[iftags +テーマ]]
 [[=]]
@@ -381,7 +381,7 @@ touhei-block6
 
 [# リンク] rgb(242, 119, 25)
 [[a class="newpage" href="javascript:void(0)"]]存在しないリンク[[/a]] rgb(229, 171, 42)
-[[include component:image-block name=http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-24-lhoc/touhei-07%402x.png|caption=これは画像ブロックの例。|width=200px]]
+[[include component:image-block name=https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-24-lhoc/touhei-07%402x.png|caption=これは画像ブロックの例。|width=200px]]
 [[module css]]
 .colors_container {
     width: 100%;

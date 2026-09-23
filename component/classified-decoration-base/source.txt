@@ -6,7 +6,7 @@
 [[/cell]]
 
 [[cell rowspan="2" class="class1image"]]
-[[image http://scp-jp.wdfiles.com/local--files/component:classified-decoration-base/classified-lv{$lv}.png link=#]]
+[[image https://scp-jp.wdfiles.com/local--files/component:classified-decoration-base/classified-lv{$lv}.png link=#]]
 [[/cell]]
 
 [[cell class="item1 [[#if {$lang} | {$lang} |  ]]"]]
@@ -43,7 +43,7 @@
 [[/table]]
 
 [[module CSS]]
-@import url('http://scp-jp.wdfiles.com/local--files/component:theme/font-bauhaus.css');
+@import url('https://scp-jp.wdfiles.com/local--files/component:theme/font-bauhaus.css');
 @import url(https://indestructibletype-fonthosting.github.io/renner.css);
 
 .class1 .base:nth-of-type(1) {

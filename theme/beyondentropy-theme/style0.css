@@ -50,7 +50,7 @@ h7 {
 }
 
 ul {
-  /* list-style-image: url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
+  /* list-style-image: url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
   list-style: square;
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 div#container-wrap {
-  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-49-g6nz/body_bg_0.png) top left repeat-x;
+  background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-49-g6nz/body_bg_0.png) top left repeat-x;
 }
 
 /* HEADER */
@@ -117,7 +117,7 @@ div#container-wrap {
   position: relative;
   z-index: 10;
   padding-bottom: 22px; /* FOR MENU */
-  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-49-zgm6/BE-logo-small0.png) 20px 50px no-repeat;
+  background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-49-zgm6/BE-logo-small0.png) 20px 50px no-repeat;
 }
 
 #search-top-box {
@@ -930,7 +930,7 @@ rt {
     font-family: monospace;
     font-style: normal;
     font-weight: normal;
-    background-image: url(http://www.scp-wiki.net/local--files/component%3Atheme/dot.png), none;
+    background-image: url(https://www.scp-wiki.net/local--files/component%3Atheme/dot.png), none;
     background-repeat: repeat-x;
     padding: 0.5em 0 0;
     background-color: transparent;
@@ -947,7 +947,7 @@ rt {
     font-family: monospace;
     font-style: normal;
     font-weight: normal;
-    background-image: url(http://www.scp-wiki.net/local--files/component%3Atheme/dot.png), none;
+    background-image: url(https://www.scp-wiki.net/local--files/component%3Atheme/dot.png), none;
     background-repeat: repeat-x;
     padding: 0.5em 0 0;
     background-color: transparent;

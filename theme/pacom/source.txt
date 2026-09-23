@@ -48,7 +48,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto+Mono|Roboto+Slab');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
-@import url('http://scpko.wdfiles.com/local--files/unfont/UnJamoBatang.css');
+@import url('https://scpko.wdfiles.com/local--files/unfont/UnJamoBatang.css');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @font-face
 {
@@ -69,7 +69,7 @@ src: url('https://cdn.leafscape.be/aozoramincho/AozoraMinchoMedium_web.woff2')
 
 body {
   font-family: 'Roboto Slab','Nanum Myeongjo',serif;
-  background: var(--background) url(http://scp-jp.wdfiles.com/local--files/theme:pacom/body_bg.jpg) center -100em repeat;
+  background: var(--background) url(https://scp-jp.wdfiles.com/local--files/theme:pacom/body_bg.jpg) center -100em repeat;
   -webkit-background-size: 1920px 2500px;
   background-size: 1920px 2500px;
   text-align: justify;
@@ -164,11 +164,11 @@ h1, #page-title {
 \*------------------*/
 
 div#container-wrap {
-  background: url(http://scp-jp.wdfiles.com/local--files/theme:pacom/report_bg.png) 50% 0% no-repeat;
+  background: url(https://scp-jp.wdfiles.com/local--files/theme:pacom/report_bg.png) 50% 0% no-repeat;
 }
 
 #header {
-  background-image: url(http://scp-jp.wdfiles.com/local--files/theme:pacom/header.png);
+  background-image: url(https://scp-jp.wdfiles.com/local--files/theme:pacom/header.png);
   background-position: -5px 0px;
   -webkit-background-size: 233px;
   background-size: 233px;
@@ -514,7 +514,7 @@ div.page-rate-widget-box .rate-points,
     border: solid 2px var(--main);
     border-radius: 0;
     box-shadow: none;
-    background-image: url('http://scp-jp.wdfiles.com/local--files/theme:pacom/body_bg.jpg');
+    background-image: url('https://scp-jp.wdfiles.com/local--files/theme:pacom/body_bg.jpg');
 }
 
 #u-credit-view .modalbox .modalbox-title {
@@ -581,7 +581,7 @@ div.page-rate-widget-box .rate-points,
 }
 
 .yui-navset .yui-nav a {
-  background: rgba(0, 0, 0, 0) url(http://scp-jp.wdfiles.com/local--files/theme:pacom/report_bg.png) repeat-x;
+  background: rgba(0, 0, 0, 0) url(https://scp-jp.wdfiles.com/local--files/theme:pacom/report_bg.png) repeat-x;
   border: 0px solid rgba(0, 0, 0, 0);
   border-top: 0px solid var(--main);
   font-family: 'Special Elite', 'Aozora', 'UnJamoBatang',serif;
@@ -706,7 +706,7 @@ table.wiki-content-table th {
 
 @media (max-width: 479px) {
   div#container-wrap {
-    background: url(http://scp-jp.wdfiles.com/local--files/theme:pacom/mobile_bg_s.png) left 0% no-repeat !important;
+    background: url(https://scp-jp.wdfiles.com/local--files/theme:pacom/mobile_bg_s.png) left 0% no-repeat !important;
   }
   #header {
     -webkit-background-size: 70px;
@@ -783,7 +783,7 @@ table.wiki-content-table th {
     margin-left: 215px;
   }
   #side-bar {
-    background-image: url(http://scp-jp.wdfiles.com/local--files/theme:pacom/header.png);
+    background-image: url(https://scp-jp.wdfiles.com/local--files/theme:pacom/header.png);
     background-position: right top;
     background-repeat: no-repeat;
     -webkit-background-size: 233px;
@@ -811,10 +811,10 @@ table.wiki-content-table th {
 
 @media (max-width: 767px) {
   div#container-wrap {
-    background: url(http://scp-jp.wdfiles.com/local--files/theme:pacom/mobile_bg.png) left 0% no-repeat;
+    background: url(https://scp-jp.wdfiles.com/local--files/theme:pacom/mobile_bg.png) left 0% no-repeat;
   }
   #header {
-    background-image: url(http://scp-jp.wdfiles.com/local--files/theme:pacom/pacom.png);
+    background-image: url(https://scp-jp.wdfiles.com/local--files/theme:pacom/pacom.png);
   }
   #side-bar {
     top: 0em;

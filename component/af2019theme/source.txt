@@ -1,5 +1,5 @@
 [[module css]]
-@import url('http://scp-jp.wdfiles.com/local--code/component%3Aaf2019theme');
+@import url('https://scp-jp.wdfiles.com/local--code/component%3Aaf2019theme');
 [[/module]]
 [[module css]]
 @import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
@@ -169,7 +169,7 @@ SCPに関する全世界共通のライセンスについて
    注目の布団
   [[/div]]
   [[div class="panel-body"]]
-[[=image http://scp-jp-sandbox3.wdfiles.com/local--files/draft:7happy7-27-0a13/cat-animal-sleep-cats-pet-animals-cute-nap.jpg style="max-width:200px;"]]
+[[=image https://scp-jp-sandbox3.wdfiles.com/local--files/draft:7happy7-27-0a13/cat-animal-sleep-cats-pet-animals-cute-nap.jpg style="max-width:200px;"]]
 [!--
 https://visualhunt.com/photo/95416/
 https://visualhunt.com/photos/4/cat-animal-sleep-cats-pet-animals-cute-nap.jpg?s=l
@@ -475,7 +475,7 @@ div#header h2 span:after {
     ヘッダー by NanimonoDemonai
  */
 div#container-wrap {
-    background: url(http://scp-jp-sandbox3.wikidot.com/local--files/draft:7happy7-27-0a13/body_bg_4_1.png) top left repeat-x, url("http://scp-jp-sandbox3.wikidot.com/local--files/draft:7happy7-27-0a13/often.png");
+    background: url(https://scp-jp-sandbox3.wikidot.com/local--files/draft:7happy7-27-0a13/body_bg_4_1.png) top left repeat-x, url("https://scp-jp-sandbox3.wikidot.com/local--files/draft:7happy7-27-0a13/often.png");
 }
  
 /* タイトルの真ん中寄せなど */

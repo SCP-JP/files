@@ -1,5 +1,5 @@
 [[module CSS]]
-@import url(http://scp-jp.wdfiles.com/local--code/theme%3Apet/1);
+@import url(https://scp-jp.wdfiles.com/local--code/theme%3Apet/1);
 [[/module]]
 
 [[iftags +テーマ]]
@@ -50,12 +50,12 @@ a:visited {
 
 /* GLOBAL WIDTH */
 div#container-wrap {
-    background-image: url(http://scp-wiki.wdfiles.com/local--files/component%3Atheme/body_bg_af.png);
+    background-image: url(https://scp-wiki.wdfiles.com/local--files/component%3Atheme/body_bg_af.png);
 }
  
 /* HEADER */
 #header {
-    background-image: url(http://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo-af.png);
+    background-image: url(https://scp-wiki.wdfiles.com/local--files/component%3Atheme/logo-af.png);
 }
 #search-top-box-input {
     border: solid 1px #699;

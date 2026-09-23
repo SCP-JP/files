@@ -60,7 +60,7 @@ table strong {
 [[div style="display: none;"]]
 
 [[include component:image-block
-    name=http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-108-ezpq/basalt-thumbnail.png |
+    name=https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-108-ezpq/basalt-thumbnail.png |
     caption= Basalt |
     align=center |
     width=100%
@@ -75,8 +75,8 @@ table strong {
 **作成年:** 2022
 [[include :scp-jp:credit:end-preview]]
 
-[[div class="basaltIcon" style="background-image: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-23-vupz/BASALT_ICON_BG_3.png); background-size: contain; background-position: center; filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.8)); border-radius: 50%; margin: auto; padding: 1rem 1rem 1rem 1rem; width: 7.5rem; height: 7.5rem;"]]
-[[div style="background-image: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-24-gfhv/BASALT_ICON.png); background-size: contain; background-position: center; background-repeat: no-repeat; margin: auto; border-radius: 50%; width: 7.5rem; height: 7.5rem;"]]
+[[div class="basaltIcon" style="background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-23-vupz/BASALT_ICON_BG_3.png); background-size: contain; background-position: center; filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.8)); border-radius: 50%; margin: auto; padding: 1rem 1rem 1rem 1rem; width: 7.5rem; height: 7.5rem;"]]
+[[div style="background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-24-gfhv/BASALT_ICON.png); background-size: contain; background-position: center; background-repeat: no-repeat; margin: auto; border-radius: 50%; width: 7.5rem; height: 7.5rem;"]]
 [[/div]]
 [[/div]]
 
@@ -290,7 +290,7 @@ Black Highlighterと同様に、BASALTはサイトのレイアウトを大幅に
 
 [[div style="width: 70%; margin: auto;"]]
 [[include :scp-jp:component:image-block
-|name= http://scp-jp-storage.wdfiles.com/local--files/file:5722815-42-3m88/BASALT_DARKMODE_JP.png
+|name= https://scp-jp-storage.wdfiles.com/local--files/file:5722815-42-3m88/BASALT_DARKMODE_JP.png
 |caption= ONYX
 |width= 100%
 |align= center
@@ -309,7 +309,7 @@ Black Highlighterと同様に、BASALTはサイトのレイアウトを大幅に
 
 [[div style="width: 70%; margin: auto;"]]
 [[include :scp-jp:component:image-block
-|name= http://scp-jp-storage.wdfiles.com/local--files/file:5722815-43-of8f/BASALT_APOLLYON_JP.png
+|name= https://scp-jp-storage.wdfiles.com/local--files/file:5722815-43-of8f/BASALT_APOLLYON_JP.png
 |caption= GARNET
 |width= 100%
 |align= center
@@ -378,7 +378,7 @@ BASALTはこれらのテーマの要素を --盗用-- 借用しています。
 @@ @@
 
 [[include :scp-jp:component:image-block
-|name= http://scp-jp-storage.wdfiles.com/local--files/file:5722815-21-21vy/basalt_logotype_black.png
+|name= https://scp-jp-storage.wdfiles.com/local--files/file:5722815-21-21vy/basalt_logotype_black.png
 |caption= 画像ブロック
 |width= 200px
 ]]
@@ -752,7 +752,7 @@ BASALTはこれらのテーマの要素を --盗用-- 借用しています。
     --barColour: rgb(20, 20, 20);
     --fnColor: rgb(15, 15, 15);
     --fnLinger: 1s;
-    --logo: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-21-21vy/basalt_logotype_black.png);
+    --logo: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-21-21vy/basalt_logotype_black.png);
     --sidelogo: var(--logo);
     --sidesubtitle: var(--subtitle);
     --utilcolor: #FFF;
@@ -1128,7 +1128,7 @@ iframe.scpnet-interwiki-frame {
 }
 
 #side-bar .collapsible-block-folded {
-    background-image: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-27-wn18/expand.png);
+    background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-27-wn18/expand.png);
 }
 
 #side-bar .collapsible-block-unfolded-link {
@@ -1425,7 +1425,7 @@ hr {
 }
 
 .raisa_memo {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-28-qlyx/RAISA_LIGHTLOGO.png) #fff3ad;
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-28-qlyx/RAISA_LIGHTLOGO.png) #fff3ad;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -1460,7 +1460,7 @@ hr {
 }
 
 .classification_memo {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-30-ubdk/CLASSIFICATION_LIGHTLOGO.png) #edf5f3;
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-30-ubdk/CLASSIFICATION_LIGHTLOGO.png) #edf5f3;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -1495,7 +1495,7 @@ hr {
 }
 
 .ettra_memo {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-32-wqge/ETTRA_LIGHTLOGO.png) #f5d7d7;
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-32-wqge/ETTRA_LIGHTLOGO.png) #f5d7d7;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -1530,7 +1530,7 @@ hr {
 }
 
 .ethics_memo {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-34-2jq6/ETHICS_LIGHTLOGO.png) #ffdbc4;
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-34-2jq6/ETHICS_LIGHTLOGO.png) #ffdbc4;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -1565,7 +1565,7 @@ hr {
 }
 
 .temporal_memo {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-36-ohm1/DELTA_T_LIGHTLOGO.png) #ffffff;
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-36-ohm1/DELTA_T_LIGHTLOGO.png) #ffffff;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -1601,7 +1601,7 @@ hr {
 }
 
 .overwatch_memo {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-38-9n6y/O5_LIGHTLOGO.png) #e3e3e3;
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-38-9n6y/O5_LIGHTLOGO.png) #e3e3e3;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -1636,7 +1636,7 @@ hr {
 }
 
 .miscomm_memo {
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-40-c6bj/MISCOMM_LIGHTLOGO.png) #eeedfa;
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-40-c6bj/MISCOMM_LIGHTLOGO.png) #eeedfa;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -2980,7 +2980,7 @@ margin-top: 1rem;
     --barColour: #EDEDED !important;
     --linkColour: rgb(20, 20, 20) !important;
     --fnColor: #EDEDED;
-    --logo: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-22-kg1l/basalt_logotype_darkmode.png);
+    --logo: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-22-kg1l/basalt_logotype_darkmode.png);
     --black-monochrome: 207, 207, 207;
     --utilcolor: rgb(20, 20, 20);
     --antiutilcolor: #FFF;
@@ -3618,7 +3618,7 @@ hr {
 .raisa_memo {
     border: solid 4px #fff3ad;
     color: #fff3ad;
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-29-nbch/RAISA_DARKLOGO.png) rgb(20, 20, 20);
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-29-nbch/RAISA_DARKLOGO.png) rgb(20, 20, 20);
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -3627,7 +3627,7 @@ hr {
 .classification_memo {
     border: solid 4px #edf5f3;
     color: #edf5f3;
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-31-9ty4/CLASSIFICATION_DARKLOGO.png) rgb(20, 20, 20);
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-31-9ty4/CLASSIFICATION_DARKLOGO.png) rgb(20, 20, 20);
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -3636,7 +3636,7 @@ hr {
 .ettra_memo {
     border: solid 4px #f5d7d7;
     color: #f5d7d7;
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-33-pn6y/ETTRA_DARKLOGO.png) rgb(20, 20, 20);
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-33-pn6y/ETTRA_DARKLOGO.png) rgb(20, 20, 20);
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -3645,7 +3645,7 @@ hr {
 .ethics_memo {
     border: solid 4px #ffdbc4;
     color: #ffdbc4;
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-35-ok8s/ETHICS_DARKLOGO.png) rgb(20, 20, 20);
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-35-ok8s/ETHICS_DARKLOGO.png) rgb(20, 20, 20);
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -3654,7 +3654,7 @@ hr {
 .temporal_memo {
     border: solid 4px #ffffff;
     color: #ffffff;
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-37-ekpw/DELTA_T_DARKLOGO.png) rgb(20, 20, 20);
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-37-ekpw/DELTA_T_DARKLOGO.png) rgb(20, 20, 20);
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -3663,7 +3663,7 @@ hr {
 .overwatch_memo {
     border: solid 4px #e3e3e3;
     color: #e3e3e3;
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-39-ir7w/O5_DARKLOGO.png) rgb(20, 20, 20);
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-39-ir7w/O5_DARKLOGO.png) rgb(20, 20, 20);
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -3672,7 +3672,7 @@ hr {
 .miscomm_memo {
     border: solid 4px #eeedfa;
     color: #eeedfa;
-    background: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-41-38gu/MISCOMM_DARKLOGO.png) rgb(20, 20, 20);
+    background: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-41-38gu/MISCOMM_DARKLOGO.png) rgb(20, 20, 20);
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
@@ -3932,7 +3932,7 @@ color: rgb(var(--five-color));
 >[[iftags]]
 [[module CSS]]
 :root {
-    --sidelogo: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-22-kg1l/basalt_logotype_darkmode.png);
+    --sidelogo: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-22-kg1l/basalt_logotype_darkmode.png);
 }
 
 #side-bar {

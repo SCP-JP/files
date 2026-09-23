@@ -7,9 +7,9 @@
 For localization, please edit the link below.
 http://scp-jp.wikidot.com/fragment:black-highlighter-theme-source
 */
-@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/1");
-@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/2");
-@import url("http://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/3");
+@import url("https://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/1");
+@import url("https://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/2");
+@import url("https://scp-jp.wdfiles.com/local--code/fragment%3Ablack-highlighter-theme-source/3");
 [[/module]]
 
 [[div style="border: solid 2px #ededed; padding: 0.5rem; margin: 4px;"]]

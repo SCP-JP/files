@@ -382,7 +382,7 @@ h7 {
 }
 
 ul {
-  /* list-style-image: url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
+  /* list-style-image: url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
   list-style: square;
 }
 
@@ -458,7 +458,7 @@ body {
 }
 
 #side-bar .collapsible-block-folded {
-  background: url(http://www.scp-wiki.net/local--files/nav:side/expand.png) 0 2px no-repeat;
+  background: url(https://www.scp-wiki.net/local--files/nav:side/expand.png) 0 2px no-repeat;
 }
 
 #side-bar .collapsible-block-link {

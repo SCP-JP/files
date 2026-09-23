@@ -1446,7 +1446,7 @@
 [[span]]**収容クラス:**[[/span]] [[span]]{$containment-class}[[/span]]
 [[/div]]
 [[div_ class="acs-icon"]]
-[[image http://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/{$containment-class}-icon.svg]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/{$containment-class}-icon.svg]]
 [[/div]]
 [[/div]]
 [[div_ class="acs-secondary"]]
@@ -1463,7 +1463,7 @@
 **撹乱クラス:** [[span class="disruption-class-number"]]#[[/span]]/{$disruption-class}
 [[/div]]
 [[div_ class="acs-icon"]]
-[[image http://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/{$disruption-class}-icon.svg]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/{$disruption-class}-icon.svg]]
 [[/div]]
 [[/div]]
 [[div_ class="acs-risk"]]
@@ -1471,7 +1471,7 @@
 **リスククラス:** [[span class="risk-class-number"]]#[[/span]]/{$risk-class}
 [[/div]]
 [[div_ class="acs-icon"]]
-[[image http://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/{$risk-class}-icon.svg]]
+[[image https://scp-jp.wdfiles.com/local--files/component%3Aanomaly-class-bar/{$risk-class}-icon.svg]]
 [[/div]]
 [[/div]]
 [[/div]]

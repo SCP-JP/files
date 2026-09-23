@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-@import url("http://ja.scp-wiki.net/local--files/component:af2017theme/HVD_Bodedo.css");
-@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("https://ja.scp-wiki.net/local--files/component:af2017theme/HVD_Bodedo.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
 /*
     [2017 AF Wikidot Theme]
@@ -71,7 +71,7 @@ h7 {
 }
 
 ul {
-  /* list-style-image: url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
+  /* list-style-image: url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
   list-style: square;
 }
 
@@ -134,7 +134,7 @@ body {
 }
 
 div#container-wrap {
-  background: url(http://ja.scp-wiki.net/local--files/component:af2017theme/body_bg_af2017.png) top left repeat-x;
+  background: url(https://ja.scp-wiki.net/local--files/component:af2017theme/body_bg_af2017.png) top left repeat-x;
 }
 
 /* HEADER */
@@ -146,7 +146,7 @@ div#container-wrap {
   padding-bottom: 22px;
 
   /* FOR MENU */
-  background: url(http://ja.scp-wiki.net/local--files/component:af2017theme/logoaf2017.png) 10px 40px no-repeat;
+  background: url(https://ja.scp-wiki.net/local--files/component:af2017theme/logoaf2017.png) 10px 40px no-repeat;
 }
 
 #search-top-box {
@@ -442,7 +442,7 @@ div#container-wrap {
 #side-bar div.menu-item.sub-item {}
 
 #side-bar .collapsible-block-folded {
-  background: url(http://www.scp-wiki.net/local--files/nav:side/expand.png) 0 2px no-repeat;
+  background: url(https://www.scp-wiki.net/local--files/nav:side/expand.png) 0 2px no-repeat;
 }
 
 #side-bar .collapsible-block-link {
@@ -499,7 +499,7 @@ div#container-wrap {
 .yui-navset .yui-nav a,
 .yui-navset .yui-navset-top .yui-nav a {
   background-color: #d8d8d8;
-  background-image: url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png);
+  background-image: url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png);
 }
 
 .yui-navset .yui-nav .selected a,
@@ -507,7 +507,7 @@ div#container-wrap {
 
 .yui-navset .yui-nav .selected a:hover {
   /* no hover effect for selected */
-  background: #770000 url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1400px;
+  background: #770000 url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1400px;
 
   /* selected tab background */
   color: #ffffff;
@@ -515,7 +515,7 @@ div#container-wrap {
 
 .yui-navset .yui-nav a:hover,
 .yui-navset .yui-nav a:focus {
-  background: #dd8888 url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1300px;
+  background: #dd8888 url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1300px;
   text-decoration: none;
 }
 
@@ -632,7 +632,7 @@ div.sexy-box div.image-container img {
 
 .content-panel .panel-body {
   padding: 5px 10px;
-  background: #fff9f0 url(http://www.scp-wiki.net/local--files/component:theme/panel-bg-gradient-reverse.png) bottom repeat-x;
+  background: #fff9f0 url(https://www.scp-wiki.net/local--files/component:theme/panel-bg-gradient-reverse.png) bottom repeat-x;
 
   /* box-shadow: 1px 2px 3px rgba(0,0,0,.2) inset */
 }
@@ -971,7 +971,7 @@ rt {
     font-family: monospace;
     font-style: normal;
     font-weight: normal;
-    background-image: url(http://www.scp-wiki.net/local--files/component%3Atheme/dot.png), none;
+    background-image: url(https://www.scp-wiki.net/local--files/component%3Atheme/dot.png), none;
     background-repeat: repeat-x;
     padding: 0.5em 0 0;
     background-color: transparent;
@@ -989,7 +989,7 @@ rt {
     font-family: monospace;
     font-style: normal;
     font-weight: normal;
-    background-image: url(http://www.scp-wiki.net/local--files/component%3Atheme/dot.png), none;
+    background-image: url(https://www.scp-wiki.net/local--files/component%3Atheme/dot.png), none;
     background-repeat: repeat-x;
     padding: 0.5em 0 0;
     background-color: transparent;
@@ -1635,7 +1635,7 @@ a.avatar-hover div div {
 a.avatar-hover,
 a.avatar-hover:hover {
   background: none;
-  background-image: url(http://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/base/images/background/opacity2.png);
+  background-image: url(https://d3g0gp89917ko0.cloudfront.net/v--edac79f846ba/common--theme/base/images/background/opacity2.png);
   padding: 8px;
   text-decoration: none;
   font-size: 130%;

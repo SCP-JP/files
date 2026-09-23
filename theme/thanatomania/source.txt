@@ -343,7 +343,7 @@ h2, h3, h4, h5, h6, h7 {
     border-color: var(--color-2);
 }
 ul {
-    /* list-style-image: url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
+    /* list-style-image: url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
     list-style: square;
 }
 #top-bar ul {
@@ -407,7 +407,7 @@ body {
 #side-bar div.menu-item.sub-item {
 }
 #side-bar .collapsible-block-folded {
-    background: url(http://www.scp-wiki.net/local--files/nav:side/expand.png) 0 2px no-repeat;
+    background: url(https://www.scp-wiki.net/local--files/nav:side/expand.png) 0 2px no-repeat;
 }
 #side-bar .collapsible-block-link {
     font-weight: bold;
@@ -967,7 +967,7 @@ h2, h3, h4, h5, h6, h7 {
     border-color: var(--color-2);
 }
 ul {
-    /* list-style-image: url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
+    /* list-style-image: url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
     list-style: square;
 }
 #top-bar ul {
@@ -1031,7 +1031,7 @@ body {
 #side-bar div.menu-item.sub-item {
 }
 #side-bar .collapsible-block-folded {
-    background: url(http://www.scp-wiki.net/local--files/nav:side/expand.png) 0 2px no-repeat;
+    background: url(https://www.scp-wiki.net/local--files/nav:side/expand.png) 0 2px no-repeat;
 }
 #side-bar .collapsible-block-link {
     font-weight: bold;

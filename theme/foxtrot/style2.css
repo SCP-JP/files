@@ -2,8 +2,8 @@
   --accent: var(--acc-threshold);
   --header-title: "THRESHOLD";
   --header-subtitle: "維持、持続、延長";
-  --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-55-celk/overwatchheaderthreshold.svg);
-  --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-55-celk/overwatchheaderthreshold.svg);
+  --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-55-celk/overwatchheaderthreshold.svg);
+  --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-55-celk/overwatchheaderthreshold.svg);
   --logo-opacity: 100% !important;
   --darkmode-gradient-top: rgb(var(--accent)) !important;
 }

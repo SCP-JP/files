@@ -262,7 +262,7 @@ div#extra-div-1 {
     width: 100%;
     top: 0;
     position: absolute;
-    background: url('http://scp-jp-storage.wdfiles.com/local--files/file:5722815-45-51f1/43Head.png');
+    background: url('https://scp-jp-storage.wdfiles.com/local--files/file:5722815-45-51f1/43Head.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -650,7 +650,7 @@ span, a { word-break: normal !important }
     background-color: rgba(var(--bright-accent), 0);
     height: 0;
     box-sizing: border-box;
-    border-image-source: url('http://scp-jp-storage.wdfiles.com/local--files/file:5722815-46-ec6z/wl_hr.png');
+    border-image-source: url('https://scp-jp-storage.wdfiles.com/local--files/file:5722815-46-ec6z/wl_hr.png');
     border-image-repeat: round round;
     background: none;
     border-image-slice: 80 500 80 500 fill;
@@ -660,7 +660,7 @@ span, a { word-break: normal !important }
 #page-content .fancyborder {
     box-sizing: border-box;
     border: 2vw solid rgba(0,0,0,0.5);
-    border-image: url('http://scp-jp-storage.wdfiles.com/local--files/file:5722815-47-mqmb/wl_border.png') 600 round;
+    border-image: url('https://scp-jp-storage.wdfiles.com/local--files/file:5722815-47-mqmb/wl_border.png') 600 round;
     border-image-width: 6;
     padding: 2vw;
 }
@@ -809,7 +809,7 @@ span, a { word-break: normal !important }
 }
 
 div#extra-div-1 {
-    background-image: url('http://scp-jp-storage.wdfiles.com/local--files/file:5722815-48-k39z/Big87.png');
+    background-image: url('https://scp-jp-storage.wdfiles.com/local--files/file:5722815-48-k39z/Big87.png');
     filter: opacity(20%);
 }
 [[/module]]

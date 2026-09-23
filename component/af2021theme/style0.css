@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  *background: rgb(255 255 255 / 90%) url(http://www.scp-wiki.net/local--files/component:theme/panel-bg-gradient-reverse.png) bottom repeat-x;
+  *background: rgb(255 255 255 / 90%) url(https://www.scp-wiki.net/local--files/component:theme/panel-bg-gradient-reverse.png) bottom repeat-x;
   padding: 5px 0;
 }
 

@@ -147,7 +147,7 @@ padding-bottom: 4px;
 + 翻訳:
 
 [[module ListPages range="." limit="1"]]
-[[iframe http://interwiki.scpdb.org/?wiki=%%site_name%%&lang={$lang}&page=_default:{$page}]]
+[[iframe https://interwiki.scpdb.org/?wiki=%%site_name%%&lang={$lang}&page=_default:{$page}]]
 [[/module]]
 
 [[/div]]

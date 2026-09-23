@@ -32,7 +32,7 @@
   --barColour: rgb(20 20 20);
   --fnColor: rgb(15 15 15);
   --fnLinger: 1s;
-  --logo: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-21-21vy/basalt_logotype_black.png);
+  --logo: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-21-21vy/basalt_logotype_black.png);
   --sidelogo: var(--logo);
   --sidesubtitle: var(--subtitle);
   --utilcolor: #ffffff;
@@ -408,7 +408,7 @@ iframe.scpnet-interwiki-frame {
 }
 
 #side-bar .collapsible-block-folded {
-  background-image: url(http://scp-jp-storage.wdfiles.com/local--files/file:5722815-27-wn18/expand.png);
+  background-image: url(https://scp-jp-storage.wdfiles.com/local--files/file:5722815-27-wn18/expand.png);
 }
 
 #side-bar .collapsible-block-unfolded-link {
@@ -710,7 +710,7 @@ hr {
 }
 
 .raisa_memo {
-  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-28-qlyx/RAISA_LIGHTLOGO.png) #fff3ad;
+  background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-28-qlyx/RAISA_LIGHTLOGO.png) #fff3ad;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
@@ -745,7 +745,7 @@ hr {
 }
 
 .classification_memo {
-  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-30-ubdk/CLASSIFICATION_LIGHTLOGO.png) #edf5f3;
+  background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-30-ubdk/CLASSIFICATION_LIGHTLOGO.png) #edf5f3;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
@@ -780,7 +780,7 @@ hr {
 }
 
 .ettra_memo {
-  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-32-wqge/ETTRA_LIGHTLOGO.png) #f5d7d7;
+  background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-32-wqge/ETTRA_LIGHTLOGO.png) #f5d7d7;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
@@ -815,7 +815,7 @@ hr {
 }
 
 .ethics_memo {
-  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-34-2jq6/ETHICS_LIGHTLOGO.png) #ffdbc4;
+  background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-34-2jq6/ETHICS_LIGHTLOGO.png) #ffdbc4;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
@@ -850,7 +850,7 @@ hr {
 }
 
 .temporal_memo {
-  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-36-ohm1/DELTA_T_LIGHTLOGO.png) #ffffff;
+  background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-36-ohm1/DELTA_T_LIGHTLOGO.png) #ffffff;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
@@ -886,7 +886,7 @@ hr {
 }
 
 .overwatch_memo {
-  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-38-9n6y/O5_LIGHTLOGO.png) #e3e3e3;
+  background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-38-9n6y/O5_LIGHTLOGO.png) #e3e3e3;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
@@ -921,7 +921,7 @@ hr {
 }
 
 .miscomm_memo {
-  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-40-c6bj/MISCOMM_LIGHTLOGO.png) #eeedfa;
+  background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-40-c6bj/MISCOMM_LIGHTLOGO.png) #eeedfa;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;

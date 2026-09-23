@@ -7,7 +7,7 @@
 
 [[div style="display: none;"]]
 [[include :scp-jp:component:image-block
-    name=http://scp-jp-storage.wdfiles.com/local--files/file:5722815-57-3pfp/fxtrt.png|
+    name=https://scp-jp-storage.wdfiles.com/local--files/file:5722815-57-3pfp/fxtrt.png|
     caption=Foxtrot|
     align=center
 ]]
@@ -113,8 +113,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 [[/div]]
 @@@@
 [[div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-84-cvcw/canada_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-85-6k0m/canada_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-84-cvcw/canada_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-85-6k0m/canada_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
 [[/div]]
 [[/=]]
 
@@ -128,8 +128,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 [[/div]]
 @@@@
 [[div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-86-9vrb/slothspit_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-87-iriu/slothspit_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-86-9vrb/slothspit_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-87-iriu/slothspit_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
 [[/div]]
 [[/=]]
 
@@ -143,8 +143,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 [[/div]]
 @@@@
 [[div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-88-5988/poland_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-89-40fu/poland_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-88-5988/poland_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-89-40fu/poland_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
 [[/div]]
 [[/=]]
 
@@ -158,8 +158,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 [[/div]]
 @@@@
 [[div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-90-h0l3/vanguard_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-91-ps8h/vanguard_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-90-h0l3/vanguard_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-91-ps8h/vanguard_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
 [[/div]]
 [[/=]]
 
@@ -177,8 +177,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 [[/div]]
 @@@@
 [[div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file%3A5722815-92-n9nj/threshold_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-93-mf91/threshold_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file%3A5722815-92-n9nj/threshold_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-93-mf91/threshold_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
 [[/div]]
 [[/=]]
 
@@ -192,8 +192,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 [[/div]]
 @@@@
 [[div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-94-9j68/overwatch_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-95-mgaw/overwatch_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-94-9j68/overwatch_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-95-mgaw/overwatch_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
 [[/div]]
 [[/=]]
 
@@ -207,8 +207,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 [[/div]]
 @@@@
 [[div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-96-88ic/spc_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-97-wj4h/spc_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-96-88ic/spc_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-97-wj4h/spc_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
 [[/div]]
 [[/=]]
 
@@ -222,8 +222,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 [[/div]]
 @@@@
 [[div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-98-f31h/fishing_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-99-ct6y/fishing_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-98-f31h/fishing_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-99-ct6y/fishing_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
 [[/div]]
 [[/=]]
 
@@ -237,8 +237,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 [[/div]]
 @@@@
 [[div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-100-vd38/nightfall_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-101-t3p2/nightfall_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-100-vd38/nightfall_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-101-t3p2/nightfall_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
 [[/div]]
 [[/=]]
 
@@ -252,8 +252,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 [[/div]]
 @@@@
 [[div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-102-yhl7/hybrasil_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-103-f7xn/hybrasil_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-102-yhl7/hybrasil_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-103-f7xn/hybrasil_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
 [[/div]]
 [[/=]]
 
@@ -267,8 +267,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 [[/div]]
 @@@@
 [[div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-104-s61v/goc_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-105-hrgt/goc_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-104-s61v/goc_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-105-hrgt/goc_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
 [[/div]]
 [[/=]]
 
@@ -282,8 +282,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 [[/div]]
 @@@@
 [[div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-106-g20u/spooky_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
-[[=image http://scp-jp-storage.wikidot.com/local--files/file:5722815-107-fk3e/spooky_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-106-g20u/spooky_light-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
+[[=image https://scp-jp-storage.wikidot.com/local--files/file:5722815-107-fk3e/spooky_dark-JP.png style="width: 380px; border-radius: 15px; border: solid 2px grey;"]]
 [[/div]]
 [[/=]]
 
@@ -641,8 +641,8 @@ Foxtrotは、[[[blankstyle|Blankstyle]]]や[[[penumbla|Penumbla]]]を筆頭と�
 
     --header-title: "SCP財団";
     --header-subtitle: "確保、収容、保護";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-58-kjwu/fxtrt-scp_logo_lightmode.svg);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-59-l1ls/fxtrt-scp_logo_darkmode.svg);
+    --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-58-kjwu/fxtrt-scp_logo_lightmode.svg);
+    --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-59-l1ls/fxtrt-scp_logo_darkmode.svg);
     --logo-opacity: 14%;
 
     --head-font: 'Lexend', 'M PLUS 1p';
@@ -1618,7 +1618,7 @@ a {
     background-color: rgba(var(--bright-accent), 0);
     height: 0;
     box-sizing: border-box;
-    border-image-source: url('http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-46-ec6z/wl_hr.png');
+    border-image-source: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-46-ec6z/wl_hr.png');
     border-image-repeat: round round;
     background: none;
     border-image-slice: 80 500 80 500 fill;
@@ -1628,7 +1628,7 @@ a {
 .fancyborder {
     box-sizing: border-box;
     border: 2vw solid rgba(0, 0, 0, 0.5);
-    border-image: url('http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-47-mqmb/wl_border.png') 600 round;
+    border-image: url('https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-47-mqmb/wl_border.png') 600 round;
     border-image-width: 6;
     padding: 2vw;
 }
@@ -2360,7 +2360,7 @@ textarea {
 #side-bar .side-block .collapsible-block-folded::before {
     content: "";
     display: inline-block;
-    background: url('http://scp-jp.wikidot.com/local--files/nav:side/expand.png') 0 2px no-repeat;
+    background: url('https://scp-jp.wikidot.com/local--files/nav:side/expand.png') 0 2px no-repeat;
     width: 13px;
     height: 13px;
     margin-right: 2px;
@@ -2447,8 +2447,8 @@ textarea {
     --accent: var(--acc-canada);
     --header-title: "R\0026 C Site-43";
     --header-subtitle: "ありきたりの手法を覆す";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-60-vjf1/fxtrt-canada.svg);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-61-9brj/fxtrt-canada_darkmode.png);
+    --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-60-vjf1/fxtrt-canada.svg);
+    --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-61-9brj/fxtrt-canada_darkmode.png);
     --logo-opacity: 21%;
 }
 
@@ -2464,8 +2464,8 @@ textarea {
     --accent: var(--acc-poland);
     --header-title: "R\0026 C Site-120";
     --header-subtitle: "火を以って火と戦え";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-77-o0tg/ontologonew2.png);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A3995762-105-gvkd/120.png);
+    --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-77-o0tg/ontologonew2.png);
+    --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A3995762-105-gvkd/120.png);
 }
 
 [[/module]]
@@ -2480,8 +2480,8 @@ textarea {
     --accent: var(--acc-slothspit);
     --header-title: "S\0026 C Plastics";
     --header-subtitle: "サイト-87, 物語とネクサス理論の研究";
-    --logo-img: url(http://scp-jp-storage.wikidot.com/local--files/file%3A5722815-48-k39z/Big87.png);
-    --darkmode-logo-img: url(http://scp-jp-storage.wikidot.com/local--files/file%3A5722815-48-k39z/Big87.png);
+    --logo-img: url(https://scp-jp-storage.wikidot.com/local--files/file%3A5722815-48-k39z/Big87.png);
+    --darkmode-logo-img: url(https://scp-jp-storage.wikidot.com/local--files/file%3A5722815-48-k39z/Big87.png);
     --logo-opacity: 20% !important;
 }
 
@@ -2497,8 +2497,8 @@ textarea {
     --accent: var(--acc-vanguard);
     --header-title: "ANGUARD";
     --header-subtitle: "保護、通常化、情報公開";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-62-tcqn/fxtrt-vanguard_logo.webp);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-62-tcqn/fxtrt-vanguard_logo.webp);
+    --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-62-tcqn/fxtrt-vanguard_logo.webp);
+    --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-62-tcqn/fxtrt-vanguard_logo.webp);
     --logo-opacity: 100% !important;
 
     --dark-bg-1: #0c1a2e !important;
@@ -2596,8 +2596,8 @@ div#extra-div-1 {
     --accent: var(--acc-threshold);
     --header-title: "THRESHOLD";
     --header-subtitle: "維持、持続、延長";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-55-celk/overwatchheaderthreshold.svg);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-55-celk/overwatchheaderthreshold.svg);
+    --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-55-celk/overwatchheaderthreshold.svg);
+    --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-55-celk/overwatchheaderthreshold.svg);
     --logo-opacity: 100% !important;
 
     --darkmode-gradient-top: rgb(var(--accent)) !important;
@@ -2659,8 +2659,8 @@ div#extra-div-1 {
     --accent: var(--acc-overwatch);
     --header-title: "監督司令部";
     --header-subtitle: "犠牲が力を与える";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-4-z8c6/overwatchheader.svg);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-4-z8c6/overwatchheader.svg);
+    --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-4-z8c6/overwatchheader.svg);
+    --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A2963469-4-z8c6/overwatchheader.svg);
     --logo-opacity: 100% !important;
 
     --darkmode-gradient-top: rgb(var(--accent)) !important;
@@ -2722,8 +2722,8 @@ div#extra-div-1 {
     --accent: var(--acc-wyoming);
     --header-title: "1 5 0";
     --header-subtitle: "烏有が激発の温床となる";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-78-0n3j/ATOM.svg);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-78-0n3j/ATOM.svg);
+    --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-78-0n3j/ATOM.svg);
+    --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-78-0n3j/ATOM.svg);
 }
 
 #header h1 a::before {
@@ -2765,8 +2765,8 @@ body {
     --accent: var(--acc-spc);
     --header-title: "SPCデータベース";
     --header-subtitle: "サメ殴りセンター";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-63-471a/fxtrt-spc_lightmode.png);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-79-by5e/spc-header.png);
+    --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-63-471a/fxtrt-spc_lightmode.png);
+    --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-79-by5e/spc-header.png);
 
     --darkmode-gradient-top: #175968 !important;
 }
@@ -2787,8 +2787,8 @@ body {
     --accent: var(--acc-fishing);
     --header-title: "Fishing Council";
     --header-subtitle: "CANSHM SITE-184";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-80-85w5/Site-184.svg);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-80-85w5/Site-184.svg);
+    --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-80-85w5/Site-184.svg);
+    --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-80-85w5/Site-184.svg);
 }
 
 #header h1 a {
@@ -2807,8 +2807,8 @@ body {
     --accent: var(--acc-nightfall);
     --header-title: "NIGHTFALL";
     --header-subtitle: "誰もが闇の中で死ぬ";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-63-tlne/fxtrt-nightfall_lightmode.png);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-81-p6yq/moon1.png);
+    --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-63-tlne/fxtrt-nightfall_lightmode.png);
+    --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-81-p6yq/moon1.png);
 
     --dark-bg-1: #111113 !important;
     --dark-bg-2: #070707 !important;
@@ -2832,8 +2832,8 @@ body {
     --accent: var(--acc-hybrasil);
     --header-title: "WAR ON ALL FRONTS";
     --header-subtitle: "WE'RE GOING TO NEED A BIGGER BOAT";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-63-qfcj/fxtrt-hybrasil_lightmode.png);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-82-8r1s/mksjr3.png);
+    --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-63-qfcj/fxtrt-hybrasil_lightmode.png);
+    --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-82-8r1s/mksjr3.png);
     --logo-opacity: 20%;
 
     --head-font: 'Saira Stencil One';
@@ -2910,8 +2910,8 @@ blockquote {
 :root {
     --header-title: "SCP FOUNDATION";
     --header-subtitle: "SPOOK, CREEP, PESTER";
-    --logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-83-zz31/fxtrt-spooky_logo.svg);
-    --darkmode-logo-img: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-83-zz31/fxtrt-spooky_logo.svg);
+    --logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-83-zz31/fxtrt-spooky_logo.svg);
+    --darkmode-logo-img: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A5722815-83-zz31/fxtrt-spooky_logo.svg);
 
     --accent: var(--acc-spooky);
 

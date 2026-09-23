@@ -248,13 +248,13 @@ CC BY-SA 3.0
 /*header*/
 
 div#container-wrap {
-  background-image: linear-gradient(165deg, rgba(240, 240, 240, 0.8) 0%, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 0) 90%, rgba(240, 240, 240, 0.8) 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-31-wtu3/paper.jpg");
+  background-image: linear-gradient(165deg, rgba(240, 240, 240, 0.8) 0%, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 0) 90%, rgba(240, 240, 240, 0.8) 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-31-wtu3/paper.jpg");
   background-size: 100% 100%, 350px 350px;
   background-repeat: no-repeat, repeat;
 }
 #header {
   background: #e0e0d5;
-  background: url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-32-ejz5/shushusign-1.png) 10px 40px no-repeat;
+  background: url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-32-ejz5/shushusign-1.png) 10px 40px no-repeat;
 }
 #header h1 {
   position: relative;
@@ -512,7 +512,7 @@ ol {
 }
 blockquote, .blockquote {
   border: 1px solid #c8c8c8;
-  background: linear-gradient(165deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: linear-gradient(165deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
   box-shadow: 0.25em 0.25em rgba(240, 240, 240, 0.8);
 }
 
@@ -525,11 +525,11 @@ blockquote, .blockquote {
   margin: 1em 1em 1em 0.5em;
   padding: 0.5em 0.5em 1px;
   border: 1px solid #c8c8c8;
-  background: -webkit-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: -moz-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: -o-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: -ms-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: linear-gradient(165deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: -webkit-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: -moz-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: -o-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: -ms-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: linear-gradient(165deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
   box-shadow: 0.25em 0.25em rgba(240, 240, 240, 0.8);
 }
 
@@ -697,11 +697,11 @@ div.page-rate-widget-box .rate-points {
 }
 .shushuInner blockquote, .shushuInner .blockquote {
   border: 1px solid #c8c8c8;
-  background: -webkit-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: -moz-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: -o-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: -ms-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: linear-gradient(165deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: -webkit-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: -moz-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: -o-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: -ms-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: linear-gradient(165deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
   box-shadow: 0.25em 0.25em rgba(240, 240, 240, 0.8);
 }
 .shushuInner ol {
@@ -715,11 +715,11 @@ div.page-rate-widget-box .rate-points {
   padding: 0.5em 0.5em 1px;
   width: 300px;
   border: 1px solid #c8c8c8;
-  background: -webkit-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: -moz-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: -o-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: -ms-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
-  background: linear-gradient(165deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: -webkit-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: -moz-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: -o-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: -ms-linear-gradient(285deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
+  background: linear-gradient(165deg, #f0f0f0 0%, #fff 2%, #fff 8%, rgba(255, 255, 255, 0.69) 18%, rgba(255, 255, 255, 0.19) 34%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.06) 51%, rgba(255, 255, 255, 0.14) 66%, rgba(255, 255, 255, 0.27) 93%, #f0f0f0 99%), url("https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-30-6su1/clearPaper.png");
   box-shadow: 0.25em 0.25em rgba(240, 240, 240, 0.8);
   list-style-type: none;
 }
@@ -779,7 +779,7 @@ h1, #page-title {
 
 .note_a {
   border : dashed 1px #444444;
-  background: #d6e8ff url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-35-hwt1/%E6%A1%94%E6%A2%971.png)center no-repeat;
+  background: #d6e8ff url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-35-hwt1/%E6%A1%94%E6%A2%971.png)center no-repeat;
   margin: 1em auto;
   padding:10px;
   background-size: 300px;
@@ -787,7 +787,7 @@ h1, #page-title {
 
 .note_b {
   border: dashed 1px #444444;
-  background: #fdc5cd url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-37-lxat/%E8%92%90%E9%9B%861.png)center no-repeat;
+  background: #fdc5cd url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-37-lxat/%E8%92%90%E9%9B%861.png)center no-repeat;
   margin: 1em auto;
   padding: 10px;
   background-size: 300px;
@@ -795,21 +795,21 @@ h1, #page-title {
 
 .note_c {
   border: dashed 1px #444444;
-  background: #e5e5e5 url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-36-5be2/%E7%89%A1%E4%B8%B91.png)center no-repeat;
+  background: #e5e5e5 url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-36-5be2/%E7%89%A1%E4%B8%B91.png)center no-repeat;
   margin: 1em auto;
   padding: 10px;
   background-size: 300px;
 }
 .note_d {
   border: dashed 1px #444444;
-  background: #c1fdc1 url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-34-yq8l/%E6%92%AB%E5%AD%901.png)center no-repeat;
+  background: #c1fdc1 url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-34-yq8l/%E6%92%AB%E5%AD%901.png)center no-repeat;
   margin: 1em auto;
   padding: 10px;
   background-size: 300px;
 }
 .note_e {
   border: dashed 1px #444444;
-  background: #bcdce7 url(http://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-38-0kpz/%E6%94%AF%E5%80%89.png)center no-repeat;
+  background: #bcdce7 url(https://scp-jp-storage.wdfiles.com/local--files/file%3A4053112-38-0kpz/%E6%94%AF%E5%80%89.png)center no-repeat;
   margin: 1em auto;
   padding: 10px;
   background-size: 300px;

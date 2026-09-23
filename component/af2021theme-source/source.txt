@@ -23,11 +23,11 @@
 }
 
 :root {
-    --af2021-header-100: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-0vdh/af2021-header-100.png");
-    --af2021-header-75: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-n5y4/af2021-header-75.png");
-    --af2021-header-50: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-rvj9/af2021-header-50.png");
-    --af2021-header-25: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-wgar/af2021-header-25.png");
-    --af2021-header-0: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-38-irrh/af2021-header-0.png");
+    --af2021-header-100: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-0vdh/af2021-header-100.png");
+    --af2021-header-75: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-n5y4/af2021-header-75.png");
+    --af2021-header-50: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-rvj9/af2021-header-50.png");
+    --af2021-header-25: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-wgar/af2021-header-25.png");
+    --af2021-header-0: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-38-irrh/af2021-header-0.png");
 }
 
 div#container-wrap {
@@ -60,9 +60,9 @@ div#container-wrap::after {
 
 body {
     background-image:
-        url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-35-tnic/af2021-bg-01.png"),
-        url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-36-aujk/af2021-bg-02.png"),
-        url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-36-tg9r/af2021-bg-03.png");
+        url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-35-tnic/af2021-bg-01.png"),
+        url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-36-aujk/af2021-bg-02.png"),
+        url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-36-tg9r/af2021-bg-03.png");
     background-size: 500px 500px, 400px 400px, 300px 300px;
     animation: snow 10s linear infinite;
 }
@@ -126,7 +126,7 @@ body {
     position: relative;
     z-index: 10;
     padding-bottom: 22px;
-    background: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-39-qesi/af2021-logo.png") no-repeat;
+    background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-39-qesi/af2021-logo.png") no-repeat;
     background-size: 200px auto;
 }
 
@@ -207,7 +207,7 @@ body {
     right: 10px;
     width: 50px;
     height: 50px;
-    background: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-22-ilwq/buuta.png");
+    background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-22-ilwq/buuta.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -292,14 +292,14 @@ body {
 
 #html-body:not(:target) {
     background-image:
-        url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-40-oiv0/af2021-hasanbg-01.png"),
-        url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-40-5e0t/af2021-hasanbg-02.png"),
-        url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-40-m3nm/af2021-hasanbg-03.png");
+        url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-40-oiv0/af2021-hasanbg-01.png"),
+        url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-40-5e0t/af2021-hasanbg-02.png"),
+        url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-40-m3nm/af2021-hasanbg-03.png");
     animation: payment 10s linear infinite;
 }
 
 #html-body:not(:target) #header {
-    background: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-14-xspn/logo-remade.svg") no-repeat;
+    background: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-14-xspn/logo-remade.svg") no-repeat;
     background-size: 100px auto;
     background-position: bottom 40px left 50px;
 }
@@ -318,7 +318,7 @@ body {
     content: "";
     display: block;
     position: absolute;
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-21-wybg/0401_sasiosae.png");
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-21-wybg/0401_sasiosae.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 20;
@@ -400,7 +400,7 @@ body {
     content: "";
     display: block;
     position: absolute;
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-42-cqy4/sei6.png");
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-42-cqy4/sei6.png");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 8;
@@ -439,7 +439,7 @@ body {
     content: "";
     display: block;
     position: absolute;
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-42-p752/sei4.png");
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-42-p752/sei4.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top right;
@@ -465,7 +465,7 @@ body {
 
 /* 復帰処理 */
 #html-body:target {
-    --af2021-header-0: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-0vdh/af2021-header-100.png");
+    --af2021-header-0: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-37-0vdh/af2021-header-100.png");
 }
 
 .status-changer a {
@@ -558,15 +558,15 @@ body {
 }
 
 .panel-body .buta .collapsible-block-folded .collapsible-block-link {
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-22-ilwq/buuta.png");
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-22-ilwq/buuta.png");
 }
 
 .panel-body .buta .collapsible-block-folded .collapsible-block-link:hover {
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-31-t19z/obiebuta.png");
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-31-t19z/obiebuta.png");
 }
 
 .panel-body .buta .collapsible-block-unfolded .collapsible-block-link {
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-30-drqc/buta10.png");
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A2369961-30-drqc/buta10.png");
 }
 [[/module]]
 

@@ -1,5 +1,5 @@
 [[module CSS]]
-@import url(http://scp-jp.wdfiles.com/component:darkbodytheme/code/1);
+@import url(https://scp-jp.wdfiles.com/component:darkbodytheme/code/1);
 [[/module]]
 
 [[iftags +テーマ]]
@@ -13,7 +13,7 @@
 */
 @charset "utf-8";
 
-@import url('http://scp-jp.wdfiles.com/local--theme/scp-sigma-9-off-canvas/style.css');
+@import url('https://scp-jp.wdfiles.com/local--theme/scp-sigma-9-off-canvas/style.css');
 @import url('https://fonts.googleapis.com/css?family=Play|Open+Sans');
 
 /* COMMON */
@@ -46,12 +46,12 @@ a.newpage {
 
 
 div#container-wrap {
-    background: url(http://shitake-crude-production.wikidot.com/local--files/component:darkbodytheme/body_bg.png) top left repeat-x;
+    background: url(https://shitake-crude-production.wikidot.com/local--files/component:darkbodytheme/body_bg.png) top left repeat-x;
 }
  
 /* HEADER */
 #header {
-    background: url(http://shitake-crude-production.wikidot.com/local--files/component:darkbodytheme/logo.png) 10px 35px no-repeat;
+    background: url(https://shitake-crude-production.wikidot.com/local--files/component:darkbodytheme/logo.png) 10px 35px no-repeat;
 }
 #search-top-box-input {
     border: solid 1px #2F4F4F;
@@ -183,7 +183,7 @@ filter: hue-rotate(210deg);
 /* YUI-TABS */
 .yui-navset .yui-nav a,
 .yui-navset .yui-navset-top .yui-nav a {
-    background-image: url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png);
+    background-image: url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png);
 -webkit-filter: hue-rotate(210deg);
 -moz-filter: hue-rotate(210deg);
 -o-filter: hue-rotate(210deg);
@@ -193,7 +193,7 @@ filter: hue-rotate(210deg);
 .yui-navset .yui-nav .selected a,
 .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
 .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
-background: #700 url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1400px;
+background: #700 url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1400px;
 -webkit-filter: hue-rotate(210deg);
 -moz-filter: hue-rotate(210deg);
 -o-filter: hue-rotate(210deg);

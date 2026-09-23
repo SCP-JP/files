@@ -53,12 +53,12 @@ h6 {
 /* ---- PAGE WRAP ---- */
 
 div#container-wrap {
-  background-image: url(http://scp-jp.wikidot.com/local--files/theme:simple-yonder/bg.png);
+  background-image: url(https://scp-jp.wikidot.com/local--files/theme:simple-yonder/bg.png);
   background-repeat: repeat-x;
 }
 
 div#header {
-  background-image: url(http://scp-jp.wdfiles.com/local--files/theme%3Asimple-yonder/logo.png);
+  background-image: url(https://scp-jp.wdfiles.com/local--files/theme%3Asimple-yonder/logo.png);
   background-size: 12.5%;
 }
 

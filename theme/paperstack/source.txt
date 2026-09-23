@@ -23,7 +23,7 @@
 
 
 [[div class="grid-item"]]
-[[include component:image-block name=http://scp-wiki.wdfiles.com/local--files/theme:paperstack/test.png|caption="//grid-item//"ブロックに含まれる画像ブロック。幅は300pxを推奨します。|width=300px|align=center]]
+[[include component:image-block name=https://scp-wiki.wdfiles.com/local--files/theme:paperstack/test.png|caption="//grid-item//"ブロックに含まれる画像ブロック。幅は300pxを推奨します。|width=300px|align=center]]
 [[/div]]
 
 [[/div]]
@@ -94,7 +94,7 @@
 > @@[[/div]]@@
 
 [[include component:image-block
-    name=http://scp-jp-storage.wikidot.com/local--files/file:3396310-33-dj1t/t1.png |
+    name=https://scp-jp-storage.wikidot.com/local--files/file:3396310-33-dj1t/t1.png |
     caption=1つだけ"//text-item//"ブロックを使用した例 |
     align=center |
     width=100%
@@ -103,7 +103,7 @@
 @@ @@
 
 [[include component:image-block
-    name=http://scp-jp-storage.wikidot.com/local--files/file:3396310-33-jwn9/t3.png |
+    name=https://scp-jp-storage.wikidot.com/local--files/file:3396310-33-jwn9/t3.png |
     caption=3つの"//text-item//"ブロックを使用した例 |
     align=center |
     width=100%
@@ -112,7 +112,7 @@
 @@ @@
 
 [[include component:image-block
-    name=http://scp-jp-storage.wikidot.com/local--files/file:3396310-33-2yqn/t4.png |
+    name=https://scp-jp-storage.wikidot.com/local--files/file:3396310-33-2yqn/t4.png |
     caption=4つの"//text-item//"ブロックを使用した例 |
     align=center |
     width=100%

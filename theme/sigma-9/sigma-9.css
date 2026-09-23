@@ -63,7 +63,7 @@ h7 {
 }
 
 ul {
-  /* list-style-image: url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
+  /* list-style-image: url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/bullet.gif); */
   list-style: square;
 }
 
@@ -501,19 +501,19 @@ div#container-wrap {
 .yui-navset .yui-nav a,
 .yui-navset .yui-navset-top .yui-nav a {
   background-color: #d8d8d8;
-  background-image: url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png);
+  background-image: url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png);
 }
 
 .yui-navset .yui-nav .selected a,
 .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
 .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
-  background: #770000 url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1400px; /* selected tab background */
+  background: #770000 url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1400px; /* selected tab background */
   color: #ffffff;
 }
 
 .yui-navset .yui-nav a:hover,
 .yui-navset .yui-nav a:focus {
-  background: #dd8888 url(http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1300px;
+  background: #dd8888 url(https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png) repeat-x left -1300px;
   text-decoration: none;
 }
 

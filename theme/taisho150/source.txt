@@ -1,10 +1,10 @@
 [[include :msr-arc:component:booky]]
 [[module CSS]]
-@import url("http://scp-jp.wikidot.com/theme:taisho150/code/1");
+@import url("https://scp-jp.wikidot.com/theme:taisho150/code/1");
 [[/module]]
 [[include :scp-jp:component:interwiki-style
 |priority=1
-|theme=http://scp-jp.wikidot.com/local--code/theme:taisho150/2
+|theme=https://scp-jp.wikidot.com/local--code/theme:taisho150/2
 ]]
 [[iftags +テーマ]]
 [[include :scp-jp:credit:start-preview]]

@@ -7,7 +7,7 @@
 /* HEADER */
 
 div#container-wrap {
-  background: url(http://scp-wiki-cn.wikidot.com/local--files/abyssal-light/Abyssal_Background.jpg) top left repeat-x;
+  background: url(https://scp-wiki-cn.wikidot.com/local--files/abyssal-light/Abyssal_Background.jpg) top left repeat-x;
 }
 
 #header h1 {
@@ -83,7 +83,7 @@ div#container-wrap {
 /* SIDEBAR */
 
 #side-bar .side-block {
-  background: url(http://scp-wiki-cn.wdfiles.com/local--files/abyssal-light/blue.jpg) repeat;
+  background: url(https://scp-wiki-cn.wdfiles.com/local--files/abyssal-light/blue.jpg) repeat;
 }
 
 #side-bar a {
@@ -164,7 +164,7 @@ div#container-wrap {
   font-family: "Courier New", "Courier", monospace;
   padding: 10px 30px;
   color: #ffffff;
-  background: url(http://scp-wiki-cn.wdfiles.com/local--files/abyssal-light/blue.jpg) repeat;
+  background: url(https://scp-wiki-cn.wdfiles.com/local--files/abyssal-light/blue.jpg) repeat;
   text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
   box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
   border: 1px solid #bbbbbb;

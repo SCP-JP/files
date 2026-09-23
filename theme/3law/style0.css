@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import url("http://scp-jp.wikidot.com/local--files/theme:3law/station-font.css");
+@import url("https://scp-jp.wikidot.com/local--files/theme:3law/station-font.css");
 @import url("https://fonts.googleapis.com/css?family=M+PLUS+1p");
 
 /*
@@ -46,13 +46,13 @@ body {
 }
 
 div#container-wrap {
-  background: url("http://scp-jp.wikidot.com/local--files/theme:3law/body_bg_7.png") top left repeat-x;
+  background: url("https://scp-jp.wikidot.com/local--files/theme:3law/body_bg_7.png") top left repeat-x;
 }
 
 /* HEADER */
 
 #header {
-  background: url("http://scp-jp.wikidot.com/local--files/theme:3law/PL_3Law_Logo_2.png") 125px 20px no-repeat;
+  background: url("https://scp-jp.wikidot.com/local--files/theme:3law/PL_3Law_Logo_2.png") 125px 20px no-repeat;
 }
 
 #search-top-box-input {
@@ -373,7 +373,7 @@ div.page-rate-widget-box .rate-points {
 @media (max-width: 767px) {
 
   #header {
-    background: url(http://scp-jp.wikidot.com/local--files/theme:3law/PL_3Law_Logo_2.png) 20px 20px no-repeat;
+    background: url(https://scp-jp.wikidot.com/local--files/theme:3law/PL_3Law_Logo_2.png) 20px 20px no-repeat;
   }
 
   #header h1,

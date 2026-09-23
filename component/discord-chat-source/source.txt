@@ -476,7 +476,7 @@ div.discord div.attachment > a {
 [[iftags -コンポーネント・バックエンド]]
 [!-- {$inc-source}
 [[module CSS]]
-@import url("http://scp-jp.wdfiles.com/local--code_/component:discord-chat-source/1");
+@import url("https://scp-jp.wdfiles.com/local--code_/component:discord-chat-source/1");
 [[/module]]
 [!----]
 
@@ -543,7 +543,7 @@ div.discord div.attachment > a {
 }
 
 .{$attch-id} .icon-code {
-    background-image: url("http://scp-jp-storage.wikidot.com/local--files/file:3396310-31-5cvh/file_icon.svg");
+    background-image: url("https://scp-jp-storage.wikidot.com/local--files/file:3396310-31-5cvh/file_icon.svg");
 }
 [[/module]]
                 [[div_ class="message {$user-id} {$attch-id}"]]
@@ -569,7 +569,7 @@ div.discord div.attachment > a {
                                     [[/div]]
                                 [[/div]]
                             [[/div]]
-                            [[a class="anchor" href="{$attchlink}" target="_blank"]][[image http://www.scp-wiki.net/local--files/component:discord-chat-source/download-arrow.svg]][[/a]]
+                            [[a class="anchor" href="{$attchlink}" target="_blank"]][[image https://www.scp-wiki.net/local--files/component:discord-chat-source/download-arrow.svg]][[/a]]
                         [[/div]]
                     [[/div]]
                 [[/div]]
@@ -590,7 +590,7 @@ div.discord div.attachment > a {
 [[code]]
 [!-- {$inc-source}
 [[module CSS]]
-@import url("http://scp-jp.wdfiles.com/local--code_/component:discord-chat-source/1");
+@import url("https://scp-jp.wdfiles.com/local--code_/component:discord-chat-source/1");
 [[/module]]
 [!----]
 
@@ -657,7 +657,7 @@ div.discord div.attachment > a {
 }
 
 .{$attch-id} .icon-code {
-    background-image: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-31-5cvh/file_icon.svg");
+    background-image: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-31-5cvh/file_icon.svg");
 }
 [[/module]]
                 [[div_ class="message {$user-id} {$attch-id}"]]
@@ -683,7 +683,7 @@ div.discord div.attachment > a {
                                     [[/div]]
                                 [[/div]]
                             [[/div]]
-                            [[a class="anchor" href="{$attchlink}" target="_blank"]][[image http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-32-nq52/download-arrow.svg]][[/a]]
+                            [[a class="anchor" href="{$attchlink}" target="_blank"]][[image https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-32-nq52/download-arrow.svg]][[/a]]
                         [[/div]]
                     [[/div]]
                 [[/div]]

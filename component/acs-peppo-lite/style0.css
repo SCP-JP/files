@@ -440,7 +440,7 @@
   background-color: rgb(var(--white-monochrome, 252, 252, 252));
   border-color: rgb(var(--white-monochrome, 252, 252, 252));
   filter: invert(1);
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/esoteric-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/esoteric-icon.svg");
   background-size: 75% 75%;
   background-size: 75% 75%;
   background-size: 75% 75%;
@@ -483,19 +483,19 @@
 .anom-bar-container.keter .text-part > .main-class::before {
   background-color: rgb(196 2 51);
   background-color: rgb(var(--five-color));
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/keter-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/keter-icon.svg");
 }
 
 .anom-bar-container.euclid .text-part > .main-class::before {
   background-color: rgb(255 211 0);
   background-color: rgb(var(--three-color));
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/euclid-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/euclid-icon.svg");
 }
 
 .anom-bar-container.safe .text-part > .main-class::before {
   background-color: rgb(0 159 107);
   background-color: rgb(var(--one-color));
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/safe-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/safe-icon.svg");
 }
 
 .text-part > .main-class > div {
@@ -717,11 +717,11 @@
 }
 
 .anom-bar-container.amida .text-part .disrupt-class::after {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/amida-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/amida-icon.svg");
 }
 
 .anom-bar-container.critical .text-part .risk-class::after {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/critical-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/critical-icon.svg");
 }
 
 .anom-bar-container.ekhi .text-part .disrupt-class::after,
@@ -731,11 +731,11 @@
 }
 
 .anom-bar-container.ekhi .text-part .disrupt-class::after {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/ekhi-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/ekhi-icon.svg");
 }
 
 .anom-bar-container.danger .text-part .risk-class::after {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/danger-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/danger-icon.svg");
 }
 
 .anom-bar-container.keneq .text-part .disrupt-class::after,
@@ -745,11 +745,11 @@
 }
 
 .anom-bar-container.keneq .text-part .disrupt-class::after {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/keneq-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/keneq-icon.svg");
 }
 
 .anom-bar-container.warning .text-part .risk-class::after {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/warning-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/warning-icon.svg");
 }
 
 .anom-bar-container.vlam .text-part .disrupt-class::after,
@@ -759,11 +759,11 @@
 }
 
 .anom-bar-container.vlam .text-part .disrupt-class::after {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/vlam-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/vlam-icon.svg");
 }
 
 .anom-bar-container.caution .text-part .risk-class::after {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/caution-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/caution-icon.svg");
 }
 
 .anom-bar-container.dark .text-part .disrupt-class::after,
@@ -773,11 +773,11 @@
 }
 
 .anom-bar-container.dark .text-part .disrupt-class::after {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/dark-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/dark-icon.svg");
 }
 
 .anom-bar-container.notice .text-part .risk-class::after {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/notice-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/notice-icon.svg");
 }
 
 .text-part .main-class {
@@ -1156,7 +1156,7 @@
 .anom-bar-container.neutralised .danger-diamond > .top-icon::before {
   background-color: rgb(66 66 72 / 15%);
   background-color: rgb(var(--gray-monochrome, 66, 66, 72) 0.15);
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/neutralized-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/neutralized-icon.svg");
   background-size: 110% 110%;
   background-size: 110% 110%;
   background-size: 110% 110%;
@@ -1166,19 +1166,19 @@
 .anom-bar-container.pending .danger-diamond > .top-icon::before {
   background-color: rgb(12 12 12);
   background-color: rgb(var(--black-monochrome, 12, 12, 12));
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/pending-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/pending-icon.svg");
 }
 
 .anom-bar-container.explained .danger-diamond > .top-icon::before {
   background-color: rgb(252 252 252);
   background-color: rgb(var(--white-monochrome, 252, 252, 252));
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/explained-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/explained-icon.svg");
 }
 
 .anom-bar-container.esoteric .danger-diamond > .top-icon::before {
   background-color: rgb(252 252 252);
   background-color: rgb(var(--white-monochrome, 252, 252, 252));
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/esoteric-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/esoteric-icon.svg");
   filter: invert(1);
 }
 
@@ -1190,15 +1190,15 @@
 }
 
 .anom-bar-container.keter .danger-diamond > .top-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/keter-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/keter-icon.svg");
 }
 
 .anom-bar-container.amida .danger-diamond > .left-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/amida-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/amida-icon.svg");
 }
 
 .anom-bar-container.critical .danger-diamond > .right-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/critical-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/critical-icon.svg");
 }
 
 .anom-bar-container.ekhi .danger-diamond > .left-icon::before,
@@ -1208,11 +1208,11 @@
 }
 
 .anom-bar-container.ekhi .danger-diamond > .left-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/ekhi-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/ekhi-icon.svg");
 }
 
 .anom-bar-container.danger .danger-diamond > .right-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/danger-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/danger-icon.svg");
 }
 
 .anom-bar-container.euclid .danger-diamond > .top-icon::before,
@@ -1223,15 +1223,15 @@
 }
 
 .anom-bar-container.euclid .danger-diamond > .top-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/euclid-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/euclid-icon.svg");
 }
 
 .anom-bar-container.keneq .danger-diamond > .left-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/keneq-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/keneq-icon.svg");
 }
 
 .anom-bar-container.warning .danger-diamond > .right-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/warning-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/warning-icon.svg");
 }
 
 .anom-bar-container.vlam .danger-diamond > .left-icon::before,
@@ -1241,11 +1241,11 @@
 }
 
 .anom-bar-container.vlam .danger-diamond > .left-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/vlam-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/vlam-icon.svg");
 }
 
 .anom-bar-container.caution .danger-diamond > .right-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/caution-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/caution-icon.svg");
 }
 
 .anom-bar-container.safe .danger-diamond > .top-icon::before,
@@ -1256,15 +1256,15 @@
 }
 
 .anom-bar-container.safe .danger-diamond > .top-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/safe-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/safe-icon.svg");
 }
 
 .anom-bar-container.dark .danger-diamond > .left-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/dark-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/dark-icon.svg");
 }
 
 .anom-bar-container.notice .danger-diamond > .right-icon::before {
-  background-image: url("http://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/notice-icon.svg");
+  background-image: url("https://scp-jp.wikidot.com/local--files/component:anomaly-class-bar/notice-icon.svg");
 }
 
 .anom-bar-container.{$secondary-class}

@@ -12,7 +12,7 @@
 **クレジット付き評価モジュール:**
 [[/>]]
 [[module css]]
-@import url('http://scp-jp.wdfiles.com/local--code_/credit%3Astyle/1');
+@import url('https://scp-jp.wdfiles.com/local--code_/credit%3Astyle/1');
 [[/module]]
 
 [[div_ class="creditRate creditModule"]]
@@ -20,7 +20,7 @@
 [[div_ class="rate-box-with-credit-button"]]
 [[module Rate]]
 [[div_ class="creditButton"]]
-[[a href="#u-credit-view" class="fa fa-info" style="position:relative;"]][[image http://scp-jp.wikidot.com/local--files/nav:side/blank.png title="クレジットを表示する" style="position:absolute;height:100%;width:100%;top:0;left:0;"]][[/a]]
+[[a href="#u-credit-view" class="fa fa-info" style="position:relative;"]][[image https://scp-jp.wikidot.com/local--files/nav:side/blank.png title="クレジットを表示する" style="position:absolute;height:100%;width:100%;top:0;left:0;"]][[/a]]
 [[/div]]
 [[/div]]
 [[/div]]
@@ -31,7 +31,7 @@
 
 [[div_ id="credit-view"]]
 [[div_ class="fader"]]
-[[iframe http://scp-jp.wdfiles.com/local--code/credit%3Abackmodule/1 ]]
+[[iframe https://scp-jp.wdfiles.com/local--code/credit%3Abackmodule/1 ]]
 [[/div]]
 
 [[div_ class="modalcontainer"]]
@@ -42,7 +42,7 @@
 [[div class="credit"]]
 ページ情報です。
 [[div_ class="credit-back" style="text-align: center;"]]
-[[iframe http://scp-jp.wdfiles.com/local--code/credit%3Abackmodule/2 style="height:2em;width: 100%;margin: 0;padding: 0;border: 0;background: transparent;" scrolling="no"]]
+[[iframe https://scp-jp.wdfiles.com/local--code/credit%3Abackmodule/2 style="height:2em;width: 100%;margin: 0;padding: 0;border: 0;background: transparent;" scrolling="no"]]
 [[/div]]
 [[/div]]
 

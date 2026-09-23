@@ -33,7 +33,7 @@
 
 ------
 
-[[include component:image-block name=http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-44-yz1t/tb.png|caption=画像|width=200px]]
+[[include component:image-block name=https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-44-yz1t/tb.png|caption=画像|width=200px]]
 
 分割線はハイフンを5つ並べることで作成できます。引用ブロックなどの内部になければ、ページの横幅全体に広がります。このページでセクションを区切っているのが分割線です。
 
@@ -1205,7 +1205,7 @@ a.action-area-close:hover {
 
 :root {
   --accentColor: #1EB5E8;
-  --lgurl: url("http://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-43-tbvr/logo.png");
+  --lgurl: url("https://scp-jp-storage.wdfiles.com/local--files/file%3A3396310-43-tbvr/logo.png");
 }
 
 [[/module]]
