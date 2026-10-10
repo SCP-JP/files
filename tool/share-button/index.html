@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>シェアボタン作成ツール</title>
+<style>
+:root {
+  --c-text: #222;
+  --c-muted: #6b6b70;
+  --c-line: #dedee2;
+  --c-line-strong: #b8b8be;
+  --c-bg: #fff;
+  --c-accent: #901;
+  --c-on-accent: #fff;
+  --c-error: #b3261e;
+  --radius: 6px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: transparent; color: var(--c-text); font: 14px/1.6 var(--font); -webkit-text-size-adjust: 100%; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 2px; }
+[hidden] { display: none !important; }
+
+.tool { max-width: 720px; margin: 0 auto; border: 1px solid var(--c-line); border-radius: 8px; background: var(--c-bg); overflow: hidden; }
+.section { padding: 14px 16px; }
+.section + .section { border-top: 1px solid var(--c-line); }
+
+.seg { display: inline-flex; border: 1px solid var(--c-line-strong); border-radius: var(--radius); overflow: hidden; vertical-align: middle; max-width: 100%; }
+.seg button { border: 0; border-left: 1px solid var(--c-line); background: var(--c-bg); padding: 4px 12px; cursor: pointer; white-space: nowrap; }
+.seg button:first-child { border-left: 0; }
+.seg button[aria-pressed="true"] { background: var(--c-accent); color: var(--c-on-accent); font-weight: 600; }
+.seg-lg { display: flex; }
+.seg-lg button { flex: 1; padding: 8px 12px; font-size: 15px; }
+
+.rows { display: grid; grid-template-columns: 5.5em minmax(0, 1fr); gap: 10px 12px; align-items: center; }
+.rows > .label { color: var(--c-muted); font-size: 13px; }
+.rows + .rows { margin-top: 10px; }
+.inline { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+
+.contest-bar { margin-top: 12px; }
+select, .input { padding: 5px 8px; border: 1px solid var(--c-line-strong); border-radius: var(--radius); background: var(--c-bg); max-width: 100%; }
+.input { width: 100%; }
+textarea.input { min-height: 3.6em; resize: vertical; font: 13px/1.5 var(--mono); }
+.input[aria-invalid="true"] { border-color: var(--c-error); }
+.error { color: var(--c-error); font-size: 13px; margin: 4px 0 0; }
+.note { color: var(--c-muted); font-size: 13px; margin: 4px 0 0; }
+
+.preview { position: relative; padding: 0; }
+.stage { min-height: 120px; padding: 36px 16px 24px; display: flex; flex-direction: column; justify-content: center; }
+.stage-empty { text-align: center; color: var(--c-muted); margin: 0; }
+.bg-picker { position: absolute; top: 8px; right: 10px; display: flex; gap: 6px; align-items: center; }
+.swatch { width: 20px; height: 20px; border-radius: 50%; border: 1px solid var(--c-line-strong); padding: 0; cursor: pointer; }
+.swatch[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--c-bg), 0 0 0 4px var(--c-accent); }
+.swatch-custom { position: relative; overflow: hidden; background: conic-gradient(#e55, #ec5, #5c5, #5ce, #55e, #e5e, #e55); }
+.swatch-custom input { position: absolute; inset: -4px; width: calc(100% + 8px); height: calc(100% + 8px); opacity: 0; cursor: pointer; }
+
+.shapes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.shape { height: 52px; border: 1px solid var(--c-line); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; cursor: pointer; overflow: hidden; padding: 0 2px; }
+.shape > .share-button-wrapper { pointer-events: none; }
+.shape .share-button { white-space: nowrap; }
+.shape[aria-pressed="true"] { border: 2px solid var(--c-accent); }
+
+.colors { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+.color { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.color input { width: 28px; height: 24px; padding: 0; border: 1px solid var(--c-line-strong); border-radius: 4px; background: none; cursor: pointer; }
+.link-btn { border: 0; background: none; padding: 0; color: var(--c-accent); cursor: pointer; text-decoration: underline; font-size: 13px; }
+
+.check { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.check input { width: 16px; height: 16px; margin: 0; accent-color: var(--c-accent); }
+
+details.more > summary { cursor: pointer; color: var(--c-muted); font-size: 13px; margin-top: 12px; }
+details.more[open] > summary { margin-bottom: 10px; }
+
+.code-block + .code-block { margin-top: 14px; }
+.code-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+.code-head h3 { font-size: 14px; margin: 0; }
+pre.code { margin: 0; padding: 10px 12px; background: #1e1e22; color: #f2f2f2; border-radius: var(--radius); font: 13px/1.55 var(--mono); white-space: pre; overflow-x: auto; }
+.copy { border: 0; border-radius: var(--radius); background: var(--c-accent); color: var(--c-on-accent); font-weight: 600; padding: 5px 16px; cursor: pointer; min-width: 7.5em; }
+.copy:hover { filter: brightness(1.12); }
+
+@media (max-width: 480px) {
+  .rows { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .rows > .label { margin-top: 6px; }
+}
+
+/* ===== component:share-button-base の CSS（プレビュー用に .sb 配下へ限定） ===== */
+.sb .share-button-wrapper { font-size: 0; }
+.sb .share-button-wrapper > hr { display: none; border: 0; border-top: 1px solid #aaa; margin: 0 0 1em; }
+.sb .share-button-wrapper.draw > hr { display: block; }
+.sb .share-button-container { align-items: stretch; display: flex; }
+.sb .share-button { align-items: center; box-sizing: border-box; display: flex; flex-wrap: nowrap; font-family: "Noto Sans JP", sans-serif; justify-content: center; margin: 0.25rem; padding: 0 0.25rem; text-align: center; text-decoration: none; cursor: pointer; }
+.sb .share-button > .brand-logo { font-size: 0; padding: 0 0.25rem; }
+.sb .share-button-container:is(.common, .rich) { justify-content: center; }
+.sb .share-button-container:is(.common, .rich) > .share-button { --font-size: var(--text-size, 0.8rem); background-color: var(--button-color); border: solid 1px var(--border-color); color: var(--on-button-color); font-size: var(--font-size); min-height: calc(var(--font-size) * 2.25); transition: transform 0.2s; }
+.sb .share-button-container:is(.common, .rich) > .share-button:hover { transform: scale(1.05); }
+.sb .share-button-container:is(.common, .rich) > .share-button > .brand-logo::before { font-size: calc(var(--font-size) * 1.5); }
+.sb .share-button-container:is(.common, .rich) > .share-button > .link-text { padding: 0 0.25rem; }
+.sb .share-button-container.rich > .share-button { border-width: 2px; }
+.sb .share-button-container.logo { justify-content: right; }
+.sb .share-button-container.logo > .share-button { aspect-ratio: 1/1; }
+.sb .share-button-container.logo > .share-button > .link-text { display: none; }
+.sb .share-button-container.round > .share-button { border-radius: calc(var(--font-size) / 1.25); }
+.sb .share-button-container.round.logo > .share-button { border-radius: 100%; }
+.sb .share-button-container.simple { justify-content: left; }
+.sb .share-button-container.simple > .share-button { --font-size: var(--text-size, 0.75rem); border-top: solid 1px #bbb; color: var(--link-color); font-size: var(--font-size); }
+.sb .share-button-container.simple > .share-button > .brand-logo::before { font-size: var(--font-size); }
+.sb .share-button-container.simple > .share-button:hover > .link-text { text-decoration: underline; }
+.sb .share-button-container.simple > .share-button > .link-text::after {
+  /* 本番は FontAwesome の \f1d8。iframe 内では Wikidot の FontAwesome を読めないため SVG で代替 */
+  content: ""; display: inline-block; width: 1em; height: 1em; margin: 0 0.25rem; vertical-align: -0.1em; font-size: var(--font-size);
+  background-color: currentColor; -webkit-mask: var(--icon-plane) center / contain no-repeat; mask: var(--icon-plane) center / contain no-repeat;
+}
+.sb .share-button-container.normal > .share-button { --border-color: #333; --button-color: #fff; --on-button-color: #333; --link-color: #b01; }
+.sb .share-button-container.normal.rich > .share-button { --border-color: #633; --on-button-color: #333; }
+.sb .share-button-container.alt > .share-button { --border-color: var(--brand-color); --button-color: var(--brand-color); --on-button-color: #fff; --link-color: #fff; font-weight: bold; }
+.sb .share-button-container.alt.x > .share-button { --border-color: #fff; }
+.sb .share-button-container.alt.rich > .share-button { --border-color: #633; --button-color: #633; }
+.sb .share-button-container.center { justify-content: center; }
+.sb .share-button-container.left { justify-content: left; }
+.sb .share-button-container.right { justify-content: right; }
+.sb .share-button-container.share > .share-button > .link-text { font-size: 0; }
+.sb .share-button-container.share > .share-button > .link-text::before,
+.sb .share-button-container.share > .share-button > .link-text::after { font-size: var(--font-size); }
+.sb .share-button-container.share:is(.common, .rich) > .share-button > .link-text::before { content: var(--button-text); }
+.sb .share-button-container.share.simple > .share-button > .link-text::before { content: var(--simple-text); }
+.sb .share-button-container.x > .share-button { --brand-color: #000000; --button-text: "Xでシェア"; --simple-text: "この作品をXでシェア"; }
+.sb .share-button-container.x > .share-button > .brand-logo::before { content: "𝕏"; line-height: .65; }
+.sb .share-button-container.twitter > .share-button { --brand-color: #1da1f2; --button-text: "Twitterでシェア"; --simple-text: "この作品をTwitterでシェア"; }
+.sb .share-button-container.twitter > .share-button > .brand-logo::before {
+  /* 本番は FontAwesome の \f099。同上 */
+  content: ""; display: inline-block; width: 1em; height: 1em; background-color: currentColor;
+  -webkit-mask: var(--icon-bird) center / contain no-repeat; mask: var(--icon-bird) center / contain no-repeat;
+}
+.sb {
+  --icon-plane: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2 21l21-9L2 3v7l15 2-15 2z'/%3E%3C/svg%3E");
+  --icon-bird: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M23.95 4.57a10 10 0 0 1-2.82.77 4.96 4.96 0 0 0 2.16-2.72c-.95.56-2 .96-3.13 1.19a4.92 4.92 0 0 0-8.38 4.48A13.94 13.94 0 0 1 1.64 3.16a4.82 4.82 0 0 0-.67 2.48c0 1.71.87 3.21 2.19 4.1a4.9 4.9 0 0 1-2.23-.62v.06a4.92 4.92 0 0 0 3.95 4.83 5 5 0 0 1-2.21.08 4.94 4.94 0 0 0 4.6 3.42A9.87 9.87 0 0 1 0 19.54a14 14 0 0 0 7.56 2.21c9.05 0 14-7.5 14-13.98 0-.21 0-.42-.02-.63A9.94 9.94 0 0 0 24 4.59z'/%3E%3C/svg%3E");
+}
+</style>
+</head>
+<body>
+<div class="tool">
+  <div class="section">
+    <div class="seg seg-lg" role="group" aria-label="作品の種類" id="context"></div>
+    <div class="rows contest-bar" id="contest-bar">
+      <span class="label">コンテスト</span>
+      <div class="inline">
+        <select id="event" aria-label="コンテスト"></select>
+        <input id="event-custom" class="input" type="text" style="width: 12em;" placeholder="event26-summer01" aria-label="コンテストのID" spellcheck="false" autocomplete="off" hidden>
+      </div>
+      <span class="label">すること</span>
+      <div><div class="seg" role="group" aria-label="すること" id="purpose"></div></div>
+    </div>
+    <p class="error" id="event-error" hidden></p>
+  </div>
+
+  <div class="section preview">
+    <div class="bg-picker" role="group" aria-label="プレビューの背景">
+      <button type="button" class="swatch" data-bg="#ffffff" style="background: #fff;" aria-label="背景を白にする"></button>
+      <button type="button" class="swatch" data-bg="#111111" style="background: #111;" aria-label="背景を黒にする"></button>
+      <span class="swatch swatch-custom" id="bg-custom-wrap"><input type="color" id="bg-custom" value="#e8dcc4" aria-label="背景の色を選ぶ"></span>
+    </div>
+    <div class="stage sb" id="stage"></div>
+  </div>
+
+  <div class="section" id="design">
+    <div class="rows">
+      <span class="label">形</span>
+      <div class="shapes sb" id="shapes" role="group" aria-label="形"></div>
+    </div>
+    <div class="rows">
+      <span class="label">配色</span>
+      <div class="inline">
+        <div class="seg" role="group" aria-label="配色" id="mode"></div>
+        <div class="seg" role="group" aria-label="ロゴ" id="brand"></div>
+      </div>
+      <span class="label">色</span>
+      <div class="colors" id="colors"></div>
+      <span class="label">配置</span>
+      <div class="inline">
+        <div class="seg" role="group" aria-label="配置" id="position"></div>
+        <label class="check"><input type="checkbox" id="hr">上に線を引く</label>
+      </div>
+      <span class="label" id="text-label">文字</span>
+      <div id="text-row">
+        <input id="text" class="input" type="text" autocomplete="off" aria-label="ボタンの文字">
+        <p class="error" id="text-error" hidden></p>
+      </div>
+      <span class="label">大きさ</span>
+      <div><div class="seg" role="group" aria-label="文字の大きさ" id="size"></div></div>
+    </div>
+
+    <details class="more" id="more">
+      <summary>その他の設定</summary>
+      <div class="rows">
+        <span class="label">タイトル</span>
+        <div>
+          <input id="title" class="input" type="text" autocomplete="off" aria-label="タイトル">
+          <p class="note">投稿文に入るタイトルです。空欄なら、このページのタイトルを使います。</p>
+        </div>
+        <span class="label">ページ</span>
+        <div>
+          <input id="fullname" class="input" type="text" spellcheck="false" autocomplete="off" aria-label="ページ">
+          <p class="note">シェアするページです。空欄なら、このページを使います。URLも入力できます。</p>
+          <p class="error" id="fullname-error" hidden></p>
+        </div>
+        <span class="label">CSS</span>
+        <div>
+          <textarea id="css" class="input" spellcheck="false" aria-label="ボタンに足すCSS"></textarea>
+          <p class="error" id="css-error" hidden></p>
+        </div>
+      </div>
+      <div style="margin-top: 10px; display: grid; gap: 6px;">
+        <label class="check" id="second-wrap"><input type="checkbox" id="second">同じページにほかのシェアボタンがある</label>
+        <label class="check"><input type="checkbox" id="lp">ページ遷移構文の中に置く</label>
+        <p class="error" id="lp-error" hidden></p>
+      </div>
+    </details>
+  </div>
+
+  <div class="section">
+    <div id="code"></div>
+    <p class="note" id="placement"></p>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // コンテストごとの variant と、自動で付くボタンの見た目。コンテストが増えたら先頭に足す
+  var EVENTS = [
+    { id: "event26-summer01", name: "夢のコンテスト2026", design: { shape: "rich-rounded", hr: true, colors: { border: "#601c3e" } } },
+    { id: "event25-time01", name: "時のコンテスト2025", design: null }
+  ];
+  var CUSTOM_EVENT = "__custom";
+
+  var SHAPES = [
+    { key: "square", label: "四角", type: "common" },
+    { key: "rounded", label: "角丸", type: "common", round: true },
+    { key: "circle", label: "丸", type: "common", logo: true, round: true },
+    { key: "simple", label: "文字だけ", type: "simple" },
+    { key: "rich-square", label: "太枠・四角", type: "rich" },
+    { key: "rich-rounded", label: "太枠・角丸", type: "rich", round: true },
+    { key: "rich-circle", label: "太枠・丸", type: "rich", logo: true, round: true }
+  ];
+  var SIZES = [
+    { value: "0.7rem", label: "小" },
+    { value: "", label: "標準" },
+    { value: "1rem", label: "大" },
+    { value: "1.2rem", label: "特大" }
+  ];
+  var COLOR_FIELDS = [
+    { key: "border", cssVar: "--border-color", label: "枠", types: ["common", "rich"] },
+    { key: "button", cssVar: "--button-color", label: "背景", types: ["common", "rich"] },
+    { key: "onButton", cssVar: "--on-button-color", label: "文字", types: ["common", "rich"] },
+    { key: "link", cssVar: "--link-color", label: "文字", types: ["simple"] }
+  ];
+  var BASE_DESIGN = { shape: "square", mode: "normal", position: null, hr: false, size: "", colors: {} };
+  var HIDE_PLACEMENT = "ページの一番最後に貼ってください。[[div]] などの中に入れると、自動で付くボタンが消えません。";
+
+  var state = {
+    context: "contest",
+    event: EVENTS[0].id,
+    customEvent: "",
+    purpose: "change",
+    brand: "x",
+    text: "",
+    title: "",
+    fullname: "",
+    css: "",
+    second: false,
+    lp: false,
+    bg: "#ffffff"
+  };
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  function eventDef(id) { return EVENTS.filter(function (e) { return e.id === id; })[0]; }
+  function shapeDef(key) { return SHAPES.filter(function (s) { return s.key === key; })[0]; }
+  function eventId() { return state.event === CUSTOM_EVENT ? state.customEvent.trim() : state.event; }
+  function isContest() { return state.context === "contest"; }
+  function hidesOnly() { return isContest() && state.purpose === "hide"; }
+
+  function contextDesign() {
+    var ev = isContest() ? eventDef(state.event) : null;
+    return ev && ev.design ? ev.design : {};
+  }
+  function applyDesign(design) {
+    Object.assign(state, BASE_DESIGN, design, { colors: Object.assign({}, design.colors) });
+  }
+
+  function typeClasses(shape) {
+    var c = [shape.type];
+    if (shape.logo) c.push("logo");
+    if (shape.round) c.push("round");
+    return c;
+  }
+  function defaultPosition(shape) {
+    if (shape.type === "simple") return "left";
+    return shape.logo ? "right" : "center";
+  }
+
+  // share-button-base の配色ルールを解いた既定色。カラーピッカーの初期値に使う
+  function defaultColors(type, mode, brand) {
+    var brandColor = brand === "x" ? "#000000" : "#1da1f2";
+    if (type === "simple") return { link: mode === "alt" ? "#ffffff" : "#bb0011" };
+    if (mode === "normal") return { border: type === "rich" ? "#663333" : "#333333", button: "#ffffff", onButton: "#333333" };
+    if (type === "rich") return { border: "#663333", button: "#663333", onButton: "#ffffff" };
+    return { border: brand === "x" ? "#ffffff" : brandColor, button: brandColor, onButton: "#ffffff" };
+  }
+
+  function styleValue(s) {
+    var type = shapeDef(s.shape).type;
+    var parts = [];
+    COLOR_FIELDS.forEach(function (f) {
+      if (f.types.indexOf(type) !== -1 && s.colors[f.key] != null) parts.push(f.cssVar + ": " + s.colors[f.key] + ";");
+    });
+    var extra = (s.css || "").replace(/\s*[\r\n]+\s*/g, " ").trim();
+    if (extra) parts.push(/;$/.test(extra) ? extra : extra + ";");
+    return parts.join(" ");
+  }
+
+  function normalizeFullname(raw) {
+    return raw.trim().replace(/^https?:\/\/scp-jp\.wikidot\.com\//i, "").replace(/[?#\/].*$/, "").toLowerCase();
+  }
+
+  // タイトルは投稿URLのクエリに素のまま入るため、クエリと include を壊す記号だけを変換する
+  function encodeTitle(title) {
+    return title.replace(/[%&#+|\[\]"\r\n]/g, function (c) {
+      if (c === "\r" || c === "\n") return " ";
+      return "%" + c.charCodeAt(0).toString(16).toUpperCase().padStart(2, "0");
+    });
+  }
+
+  function validate() {
+    var e = {};
+    if (isContest() && state.event === CUSTOM_EVENT && !/^[a-z0-9-]+$/.test(state.customEvent.trim())) {
+      e.event = "コンテストのIDを半角英小文字・数字・ハイフンで入力してください。";
+    }
+    if (hidesOnly()) return e;
+    if (/[|"]|\]\]/.test(state.text)) e.text = "| \" ]] は使えません。";
+    if (/[|"]|\]\]/.test(state.css)) e.css = "| \" ]] は使えません。";
+    var fullname = normalizeFullname(state.fullname);
+    if (fullname && !/^[a-z0-9_:\-]+$/.test(fullname)) e.fullname = "ページ名を半角英小文字・数字・ハイフン・コロンで入力してください。";
+    if (state.lp && (!state.title.trim() || !fullname)) e.lp = "ページ遷移構文の中に置くときは、タイトルとページを入力してください。";
+    return e;
+  }
+
+  // component:share-button のプロパティ一覧と同じ順に並べる
+  function buttonProps() {
+    var shape = shapeDef(state.shape);
+    var props = [];
+    var type = typeClasses(shape).join(" ");
+    if (type !== "common") props.push(["type", type]);
+    if (state.mode !== "normal") props.push(["mode", state.mode]);
+    if (state.position) props.push(["position", state.position]);
+    if (state.text.trim() && !shape.logo) props.push(["text", state.text.trim()]);
+    if (state.brand !== "x") props.push(["brand", state.brand]);
+    if (state.hr) props.push(["hr", "draw"]);
+    if (state.size) props.push(["text-size", state.size]);
+    var style = styleValue(state);
+    if (style) props.push(["style", style]);
+    if (state.title.trim()) props.push(["title", encodeTitle(state.title.trim())]);
+    var fullname = normalizeFullname(state.fullname);
+    if (fullname) props.push(["fullname", fullname]);
+    if (isContest() || state.second) props.push(["nocss", "a"]);
+    if (isContest() && eventId()) props.push(["event", eventId()]);
+    if (state.lp) { props.push(["lpstart", "_"]); props.push(["lpend", "_"]); }
+    return props;
+  }
+
+  function includeCode(props) {
+    if (props.length === 0) return "[[include :scp-jp:component:share-button]]";
+    return ["[[include :scp-jp:component:share-button"].concat(props.map(function (p) { return "|" + p[0] + "=" + p[1]; }), ["]]"]).join("\n");
+  }
+  var HIDE_CODE = includeCode([["nocss", "a"], ["template", "hide"]]);
+
+  function codeBlocks() {
+    if (hidesOnly()) {
+      return { blocks: [{ title: "コード", code: HIDE_CODE }], placement: HIDE_PLACEMENT };
+    }
+    var button = includeCode(buttonProps());
+    if (!isContest() || state.purpose === "add") {
+      return { blocks: [{ title: "コード", code: button }], placement: "ボタンを置きたい位置に貼ってください。" };
+    }
+    if (state.lp) {
+      return {
+        blocks: [
+          { title: "全ページ共通部分ボトムに貼るコード", code: HIDE_CODE },
+          { title: "ボタンを置くページに貼るコード", code: button }
+        ],
+        placement: ""
+      };
+    }
+    return { blocks: [{ title: "コード", code: HIDE_CODE + "\n\n" + button }], placement: HIDE_PLACEMENT };
+  }
+
+  function renderButton(s, decorative) {
+    var shape = shapeDef(s.shape);
+    var wrapper = document.createElement("div");
+    wrapper.className = "share-button-wrapper" + (s.hr ? " draw" : "");
+    wrapper.appendChild(document.createElement("hr"));
+    var container = document.createElement("div");
+    var cls = ["share-button-container"].concat(typeClasses(shape));
+    if (s.position) cls.push(s.position);
+    cls.push(s.mode, s.brand);
+    var text = shape.logo ? "" : (s.text || "").trim();
+    cls = cls.concat(text ? text.split(/\s+/) : ["share"]);
+    container.className = cls.join(" ");
+    var a = document.createElement("a");
+    a.className = "share-button";
+    if (decorative) a.setAttribute("aria-hidden", "true");
+    a.setAttribute("style", "--text-size: " + (s.size || "unset") + ";" + styleValue(s));
+    var logo = document.createElement("span");
+    logo.className = "brand-logo";
+    logo.textContent = " ";
+    var label = document.createElement("span");
+    label.className = "link-text";
+    label.textContent = text || "share";
+    a.appendChild(logo);
+    a.appendChild(label);
+    container.appendChild(a);
+    wrapper.appendChild(container);
+    return wrapper;
+  }
+
+  function segButtons(id, options, current, onPick) {
+    var wrap = $(id);
+    wrap.innerHTML = "";
+    options.forEach(function (o) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.textContent = o.label;
+      b.setAttribute("aria-pressed", o.value === current ? "true" : "false");
+      b.addEventListener("click", function () { onPick(o.value); render(); });
+      wrap.appendChild(b);
+    });
+  }
+
+  function renderShapes() {
+    var wrap = $("shapes");
+    wrap.innerHTML = "";
+    SHAPES.forEach(function (sh) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "shape";
+      b.style.background = state.bg;
+      b.setAttribute("aria-label", sh.label);
+      b.title = sh.label;
+      b.setAttribute("aria-pressed", sh.key === state.shape ? "true" : "false");
+      var look = Object.assign({}, state, { shape: sh.key, hr: false, position: "center", size: "" });
+      b.appendChild(renderButton(look, true));
+      b.addEventListener("click", function () { state.shape = sh.key; render(); });
+      wrap.appendChild(b);
+    });
+    fitShapes();
+  }
+
+  // 見本は枠の幅に収まるまで縮める（「文字だけ」は文言が長く、狭い画面では枠からはみ出すため）
+  function fitShapes() {
+    document.querySelectorAll(".shape").forEach(function (b) {
+      var inner = b.querySelector(".share-button");
+      var wrapper = b.querySelector(".share-button-wrapper");
+      if (!inner || !b.clientWidth) return;
+      var scale = Math.min(0.8, (b.clientWidth - 8) / (inner.offsetWidth + 8));
+      wrapper.style.transform = "scale(" + scale.toFixed(3) + ")";
+    });
+  }
+
+  function renderColors() {
+    var type = shapeDef(state.shape).type;
+    var defaults = defaultColors(type, state.mode, state.brand);
+    var wrap = $("colors");
+    wrap.innerHTML = "";
+    var reset = document.createElement("button");
+    reset.type = "button";
+    reset.className = "link-btn";
+    reset.textContent = "最初の色に戻す";
+    var initialColors = contextDesign().colors || {};
+    reset.addEventListener("click", function () { state.colors = Object.assign({}, initialColors); render(); });
+    var changed = false;
+    COLOR_FIELDS.forEach(function (f) {
+      if (f.types.indexOf(type) === -1) return;
+      if (state.colors[f.key] != initialColors[f.key]) changed = true;
+      var label = document.createElement("label");
+      label.className = "color";
+      var input = document.createElement("input");
+      input.type = "color";
+      input.value = state.colors[f.key] != null ? state.colors[f.key] : defaults[f.key];
+      input.addEventListener("input", function () {
+        state.colors[f.key] = input.value;
+        reset.hidden = false;
+        renderShapes();
+        renderPreviewAndCode();
+      });
+      label.appendChild(input);
+      label.appendChild(document.createTextNode(f.label));
+      wrap.appendChild(label);
+    });
+    reset.hidden = !changed;
+    wrap.appendChild(reset);
+  }
+
+  function setError(id, text, inputId) {
+    $(id).textContent = text || "";
+    $(id).hidden = !text;
+    if (inputId) $(inputId).setAttribute("aria-invalid", text ? "true" : "false");
+  }
+
+  function renderPreviewAndCode() {
+    var stage = $("stage");
+    stage.style.background = state.bg;
+    stage.innerHTML = "";
+    if (hidesOnly()) {
+      var p = document.createElement("p");
+      p.className = "stage-empty";
+      p.style.color = state.bg === "#111111" ? "#aaa" : "";
+      p.textContent = "ボタンは表示されません";
+      stage.appendChild(p);
+    } else {
+      stage.appendChild(renderButton(state, false));
+    }
+
+    var errors = validate();
+    setError("event-error", errors.event, "event-custom");
+    setError("text-error", errors.text, "text");
+    setError("css-error", errors.css, "css");
+    setError("fullname-error", errors.fullname, "fullname");
+    setError("lp-error", errors.lp);
+    if (errors.css || errors.fullname || errors.lp) $("more").open = true;
+
+    var code = $("code");
+    code.innerHTML = "";
+    if (Object.keys(errors).length) {
+      $("placement").textContent = "";
+      var msg = document.createElement("p");
+      msg.className = "error";
+      msg.textContent = "赤字の項目を直すと、コードが表示されます。";
+      code.appendChild(msg);
+      return;
+    }
+    var out = codeBlocks();
+    out.blocks.forEach(function (b) { code.appendChild(codeBlock(b)); });
+    $("placement").textContent = out.placement;
+    $("placement").hidden = !out.placement;
+  }
+
+  function codeBlock(b) {
+    var block = document.createElement("div");
+    block.className = "code-block";
+    var head = document.createElement("div");
+    head.className = "code-head";
+    var h = document.createElement("h3");
+    h.textContent = b.title;
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "copy";
+    btn.textContent = "コピー";
+    var pre = document.createElement("pre");
+    pre.className = "code";
+    pre.textContent = b.code;
+    var fallback = document.createElement("p");
+    fallback.className = "error";
+    fallback.hidden = true;
+    btn.addEventListener("click", function () { copyText(b.code, pre, btn, fallback); });
+    head.appendChild(h);
+    head.appendChild(btn);
+    block.appendChild(head);
+    block.appendChild(pre);
+    block.appendChild(fallback);
+    return block;
+  }
+
+  function copyText(text, pre, btn, fallback) {
+    var done = function () {
+      fallback.hidden = true;
+      btn.textContent = "コピーしました";
+      clearTimeout(btn._t);
+      btn._t = setTimeout(function () { btn.textContent = "コピー"; }, 2000);
+    };
+    var fail = function () {
+      var range = document.createRange();
+      range.selectNodeContents(pre);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      fallback.textContent = "コピーできませんでした。コードを選択したので、Ctrl+C（Macは⌘+C）でコピーしてください。";
+      fallback.hidden = false;
+    };
+    var legacy = function () {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.top = "0";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      if (ok) done(); else fail();
+    };
+    // 別ドメインの iframe で、clipboard-write が許可されていないと Clipboard API は拒否される
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(done, legacy);
+    else legacy();
+  }
+
+  function render() {
+    var shape = shapeDef(state.shape);
+    segButtons("context", [{ value: "contest", label: "コンテストの作品" }, { value: "normal", label: "それ以外の作品" }], state.context, function (v) {
+      if (v === state.context) return;
+      state.context = v;
+      applyDesign(contextDesign());
+    });
+    segButtons("purpose", [{ value: "change", label: "見た目を変える" }, { value: "hide", label: "消す" }, { value: "add", label: "もう1つ置く" }], state.purpose, function (v) { state.purpose = v; });
+    $("contest-bar").hidden = !isContest();
+    $("event-custom").hidden = state.event !== CUSTOM_EVENT;
+    $("design").hidden = hidesOnly();
+    $("second-wrap").hidden = isContest();
+
+    segButtons("mode", [{ value: "normal", label: "通常" }, { value: "alt", label: "反転" }], state.mode, function (v) { state.mode = v; });
+    segButtons("brand", [{ value: "x", label: "𝕏" }, { value: "twitter", label: "Twitter" }], state.brand, function (v) { state.brand = v; });
+    segButtons("position", [{ value: "left", label: "左" }, { value: "center", label: "中央" }, { value: "right", label: "右" }], state.position || defaultPosition(shape), function (v) {
+      state.position = v === defaultPosition(shapeDef(state.shape)) ? null : v;
+    });
+    segButtons("size", SIZES, state.size, function (v) { state.size = v; });
+    $("hr").checked = state.hr;
+    $("text-label").hidden = !!shape.logo;
+    $("text-row").hidden = !!shape.logo;
+    $("text").placeholder = shape.type === "simple" ? (state.brand === "x" ? "この作品をXでシェア" : "この作品をTwitterでシェア")
+      : (state.brand === "x" ? "Xでシェア" : "Twitterでシェア");
+    document.querySelectorAll(".swatch[data-bg]").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.bg === state.bg ? "true" : "false"); });
+    $("bg-custom-wrap").setAttribute("aria-pressed", ["#ffffff", "#111111"].indexOf(state.bg) === -1 ? "true" : "false");
+
+    renderShapes();
+    renderColors();
+    renderPreviewAndCode();
+  }
+
+  function init() {
+    var select = $("event");
+    EVENTS.forEach(function (ev) {
+      var o = document.createElement("option");
+      o.value = ev.id;
+      o.textContent = ev.name;
+      select.appendChild(o);
+    });
+    var other = document.createElement("option");
+    other.value = CUSTOM_EVENT;
+    other.textContent = "その他（IDを入力）";
+    select.appendChild(other);
+    select.addEventListener("change", function () {
+      state.event = select.value;
+      applyDesign(contextDesign());
+      render();
+    });
+    $("event-custom").addEventListener("input", function (e) { state.customEvent = e.target.value; renderPreviewAndCode(); });
+
+    var bind = function (id, key, rerenderAll) {
+      $(id).addEventListener("input", function (e) {
+        state[key] = e.target.type === "checkbox" ? e.target.checked : e.target.value;
+        if (rerenderAll) render(); else renderPreviewAndCode();
+      });
+    };
+    bind("text", "text", true);
+    bind("hr", "hr");
+    bind("title", "title");
+    bind("fullname", "fullname");
+    bind("css", "css");
+    bind("second", "second");
+    bind("lp", "lp");
+
+    document.querySelectorAll(".swatch[data-bg]").forEach(function (b) {
+      b.addEventListener("click", function () { state.bg = b.dataset.bg; render(); });
+    });
+    $("bg-custom").addEventListener("input", function (e) { state.bg = e.target.value; render(); });
+
+    window.addEventListener("resize", fitShapes);
+    applyDesign(contextDesign());
+    render();
+  }
+
+  init();
+})();
+</script>
+<script>
+// 親ページの [[iframe]] は中身の高さに合わないので、Wikidot の resize-iframe.html で親に高さを伝える（tool/versatile-listpages と同じ方式）。
+// 親の iframe は class="html-block-iframe" を持ち、src が「/index.html」のようにこのページの URL の最後の区切りで終わっていること
+(function () {
+  "use strict";
+  var origin = "https://scp-jp.wikidot.com";
+  try { if (document.referrer) origin = new URL(document.referrer).origin; } catch (e) {}
+  var id = location.href.split("/").pop();
+  var holder = document.createElement("div");
+  holder.style.display = "none";
+  document.body.appendChild(holder);
+  var current = 0;
+  function tick() {
+    var height = document.body.scrollHeight;
+    if (height !== current) {
+      current = height;
+      var frame = document.createElement("iframe");
+      frame.src = origin + "/common--javascript/resize-iframe.html?" + Math.random() + "#" + height + "/" + id;
+      holder.textContent = "";
+      holder.appendChild(frame);
+    }
+    setTimeout(tick, 250);
+  }
+  tick();
+})();
+</script>
+</body>
+</html>
